@@ -1,0 +1,26 @@
+{
+  "schema": "g1g2_v18_public_example_acceptance_v1",
+  "status": "PASS_V18_NATURE_FINAL_VERIFIED",
+  "geometry_revision": "v18 fixed STEP leaf-solid mesh; geometry frozen during Nature rendering",
+  "render": {
+    "engine": "Cycles",
+    "samples": 96,
+    "master_resolution": [4096, 2304],
+    "annotated_resolution": [4096, 3072],
+    "public_artifacts": "compressed preview copies"
+  },
+  "gates": {
+    "render_geometry_signature_unchanged": true,
+    "opencv_image_qa": "PASS_V18_NATURE_IMAGE_QA",
+    "saved_blend_reopen": "PASS_V18_NATURE_FINAL_REOPEN",
+    "independent_publication_review": "PASS_3_OF_3_NATURE_REVIEWERS",
+    "p0_count": 0,
+    "p1_count": 0
+  },
+  "public_release_limits": {
+    "vendor_cad_included": false,
+    "laboratory_blend_included": false,
+    "mechanical_or_spectral_certification": false
+  },
+  "blockers": []
+}
