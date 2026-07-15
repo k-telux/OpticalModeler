@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+*.blend1
+*.blend2
+*.log
+.DS_Store
+Thumbs.db
+vendor-cad/
+*.step
+*.stp

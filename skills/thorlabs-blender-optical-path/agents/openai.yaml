@@ -1,0 +1,4 @@
+interface:
+  display_name: "OpticalModeler"
+  short_description: "Build and audit physical Blender optical tables"
+  default_prompt: "Use $thorlabs-blender-optical-path to reconstruct this optical schematic as a physically auditable Blender scene."
