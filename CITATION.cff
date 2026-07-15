@@ -1,10 +1,10 @@
 cff-version: 1.2.0
-message: "If this skill helps your optical-path workflow, cite this repository."
-title: "Thorlabs Blender Optical Path Skill"
+message: "If OpticalModeler helps your optical-path workflow, cite this repository."
+title: "OpticalModeler: A Physically Auditable Blender Optical-Path Skill"
 type: software
 authors:
-  - family-names: "k-telux"
-repository-code: "https://github.com/k-telux/thorlabs-blender-optical-path"
+  - family-names: "telux"
+repository-code: "https://github.com/k-telux/OpticalModeler"
 license: MIT
 version: 1.0.0
 date-released: 2026-07-15
