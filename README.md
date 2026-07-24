@@ -62,19 +62,6 @@ The skill guides the agent to:
 5. reopen the saved scene and run mesh, ray, and BVH checks;
 6. package visual, GLB, report, manifest, hash, and rule-compliance evidence consistently.
 
-## Repository map
-
-```text
-skills/thorlabs-blender-optical-path/   canonical English skill
-i18n/zh-CN/                            Simplified Chinese edition
-i18n/ja/                               Japanese edition
-rules/                                 reusable project-memory template
-examples/g1g2/                         sanitized 2D-to-3D case study
-scripts/validate_repository.py         dependency-free release gate
-```
-
-The English skill is the technical source of truth. Localized editions are maintained as language entry points and explicitly defer to the canonical geometry and evidence references.
-
 ## Validation and limits
 
 - Manufacturer CAD is an asset source, never proof of correct assembly.
