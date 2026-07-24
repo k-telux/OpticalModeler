@@ -44,9 +44,10 @@ npx skills add k-telux/OpticalModeler
 Or copy `skills/thorlabs-blender-optical-path` into your agent's skills directory.
 
 ## Quick start
+Send message below to your agent:
 
 ```text
-Use $thorlabs-blender-optical-path to reconstruct this pump-probe schematic in Blender and produce a fail-closed physical audit.
+Use $thorlabs-blender-optical-path to reconstruct this 2D schematic in Blender.
 ```
 
 ```text
