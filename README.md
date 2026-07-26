@@ -4,8 +4,6 @@
 
 **From 2D photonics schematics to physically auditable Blender optical tables.**
 
-[English](README.md) · [简体中文](README.zh-CN.md) · [日本語](README.ja.md)
-
 [![Validation](https://github.com/k-telux/OpticalModeler/actions/workflows/validate.yml/badge.svg)](https://github.com/k-telux/OpticalModeler/actions/workflows/validate.yml)
 [![Agent Skills](https://img.shields.io/badge/Agent%20Skills-compatible-111827)](https://agentskills.io/)
 [![Blender](https://img.shields.io/badge/Blender-4.x-E87D0D?logo=blender&logoColor=white)](https://www.blender.org/)
