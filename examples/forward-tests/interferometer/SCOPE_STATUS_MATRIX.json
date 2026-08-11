@@ -1,0 +1,104 @@
+{
+  "gate_decision": "INTERFEROMETER_FULL_40_PROPAGATION_PARTIAL_SCOPED; STOP_FOR_AUDIT",
+  "generated_at_utc": "2026-08-09T20:29:05.473217+00:00",
+  "overall_status": "PARTIAL_SCOPED_FULL_40_NODE_PROPAGATION",
+  "records": [
+    {
+      "evidence": "evidence/ROOT_LOCK.json#/frozen_phase1",
+      "id": "F40-01",
+      "requirement": "Frozen Phase 1 and representative root locks",
+      "status": "PASS"
+    },
+    {
+      "evidence": "topology/FULL_TOPOLOGY_CONTRACT.json#/node_count",
+      "id": "F40-02",
+      "requirement": "40 canonical role nodes / 66 edges / four states",
+      "status": "PASS"
+    },
+    {
+      "evidence": "evidence/OCCT_CAD_AUDIT.json#/assets",
+      "id": "F40-03",
+      "requirement": "30 official CAD families, source SHA and per-file unit binding",
+      "status": "PASS_SCOPED_PROVENANCE"
+    },
+    {
+      "evidence": "evidence/FACTORY_REOPEN_AUDIT.json#/official_cad_bbox_comparison",
+      "id": "F40-04",
+      "requirement": "OCCT-to-Blender evaluated world bbox",
+      "status": "PARTIAL_SCOPED_INVALID_BREP"
+    },
+    {
+      "evidence": "evidence/FACTORY_REOPEN_AUDIT.json#/semantic_port_readback",
+      "id": "F40-05",
+      "requirement": "Saved official-CAD semantic port numeric readback",
+      "status": "PASS_NUMERIC_SEMANTICS_UNVERIFIED"
+    },
+    {
+      "evidence": "evidence/FACTORY_REOPEN_AUDIT.json#/mesh_cleanliness_and_reopen",
+      "id": "F40-06",
+      "requirement": "Mesh cleanliness before/after and exact saved reopen",
+      "status": "PASS_EXACT_REOPEN_RESIDUALS_RECORDED"
+    },
+    {
+      "evidence": "evidence/FACTORY_REOPEN_AUDIT.json#/zero_radius_ray_readback",
+      "id": "F40-07",
+      "requirement": "Per-state zero-radius world rays",
+      "status": "PASS"
+    },
+    {
+      "evidence": "evidence/FACTORY_REOPEN_AUDIT.json#/first_hit_world_mesh",
+      "id": "F40-08",
+      "requirement": "World-mesh first-hit",
+      "status": "PASS_MODELED_PROXY_VENDOR_FACE_UNVERIFIED"
+    },
+    {
+      "evidence": "evidence/FACTORY_REOPEN_AUDIT.json#/optical_geometry",
+      "id": "F40-09",
+      "requirement": "Split/recombine/reflection/CCR external geometry",
+      "status": "PASS_MODELED_GEOMETRY_OPTICAL_FUNCTION_UNVERIFIED"
+    },
+    {
+      "evidence": "evidence/TABLE_HOLE_AUDIT.json#/records",
+      "id": "F40-10",
+      "requirement": "63 selected table-hole/load paths",
+      "status": "PARTIAL_SCOPED_THREAD_AND_INTERFACE_UNVERIFIED"
+    },
+    {
+      "evidence": "evidence/FACTORY_REOPEN_AUDIT.json#/complete_physical_bvh",
+      "id": "F40-11",
+      "requirement": "Complete evaluated BVH inventory and exact pair policy",
+      "status": "BLOCKED_110_COLLISION_PAIRS"
+    },
+    {
+      "evidence": "evidence/OPENCV_PRIVATE_ATTESTATION.json#/records",
+      "id": "F40-12",
+      "requirement": "Four private renders and OpenCV",
+      "status": "PASS_PRIVATE_ATTESTATION_PUBLIC_REVERIFY_BLOCKED"
+    },
+    {
+      "evidence": "evidence/FACTORY_REOPEN_AUDIT.json#/state_edge_matrix",
+      "id": "F40-13",
+      "requirement": "633/810 state separation",
+      "status": "PASS_TOPOLOGY_SEPARATION_PHASE_MAPPING_UNVERIFIED"
+    },
+    {
+      "evidence": "evidence/FACTORY_REOPEN_AUDIT.json#/paper_performance_equivalence",
+      "id": "F40-14",
+      "requirement": "Modeled/surrogate and paper performance equivalence",
+      "status": "BLOCKED"
+    },
+    {
+      "evidence": "evidence/FACTORY_REOPEN_AUDIT.json#/vendor_cad_public_redistribution",
+      "id": "F40-15",
+      "requirement": "Vendor CAD/Blend/render redistribution",
+      "status": "BLOCKED_PRIVATE_ONLY"
+    },
+    {
+      "evidence": "evidence/ROOT_LOCK.json#/authorization",
+      "id": "F40-16",
+      "requirement": "Final/release/publish",
+      "status": "NOT_AUTHORIZED"
+    }
+  ],
+  "schema": "full-40-node-scope-status-matrix-v1"
+}

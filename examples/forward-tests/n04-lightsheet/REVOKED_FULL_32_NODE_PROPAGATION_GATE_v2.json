@@ -1,0 +1,39 @@
+{
+  "schema": "opticalmodeler.full32.propagation-gate-revocation.v1",
+  "generated_utc": "2026-08-09T20:08:28Z",
+  "status": "BLOCKED",
+  "prior_gate": "FULL_32_NODE_PROPAGATION_GATE_v2",
+  "prior_gate_status": "REVOKED",
+  "reason": "The published reconstruction script does not reproduce the released lock-stage port centers for N30 and N31.",
+  "deterministic_blocker": {
+    "script_recomputed_port_centers_m": {
+      "N30": [0.7125, -0.2625, 0.125],
+      "N31": [0.9625, -0.4125, 0.125]
+    },
+    "released_build_params_port_centers_m": {
+      "N30": [0.7125, -0.55, 0.125],
+      "N31": [0.9625, -0.55, 0.125]
+    },
+    "drift_mm": {
+      "N30": 287.5,
+      "N31": 137.5
+    },
+    "conflict": "No recorded override exists in the v2 script, contradicting manual_unlogged_transforms=0 and the deterministic reconstruction claim."
+  },
+  "frozen_v2_artifacts": {
+    "blend_bytes": 132893229,
+    "blend_sha256": "f9cc9056f8d68eb304607ef2409b271deefebb42f3a133c8847280cd8ade0223",
+    "public_manifest_sha256": "e29d4702e2de1af0b5ee8ad6b98b96d1e4c55e12a3e78d4978bb50e352fe6c20"
+  },
+  "retained_independent_results": {
+    "mesh": "PASS",
+    "E042_N31_first_hit": "PASS",
+    "N24_stage_load_path": "PASS",
+    "table_holes": "PASS",
+    "opencv": "PASS",
+    "public_sanitization": "PASS"
+  },
+  "required_next_revision": "v3",
+  "literal_paper_performance": "BLOCKED",
+  "final_release": "BLOCKED"
+}

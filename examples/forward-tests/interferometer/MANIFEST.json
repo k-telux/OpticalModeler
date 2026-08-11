@@ -1,0 +1,71 @@
+{
+  "excluded_payload_classes": [
+    "STEP",
+    "STL",
+    "Blend",
+    "render images",
+    "third-party CAD"
+  ],
+  "files": [
+    {
+      "bytes": 1777,
+      "path": "FULL_40_NODE_PROPAGATION_GATE.md",
+      "sha256": "b542863d4f882ce5b0b30897fd0bf6087628727b75ee594b1caa655b93970eaa"
+    },
+    {
+      "bytes": 1978,
+      "path": "README.md",
+      "sha256": "37edf2d9c3ef1762852c9c4b368b698d735ea22301c4895581e3b0e2208be328"
+    },
+    {
+      "bytes": 3918,
+      "path": "SCOPE_STATUS_MATRIX.json",
+      "sha256": "b6cfd5b8119847eff3e2afcd61eb68f5bc17fa22d3f0cd14a0b6cc12da14774c"
+    },
+    {
+      "bytes": 1779,
+      "path": "VALIDATION_REPORT.json",
+      "sha256": "dc7cd3b22d38470aee8e70a5ecfd518ce390f8e59abd978298ec6714be6cc03c"
+    },
+    {
+      "bytes": 484549,
+      "path": "evidence/BUILD_EVIDENCE.json",
+      "sha256": "7dfab9a9b1e36f5177a1312d176eaeeaef2f9b0026b16d772011ef6839cb60fd"
+    },
+    {
+      "bytes": 1383524,
+      "path": "evidence/FACTORY_REOPEN_AUDIT.json",
+      "sha256": "eba6de49a9b49ec25c9a2de3b5fde1056ff1ca6fe95f47556b87848619765362"
+    },
+    {
+      "bytes": 66438,
+      "path": "evidence/OCCT_CAD_AUDIT.json",
+      "sha256": "880a0d027e67a8e8014ca97ced04c1207454b89ed57c5b96974e6968c6455a48"
+    },
+    {
+      "bytes": 27453,
+      "path": "evidence/OPENCV_PRIVATE_ATTESTATION.json",
+      "sha256": "a3daf1fa4ec630d9f2da57bf291e098201d46e5e7aa4b06039e77290c8ed22e6"
+    },
+    {
+      "bytes": 1040,
+      "path": "evidence/ROOT_LOCK.json",
+      "sha256": "e8c03ccb834308c2e0531653c36dcea9cb5bda8c43994773f47168b5b4d85694"
+    },
+    {
+      "bytes": 576569,
+      "path": "evidence/TABLE_HOLE_AUDIT.json",
+      "sha256": "4f74e16cce6ab0a2cc33e5345e613877bcd915ed06840cd5acca3d7f9e281e46"
+    },
+    {
+      "bytes": 83524,
+      "path": "topology/FULL_TOPOLOGY_CONTRACT.json",
+      "sha256": "8b0292f028f0d737411dc578b05455569e08eeb8bd8a523d4548d80174dbccaa"
+    }
+  ],
+  "generated_at_utc": "2026-08-09T20:29:05.473217+00:00",
+  "overall_status": "PARTIAL_SCOPED_FULL_40_NODE_PROPAGATION",
+  "release_status": "NOT_FINAL_NOT_RELEASE_NOT_PUBLISH",
+  "schema": "full-40-node-public-manifest-v1",
+  "self_excluding": true
+}

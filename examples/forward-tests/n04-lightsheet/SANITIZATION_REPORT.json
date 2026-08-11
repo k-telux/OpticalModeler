@@ -1,0 +1,37 @@
+{
+  "schema": "opticalmodeler.public-png-sanitization.v1",
+  "status": "PASS",
+  "source_evidence_immutable": true,
+  "records": [
+    {
+      "path": "renders/FULL_32_overall_top.png",
+      "source_sha256": "585264e1c0fdad4feac760443d2d39e997570b8574818a1f2068899fea7ec777",
+      "public_sha256": "630338e2b16c2b7d3d33b75eb232794595e466e7a321165bcaef05a2ecb49bed",
+      "source_bytes": 1697998,
+      "public_bytes": 1697588,
+      "removed_chunks": {
+        "eXIf": 1,
+        "tEXt": 7
+      },
+      "ihdr_sha256": "fc6a8440a56f8b00731295904a36046fdfd095f6a9274a6a50be222ea1873028",
+      "idat_sha256": "ef687fc4c0e6c2c35c656cb9a22b0a6e546f860a0c3c41360131aade6fdc75eb",
+      "decoded_scanline_sha256": "a95d5da30b90668aae7087c78a289634c270423175408a00eb15968dea71c9d0",
+      "pixel_data_unchanged": true
+    },
+    {
+      "path": "renders/FAMILY_N04_reaudit.png",
+      "source_sha256": "41f654160498afe74b78936f3532e8370a5b98d9e258784ef4b38da669107330",
+      "public_sha256": "094b695ffad977f5c5d00935df33e87c3b683664d780f81d4ce0cdf7313e7536",
+      "source_bytes": 1836473,
+      "public_bytes": 1836060,
+      "removed_chunks": {
+        "eXIf": 1,
+        "tEXt": 7
+      },
+      "ihdr_sha256": "fc6a8440a56f8b00731295904a36046fdfd095f6a9274a6a50be222ea1873028",
+      "idat_sha256": "85fec0259b0fbf42e334bfd31de2f14e7e7d21325b052d1c908d2060724fd9c3",
+      "decoded_scanline_sha256": "d670bbc8c651c65e3db2a47cce7ef5de6d0edaa293ca64f3f3cb1ded9289c233",
+      "pixel_data_unchanged": true
+    }
+  ]
+}

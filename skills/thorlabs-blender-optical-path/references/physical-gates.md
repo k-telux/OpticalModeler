@@ -4,10 +4,11 @@
 
 1. Optical topology and ports
 2. Post-first mechanics
-3. Hardware-family rules
-4. Fiber, cable, and instruments
-5. Platforms and rendering
-6. Numeric defaults
+3. CAD conversion
+4. Hardware-family rules
+5. Fiber, cable, and instruments
+6. Platforms and rendering
+7. Numeric defaults
 
 ## Optical topology and ports
 
@@ -16,6 +17,7 @@
 - Solve a mirror normal from incident and outgoing directions. Then roll the real mount around that normal so its mounting interface meets the support and its adjusters avoid the beam half-space.
 - Solve a beamsplitter with both transmitted-axis and splitting-plane constraints. Include endpoint rays; one plane cannot create arbitrary orthogonal outputs.
 - Treat every declared branch as end-to-end topology. A visually plausible main beam does not excuse a disconnected return, detector, g(1), g(2), or spectrometer branch.
+- Store topology as explicit directed edges with exact port and signal-family identifiers. Do not synthesize a return edge merely because a forward edge exists; keep optional and deferred node IDs exact.
 - Trace a zero-radius axis for physical clearance. A thick visible beam is presentation geometry and must be classified separately.
 
 ## Post-first mechanics
@@ -30,6 +32,14 @@ Use a continuous load path:
 - Make a fork clamp capture its own adapter. Put the washer on the slot bearing surface and the shank through the slot into a verified open table hole.
 - Classify thread/hole engagement separately from illegal opaque-body collision.
 - Prove raised boards and large instruments with a complete table-to-device load path and side/cutaway views.
+
+## CAD conversion
+
+- Read native units from the STEP/XCAF unit context. Never infer file units from a metric SKU suffix, thread standard, filename, or catalog family.
+- Require finite native and transferred bboxes, non-empty faces/triangles, explicit BRep validity, and two deterministic conversion runs before calling a converter PASS.
+- Record raw and cleaned mesh metrics separately. Cleanup must not erase an invalid source, empty faces, non-manifold residuals, lost assembly occurrences, or semantic-port uncertainty.
+- Treat flattened assembly names as `PARTIAL_SCOPED` until occurrence hierarchy is proved. Treat surface-only models as surface-only; do not relabel them as manifold solids.
+- Keep conversion status independent from packaging status. A sanitized package cannot upgrade a sentinel bbox, failed mesh, missing port frame, or blocked Blender import.
 
 ## Hardware-family rules
 

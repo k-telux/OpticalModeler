@@ -1,0 +1,48 @@
+{
+  "schema": "opticalmodeler.n04-public-example-gate.v1",
+  "baseline": {
+    "tag": "v1.0.0",
+    "peeled_commit": "048766250538f169d924c31bbdd39bf0c255c63f"
+  },
+  "source_snapshot": {
+    "full_package_manifest_sha256": "f16ceeae31032038e996e6761197910782436b3e6cb1140eadf0d09e894e2895",
+    "full_propagation_gate_sha256": "f02da65db16f6a283971c693f4f1d26424f1fc84d4d51edb14b4fcd05c503532",
+    "postpackage_readback_sha256": "b7526c7053f8c49f76c43438c09c9b7cb304c5ba4f76168cc06a21f0b74891b5"
+  },
+  "status": {
+    "propagation_gate": "PASS",
+    "model_scope": "PARTIAL_SCOPED",
+    "literal_paper_performance": "BLOCKED",
+    "final_or_release": "BLOCKED",
+    "public_reference_sanitization": "PASS"
+  },
+  "counts": {
+    "nodes": 32,
+    "directed_edge_traversals": 44,
+    "true_branch_points": 2,
+    "families": 16,
+    "official_instances": 154,
+    "modeled_non_thorlabs_load_links": 156
+  },
+  "deterministic_replay": {
+    "audit": "BUILD_PARAMS_RECOMPUTE_AUDIT.json",
+    "published_semantic_sha256": "bfd80a07d0815f5079eff1a73ac591731bf357c1060d4649278de7d9bb52e3de",
+    "recomputed_semantic_sha256": "bfd80a07d0815f5079eff1a73ac591731bf357c1060d4649278de7d9bb52e3de",
+    "difference_count": 0,
+    "documented_override_count": 2,
+    "manual_unlogged_transforms": 0
+  },
+  "public_reference": {
+    "scope": "CURATED_SANITIZED_REPLAY_REFERENCE",
+    "manifest": "MANIFEST.json",
+    "png_sanitization": "SANITIZATION_REPORT.json",
+    "vendor_geometry_file_count": 0,
+    "blend_file_count": 0,
+    "runtime_archive_count": 0
+  },
+  "blockers": [
+    "Literal paper performance is not established.",
+    "Vendor CAD redistribution remains blocked.",
+    "Final/release approval is outside the propagation gate."
+  ]
+}

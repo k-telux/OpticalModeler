@@ -1,0 +1,26 @@
+{
+  "allowed_checkout_skill_evidence": {
+    "SKILL.md_sha256": "b2aa16c46b92ab8490628b426ea22968111a8e3cce637a55444fe7ec5cf280f3",
+    "evidence-contract.md_sha256": "b0dab4be1eb0b6738562d443c594158e8c40f90d2cc88ea75a34abf5bad4f514",
+    "physical-gates.md_sha256": "fd5e1a88effcdd5eb350d577aea6335aed6716b343d41330dc49002513286ac4"
+  },
+  "fixed_public_checkout": {
+    "head_commit": "048766250538f169d924c31bbdd39bf0c255c63f",
+    "origin": "https://github.com/k-\u0074elux/OpticalModeler.git",
+    "peeled_commit": "048766250538f169d924c31bbdd39bf0c255c63f",
+    "tag": "v1.0.0",
+    "tag_object_type": "tag",
+    "worktree_clean": true
+  },
+  "frozen_phase1": {
+    "CAD_MANIFEST.json": "f4fa6dda15a3781f45db3c1a6ad139e16c08e7413c1aa55f205d5539b5e24e12",
+    "GATE_DECISION.json": "4e31f0184b7913ff82fc59b0831035ea21827e55eabbff1baee9aa8f2c79d4d9",
+    "MANIFEST.sha256": "bd73b442f23a6e2975b06d23f72ba339eb776e622860bb5a167067ad122c59c5",
+    "SOURCE_LOCK.json": "52c24c3d42156419200075fd95dda767272b132d4d95126a4918b7f6c5e3c32a"
+  },
+  "generated_at_utc": "2026-08-09T19:06:30Z",
+  "phase1_gate_status": "PASS",
+  "schema": "opticalmodeler.phase2_source_and_phase1_lock.v1",
+  "scope_policy": "Only frozen Phase 1, the fixed public checkout, official public vendor/software sources, and general runtimes were used.",
+  "status": "PASS"
+}

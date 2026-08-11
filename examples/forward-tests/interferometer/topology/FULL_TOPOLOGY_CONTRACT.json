@@ -1,0 +1,3317 @@
+{
+  "branch_count": 14,
+  "branches": [
+    {
+      "id": "B_SIGNAL_COMMON",
+      "medium": "G810/F810",
+      "ordered_path": [
+        "EXT_HERALDED_SOURCE",
+        "N01",
+        "N02",
+        "N03",
+        "N04"
+      ]
+    },
+    {
+      "id": "B_ARM_A_810",
+      "medium": "F810",
+      "ordered_path": [
+        "N04",
+        "N05",
+        "N06",
+        "N07",
+        "N08",
+        "N09",
+        "N16"
+      ]
+    },
+    {
+      "id": "B_ARM_B_810",
+      "medium": "F810",
+      "ordered_path": [
+        "N04",
+        "N10",
+        "N11",
+        "N12",
+        "N13",
+        "N14",
+        "N15",
+        "N16"
+      ]
+    },
+    {
+      "id": "B_POSTSELECT_COMMON",
+      "medium": "F810",
+      "ordered_path": [
+        "N16",
+        "N17",
+        "N18",
+        "N19",
+        "N20",
+        "N21",
+        "N22",
+        "N23"
+      ]
+    },
+    {
+      "id": "B_READOUT_X",
+      "medium": "F810/G810/ELEC",
+      "ordered_path": [
+        "N23",
+        "N24",
+        "N25",
+        "N26",
+        "N27",
+        "N28",
+        "EXT_TIME_TAGGER"
+      ]
+    },
+    {
+      "id": "B_READOUT_Y",
+      "medium": "F810/G810/ELEC",
+      "ordered_path": [
+        "N23",
+        "N29",
+        "N30",
+        "N31",
+        "N32",
+        "EXT_TIME_TAGGER"
+      ]
+    },
+    {
+      "id": "B_HERALD",
+      "medium": "G810/ELEC",
+      "ordered_path": [
+        "EXT_HERALDED_SOURCE",
+        "N33",
+        "EXT_TIME_TAGGER"
+      ]
+    },
+    {
+      "id": "B_LOCK_INJECTION",
+      "medium": "F633",
+      "ordered_path": [
+        "N34",
+        "N35",
+        "N04"
+      ]
+    },
+    {
+      "id": "B_LOCK_ARM_A",
+      "medium": "F633",
+      "ordered_path": [
+        "N04",
+        "N05",
+        "N06",
+        "N07",
+        "N08",
+        "N09",
+        "N16"
+      ]
+    },
+    {
+      "id": "B_LOCK_ARM_B",
+      "medium": "F633",
+      "ordered_path": [
+        "N04",
+        "N10",
+        "N11",
+        "N12",
+        "N13",
+        "N14",
+        "N15",
+        "N16"
+      ]
+    },
+    {
+      "id": "B_LOCK_SENSE_PLUS",
+      "medium": "F633",
+      "ordered_path": [
+        "N16",
+        "N17",
+        "N36",
+        "N37"
+      ]
+    },
+    {
+      "id": "B_LOCK_SENSE_MINUS",
+      "medium": "F633",
+      "ordered_path": [
+        "N16",
+        "N36",
+        "N37"
+      ]
+    },
+    {
+      "id": "B_PHASE_FEEDBACK",
+      "medium": "ELEC/CTRL/MECH",
+      "ordered_path": [
+        "N37",
+        "N38",
+        "N39",
+        "N38",
+        "N40",
+        "N11"
+      ]
+    },
+    {
+      "id": "B_CALIBRATION_810",
+      "medium": "F810/ELEC",
+      "ordered_path": [
+        "N16",
+        "N36",
+        "N38"
+      ]
+    }
+  ],
+  "deterministic_invariants": {
+    "cad_import_or_geometry": "NOT_STARTED_BY_PHASE_BOUNDARY",
+    "free_space_to_guided_transitions": [
+      "N02 guided-to-free-space",
+      "N27 free-space-to-guided",
+      "N31 free-space-to-guided"
+    ],
+    "optical_detection_endpoints": [
+      "N28 DET_X",
+      "N32 DET_Y",
+      "N33 DET_R_HERALD",
+      "N37 DIFFERENTIAL_LOCK_DETECTOR"
+    ],
+    "performance_equivalence": "BLOCKED",
+    "phase_delay_path": "In LOCK_MEASUREMENT_M_AUX_REMOVED only: N38 -> N39 -> N38 -> N40 -> N11, with error sensed at N37 from both N16 outputs",
+    "phase_transfer_633_to_810": "UNVERIFIED: topology establishes a common mechanical OPD actuator but not the 633-to-810 phase ratio, fringe-order mapping, setpoint transfer, dispersion correction, or cycle ambiguity.",
+    "role_node_count": 40,
+    "role_node_id_range": "N01..N40 continuous and unique",
+    "true_recombine_nodes": [
+      "N16 BS2_RECOMBINER"
+    ],
+    "true_split_nodes": [
+      "N04 BS1_SPLITTER",
+      "N23 BS3_READOUT_SPLITTER"
+    ]
+  },
+  "edge_count": 66,
+  "edges": [
+    {
+      "from": "EXT_HERALDED_SOURCE.signal_G810_out",
+      "id": "E001",
+      "medium": "G810",
+      "mode": "MEASUREMENT",
+      "to": "N01.source_in"
+    },
+    {
+      "from": "N01.fiber_out",
+      "id": "E002",
+      "medium": "G810",
+      "mode": "MEASUREMENT",
+      "to": "N02.fiber_in"
+    },
+    {
+      "from": "N02.beam_out",
+      "id": "E003",
+      "medium": "F810",
+      "mode": "MEASUREMENT",
+      "to": "N03.in"
+    },
+    {
+      "from": "N03.out",
+      "id": "E004",
+      "medium": "F810",
+      "mode": "MEASUREMENT",
+      "to": "N04.signal_in_810"
+    },
+    {
+      "from": "N04.arm_A_810",
+      "id": "E101",
+      "medium": "F810",
+      "mode": "MEASUREMENT",
+      "to": "N05.in_810"
+    },
+    {
+      "from": "N05.out_810",
+      "id": "E102",
+      "medium": "F810",
+      "mode": "MEASUREMENT",
+      "to": "N06.in_810"
+    },
+    {
+      "from": "N06.out_810",
+      "id": "E103",
+      "medium": "F810",
+      "mode": "MEASUREMENT",
+      "to": "N07.in_810"
+    },
+    {
+      "from": "N07.out_810",
+      "id": "E104",
+      "medium": "F810",
+      "mode": "MEASUREMENT",
+      "to": "N08.in_810"
+    },
+    {
+      "from": "N08.out_810",
+      "id": "E105",
+      "medium": "F810",
+      "mode": "MEASUREMENT",
+      "to": "N09.in_810"
+    },
+    {
+      "from": "N09.out_810",
+      "id": "E106",
+      "medium": "F810",
+      "mode": "MEASUREMENT",
+      "to": "N16.arm_A_810"
+    },
+    {
+      "from": "N04.arm_B_810",
+      "id": "E201",
+      "medium": "F810",
+      "mode": "MEASUREMENT",
+      "to": "N10.in_810"
+    },
+    {
+      "from": "N10.out_810",
+      "id": "E202",
+      "medium": "F810",
+      "mode": "MEASUREMENT",
+      "to": "N11.in_810"
+    },
+    {
+      "from": "N11.out_810",
+      "id": "E203",
+      "medium": "F810",
+      "mode": "MEASUREMENT",
+      "to": "N12.in_810"
+    },
+    {
+      "from": "N12.out_810",
+      "id": "E204",
+      "medium": "F810",
+      "mode": "MEASUREMENT",
+      "to": "N13.in_810"
+    },
+    {
+      "from": "N13.out_810",
+      "id": "E205",
+      "medium": "F810",
+      "mode": "MEASUREMENT",
+      "to": "N14.in_810"
+    },
+    {
+      "from": "N14.out_810",
+      "id": "E206",
+      "medium": "F810",
+      "mode": "MEASUREMENT",
+      "to": "N15.in_810"
+    },
+    {
+      "from": "N15.out_810",
+      "id": "E207",
+      "medium": "F810",
+      "mode": "MEASUREMENT",
+      "to": "N16.arm_B_810"
+    },
+    {
+      "from": "N16.post_810",
+      "id": "E301",
+      "medium": "F810",
+      "mode": "MEASUREMENT",
+      "to": "N17.in_810"
+    },
+    {
+      "from": "N17.transmit_810",
+      "id": "E302",
+      "medium": "F810",
+      "mode": "MEASUREMENT",
+      "to": "N18.in"
+    },
+    {
+      "from": "N18.out",
+      "id": "E303",
+      "medium": "F810",
+      "mode": "MEASUREMENT",
+      "to": "N19.in"
+    },
+    {
+      "from": "N19.out",
+      "id": "E304",
+      "medium": "F810",
+      "mode": "MEASUREMENT",
+      "to": "N20.in"
+    },
+    {
+      "from": "N20.selected",
+      "id": "E305",
+      "medium": "F810",
+      "mode": "MEASUREMENT",
+      "to": "N21.in"
+    },
+    {
+      "from": "N20.reject",
+      "id": "E306",
+      "medium": "F810",
+      "mode": "MEASUREMENT",
+      "source_class": "FORWARD_TEST_TERMINATION",
+      "to": "EXT_DUMP_PBS_POST.optical_in"
+    },
+    {
+      "from": "N21.out",
+      "id": "E307",
+      "medium": "F810",
+      "mode": "MEASUREMENT",
+      "to": "N22.in"
+    },
+    {
+      "from": "N22.out",
+      "id": "E308",
+      "medium": "F810",
+      "mode": "MEASUREMENT",
+      "to": "N23.in"
+    },
+    {
+      "from": "N23.x_out",
+      "id": "E401",
+      "medium": "F810",
+      "mode": "MEASUREMENT",
+      "to": "N24.in"
+    },
+    {
+      "from": "N24.out",
+      "id": "E402",
+      "medium": "F810",
+      "mode": "MEASUREMENT",
+      "to": "N25.in"
+    },
+    {
+      "from": "N25.out",
+      "id": "E403",
+      "medium": "F810",
+      "mode": "MEASUREMENT",
+      "to": "N26.in"
+    },
+    {
+      "from": "N26.out",
+      "id": "E404",
+      "medium": "F810",
+      "mode": "MEASUREMENT",
+      "to": "N27.free_space_in"
+    },
+    {
+      "from": "N27.guided_out",
+      "id": "E405",
+      "medium": "G810",
+      "mode": "MEASUREMENT",
+      "to": "N28.optical_in"
+    },
+    {
+      "from": "N28.events_out",
+      "id": "E406",
+      "medium": "ELEC",
+      "mode": "MEASUREMENT",
+      "to": "EXT_TIME_TAGGER.det_x_in"
+    },
+    {
+      "from": "N23.y_out",
+      "id": "E501",
+      "medium": "F810",
+      "mode": "MEASUREMENT",
+      "to": "N29.in"
+    },
+    {
+      "from": "N29.out",
+      "id": "E502",
+      "medium": "F810",
+      "mode": "MEASUREMENT",
+      "to": "N30.in"
+    },
+    {
+      "from": "N30.out",
+      "id": "E503",
+      "medium": "F810",
+      "mode": "MEASUREMENT",
+      "to": "N31.free_space_in"
+    },
+    {
+      "from": "N31.guided_out",
+      "id": "E504",
+      "medium": "G810",
+      "mode": "MEASUREMENT",
+      "to": "N32.optical_in"
+    },
+    {
+      "from": "N32.events_out",
+      "id": "E505",
+      "medium": "ELEC",
+      "mode": "MEASUREMENT",
+      "to": "EXT_TIME_TAGGER.det_y_in"
+    },
+    {
+      "from": "EXT_HERALDED_SOURCE.herald_G810_out",
+      "id": "E601",
+      "medium": "G810",
+      "mode": "MEASUREMENT",
+      "to": "N33.optical_in"
+    },
+    {
+      "from": "N33.events_out",
+      "id": "E602",
+      "medium": "ELEC",
+      "mode": "MEASUREMENT",
+      "to": "EXT_TIME_TAGGER.herald_in"
+    },
+    {
+      "from": "N34.beam_out",
+      "id": "E701",
+      "medium": "F633",
+      "mode": "LOCK",
+      "to": "N35.beam_in"
+    },
+    {
+      "from": "N35.beam_out",
+      "id": "E702",
+      "medium": "F633",
+      "mode": "LOCK",
+      "to": "N04.lock_in_633"
+    },
+    {
+      "from": "N04.arm_A_633",
+      "id": "E711",
+      "medium": "F633",
+      "mode": "LOCK",
+      "to": "N05.in_633"
+    },
+    {
+      "from": "N05.out_633",
+      "id": "E712",
+      "medium": "F633",
+      "mode": "LOCK",
+      "to": "N06.in_633"
+    },
+    {
+      "from": "N06.out_633",
+      "id": "E713",
+      "medium": "F633",
+      "mode": "LOCK",
+      "to": "N07.in_633"
+    },
+    {
+      "from": "N07.out_633",
+      "id": "E714",
+      "medium": "F633",
+      "mode": "LOCK",
+      "to": "N08.in_633"
+    },
+    {
+      "from": "N08.out_633",
+      "id": "E715",
+      "medium": "F633",
+      "mode": "LOCK",
+      "to": "N09.in_633"
+    },
+    {
+      "from": "N09.out_633",
+      "id": "E716",
+      "medium": "F633",
+      "mode": "LOCK",
+      "to": "N16.arm_A_633"
+    },
+    {
+      "from": "N04.arm_B_633",
+      "id": "E721",
+      "medium": "F633",
+      "mode": "LOCK",
+      "to": "N10.in_633"
+    },
+    {
+      "from": "N10.out_633",
+      "id": "E722",
+      "medium": "F633",
+      "mode": "LOCK",
+      "to": "N11.in_633"
+    },
+    {
+      "from": "N11.out_633",
+      "id": "E723",
+      "medium": "F633",
+      "mode": "LOCK",
+      "to": "N12.in_633"
+    },
+    {
+      "from": "N12.out_633",
+      "id": "E724",
+      "medium": "F633",
+      "mode": "LOCK",
+      "to": "N13.in_633"
+    },
+    {
+      "from": "N13.out_633",
+      "id": "E725",
+      "medium": "F633",
+      "mode": "LOCK",
+      "to": "N14.in_633"
+    },
+    {
+      "from": "N14.out_633",
+      "id": "E726",
+      "medium": "F633",
+      "mode": "LOCK",
+      "to": "N15.in_633"
+    },
+    {
+      "from": "N15.out_633",
+      "id": "E727",
+      "medium": "F633",
+      "mode": "LOCK",
+      "to": "N16.arm_B_633"
+    },
+    {
+      "from": "N16.lock_post_633",
+      "id": "E731",
+      "medium": "F633",
+      "mode": "LOCK",
+      "to": "N17.in_633"
+    },
+    {
+      "from": "N17.reflect_633",
+      "id": "E732",
+      "medium": "F633",
+      "mode": "LOCK",
+      "to": "N36.plus_in_633"
+    },
+    {
+      "from": "N16.lock_aux_633",
+      "id": "E733",
+      "medium": "F633",
+      "mode": "LOCK_MEASUREMENT_M_AUX_REMOVED",
+      "to": "N36.minus_in_633"
+    },
+    {
+      "from": "N36.plus_out_633",
+      "id": "E734",
+      "medium": "F633",
+      "mode": "LOCK",
+      "to": "N37.plus_optical_in"
+    },
+    {
+      "from": "N36.minus_out_633",
+      "id": "E735",
+      "medium": "F633",
+      "mode": "LOCK_MEASUREMENT_M_AUX_REMOVED",
+      "to": "N37.minus_optical_in"
+    },
+    {
+      "from": "N37.error_voltage_out",
+      "id": "E736",
+      "medium": "ELEC",
+      "mode": "LOCK_MEASUREMENT_M_AUX_REMOVED",
+      "to": "N38.error_voltage_in"
+    },
+    {
+      "from": "N38.samples_out",
+      "id": "E737",
+      "medium": "ELEC",
+      "mode": "LOCK_MEASUREMENT_M_AUX_REMOVED",
+      "to": "N39.samples_in"
+    },
+    {
+      "from": "N39.drive_command_out",
+      "id": "E738",
+      "medium": "CTRL",
+      "mode": "LOCK_MEASUREMENT_M_AUX_REMOVED",
+      "to": "N38.drive_command_in"
+    },
+    {
+      "from": "N38.drive_voltage_out",
+      "id": "E739",
+      "medium": "CTRL",
+      "mode": "LOCK_MEASUREMENT_M_AUX_REMOVED",
+      "to": "N40.drive_voltage_in"
+    },
+    {
+      "from": "N40.displacement_out",
+      "id": "E740",
+      "medium": "MECH",
+      "mode": "LOCK_MEASUREMENT_M_AUX_REMOVED",
+      "to": "N11.phase_motion_in"
+    },
+    {
+      "from": "N16.aux_810",
+      "id": "E801",
+      "medium": "F810",
+      "mode": "CALIBRATION_M_AUX_INSERTED",
+      "to": "N36.calibration_in_810"
+    },
+    {
+      "from": "N36.calibration_voltage_out",
+      "id": "E802",
+      "medium": "ELEC",
+      "mode": "CALIBRATION_M_AUX_INSERTED",
+      "to": "N38.calibration_voltage_in"
+    },
+    {
+      "from": "N16.aux_810",
+      "id": "E803",
+      "medium": "F810",
+      "mode": "MEASUREMENT_M_AUX_REMOVED",
+      "source_class": "FORWARD_TEST_TERMINATION",
+      "to": "EXT_DUMP_BS2_AUX.optical_in"
+    }
+  ],
+  "fail_closed": [
+    "Coordinates are deterministic forward-test placements, not coordinates reported by the paper.",
+    "All official-CAD semantic ports remain bbox or modeled datums unless separately proven.",
+    "CCR internal optical chord, retardance axes, coating faces, threads, fits, detector sensor planes, and wavelength transfer functions remain UNVERIFIED.",
+    "SPDMH2 invalid BRep and all mesh-cleanliness residuals must remain explicit.",
+    "Paper performance equivalence is BLOCKED; vendor CAD redistribution is PRIVATE_ONLY."
+  ],
+  "frozen_upstream_locks": {
+    "frozen_files_modified": false,
+    "phase1_manifest_sha256": "db4af71aa3c76a48ae6e76dc808b1f7050c08cf79c6ab728ecbd87f1455e3670",
+    "representative_smoke_expected_root": "844e10273c9a97dbf836d63545d3b43a2fef5f4112cbf0070ae3d7efb45d3535",
+    "representative_smoke_manifest_sha256": "844e10273c9a97dbf836d63545d3b43a2fef5f4112cbf0070ae3d7efb45d3535"
+  },
+  "generated_at_utc": "2026-08-09T19:44:16.112206+00:00",
+  "node_count": 40,
+  "nodes": [
+    {
+      "id": "N01",
+      "label": "PMSMF_S signal delivery",
+      "paper_part": "Thorlabs PM780-HP",
+      "planned_asset": "UNVERIFIED_NO_CURRENT_STEP",
+      "point_m": [
+        0.01,
+        0.5375,
+        0.1
+      ],
+      "ports": {
+        "fiber_out": {
+          "direction": "out",
+          "medium": "G810"
+        },
+        "source_in": {
+          "direction": "in",
+          "medium": "G810"
+        }
+      },
+      "role": "SRC_SIGNAL_FIBER",
+      "source_class": "PAPER_EXPLICIT",
+      "support_path_id": "S00_FIBER_SOURCE",
+      "world_coordinate_status": "DETERMINISTIC_FORWARD_TEST_PLACEMENT_NOT_PAPER_COORDINATE"
+    },
+    {
+      "id": "N02",
+      "label": "signal fiber collimator",
+      "paper_part": "Thorlabs F240FC-780",
+      "planned_asset": "Thorlabs F240FC-780 official STEP acquired",
+      "point_m": [
+        0.0375,
+        0.5375,
+        0.1
+      ],
+      "ports": {
+        "beam_out": {
+          "direction": "out",
+          "medium": "F810"
+        },
+        "fiber_in": {
+          "direction": "in",
+          "medium": "G810"
+        }
+      },
+      "role": "COL_SIGNAL",
+      "source_class": "PAPER_EXPLICIT",
+      "support_path_id": "S02_POST_TRANSMISSIVE",
+      "world_coordinate_status": "DETERMINISTIC_FORWARD_TEST_PLACEMENT_NOT_PAPER_COORDINATE"
+    },
+    {
+      "id": "N03",
+      "label": "input Glan-Thompson polarizer",
+      "paper_part": "Thorlabs GTH5-B",
+      "planned_asset": "Thorlabs GTH5-B official STEP acquired",
+      "point_m": [
+        0.1125,
+        0.5375,
+        0.1
+      ],
+      "ports": {
+        "in": {
+          "direction": "in",
+          "medium": "F810"
+        },
+        "out": {
+          "direction": "out",
+          "medium": "F810"
+        }
+      },
+      "role": "GT_INPUT",
+      "source_class": "PAPER_EXPLICIT",
+      "support_path_id": "S02_POST_TRANSMISSIVE",
+      "world_coordinate_status": "DETERMINISTIC_FORWARD_TEST_PLACEMENT_NOT_PAPER_COORDINATE"
+    },
+    {
+      "id": "N04",
+      "label": "first 50:50 beamsplitter and 633 nm auxiliary injection",
+      "paper_part": "Thorlabs BS014",
+      "planned_asset": "Thorlabs BS014 official STEP acquired",
+      "point_m": [
+        0.1875,
+        0.5375,
+        0.1
+      ],
+      "ports": {
+        "arm_A_633": {
+          "direction": "out",
+          "medium": "F633"
+        },
+        "arm_A_810": {
+          "direction": "out",
+          "medium": "F810"
+        },
+        "arm_B_633": {
+          "direction": "out",
+          "medium": "F633"
+        },
+        "arm_B_810": {
+          "direction": "out",
+          "medium": "F810"
+        },
+        "lock_in_633": {
+          "direction": "in",
+          "medium": "F633"
+        },
+        "signal_in_810": {
+          "direction": "in",
+          "medium": "F810"
+        }
+      },
+      "role": "BS1_SPLITTER",
+      "source_class": "PAPER_EXPLICIT",
+      "support_path_id": "S03_CUBE_BEAMSPLITTER",
+      "world_coordinate_status": "DETERMINISTIC_FORWARD_TEST_PLACEMENT_NOT_PAPER_COORDINATE"
+    },
+    {
+      "id": "N05",
+      "label": "arm-A compensation mirror 1",
+      "paper_part": "Newport NIR 5102",
+      "planned_asset": "Thorlabs BB1-E03 in KM100 forward substitute; not equivalent",
+      "point_m": [
+        0.1875,
+        0.0875,
+        0.1
+      ],
+      "ports": {
+        "in_633": {
+          "direction": "in",
+          "medium": "F633"
+        },
+        "in_810": {
+          "direction": "in",
+          "medium": "F810"
+        },
+        "out_633": {
+          "direction": "out",
+          "medium": "F633"
+        },
+        "out_810": {
+          "direction": "out",
+          "medium": "F810"
+        }
+      },
+      "role": "M_T1",
+      "source_class": "PAPER_EXPLICIT",
+      "support_path_id": "S01_POST_MIRROR",
+      "world_coordinate_status": "DETERMINISTIC_FORWARD_TEST_PLACEMENT_NOT_PAPER_COORDINATE"
+    },
+    {
+      "id": "N06",
+      "label": "arm-A compensation mirror 2",
+      "paper_part": "Newport NIR 5102",
+      "planned_asset": "Thorlabs BB1-E03 in KM100 forward substitute; not equivalent",
+      "point_m": [
+        0.3375,
+        0.0875,
+        0.1
+      ],
+      "ports": {
+        "in_633": {
+          "direction": "in",
+          "medium": "F633"
+        },
+        "in_810": {
+          "direction": "in",
+          "medium": "F810"
+        },
+        "out_633": {
+          "direction": "out",
+          "medium": "F633"
+        },
+        "out_810": {
+          "direction": "out",
+          "medium": "F810"
+        }
+      },
+      "role": "M_T2",
+      "source_class": "PAPER_EXPLICIT",
+      "support_path_id": "S01_POST_MIRROR",
+      "world_coordinate_status": "DETERMINISTIC_FORWARD_TEST_PLACEMENT_NOT_PAPER_COORDINATE"
+    },
+    {
+      "id": "N07",
+      "label": "arm-A compensation mirror 3",
+      "paper_part": "Newport NIR 5102",
+      "planned_asset": "Thorlabs BB1-E03 in KM100 forward substitute; not equivalent",
+      "point_m": [
+        0.3375,
+        0.2375,
+        0.1
+      ],
+      "ports": {
+        "in_633": {
+          "direction": "in",
+          "medium": "F633"
+        },
+        "in_810": {
+          "direction": "in",
+          "medium": "F810"
+        },
+        "out_633": {
+          "direction": "out",
+          "medium": "F633"
+        },
+        "out_810": {
+          "direction": "out",
+          "medium": "F810"
+        }
+      },
+      "role": "M_T3",
+      "source_class": "PAPER_EXPLICIT",
+      "support_path_id": "S01_POST_MIRROR",
+      "world_coordinate_status": "DETERMINISTIC_FORWARD_TEST_PLACEMENT_NOT_PAPER_COORDINATE"
+    },
+    {
+      "id": "N08",
+      "label": "arm-A polarization purifier",
+      "paper_part": "PBS_T",
+      "planned_asset": "modeled envelope only until an official model is selected",
+      "point_m": [
+        0.4125,
+        0.2375,
+        0.1
+      ],
+      "ports": {
+        "in_633": {
+          "direction": "in",
+          "medium": "F633"
+        },
+        "in_810": {
+          "direction": "in",
+          "medium": "F810"
+        },
+        "out_633": {
+          "direction": "out",
+          "medium": "F633"
+        },
+        "out_810": {
+          "direction": "out",
+          "medium": "F810"
+        }
+      },
+      "role": "PBS_T_PRESELECT",
+      "source_class": "PAPER_EXPLICIT_MODEL_UNSPECIFIED",
+      "support_path_id": "S11_CUSTOM_OR_THIRDPARTY",
+      "world_coordinate_status": "DETERMINISTIC_FORWARD_TEST_PLACEMENT_NOT_PAPER_COORDINATE"
+    },
+    {
+      "id": "N09",
+      "label": "tilted parallel window for Y pointer shift",
+      "paper_part": "Thorlabs WG41010-B",
+      "planned_asset": "Thorlabs WG41010-B official STEP acquired",
+      "point_m": [
+        0.4875,
+        0.2375,
+        0.1
+      ],
+      "ports": {
+        "in_633": {
+          "direction": "in",
+          "medium": "F633"
+        },
+        "in_810": {
+          "direction": "in",
+          "medium": "F810"
+        },
+        "out_633": {
+          "direction": "out",
+          "medium": "F633"
+        },
+        "out_810": {
+          "direction": "out",
+          "medium": "F810"
+        }
+      },
+      "role": "GP_Y_WEAK",
+      "source_class": "PAPER_EXPLICIT",
+      "support_path_id": "S02_POST_TRANSMISSIVE",
+      "world_coordinate_status": "DETERMINISTIC_FORWARD_TEST_PLACEMENT_NOT_PAPER_COORDINATE"
+    },
+    {
+      "id": "N10",
+      "label": "arm-B polarizing route element",
+      "paper_part": "PBS_R",
+      "planned_asset": "modeled envelope only until an official model is selected",
+      "point_m": [
+        0.3875,
+        0.5125,
+        0.1
+      ],
+      "ports": {
+        "in_633": {
+          "direction": "in",
+          "medium": "F633"
+        },
+        "in_810": {
+          "direction": "in",
+          "medium": "F810"
+        },
+        "out_633": {
+          "direction": "out",
+          "medium": "F633"
+        },
+        "out_810": {
+          "direction": "out",
+          "medium": "F810"
+        }
+      },
+      "role": "PBS_R_ROUTE",
+      "source_class": "PAPER_EXPLICIT_MODEL_UNSPECIFIED",
+      "support_path_id": "S11_CUSTOM_OR_THIRDPARTY",
+      "world_coordinate_status": "DETERMINISTIC_FORWARD_TEST_PLACEMENT_NOT_PAPER_COORDINATE"
+    },
+    {
+      "id": "N11",
+      "label": "corner-cube delay and coarse translation assembly",
+      "paper_part": "Thorlabs PS976M-B on ZST225-B and 3D stage",
+      "planned_asset": "PS976M-B plus current ZST225B and PT3/M candidates; alias/interface unverified",
+      "point_m": [
+        0.8125,
+        0.55,
+        0.1
+      ],
+      "ports": {
+        "in_633": {
+          "direction": "in",
+          "medium": "F633"
+        },
+        "in_810": {
+          "direction": "in",
+          "medium": "F810"
+        },
+        "out_633": {
+          "direction": "out",
+          "medium": "F633"
+        },
+        "out_810": {
+          "direction": "out",
+          "medium": "F810"
+        },
+        "phase_motion_in": {
+          "direction": "in",
+          "medium": "MECH"
+        }
+      },
+      "role": "CCR_DELAY_OPTIC",
+      "source_class": "PAPER_EXPLICIT",
+      "subrole_points_m": {
+        "ccr_center": [
+          0.8125,
+          0.55,
+          0.1
+        ],
+        "retro_in": [
+          0.8125,
+          0.5125,
+          0.1
+        ],
+        "retro_out": [
+          0.8125,
+          0.5875,
+          0.1
+        ]
+      },
+      "support_path_id": "S04_CCR_STAGE",
+      "world_coordinate_status": "DETERMINISTIC_FORWARD_TEST_PLACEMENT_NOT_PAPER_COORDINATE"
+    },
+    {
+      "id": "N12",
+      "label": "arm-B return/alignment mirror",
+      "paper_part": "M_R",
+      "planned_asset": "Thorlabs BB1-E03 in KM100 forward substitute; not equivalent",
+      "point_m": [
+        0.5875,
+        0.5875,
+        0.1
+      ],
+      "ports": {
+        "in_633": {
+          "direction": "in",
+          "medium": "F633"
+        },
+        "in_810": {
+          "direction": "in",
+          "medium": "F810"
+        },
+        "out_633": {
+          "direction": "out",
+          "medium": "F633"
+        },
+        "out_810": {
+          "direction": "out",
+          "medium": "F810"
+        }
+      },
+      "role": "M_R_ALIGN",
+      "source_class": "PAPER_EXPLICIT_MODEL_UNSPECIFIED",
+      "support_path_id": "S01_POST_MIRROR",
+      "world_coordinate_status": "DETERMINISTIC_FORWARD_TEST_PLACEMENT_NOT_PAPER_COORDINATE"
+    },
+    {
+      "id": "N13",
+      "label": "CCR polarization-compensation half-wave plate",
+      "paper_part": "Newlight WPA03-H-810",
+      "planned_asset": "Thorlabs WPH10M-808 forward substitute; not equivalent",
+      "point_m": [
+        0.5875,
+        0.5375,
+        0.1
+      ],
+      "ports": {
+        "in_633": {
+          "direction": "in",
+          "medium": "F633"
+        },
+        "in_810": {
+          "direction": "in",
+          "medium": "F810"
+        },
+        "out_633": {
+          "direction": "out",
+          "medium": "F633"
+        },
+        "out_810": {
+          "direction": "out",
+          "medium": "F810"
+        }
+      },
+      "role": "HWP_C",
+      "source_class": "PAPER_EXPLICIT",
+      "support_path_id": "S05_WAVEPLATE_ROTATION",
+      "world_coordinate_status": "DETERMINISTIC_FORWARD_TEST_PLACEMENT_NOT_PAPER_COORDINATE"
+    },
+    {
+      "id": "N14",
+      "label": "CCR polarization-compensation quarter-wave plate",
+      "paper_part": "Newlight WPA03-Q-810",
+      "planned_asset": "Thorlabs WPQ10M-808 forward substitute; not equivalent",
+      "point_m": [
+        0.5875,
+        0.4875,
+        0.1
+      ],
+      "ports": {
+        "in_633": {
+          "direction": "in",
+          "medium": "F633"
+        },
+        "in_810": {
+          "direction": "in",
+          "medium": "F810"
+        },
+        "out_633": {
+          "direction": "out",
+          "medium": "F633"
+        },
+        "out_810": {
+          "direction": "out",
+          "medium": "F810"
+        }
+      },
+      "role": "QWP_C",
+      "source_class": "PAPER_EXPLICIT",
+      "support_path_id": "S05_WAVEPLATE_ROTATION",
+      "world_coordinate_status": "DETERMINISTIC_FORWARD_TEST_PLACEMENT_NOT_PAPER_COORDINATE"
+    },
+    {
+      "id": "N15",
+      "label": "composite beam-displacer weak interaction",
+      "ordered_internal_roles": [
+        "HWP1",
+        "PBD1",
+        "HWP2",
+        "PBD2",
+        "HWP3",
+        "HWP4"
+      ],
+      "paper_part": "HWP1-PBD1-HWP2-PBD2-HWP3-HWP4; Newlight WPA03-H-810 and PDC 12005",
+      "planned_asset": "third-party/custom private-only modeled subassembly; no public third-party CAD",
+      "point_m": [
+        0.5875,
+        0.3625,
+        0.1
+      ],
+      "ports": {
+        "in_633": {
+          "direction": "in",
+          "medium": "F633"
+        },
+        "in_810": {
+          "direction": "in",
+          "medium": "F810"
+        },
+        "out_633": {
+          "direction": "out",
+          "medium": "F633"
+        },
+        "out_810": {
+          "direction": "out",
+          "medium": "F810"
+        }
+      },
+      "role": "SIGMA1_COMPOSITE",
+      "source_class": "PAPER_EXPLICIT_COMPOUND",
+      "subrole_points_m": {
+        "HWP1": [
+          0.5875,
+          0.4375,
+          0.1
+        ],
+        "HWP2": [
+          0.5875,
+          0.3875,
+          0.1
+        ],
+        "HWP3": [
+          0.5875,
+          0.3375,
+          0.1
+        ],
+        "HWP4": [
+          0.5875,
+          0.2875,
+          0.1
+        ],
+        "PBD1": [
+          0.5875,
+          0.4125,
+          0.1
+        ],
+        "PBD2": [
+          0.5875,
+          0.3625,
+          0.1
+        ]
+      },
+      "support_path_id": "S11_CUSTOM_OR_THIRDPARTY",
+      "world_coordinate_status": "DETERMINISTIC_FORWARD_TEST_PLACEMENT_NOT_PAPER_COORDINATE"
+    },
+    {
+      "id": "N16",
+      "label": "second beamsplitter, true arm recombination",
+      "paper_part": "Thorlabs BS014",
+      "planned_asset": "Thorlabs BS014 official STEP acquired",
+      "point_m": [
+        0.5875,
+        0.2375,
+        0.1
+      ],
+      "ports": {
+        "arm_A_633": {
+          "direction": "in",
+          "medium": "F633"
+        },
+        "arm_A_810": {
+          "direction": "in",
+          "medium": "F810"
+        },
+        "arm_B_633": {
+          "direction": "in",
+          "medium": "F633"
+        },
+        "arm_B_810": {
+          "direction": "in",
+          "medium": "F810"
+        },
+        "aux_810": {
+          "direction": "out",
+          "medium": "F810"
+        },
+        "lock_aux_633": {
+          "direction": "out",
+          "medium": "F633"
+        },
+        "lock_post_633": {
+          "direction": "out",
+          "medium": "F633"
+        },
+        "post_810": {
+          "direction": "out",
+          "medium": "F810"
+        }
+      },
+      "role": "BS2_RECOMBINER",
+      "source_class": "PAPER_EXPLICIT",
+      "support_path_id": "S03_CUBE_BEAMSPLITTER",
+      "world_coordinate_status": "DETERMINISTIC_FORWARD_TEST_PLACEMENT_NOT_PAPER_COORDINATE"
+    },
+    {
+      "id": "N17",
+      "label": "post-BS2 dichroic separator",
+      "paper_part": "Thorlabs DMLP735",
+      "planned_asset": "current DMLP735B forward substitute only; not paper-equivalent",
+      "point_m": [
+        0.6625,
+        0.2375,
+        0.1
+      ],
+      "ports": {
+        "in_633": {
+          "direction": "in",
+          "medium": "F633"
+        },
+        "in_810": {
+          "direction": "in",
+          "medium": "F810"
+        },
+        "reflect_633": {
+          "direction": "out",
+          "medium": "F633"
+        },
+        "transmit_810": {
+          "direction": "out",
+          "medium": "F810"
+        }
+      },
+      "role": "DM_735_LOCK_SEPARATOR",
+      "source_class": "PAPER_EXPLICIT",
+      "support_path_id": "S02_POST_TRANSMISSIVE",
+      "world_coordinate_status": "DETERMINISTIC_FORWARD_TEST_PLACEMENT_NOT_PAPER_COORDINATE"
+    },
+    {
+      "id": "N18",
+      "label": "post-recombination aperture",
+      "paper_part": "Aperture",
+      "planned_asset": "Thorlabs SM1D12C forward-test candidate",
+      "point_m": [
+        0.7375,
+        0.2375,
+        0.1
+      ],
+      "ports": {
+        "in": {
+          "direction": "in",
+          "medium": "F810"
+        },
+        "out": {
+          "direction": "out",
+          "medium": "F810"
+        }
+      },
+      "role": "APERTURE_POST",
+      "source_class": "PAPER_EXPLICIT_MODEL_UNSPECIFIED",
+      "support_path_id": "S06_IRIS_APERTURE",
+      "world_coordinate_status": "DETERMINISTIC_FORWARD_TEST_PLACEMENT_NOT_PAPER_COORDINATE"
+    },
+    {
+      "id": "N19",
+      "label": "motorized post-selection half-wave plate",
+      "paper_part": "Castech WPZ0-200-L/2-810 in Thorlabs PRM1/MZ8",
+      "planned_asset": "official PRM1/MZ8 mount plus WPH10M-808 substitute; optic not equivalent",
+      "point_m": [
+        0.8125,
+        0.2375,
+        0.1
+      ],
+      "ports": {
+        "angle_command": {
+          "direction": "in",
+          "medium": "CTRL"
+        },
+        "in": {
+          "direction": "in",
+          "medium": "F810"
+        },
+        "out": {
+          "direction": "out",
+          "medium": "F810"
+        }
+      },
+      "role": "HWP_POST",
+      "source_class": "PAPER_EXPLICIT",
+      "support_path_id": "S05_WAVEPLATE_ROTATION",
+      "world_coordinate_status": "DETERMINISTIC_FORWARD_TEST_PLACEMENT_NOT_PAPER_COORDINATE"
+    },
+    {
+      "id": "N20",
+      "label": "post-selection polarizing beamsplitter",
+      "paper_part": "PBS_post",
+      "planned_asset": "modeled envelope only until an official model is selected",
+      "point_m": [
+        0.8875,
+        0.2375,
+        0.1
+      ],
+      "ports": {
+        "in": {
+          "direction": "in",
+          "medium": "F810"
+        },
+        "reject": {
+          "direction": "out",
+          "medium": "F810"
+        },
+        "selected": {
+          "direction": "out",
+          "medium": "F810"
+        }
+      },
+      "role": "PBS_POST",
+      "source_class": "PAPER_EXPLICIT_MODEL_UNSPECIFIED",
+      "subrole_points_m": {
+        "reject_dump": [
+          0.8875,
+          0.4375,
+          0.1
+        ],
+        "selected": [
+          0.8875,
+          0.2375,
+          0.1
+        ]
+      },
+      "support_path_id": "S11_CUSTOM_OR_THIRDPARTY",
+      "world_coordinate_status": "DETERMINISTIC_FORWARD_TEST_PLACEMENT_NOT_PAPER_COORDINATE"
+    },
+    {
+      "id": "N21",
+      "label": "10 nm band-pass filter",
+      "paper_part": "Thorlabs FB810-10",
+      "planned_asset": "Thorlabs FB810-10 official STEP acquired",
+      "point_m": [
+        0.9625,
+        0.2375,
+        0.1
+      ],
+      "ports": {
+        "in": {
+          "direction": "in",
+          "medium": "F810"
+        },
+        "out": {
+          "direction": "out",
+          "medium": "F810"
+        }
+      },
+      "role": "BP10_810",
+      "source_class": "PAPER_EXPLICIT",
+      "support_path_id": "S02_POST_TRANSMISSIVE",
+      "world_coordinate_status": "DETERMINISTIC_FORWARD_TEST_PLACEMENT_NOT_PAPER_COORDINATE"
+    },
+    {
+      "id": "N22",
+      "label": "3 nm band-pass filter",
+      "paper_part": "Semrock LL01-810-25",
+      "planned_asset": "third-party optic in Thorlabs LMR1/M forward-test mount; optic CAD excluded",
+      "point_m": [
+        1.0375,
+        0.2375,
+        0.1
+      ],
+      "ports": {
+        "in": {
+          "direction": "in",
+          "medium": "F810"
+        },
+        "out": {
+          "direction": "out",
+          "medium": "F810"
+        }
+      },
+      "role": "BP3_810",
+      "source_class": "PAPER_EXPLICIT",
+      "support_path_id": "S02_POST_TRANSMISSIVE",
+      "world_coordinate_status": "DETERMINISTIC_FORWARD_TEST_PLACEMENT_NOT_PAPER_COORDINATE"
+    },
+    {
+      "id": "N23",
+      "label": "50:50 X/Y readout splitter",
+      "paper_part": "Thorlabs BS014",
+      "planned_asset": "Thorlabs BS014 official STEP acquired",
+      "point_m": [
+        1.1125,
+        0.2375,
+        0.1
+      ],
+      "ports": {
+        "in": {
+          "direction": "in",
+          "medium": "F810"
+        },
+        "x_out": {
+          "direction": "out",
+          "medium": "F810"
+        },
+        "y_out": {
+          "direction": "out",
+          "medium": "F810"
+        }
+      },
+      "role": "BS3_READOUT_SPLITTER",
+      "source_class": "PAPER_EXPLICIT",
+      "support_path_id": "S03_CUBE_BEAMSPLITTER",
+      "world_coordinate_status": "DETERMINISTIC_FORWARD_TEST_PLACEMENT_NOT_PAPER_COORDINATE"
+    },
+    {
+      "id": "N24",
+      "label": "X-readout steering mirror",
+      "paper_part": "M_Dx",
+      "planned_asset": "Thorlabs BB1-E03 in KM100 forward substitute",
+      "point_m": [
+        1.1875,
+        0.2375,
+        0.1
+      ],
+      "ports": {
+        "in": {
+          "direction": "in",
+          "medium": "F810"
+        },
+        "out": {
+          "direction": "out",
+          "medium": "F810"
+        }
+      },
+      "role": "M_DX",
+      "source_class": "PAPER_EXPLICIT_MODEL_UNSPECIFIED",
+      "support_path_id": "S01_POST_MIRROR",
+      "world_coordinate_status": "DETERMINISTIC_FORWARD_TEST_PLACEMENT_NOT_PAPER_COORDINATE"
+    },
+    {
+      "id": "N25",
+      "label": "X-readout fold/dichroic element",
+      "paper_part": "DM_x",
+      "planned_asset": "modeled envelope until spectral function and model are locked",
+      "point_m": [
+        1.1875,
+        0.3125,
+        0.1
+      ],
+      "ports": {
+        "in": {
+          "direction": "in",
+          "medium": "F810"
+        },
+        "out": {
+          "direction": "out",
+          "medium": "F810"
+        }
+      },
+      "role": "DM_X",
+      "source_class": "PAPER_EXPLICIT_MODEL_UNSPECIFIED",
+      "support_path_id": "S11_CUSTOM_OR_THIRDPARTY",
+      "world_coordinate_status": "DETERMINISTIC_FORWARD_TEST_PLACEMENT_NOT_PAPER_COORDINATE"
+    },
+    {
+      "id": "N26",
+      "label": "X-channel cylindrical lens followed by branch BP10",
+      "ordered_internal_roles": [
+        "CL_x",
+        "BP10_x"
+      ],
+      "paper_part": "CL_x followed by BP10_x",
+      "planned_asset": "Thorlabs LJ1695L1-B in CH1A plus FB810-10 forward-test candidates",
+      "point_m": [
+        1.1875,
+        0.425,
+        0.1
+      ],
+      "ports": {
+        "in": {
+          "direction": "in",
+          "medium": "F810"
+        },
+        "out": {
+          "direction": "out",
+          "medium": "F810"
+        }
+      },
+      "role": "X_FOCUS_FILTER_GROUP",
+      "source_class": "PAPER_EXPLICIT_COMPOUND",
+      "subrole_points_m": {
+        "BP10_x": [
+          1.1875,
+          0.4625,
+          0.1
+        ],
+        "CL_x": [
+          1.1875,
+          0.3875,
+          0.1
+        ]
+      },
+      "support_path_id": "S07_CYLINDRICAL_LENS",
+      "world_coordinate_status": "DETERMINISTIC_FORWARD_TEST_PLACEMENT_NOT_PAPER_COORDINATE"
+    },
+    {
+      "id": "N27",
+      "label": "translated bare multimode-fiber sampling tip",
+      "paper_part": "Thorlabs M42L02",
+      "planned_asset": "Thorlabs M42L02 official STEP acquired",
+      "point_m": [
+        1.1875,
+        0.5375,
+        0.1
+      ],
+      "ports": {
+        "free_space_in": {
+          "direction": "in",
+          "medium": "F810"
+        },
+        "guided_out": {
+          "direction": "out",
+          "medium": "G810"
+        },
+        "scan_motion_in": {
+          "direction": "in",
+          "medium": "MECH"
+        }
+      },
+      "role": "MMF_X",
+      "source_class": "PAPER_EXPLICIT",
+      "support_path_id": "S08_DETECTOR_FIBER",
+      "world_coordinate_status": "DETERMINISTIC_FORWARD_TEST_PLACEMENT_NOT_PAPER_COORDINATE"
+    },
+    {
+      "id": "N28",
+      "label": "X-channel single-photon detector",
+      "paper_part": "PicoQuant Tau SPAD-20",
+      "planned_asset": "Thorlabs SPDMH2 visual/mechanical substitute only; detection equivalence blocked",
+      "point_m": [
+        1.0875,
+        0.5625,
+        0.1
+      ],
+      "ports": {
+        "events_out": {
+          "direction": "out",
+          "medium": "ELEC"
+        },
+        "optical_in": {
+          "direction": "in",
+          "medium": "G810"
+        }
+      },
+      "role": "DET_X",
+      "source_class": "PAPER_EXPLICIT",
+      "support_path_id": "S08_DETECTOR_FIBER",
+      "world_coordinate_status": "DETERMINISTIC_FORWARD_TEST_PLACEMENT_NOT_PAPER_COORDINATE"
+    },
+    {
+      "id": "N29",
+      "label": "Y-readout fold/dichroic element",
+      "paper_part": "DM_y",
+      "planned_asset": "modeled envelope until spectral function and model are locked",
+      "point_m": [
+        1.1125,
+        0.0625,
+        0.1
+      ],
+      "ports": {
+        "in": {
+          "direction": "in",
+          "medium": "F810"
+        },
+        "out": {
+          "direction": "out",
+          "medium": "F810"
+        }
+      },
+      "role": "DM_Y",
+      "source_class": "PAPER_EXPLICIT_MODEL_UNSPECIFIED",
+      "support_path_id": "S11_CUSTOM_OR_THIRDPARTY",
+      "world_coordinate_status": "DETERMINISTIC_FORWARD_TEST_PLACEMENT_NOT_PAPER_COORDINATE"
+    },
+    {
+      "id": "N30",
+      "label": "Y-channel two-cylindrical-lens group followed by branch BP10",
+      "ordered_internal_roles": [
+        "CL_y1",
+        "CL_y2",
+        "BP10_y"
+      ],
+      "paper_part": "CL_y1, CL_y2, and BP10_y",
+      "planned_asset": "two Thorlabs LJ1695L1-B in CH1A plus FB810-10 forward-test candidates",
+      "point_m": [
+        0.9375,
+        0.0625,
+        0.1
+      ],
+      "ports": {
+        "in": {
+          "direction": "in",
+          "medium": "F810"
+        },
+        "out": {
+          "direction": "out",
+          "medium": "F810"
+        }
+      },
+      "role": "Y_FOCUS_FILTER_GROUP",
+      "source_class": "PAPER_EXPLICIT_COMPOUND",
+      "subrole_points_m": {
+        "BP10_y": [
+          0.8625,
+          0.0625,
+          0.1
+        ],
+        "CL_y1": [
+          1.0125,
+          0.0625,
+          0.1
+        ],
+        "CL_y2": [
+          0.9375,
+          0.0625,
+          0.1
+        ]
+      },
+      "support_path_id": "S07_CYLINDRICAL_LENS",
+      "world_coordinate_status": "DETERMINISTIC_FORWARD_TEST_PLACEMENT_NOT_PAPER_COORDINATE"
+    },
+    {
+      "id": "N31",
+      "label": "translated bare multimode-fiber sampling tip",
+      "paper_part": "Thorlabs M42L02",
+      "planned_asset": "Thorlabs M42L02 official STEP acquired",
+      "point_m": [
+        0.7875,
+        0.0625,
+        0.1
+      ],
+      "ports": {
+        "free_space_in": {
+          "direction": "in",
+          "medium": "F810"
+        },
+        "guided_out": {
+          "direction": "out",
+          "medium": "G810"
+        },
+        "scan_motion_in": {
+          "direction": "in",
+          "medium": "MECH"
+        }
+      },
+      "role": "MMF_Y",
+      "source_class": "PAPER_EXPLICIT",
+      "support_path_id": "S08_DETECTOR_FIBER",
+      "world_coordinate_status": "DETERMINISTIC_FORWARD_TEST_PLACEMENT_NOT_PAPER_COORDINATE"
+    },
+    {
+      "id": "N32",
+      "label": "Y-channel single-photon detector",
+      "paper_part": "PicoQuant Tau SPAD-20",
+      "planned_asset": "Thorlabs SPDMH2 visual/mechanical substitute only; detection equivalence blocked",
+      "point_m": [
+        0.6875,
+        0.0375,
+        0.1
+      ],
+      "ports": {
+        "events_out": {
+          "direction": "out",
+          "medium": "ELEC"
+        },
+        "optical_in": {
+          "direction": "in",
+          "medium": "G810"
+        }
+      },
+      "role": "DET_Y",
+      "source_class": "PAPER_EXPLICIT",
+      "support_path_id": "S08_DETECTOR_FIBER",
+      "world_coordinate_status": "DETERMINISTIC_FORWARD_TEST_PLACEMENT_NOT_PAPER_COORDINATE"
+    },
+    {
+      "id": "N33",
+      "label": "herald detector",
+      "paper_part": "DET_R",
+      "planned_asset": "Thorlabs SPDMH2 visual/mechanical substitute only; source hardware remains out of scope",
+      "point_m": [
+        0.5375,
+        0.0375,
+        0.1
+      ],
+      "ports": {
+        "events_out": {
+          "direction": "out",
+          "medium": "ELEC"
+        },
+        "optical_in": {
+          "direction": "in",
+          "medium": "G810"
+        }
+      },
+      "role": "DET_R_HERALD",
+      "source_class": "PAPER_EXPLICIT_MODEL_NOT_LOCKED_IN_SELECTED_SCOPE",
+      "support_path_id": "S08_DETECTOR_FIBER",
+      "world_coordinate_status": "DETERMINISTIC_FORWARD_TEST_PLACEMENT_NOT_PAPER_COORDINATE"
+    },
+    {
+      "id": "N34",
+      "label": "633 nm He-Ne phase-lock laser",
+      "paper_part": "He Ne Laser",
+      "planned_asset": "modeled instrument envelope; no model claim",
+      "point_m": [
+        0.0125,
+        0.45,
+        0.1
+      ],
+      "ports": {
+        "beam_out": {
+          "direction": "out",
+          "medium": "F633"
+        }
+      },
+      "role": "HENE_LOCK_SOURCE",
+      "source_class": "PAPER_EXPLICIT_MODEL_UNSPECIFIED",
+      "support_path_id": "S09_ELECTRONICS_AND_LOCK_RACK",
+      "world_coordinate_status": "DETERMINISTIC_FORWARD_TEST_PLACEMENT_NOT_PAPER_COORDINATE"
+    },
+    {
+      "id": "N35",
+      "label": "633 nm conditioning and BS1 injection chain",
+      "ordered_internal_roles": [
+        "M_H1",
+        "HWP_H",
+        "COUP_H",
+        "PMSMF_H",
+        "COL_H",
+        "PBS_H",
+        "M_H2",
+        "L_H"
+      ],
+      "paper_part": "M_H1-HWP_H-COUP_H-PMSMF_H-COL_H-PBS_H-M_H2-L_H",
+      "planned_asset": "mixed official forward candidates and modeled envelopes; no equivalence claim",
+      "point_m": [
+        0.1875,
+        0.5875,
+        0.1
+      ],
+      "ports": {
+        "beam_in": {
+          "direction": "in",
+          "medium": "F633"
+        },
+        "beam_out": {
+          "direction": "out",
+          "medium": "F633"
+        }
+      },
+      "role": "LOCK_INJECTION_CHAIN",
+      "source_class": "PAPER_EXPLICIT_COMPOUND",
+      "subrole_points_m": {
+        "COL_H": [
+          0.2625,
+          0.5875,
+          0.1
+        ],
+        "COUP_H": [
+          0.1625,
+          0.45,
+          0.1
+        ],
+        "HWP_H": [
+          0.1125,
+          0.45,
+          0.1
+        ],
+        "L_H": [
+          0.1875,
+          0.5625,
+          0.1
+        ],
+        "M_H1": [
+          0.0625,
+          0.45,
+          0.1
+        ],
+        "M_H2": [
+          0.1875,
+          0.5875,
+          0.1
+        ],
+        "PBS_H": [
+          0.2375,
+          0.5875,
+          0.1
+        ],
+        "PMSMF_H": [
+          0.2125,
+          0.5,
+          0.1
+        ]
+      },
+      "support_path_id": "S09_ELECTRONICS_AND_LOCK_RACK",
+      "world_coordinate_status": "DETERMINISTIC_FORWARD_TEST_PLACEMENT_NOT_PAPER_COORDINATE"
+    },
+    {
+      "id": "N36",
+      "label": "two-arm lock-output routing, analyzers, filters, and removable 810 nm calibration branch",
+      "ordered_internal_roles": [
+        "plus steering: M_H4",
+        "minus steering: M_H3 when M_aux is removed",
+        "both spatially separated beams traverse one shared large-aperture QWP_H-GT_H-BP_H analyzer train",
+        "calibration: M_aux-Pol_diag-L_aux-BP3-DET10/M when M_aux is inserted"
+      ],
+      "paper_part": "M_H3/M_H4-QWP_H-GT_H-BP_H plus removable M_aux-Pol_diag-L_aux-BP3-DET10/M",
+      "planned_asset": "DET10A2 is current substitute for paper DET10/M; other elements need model locks",
+      "point_m": [
+        0.8375,
+        0.1625,
+        0.1
+      ],
+      "ports": {
+        "calibration_in_810": {
+          "direction": "in",
+          "medium": "F810"
+        },
+        "calibration_voltage_out": {
+          "direction": "out",
+          "medium": "ELEC"
+        },
+        "minus_in_633": {
+          "direction": "in",
+          "medium": "F633"
+        },
+        "minus_out_633": {
+          "direction": "out",
+          "medium": "F633"
+        },
+        "plus_in_633": {
+          "direction": "in",
+          "medium": "F633"
+        },
+        "plus_out_633": {
+          "direction": "out",
+          "medium": "F633"
+        }
+      },
+      "role": "LOCK_OUTPUT_ANALYZER",
+      "source_class": "PAPER_EXPLICIT_COMPOUND",
+      "subrole_points_m": {
+        "BP3_cal": [
+          0.3625,
+          0.175,
+          0.1
+        ],
+        "BP_H_shared": [
+          0.9625,
+          0.1625,
+          0.1
+        ],
+        "DET10_cal": [
+          0.2875,
+          0.175,
+          0.1
+        ],
+        "GT_H_shared": [
+          0.8625,
+          0.1625,
+          0.1
+        ],
+        "L_aux": [
+          0.4375,
+          0.175,
+          0.1
+        ],
+        "M_H3_minus": [
+          0.5875,
+          0.125,
+          0.1
+        ],
+        "M_H4_plus": [
+          0.6625,
+          0.2,
+          0.1
+        ],
+        "M_aux": [
+          0.5875,
+          0.175,
+          0.1
+        ],
+        "Pol_diag": [
+          0.5125,
+          0.175,
+          0.1
+        ],
+        "QWP_H_shared": [
+          0.7625,
+          0.1625,
+          0.1
+        ],
+        "aux_dump": [
+          0.5875,
+          0.0375,
+          0.1
+        ]
+      },
+      "support_path_id": "S09_ELECTRONICS_AND_LOCK_RACK",
+      "world_coordinate_status": "DETERMINISTIC_FORWARD_TEST_PLACEMENT_NOT_PAPER_COORDINATE"
+    },
+    {
+      "id": "N37",
+      "label": "633 nm differential detector",
+      "ordered_internal_roles": [
+        "PDA100A2_plus forward candidate",
+        "PDA100A2_minus forward candidate",
+        "modeled differential subtraction electronics"
+      ],
+      "paper_part": "Diff Det",
+      "planned_asset": "two PDA100A2 endpoints plus modeled subtraction electronics are forward-test candidates; not a balanced-performance claim",
+      "point_m": [
+        1.0875,
+        0.1625,
+        0.1
+      ],
+      "ports": {
+        "error_voltage_out": {
+          "direction": "out",
+          "medium": "ELEC"
+        },
+        "minus_optical_in": {
+          "direction": "in",
+          "medium": "F633"
+        },
+        "plus_optical_in": {
+          "direction": "in",
+          "medium": "F633"
+        }
+      },
+      "role": "DIFFERENTIAL_LOCK_DETECTOR",
+      "source_class": "PAPER_EXPLICIT_FUNCTION_FORWARD_COMPOUND",
+      "subrole_points_m": {
+        "minus": [
+          1.0875,
+          0.125,
+          0.1
+        ],
+        "plus": [
+          1.0875,
+          0.2,
+          0.1
+        ],
+        "subtract": [
+          1.215,
+          0.1625,
+          0.12
+        ]
+      },
+      "support_path_id": "S09_ELECTRONICS_AND_LOCK_RACK",
+      "world_coordinate_status": "DETERMINISTIC_FORWARD_TEST_PLACEMENT_NOT_PAPER_COORDINATE"
+    },
+    {
+      "id": "N38",
+      "label": "phase-lock data acquisition and voltage output",
+      "paper_part": "National Instruments USB-6003",
+      "planned_asset": "third-party instrument envelope; CAD excluded from public package",
+      "point_m": [
+        1.36,
+        0.18,
+        0.33
+      ],
+      "ports": {
+        "calibration_voltage_in": {
+          "direction": "in",
+          "medium": "ELEC"
+        },
+        "drive_command_in": {
+          "direction": "in",
+          "medium": "CTRL"
+        },
+        "drive_voltage_out": {
+          "direction": "out",
+          "medium": "CTRL"
+        },
+        "error_voltage_in": {
+          "direction": "in",
+          "medium": "ELEC"
+        },
+        "samples_out": {
+          "direction": "out",
+          "medium": "ELEC"
+        }
+      },
+      "role": "DAQ_USB6003",
+      "source_class": "PAPER_EXPLICIT",
+      "support_path_id": "S09_ELECTRONICS_AND_LOCK_RACK",
+      "world_coordinate_status": "DETERMINISTIC_FORWARD_TEST_PLACEMENT_NOT_PAPER_COORDINATE"
+    },
+    {
+      "id": "N39",
+      "label": "computer PID phase controller",
+      "paper_part": "software PID",
+      "planned_asset": "modeled computer envelope; algorithm parameters not reported",
+      "point_m": [
+        1.5,
+        0.18,
+        0.33
+      ],
+      "ports": {
+        "drive_command_out": {
+          "direction": "out",
+          "medium": "CTRL"
+        },
+        "samples_in": {
+          "direction": "in",
+          "medium": "ELEC"
+        }
+      },
+      "role": "SOFTWARE_PID",
+      "source_class": "PAPER_EXPLICIT",
+      "support_path_id": "S09_ELECTRONICS_AND_LOCK_RACK",
+      "world_coordinate_status": "DETERMINISTIC_FORWARD_TEST_PLACEMENT_NOT_PAPER_COORDINATE"
+    },
+    {
+      "id": "N40",
+      "label": "piezo attached to CCR",
+      "paper_part": "osi-stack piezo",
+      "planned_asset": "modeled actuator envelope; no official CAD/model claim",
+      "point_m": [
+        0.8875,
+        0.55,
+        0.1
+      ],
+      "ports": {
+        "displacement_out": {
+          "direction": "out",
+          "medium": "MECH"
+        },
+        "drive_voltage_in": {
+          "direction": "in",
+          "medium": "CTRL"
+        }
+      },
+      "role": "CCR_PIEZO_PHASE_ACTUATOR",
+      "source_class": "PAPER_EXPLICIT_MODEL_UNSPECIFIED",
+      "support_path_id": "S04_CCR_STAGE",
+      "world_coordinate_status": "DETERMINISTIC_FORWARD_TEST_PLACEMENT_NOT_PAPER_COORDINATE"
+    }
+  ],
+  "non_free_space_routes": [
+    {
+      "from": "N01",
+      "id": "G810_SOURCE",
+      "medium": "G810",
+      "status": "MODELED_GUIDED_ROUTE_BEND_RADIUS_TO_BE_AUDITED",
+      "to": "N02"
+    },
+    {
+      "from": "N27",
+      "id": "G810_X",
+      "medium": "G810",
+      "status": "MODELED_GUIDED_ROUTE_BEND_RADIUS_TO_BE_AUDITED",
+      "to": "N28"
+    },
+    {
+      "from": "N31",
+      "id": "G810_Y",
+      "medium": "G810",
+      "status": "MODELED_GUIDED_ROUTE_BEND_RADIUS_TO_BE_AUDITED",
+      "to": "N32"
+    },
+    {
+      "from": "EXT_HERALDED_SOURCE",
+      "id": "G810_HERALD",
+      "medium": "G810",
+      "status": "EXTERNAL_SOURCE_ENDPOINT_MODELED",
+      "to": "N33"
+    },
+    {
+      "from": "N35.COUP_H",
+      "id": "G633_LOCK",
+      "medium": "G633",
+      "status": "MODELED_GUIDED_ROUTE_BEND_RADIUS_TO_BE_AUDITED",
+      "to": "N35.COL_H"
+    },
+    {
+      "id": "CTRL_LOOP",
+      "medium": "ELEC/CTRL/MECH",
+      "ordered": [
+        "N37",
+        "N38",
+        "N39",
+        "N38",
+        "N40",
+        "N11"
+      ],
+      "status": "TOPOLOGY_CONNECTED; 633_TO_810_PHASE_MAPPING_UNVERIFIED"
+    }
+  ],
+  "operating_modes": {
+    "CALIBRATION_M_AUX_INSERTED": "M_aux and the diagonal-polarization DET10/M chain are inserted to calibrate differential 633 nm signal against the other BS2 810 nm output as a function of piezo voltage. The paper does not lock the simultaneous 633 nm minus-port transfer through or around inserted M_aux, so a closed differential loop is not asserted in this mode.",
+    "LOCK": "633 nm propagation upstream of the removable M_aux state; this label alone does not assert a closed differential loop.",
+    "LOCK_MEASUREMENT_M_AUX_REMOVED": "The M_aux-removed state exposes both published 633 nm BS2 outputs to the differential detector and closes the phase loop.",
+    "MEASUREMENT_M_AUX_REMOVED": "The removable M_aux calibration optic is out; the auxiliary 810 nm BS2 port is sent to a planned beam dump while the X/Y/herald endpoints operate.",
+    "mode_exclusivity": [
+      "E801 and E803 are mutually exclusive",
+      "E733 and E735-E740 are valid only in LOCK_MEASUREMENT_M_AUX_REMOVED",
+      "simultaneous CALIBRATION_M_AUX_INSERTED plus closed differential 633 nm feedback is UNVERIFIED"
+    ]
+  },
+  "schema": "full-40-node-propagation-topology-v1",
+  "scope": "FULL_40_CANONICAL_ROLE_PROPAGATION; NOT_FINAL_NOT_RELEASE",
+  "state_contract": [
+    {
+      "active_wavelengths_nm": [
+        810
+      ],
+      "aux_810_dump_route": "UNVERIFIED_M_H3_WAVELENGTH_SELECTIVITY",
+      "closed_633_loop": false,
+      "m_aux": "REMOVED",
+      "state": "MEASUREMENT_M_AUX_REMOVED"
+    },
+    {
+      "active_wavelengths_nm": [
+        633
+      ],
+      "closed_633_loop": "NOT_CLOSED; E733/E735/FEEDBACK_ARE_COMBINED_MODE_ONLY",
+      "m_aux": "REMOVED",
+      "state": "LOCK"
+    },
+    {
+      "active_wavelengths_nm": [
+        633,
+        810
+      ],
+      "closed_633_loop": "TOPOLOGY_PRESENT",
+      "m_aux": "REMOVED",
+      "phase_transfer_633_to_810": "UNVERIFIED",
+      "state": "LOCK_MEASUREMENT_M_AUX_REMOVED"
+    },
+    {
+      "active_wavelengths_nm": [
+        810
+      ],
+      "closed_633_loop": "NOT_ESTABLISHED_BY_SOURCE",
+      "m_aux": "INSERTED",
+      "state": "CALIBRATION_M_AUX_INSERTED"
+    }
+  ],
+  "status": "READY_FOR_FULL_PRIVATE_GEOMETRY_BUILD",
+  "support_contract_reference": {
+    "compound_subcomponent_assignments": {
+      "N15": {
+        "ordered_subroles": [
+          {
+            "id": "N15.HWP1",
+            "planned_chain": "BA1/M-PH75/M-TR75/M-RSP1/M-WPH10M-808",
+            "root": "R_OPTICAL",
+            "template": "S05_WAVEPLATE_ROTATION"
+          },
+          {
+            "id": "N15.PBD1",
+            "planned_chain": "modeled base-post-retainer-PDC12005 envelope",
+            "root": "R_OPTICAL",
+            "template": "S11_CUSTOM_OR_THIRDPARTY"
+          },
+          {
+            "id": "N15.HWP2",
+            "planned_chain": "BA1/M-PH75/M-TR75/M-RSP1/M-WPH10M-808",
+            "root": "R_OPTICAL",
+            "template": "S05_WAVEPLATE_ROTATION"
+          },
+          {
+            "id": "N15.PBD2",
+            "planned_chain": "modeled base-post-retainer-PDC12005 envelope",
+            "root": "R_OPTICAL",
+            "template": "S11_CUSTOM_OR_THIRDPARTY"
+          },
+          {
+            "id": "N15.HWP3",
+            "planned_chain": "BA1/M-PH75/M-TR75/M-RSP1/M-WPH10M-808",
+            "root": "R_OPTICAL",
+            "template": "S05_WAVEPLATE_ROTATION"
+          },
+          {
+            "id": "N15.HWP4",
+            "planned_chain": "BA1/M-PH75/M-TR75/M-RSP1/M-WPH10M-808",
+            "root": "R_OPTICAL",
+            "template": "S05_WAVEPLATE_ROTATION"
+          }
+        ],
+        "shared_structure": "modeled common subplate rooted to MB60120/M; each retainer and fastener remains unverified"
+      },
+      "N26": {
+        "ordered_subroles": [
+          {
+            "id": "N26.CL_x",
+            "planned_chain": "BA1/M-PH75/M-TR75/M-CH1A-LJ1695L1-B",
+            "root": "R_OPTICAL",
+            "template": "S07_CYLINDRICAL_LENS"
+          },
+          {
+            "id": "N26.BP10_x",
+            "planned_chain": "BA1/M-PH75/M-TR75/M-LMR1/M-FB810-10",
+            "root": "R_OPTICAL",
+            "template": "S02_POST_TRANSMISSIVE"
+          }
+        ]
+      },
+      "N30": {
+        "ordered_subroles": [
+          {
+            "id": "N30.CL_y1",
+            "planned_chain": "BA1/M-PH75/M-TR75/M-CH1A-LJ1695L1-B",
+            "root": "R_OPTICAL",
+            "template": "S07_CYLINDRICAL_LENS"
+          },
+          {
+            "id": "N30.CL_y2",
+            "planned_chain": "BA1/M-PH75/M-TR75/M-CH1A-LJ1695L1-B",
+            "root": "R_OPTICAL",
+            "template": "S07_CYLINDRICAL_LENS"
+          },
+          {
+            "id": "N30.BP10_y",
+            "planned_chain": "BA1/M-PH75/M-TR75/M-LMR1/M-FB810-10",
+            "root": "R_OPTICAL",
+            "template": "S02_POST_TRANSMISSIVE"
+          }
+        ]
+      },
+      "N35": {
+        "ordered_subroles": [
+          {
+            "id": "N35.M_H1",
+            "planned_chain": "modeled base-post-kinematic mirror mount-mirror envelope",
+            "root": "R_OPTICAL",
+            "template": "S11_CUSTOM_OR_THIRDPARTY"
+          },
+          {
+            "id": "N35.HWP_H",
+            "planned_chain": "modeled lock subplate-post-rotation mount-waveplate envelope",
+            "root": "R_OPTICAL",
+            "template": "S11_CUSTOM_OR_THIRDPARTY"
+          },
+          {
+            "id": "N35.COUP_H",
+            "planned_chain": "modeled launch base-fiber coupler-strain relief",
+            "root": "R_OPTICAL",
+            "template": "S00_FIBER_SOURCE"
+          },
+          {
+            "id": "N35.PMSMF_H",
+            "planned_chain": "fiber routing clips-strain relief with planned bend radius >=30 mm",
+            "root": "R_OPTICAL",
+            "template": "S00_FIBER_SOURCE"
+          },
+          {
+            "id": "N35.COL_H",
+            "planned_chain": "modeled base-post-collimator clamp-collimator envelope",
+            "root": "R_OPTICAL",
+            "template": "S11_CUSTOM_OR_THIRDPARTY"
+          },
+          {
+            "id": "N35.PBS_H",
+            "planned_chain": "modeled base-post-PBS retainer-PBS envelope",
+            "root": "R_OPTICAL",
+            "template": "S11_CUSTOM_OR_THIRDPARTY"
+          },
+          {
+            "id": "N35.M_H2",
+            "planned_chain": "modeled base-post-kinematic mirror mount-mirror envelope",
+            "root": "R_OPTICAL",
+            "template": "S11_CUSTOM_OR_THIRDPARTY"
+          },
+          {
+            "id": "N35.L_H",
+            "planned_chain": "modeled base-post-lens retainer-lens envelope",
+            "root": "R_OPTICAL",
+            "template": "S11_CUSTOM_OR_THIRDPARTY"
+          }
+        ]
+      },
+      "N36": {
+        "mode_rule": "minus-route and calibration-route M_aux states are mutually exclusive; simultaneous 633 nm closed-loop transfer in calibration is UNVERIFIED",
+        "ordered_subroles": [
+          {
+            "branch": "plus",
+            "id": "N36.M_H4",
+            "planned_chain": "modeled base-post-kinematic mirror mount-mirror envelope",
+            "root": "R_OPTICAL",
+            "template": "S11_CUSTOM_OR_THIRDPARTY"
+          },
+          {
+            "branch": "minus",
+            "id": "N36.M_H3",
+            "planned_chain": "modeled base-post-kinematic mirror mount-mirror envelope",
+            "root": "R_OPTICAL",
+            "template": "S11_CUSTOM_OR_THIRDPARTY"
+          },
+          {
+            "branch": "shared two-beam analyzer",
+            "id": "N36.QWP_H_shared",
+            "optical_footprints": [
+              "plus_633",
+              "minus_633"
+            ],
+            "planned_chain": "BA1/M-PH75/M-TR75/M-RSP1/M-WPQ10M-808",
+            "root": "R_OPTICAL",
+            "template": "S05_WAVEPLATE_ROTATION"
+          },
+          {
+            "branch": "shared two-beam analyzer",
+            "id": "N36.GT_H_shared",
+            "optical_footprints": [
+              "plus_633",
+              "minus_633"
+            ],
+            "planned_chain": "modeled base-post-large-aperture polarizer retainer-polarizer envelope",
+            "root": "R_OPTICAL",
+            "template": "S11_CUSTOM_OR_THIRDPARTY"
+          },
+          {
+            "branch": "shared two-beam analyzer",
+            "id": "N36.BP_H_shared",
+            "optical_footprints": [
+              "plus_633",
+              "minus_633"
+            ],
+            "planned_chain": "modeled base-post-large-aperture filter retainer-filter envelope",
+            "root": "R_OPTICAL",
+            "template": "S11_CUSTOM_OR_THIRDPARTY"
+          },
+          {
+            "branch": "calibration conditional",
+            "id": "N36.M_aux",
+            "planned_chain": "modeled removable kinematic carrier-mirror envelope",
+            "root": "R_OPTICAL",
+            "template": "S11_CUSTOM_OR_THIRDPARTY"
+          },
+          {
+            "branch": "calibration",
+            "id": "N36.Pol_diag",
+            "planned_chain": "modeled base-post-polarizer retainer-polarizer envelope",
+            "root": "R_OPTICAL",
+            "template": "S11_CUSTOM_OR_THIRDPARTY"
+          },
+          {
+            "branch": "calibration",
+            "id": "N36.L_aux",
+            "planned_chain": "modeled base-post-lens retainer-lens envelope",
+            "root": "R_OPTICAL",
+            "template": "S11_CUSTOM_OR_THIRDPARTY"
+          },
+          {
+            "branch": "calibration",
+            "id": "N36.BP3_aux",
+            "planned_chain": "modeled base-post-filter retainer-third-party filter envelope",
+            "root": "R_OPTICAL",
+            "template": "S11_CUSTOM_OR_THIRDPARTY"
+          },
+          {
+            "branch": "calibration",
+            "id": "N36.DET10_cal",
+            "planned_chain": "BA1/M-PH75/M-TR75/M-modeled detector adapter-DET10A2",
+            "root": "R_OPTICAL",
+            "template": "S09_ELECTRONICS_AND_LOCK_RACK"
+          }
+        ],
+        "shared_analyzer_rule": "QWP_H, GT_H, and BP_H are each one physical large-aperture element with two unresolved spatial footprints, not duplicated plus/minus hardware."
+      },
+      "N37": {
+        "claim_boundary": "This is a forward-test implementation of the paper's Diff Det role; bandwidth, gain matching, CMRR, noise, and balanced performance are BLOCKED.",
+        "ordered_subroles": [
+          {
+            "id": "N37.PD_plus",
+            "planned_chain": "modeled detector subplate-chassis feet-PDA100A2 plus detector-cable strain relief",
+            "root": "R_OPTICAL",
+            "template": "S09_ELECTRONICS_AND_LOCK_RACK"
+          },
+          {
+            "id": "N37.PD_minus",
+            "planned_chain": "modeled detector subplate-chassis feet-PDA100A2 minus detector-cable strain relief",
+            "root": "R_OPTICAL",
+            "template": "S09_ELECTRONICS_AND_LOCK_RACK"
+          },
+          {
+            "id": "N37.SUBTRACT",
+            "planned_chain": "independent rack shelf-modeled subtraction electronics-cable strain relief",
+            "root": "R_ELECTRONICS",
+            "template": "S09_ELECTRONICS_AND_LOCK_RACK"
+          }
+        ]
+      }
+    },
+    "node_assignments": {
+      "N01": {
+        "template": "S00_FIBER_SOURCE",
+        "variant": "fiber cable and source handoff"
+      },
+      "N02": {
+        "template": "S02_POST_TRANSMISSIVE",
+        "variant": "fiber collimator; ferrule strain relief also governed by S00"
+      },
+      "N03": {
+        "template": "S02_POST_TRANSMISSIVE",
+        "variant": "Glan-Thompson polarizer"
+      },
+      "N04": {
+        "template": "S03_CUBE_BEAMSPLITTER",
+        "variant": "BS1"
+      },
+      "N05": {
+        "template": "S01_POST_MIRROR",
+        "variant": "M_T1"
+      },
+      "N06": {
+        "template": "S01_POST_MIRROR",
+        "variant": "M_T2"
+      },
+      "N07": {
+        "template": "S01_POST_MIRROR",
+        "variant": "M_T3"
+      },
+      "N08": {
+        "template": "S11_CUSTOM_OR_THIRDPARTY",
+        "variant": "PBS_T"
+      },
+      "N09": {
+        "template": "S02_POST_TRANSMISSIVE",
+        "variant": "tiltable parallel window; tilt mechanism unresolved"
+      },
+      "N10": {
+        "template": "S11_CUSTOM_OR_THIRDPARTY",
+        "variant": "PBS_R"
+      },
+      "N11": {
+        "template": "S04_CCR_STAGE",
+        "variant": "CCR and coarse carrier"
+      },
+      "N12": {
+        "template": "S01_POST_MIRROR",
+        "variant": "M_R"
+      },
+      "N13": {
+        "template": "S05_WAVEPLATE_ROTATION",
+        "variant": "HWP_C"
+      },
+      "N14": {
+        "template": "S05_WAVEPLATE_ROTATION",
+        "variant": "QWP_C"
+      },
+      "N15": {
+        "template": "S11_CUSTOM_OR_THIRDPARTY",
+        "variant": "six-element sigma1 stack on common modeled subplate"
+      },
+      "N16": {
+        "template": "S03_CUBE_BEAMSPLITTER",
+        "variant": "BS2 recombiner"
+      },
+      "N17": {
+        "template": "S02_POST_TRANSMISSIVE",
+        "variant": "dichroic separator"
+      },
+      "N18": {
+        "template": "S06_IRIS_APERTURE",
+        "variant": "post aperture"
+      },
+      "N19": {
+        "template": "S05_WAVEPLATE_ROTATION",
+        "variant": "motorized HWP_post"
+      },
+      "N20": {
+        "template": "S11_CUSTOM_OR_THIRDPARTY",
+        "variant": "PBS_post with reject-port dump"
+      },
+      "N21": {
+        "template": "S02_POST_TRANSMISSIVE",
+        "variant": "FB810-10"
+      },
+      "N22": {
+        "template": "S02_POST_TRANSMISSIVE",
+        "variant": "third-party 3 nm filter envelope retained in LMR1/M; optic/mount fit unverified"
+      },
+      "N23": {
+        "template": "S03_CUBE_BEAMSPLITTER",
+        "variant": "BS3 X/Y splitter"
+      },
+      "N24": {
+        "template": "S01_POST_MIRROR",
+        "variant": "M_Dx"
+      },
+      "N25": {
+        "template": "S11_CUSTOM_OR_THIRDPARTY",
+        "variant": "DM_x"
+      },
+      "N26": {
+        "template": "S07_CYLINDRICAL_LENS",
+        "variant": "CL_x then independently supported BP10_x"
+      },
+      "N27": {
+        "template": "S08_DETECTOR_FIBER",
+        "variant": "translated MMF_x tip"
+      },
+      "N28": {
+        "template": "S08_DETECTOR_FIBER",
+        "variant": "DET_x chassis and cable"
+      },
+      "N29": {
+        "template": "S11_CUSTOM_OR_THIRDPARTY",
+        "variant": "DM_y"
+      },
+      "N30": {
+        "template": "S07_CYLINDRICAL_LENS",
+        "variant": "two independent CL_y mounts followed by independently supported BP10_y"
+      },
+      "N31": {
+        "template": "S08_DETECTOR_FIBER",
+        "variant": "translated MMF_y tip"
+      },
+      "N32": {
+        "template": "S08_DETECTOR_FIBER",
+        "variant": "DET_y chassis and cable"
+      },
+      "N33": {
+        "template": "S08_DETECTOR_FIBER",
+        "variant": "DET_R herald chassis and cable"
+      },
+      "N34": {
+        "template": "S09_ELECTRONICS_AND_LOCK_RACK",
+        "variant": "R_OPTICAL lock-optics subplate; He-Ne chassis"
+      },
+      "N35": {
+        "template": "S09_ELECTRONICS_AND_LOCK_RACK",
+        "variant": "R_OPTICAL injection subplate with fiber strain relief"
+      },
+      "N36": {
+        "template": "S09_ELECTRONICS_AND_LOCK_RACK",
+        "variant": "R_OPTICAL two-channel analyzer and removable calibration rail"
+      },
+      "N37": {
+        "template": "S09_ELECTRONICS_AND_LOCK_RACK",
+        "variant": "two R_OPTICAL detector chassis plus R_ELECTRONICS subtraction module; see subcomponent map"
+      },
+      "N38": {
+        "template": "S09_ELECTRONICS_AND_LOCK_RACK",
+        "variant": "R_ELECTRONICS independent DAQ shelf"
+      },
+      "N39": {
+        "template": "S09_ELECTRONICS_AND_LOCK_RACK",
+        "variant": "R_ELECTRONICS independent computer shelf"
+      },
+      "N40": {
+        "template": "S04_CCR_STAGE",
+        "variant": "piezo physically clamped to CCR carrier; cable closes through strain relief"
+      }
+    },
+    "status": "PARTIAL_SCOPED_ROLE_AND_SUBROLE_SUPPORT_PLAN_PHYSICAL_EVIDENCE_UNVERIFIED"
+  },
+  "zero_radius_rays": [
+    {
+      "expected_roles": [
+        "N03",
+        "N04"
+      ],
+      "id": "R810_COMMON",
+      "medium": "F810",
+      "points_m": [
+        [
+          0.0375,
+          0.5375,
+          0.1
+        ],
+        [
+          0.1125,
+          0.5375,
+          0.1
+        ],
+        [
+          0.1875,
+          0.5375,
+          0.1
+        ]
+      ],
+      "state": "MEASUREMENT_M_AUX_REMOVED",
+      "wavelength_nm": 810
+    },
+    {
+      "expected_roles": [
+        "N05",
+        "N06",
+        "N07",
+        "N08",
+        "N09",
+        "N16"
+      ],
+      "id": "R810_ARM_A",
+      "medium": "F810",
+      "points_m": [
+        [
+          0.1875,
+          0.5375,
+          0.1
+        ],
+        [
+          0.1875,
+          0.0875,
+          0.1
+        ],
+        [
+          0.3375,
+          0.0875,
+          0.1
+        ],
+        [
+          0.3375,
+          0.2375,
+          0.1
+        ],
+        [
+          0.4125,
+          0.2375,
+          0.1
+        ],
+        [
+          0.4875,
+          0.2375,
+          0.1
+        ],
+        [
+          0.5875,
+          0.2375,
+          0.1
+        ]
+      ],
+      "state": "MEASUREMENT_M_AUX_REMOVED",
+      "wavelength_nm": 810
+    },
+    {
+      "expected_roles": [
+        "N10",
+        "N11.retro_in"
+      ],
+      "id": "R810_ARM_B_PRE_CCR",
+      "medium": "F810",
+      "points_m": [
+        [
+          0.1875,
+          0.5375,
+          0.1
+        ],
+        [
+          0.3875,
+          0.5125,
+          0.1
+        ],
+        [
+          0.8125,
+          0.5125,
+          0.1
+        ]
+      ],
+      "state": "MEASUREMENT_M_AUX_REMOVED",
+      "wavelength_nm": 810
+    },
+    {
+      "expected_roles": [
+        "N12",
+        "N13",
+        "N14",
+        "N15.HWP1",
+        "N15.PBD1",
+        "N15.HWP2",
+        "N15.PBD2",
+        "N15.HWP3",
+        "N15.HWP4",
+        "N16"
+      ],
+      "gap_before_start": "CCR_INTERNAL_CHORD_NOT_PROPAGATED; vendor retroreflection surfaces/first-hit UNVERIFIED",
+      "id": "R810_ARM_B_POST_CCR",
+      "medium": "F810",
+      "points_m": [
+        [
+          0.8125,
+          0.5875,
+          0.1
+        ],
+        [
+          0.5875,
+          0.5875,
+          0.1
+        ],
+        [
+          0.5875,
+          0.5375,
+          0.1
+        ],
+        [
+          0.5875,
+          0.4875,
+          0.1
+        ],
+        [
+          0.5875,
+          0.4375,
+          0.1
+        ],
+        [
+          0.5875,
+          0.4125,
+          0.1
+        ],
+        [
+          0.5875,
+          0.3875,
+          0.1
+        ],
+        [
+          0.5875,
+          0.3625,
+          0.1
+        ],
+        [
+          0.5875,
+          0.3375,
+          0.1
+        ],
+        [
+          0.5875,
+          0.2875,
+          0.1
+        ],
+        [
+          0.5875,
+          0.2375,
+          0.1
+        ]
+      ],
+      "state": "MEASUREMENT_M_AUX_REMOVED",
+      "wavelength_nm": 810
+    },
+    {
+      "expected_roles": [
+        "N17",
+        "N18",
+        "N19",
+        "N20",
+        "N21",
+        "N22",
+        "N23"
+      ],
+      "id": "R810_POST_COMMON",
+      "medium": "F810",
+      "points_m": [
+        [
+          0.5875,
+          0.2375,
+          0.1
+        ],
+        [
+          0.6625,
+          0.2375,
+          0.1
+        ],
+        [
+          0.7375,
+          0.2375,
+          0.1
+        ],
+        [
+          0.8125,
+          0.2375,
+          0.1
+        ],
+        [
+          0.8875,
+          0.2375,
+          0.1
+        ],
+        [
+          0.9625,
+          0.2375,
+          0.1
+        ],
+        [
+          1.0375,
+          0.2375,
+          0.1
+        ],
+        [
+          1.1125,
+          0.2375,
+          0.1
+        ]
+      ],
+      "state": "MEASUREMENT_M_AUX_REMOVED",
+      "wavelength_nm": 810
+    },
+    {
+      "expected_roles": [
+        "N24",
+        "N25",
+        "N26.CL_x",
+        "N26.BP10_x",
+        "N27"
+      ],
+      "id": "R810_X",
+      "medium": "F810",
+      "points_m": [
+        [
+          1.1125,
+          0.2375,
+          0.1
+        ],
+        [
+          1.1875,
+          0.2375,
+          0.1
+        ],
+        [
+          1.1875,
+          0.3125,
+          0.1
+        ],
+        [
+          1.1875,
+          0.3875,
+          0.1
+        ],
+        [
+          1.1875,
+          0.4625,
+          0.1
+        ],
+        [
+          1.1875,
+          0.5375,
+          0.1
+        ]
+      ],
+      "state": "MEASUREMENT_M_AUX_REMOVED",
+      "wavelength_nm": 810
+    },
+    {
+      "expected_roles": [
+        "N29",
+        "N30.CL_y1",
+        "N30.CL_y2",
+        "N30.BP10_y",
+        "N31"
+      ],
+      "id": "R810_Y",
+      "medium": "F810",
+      "points_m": [
+        [
+          1.1125,
+          0.2375,
+          0.1
+        ],
+        [
+          1.1125,
+          0.0625,
+          0.1
+        ],
+        [
+          1.0125,
+          0.0625,
+          0.1
+        ],
+        [
+          0.9375,
+          0.0625,
+          0.1
+        ],
+        [
+          0.8625,
+          0.0625,
+          0.1
+        ],
+        [
+          0.7875,
+          0.0625,
+          0.1
+        ]
+      ],
+      "state": "MEASUREMENT_M_AUX_REMOVED",
+      "wavelength_nm": 810
+    },
+    {
+      "expected_roles": [
+        "N35.M_H1",
+        "N35.HWP_H",
+        "N35.COUP_H"
+      ],
+      "id": "R633_INJECTION_FREE_1",
+      "medium": "F633",
+      "points_m": [
+        [
+          0.0125,
+          0.45,
+          0.1
+        ],
+        [
+          0.0625,
+          0.45,
+          0.1
+        ],
+        [
+          0.1125,
+          0.45,
+          0.1
+        ],
+        [
+          0.1625,
+          0.45,
+          0.1
+        ]
+      ],
+      "state": "LOCK_MEASUREMENT_M_AUX_REMOVED",
+      "wavelength_nm": 633
+    },
+    {
+      "expected_roles": [
+        "N35.PBS_H",
+        "N35.M_H2",
+        "N35.L_H",
+        "N04"
+      ],
+      "gap_before_start": "N35.COUP_H-to-PMSMF_H-to-COL_H is guided G633, not a free-space ray",
+      "id": "R633_INJECTION_FREE_2",
+      "medium": "F633",
+      "points_m": [
+        [
+          0.2625,
+          0.5875,
+          0.1
+        ],
+        [
+          0.2375,
+          0.5875,
+          0.1
+        ],
+        [
+          0.1875,
+          0.5875,
+          0.1
+        ],
+        [
+          0.1875,
+          0.5625,
+          0.1
+        ],
+        [
+          0.1875,
+          0.5375,
+          0.1
+        ]
+      ],
+      "state": "LOCK_MEASUREMENT_M_AUX_REMOVED",
+      "wavelength_nm": 633
+    },
+    {
+      "expected_roles": [
+        "N05",
+        "N06",
+        "N07",
+        "N08",
+        "N09",
+        "N16"
+      ],
+      "id": "R633_ARM_A",
+      "medium": "F633",
+      "points_m": [
+        [
+          0.1875,
+          0.5375,
+          0.1
+        ],
+        [
+          0.1875,
+          0.0875,
+          0.1
+        ],
+        [
+          0.3375,
+          0.0875,
+          0.1
+        ],
+        [
+          0.3375,
+          0.2375,
+          0.1
+        ],
+        [
+          0.4125,
+          0.2375,
+          0.1
+        ],
+        [
+          0.4875,
+          0.2375,
+          0.1
+        ],
+        [
+          0.5875,
+          0.2375,
+          0.1
+        ]
+      ],
+      "state": "LOCK_MEASUREMENT_M_AUX_REMOVED",
+      "wavelength_nm": 633
+    },
+    {
+      "expected_roles": [
+        "N10",
+        "N11.retro_in"
+      ],
+      "id": "R633_ARM_B_PRE_CCR",
+      "medium": "F633",
+      "points_m": [
+        [
+          0.1875,
+          0.5375,
+          0.1
+        ],
+        [
+          0.3875,
+          0.5125,
+          0.1
+        ],
+        [
+          0.8125,
+          0.5125,
+          0.1
+        ]
+      ],
+      "state": "LOCK_MEASUREMENT_M_AUX_REMOVED",
+      "wavelength_nm": 633
+    },
+    {
+      "expected_roles": [
+        "N12",
+        "N13",
+        "N14",
+        "N15.HWP1",
+        "N15.PBD1",
+        "N15.HWP2",
+        "N15.PBD2",
+        "N15.HWP3",
+        "N15.HWP4",
+        "N16"
+      ],
+      "gap_before_start": "CCR_INTERNAL_CHORD_NOT_PROPAGATED; phase-delay surface identity UNVERIFIED",
+      "id": "R633_ARM_B_POST_CCR",
+      "medium": "F633",
+      "points_m": [
+        [
+          0.8125,
+          0.5875,
+          0.1
+        ],
+        [
+          0.5875,
+          0.5875,
+          0.1
+        ],
+        [
+          0.5875,
+          0.5375,
+          0.1
+        ],
+        [
+          0.5875,
+          0.4875,
+          0.1
+        ],
+        [
+          0.5875,
+          0.4375,
+          0.1
+        ],
+        [
+          0.5875,
+          0.4125,
+          0.1
+        ],
+        [
+          0.5875,
+          0.3875,
+          0.1
+        ],
+        [
+          0.5875,
+          0.3625,
+          0.1
+        ],
+        [
+          0.5875,
+          0.3375,
+          0.1
+        ],
+        [
+          0.5875,
+          0.2875,
+          0.1
+        ],
+        [
+          0.5875,
+          0.2375,
+          0.1
+        ]
+      ],
+      "state": "LOCK_MEASUREMENT_M_AUX_REMOVED",
+      "wavelength_nm": 633
+    },
+    {
+      "expected_roles": [
+        "N17",
+        "N36.M_H4_plus",
+        "N36.QWP_H_shared.plus_footprint",
+        "N36.GT_H_shared.plus_footprint",
+        "N36.BP_H_shared.plus_footprint",
+        "N37.plus"
+      ],
+      "id": "R633_PLUS",
+      "medium": "F633",
+      "points_m": [
+        [
+          0.5875,
+          0.2375,
+          0.1
+        ],
+        [
+          0.6625,
+          0.2375,
+          0.1
+        ],
+        [
+          0.6625,
+          0.2,
+          0.1
+        ],
+        [
+          0.7625,
+          0.2,
+          0.1
+        ],
+        [
+          0.8625,
+          0.2,
+          0.1
+        ],
+        [
+          0.9625,
+          0.2,
+          0.1
+        ],
+        [
+          1.0875,
+          0.2,
+          0.1
+        ]
+      ],
+      "state": "LOCK_MEASUREMENT_M_AUX_REMOVED",
+      "wavelength_nm": 633
+    },
+    {
+      "expected_roles": [
+        "N36.M_H3_minus",
+        "N36.QWP_H_shared.minus_footprint",
+        "N36.GT_H_shared.minus_footprint",
+        "N36.BP_H_shared.minus_footprint",
+        "N37.minus"
+      ],
+      "id": "R633_MINUS",
+      "medium": "F633",
+      "points_m": [
+        [
+          0.5875,
+          0.2375,
+          0.1
+        ],
+        [
+          0.5875,
+          0.125,
+          0.1
+        ],
+        [
+          0.7625,
+          0.125,
+          0.1
+        ],
+        [
+          0.8625,
+          0.125,
+          0.1
+        ],
+        [
+          0.9625,
+          0.125,
+          0.1
+        ],
+        [
+          1.0875,
+          0.125,
+          0.1
+        ]
+      ],
+      "state": "LOCK_MEASUREMENT_M_AUX_REMOVED",
+      "wavelength_nm": 633
+    },
+    {
+      "expected_roles": [
+        "N36.M_aux",
+        "N36.Pol_diag",
+        "N36.L_aux",
+        "N36.BP3_cal",
+        "N36.DET10_cal"
+      ],
+      "id": "R810_CALIBRATION",
+      "medium": "F810",
+      "points_m": [
+        [
+          0.5875,
+          0.2375,
+          0.1
+        ],
+        [
+          0.5875,
+          0.175,
+          0.1
+        ],
+        [
+          0.5125,
+          0.175,
+          0.1
+        ],
+        [
+          0.4375,
+          0.175,
+          0.1
+        ],
+        [
+          0.3625,
+          0.175,
+          0.1
+        ],
+        [
+          0.2875,
+          0.175,
+          0.1
+        ]
+      ],
+      "state": "CALIBRATION_M_AUX_INSERTED",
+      "wavelength_nm": 810
+    }
+  ]
+}

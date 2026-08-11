@@ -1,0 +1,26 @@
+{
+  "authorization": "FULL_40_NODE_PROPAGATION_ONLY; NOT_FINAL_NOT_RELEASE_NOT_PUBLISH",
+  "frozen_files_modified": false,
+  "frozen_phase1": {
+    "entry_count": 10,
+    "manifest_self_sha256": "db4af71aa3c76a48ae6e76dc808b1f7050c08cf79c6ab728ecbd87f1455e3670",
+    "mismatch_count": 0,
+    "mismatches": []
+  },
+  "frozen_representative_smoke": {
+    "entry_count": 9,
+    "manifest_self_sha256": "844e10273c9a97dbf836d63545d3b43a2fef5f4112cbf0070ae3d7efb45d3535",
+    "mismatch_count": 0,
+    "mismatches": []
+  },
+  "generated_at_utc": "2026-08-09T20:29:05.473217+00:00",
+  "representative_expected_manifest_sha256": "844e10273c9a97dbf836d63545d3b43a2fef5f4112cbf0070ae3d7efb45d3535",
+  "schema": "full-40-node-root-lock-v1",
+  "upstream_repository": {
+    "head_commit": "048766250538f169d924c31bbdd39bf0c255c63f",
+    "peeled_tag_commit": "048766250538f169d924c31bbdd39bf0c255c63f",
+    "tag": "v1.0.0",
+    "url": "https://github.com/k-telux/OpticalModeler.git",
+    "worktree_status": "CLEAN_DETACHED"
+  }
+}

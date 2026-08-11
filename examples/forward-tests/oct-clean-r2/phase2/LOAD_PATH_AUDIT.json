@@ -1,0 +1,4930 @@
+{
+  "assemblies": [
+    {
+      "assembly_id": "a01_sld_source",
+      "parallel_paths_required": 1,
+      "paths": [
+        {
+          "elements": [
+            {
+              "component_id": "cad_mb2448",
+              "declared_item": "MB2448 tapped table hole",
+              "element_id": "a01_sld_source_el01",
+              "role": "TABLE_HOLE",
+              "sequence": 1
+            },
+            {
+              "component_id": null,
+              "declared_item": "declared 1/4-20 table fastener",
+              "element_id": "a01_sld_source_el02",
+              "role": "FASTENER",
+              "sequence": 2
+            },
+            {
+              "component_id": null,
+              "declared_item": "declared load-spreading washer",
+              "element_id": "a01_sld_source_el03",
+              "role": "WASHER",
+              "sequence": 3
+            },
+            {
+              "component_id": null,
+              "declared_item": "source-controller equipment bracket",
+              "element_id": "a01_sld_source_el04",
+              "role": "MOUNT_INTERFACE",
+              "sequence": 4
+            },
+            {
+              "component_id": null,
+              "declared_item": "SLD source package",
+              "element_id": "a01_sld_source_el05",
+              "role": "DEVICE",
+              "sequence": 5
+            }
+          ],
+          "interfaces": [
+            {
+              "from_element_id": "a01_sld_source_el01",
+              "interface_kind": "PLANNED_CONTACT_OR_FASTENING",
+              "physical_evidence_status": "UNVERIFIED",
+              "planned_engagement": "TABLE_HOLE to FASTENER",
+              "to_element_id": "a01_sld_source_el02"
+            },
+            {
+              "from_element_id": "a01_sld_source_el02",
+              "interface_kind": "PLANNED_CONTACT_OR_FASTENING",
+              "physical_evidence_status": "UNVERIFIED",
+              "planned_engagement": "FASTENER to WASHER",
+              "to_element_id": "a01_sld_source_el03"
+            },
+            {
+              "from_element_id": "a01_sld_source_el03",
+              "interface_kind": "PLANNED_CONTACT_OR_FASTENING",
+              "physical_evidence_status": "UNVERIFIED",
+              "planned_engagement": "WASHER to MOUNT_INTERFACE",
+              "to_element_id": "a01_sld_source_el04"
+            },
+            {
+              "from_element_id": "a01_sld_source_el04",
+              "interface_kind": "PLANNED_CONTACT_OR_FASTENING",
+              "physical_evidence_status": "UNVERIFIED",
+              "planned_engagement": "MOUNT_INTERFACE to DEVICE",
+              "to_element_id": "a01_sld_source_el05"
+            }
+          ],
+          "load_path_id": "a01_sld_source_lp01",
+          "phase2_status": "PASS",
+          "supported_node_ids": [
+            "n01_sld_source"
+          ]
+        }
+      ],
+      "phase2_status": "PASS",
+      "support_class": "DIRECT_TABLE",
+      "supported_node_ids": [
+        "n01_sld_source"
+      ]
+    },
+    {
+      "assembly_id": "a02_fiber_management",
+      "parallel_paths_required": 3,
+      "paths": [
+        {
+          "elements": [
+            {
+              "component_id": "cad_mb2448",
+              "declared_item": "MB2448 tapped table hole",
+              "element_id": "a02_fiber_management_lp01_el01",
+              "role": "TABLE_HOLE",
+              "sequence": 1
+            },
+            {
+              "component_id": null,
+              "declared_item": "declared 1/4-20 table fastener",
+              "element_id": "a02_fiber_management_lp01_el02",
+              "role": "FASTENER",
+              "sequence": 2
+            },
+            {
+              "component_id": null,
+              "declared_item": "declared load-spreading washer",
+              "element_id": "a02_fiber_management_lp01_el03",
+              "role": "WASHER",
+              "sequence": 3
+            },
+            {
+              "component_id": null,
+              "declared_item": "fiber-management tray bracket",
+              "element_id": "a02_fiber_management_lp01_el04",
+              "role": "PLATFORM_SUPPORT",
+              "sequence": 4
+            },
+            {
+              "component_id": null,
+              "declared_item": "fiber-management tray",
+              "element_id": "a02_fiber_management_lp01_el05",
+              "role": "PLATFORM",
+              "sequence": 5
+            },
+            {
+              "component_id": "cad_tw850r5a2",
+              "declared_item": "TW850R5A2 retained on fiber-management tray",
+              "element_id": "a02_fiber_management_lp01_el06",
+              "role": "DEVICE",
+              "sequence": 6
+            }
+          ],
+          "interfaces": [
+            {
+              "from_element_id": "a02_fiber_management_lp01_el01",
+              "interface_kind": "PLANNED_CONTACT_OR_FASTENING",
+              "physical_evidence_status": "UNVERIFIED",
+              "planned_engagement": "TABLE_HOLE to FASTENER",
+              "to_element_id": "a02_fiber_management_lp01_el02"
+            },
+            {
+              "from_element_id": "a02_fiber_management_lp01_el02",
+              "interface_kind": "PLANNED_CONTACT_OR_FASTENING",
+              "physical_evidence_status": "UNVERIFIED",
+              "planned_engagement": "FASTENER to WASHER",
+              "to_element_id": "a02_fiber_management_lp01_el03"
+            },
+            {
+              "from_element_id": "a02_fiber_management_lp01_el03",
+              "interface_kind": "PLANNED_CONTACT_OR_FASTENING",
+              "physical_evidence_status": "UNVERIFIED",
+              "planned_engagement": "WASHER to PLATFORM_SUPPORT",
+              "to_element_id": "a02_fiber_management_lp01_el04"
+            },
+            {
+              "from_element_id": "a02_fiber_management_lp01_el04",
+              "interface_kind": "PLANNED_CONTACT_OR_FASTENING",
+              "physical_evidence_status": "UNVERIFIED",
+              "planned_engagement": "PLATFORM_SUPPORT to PLATFORM",
+              "to_element_id": "a02_fiber_management_lp01_el05"
+            },
+            {
+              "from_element_id": "a02_fiber_management_lp01_el05",
+              "interface_kind": "PLANNED_CONTACT_OR_FASTENING",
+              "physical_evidence_status": "UNVERIFIED",
+              "planned_engagement": "PLATFORM to DEVICE",
+              "to_element_id": "a02_fiber_management_lp01_el06"
+            }
+          ],
+          "load_path_id": "a02_fiber_management_lp01",
+          "phase2_status": "PASS",
+          "role_label": "main fiber coupler",
+          "supported_node_ids": [
+            "n02_fiber_coupler"
+          ]
+        },
+        {
+          "elements": [
+            {
+              "component_id": "cad_mb2448",
+              "declared_item": "MB2448 tapped table hole",
+              "element_id": "a02_fiber_management_lp02_el01",
+              "role": "TABLE_HOLE",
+              "sequence": 1
+            },
+            {
+              "component_id": null,
+              "declared_item": "declared 1/4-20 table fastener",
+              "element_id": "a02_fiber_management_lp02_el02",
+              "role": "FASTENER",
+              "sequence": 2
+            },
+            {
+              "component_id": null,
+              "declared_item": "declared load-spreading washer",
+              "element_id": "a02_fiber_management_lp02_el03",
+              "role": "WASHER",
+              "sequence": 3
+            },
+            {
+              "component_id": null,
+              "declared_item": "fiber-management tray bracket",
+              "element_id": "a02_fiber_management_lp02_el04",
+              "role": "PLATFORM_SUPPORT",
+              "sequence": 4
+            },
+            {
+              "component_id": null,
+              "declared_item": "fiber-management tray",
+              "element_id": "a02_fiber_management_lp02_el05",
+              "role": "PLATFORM",
+              "sequence": 5
+            },
+            {
+              "component_id": "cad_fpc030",
+              "declared_item": "sample-arm FPC030 retained on fiber-management tray",
+              "element_id": "a02_fiber_management_lp02_el06",
+              "role": "DEVICE",
+              "sequence": 6
+            }
+          ],
+          "interfaces": [
+            {
+              "from_element_id": "a02_fiber_management_lp02_el01",
+              "interface_kind": "PLANNED_CONTACT_OR_FASTENING",
+              "physical_evidence_status": "UNVERIFIED",
+              "planned_engagement": "TABLE_HOLE to FASTENER",
+              "to_element_id": "a02_fiber_management_lp02_el02"
+            },
+            {
+              "from_element_id": "a02_fiber_management_lp02_el02",
+              "interface_kind": "PLANNED_CONTACT_OR_FASTENING",
+              "physical_evidence_status": "UNVERIFIED",
+              "planned_engagement": "FASTENER to WASHER",
+              "to_element_id": "a02_fiber_management_lp02_el03"
+            },
+            {
+              "from_element_id": "a02_fiber_management_lp02_el03",
+              "interface_kind": "PLANNED_CONTACT_OR_FASTENING",
+              "physical_evidence_status": "UNVERIFIED",
+              "planned_engagement": "WASHER to PLATFORM_SUPPORT",
+              "to_element_id": "a02_fiber_management_lp02_el04"
+            },
+            {
+              "from_element_id": "a02_fiber_management_lp02_el04",
+              "interface_kind": "PLANNED_CONTACT_OR_FASTENING",
+              "physical_evidence_status": "UNVERIFIED",
+              "planned_engagement": "PLATFORM_SUPPORT to PLATFORM",
+              "to_element_id": "a02_fiber_management_lp02_el05"
+            },
+            {
+              "from_element_id": "a02_fiber_management_lp02_el05",
+              "interface_kind": "PLANNED_CONTACT_OR_FASTENING",
+              "physical_evidence_status": "UNVERIFIED",
+              "planned_engagement": "PLATFORM to DEVICE",
+              "to_element_id": "a02_fiber_management_lp02_el06"
+            }
+          ],
+          "load_path_id": "a02_fiber_management_lp02",
+          "phase2_status": "PASS",
+          "role_label": "sample-arm polarization controller",
+          "supported_node_ids": [
+            "n03_sample_pc"
+          ]
+        },
+        {
+          "elements": [
+            {
+              "component_id": "cad_mb2448",
+              "declared_item": "MB2448 tapped table hole",
+              "element_id": "a02_fiber_management_lp03_el01",
+              "role": "TABLE_HOLE",
+              "sequence": 1
+            },
+            {
+              "component_id": null,
+              "declared_item": "declared 1/4-20 table fastener",
+              "element_id": "a02_fiber_management_lp03_el02",
+              "role": "FASTENER",
+              "sequence": 2
+            },
+            {
+              "component_id": null,
+              "declared_item": "declared load-spreading washer",
+              "element_id": "a02_fiber_management_lp03_el03",
+              "role": "WASHER",
+              "sequence": 3
+            },
+            {
+              "component_id": null,
+              "declared_item": "fiber-management tray bracket",
+              "element_id": "a02_fiber_management_lp03_el04",
+              "role": "PLATFORM_SUPPORT",
+              "sequence": 4
+            },
+            {
+              "component_id": null,
+              "declared_item": "fiber-management tray",
+              "element_id": "a02_fiber_management_lp03_el05",
+              "role": "PLATFORM",
+              "sequence": 5
+            },
+            {
+              "component_id": "cad_fpc030",
+              "declared_item": "reference-arm FPC030 retained on fiber-management tray",
+              "element_id": "a02_fiber_management_lp03_el06",
+              "role": "DEVICE",
+              "sequence": 6
+            }
+          ],
+          "interfaces": [
+            {
+              "from_element_id": "a02_fiber_management_lp03_el01",
+              "interface_kind": "PLANNED_CONTACT_OR_FASTENING",
+              "physical_evidence_status": "UNVERIFIED",
+              "planned_engagement": "TABLE_HOLE to FASTENER",
+              "to_element_id": "a02_fiber_management_lp03_el02"
+            },
+            {
+              "from_element_id": "a02_fiber_management_lp03_el02",
+              "interface_kind": "PLANNED_CONTACT_OR_FASTENING",
+              "physical_evidence_status": "UNVERIFIED",
+              "planned_engagement": "FASTENER to WASHER",
+              "to_element_id": "a02_fiber_management_lp03_el03"
+            },
+            {
+              "from_element_id": "a02_fiber_management_lp03_el03",
+              "interface_kind": "PLANNED_CONTACT_OR_FASTENING",
+              "physical_evidence_status": "UNVERIFIED",
+              "planned_engagement": "WASHER to PLATFORM_SUPPORT",
+              "to_element_id": "a02_fiber_management_lp03_el04"
+            },
+            {
+              "from_element_id": "a02_fiber_management_lp03_el04",
+              "interface_kind": "PLANNED_CONTACT_OR_FASTENING",
+              "physical_evidence_status": "UNVERIFIED",
+              "planned_engagement": "PLATFORM_SUPPORT to PLATFORM",
+              "to_element_id": "a02_fiber_management_lp03_el05"
+            },
+            {
+              "from_element_id": "a02_fiber_management_lp03_el05",
+              "interface_kind": "PLANNED_CONTACT_OR_FASTENING",
+              "physical_evidence_status": "UNVERIFIED",
+              "planned_engagement": "PLATFORM to DEVICE",
+              "to_element_id": "a02_fiber_management_lp03_el06"
+            }
+          ],
+          "load_path_id": "a02_fiber_management_lp03",
+          "phase2_status": "UNVERIFIED",
+          "role_label": "reference-arm polarization controller",
+          "supported_node_ids": [
+            "n09_reference_pc"
+          ]
+        }
+      ],
+      "phase2_status": "UNVERIFIED",
+      "support_class": "PLATFORM_MOUNTED",
+      "supported_node_ids": [
+        "n02_fiber_coupler",
+        "n03_sample_pc",
+        "n09_reference_pc"
+      ]
+    },
+    {
+      "assembly_id": "a03_sample_collimator",
+      "parallel_paths_required": 1,
+      "paths": [
+        {
+          "elements": [
+            {
+              "component_id": "cad_mb2448",
+              "declared_item": "MB2448 tapped table hole",
+              "element_id": "a03_sample_collimator_el01",
+              "role": "TABLE_HOLE",
+              "sequence": 1
+            },
+            {
+              "component_id": null,
+              "declared_item": "declared 1/4-20 table fastener",
+              "element_id": "a03_sample_collimator_el02",
+              "role": "FASTENER",
+              "sequence": 2
+            },
+            {
+              "component_id": null,
+              "declared_item": "declared load-spreading washer",
+              "element_id": "a03_sample_collimator_el03",
+              "role": "WASHER",
+              "sequence": 3
+            },
+            {
+              "component_id": "cad_cf125",
+              "declared_item": "CF125 clamping fork",
+              "element_id": "a03_sample_collimator_el04",
+              "role": "CLAMP",
+              "sequence": 4
+            },
+            {
+              "component_id": "cad_be1",
+              "declared_item": "BE1 pedestal base",
+              "element_id": "a03_sample_collimator_el05",
+              "role": "BASE_ADAPTER",
+              "sequence": 5
+            },
+            {
+              "component_id": "cad_ph2",
+              "declared_item": "PH2 post holder",
+              "element_id": "a03_sample_collimator_el06",
+              "role": "POST_HOLDER",
+              "sequence": 6
+            },
+            {
+              "component_id": "cad_tr2",
+              "declared_item": "TR2 optical post",
+              "element_id": "a03_sample_collimator_el07",
+              "role": "POST",
+              "sequence": 7
+            },
+            {
+              "component_id": "cad_lmr1",
+              "declared_item": "LMR1 mount",
+              "element_id": "a03_sample_collimator_el08",
+              "role": "MOUNT_INTERFACE",
+              "sequence": 8
+            },
+            {
+              "component_id": "cad_ad12f",
+              "declared_item": "AD12F collimator adapter",
+              "element_id": "a03_sample_collimator_el09",
+              "role": "DEVICE_INTERFACE",
+              "sequence": 9
+            },
+            {
+              "component_id": "cad_f240apc_850",
+              "declared_item": "F240APC-850 sample collimator",
+              "element_id": "a03_sample_collimator_el10",
+              "role": "DEVICE",
+              "sequence": 10
+            }
+          ],
+          "interfaces": [
+            {
+              "from_element_id": "a03_sample_collimator_el01",
+              "interface_kind": "PLANNED_CONTACT_OR_FASTENING",
+              "physical_evidence_status": "UNVERIFIED",
+              "planned_engagement": "TABLE_HOLE to FASTENER",
+              "to_element_id": "a03_sample_collimator_el02"
+            },
+            {
+              "from_element_id": "a03_sample_collimator_el02",
+              "interface_kind": "PLANNED_CONTACT_OR_FASTENING",
+              "physical_evidence_status": "UNVERIFIED",
+              "planned_engagement": "FASTENER to WASHER",
+              "to_element_id": "a03_sample_collimator_el03"
+            },
+            {
+              "from_element_id": "a03_sample_collimator_el03",
+              "interface_kind": "PLANNED_CONTACT_OR_FASTENING",
+              "physical_evidence_status": "UNVERIFIED",
+              "planned_engagement": "WASHER to CLAMP",
+              "to_element_id": "a03_sample_collimator_el04"
+            },
+            {
+              "from_element_id": "a03_sample_collimator_el04",
+              "interface_kind": "PLANNED_CONTACT_OR_FASTENING",
+              "physical_evidence_status": "UNVERIFIED",
+              "planned_engagement": "CLAMP to BASE_ADAPTER",
+              "to_element_id": "a03_sample_collimator_el05"
+            },
+            {
+              "from_element_id": "a03_sample_collimator_el05",
+              "interface_kind": "PLANNED_CONTACT_OR_FASTENING",
+              "physical_evidence_status": "UNVERIFIED",
+              "planned_engagement": "BASE_ADAPTER to POST_HOLDER",
+              "to_element_id": "a03_sample_collimator_el06"
+            },
+            {
+              "from_element_id": "a03_sample_collimator_el06",
+              "interface_kind": "PLANNED_CONTACT_OR_FASTENING",
+              "physical_evidence_status": "UNVERIFIED",
+              "planned_engagement": "POST_HOLDER to POST",
+              "to_element_id": "a03_sample_collimator_el07"
+            },
+            {
+              "from_element_id": "a03_sample_collimator_el07",
+              "interface_kind": "PLANNED_CONTACT_OR_FASTENING",
+              "physical_evidence_status": "UNVERIFIED",
+              "planned_engagement": "POST to MOUNT_INTERFACE",
+              "to_element_id": "a03_sample_collimator_el08"
+            },
+            {
+              "from_element_id": "a03_sample_collimator_el08",
+              "interface_kind": "PLANNED_CONTACT_OR_FASTENING",
+              "physical_evidence_status": "UNVERIFIED",
+              "planned_engagement": "MOUNT_INTERFACE to DEVICE_INTERFACE",
+              "to_element_id": "a03_sample_collimator_el09"
+            },
+            {
+              "from_element_id": "a03_sample_collimator_el09",
+              "interface_kind": "PLANNED_CONTACT_OR_FASTENING",
+              "physical_evidence_status": "UNVERIFIED",
+              "planned_engagement": "DEVICE_INTERFACE to DEVICE",
+              "to_element_id": "a03_sample_collimator_el10"
+            }
+          ],
+          "load_path_id": "a03_sample_collimator_lp01",
+          "phase2_status": "UNVERIFIED",
+          "supported_node_ids": [
+            "n04_sample_collimator"
+          ]
+        }
+      ],
+      "phase2_status": "UNVERIFIED",
+      "support_class": "POST_MOUNTED",
+      "supported_node_ids": [
+        "n04_sample_collimator"
+      ]
+    },
+    {
+      "assembly_id": "a04_sample_galvo",
+      "parallel_paths_required": 1,
+      "paths": [
+        {
+          "elements": [
+            {
+              "component_id": "cad_mb2448",
+              "declared_item": "MB2448 tapped table hole",
+              "element_id": "a04_sample_galvo_el01",
+              "role": "TABLE_HOLE",
+              "sequence": 1
+            },
+            {
+              "component_id": null,
+              "declared_item": "declared 1/4-20 table fastener",
+              "element_id": "a04_sample_galvo_el02",
+              "role": "FASTENER",
+              "sequence": 2
+            },
+            {
+              "component_id": null,
+              "declared_item": "declared load-spreading washer",
+              "element_id": "a04_sample_galvo_el03",
+              "role": "WASHER",
+              "sequence": 3
+            },
+            {
+              "component_id": null,
+              "declared_item": "GVS012 base mounting interface",
+              "element_id": "a04_sample_galvo_el04",
+              "role": "MOUNT_INTERFACE",
+              "sequence": 4
+            },
+            {
+              "component_id": "cad_gvs012",
+              "declared_item": "sample-side GVS012 two-axis assembly",
+              "element_id": "a04_sample_galvo_el05",
+              "role": "DEVICE",
+              "sequence": 5
+            }
+          ],
+          "interfaces": [
+            {
+              "from_element_id": "a04_sample_galvo_el01",
+              "interface_kind": "PLANNED_CONTACT_OR_FASTENING",
+              "physical_evidence_status": "UNVERIFIED",
+              "planned_engagement": "TABLE_HOLE to FASTENER",
+              "to_element_id": "a04_sample_galvo_el02"
+            },
+            {
+              "from_element_id": "a04_sample_galvo_el02",
+              "interface_kind": "PLANNED_CONTACT_OR_FASTENING",
+              "physical_evidence_status": "UNVERIFIED",
+              "planned_engagement": "FASTENER to WASHER",
+              "to_element_id": "a04_sample_galvo_el03"
+            },
+            {
+              "from_element_id": "a04_sample_galvo_el03",
+              "interface_kind": "PLANNED_CONTACT_OR_FASTENING",
+              "physical_evidence_status": "UNVERIFIED",
+              "planned_engagement": "WASHER to MOUNT_INTERFACE",
+              "to_element_id": "a04_sample_galvo_el04"
+            },
+            {
+              "from_element_id": "a04_sample_galvo_el04",
+              "interface_kind": "PLANNED_CONTACT_OR_FASTENING",
+              "physical_evidence_status": "UNVERIFIED",
+              "planned_engagement": "MOUNT_INTERFACE to DEVICE",
+              "to_element_id": "a04_sample_galvo_el05"
+            }
+          ],
+          "load_path_id": "a04_sample_galvo_lp01",
+          "phase2_status": "UNVERIFIED",
+          "supported_node_ids": [
+            "n05_sample_galvo_x",
+            "n06_sample_galvo_y"
+          ]
+        }
+      ],
+      "phase2_status": "UNVERIFIED",
+      "support_class": "DIRECT_TABLE",
+      "supported_node_ids": [
+        "n05_sample_galvo_x",
+        "n06_sample_galvo_y"
+      ]
+    },
+    {
+      "assembly_id": "a05_sample_lens",
+      "parallel_paths_required": 1,
+      "paths": [
+        {
+          "elements": [
+            {
+              "component_id": "cad_mb2448",
+              "declared_item": "MB2448 tapped table hole",
+              "element_id": "a05_sample_lens_el01",
+              "role": "TABLE_HOLE",
+              "sequence": 1
+            },
+            {
+              "component_id": null,
+              "declared_item": "declared 1/4-20 table fastener",
+              "element_id": "a05_sample_lens_el02",
+              "role": "FASTENER",
+              "sequence": 2
+            },
+            {
+              "component_id": null,
+              "declared_item": "declared load-spreading washer",
+              "element_id": "a05_sample_lens_el03",
+              "role": "WASHER",
+              "sequence": 3
+            },
+            {
+              "component_id": "cad_cf125",
+              "declared_item": "CF125 clamping fork",
+              "element_id": "a05_sample_lens_el04",
+              "role": "CLAMP",
+              "sequence": 4
+            },
+            {
+              "component_id": "cad_be1",
+              "declared_item": "BE1 pedestal base",
+              "element_id": "a05_sample_lens_el05",
+              "role": "BASE_ADAPTER",
+              "sequence": 5
+            },
+            {
+              "component_id": "cad_ph2",
+              "declared_item": "PH2 post holder",
+              "element_id": "a05_sample_lens_el06",
+              "role": "POST_HOLDER",
+              "sequence": 6
+            },
+            {
+              "component_id": "cad_tr2",
+              "declared_item": "TR2 optical post",
+              "element_id": "a05_sample_lens_el07",
+              "role": "POST",
+              "sequence": 7
+            },
+            {
+              "component_id": "cad_lmr1",
+              "declared_item": "LMR1 lens mount",
+              "element_id": "a05_sample_lens_el08",
+              "role": "MOUNT_INTERFACE",
+              "sequence": 8
+            },
+            {
+              "component_id": "cad_ac254_075_b_ml",
+              "declared_item": "AC254-075-B-ML sample lens",
+              "element_id": "a05_sample_lens_el09",
+              "role": "DEVICE",
+              "sequence": 9
+            }
+          ],
+          "interfaces": [
+            {
+              "from_element_id": "a05_sample_lens_el01",
+              "interface_kind": "PLANNED_CONTACT_OR_FASTENING",
+              "physical_evidence_status": "UNVERIFIED",
+              "planned_engagement": "TABLE_HOLE to FASTENER",
+              "to_element_id": "a05_sample_lens_el02"
+            },
+            {
+              "from_element_id": "a05_sample_lens_el02",
+              "interface_kind": "PLANNED_CONTACT_OR_FASTENING",
+              "physical_evidence_status": "UNVERIFIED",
+              "planned_engagement": "FASTENER to WASHER",
+              "to_element_id": "a05_sample_lens_el03"
+            },
+            {
+              "from_element_id": "a05_sample_lens_el03",
+              "interface_kind": "PLANNED_CONTACT_OR_FASTENING",
+              "physical_evidence_status": "UNVERIFIED",
+              "planned_engagement": "WASHER to CLAMP",
+              "to_element_id": "a05_sample_lens_el04"
+            },
+            {
+              "from_element_id": "a05_sample_lens_el04",
+              "interface_kind": "PLANNED_CONTACT_OR_FASTENING",
+              "physical_evidence_status": "UNVERIFIED",
+              "planned_engagement": "CLAMP to BASE_ADAPTER",
+              "to_element_id": "a05_sample_lens_el05"
+            },
+            {
+              "from_element_id": "a05_sample_lens_el05",
+              "interface_kind": "PLANNED_CONTACT_OR_FASTENING",
+              "physical_evidence_status": "UNVERIFIED",
+              "planned_engagement": "BASE_ADAPTER to POST_HOLDER",
+              "to_element_id": "a05_sample_lens_el06"
+            },
+            {
+              "from_element_id": "a05_sample_lens_el06",
+              "interface_kind": "PLANNED_CONTACT_OR_FASTENING",
+              "physical_evidence_status": "UNVERIFIED",
+              "planned_engagement": "POST_HOLDER to POST",
+              "to_element_id": "a05_sample_lens_el07"
+            },
+            {
+              "from_element_id": "a05_sample_lens_el07",
+              "interface_kind": "PLANNED_CONTACT_OR_FASTENING",
+              "physical_evidence_status": "UNVERIFIED",
+              "planned_engagement": "POST to MOUNT_INTERFACE",
+              "to_element_id": "a05_sample_lens_el08"
+            },
+            {
+              "from_element_id": "a05_sample_lens_el08",
+              "interface_kind": "PLANNED_CONTACT_OR_FASTENING",
+              "physical_evidence_status": "UNVERIFIED",
+              "planned_engagement": "MOUNT_INTERFACE to DEVICE",
+              "to_element_id": "a05_sample_lens_el09"
+            }
+          ],
+          "load_path_id": "a05_sample_lens_lp01",
+          "phase2_status": "UNVERIFIED",
+          "supported_node_ids": [
+            "n07_sample_lens_l0"
+          ]
+        }
+      ],
+      "phase2_status": "UNVERIFIED",
+      "support_class": "POST_MOUNTED",
+      "supported_node_ids": [
+        "n07_sample_lens_l0"
+      ]
+    },
+    {
+      "assembly_id": "a06_sample_fixture",
+      "parallel_paths_required": 1,
+      "paths": [
+        {
+          "elements": [
+            {
+              "component_id": "cad_mb2448",
+              "declared_item": "MB2448 tapped table hole",
+              "element_id": "a06_sample_fixture_el01",
+              "role": "TABLE_HOLE",
+              "sequence": 1
+            },
+            {
+              "component_id": null,
+              "declared_item": "declared 1/4-20 table fastener",
+              "element_id": "a06_sample_fixture_el02",
+              "role": "FASTENER",
+              "sequence": 2
+            },
+            {
+              "component_id": null,
+              "declared_item": "declared load-spreading washer",
+              "element_id": "a06_sample_fixture_el03",
+              "role": "WASHER",
+              "sequence": 3
+            },
+            {
+              "component_id": null,
+              "declared_item": "sample fixture base",
+              "element_id": "a06_sample_fixture_el04",
+              "role": "MOUNT_INTERFACE",
+              "sequence": 4
+            },
+            {
+              "component_id": null,
+              "declared_item": "sample and sample holder",
+              "element_id": "a06_sample_fixture_el05",
+              "role": "DEVICE",
+              "sequence": 5
+            }
+          ],
+          "interfaces": [
+            {
+              "from_element_id": "a06_sample_fixture_el01",
+              "interface_kind": "PLANNED_CONTACT_OR_FASTENING",
+              "physical_evidence_status": "UNVERIFIED",
+              "planned_engagement": "TABLE_HOLE to FASTENER",
+              "to_element_id": "a06_sample_fixture_el02"
+            },
+            {
+              "from_element_id": "a06_sample_fixture_el02",
+              "interface_kind": "PLANNED_CONTACT_OR_FASTENING",
+              "physical_evidence_status": "UNVERIFIED",
+              "planned_engagement": "FASTENER to WASHER",
+              "to_element_id": "a06_sample_fixture_el03"
+            },
+            {
+              "from_element_id": "a06_sample_fixture_el03",
+              "interface_kind": "PLANNED_CONTACT_OR_FASTENING",
+              "physical_evidence_status": "UNVERIFIED",
+              "planned_engagement": "WASHER to MOUNT_INTERFACE",
+              "to_element_id": "a06_sample_fixture_el04"
+            },
+            {
+              "from_element_id": "a06_sample_fixture_el04",
+              "interface_kind": "PLANNED_CONTACT_OR_FASTENING",
+              "physical_evidence_status": "UNVERIFIED",
+              "planned_engagement": "MOUNT_INTERFACE to DEVICE",
+              "to_element_id": "a06_sample_fixture_el05"
+            }
+          ],
+          "load_path_id": "a06_sample_fixture_lp01",
+          "phase2_status": "PASS",
+          "supported_node_ids": [
+            "n08_sample"
+          ]
+        }
+      ],
+      "phase2_status": "PASS",
+      "support_class": "DIRECT_TABLE",
+      "supported_node_ids": [
+        "n08_sample"
+      ]
+    },
+    {
+      "assembly_id": "a07_reference_delay_collimator",
+      "parallel_paths_required": 1,
+      "paths": [
+        {
+          "elements": [
+            {
+              "component_id": "cad_mb2448",
+              "declared_item": "MB2448 tapped table hole",
+              "element_id": "a07_reference_delay_collimator_el01",
+              "role": "TABLE_HOLE",
+              "sequence": 1
+            },
+            {
+              "component_id": null,
+              "declared_item": "declared 1/4-20 table fastener",
+              "element_id": "a07_reference_delay_collimator_el02",
+              "role": "FASTENER",
+              "sequence": 2
+            },
+            {
+              "component_id": null,
+              "declared_item": "declared load-spreading washer",
+              "element_id": "a07_reference_delay_collimator_el03",
+              "role": "WASHER",
+              "sequence": 3
+            },
+            {
+              "component_id": "cad_xr25p",
+              "declared_item": "XR25P translation stage",
+              "element_id": "a07_reference_delay_collimator_el04",
+              "role": "PLATFORM_SUPPORT",
+              "sequence": 4
+            },
+            {
+              "component_id": "cad_lmr1",
+              "declared_item": "LMR1 collimator mount",
+              "element_id": "a07_reference_delay_collimator_el05",
+              "role": "MOUNT_INTERFACE",
+              "sequence": 5
+            },
+            {
+              "component_id": "cad_ad12f",
+              "declared_item": "AD12F collimator adapter",
+              "element_id": "a07_reference_delay_collimator_el06",
+              "role": "DEVICE_INTERFACE",
+              "sequence": 6
+            },
+            {
+              "component_id": "cad_f240apc_850",
+              "declared_item": "F240APC-850 reference collimator",
+              "element_id": "a07_reference_delay_collimator_el07",
+              "role": "DEVICE",
+              "sequence": 7
+            }
+          ],
+          "interfaces": [
+            {
+              "from_element_id": "a07_reference_delay_collimator_el01",
+              "interface_kind": "PLANNED_CONTACT_OR_FASTENING",
+              "physical_evidence_status": "UNVERIFIED",
+              "planned_engagement": "TABLE_HOLE to FASTENER",
+              "to_element_id": "a07_reference_delay_collimator_el02"
+            },
+            {
+              "from_element_id": "a07_reference_delay_collimator_el02",
+              "interface_kind": "PLANNED_CONTACT_OR_FASTENING",
+              "physical_evidence_status": "UNVERIFIED",
+              "planned_engagement": "FASTENER to WASHER",
+              "to_element_id": "a07_reference_delay_collimator_el03"
+            },
+            {
+              "from_element_id": "a07_reference_delay_collimator_el03",
+              "interface_kind": "PLANNED_CONTACT_OR_FASTENING",
+              "physical_evidence_status": "UNVERIFIED",
+              "planned_engagement": "WASHER to PLATFORM_SUPPORT",
+              "to_element_id": "a07_reference_delay_collimator_el04"
+            },
+            {
+              "from_element_id": "a07_reference_delay_collimator_el04",
+              "interface_kind": "PLANNED_CONTACT_OR_FASTENING",
+              "physical_evidence_status": "UNVERIFIED",
+              "planned_engagement": "PLATFORM_SUPPORT to MOUNT_INTERFACE",
+              "to_element_id": "a07_reference_delay_collimator_el05"
+            },
+            {
+              "from_element_id": "a07_reference_delay_collimator_el05",
+              "interface_kind": "PLANNED_CONTACT_OR_FASTENING",
+              "physical_evidence_status": "UNVERIFIED",
+              "planned_engagement": "MOUNT_INTERFACE to DEVICE_INTERFACE",
+              "to_element_id": "a07_reference_delay_collimator_el06"
+            },
+            {
+              "from_element_id": "a07_reference_delay_collimator_el06",
+              "interface_kind": "PLANNED_CONTACT_OR_FASTENING",
+              "physical_evidence_status": "UNVERIFIED",
+              "planned_engagement": "DEVICE_INTERFACE to DEVICE",
+              "to_element_id": "a07_reference_delay_collimator_el07"
+            }
+          ],
+          "load_path_id": "a07_reference_delay_collimator_lp01",
+          "phase2_status": "UNVERIFIED",
+          "supported_node_ids": [
+            "n10_reference_collimator"
+          ]
+        }
+      ],
+      "phase2_status": "UNVERIFIED",
+      "support_class": "PLATFORM_MOUNTED",
+      "supported_node_ids": [
+        "n10_reference_collimator"
+      ]
+    },
+    {
+      "assembly_id": "a08_reference_npbs",
+      "parallel_paths_required": 1,
+      "paths": [
+        {
+          "elements": [
+            {
+              "component_id": "cad_mb2448",
+              "declared_item": "MB2448 tapped table hole",
+              "element_id": "a08_reference_npbs_el01",
+              "role": "TABLE_HOLE",
+              "sequence": 1
+            },
+            {
+              "component_id": null,
+              "declared_item": "declared 1/4-20 table fastener",
+              "element_id": "a08_reference_npbs_el02",
+              "role": "FASTENER",
+              "sequence": 2
+            },
+            {
+              "component_id": null,
+              "declared_item": "declared load-spreading washer",
+              "element_id": "a08_reference_npbs_el03",
+              "role": "WASHER",
+              "sequence": 3
+            },
+            {
+              "component_id": "cad_cf125",
+              "declared_item": "CF125 clamping fork",
+              "element_id": "a08_reference_npbs_el04",
+              "role": "CLAMP",
+              "sequence": 4
+            },
+            {
+              "component_id": "cad_be1",
+              "declared_item": "BE1 pedestal base",
+              "element_id": "a08_reference_npbs_el05",
+              "role": "BASE_ADAPTER",
+              "sequence": 5
+            },
+            {
+              "component_id": "cad_ph2",
+              "declared_item": "PH2 post holder",
+              "element_id": "a08_reference_npbs_el06",
+              "role": "POST_HOLDER",
+              "sequence": 6
+            },
+            {
+              "component_id": "cad_tr2",
+              "declared_item": "TR2 optical post",
+              "element_id": "a08_reference_npbs_el07",
+              "role": "POST",
+              "sequence": 7
+            },
+            {
+              "component_id": null,
+              "declared_item": "declared cube post interface",
+              "element_id": "a08_reference_npbs_el08",
+              "role": "MOUNT_INTERFACE",
+              "sequence": 8
+            },
+            {
+              "component_id": "cad_ccm1_bs014",
+              "declared_item": "CCM1-BS014 cube-mounted NPBS",
+              "element_id": "a08_reference_npbs_el09",
+              "role": "DEVICE",
+              "sequence": 9
+            }
+          ],
+          "interfaces": [
+            {
+              "from_element_id": "a08_reference_npbs_el01",
+              "interface_kind": "PLANNED_CONTACT_OR_FASTENING",
+              "physical_evidence_status": "UNVERIFIED",
+              "planned_engagement": "TABLE_HOLE to FASTENER",
+              "to_element_id": "a08_reference_npbs_el02"
+            },
+            {
+              "from_element_id": "a08_reference_npbs_el02",
+              "interface_kind": "PLANNED_CONTACT_OR_FASTENING",
+              "physical_evidence_status": "UNVERIFIED",
+              "planned_engagement": "FASTENER to WASHER",
+              "to_element_id": "a08_reference_npbs_el03"
+            },
+            {
+              "from_element_id": "a08_reference_npbs_el03",
+              "interface_kind": "PLANNED_CONTACT_OR_FASTENING",
+              "physical_evidence_status": "UNVERIFIED",
+              "planned_engagement": "WASHER to CLAMP",
+              "to_element_id": "a08_reference_npbs_el04"
+            },
+            {
+              "from_element_id": "a08_reference_npbs_el04",
+              "interface_kind": "PLANNED_CONTACT_OR_FASTENING",
+              "physical_evidence_status": "UNVERIFIED",
+              "planned_engagement": "CLAMP to BASE_ADAPTER",
+              "to_element_id": "a08_reference_npbs_el05"
+            },
+            {
+              "from_element_id": "a08_reference_npbs_el05",
+              "interface_kind": "PLANNED_CONTACT_OR_FASTENING",
+              "physical_evidence_status": "UNVERIFIED",
+              "planned_engagement": "BASE_ADAPTER to POST_HOLDER",
+              "to_element_id": "a08_reference_npbs_el06"
+            },
+            {
+              "from_element_id": "a08_reference_npbs_el06",
+              "interface_kind": "PLANNED_CONTACT_OR_FASTENING",
+              "physical_evidence_status": "UNVERIFIED",
+              "planned_engagement": "POST_HOLDER to POST",
+              "to_element_id": "a08_reference_npbs_el07"
+            },
+            {
+              "from_element_id": "a08_reference_npbs_el07",
+              "interface_kind": "PLANNED_CONTACT_OR_FASTENING",
+              "physical_evidence_status": "UNVERIFIED",
+              "planned_engagement": "POST to MOUNT_INTERFACE",
+              "to_element_id": "a08_reference_npbs_el08"
+            },
+            {
+              "from_element_id": "a08_reference_npbs_el08",
+              "interface_kind": "PLANNED_CONTACT_OR_FASTENING",
+              "physical_evidence_status": "UNVERIFIED",
+              "planned_engagement": "MOUNT_INTERFACE to DEVICE",
+              "to_element_id": "a08_reference_npbs_el09"
+            }
+          ],
+          "load_path_id": "a08_reference_npbs_lp01",
+          "phase2_status": "UNVERIFIED",
+          "supported_node_ids": [
+            "n11_reference_npbs"
+          ]
+        }
+      ],
+      "phase2_status": "UNVERIFIED",
+      "support_class": "POST_MOUNTED",
+      "supported_node_ids": [
+        "n11_reference_npbs"
+      ]
+    },
+    {
+      "assembly_id": "a09_reference_galvo",
+      "parallel_paths_required": 1,
+      "paths": [
+        {
+          "elements": [
+            {
+              "component_id": "cad_mb2448",
+              "declared_item": "MB2448 tapped table hole",
+              "element_id": "a09_reference_galvo_el01",
+              "role": "TABLE_HOLE",
+              "sequence": 1
+            },
+            {
+              "component_id": null,
+              "declared_item": "declared 1/4-20 table fastener",
+              "element_id": "a09_reference_galvo_el02",
+              "role": "FASTENER",
+              "sequence": 2
+            },
+            {
+              "component_id": null,
+              "declared_item": "declared load-spreading washer",
+              "element_id": "a09_reference_galvo_el03",
+              "role": "WASHER",
+              "sequence": 3
+            },
+            {
+              "component_id": null,
+              "declared_item": "GVS012 base mounting interface",
+              "element_id": "a09_reference_galvo_el04",
+              "role": "MOUNT_INTERFACE",
+              "sequence": 4
+            },
+            {
+              "component_id": "cad_gvs012",
+              "declared_item": "paper-exact reference GVS012 two-axis assembly",
+              "element_id": "a09_reference_galvo_el05",
+              "role": "DEVICE",
+              "sequence": 5
+            }
+          ],
+          "interfaces": [
+            {
+              "from_element_id": "a09_reference_galvo_el01",
+              "interface_kind": "PLANNED_CONTACT_OR_FASTENING",
+              "physical_evidence_status": "UNVERIFIED",
+              "planned_engagement": "TABLE_HOLE to FASTENER",
+              "to_element_id": "a09_reference_galvo_el02"
+            },
+            {
+              "from_element_id": "a09_reference_galvo_el02",
+              "interface_kind": "PLANNED_CONTACT_OR_FASTENING",
+              "physical_evidence_status": "UNVERIFIED",
+              "planned_engagement": "FASTENER to WASHER",
+              "to_element_id": "a09_reference_galvo_el03"
+            },
+            {
+              "from_element_id": "a09_reference_galvo_el03",
+              "interface_kind": "PLANNED_CONTACT_OR_FASTENING",
+              "physical_evidence_status": "UNVERIFIED",
+              "planned_engagement": "WASHER to MOUNT_INTERFACE",
+              "to_element_id": "a09_reference_galvo_el04"
+            },
+            {
+              "from_element_id": "a09_reference_galvo_el04",
+              "interface_kind": "PLANNED_CONTACT_OR_FASTENING",
+              "physical_evidence_status": "UNVERIFIED",
+              "planned_engagement": "MOUNT_INTERFACE to DEVICE",
+              "to_element_id": "a09_reference_galvo_el05"
+            }
+          ],
+          "load_path_id": "a09_reference_galvo_lp01",
+          "phase2_status": "UNVERIFIED",
+          "supported_node_ids": [
+            "n12_reference_galvo_gs1",
+            "n15_reference_galvo_gs2"
+          ]
+        }
+      ],
+      "phase2_status": "UNVERIFIED",
+      "support_class": "DIRECT_TABLE",
+      "supported_node_ids": [
+        "n12_reference_galvo_gs1",
+        "n15_reference_galvo_gs2"
+      ]
+    },
+    {
+      "assembly_id": "a10_reference_lens_1",
+      "parallel_paths_required": 1,
+      "paths": [
+        {
+          "elements": [
+            {
+              "component_id": "cad_mb2448",
+              "declared_item": "MB2448 tapped table hole",
+              "element_id": "a10_reference_lens_1_el01",
+              "role": "TABLE_HOLE",
+              "sequence": 1
+            },
+            {
+              "component_id": null,
+              "declared_item": "declared 1/4-20 table fastener",
+              "element_id": "a10_reference_lens_1_el02",
+              "role": "FASTENER",
+              "sequence": 2
+            },
+            {
+              "component_id": null,
+              "declared_item": "declared load-spreading washer",
+              "element_id": "a10_reference_lens_1_el03",
+              "role": "WASHER",
+              "sequence": 3
+            },
+            {
+              "component_id": "cad_cf125",
+              "declared_item": "CF125 clamping fork",
+              "element_id": "a10_reference_lens_1_el04",
+              "role": "CLAMP",
+              "sequence": 4
+            },
+            {
+              "component_id": "cad_be1",
+              "declared_item": "BE1 pedestal base",
+              "element_id": "a10_reference_lens_1_el05",
+              "role": "BASE_ADAPTER",
+              "sequence": 5
+            },
+            {
+              "component_id": "cad_ph2",
+              "declared_item": "PH2 post holder",
+              "element_id": "a10_reference_lens_1_el06",
+              "role": "POST_HOLDER",
+              "sequence": 6
+            },
+            {
+              "component_id": "cad_tr2",
+              "declared_item": "TR2 optical post",
+              "element_id": "a10_reference_lens_1_el07",
+              "role": "POST",
+              "sequence": 7
+            },
+            {
+              "component_id": "cad_lmr1",
+              "declared_item": "LMR1 lens mount",
+              "element_id": "a10_reference_lens_1_el08",
+              "role": "MOUNT_INTERFACE",
+              "sequence": 8
+            },
+            {
+              "component_id": "cad_ac254_030_b_ml",
+              "declared_item": "AC254-030-B-ML L1",
+              "element_id": "a10_reference_lens_1_el09",
+              "role": "DEVICE",
+              "sequence": 9
+            }
+          ],
+          "interfaces": [
+            {
+              "from_element_id": "a10_reference_lens_1_el01",
+              "interface_kind": "PLANNED_CONTACT_OR_FASTENING",
+              "physical_evidence_status": "UNVERIFIED",
+              "planned_engagement": "TABLE_HOLE to FASTENER",
+              "to_element_id": "a10_reference_lens_1_el02"
+            },
+            {
+              "from_element_id": "a10_reference_lens_1_el02",
+              "interface_kind": "PLANNED_CONTACT_OR_FASTENING",
+              "physical_evidence_status": "UNVERIFIED",
+              "planned_engagement": "FASTENER to WASHER",
+              "to_element_id": "a10_reference_lens_1_el03"
+            },
+            {
+              "from_element_id": "a10_reference_lens_1_el03",
+              "interface_kind": "PLANNED_CONTACT_OR_FASTENING",
+              "physical_evidence_status": "UNVERIFIED",
+              "planned_engagement": "WASHER to CLAMP",
+              "to_element_id": "a10_reference_lens_1_el04"
+            },
+            {
+              "from_element_id": "a10_reference_lens_1_el04",
+              "interface_kind": "PLANNED_CONTACT_OR_FASTENING",
+              "physical_evidence_status": "UNVERIFIED",
+              "planned_engagement": "CLAMP to BASE_ADAPTER",
+              "to_element_id": "a10_reference_lens_1_el05"
+            },
+            {
+              "from_element_id": "a10_reference_lens_1_el05",
+              "interface_kind": "PLANNED_CONTACT_OR_FASTENING",
+              "physical_evidence_status": "UNVERIFIED",
+              "planned_engagement": "BASE_ADAPTER to POST_HOLDER",
+              "to_element_id": "a10_reference_lens_1_el06"
+            },
+            {
+              "from_element_id": "a10_reference_lens_1_el06",
+              "interface_kind": "PLANNED_CONTACT_OR_FASTENING",
+              "physical_evidence_status": "UNVERIFIED",
+              "planned_engagement": "POST_HOLDER to POST",
+              "to_element_id": "a10_reference_lens_1_el07"
+            },
+            {
+              "from_element_id": "a10_reference_lens_1_el07",
+              "interface_kind": "PLANNED_CONTACT_OR_FASTENING",
+              "physical_evidence_status": "UNVERIFIED",
+              "planned_engagement": "POST to MOUNT_INTERFACE",
+              "to_element_id": "a10_reference_lens_1_el08"
+            },
+            {
+              "from_element_id": "a10_reference_lens_1_el08",
+              "interface_kind": "PLANNED_CONTACT_OR_FASTENING",
+              "physical_evidence_status": "UNVERIFIED",
+              "planned_engagement": "MOUNT_INTERFACE to DEVICE",
+              "to_element_id": "a10_reference_lens_1_el09"
+            }
+          ],
+          "load_path_id": "a10_reference_lens_1_lp01",
+          "phase2_status": "UNVERIFIED",
+          "supported_node_ids": [
+            "n13_reference_lens_l1"
+          ]
+        }
+      ],
+      "phase2_status": "UNVERIFIED",
+      "support_class": "POST_MOUNTED",
+      "supported_node_ids": [
+        "n13_reference_lens_l1"
+      ]
+    },
+    {
+      "assembly_id": "a11_reference_mirror_1",
+      "parallel_paths_required": 1,
+      "paths": [
+        {
+          "elements": [
+            {
+              "component_id": "cad_mb2448",
+              "declared_item": "MB2448 tapped table hole",
+              "element_id": "a11_reference_mirror_1_el01",
+              "role": "TABLE_HOLE",
+              "sequence": 1
+            },
+            {
+              "component_id": null,
+              "declared_item": "declared 1/4-20 table fastener",
+              "element_id": "a11_reference_mirror_1_el02",
+              "role": "FASTENER",
+              "sequence": 2
+            },
+            {
+              "component_id": null,
+              "declared_item": "declared load-spreading washer",
+              "element_id": "a11_reference_mirror_1_el03",
+              "role": "WASHER",
+              "sequence": 3
+            },
+            {
+              "component_id": "cad_cf125",
+              "declared_item": "CF125 clamping fork",
+              "element_id": "a11_reference_mirror_1_el04",
+              "role": "CLAMP",
+              "sequence": 4
+            },
+            {
+              "component_id": "cad_be1",
+              "declared_item": "BE1 pedestal base",
+              "element_id": "a11_reference_mirror_1_el05",
+              "role": "BASE_ADAPTER",
+              "sequence": 5
+            },
+            {
+              "component_id": "cad_ph2",
+              "declared_item": "PH2 post holder",
+              "element_id": "a11_reference_mirror_1_el06",
+              "role": "POST_HOLDER",
+              "sequence": 6
+            },
+            {
+              "component_id": "cad_tr2",
+              "declared_item": "TR2 optical post",
+              "element_id": "a11_reference_mirror_1_el07",
+              "role": "POST",
+              "sequence": 7
+            },
+            {
+              "component_id": "cad_km100",
+              "declared_item": "KM100 kinematic mirror mount",
+              "element_id": "a11_reference_mirror_1_el08",
+              "role": "MOUNT_INTERFACE",
+              "sequence": 8
+            },
+            {
+              "component_id": "cad_bb1_e03",
+              "declared_item": "BB1-E03 M1",
+              "element_id": "a11_reference_mirror_1_el09",
+              "role": "DEVICE",
+              "sequence": 9
+            }
+          ],
+          "interfaces": [
+            {
+              "from_element_id": "a11_reference_mirror_1_el01",
+              "interface_kind": "PLANNED_CONTACT_OR_FASTENING",
+              "physical_evidence_status": "UNVERIFIED",
+              "planned_engagement": "TABLE_HOLE to FASTENER",
+              "to_element_id": "a11_reference_mirror_1_el02"
+            },
+            {
+              "from_element_id": "a11_reference_mirror_1_el02",
+              "interface_kind": "PLANNED_CONTACT_OR_FASTENING",
+              "physical_evidence_status": "UNVERIFIED",
+              "planned_engagement": "FASTENER to WASHER",
+              "to_element_id": "a11_reference_mirror_1_el03"
+            },
+            {
+              "from_element_id": "a11_reference_mirror_1_el03",
+              "interface_kind": "PLANNED_CONTACT_OR_FASTENING",
+              "physical_evidence_status": "UNVERIFIED",
+              "planned_engagement": "WASHER to CLAMP",
+              "to_element_id": "a11_reference_mirror_1_el04"
+            },
+            {
+              "from_element_id": "a11_reference_mirror_1_el04",
+              "interface_kind": "PLANNED_CONTACT_OR_FASTENING",
+              "physical_evidence_status": "UNVERIFIED",
+              "planned_engagement": "CLAMP to BASE_ADAPTER",
+              "to_element_id": "a11_reference_mirror_1_el05"
+            },
+            {
+              "from_element_id": "a11_reference_mirror_1_el05",
+              "interface_kind": "PLANNED_CONTACT_OR_FASTENING",
+              "physical_evidence_status": "UNVERIFIED",
+              "planned_engagement": "BASE_ADAPTER to POST_HOLDER",
+              "to_element_id": "a11_reference_mirror_1_el06"
+            },
+            {
+              "from_element_id": "a11_reference_mirror_1_el06",
+              "interface_kind": "PLANNED_CONTACT_OR_FASTENING",
+              "physical_evidence_status": "UNVERIFIED",
+              "planned_engagement": "POST_HOLDER to POST",
+              "to_element_id": "a11_reference_mirror_1_el07"
+            },
+            {
+              "from_element_id": "a11_reference_mirror_1_el07",
+              "interface_kind": "PLANNED_CONTACT_OR_FASTENING",
+              "physical_evidence_status": "UNVERIFIED",
+              "planned_engagement": "POST to MOUNT_INTERFACE",
+              "to_element_id": "a11_reference_mirror_1_el08"
+            },
+            {
+              "from_element_id": "a11_reference_mirror_1_el08",
+              "interface_kind": "PLANNED_CONTACT_OR_FASTENING",
+              "physical_evidence_status": "UNVERIFIED",
+              "planned_engagement": "MOUNT_INTERFACE to DEVICE",
+              "to_element_id": "a11_reference_mirror_1_el09"
+            }
+          ],
+          "load_path_id": "a11_reference_mirror_1_lp01",
+          "phase2_status": "UNVERIFIED",
+          "supported_node_ids": [
+            "n14_reference_mirror_m1"
+          ]
+        }
+      ],
+      "phase2_status": "UNVERIFIED",
+      "support_class": "POST_MOUNTED",
+      "supported_node_ids": [
+        "n14_reference_mirror_m1"
+      ]
+    },
+    {
+      "assembly_id": "a12_reference_lens_2",
+      "parallel_paths_required": 1,
+      "paths": [
+        {
+          "elements": [
+            {
+              "component_id": "cad_mb2448",
+              "declared_item": "MB2448 tapped table hole",
+              "element_id": "a12_reference_lens_2_el01",
+              "role": "TABLE_HOLE",
+              "sequence": 1
+            },
+            {
+              "component_id": null,
+              "declared_item": "declared 1/4-20 table fastener",
+              "element_id": "a12_reference_lens_2_el02",
+              "role": "FASTENER",
+              "sequence": 2
+            },
+            {
+              "component_id": null,
+              "declared_item": "declared load-spreading washer",
+              "element_id": "a12_reference_lens_2_el03",
+              "role": "WASHER",
+              "sequence": 3
+            },
+            {
+              "component_id": "cad_cf125",
+              "declared_item": "CF125 clamping fork",
+              "element_id": "a12_reference_lens_2_el04",
+              "role": "CLAMP",
+              "sequence": 4
+            },
+            {
+              "component_id": "cad_be1",
+              "declared_item": "BE1 pedestal base",
+              "element_id": "a12_reference_lens_2_el05",
+              "role": "BASE_ADAPTER",
+              "sequence": 5
+            },
+            {
+              "component_id": "cad_ph2",
+              "declared_item": "PH2 post holder",
+              "element_id": "a12_reference_lens_2_el06",
+              "role": "POST_HOLDER",
+              "sequence": 6
+            },
+            {
+              "component_id": "cad_tr2",
+              "declared_item": "TR2 optical post",
+              "element_id": "a12_reference_lens_2_el07",
+              "role": "POST",
+              "sequence": 7
+            },
+            {
+              "component_id": "cad_lmr1",
+              "declared_item": "LMR1 lens mount",
+              "element_id": "a12_reference_lens_2_el08",
+              "role": "MOUNT_INTERFACE",
+              "sequence": 8
+            },
+            {
+              "component_id": "cad_ac254_030_b_ml",
+              "declared_item": "AC254-030-B-ML L2",
+              "element_id": "a12_reference_lens_2_el09",
+              "role": "DEVICE",
+              "sequence": 9
+            }
+          ],
+          "interfaces": [
+            {
+              "from_element_id": "a12_reference_lens_2_el01",
+              "interface_kind": "PLANNED_CONTACT_OR_FASTENING",
+              "physical_evidence_status": "UNVERIFIED",
+              "planned_engagement": "TABLE_HOLE to FASTENER",
+              "to_element_id": "a12_reference_lens_2_el02"
+            },
+            {
+              "from_element_id": "a12_reference_lens_2_el02",
+              "interface_kind": "PLANNED_CONTACT_OR_FASTENING",
+              "physical_evidence_status": "UNVERIFIED",
+              "planned_engagement": "FASTENER to WASHER",
+              "to_element_id": "a12_reference_lens_2_el03"
+            },
+            {
+              "from_element_id": "a12_reference_lens_2_el03",
+              "interface_kind": "PLANNED_CONTACT_OR_FASTENING",
+              "physical_evidence_status": "UNVERIFIED",
+              "planned_engagement": "WASHER to CLAMP",
+              "to_element_id": "a12_reference_lens_2_el04"
+            },
+            {
+              "from_element_id": "a12_reference_lens_2_el04",
+              "interface_kind": "PLANNED_CONTACT_OR_FASTENING",
+              "physical_evidence_status": "UNVERIFIED",
+              "planned_engagement": "CLAMP to BASE_ADAPTER",
+              "to_element_id": "a12_reference_lens_2_el05"
+            },
+            {
+              "from_element_id": "a12_reference_lens_2_el05",
+              "interface_kind": "PLANNED_CONTACT_OR_FASTENING",
+              "physical_evidence_status": "UNVERIFIED",
+              "planned_engagement": "BASE_ADAPTER to POST_HOLDER",
+              "to_element_id": "a12_reference_lens_2_el06"
+            },
+            {
+              "from_element_id": "a12_reference_lens_2_el06",
+              "interface_kind": "PLANNED_CONTACT_OR_FASTENING",
+              "physical_evidence_status": "UNVERIFIED",
+              "planned_engagement": "POST_HOLDER to POST",
+              "to_element_id": "a12_reference_lens_2_el07"
+            },
+            {
+              "from_element_id": "a12_reference_lens_2_el07",
+              "interface_kind": "PLANNED_CONTACT_OR_FASTENING",
+              "physical_evidence_status": "UNVERIFIED",
+              "planned_engagement": "POST to MOUNT_INTERFACE",
+              "to_element_id": "a12_reference_lens_2_el08"
+            },
+            {
+              "from_element_id": "a12_reference_lens_2_el08",
+              "interface_kind": "PLANNED_CONTACT_OR_FASTENING",
+              "physical_evidence_status": "UNVERIFIED",
+              "planned_engagement": "MOUNT_INTERFACE to DEVICE",
+              "to_element_id": "a12_reference_lens_2_el09"
+            }
+          ],
+          "load_path_id": "a12_reference_lens_2_lp01",
+          "phase2_status": "UNVERIFIED",
+          "supported_node_ids": [
+            "n16_reference_lens_l2"
+          ]
+        }
+      ],
+      "phase2_status": "UNVERIFIED",
+      "support_class": "POST_MOUNTED",
+      "supported_node_ids": [
+        "n16_reference_lens_l2"
+      ]
+    },
+    {
+      "assembly_id": "a13_reference_mirror_2",
+      "parallel_paths_required": 1,
+      "paths": [
+        {
+          "elements": [
+            {
+              "component_id": "cad_mb2448",
+              "declared_item": "MB2448 tapped table hole",
+              "element_id": "a13_reference_mirror_2_el01",
+              "role": "TABLE_HOLE",
+              "sequence": 1
+            },
+            {
+              "component_id": null,
+              "declared_item": "declared 1/4-20 table fastener",
+              "element_id": "a13_reference_mirror_2_el02",
+              "role": "FASTENER",
+              "sequence": 2
+            },
+            {
+              "component_id": null,
+              "declared_item": "declared load-spreading washer",
+              "element_id": "a13_reference_mirror_2_el03",
+              "role": "WASHER",
+              "sequence": 3
+            },
+            {
+              "component_id": "cad_cf125",
+              "declared_item": "CF125 clamping fork",
+              "element_id": "a13_reference_mirror_2_el04",
+              "role": "CLAMP",
+              "sequence": 4
+            },
+            {
+              "component_id": "cad_be1",
+              "declared_item": "BE1 pedestal base",
+              "element_id": "a13_reference_mirror_2_el05",
+              "role": "BASE_ADAPTER",
+              "sequence": 5
+            },
+            {
+              "component_id": "cad_ph2",
+              "declared_item": "PH2 post holder",
+              "element_id": "a13_reference_mirror_2_el06",
+              "role": "POST_HOLDER",
+              "sequence": 6
+            },
+            {
+              "component_id": "cad_tr2",
+              "declared_item": "TR2 optical post",
+              "element_id": "a13_reference_mirror_2_el07",
+              "role": "POST",
+              "sequence": 7
+            },
+            {
+              "component_id": "cad_km100",
+              "declared_item": "KM100 kinematic mirror mount",
+              "element_id": "a13_reference_mirror_2_el08",
+              "role": "MOUNT_INTERFACE",
+              "sequence": 8
+            },
+            {
+              "component_id": "cad_bb1_e03",
+              "declared_item": "BB1-E03 M2",
+              "element_id": "a13_reference_mirror_2_el09",
+              "role": "DEVICE",
+              "sequence": 9
+            }
+          ],
+          "interfaces": [
+            {
+              "from_element_id": "a13_reference_mirror_2_el01",
+              "interface_kind": "PLANNED_CONTACT_OR_FASTENING",
+              "physical_evidence_status": "UNVERIFIED",
+              "planned_engagement": "TABLE_HOLE to FASTENER",
+              "to_element_id": "a13_reference_mirror_2_el02"
+            },
+            {
+              "from_element_id": "a13_reference_mirror_2_el02",
+              "interface_kind": "PLANNED_CONTACT_OR_FASTENING",
+              "physical_evidence_status": "UNVERIFIED",
+              "planned_engagement": "FASTENER to WASHER",
+              "to_element_id": "a13_reference_mirror_2_el03"
+            },
+            {
+              "from_element_id": "a13_reference_mirror_2_el03",
+              "interface_kind": "PLANNED_CONTACT_OR_FASTENING",
+              "physical_evidence_status": "UNVERIFIED",
+              "planned_engagement": "WASHER to CLAMP",
+              "to_element_id": "a13_reference_mirror_2_el04"
+            },
+            {
+              "from_element_id": "a13_reference_mirror_2_el04",
+              "interface_kind": "PLANNED_CONTACT_OR_FASTENING",
+              "physical_evidence_status": "UNVERIFIED",
+              "planned_engagement": "CLAMP to BASE_ADAPTER",
+              "to_element_id": "a13_reference_mirror_2_el05"
+            },
+            {
+              "from_element_id": "a13_reference_mirror_2_el05",
+              "interface_kind": "PLANNED_CONTACT_OR_FASTENING",
+              "physical_evidence_status": "UNVERIFIED",
+              "planned_engagement": "BASE_ADAPTER to POST_HOLDER",
+              "to_element_id": "a13_reference_mirror_2_el06"
+            },
+            {
+              "from_element_id": "a13_reference_mirror_2_el06",
+              "interface_kind": "PLANNED_CONTACT_OR_FASTENING",
+              "physical_evidence_status": "UNVERIFIED",
+              "planned_engagement": "POST_HOLDER to POST",
+              "to_element_id": "a13_reference_mirror_2_el07"
+            },
+            {
+              "from_element_id": "a13_reference_mirror_2_el07",
+              "interface_kind": "PLANNED_CONTACT_OR_FASTENING",
+              "physical_evidence_status": "UNVERIFIED",
+              "planned_engagement": "POST to MOUNT_INTERFACE",
+              "to_element_id": "a13_reference_mirror_2_el08"
+            },
+            {
+              "from_element_id": "a13_reference_mirror_2_el08",
+              "interface_kind": "PLANNED_CONTACT_OR_FASTENING",
+              "physical_evidence_status": "UNVERIFIED",
+              "planned_engagement": "MOUNT_INTERFACE to DEVICE",
+              "to_element_id": "a13_reference_mirror_2_el09"
+            }
+          ],
+          "load_path_id": "a13_reference_mirror_2_lp01",
+          "phase2_status": "UNVERIFIED",
+          "supported_node_ids": [
+            "n17_reference_mirror_m2"
+          ]
+        }
+      ],
+      "phase2_status": "UNVERIFIED",
+      "support_class": "POST_MOUNTED",
+      "supported_node_ids": [
+        "n17_reference_mirror_m2"
+      ]
+    },
+    {
+      "assembly_id": "a14_spectrometer_bench",
+      "parallel_paths_required": 4,
+      "paths": [
+        {
+          "elements": [
+            {
+              "component_id": "cad_mb2448",
+              "declared_item": "MB2448 tapped table hole for front-left support",
+              "element_id": "a14_spectrometer_bench_lp01_el01",
+              "role": "TABLE_HOLE",
+              "sequence": 1
+            },
+            {
+              "component_id": null,
+              "declared_item": "declared 1/4-20 fastener for front-left support",
+              "element_id": "a14_spectrometer_bench_lp01_el02",
+              "role": "FASTENER",
+              "sequence": 2
+            },
+            {
+              "component_id": null,
+              "declared_item": "declared load-spreading washer for front-left support",
+              "element_id": "a14_spectrometer_bench_lp01_el03",
+              "role": "WASHER",
+              "sequence": 3
+            },
+            {
+              "component_id": null,
+              "declared_item": "spectrometer enclosure front-left foot",
+              "element_id": "a14_spectrometer_bench_lp01_el04",
+              "role": "PLATFORM_SUPPORT",
+              "sequence": 4
+            },
+            {
+              "component_id": null,
+              "declared_item": "spectrometer optical bench and enclosure",
+              "element_id": "a14_spectrometer_bench_lp01_el05",
+              "role": "PLATFORM",
+              "sequence": 5
+            },
+            {
+              "component_id": null,
+              "declared_item": "collimator-grating-lens-camera assembly",
+              "element_id": "a14_spectrometer_bench_lp01_el06",
+              "role": "DEVICE",
+              "sequence": 6
+            }
+          ],
+          "interfaces": [
+            {
+              "from_element_id": "a14_spectrometer_bench_lp01_el01",
+              "interface_kind": "PLANNED_CONTACT_OR_FASTENING",
+              "physical_evidence_status": "UNVERIFIED",
+              "planned_engagement": "TABLE_HOLE to FASTENER",
+              "to_element_id": "a14_spectrometer_bench_lp01_el02"
+            },
+            {
+              "from_element_id": "a14_spectrometer_bench_lp01_el02",
+              "interface_kind": "PLANNED_CONTACT_OR_FASTENING",
+              "physical_evidence_status": "UNVERIFIED",
+              "planned_engagement": "FASTENER to WASHER",
+              "to_element_id": "a14_spectrometer_bench_lp01_el03"
+            },
+            {
+              "from_element_id": "a14_spectrometer_bench_lp01_el03",
+              "interface_kind": "PLANNED_CONTACT_OR_FASTENING",
+              "physical_evidence_status": "UNVERIFIED",
+              "planned_engagement": "WASHER to PLATFORM_SUPPORT",
+              "to_element_id": "a14_spectrometer_bench_lp01_el04"
+            },
+            {
+              "from_element_id": "a14_spectrometer_bench_lp01_el04",
+              "interface_kind": "PLANNED_CONTACT_OR_FASTENING",
+              "physical_evidence_status": "UNVERIFIED",
+              "planned_engagement": "PLATFORM_SUPPORT to PLATFORM",
+              "to_element_id": "a14_spectrometer_bench_lp01_el05"
+            },
+            {
+              "from_element_id": "a14_spectrometer_bench_lp01_el05",
+              "interface_kind": "PLANNED_CONTACT_OR_FASTENING",
+              "physical_evidence_status": "UNVERIFIED",
+              "planned_engagement": "PLATFORM to DEVICE",
+              "to_element_id": "a14_spectrometer_bench_lp01_el06"
+            }
+          ],
+          "load_path_id": "a14_spectrometer_bench_lp01",
+          "phase2_status": "PASS",
+          "support_point_id": "front-left",
+          "supported_node_ids": [
+            "n18_detector_collimator",
+            "n19_diffraction_grating",
+            "n20_spectrometer_lens",
+            "n21_line_camera"
+          ]
+        },
+        {
+          "elements": [
+            {
+              "component_id": "cad_mb2448",
+              "declared_item": "MB2448 tapped table hole for front-right support",
+              "element_id": "a14_spectrometer_bench_lp02_el01",
+              "role": "TABLE_HOLE",
+              "sequence": 1
+            },
+            {
+              "component_id": null,
+              "declared_item": "declared 1/4-20 fastener for front-right support",
+              "element_id": "a14_spectrometer_bench_lp02_el02",
+              "role": "FASTENER",
+              "sequence": 2
+            },
+            {
+              "component_id": null,
+              "declared_item": "declared load-spreading washer for front-right support",
+              "element_id": "a14_spectrometer_bench_lp02_el03",
+              "role": "WASHER",
+              "sequence": 3
+            },
+            {
+              "component_id": null,
+              "declared_item": "spectrometer enclosure front-right foot",
+              "element_id": "a14_spectrometer_bench_lp02_el04",
+              "role": "PLATFORM_SUPPORT",
+              "sequence": 4
+            },
+            {
+              "component_id": null,
+              "declared_item": "spectrometer optical bench and enclosure",
+              "element_id": "a14_spectrometer_bench_lp02_el05",
+              "role": "PLATFORM",
+              "sequence": 5
+            },
+            {
+              "component_id": null,
+              "declared_item": "collimator-grating-lens-camera assembly",
+              "element_id": "a14_spectrometer_bench_lp02_el06",
+              "role": "DEVICE",
+              "sequence": 6
+            }
+          ],
+          "interfaces": [
+            {
+              "from_element_id": "a14_spectrometer_bench_lp02_el01",
+              "interface_kind": "PLANNED_CONTACT_OR_FASTENING",
+              "physical_evidence_status": "UNVERIFIED",
+              "planned_engagement": "TABLE_HOLE to FASTENER",
+              "to_element_id": "a14_spectrometer_bench_lp02_el02"
+            },
+            {
+              "from_element_id": "a14_spectrometer_bench_lp02_el02",
+              "interface_kind": "PLANNED_CONTACT_OR_FASTENING",
+              "physical_evidence_status": "UNVERIFIED",
+              "planned_engagement": "FASTENER to WASHER",
+              "to_element_id": "a14_spectrometer_bench_lp02_el03"
+            },
+            {
+              "from_element_id": "a14_spectrometer_bench_lp02_el03",
+              "interface_kind": "PLANNED_CONTACT_OR_FASTENING",
+              "physical_evidence_status": "UNVERIFIED",
+              "planned_engagement": "WASHER to PLATFORM_SUPPORT",
+              "to_element_id": "a14_spectrometer_bench_lp02_el04"
+            },
+            {
+              "from_element_id": "a14_spectrometer_bench_lp02_el04",
+              "interface_kind": "PLANNED_CONTACT_OR_FASTENING",
+              "physical_evidence_status": "UNVERIFIED",
+              "planned_engagement": "PLATFORM_SUPPORT to PLATFORM",
+              "to_element_id": "a14_spectrometer_bench_lp02_el05"
+            },
+            {
+              "from_element_id": "a14_spectrometer_bench_lp02_el05",
+              "interface_kind": "PLANNED_CONTACT_OR_FASTENING",
+              "physical_evidence_status": "UNVERIFIED",
+              "planned_engagement": "PLATFORM to DEVICE",
+              "to_element_id": "a14_spectrometer_bench_lp02_el06"
+            }
+          ],
+          "load_path_id": "a14_spectrometer_bench_lp02",
+          "phase2_status": "PASS",
+          "support_point_id": "front-right",
+          "supported_node_ids": [
+            "n18_detector_collimator",
+            "n19_diffraction_grating",
+            "n20_spectrometer_lens",
+            "n21_line_camera"
+          ]
+        },
+        {
+          "elements": [
+            {
+              "component_id": "cad_mb2448",
+              "declared_item": "MB2448 tapped table hole for rear-left support",
+              "element_id": "a14_spectrometer_bench_lp03_el01",
+              "role": "TABLE_HOLE",
+              "sequence": 1
+            },
+            {
+              "component_id": null,
+              "declared_item": "declared 1/4-20 fastener for rear-left support",
+              "element_id": "a14_spectrometer_bench_lp03_el02",
+              "role": "FASTENER",
+              "sequence": 2
+            },
+            {
+              "component_id": null,
+              "declared_item": "declared load-spreading washer for rear-left support",
+              "element_id": "a14_spectrometer_bench_lp03_el03",
+              "role": "WASHER",
+              "sequence": 3
+            },
+            {
+              "component_id": null,
+              "declared_item": "spectrometer enclosure rear-left foot",
+              "element_id": "a14_spectrometer_bench_lp03_el04",
+              "role": "PLATFORM_SUPPORT",
+              "sequence": 4
+            },
+            {
+              "component_id": null,
+              "declared_item": "spectrometer optical bench and enclosure",
+              "element_id": "a14_spectrometer_bench_lp03_el05",
+              "role": "PLATFORM",
+              "sequence": 5
+            },
+            {
+              "component_id": null,
+              "declared_item": "collimator-grating-lens-camera assembly",
+              "element_id": "a14_spectrometer_bench_lp03_el06",
+              "role": "DEVICE",
+              "sequence": 6
+            }
+          ],
+          "interfaces": [
+            {
+              "from_element_id": "a14_spectrometer_bench_lp03_el01",
+              "interface_kind": "PLANNED_CONTACT_OR_FASTENING",
+              "physical_evidence_status": "UNVERIFIED",
+              "planned_engagement": "TABLE_HOLE to FASTENER",
+              "to_element_id": "a14_spectrometer_bench_lp03_el02"
+            },
+            {
+              "from_element_id": "a14_spectrometer_bench_lp03_el02",
+              "interface_kind": "PLANNED_CONTACT_OR_FASTENING",
+              "physical_evidence_status": "UNVERIFIED",
+              "planned_engagement": "FASTENER to WASHER",
+              "to_element_id": "a14_spectrometer_bench_lp03_el03"
+            },
+            {
+              "from_element_id": "a14_spectrometer_bench_lp03_el03",
+              "interface_kind": "PLANNED_CONTACT_OR_FASTENING",
+              "physical_evidence_status": "UNVERIFIED",
+              "planned_engagement": "WASHER to PLATFORM_SUPPORT",
+              "to_element_id": "a14_spectrometer_bench_lp03_el04"
+            },
+            {
+              "from_element_id": "a14_spectrometer_bench_lp03_el04",
+              "interface_kind": "PLANNED_CONTACT_OR_FASTENING",
+              "physical_evidence_status": "UNVERIFIED",
+              "planned_engagement": "PLATFORM_SUPPORT to PLATFORM",
+              "to_element_id": "a14_spectrometer_bench_lp03_el05"
+            },
+            {
+              "from_element_id": "a14_spectrometer_bench_lp03_el05",
+              "interface_kind": "PLANNED_CONTACT_OR_FASTENING",
+              "physical_evidence_status": "UNVERIFIED",
+              "planned_engagement": "PLATFORM to DEVICE",
+              "to_element_id": "a14_spectrometer_bench_lp03_el06"
+            }
+          ],
+          "load_path_id": "a14_spectrometer_bench_lp03",
+          "phase2_status": "PASS",
+          "support_point_id": "rear-left",
+          "supported_node_ids": [
+            "n18_detector_collimator",
+            "n19_diffraction_grating",
+            "n20_spectrometer_lens",
+            "n21_line_camera"
+          ]
+        },
+        {
+          "elements": [
+            {
+              "component_id": "cad_mb2448",
+              "declared_item": "MB2448 tapped table hole for rear-right support",
+              "element_id": "a14_spectrometer_bench_lp04_el01",
+              "role": "TABLE_HOLE",
+              "sequence": 1
+            },
+            {
+              "component_id": null,
+              "declared_item": "declared 1/4-20 fastener for rear-right support",
+              "element_id": "a14_spectrometer_bench_lp04_el02",
+              "role": "FASTENER",
+              "sequence": 2
+            },
+            {
+              "component_id": null,
+              "declared_item": "declared load-spreading washer for rear-right support",
+              "element_id": "a14_spectrometer_bench_lp04_el03",
+              "role": "WASHER",
+              "sequence": 3
+            },
+            {
+              "component_id": null,
+              "declared_item": "spectrometer enclosure rear-right foot",
+              "element_id": "a14_spectrometer_bench_lp04_el04",
+              "role": "PLATFORM_SUPPORT",
+              "sequence": 4
+            },
+            {
+              "component_id": null,
+              "declared_item": "spectrometer optical bench and enclosure",
+              "element_id": "a14_spectrometer_bench_lp04_el05",
+              "role": "PLATFORM",
+              "sequence": 5
+            },
+            {
+              "component_id": null,
+              "declared_item": "collimator-grating-lens-camera assembly",
+              "element_id": "a14_spectrometer_bench_lp04_el06",
+              "role": "DEVICE",
+              "sequence": 6
+            }
+          ],
+          "interfaces": [
+            {
+              "from_element_id": "a14_spectrometer_bench_lp04_el01",
+              "interface_kind": "PLANNED_CONTACT_OR_FASTENING",
+              "physical_evidence_status": "UNVERIFIED",
+              "planned_engagement": "TABLE_HOLE to FASTENER",
+              "to_element_id": "a14_spectrometer_bench_lp04_el02"
+            },
+            {
+              "from_element_id": "a14_spectrometer_bench_lp04_el02",
+              "interface_kind": "PLANNED_CONTACT_OR_FASTENING",
+              "physical_evidence_status": "UNVERIFIED",
+              "planned_engagement": "FASTENER to WASHER",
+              "to_element_id": "a14_spectrometer_bench_lp04_el03"
+            },
+            {
+              "from_element_id": "a14_spectrometer_bench_lp04_el03",
+              "interface_kind": "PLANNED_CONTACT_OR_FASTENING",
+              "physical_evidence_status": "UNVERIFIED",
+              "planned_engagement": "WASHER to PLATFORM_SUPPORT",
+              "to_element_id": "a14_spectrometer_bench_lp04_el04"
+            },
+            {
+              "from_element_id": "a14_spectrometer_bench_lp04_el04",
+              "interface_kind": "PLANNED_CONTACT_OR_FASTENING",
+              "physical_evidence_status": "UNVERIFIED",
+              "planned_engagement": "PLATFORM_SUPPORT to PLATFORM",
+              "to_element_id": "a14_spectrometer_bench_lp04_el05"
+            },
+            {
+              "from_element_id": "a14_spectrometer_bench_lp04_el05",
+              "interface_kind": "PLANNED_CONTACT_OR_FASTENING",
+              "physical_evidence_status": "UNVERIFIED",
+              "planned_engagement": "PLATFORM to DEVICE",
+              "to_element_id": "a14_spectrometer_bench_lp04_el06"
+            }
+          ],
+          "load_path_id": "a14_spectrometer_bench_lp04",
+          "phase2_status": "PASS",
+          "support_point_id": "rear-right",
+          "supported_node_ids": [
+            "n18_detector_collimator",
+            "n19_diffraction_grating",
+            "n20_spectrometer_lens",
+            "n21_line_camera"
+          ]
+        }
+      ],
+      "phase2_status": "PASS",
+      "support_class": "MULTIFOOT_INSTRUMENT",
+      "supported_node_ids": [
+        "n18_detector_collimator",
+        "n19_diffraction_grating",
+        "n20_spectrometer_lens",
+        "n21_line_camera"
+      ]
+    }
+  ],
+  "assembly_count": 14,
+  "collision_audit": {
+    "broad_phase": "WORLD_AABB_CANDIDATES",
+    "classified_allowed_overlap_count": 101,
+    "illegal_collision_count": 0,
+    "illegal_collisions": [],
+    "narrow_phase": "TRIANGLE_BVH_OVERLAP",
+    "status": "PASS"
+  },
+  "contact_interface_count": 141,
+  "contact_status_counts": {
+    "PASS": 121,
+    "UNVERIFIED": 20
+  },
+  "contacts": [
+    {
+      "aabb_intersection_depth_mm": [
+        6.900024414,
+        6.899993896,
+        8.0000459
+      ],
+      "annular_or_footprint_support_fraction": 1.0,
+      "assembly_id": "a01_sld_source",
+      "classification": "FASTENER_ENGAGEMENT",
+      "gap_threshold_mm": 0.1,
+      "interface_role": "TABLE_HOLE_TO_FASTENER",
+      "load_path_id": "a01_sld_source_lp01",
+      "min_triangle_surface_distance_mm": 0.0,
+      "object_a": "TABLE__MB2448",
+      "object_b": "a01_sld_source_lp01__FASTENER",
+      "status": "PASS",
+      "table_hole_engagement_mm": 6.0,
+      "triangle_overlap_pairs": 156
+    },
+    {
+      "aabb_intersection_depth_mm": [
+        6.900024414,
+        6.899993896,
+        1.399999976
+      ],
+      "annular_or_footprint_support_fraction": 1.0,
+      "assembly_id": "a01_sld_source",
+      "classification": "FASTENER_ENGAGEMENT",
+      "gap_threshold_mm": 0.1,
+      "interface_role": "FASTENER_TO_WASHER",
+      "load_path_id": "a01_sld_source_lp01",
+      "min_triangle_surface_distance_mm": 0.0,
+      "object_a": "a01_sld_source_lp01__FASTENER",
+      "object_b": "a01_sld_source_lp01__WASHER",
+      "status": "PASS",
+      "table_hole_engagement_mm": null,
+      "triangle_overlap_pairs": 64
+    },
+    {
+      "aabb_intersection_depth_mm": [
+        12.400024414,
+        12.399993896,
+        0.100000381
+      ],
+      "annular_or_footprint_support_fraction": 1.0,
+      "assembly_id": "a01_sld_source",
+      "classification": "ALLOWED_CONTACT",
+      "gap_threshold_mm": 0.1,
+      "interface_role": "WASHER_TO_DEVICE_BASE",
+      "load_path_id": "a01_sld_source_lp01",
+      "min_triangle_surface_distance_mm": 0.0,
+      "object_a": "a01_sld_source_lp01__WASHER",
+      "object_b": "DEVICE__SLD_SOURCE",
+      "status": "PASS",
+      "table_hole_engagement_mm": null,
+      "triangle_overlap_pairs": 32
+    },
+    {
+      "aabb_intersection_depth_mm": [
+        6.900024414,
+        6.899999619,
+        8.0000459
+      ],
+      "annular_or_footprint_support_fraction": 1.0,
+      "assembly_id": "a02_fiber_management",
+      "classification": "FASTENER_ENGAGEMENT",
+      "gap_threshold_mm": 0.1,
+      "interface_role": "TABLE_HOLE_TO_FASTENER",
+      "load_path_id": "a02_fiber_management_lp01",
+      "min_triangle_surface_distance_mm": 0.0,
+      "object_a": "TABLE__MB2448",
+      "object_b": "a02_fiber_management_lp01__FASTENER",
+      "status": "PASS",
+      "table_hole_engagement_mm": 6.0,
+      "triangle_overlap_pairs": 157
+    },
+    {
+      "aabb_intersection_depth_mm": [
+        6.900024414,
+        6.899999619,
+        1.399999976
+      ],
+      "annular_or_footprint_support_fraction": 1.0,
+      "assembly_id": "a02_fiber_management",
+      "classification": "FASTENER_ENGAGEMENT",
+      "gap_threshold_mm": 0.1,
+      "interface_role": "FASTENER_TO_WASHER",
+      "load_path_id": "a02_fiber_management_lp01",
+      "min_triangle_surface_distance_mm": 0.0,
+      "object_a": "a02_fiber_management_lp01__FASTENER",
+      "object_b": "a02_fiber_management_lp01__WASHER",
+      "status": "PASS",
+      "table_hole_engagement_mm": null,
+      "triangle_overlap_pairs": 64
+    },
+    {
+      "aabb_intersection_depth_mm": [
+        12.400024414,
+        12.399999619,
+        1.25
+      ],
+      "annular_or_footprint_support_fraction": 1.0,
+      "assembly_id": "a02_fiber_management",
+      "classification": "ALLOWED_CONTACT",
+      "gap_threshold_mm": 0.1,
+      "interface_role": "WASHER_TO_PLATFORM_FOOT",
+      "load_path_id": "a02_fiber_management_lp01",
+      "min_triangle_surface_distance_mm": 0.0,
+      "object_a": "a02_fiber_management_lp01__WASHER",
+      "object_b": "a02_fiber_management_lp01__FOOT",
+      "status": "PASS",
+      "table_hole_engagement_mm": null,
+      "triangle_overlap_pairs": 32
+    },
+    {
+      "aabb_intersection_depth_mm": [
+        18.0,
+        18.000000954,
+        4.0
+      ],
+      "annular_or_footprint_support_fraction": 1.0,
+      "assembly_id": "a02_fiber_management",
+      "classification": "ALLOWED_CONTACT",
+      "gap_threshold_mm": 0.1,
+      "interface_role": "FOOT_TO_PLATFORM",
+      "load_path_id": "a02_fiber_management_lp01",
+      "min_triangle_surface_distance_mm": 0.0,
+      "object_a": "a02_fiber_management_lp01__FOOT",
+      "object_b": "a02__FIBER_PLATFORM",
+      "status": "PASS",
+      "table_hole_engagement_mm": null,
+      "triangle_overlap_pairs": 32
+    },
+    {
+      "aabb_intersection_depth_mm": [
+        340.460266113,
+        81.850002289,
+        0.099956512
+      ],
+      "annular_or_footprint_support_fraction": 0.808847952,
+      "assembly_id": "a02_fiber_management",
+      "classification": "ALLOWED_CONTACT",
+      "gap_threshold_mm": 0.1,
+      "interface_role": "PLATFORM_TO_DEVICE",
+      "load_path_id": "a02_fiber_management_lp01",
+      "min_triangle_surface_distance_mm": 0.0,
+      "object_a": "a02__FIBER_PLATFORM",
+      "object_b": "DEVICE__MAIN_COUPLER",
+      "status": "PASS",
+      "table_hole_engagement_mm": null,
+      "triangle_overlap_pairs": 50
+    },
+    {
+      "aabb_intersection_depth_mm": [
+        6.899993896,
+        6.899993896,
+        8.0000459
+      ],
+      "annular_or_footprint_support_fraction": 1.0,
+      "assembly_id": "a02_fiber_management",
+      "classification": "FASTENER_ENGAGEMENT",
+      "gap_threshold_mm": 0.1,
+      "interface_role": "TABLE_HOLE_TO_FASTENER",
+      "load_path_id": "a02_fiber_management_lp02",
+      "min_triangle_surface_distance_mm": 0.0,
+      "object_a": "TABLE__MB2448",
+      "object_b": "a02_fiber_management_lp02__FASTENER",
+      "status": "PASS",
+      "table_hole_engagement_mm": 6.0,
+      "triangle_overlap_pairs": 156
+    },
+    {
+      "aabb_intersection_depth_mm": [
+        6.899993896,
+        6.899993896,
+        1.399999976
+      ],
+      "annular_or_footprint_support_fraction": 1.0,
+      "assembly_id": "a02_fiber_management",
+      "classification": "FASTENER_ENGAGEMENT",
+      "gap_threshold_mm": 0.1,
+      "interface_role": "FASTENER_TO_WASHER",
+      "load_path_id": "a02_fiber_management_lp02",
+      "min_triangle_surface_distance_mm": 0.0,
+      "object_a": "a02_fiber_management_lp02__FASTENER",
+      "object_b": "a02_fiber_management_lp02__WASHER",
+      "status": "PASS",
+      "table_hole_engagement_mm": null,
+      "triangle_overlap_pairs": 64
+    },
+    {
+      "aabb_intersection_depth_mm": [
+        12.399993896,
+        12.399993896,
+        1.25
+      ],
+      "annular_or_footprint_support_fraction": 1.0,
+      "assembly_id": "a02_fiber_management",
+      "classification": "ALLOWED_CONTACT",
+      "gap_threshold_mm": 0.1,
+      "interface_role": "WASHER_TO_PLATFORM_FOOT",
+      "load_path_id": "a02_fiber_management_lp02",
+      "min_triangle_surface_distance_mm": 0.0,
+      "object_a": "a02_fiber_management_lp02__WASHER",
+      "object_b": "a02_fiber_management_lp02__FOOT",
+      "status": "PASS",
+      "table_hole_engagement_mm": null,
+      "triangle_overlap_pairs": 32
+    },
+    {
+      "aabb_intersection_depth_mm": [
+        18.0,
+        10.099998474,
+        4.0
+      ],
+      "annular_or_footprint_support_fraction": 0.561111026,
+      "assembly_id": "a02_fiber_management",
+      "classification": "ALLOWED_CONTACT",
+      "gap_threshold_mm": 0.1,
+      "interface_role": "FOOT_TO_PLATFORM",
+      "load_path_id": "a02_fiber_management_lp02",
+      "min_triangle_surface_distance_mm": 0.0,
+      "object_a": "a02_fiber_management_lp02__FOOT",
+      "object_b": "a02__FIBER_PLATFORM",
+      "status": "PASS",
+      "table_hole_engagement_mm": null,
+      "triangle_overlap_pairs": 21
+    },
+    {
+      "aabb_intersection_depth_mm": [
+        215.899993896,
+        29.43245697,
+        0.099994659
+      ],
+      "annular_or_footprint_support_fraction": 0.468185467,
+      "assembly_id": "a02_fiber_management",
+      "classification": "ALLOWED_CONTACT",
+      "gap_threshold_mm": 0.1,
+      "interface_role": "PLATFORM_TO_DEVICE",
+      "load_path_id": "a02_fiber_management_lp02",
+      "min_triangle_surface_distance_mm": 0.0,
+      "object_a": "a02__FIBER_PLATFORM",
+      "object_b": "DEVICE__SAMPLE_PC",
+      "status": "PASS",
+      "table_hole_engagement_mm": null,
+      "triangle_overlap_pairs": 408
+    },
+    {
+      "aabb_intersection_depth_mm": [
+        6.899993896,
+        6.899993896,
+        8.0000459
+      ],
+      "annular_or_footprint_support_fraction": 1.0,
+      "assembly_id": "a02_fiber_management",
+      "classification": "FASTENER_ENGAGEMENT",
+      "gap_threshold_mm": 0.1,
+      "interface_role": "TABLE_HOLE_TO_FASTENER",
+      "load_path_id": "a02_fiber_management_lp03",
+      "min_triangle_surface_distance_mm": 0.0,
+      "object_a": "TABLE__MB2448",
+      "object_b": "a02_fiber_management_lp03__FASTENER",
+      "status": "PASS",
+      "table_hole_engagement_mm": 6.0,
+      "triangle_overlap_pairs": 156
+    },
+    {
+      "aabb_intersection_depth_mm": [
+        6.899993896,
+        6.899993896,
+        1.399999976
+      ],
+      "annular_or_footprint_support_fraction": 1.0,
+      "assembly_id": "a02_fiber_management",
+      "classification": "FASTENER_ENGAGEMENT",
+      "gap_threshold_mm": 0.1,
+      "interface_role": "FASTENER_TO_WASHER",
+      "load_path_id": "a02_fiber_management_lp03",
+      "min_triangle_surface_distance_mm": 0.0,
+      "object_a": "a02_fiber_management_lp03__FASTENER",
+      "object_b": "a02_fiber_management_lp03__WASHER",
+      "status": "PASS",
+      "table_hole_engagement_mm": null,
+      "triangle_overlap_pairs": 64
+    },
+    {
+      "aabb_intersection_depth_mm": [
+        12.399993896,
+        12.399993896,
+        1.25
+      ],
+      "annular_or_footprint_support_fraction": 1.0,
+      "assembly_id": "a02_fiber_management",
+      "classification": "ALLOWED_CONTACT",
+      "gap_threshold_mm": 0.1,
+      "interface_role": "WASHER_TO_PLATFORM_FOOT",
+      "load_path_id": "a02_fiber_management_lp03",
+      "min_triangle_surface_distance_mm": 0.0,
+      "object_a": "a02_fiber_management_lp03__WASHER",
+      "object_b": "a02_fiber_management_lp03__FOOT",
+      "status": "PASS",
+      "table_hole_engagement_mm": null,
+      "triangle_overlap_pairs": 32
+    },
+    {
+      "aabb_intersection_depth_mm": [
+        18.0,
+        10.099998474,
+        4.0
+      ],
+      "annular_or_footprint_support_fraction": 0.561111026,
+      "assembly_id": "a02_fiber_management",
+      "classification": "ALLOWED_CONTACT",
+      "gap_threshold_mm": 0.1,
+      "interface_role": "FOOT_TO_PLATFORM",
+      "load_path_id": "a02_fiber_management_lp03",
+      "min_triangle_surface_distance_mm": 0.0,
+      "object_a": "a02_fiber_management_lp03__FOOT",
+      "object_b": "a02__FIBER_PLATFORM",
+      "status": "PASS",
+      "table_hole_engagement_mm": null,
+      "triangle_overlap_pairs": 21
+    },
+    {
+      "aabb_intersection_depth_mm": [
+        215.899993896,
+        29.432491302,
+        0.099994659
+      ],
+      "annular_or_footprint_support_fraction": 0.468186042,
+      "assembly_id": "a02_fiber_management",
+      "classification": "ALLOWED_CONTACT",
+      "gap_threshold_mm": 0.1,
+      "interface_role": "PLATFORM_TO_DEVICE",
+      "load_path_id": "a02_fiber_management_lp03",
+      "min_triangle_surface_distance_mm": 3.956487656,
+      "object_a": "a02__FIBER_PLATFORM",
+      "object_b": "DEVICE__REFERENCE_PC",
+      "status": "UNVERIFIED",
+      "table_hole_engagement_mm": null,
+      "triangle_overlap_pairs": 0
+    },
+    {
+      "aabb_intersection_depth_mm": [
+        6.899997711,
+        6.899993896,
+        8.0000459
+      ],
+      "annular_or_footprint_support_fraction": 1.0,
+      "assembly_id": "a03_sample_collimator",
+      "classification": "FASTENER_ENGAGEMENT",
+      "gap_threshold_mm": 0.1,
+      "interface_role": "TABLE_HOLE_TO_FASTENER",
+      "load_path_id": "a03_sample_collimator_lp01",
+      "min_triangle_surface_distance_mm": 0.0,
+      "object_a": "TABLE__MB2448",
+      "object_b": "a03_sample_collimator_lp01__FASTENER",
+      "status": "PASS",
+      "table_hole_engagement_mm": 6.0,
+      "triangle_overlap_pairs": 156
+    },
+    {
+      "aabb_intersection_depth_mm": [
+        6.899997711,
+        6.899993896,
+        1.399999976
+      ],
+      "annular_or_footprint_support_fraction": 1.0,
+      "assembly_id": "a03_sample_collimator",
+      "classification": "FASTENER_ENGAGEMENT",
+      "gap_threshold_mm": 0.1,
+      "interface_role": "FASTENER_TO_WASHER",
+      "load_path_id": "a03_sample_collimator_lp01",
+      "min_triangle_surface_distance_mm": 0.0,
+      "object_a": "a03_sample_collimator_lp01__FASTENER",
+      "object_b": "a03_sample_collimator_lp01__WASHER",
+      "status": "PASS",
+      "table_hole_engagement_mm": null,
+      "triangle_overlap_pairs": 64
+    },
+    {
+      "aabb_intersection_depth_mm": [
+        11.36100769,
+        12.399993896,
+        0.600045264
+      ],
+      "annular_or_footprint_support_fraction": 0.916210467,
+      "assembly_id": "a03_sample_collimator",
+      "classification": "ALLOWED_CONTACT",
+      "gap_threshold_mm": 0.1,
+      "interface_role": "WASHER_TO_CLAMP",
+      "load_path_id": "a03_sample_collimator_lp01",
+      "min_triangle_surface_distance_mm": 0.415955901,
+      "object_a": "a03_sample_collimator_lp01__WASHER",
+      "object_b": "a03_sample_collimator__CF125",
+      "status": "UNVERIFIED",
+      "table_hole_engagement_mm": null,
+      "triangle_overlap_pairs": 0
+    },
+    {
+      "aabb_intersection_depth_mm": [
+        21.036010742,
+        31.75,
+        12.091957808
+      ],
+      "annular_or_footprint_support_fraction": 0.662551519,
+      "assembly_id": "a03_sample_collimator",
+      "classification": "ALLOWED_CONTACT",
+      "gap_threshold_mm": 0.1,
+      "interface_role": "CLAMP_TO_BASE_ADAPTER",
+      "load_path_id": "a03_sample_collimator_lp01",
+      "min_triangle_surface_distance_mm": 0.0,
+      "object_a": "a03_sample_collimator__CF125",
+      "object_b": "a03_sample_collimator__BE1",
+      "status": "PASS",
+      "table_hole_engagement_mm": null,
+      "triangle_overlap_pairs": 335
+    },
+    {
+      "aabb_intersection_depth_mm": [
+        25.0,
+        31.75,
+        12.269003868
+      ],
+      "annular_or_footprint_support_fraction": 0.896538055,
+      "assembly_id": "a03_sample_collimator",
+      "classification": "ALLOWED_CONTACT",
+      "gap_threshold_mm": 0.1,
+      "interface_role": "BASE_TO_POST_HOLDER",
+      "load_path_id": "a03_sample_collimator_lp01",
+      "min_triangle_surface_distance_mm": 0.0,
+      "object_a": "a03_sample_collimator__BE1",
+      "object_b": "a03_sample_collimator__PH2",
+      "status": "PASS",
+      "table_hole_engagement_mm": null,
+      "triangle_overlap_pairs": 918
+    },
+    {
+      "aabb_intersection_depth_mm": [
+        12.674602509,
+        12.674606323,
+        46.599998474
+      ],
+      "annular_or_footprint_support_fraction": 1.0,
+      "assembly_id": "a03_sample_collimator",
+      "classification": "OPTICAL_CONTAINMENT",
+      "gap_threshold_mm": 0.1,
+      "interface_role": "POST_HOLDER_TO_POST",
+      "load_path_id": "a03_sample_collimator_lp01",
+      "min_triangle_surface_distance_mm": 0.0,
+      "object_a": "a03_sample_collimator__PH2",
+      "object_b": "a03_sample_collimator__TR2",
+      "status": "PASS",
+      "table_hole_engagement_mm": null,
+      "triangle_overlap_pairs": 1509
+    },
+    {
+      "aabb_intersection_depth_mm": [
+        10.160003662,
+        12.674606323,
+        0.079998016
+      ],
+      "annular_or_footprint_support_fraction": 0.801603337,
+      "assembly_id": "a03_sample_collimator",
+      "classification": "ALLOWED_CONTACT",
+      "gap_threshold_mm": 0.1,
+      "interface_role": "POST_TO_LMR1",
+      "load_path_id": "a03_sample_collimator_lp01",
+      "min_triangle_surface_distance_mm": 0.307067096,
+      "object_a": "a03_sample_collimator__TR2",
+      "object_b": "a03_sample_collimator__LMR1",
+      "status": "UNVERIFIED",
+      "table_hole_engagement_mm": null,
+      "triangle_overlap_pairs": 0
+    },
+    {
+      "aabb_intersection_depth_mm": [
+        10.160003662,
+        26.289001465,
+        26.289001465
+      ],
+      "annular_or_footprint_support_fraction": 0.862499953,
+      "assembly_id": "a03_sample_collimator",
+      "classification": "OPTICAL_CONTAINMENT",
+      "gap_threshold_mm": 0.1,
+      "interface_role": "LMR1_TO_ADAPTER",
+      "load_path_id": "a03_sample_collimator_lp01",
+      "min_triangle_surface_distance_mm": 0.0,
+      "object_a": "a03_sample_collimator__LMR1",
+      "object_b": "a03_sample_collimator__AD12F",
+      "status": "PASS",
+      "table_hole_engagement_mm": null,
+      "triangle_overlap_pairs": 371
+    },
+    {
+      "aabb_intersection_depth_mm": [
+        15.01140213,
+        12.0,
+        12.0
+      ],
+      "annular_or_footprint_support_fraction": 0.850484261,
+      "assembly_id": "a03_sample_collimator",
+      "classification": "OPTICAL_CONTAINMENT",
+      "gap_threshold_mm": 0.1,
+      "interface_role": "ADAPTER_TO_COLLIMATOR",
+      "load_path_id": "a03_sample_collimator_lp01",
+      "min_triangle_surface_distance_mm": 0.0,
+      "object_a": "a03_sample_collimator__AD12F",
+      "object_b": "DEVICE__SAMPLE_COLLIMATOR",
+      "status": "PASS",
+      "table_hole_engagement_mm": null,
+      "triangle_overlap_pairs": 128
+    },
+    {
+      "aabb_intersection_depth_mm": [
+        6.899997711,
+        6.899993896,
+        8.0000459
+      ],
+      "annular_or_footprint_support_fraction": 1.0,
+      "assembly_id": "a04_sample_galvo",
+      "classification": "FASTENER_ENGAGEMENT",
+      "gap_threshold_mm": 0.1,
+      "interface_role": "TABLE_HOLE_TO_FASTENER",
+      "load_path_id": "a04_sample_galvo_lp01",
+      "min_triangle_surface_distance_mm": 0.0,
+      "object_a": "TABLE__MB2448",
+      "object_b": "a04_sample_galvo_lp01__FASTENER",
+      "status": "PASS",
+      "table_hole_engagement_mm": 6.0,
+      "triangle_overlap_pairs": 156
+    },
+    {
+      "aabb_intersection_depth_mm": [
+        6.899997711,
+        6.899993896,
+        1.399999976
+      ],
+      "annular_or_footprint_support_fraction": 1.0,
+      "assembly_id": "a04_sample_galvo",
+      "classification": "FASTENER_ENGAGEMENT",
+      "gap_threshold_mm": 0.1,
+      "interface_role": "FASTENER_TO_WASHER",
+      "load_path_id": "a04_sample_galvo_lp01",
+      "min_triangle_surface_distance_mm": 0.0,
+      "object_a": "a04_sample_galvo_lp01__FASTENER",
+      "object_b": "a04_sample_galvo_lp01__WASHER",
+      "status": "PASS",
+      "table_hole_engagement_mm": null,
+      "triangle_overlap_pairs": 64
+    },
+    {
+      "aabb_intersection_depth_mm": [
+        12.399997711,
+        12.399993896,
+        0.040637016
+      ],
+      "annular_or_footprint_support_fraction": 1.0,
+      "assembly_id": "a04_sample_galvo",
+      "classification": "ALLOWED_CONTACT",
+      "gap_threshold_mm": 0.1,
+      "interface_role": "WASHER_TO_DEVICE_BASE",
+      "load_path_id": "a04_sample_galvo_lp01",
+      "min_triangle_surface_distance_mm": 0.5,
+      "object_a": "a04_sample_galvo_lp01__WASHER",
+      "object_b": "DEVICE__SAMPLE_GVS012",
+      "status": "UNVERIFIED",
+      "table_hole_engagement_mm": null,
+      "triangle_overlap_pairs": 0
+    },
+    {
+      "aabb_intersection_depth_mm": [
+        6.899993896,
+        6.899993896,
+        8.0000459
+      ],
+      "annular_or_footprint_support_fraction": 1.0,
+      "assembly_id": "a05_sample_lens",
+      "classification": "FASTENER_ENGAGEMENT",
+      "gap_threshold_mm": 0.1,
+      "interface_role": "TABLE_HOLE_TO_FASTENER",
+      "load_path_id": "a05_sample_lens_lp01",
+      "min_triangle_surface_distance_mm": 0.0,
+      "object_a": "TABLE__MB2448",
+      "object_b": "a05_sample_lens_lp01__FASTENER",
+      "status": "PASS",
+      "table_hole_engagement_mm": 6.0,
+      "triangle_overlap_pairs": 156
+    },
+    {
+      "aabb_intersection_depth_mm": [
+        6.899993896,
+        6.899993896,
+        1.399999976
+      ],
+      "annular_or_footprint_support_fraction": 1.0,
+      "assembly_id": "a05_sample_lens",
+      "classification": "FASTENER_ENGAGEMENT",
+      "gap_threshold_mm": 0.1,
+      "interface_role": "FASTENER_TO_WASHER",
+      "load_path_id": "a05_sample_lens_lp01",
+      "min_triangle_surface_distance_mm": 0.0,
+      "object_a": "a05_sample_lens_lp01__FASTENER",
+      "object_b": "a05_sample_lens_lp01__WASHER",
+      "status": "PASS",
+      "table_hole_engagement_mm": null,
+      "triangle_overlap_pairs": 64
+    },
+    {
+      "aabb_intersection_depth_mm": [
+        11.36100769,
+        12.399993896,
+        0.600045264
+      ],
+      "annular_or_footprint_support_fraction": 0.916210749,
+      "assembly_id": "a05_sample_lens",
+      "classification": "ALLOWED_CONTACT",
+      "gap_threshold_mm": 0.1,
+      "interface_role": "WASHER_TO_CLAMP",
+      "load_path_id": "a05_sample_lens_lp01",
+      "min_triangle_surface_distance_mm": 0.415955901,
+      "object_a": "a05_sample_lens_lp01__WASHER",
+      "object_b": "a05_sample_lens__CF125",
+      "status": "UNVERIFIED",
+      "table_hole_engagement_mm": null,
+      "triangle_overlap_pairs": 0
+    },
+    {
+      "aabb_intersection_depth_mm": [
+        21.036010742,
+        31.75,
+        12.091957808
+      ],
+      "annular_or_footprint_support_fraction": 0.662551519,
+      "assembly_id": "a05_sample_lens",
+      "classification": "ALLOWED_CONTACT",
+      "gap_threshold_mm": 0.1,
+      "interface_role": "CLAMP_TO_BASE_ADAPTER",
+      "load_path_id": "a05_sample_lens_lp01",
+      "min_triangle_surface_distance_mm": 0.0,
+      "object_a": "a05_sample_lens__CF125",
+      "object_b": "a05_sample_lens__BE1",
+      "status": "PASS",
+      "table_hole_engagement_mm": null,
+      "triangle_overlap_pairs": 335
+    },
+    {
+      "aabb_intersection_depth_mm": [
+        25.0,
+        31.75,
+        12.269003868
+      ],
+      "annular_or_footprint_support_fraction": 0.896538055,
+      "assembly_id": "a05_sample_lens",
+      "classification": "ALLOWED_CONTACT",
+      "gap_threshold_mm": 0.1,
+      "interface_role": "BASE_TO_POST_HOLDER",
+      "load_path_id": "a05_sample_lens_lp01",
+      "min_triangle_surface_distance_mm": 0.0,
+      "object_a": "a05_sample_lens__BE1",
+      "object_b": "a05_sample_lens__PH2",
+      "status": "PASS",
+      "table_hole_engagement_mm": null,
+      "triangle_overlap_pairs": 918
+    },
+    {
+      "aabb_intersection_depth_mm": [
+        12.674591064,
+        12.674606323,
+        46.599998474
+      ],
+      "annular_or_footprint_support_fraction": 1.0,
+      "assembly_id": "a05_sample_lens",
+      "classification": "OPTICAL_CONTAINMENT",
+      "gap_threshold_mm": 0.1,
+      "interface_role": "POST_HOLDER_TO_POST",
+      "load_path_id": "a05_sample_lens_lp01",
+      "min_triangle_surface_distance_mm": 0.0,
+      "object_a": "a05_sample_lens__PH2",
+      "object_b": "a05_sample_lens__TR2",
+      "status": "PASS",
+      "table_hole_engagement_mm": null,
+      "triangle_overlap_pairs": 1508
+    },
+    {
+      "aabb_intersection_depth_mm": [
+        10.160003662,
+        12.674606323,
+        0.079998016
+      ],
+      "annular_or_footprint_support_fraction": 0.80160406,
+      "assembly_id": "a05_sample_lens",
+      "classification": "ALLOWED_CONTACT",
+      "gap_threshold_mm": 0.1,
+      "interface_role": "POST_TO_LMR1",
+      "load_path_id": "a05_sample_lens_lp01",
+      "min_triangle_surface_distance_mm": 0.307067096,
+      "object_a": "a05_sample_lens__TR2",
+      "object_b": "a05_sample_lens__LMR1",
+      "status": "UNVERIFIED",
+      "table_hole_engagement_mm": null,
+      "triangle_overlap_pairs": 0
+    },
+    {
+      "aabb_intersection_depth_mm": [
+        10.160003662,
+        30.480003357,
+        30.479999542
+      ],
+      "annular_or_footprint_support_fraction": 1.0,
+      "assembly_id": "a05_sample_lens",
+      "classification": "OPTICAL_CONTAINMENT",
+      "gap_threshold_mm": 0.1,
+      "interface_role": "LMR1_TO_OPTIC",
+      "load_path_id": "a05_sample_lens_lp01",
+      "min_triangle_surface_distance_mm": 0.0,
+      "object_a": "a05_sample_lens__LMR1",
+      "object_b": "DEVICE__SAMPLE_LENS_L0",
+      "status": "PASS",
+      "table_hole_engagement_mm": null,
+      "triangle_overlap_pairs": 2061
+    },
+    {
+      "aabb_intersection_depth_mm": [
+        6.900024414,
+        6.899993896,
+        8.0000459
+      ],
+      "annular_or_footprint_support_fraction": 1.0,
+      "assembly_id": "a06_sample_fixture",
+      "classification": "FASTENER_ENGAGEMENT",
+      "gap_threshold_mm": 0.1,
+      "interface_role": "TABLE_HOLE_TO_FASTENER",
+      "load_path_id": "a06_sample_fixture_lp01",
+      "min_triangle_surface_distance_mm": 0.0,
+      "object_a": "TABLE__MB2448",
+      "object_b": "a06_sample_fixture_lp01__FASTENER",
+      "status": "PASS",
+      "table_hole_engagement_mm": 6.0,
+      "triangle_overlap_pairs": 156
+    },
+    {
+      "aabb_intersection_depth_mm": [
+        6.900024414,
+        6.899993896,
+        1.399999976
+      ],
+      "annular_or_footprint_support_fraction": 1.0,
+      "assembly_id": "a06_sample_fixture",
+      "classification": "FASTENER_ENGAGEMENT",
+      "gap_threshold_mm": 0.1,
+      "interface_role": "FASTENER_TO_WASHER",
+      "load_path_id": "a06_sample_fixture_lp01",
+      "min_triangle_surface_distance_mm": 0.0,
+      "object_a": "a06_sample_fixture_lp01__FASTENER",
+      "object_b": "a06_sample_fixture_lp01__WASHER",
+      "status": "PASS",
+      "table_hole_engagement_mm": null,
+      "triangle_overlap_pairs": 64
+    },
+    {
+      "aabb_intersection_depth_mm": [
+        12.400024414,
+        12.399993896,
+        0.099999905
+      ],
+      "annular_or_footprint_support_fraction": 1.0,
+      "assembly_id": "a06_sample_fixture",
+      "classification": "ALLOWED_CONTACT",
+      "gap_threshold_mm": 0.1,
+      "interface_role": "WASHER_TO_DEVICE_BASE",
+      "load_path_id": "a06_sample_fixture_lp01",
+      "min_triangle_surface_distance_mm": 0.0,
+      "object_a": "a06_sample_fixture_lp01__WASHER",
+      "object_b": "DEVICE__SAMPLE_FIXTURE",
+      "status": "PASS",
+      "table_hole_engagement_mm": null,
+      "triangle_overlap_pairs": 32
+    },
+    {
+      "aabb_intersection_depth_mm": [
+        6.899997711,
+        6.899993896,
+        8.0000459
+      ],
+      "annular_or_footprint_support_fraction": 1.0,
+      "assembly_id": "a07_reference_delay_collimator",
+      "classification": "FASTENER_ENGAGEMENT",
+      "gap_threshold_mm": 0.1,
+      "interface_role": "TABLE_HOLE_TO_FASTENER",
+      "load_path_id": "a07_reference_delay_collimator_lp01",
+      "min_triangle_surface_distance_mm": 0.0,
+      "object_a": "TABLE__MB2448",
+      "object_b": "a07_reference_delay_collimator_lp01__FASTENER",
+      "status": "PASS",
+      "table_hole_engagement_mm": 6.0,
+      "triangle_overlap_pairs": 156
+    },
+    {
+      "aabb_intersection_depth_mm": [
+        6.899997711,
+        6.899993896,
+        1.399999976
+      ],
+      "annular_or_footprint_support_fraction": 1.0,
+      "assembly_id": "a07_reference_delay_collimator",
+      "classification": "FASTENER_ENGAGEMENT",
+      "gap_threshold_mm": 0.1,
+      "interface_role": "FASTENER_TO_WASHER",
+      "load_path_id": "a07_reference_delay_collimator_lp01",
+      "min_triangle_surface_distance_mm": 0.0,
+      "object_a": "a07_reference_delay_collimator_lp01__FASTENER",
+      "object_b": "a07_reference_delay_collimator_lp01__WASHER",
+      "status": "PASS",
+      "table_hole_engagement_mm": null,
+      "triangle_overlap_pairs": 64
+    },
+    {
+      "aabb_intersection_depth_mm": [
+        12.399997711,
+        12.399993896,
+        0.449999988
+      ],
+      "annular_or_footprint_support_fraction": 1.0,
+      "assembly_id": "a07_reference_delay_collimator",
+      "classification": "ALLOWED_CONTACT",
+      "gap_threshold_mm": 0.1,
+      "interface_role": "WASHER_TO_XR25P",
+      "load_path_id": "a07_reference_delay_collimator_lp01",
+      "min_triangle_surface_distance_mm": 1.677000046,
+      "object_a": "a07_reference_delay_collimator_lp01__WASHER",
+      "object_b": "a07__XR25P",
+      "status": "UNVERIFIED",
+      "table_hole_engagement_mm": null,
+      "triangle_overlap_pairs": 0
+    },
+    {
+      "aabb_intersection_depth_mm": [
+        10.160003662,
+        30.480003357,
+        0.080001831
+      ],
+      "annular_or_footprint_support_fraction": 1.0,
+      "assembly_id": "a07_reference_delay_collimator",
+      "classification": "ALLOWED_CONTACT",
+      "gap_threshold_mm": 0.1,
+      "interface_role": "XR25P_TO_LMR1",
+      "load_path_id": "a07_reference_delay_collimator_lp01",
+      "min_triangle_surface_distance_mm": 0.0,
+      "object_a": "a07__XR25P",
+      "object_b": "a07__LMR1",
+      "status": "PASS",
+      "table_hole_engagement_mm": null,
+      "triangle_overlap_pairs": 157
+    },
+    {
+      "aabb_intersection_depth_mm": [
+        10.160003662,
+        26.289001465,
+        26.289001465
+      ],
+      "annular_or_footprint_support_fraction": 0.862499953,
+      "assembly_id": "a07_reference_delay_collimator",
+      "classification": "OPTICAL_CONTAINMENT",
+      "gap_threshold_mm": 0.1,
+      "interface_role": "LMR1_TO_ADAPTER",
+      "load_path_id": "a07_reference_delay_collimator_lp01",
+      "min_triangle_surface_distance_mm": 0.0,
+      "object_a": "a07__LMR1",
+      "object_b": "a07__AD12F",
+      "status": "PASS",
+      "table_hole_engagement_mm": null,
+      "triangle_overlap_pairs": 371
+    },
+    {
+      "aabb_intersection_depth_mm": [
+        15.01140213,
+        12.0,
+        12.0
+      ],
+      "annular_or_footprint_support_fraction": 0.850484261,
+      "assembly_id": "a07_reference_delay_collimator",
+      "classification": "OPTICAL_CONTAINMENT",
+      "gap_threshold_mm": 0.1,
+      "interface_role": "ADAPTER_TO_COLLIMATOR",
+      "load_path_id": "a07_reference_delay_collimator_lp01",
+      "min_triangle_surface_distance_mm": 0.0,
+      "object_a": "a07__AD12F",
+      "object_b": "DEVICE__REFERENCE_COLLIMATOR",
+      "status": "PASS",
+      "table_hole_engagement_mm": null,
+      "triangle_overlap_pairs": 128
+    },
+    {
+      "aabb_intersection_depth_mm": [
+        6.899997711,
+        6.899993896,
+        8.0000459
+      ],
+      "annular_or_footprint_support_fraction": 1.0,
+      "assembly_id": "a08_reference_npbs",
+      "classification": "FASTENER_ENGAGEMENT",
+      "gap_threshold_mm": 0.1,
+      "interface_role": "TABLE_HOLE_TO_FASTENER",
+      "load_path_id": "a08_reference_npbs_lp01",
+      "min_triangle_surface_distance_mm": 0.0,
+      "object_a": "TABLE__MB2448",
+      "object_b": "a08_reference_npbs_lp01__FASTENER",
+      "status": "PASS",
+      "table_hole_engagement_mm": 6.0,
+      "triangle_overlap_pairs": 156
+    },
+    {
+      "aabb_intersection_depth_mm": [
+        6.899997711,
+        6.899993896,
+        1.399999976
+      ],
+      "annular_or_footprint_support_fraction": 1.0,
+      "assembly_id": "a08_reference_npbs",
+      "classification": "FASTENER_ENGAGEMENT",
+      "gap_threshold_mm": 0.1,
+      "interface_role": "FASTENER_TO_WASHER",
+      "load_path_id": "a08_reference_npbs_lp01",
+      "min_triangle_surface_distance_mm": 0.0,
+      "object_a": "a08_reference_npbs_lp01__FASTENER",
+      "object_b": "a08_reference_npbs_lp01__WASHER",
+      "status": "PASS",
+      "table_hole_engagement_mm": null,
+      "triangle_overlap_pairs": 64
+    },
+    {
+      "aabb_intersection_depth_mm": [
+        11.361003876,
+        12.399993896,
+        0.600045264
+      ],
+      "annular_or_footprint_support_fraction": 0.916210159,
+      "assembly_id": "a08_reference_npbs",
+      "classification": "ALLOWED_CONTACT",
+      "gap_threshold_mm": 0.1,
+      "interface_role": "WASHER_TO_CLAMP",
+      "load_path_id": "a08_reference_npbs_lp01",
+      "min_triangle_surface_distance_mm": 0.415955901,
+      "object_a": "a08_reference_npbs_lp01__WASHER",
+      "object_b": "a08_reference_npbs__CF125",
+      "status": "UNVERIFIED",
+      "table_hole_engagement_mm": null,
+      "triangle_overlap_pairs": 0
+    },
+    {
+      "aabb_intersection_depth_mm": [
+        21.036003113,
+        31.75,
+        12.091957808
+      ],
+      "annular_or_footprint_support_fraction": 0.662551279,
+      "assembly_id": "a08_reference_npbs",
+      "classification": "ALLOWED_CONTACT",
+      "gap_threshold_mm": 0.1,
+      "interface_role": "CLAMP_TO_BASE_ADAPTER",
+      "load_path_id": "a08_reference_npbs_lp01",
+      "min_triangle_surface_distance_mm": 0.0,
+      "object_a": "a08_reference_npbs__CF125",
+      "object_b": "a08_reference_npbs__BE1",
+      "status": "PASS",
+      "table_hole_engagement_mm": null,
+      "triangle_overlap_pairs": 335
+    },
+    {
+      "aabb_intersection_depth_mm": [
+        25.0,
+        31.75,
+        12.269003868
+      ],
+      "annular_or_footprint_support_fraction": 0.896538055,
+      "assembly_id": "a08_reference_npbs",
+      "classification": "ALLOWED_CONTACT",
+      "gap_threshold_mm": 0.1,
+      "interface_role": "BASE_TO_POST_HOLDER",
+      "load_path_id": "a08_reference_npbs_lp01",
+      "min_triangle_surface_distance_mm": 0.0,
+      "object_a": "a08_reference_npbs__BE1",
+      "object_b": "a08_reference_npbs__PH2",
+      "status": "PASS",
+      "table_hole_engagement_mm": null,
+      "triangle_overlap_pairs": 918
+    },
+    {
+      "aabb_intersection_depth_mm": [
+        12.674602509,
+        12.674606323,
+        46.599998474
+      ],
+      "annular_or_footprint_support_fraction": 1.0,
+      "assembly_id": "a08_reference_npbs",
+      "classification": "OPTICAL_CONTAINMENT",
+      "gap_threshold_mm": 0.1,
+      "interface_role": "POST_HOLDER_TO_POST",
+      "load_path_id": "a08_reference_npbs_lp01",
+      "min_triangle_surface_distance_mm": 0.0,
+      "object_a": "a08_reference_npbs__PH2",
+      "object_b": "a08_reference_npbs__TR2",
+      "status": "PASS",
+      "table_hole_engagement_mm": null,
+      "triangle_overlap_pairs": 1509
+    },
+    {
+      "aabb_intersection_depth_mm": [
+        12.674602509,
+        12.674606323,
+        0.079994202
+      ],
+      "annular_or_footprint_support_fraction": 1.0,
+      "assembly_id": "a08_reference_npbs",
+      "classification": "ALLOWED_CONTACT",
+      "gap_threshold_mm": 0.1,
+      "interface_role": "POST_TO_CCM1",
+      "load_path_id": "a08_reference_npbs_lp01",
+      "min_triangle_surface_distance_mm": 6.270008087,
+      "object_a": "a08_reference_npbs__TR2",
+      "object_b": "DEVICE__REFERENCE_NPBS",
+      "status": "UNVERIFIED",
+      "table_hole_engagement_mm": null,
+      "triangle_overlap_pairs": 0
+    },
+    {
+      "aabb_intersection_depth_mm": [
+        6.899993896,
+        6.899993896,
+        8.0000459
+      ],
+      "annular_or_footprint_support_fraction": 1.0,
+      "assembly_id": "a09_reference_galvo",
+      "classification": "FASTENER_ENGAGEMENT",
+      "gap_threshold_mm": 0.1,
+      "interface_role": "TABLE_HOLE_TO_FASTENER",
+      "load_path_id": "a09_reference_galvo_lp01",
+      "min_triangle_surface_distance_mm": 0.0,
+      "object_a": "TABLE__MB2448",
+      "object_b": "a09_reference_galvo_lp01__FASTENER",
+      "status": "PASS",
+      "table_hole_engagement_mm": 6.0,
+      "triangle_overlap_pairs": 156
+    },
+    {
+      "aabb_intersection_depth_mm": [
+        6.899993896,
+        6.899993896,
+        1.399999976
+      ],
+      "annular_or_footprint_support_fraction": 1.0,
+      "assembly_id": "a09_reference_galvo",
+      "classification": "FASTENER_ENGAGEMENT",
+      "gap_threshold_mm": 0.1,
+      "interface_role": "FASTENER_TO_WASHER",
+      "load_path_id": "a09_reference_galvo_lp01",
+      "min_triangle_surface_distance_mm": 0.0,
+      "object_a": "a09_reference_galvo_lp01__FASTENER",
+      "object_b": "a09_reference_galvo_lp01__WASHER",
+      "status": "PASS",
+      "table_hole_engagement_mm": null,
+      "triangle_overlap_pairs": 64
+    },
+    {
+      "aabb_intersection_depth_mm": [
+        12.399993896,
+        12.399993896,
+        0.040637016
+      ],
+      "annular_or_footprint_support_fraction": 1.0,
+      "assembly_id": "a09_reference_galvo",
+      "classification": "ALLOWED_CONTACT",
+      "gap_threshold_mm": 0.1,
+      "interface_role": "WASHER_TO_DEVICE_BASE",
+      "load_path_id": "a09_reference_galvo_lp01",
+      "min_triangle_surface_distance_mm": 0.5,
+      "object_a": "a09_reference_galvo_lp01__WASHER",
+      "object_b": "DEVICE__REFERENCE_GVS012",
+      "status": "UNVERIFIED",
+      "table_hole_engagement_mm": null,
+      "triangle_overlap_pairs": 0
+    },
+    {
+      "aabb_intersection_depth_mm": [
+        6.900024414,
+        6.899997711,
+        8.0000459
+      ],
+      "annular_or_footprint_support_fraction": 1.0,
+      "assembly_id": "a10_reference_lens_1",
+      "classification": "FASTENER_ENGAGEMENT",
+      "gap_threshold_mm": 0.1,
+      "interface_role": "TABLE_HOLE_TO_FASTENER",
+      "load_path_id": "a10_reference_lens_1_lp01",
+      "min_triangle_surface_distance_mm": 0.0,
+      "object_a": "TABLE__MB2448",
+      "object_b": "a10_reference_lens_1_lp01__FASTENER",
+      "status": "PASS",
+      "table_hole_engagement_mm": 6.0,
+      "triangle_overlap_pairs": 156
+    },
+    {
+      "aabb_intersection_depth_mm": [
+        6.900024414,
+        6.899997711,
+        1.399999976
+      ],
+      "annular_or_footprint_support_fraction": 1.0,
+      "assembly_id": "a10_reference_lens_1",
+      "classification": "FASTENER_ENGAGEMENT",
+      "gap_threshold_mm": 0.1,
+      "interface_role": "FASTENER_TO_WASHER",
+      "load_path_id": "a10_reference_lens_1_lp01",
+      "min_triangle_surface_distance_mm": 0.0,
+      "object_a": "a10_reference_lens_1_lp01__FASTENER",
+      "object_b": "a10_reference_lens_1_lp01__WASHER",
+      "status": "PASS",
+      "table_hole_engagement_mm": null,
+      "triangle_overlap_pairs": 64
+    },
+    {
+      "aabb_intersection_depth_mm": [
+        11.361022949,
+        12.399997711,
+        0.600045264
+      ],
+      "annular_or_footprint_support_fraction": 0.916209724,
+      "assembly_id": "a10_reference_lens_1",
+      "classification": "ALLOWED_CONTACT",
+      "gap_threshold_mm": 0.1,
+      "interface_role": "WASHER_TO_CLAMP",
+      "load_path_id": "a10_reference_lens_1_lp01",
+      "min_triangle_surface_distance_mm": 0.415955901,
+      "object_a": "a10_reference_lens_1_lp01__WASHER",
+      "object_b": "a10_reference_lens_1__CF125",
+      "status": "UNVERIFIED",
+      "table_hole_engagement_mm": null,
+      "triangle_overlap_pairs": 0
+    },
+    {
+      "aabb_intersection_depth_mm": [
+        21.036010742,
+        31.75,
+        12.091957808
+      ],
+      "annular_or_footprint_support_fraction": 0.662551519,
+      "assembly_id": "a10_reference_lens_1",
+      "classification": "ALLOWED_CONTACT",
+      "gap_threshold_mm": 0.1,
+      "interface_role": "CLAMP_TO_BASE_ADAPTER",
+      "load_path_id": "a10_reference_lens_1_lp01",
+      "min_triangle_surface_distance_mm": 0.0,
+      "object_a": "a10_reference_lens_1__CF125",
+      "object_b": "a10_reference_lens_1__BE1",
+      "status": "PASS",
+      "table_hole_engagement_mm": null,
+      "triangle_overlap_pairs": 335
+    },
+    {
+      "aabb_intersection_depth_mm": [
+        25.0,
+        31.75,
+        12.269003868
+      ],
+      "annular_or_footprint_support_fraction": 0.896538055,
+      "assembly_id": "a10_reference_lens_1",
+      "classification": "ALLOWED_CONTACT",
+      "gap_threshold_mm": 0.1,
+      "interface_role": "BASE_TO_POST_HOLDER",
+      "load_path_id": "a10_reference_lens_1_lp01",
+      "min_triangle_surface_distance_mm": 0.0,
+      "object_a": "a10_reference_lens_1__BE1",
+      "object_b": "a10_reference_lens_1__PH2",
+      "status": "PASS",
+      "table_hole_engagement_mm": null,
+      "triangle_overlap_pairs": 918
+    },
+    {
+      "aabb_intersection_depth_mm": [
+        12.674621582,
+        12.674606323,
+        46.599998474
+      ],
+      "annular_or_footprint_support_fraction": 1.0,
+      "assembly_id": "a10_reference_lens_1",
+      "classification": "OPTICAL_CONTAINMENT",
+      "gap_threshold_mm": 0.1,
+      "interface_role": "POST_HOLDER_TO_POST",
+      "load_path_id": "a10_reference_lens_1_lp01",
+      "min_triangle_surface_distance_mm": 0.0,
+      "object_a": "a10_reference_lens_1__PH2",
+      "object_b": "a10_reference_lens_1__TR2",
+      "status": "PASS",
+      "table_hole_engagement_mm": null,
+      "triangle_overlap_pairs": 1508
+    },
+    {
+      "aabb_intersection_depth_mm": [
+        10.160003662,
+        12.674606323,
+        0.079998016
+      ],
+      "annular_or_footprint_support_fraction": 0.80160213,
+      "assembly_id": "a10_reference_lens_1",
+      "classification": "ALLOWED_CONTACT",
+      "gap_threshold_mm": 0.1,
+      "interface_role": "POST_TO_LMR1",
+      "load_path_id": "a10_reference_lens_1_lp01",
+      "min_triangle_surface_distance_mm": 0.307065457,
+      "object_a": "a10_reference_lens_1__TR2",
+      "object_b": "a10_reference_lens_1__LMR1",
+      "status": "UNVERIFIED",
+      "table_hole_engagement_mm": null,
+      "triangle_overlap_pairs": 0
+    },
+    {
+      "aabb_intersection_depth_mm": [
+        10.160003662,
+        30.479999542,
+        30.479999542
+      ],
+      "annular_or_footprint_support_fraction": 1.0,
+      "assembly_id": "a10_reference_lens_1",
+      "classification": "OPTICAL_CONTAINMENT",
+      "gap_threshold_mm": 0.1,
+      "interface_role": "LMR1_TO_OPTIC",
+      "load_path_id": "a10_reference_lens_1_lp01",
+      "min_triangle_surface_distance_mm": 0.0,
+      "object_a": "a10_reference_lens_1__LMR1",
+      "object_b": "DEVICE__REFERENCE_LENS_L1",
+      "status": "PASS",
+      "table_hole_engagement_mm": null,
+      "triangle_overlap_pairs": 2511
+    },
+    {
+      "aabb_intersection_depth_mm": [
+        6.900024414,
+        6.899997711,
+        8.0000459
+      ],
+      "annular_or_footprint_support_fraction": 1.0,
+      "assembly_id": "a11_reference_mirror_1",
+      "classification": "FASTENER_ENGAGEMENT",
+      "gap_threshold_mm": 0.1,
+      "interface_role": "TABLE_HOLE_TO_FASTENER",
+      "load_path_id": "a11_reference_mirror_1_lp01",
+      "min_triangle_surface_distance_mm": 0.0,
+      "object_a": "TABLE__MB2448",
+      "object_b": "a11_reference_mirror_1_lp01__FASTENER",
+      "status": "PASS",
+      "table_hole_engagement_mm": 6.0,
+      "triangle_overlap_pairs": 157
+    },
+    {
+      "aabb_intersection_depth_mm": [
+        6.900024414,
+        6.899997711,
+        1.399999976
+      ],
+      "annular_or_footprint_support_fraction": 1.0,
+      "assembly_id": "a11_reference_mirror_1",
+      "classification": "FASTENER_ENGAGEMENT",
+      "gap_threshold_mm": 0.1,
+      "interface_role": "FASTENER_TO_WASHER",
+      "load_path_id": "a11_reference_mirror_1_lp01",
+      "min_triangle_surface_distance_mm": 0.0,
+      "object_a": "a11_reference_mirror_1_lp01__FASTENER",
+      "object_b": "a11_reference_mirror_1_lp01__WASHER",
+      "status": "PASS",
+      "table_hole_engagement_mm": null,
+      "triangle_overlap_pairs": 64
+    },
+    {
+      "aabb_intersection_depth_mm": [
+        11.361022949,
+        12.399997711,
+        0.600045264
+      ],
+      "annular_or_footprint_support_fraction": 0.916209724,
+      "assembly_id": "a11_reference_mirror_1",
+      "classification": "ALLOWED_CONTACT",
+      "gap_threshold_mm": 0.1,
+      "interface_role": "WASHER_TO_CLAMP",
+      "load_path_id": "a11_reference_mirror_1_lp01",
+      "min_triangle_surface_distance_mm": 0.415955901,
+      "object_a": "a11_reference_mirror_1_lp01__WASHER",
+      "object_b": "a11_reference_mirror_1__CF125",
+      "status": "UNVERIFIED",
+      "table_hole_engagement_mm": null,
+      "triangle_overlap_pairs": 0
+    },
+    {
+      "aabb_intersection_depth_mm": [
+        21.036010742,
+        31.75,
+        12.091957808
+      ],
+      "annular_or_footprint_support_fraction": 0.662551519,
+      "assembly_id": "a11_reference_mirror_1",
+      "classification": "ALLOWED_CONTACT",
+      "gap_threshold_mm": 0.1,
+      "interface_role": "CLAMP_TO_BASE_ADAPTER",
+      "load_path_id": "a11_reference_mirror_1_lp01",
+      "min_triangle_surface_distance_mm": 0.0,
+      "object_a": "a11_reference_mirror_1__CF125",
+      "object_b": "a11_reference_mirror_1__BE1",
+      "status": "PASS",
+      "table_hole_engagement_mm": null,
+      "triangle_overlap_pairs": 335
+    },
+    {
+      "aabb_intersection_depth_mm": [
+        25.0,
+        31.75,
+        12.269003868
+      ],
+      "annular_or_footprint_support_fraction": 0.896538055,
+      "assembly_id": "a11_reference_mirror_1",
+      "classification": "ALLOWED_CONTACT",
+      "gap_threshold_mm": 0.1,
+      "interface_role": "BASE_TO_POST_HOLDER",
+      "load_path_id": "a11_reference_mirror_1_lp01",
+      "min_triangle_surface_distance_mm": 0.0,
+      "object_a": "a11_reference_mirror_1__BE1",
+      "object_b": "a11_reference_mirror_1__PH2",
+      "status": "PASS",
+      "table_hole_engagement_mm": null,
+      "triangle_overlap_pairs": 918
+    },
+    {
+      "aabb_intersection_depth_mm": [
+        12.674621582,
+        12.674606323,
+        46.599998474
+      ],
+      "annular_or_footprint_support_fraction": 1.0,
+      "assembly_id": "a11_reference_mirror_1",
+      "classification": "OPTICAL_CONTAINMENT",
+      "gap_threshold_mm": 0.1,
+      "interface_role": "POST_HOLDER_TO_POST",
+      "load_path_id": "a11_reference_mirror_1_lp01",
+      "min_triangle_surface_distance_mm": 0.0,
+      "object_a": "a11_reference_mirror_1__PH2",
+      "object_b": "a11_reference_mirror_1__TR2",
+      "status": "PASS",
+      "table_hole_engagement_mm": null,
+      "triangle_overlap_pairs": 1509
+    },
+    {
+      "aabb_intersection_depth_mm": [
+        12.674621582,
+        12.674606323,
+        0.080059052
+      ],
+      "annular_or_footprint_support_fraction": 1.0,
+      "assembly_id": "a11_reference_mirror_1",
+      "classification": "ALLOWED_CONTACT",
+      "gap_threshold_mm": 0.1,
+      "interface_role": "POST_TO_KM100",
+      "load_path_id": "a11_reference_mirror_1_lp01",
+      "min_triangle_surface_distance_mm": 12.171826363,
+      "object_a": "a11_reference_mirror_1__TR2",
+      "object_b": "a11_reference_mirror_1__KM100",
+      "status": "UNVERIFIED",
+      "table_hole_engagement_mm": null,
+      "triangle_overlap_pairs": 0
+    },
+    {
+      "aabb_intersection_depth_mm": [
+        6.000030518,
+        25.40001297,
+        25.399879456
+      ],
+      "annular_or_footprint_support_fraction": 1.0,
+      "assembly_id": "a11_reference_mirror_1",
+      "classification": "OPTICAL_CONTAINMENT",
+      "gap_threshold_mm": 0.1,
+      "interface_role": "KM100_TO_MIRROR",
+      "load_path_id": "a11_reference_mirror_1_lp01",
+      "min_triangle_surface_distance_mm": 0.706703186,
+      "object_a": "a11_reference_mirror_1__KM100",
+      "object_b": "DEVICE__REFERENCE_MIRROR_M1",
+      "status": "UNVERIFIED",
+      "table_hole_engagement_mm": null,
+      "triangle_overlap_pairs": 0
+    },
+    {
+      "aabb_intersection_depth_mm": [
+        6.900024414,
+        6.899993896,
+        8.0000459
+      ],
+      "annular_or_footprint_support_fraction": 1.0,
+      "assembly_id": "a12_reference_lens_2",
+      "classification": "FASTENER_ENGAGEMENT",
+      "gap_threshold_mm": 0.1,
+      "interface_role": "TABLE_HOLE_TO_FASTENER",
+      "load_path_id": "a12_reference_lens_2_lp01",
+      "min_triangle_surface_distance_mm": 0.0,
+      "object_a": "TABLE__MB2448",
+      "object_b": "a12_reference_lens_2_lp01__FASTENER",
+      "status": "PASS",
+      "table_hole_engagement_mm": 6.0,
+      "triangle_overlap_pairs": 156
+    },
+    {
+      "aabb_intersection_depth_mm": [
+        6.900024414,
+        6.899993896,
+        1.399999976
+      ],
+      "annular_or_footprint_support_fraction": 1.0,
+      "assembly_id": "a12_reference_lens_2",
+      "classification": "FASTENER_ENGAGEMENT",
+      "gap_threshold_mm": 0.1,
+      "interface_role": "FASTENER_TO_WASHER",
+      "load_path_id": "a12_reference_lens_2_lp01",
+      "min_triangle_surface_distance_mm": 0.0,
+      "object_a": "a12_reference_lens_2_lp01__FASTENER",
+      "object_b": "a12_reference_lens_2_lp01__WASHER",
+      "status": "PASS",
+      "table_hole_engagement_mm": null,
+      "triangle_overlap_pairs": 64
+    },
+    {
+      "aabb_intersection_depth_mm": [
+        11.361022949,
+        12.399993896,
+        0.600045264
+      ],
+      "annular_or_footprint_support_fraction": 0.916209724,
+      "assembly_id": "a12_reference_lens_2",
+      "classification": "ALLOWED_CONTACT",
+      "gap_threshold_mm": 0.1,
+      "interface_role": "WASHER_TO_CLAMP",
+      "load_path_id": "a12_reference_lens_2_lp01",
+      "min_triangle_surface_distance_mm": 0.415955901,
+      "object_a": "a12_reference_lens_2_lp01__WASHER",
+      "object_b": "a12_reference_lens_2__CF125",
+      "status": "UNVERIFIED",
+      "table_hole_engagement_mm": null,
+      "triangle_overlap_pairs": 0
+    },
+    {
+      "aabb_intersection_depth_mm": [
+        21.036010742,
+        31.75,
+        12.091957808
+      ],
+      "annular_or_footprint_support_fraction": 0.662551519,
+      "assembly_id": "a12_reference_lens_2",
+      "classification": "ALLOWED_CONTACT",
+      "gap_threshold_mm": 0.1,
+      "interface_role": "CLAMP_TO_BASE_ADAPTER",
+      "load_path_id": "a12_reference_lens_2_lp01",
+      "min_triangle_surface_distance_mm": 0.0,
+      "object_a": "a12_reference_lens_2__CF125",
+      "object_b": "a12_reference_lens_2__BE1",
+      "status": "PASS",
+      "table_hole_engagement_mm": null,
+      "triangle_overlap_pairs": 335
+    },
+    {
+      "aabb_intersection_depth_mm": [
+        25.0,
+        31.75,
+        12.269003868
+      ],
+      "annular_or_footprint_support_fraction": 0.896538055,
+      "assembly_id": "a12_reference_lens_2",
+      "classification": "ALLOWED_CONTACT",
+      "gap_threshold_mm": 0.1,
+      "interface_role": "BASE_TO_POST_HOLDER",
+      "load_path_id": "a12_reference_lens_2_lp01",
+      "min_triangle_surface_distance_mm": 0.0,
+      "object_a": "a12_reference_lens_2__BE1",
+      "object_b": "a12_reference_lens_2__PH2",
+      "status": "PASS",
+      "table_hole_engagement_mm": null,
+      "triangle_overlap_pairs": 918
+    },
+    {
+      "aabb_intersection_depth_mm": [
+        12.674621582,
+        12.674606323,
+        46.599998474
+      ],
+      "annular_or_footprint_support_fraction": 1.0,
+      "assembly_id": "a12_reference_lens_2",
+      "classification": "OPTICAL_CONTAINMENT",
+      "gap_threshold_mm": 0.1,
+      "interface_role": "POST_HOLDER_TO_POST",
+      "load_path_id": "a12_reference_lens_2_lp01",
+      "min_triangle_surface_distance_mm": 0.0,
+      "object_a": "a12_reference_lens_2__PH2",
+      "object_b": "a12_reference_lens_2__TR2",
+      "status": "PASS",
+      "table_hole_engagement_mm": null,
+      "triangle_overlap_pairs": 1508
+    },
+    {
+      "aabb_intersection_depth_mm": [
+        10.160003662,
+        12.674606323,
+        0.079998016
+      ],
+      "annular_or_footprint_support_fraction": 0.80160213,
+      "assembly_id": "a12_reference_lens_2",
+      "classification": "ALLOWED_CONTACT",
+      "gap_threshold_mm": 0.1,
+      "interface_role": "POST_TO_LMR1",
+      "load_path_id": "a12_reference_lens_2_lp01",
+      "min_triangle_surface_distance_mm": 0.307065696,
+      "object_a": "a12_reference_lens_2__TR2",
+      "object_b": "a12_reference_lens_2__LMR1",
+      "status": "UNVERIFIED",
+      "table_hole_engagement_mm": null,
+      "triangle_overlap_pairs": 0
+    },
+    {
+      "aabb_intersection_depth_mm": [
+        10.160003662,
+        30.480010986,
+        30.479999542
+      ],
+      "annular_or_footprint_support_fraction": 1.0,
+      "assembly_id": "a12_reference_lens_2",
+      "classification": "OPTICAL_CONTAINMENT",
+      "gap_threshold_mm": 0.1,
+      "interface_role": "LMR1_TO_OPTIC",
+      "load_path_id": "a12_reference_lens_2_lp01",
+      "min_triangle_surface_distance_mm": 0.0,
+      "object_a": "a12_reference_lens_2__LMR1",
+      "object_b": "DEVICE__REFERENCE_LENS_L2",
+      "status": "PASS",
+      "table_hole_engagement_mm": null,
+      "triangle_overlap_pairs": 2508
+    },
+    {
+      "aabb_intersection_depth_mm": [
+        6.900024414,
+        6.899993896,
+        8.0000459
+      ],
+      "annular_or_footprint_support_fraction": 1.0,
+      "assembly_id": "a13_reference_mirror_2",
+      "classification": "FASTENER_ENGAGEMENT",
+      "gap_threshold_mm": 0.1,
+      "interface_role": "TABLE_HOLE_TO_FASTENER",
+      "load_path_id": "a13_reference_mirror_2_lp01",
+      "min_triangle_surface_distance_mm": 0.0,
+      "object_a": "TABLE__MB2448",
+      "object_b": "a13_reference_mirror_2_lp01__FASTENER",
+      "status": "PASS",
+      "table_hole_engagement_mm": 6.0,
+      "triangle_overlap_pairs": 156
+    },
+    {
+      "aabb_intersection_depth_mm": [
+        6.900024414,
+        6.899993896,
+        1.399999976
+      ],
+      "annular_or_footprint_support_fraction": 1.0,
+      "assembly_id": "a13_reference_mirror_2",
+      "classification": "FASTENER_ENGAGEMENT",
+      "gap_threshold_mm": 0.1,
+      "interface_role": "FASTENER_TO_WASHER",
+      "load_path_id": "a13_reference_mirror_2_lp01",
+      "min_triangle_surface_distance_mm": 0.0,
+      "object_a": "a13_reference_mirror_2_lp01__FASTENER",
+      "object_b": "a13_reference_mirror_2_lp01__WASHER",
+      "status": "PASS",
+      "table_hole_engagement_mm": null,
+      "triangle_overlap_pairs": 64
+    },
+    {
+      "aabb_intersection_depth_mm": [
+        11.361022949,
+        12.399993896,
+        0.600045264
+      ],
+      "annular_or_footprint_support_fraction": 0.916209724,
+      "assembly_id": "a13_reference_mirror_2",
+      "classification": "ALLOWED_CONTACT",
+      "gap_threshold_mm": 0.1,
+      "interface_role": "WASHER_TO_CLAMP",
+      "load_path_id": "a13_reference_mirror_2_lp01",
+      "min_triangle_surface_distance_mm": 0.415955901,
+      "object_a": "a13_reference_mirror_2_lp01__WASHER",
+      "object_b": "a13_reference_mirror_2__CF125",
+      "status": "UNVERIFIED",
+      "table_hole_engagement_mm": null,
+      "triangle_overlap_pairs": 0
+    },
+    {
+      "aabb_intersection_depth_mm": [
+        21.036010742,
+        31.75,
+        12.091957808
+      ],
+      "annular_or_footprint_support_fraction": 0.662551519,
+      "assembly_id": "a13_reference_mirror_2",
+      "classification": "ALLOWED_CONTACT",
+      "gap_threshold_mm": 0.1,
+      "interface_role": "CLAMP_TO_BASE_ADAPTER",
+      "load_path_id": "a13_reference_mirror_2_lp01",
+      "min_triangle_surface_distance_mm": 0.0,
+      "object_a": "a13_reference_mirror_2__CF125",
+      "object_b": "a13_reference_mirror_2__BE1",
+      "status": "PASS",
+      "table_hole_engagement_mm": null,
+      "triangle_overlap_pairs": 335
+    },
+    {
+      "aabb_intersection_depth_mm": [
+        25.0,
+        31.75,
+        12.269003868
+      ],
+      "annular_or_footprint_support_fraction": 0.896538055,
+      "assembly_id": "a13_reference_mirror_2",
+      "classification": "ALLOWED_CONTACT",
+      "gap_threshold_mm": 0.1,
+      "interface_role": "BASE_TO_POST_HOLDER",
+      "load_path_id": "a13_reference_mirror_2_lp01",
+      "min_triangle_surface_distance_mm": 0.0,
+      "object_a": "a13_reference_mirror_2__BE1",
+      "object_b": "a13_reference_mirror_2__PH2",
+      "status": "PASS",
+      "table_hole_engagement_mm": null,
+      "triangle_overlap_pairs": 918
+    },
+    {
+      "aabb_intersection_depth_mm": [
+        12.674621582,
+        12.674606323,
+        46.599998474
+      ],
+      "annular_or_footprint_support_fraction": 1.0,
+      "assembly_id": "a13_reference_mirror_2",
+      "classification": "OPTICAL_CONTAINMENT",
+      "gap_threshold_mm": 0.1,
+      "interface_role": "POST_HOLDER_TO_POST",
+      "load_path_id": "a13_reference_mirror_2_lp01",
+      "min_triangle_surface_distance_mm": 0.0,
+      "object_a": "a13_reference_mirror_2__PH2",
+      "object_b": "a13_reference_mirror_2__TR2",
+      "status": "PASS",
+      "table_hole_engagement_mm": null,
+      "triangle_overlap_pairs": 1508
+    },
+    {
+      "aabb_intersection_depth_mm": [
+        12.674621582,
+        12.674606323,
+        0.080059052
+      ],
+      "annular_or_footprint_support_fraction": 1.0,
+      "assembly_id": "a13_reference_mirror_2",
+      "classification": "ALLOWED_CONTACT",
+      "gap_threshold_mm": 0.1,
+      "interface_role": "POST_TO_KM100",
+      "load_path_id": "a13_reference_mirror_2_lp01",
+      "min_triangle_surface_distance_mm": 12.171826363,
+      "object_a": "a13_reference_mirror_2__TR2",
+      "object_b": "a13_reference_mirror_2__KM100",
+      "status": "UNVERIFIED",
+      "table_hole_engagement_mm": null,
+      "triangle_overlap_pairs": 0
+    },
+    {
+      "aabb_intersection_depth_mm": [
+        6.000030518,
+        25.400009155,
+        25.399879456
+      ],
+      "annular_or_footprint_support_fraction": 1.0,
+      "assembly_id": "a13_reference_mirror_2",
+      "classification": "OPTICAL_CONTAINMENT",
+      "gap_threshold_mm": 0.1,
+      "interface_role": "KM100_TO_MIRROR",
+      "load_path_id": "a13_reference_mirror_2_lp01",
+      "min_triangle_surface_distance_mm": 0.706703186,
+      "object_a": "a13_reference_mirror_2__KM100",
+      "object_b": "DEVICE__REFERENCE_MIRROR_M2",
+      "status": "UNVERIFIED",
+      "table_hole_engagement_mm": null,
+      "triangle_overlap_pairs": 0
+    },
+    {
+      "aabb_intersection_depth_mm": [
+        6.899993896,
+        6.899993896,
+        8.0000459
+      ],
+      "annular_or_footprint_support_fraction": 1.0,
+      "assembly_id": "a14_spectrometer_bench",
+      "classification": "FASTENER_ENGAGEMENT",
+      "gap_threshold_mm": 0.1,
+      "interface_role": "TABLE_HOLE_TO_FASTENER",
+      "load_path_id": "a14_spectrometer_bench_lp01",
+      "min_triangle_surface_distance_mm": 0.0,
+      "object_a": "TABLE__MB2448",
+      "object_b": "a14_spectrometer_bench_lp01__FASTENER",
+      "status": "PASS",
+      "table_hole_engagement_mm": 6.0,
+      "triangle_overlap_pairs": 156
+    },
+    {
+      "aabb_intersection_depth_mm": [
+        6.899993896,
+        6.899993896,
+        1.399999976
+      ],
+      "annular_or_footprint_support_fraction": 1.0,
+      "assembly_id": "a14_spectrometer_bench",
+      "classification": "FASTENER_ENGAGEMENT",
+      "gap_threshold_mm": 0.1,
+      "interface_role": "FASTENER_TO_WASHER",
+      "load_path_id": "a14_spectrometer_bench_lp01",
+      "min_triangle_surface_distance_mm": 0.0,
+      "object_a": "a14_spectrometer_bench_lp01__FASTENER",
+      "object_b": "a14_spectrometer_bench_lp01__WASHER",
+      "status": "PASS",
+      "table_hole_engagement_mm": null,
+      "triangle_overlap_pairs": 64
+    },
+    {
+      "aabb_intersection_depth_mm": [
+        12.399993896,
+        12.399993896,
+        1.25
+      ],
+      "annular_or_footprint_support_fraction": 1.0,
+      "assembly_id": "a14_spectrometer_bench",
+      "classification": "ALLOWED_CONTACT",
+      "gap_threshold_mm": 0.1,
+      "interface_role": "WASHER_TO_FOOT",
+      "load_path_id": "a14_spectrometer_bench_lp01",
+      "min_triangle_surface_distance_mm": 0.0,
+      "object_a": "a14_spectrometer_bench_lp01__WASHER",
+      "object_b": "a14_spectrometer_bench_lp01__FOOT",
+      "status": "PASS",
+      "table_hole_engagement_mm": null,
+      "triangle_overlap_pairs": 32
+    },
+    {
+      "aabb_intersection_depth_mm": [
+        20.0,
+        20.0,
+        0.0
+      ],
+      "annular_or_footprint_support_fraction": 1.0,
+      "assembly_id": "a14_spectrometer_bench",
+      "classification": "ALLOWED_CONTACT",
+      "gap_threshold_mm": 0.1,
+      "interface_role": "FOOT_TO_PLATFORM",
+      "load_path_id": "a14_spectrometer_bench_lp01",
+      "min_triangle_surface_distance_mm": 0.0,
+      "object_a": "a14_spectrometer_bench_lp01__FOOT",
+      "object_b": "a14__SPECTROMETER_PLATFORM",
+      "status": "PASS",
+      "table_hole_engagement_mm": null,
+      "triangle_overlap_pairs": 32
+    },
+    {
+      "aabb_intersection_depth_mm": [
+        450.0,
+        86.0,
+        0.099998474
+      ],
+      "annular_or_footprint_support_fraction": 1.0,
+      "assembly_id": "a14_spectrometer_bench",
+      "classification": "ALLOWED_CONTACT",
+      "gap_threshold_mm": 0.1,
+      "interface_role": "PLATFORM_TO_DEVICE_BENCH",
+      "load_path_id": "a14_spectrometer_bench_lp01",
+      "min_triangle_surface_distance_mm": 0.0,
+      "object_a": "a14__SPECTROMETER_PLATFORM",
+      "object_b": "a14__OPEN_SPECTROMETER_BASE",
+      "status": "PASS",
+      "table_hole_engagement_mm": null,
+      "triangle_overlap_pairs": 4
+    },
+    {
+      "aabb_intersection_depth_mm": [
+        6.900024414,
+        6.899993896,
+        8.0000459
+      ],
+      "annular_or_footprint_support_fraction": 1.0,
+      "assembly_id": "a14_spectrometer_bench",
+      "classification": "FASTENER_ENGAGEMENT",
+      "gap_threshold_mm": 0.1,
+      "interface_role": "TABLE_HOLE_TO_FASTENER",
+      "load_path_id": "a14_spectrometer_bench_lp02",
+      "min_triangle_surface_distance_mm": 0.0,
+      "object_a": "TABLE__MB2448",
+      "object_b": "a14_spectrometer_bench_lp02__FASTENER",
+      "status": "PASS",
+      "table_hole_engagement_mm": 6.0,
+      "triangle_overlap_pairs": 156
+    },
+    {
+      "aabb_intersection_depth_mm": [
+        6.900024414,
+        6.899993896,
+        1.399999976
+      ],
+      "annular_or_footprint_support_fraction": 1.0,
+      "assembly_id": "a14_spectrometer_bench",
+      "classification": "FASTENER_ENGAGEMENT",
+      "gap_threshold_mm": 0.1,
+      "interface_role": "FASTENER_TO_WASHER",
+      "load_path_id": "a14_spectrometer_bench_lp02",
+      "min_triangle_surface_distance_mm": 0.0,
+      "object_a": "a14_spectrometer_bench_lp02__FASTENER",
+      "object_b": "a14_spectrometer_bench_lp02__WASHER",
+      "status": "PASS",
+      "table_hole_engagement_mm": null,
+      "triangle_overlap_pairs": 64
+    },
+    {
+      "aabb_intersection_depth_mm": [
+        12.400024414,
+        12.399993896,
+        1.25
+      ],
+      "annular_or_footprint_support_fraction": 1.0,
+      "assembly_id": "a14_spectrometer_bench",
+      "classification": "ALLOWED_CONTACT",
+      "gap_threshold_mm": 0.1,
+      "interface_role": "WASHER_TO_FOOT",
+      "load_path_id": "a14_spectrometer_bench_lp02",
+      "min_triangle_surface_distance_mm": 0.0,
+      "object_a": "a14_spectrometer_bench_lp02__WASHER",
+      "object_b": "a14_spectrometer_bench_lp02__FOOT",
+      "status": "PASS",
+      "table_hole_engagement_mm": null,
+      "triangle_overlap_pairs": 32
+    },
+    {
+      "aabb_intersection_depth_mm": [
+        20.0,
+        20.0,
+        0.0
+      ],
+      "annular_or_footprint_support_fraction": 1.0,
+      "assembly_id": "a14_spectrometer_bench",
+      "classification": "ALLOWED_CONTACT",
+      "gap_threshold_mm": 0.1,
+      "interface_role": "FOOT_TO_PLATFORM",
+      "load_path_id": "a14_spectrometer_bench_lp02",
+      "min_triangle_surface_distance_mm": 0.0,
+      "object_a": "a14_spectrometer_bench_lp02__FOOT",
+      "object_b": "a14__SPECTROMETER_PLATFORM",
+      "status": "PASS",
+      "table_hole_engagement_mm": null,
+      "triangle_overlap_pairs": 32
+    },
+    {
+      "aabb_intersection_depth_mm": [
+        450.0,
+        86.0,
+        0.099998474
+      ],
+      "annular_or_footprint_support_fraction": 1.0,
+      "assembly_id": "a14_spectrometer_bench",
+      "classification": "ALLOWED_CONTACT",
+      "gap_threshold_mm": 0.1,
+      "interface_role": "PLATFORM_TO_DEVICE_BENCH",
+      "load_path_id": "a14_spectrometer_bench_lp02",
+      "min_triangle_surface_distance_mm": 0.0,
+      "object_a": "a14__SPECTROMETER_PLATFORM",
+      "object_b": "a14__OPEN_SPECTROMETER_BASE",
+      "status": "PASS",
+      "table_hole_engagement_mm": null,
+      "triangle_overlap_pairs": 4
+    },
+    {
+      "aabb_intersection_depth_mm": [
+        6.899993896,
+        6.900024414,
+        8.0000459
+      ],
+      "annular_or_footprint_support_fraction": 1.0,
+      "assembly_id": "a14_spectrometer_bench",
+      "classification": "FASTENER_ENGAGEMENT",
+      "gap_threshold_mm": 0.1,
+      "interface_role": "TABLE_HOLE_TO_FASTENER",
+      "load_path_id": "a14_spectrometer_bench_lp03",
+      "min_triangle_surface_distance_mm": 0.0,
+      "object_a": "TABLE__MB2448",
+      "object_b": "a14_spectrometer_bench_lp03__FASTENER",
+      "status": "PASS",
+      "table_hole_engagement_mm": 6.0,
+      "triangle_overlap_pairs": 156
+    },
+    {
+      "aabb_intersection_depth_mm": [
+        6.899993896,
+        6.900024414,
+        1.399999976
+      ],
+      "annular_or_footprint_support_fraction": 1.0,
+      "assembly_id": "a14_spectrometer_bench",
+      "classification": "FASTENER_ENGAGEMENT",
+      "gap_threshold_mm": 0.1,
+      "interface_role": "FASTENER_TO_WASHER",
+      "load_path_id": "a14_spectrometer_bench_lp03",
+      "min_triangle_surface_distance_mm": 0.0,
+      "object_a": "a14_spectrometer_bench_lp03__FASTENER",
+      "object_b": "a14_spectrometer_bench_lp03__WASHER",
+      "status": "PASS",
+      "table_hole_engagement_mm": null,
+      "triangle_overlap_pairs": 64
+    },
+    {
+      "aabb_intersection_depth_mm": [
+        12.399993896,
+        12.400024414,
+        1.25
+      ],
+      "annular_or_footprint_support_fraction": 1.0,
+      "assembly_id": "a14_spectrometer_bench",
+      "classification": "ALLOWED_CONTACT",
+      "gap_threshold_mm": 0.1,
+      "interface_role": "WASHER_TO_FOOT",
+      "load_path_id": "a14_spectrometer_bench_lp03",
+      "min_triangle_surface_distance_mm": 0.0,
+      "object_a": "a14_spectrometer_bench_lp03__WASHER",
+      "object_b": "a14_spectrometer_bench_lp03__FOOT",
+      "status": "PASS",
+      "table_hole_engagement_mm": null,
+      "triangle_overlap_pairs": 32
+    },
+    {
+      "aabb_intersection_depth_mm": [
+        20.0,
+        12.899993896,
+        0.0
+      ],
+      "annular_or_footprint_support_fraction": 0.644999695,
+      "assembly_id": "a14_spectrometer_bench",
+      "classification": "ALLOWED_CONTACT",
+      "gap_threshold_mm": 0.1,
+      "interface_role": "FOOT_TO_PLATFORM",
+      "load_path_id": "a14_spectrometer_bench_lp03",
+      "min_triangle_surface_distance_mm": 0.0,
+      "object_a": "a14_spectrometer_bench_lp03__FOOT",
+      "object_b": "a14__SPECTROMETER_PLATFORM",
+      "status": "PASS",
+      "table_hole_engagement_mm": null,
+      "triangle_overlap_pairs": 20
+    },
+    {
+      "aabb_intersection_depth_mm": [
+        450.0,
+        86.0,
+        0.099998474
+      ],
+      "annular_or_footprint_support_fraction": 1.0,
+      "assembly_id": "a14_spectrometer_bench",
+      "classification": "ALLOWED_CONTACT",
+      "gap_threshold_mm": 0.1,
+      "interface_role": "PLATFORM_TO_DEVICE_BENCH",
+      "load_path_id": "a14_spectrometer_bench_lp03",
+      "min_triangle_surface_distance_mm": 0.0,
+      "object_a": "a14__SPECTROMETER_PLATFORM",
+      "object_b": "a14__OPEN_SPECTROMETER_BASE",
+      "status": "PASS",
+      "table_hole_engagement_mm": null,
+      "triangle_overlap_pairs": 4
+    },
+    {
+      "aabb_intersection_depth_mm": [
+        6.900024414,
+        6.900024414,
+        8.0000459
+      ],
+      "annular_or_footprint_support_fraction": 1.0,
+      "assembly_id": "a14_spectrometer_bench",
+      "classification": "FASTENER_ENGAGEMENT",
+      "gap_threshold_mm": 0.1,
+      "interface_role": "TABLE_HOLE_TO_FASTENER",
+      "load_path_id": "a14_spectrometer_bench_lp04",
+      "min_triangle_surface_distance_mm": 0.0,
+      "object_a": "TABLE__MB2448",
+      "object_b": "a14_spectrometer_bench_lp04__FASTENER",
+      "status": "PASS",
+      "table_hole_engagement_mm": 6.0,
+      "triangle_overlap_pairs": 156
+    },
+    {
+      "aabb_intersection_depth_mm": [
+        6.900024414,
+        6.900024414,
+        1.399999976
+      ],
+      "annular_or_footprint_support_fraction": 1.0,
+      "assembly_id": "a14_spectrometer_bench",
+      "classification": "FASTENER_ENGAGEMENT",
+      "gap_threshold_mm": 0.1,
+      "interface_role": "FASTENER_TO_WASHER",
+      "load_path_id": "a14_spectrometer_bench_lp04",
+      "min_triangle_surface_distance_mm": 0.0,
+      "object_a": "a14_spectrometer_bench_lp04__FASTENER",
+      "object_b": "a14_spectrometer_bench_lp04__WASHER",
+      "status": "PASS",
+      "table_hole_engagement_mm": null,
+      "triangle_overlap_pairs": 64
+    },
+    {
+      "aabb_intersection_depth_mm": [
+        12.400024414,
+        12.400024414,
+        1.25
+      ],
+      "annular_or_footprint_support_fraction": 1.0,
+      "assembly_id": "a14_spectrometer_bench",
+      "classification": "ALLOWED_CONTACT",
+      "gap_threshold_mm": 0.1,
+      "interface_role": "WASHER_TO_FOOT",
+      "load_path_id": "a14_spectrometer_bench_lp04",
+      "min_triangle_surface_distance_mm": 0.0,
+      "object_a": "a14_spectrometer_bench_lp04__WASHER",
+      "object_b": "a14_spectrometer_bench_lp04__FOOT",
+      "status": "PASS",
+      "table_hole_engagement_mm": null,
+      "triangle_overlap_pairs": 32
+    },
+    {
+      "aabb_intersection_depth_mm": [
+        20.0,
+        12.899993896,
+        0.0
+      ],
+      "annular_or_footprint_support_fraction": 0.644999695,
+      "assembly_id": "a14_spectrometer_bench",
+      "classification": "ALLOWED_CONTACT",
+      "gap_threshold_mm": 0.1,
+      "interface_role": "FOOT_TO_PLATFORM",
+      "load_path_id": "a14_spectrometer_bench_lp04",
+      "min_triangle_surface_distance_mm": 0.0,
+      "object_a": "a14_spectrometer_bench_lp04__FOOT",
+      "object_b": "a14__SPECTROMETER_PLATFORM",
+      "status": "PASS",
+      "table_hole_engagement_mm": null,
+      "triangle_overlap_pairs": 20
+    },
+    {
+      "aabb_intersection_depth_mm": [
+        450.0,
+        86.0,
+        0.099998474
+      ],
+      "annular_or_footprint_support_fraction": 1.0,
+      "assembly_id": "a14_spectrometer_bench",
+      "classification": "ALLOWED_CONTACT",
+      "gap_threshold_mm": 0.1,
+      "interface_role": "PLATFORM_TO_DEVICE_BENCH",
+      "load_path_id": "a14_spectrometer_bench_lp04",
+      "min_triangle_surface_distance_mm": 0.0,
+      "object_a": "a14__SPECTROMETER_PLATFORM",
+      "object_b": "a14__OPEN_SPECTROMETER_BASE",
+      "status": "PASS",
+      "table_hole_engagement_mm": null,
+      "triangle_overlap_pairs": 4
+    },
+    {
+      "aabb_intersection_depth_mm": [
+        20.0,
+        20.0,
+        0.200000763
+      ],
+      "annular_or_footprint_support_fraction": 1.0,
+      "assembly_id": "a14_spectrometer_bench",
+      "classification": "ALLOWED_CONTACT",
+      "gap_threshold_mm": 0.1,
+      "interface_role": "BENCH_TO_DEVICE_PEDESTAL",
+      "load_path_id": "a14_spectrometer_bench_lp01",
+      "min_triangle_surface_distance_mm": 0.0,
+      "object_a": "a14__OPEN_SPECTROMETER_BASE",
+      "object_b": "a14__PEDESTAL__DEVICE__DETECTOR_COLLIMATOR",
+      "status": "PASS",
+      "table_hole_engagement_mm": null,
+      "triangle_overlap_pairs": 4
+    },
+    {
+      "aabb_intersection_depth_mm": [
+        20.0,
+        20.0,
+        0.200000763
+      ],
+      "annular_or_footprint_support_fraction": 1.0,
+      "assembly_id": "a14_spectrometer_bench",
+      "classification": "ALLOWED_CONTACT",
+      "gap_threshold_mm": 0.1,
+      "interface_role": "PEDESTAL_TO_SPECTROMETER_DEVICE",
+      "load_path_id": "a14_spectrometer_bench_lp01",
+      "min_triangle_surface_distance_mm": 0.0,
+      "object_a": "a14__PEDESTAL__DEVICE__DETECTOR_COLLIMATOR",
+      "object_b": "DEVICE__DETECTOR_COLLIMATOR",
+      "status": "PASS",
+      "table_hole_engagement_mm": null,
+      "triangle_overlap_pairs": 6
+    },
+    {
+      "aabb_intersection_depth_mm": [
+        20.0,
+        20.0,
+        0.200000763
+      ],
+      "annular_or_footprint_support_fraction": 1.0,
+      "assembly_id": "a14_spectrometer_bench",
+      "classification": "ALLOWED_CONTACT",
+      "gap_threshold_mm": 0.1,
+      "interface_role": "BENCH_TO_DEVICE_PEDESTAL",
+      "load_path_id": "a14_spectrometer_bench_lp02",
+      "min_triangle_surface_distance_mm": 0.0,
+      "object_a": "a14__OPEN_SPECTROMETER_BASE",
+      "object_b": "a14__PEDESTAL__DEVICE__DETECTOR_COLLIMATOR",
+      "status": "PASS",
+      "table_hole_engagement_mm": null,
+      "triangle_overlap_pairs": 4
+    },
+    {
+      "aabb_intersection_depth_mm": [
+        20.0,
+        20.0,
+        0.200000763
+      ],
+      "annular_or_footprint_support_fraction": 1.0,
+      "assembly_id": "a14_spectrometer_bench",
+      "classification": "ALLOWED_CONTACT",
+      "gap_threshold_mm": 0.1,
+      "interface_role": "PEDESTAL_TO_SPECTROMETER_DEVICE",
+      "load_path_id": "a14_spectrometer_bench_lp02",
+      "min_triangle_surface_distance_mm": 0.0,
+      "object_a": "a14__PEDESTAL__DEVICE__DETECTOR_COLLIMATOR",
+      "object_b": "DEVICE__DETECTOR_COLLIMATOR",
+      "status": "PASS",
+      "table_hole_engagement_mm": null,
+      "triangle_overlap_pairs": 6
+    },
+    {
+      "aabb_intersection_depth_mm": [
+        20.0,
+        20.0,
+        0.200000763
+      ],
+      "annular_or_footprint_support_fraction": 1.0,
+      "assembly_id": "a14_spectrometer_bench",
+      "classification": "ALLOWED_CONTACT",
+      "gap_threshold_mm": 0.1,
+      "interface_role": "BENCH_TO_DEVICE_PEDESTAL",
+      "load_path_id": "a14_spectrometer_bench_lp03",
+      "min_triangle_surface_distance_mm": 0.0,
+      "object_a": "a14__OPEN_SPECTROMETER_BASE",
+      "object_b": "a14__PEDESTAL__DEVICE__DETECTOR_COLLIMATOR",
+      "status": "PASS",
+      "table_hole_engagement_mm": null,
+      "triangle_overlap_pairs": 4
+    },
+    {
+      "aabb_intersection_depth_mm": [
+        20.0,
+        20.0,
+        0.200000763
+      ],
+      "annular_or_footprint_support_fraction": 1.0,
+      "assembly_id": "a14_spectrometer_bench",
+      "classification": "ALLOWED_CONTACT",
+      "gap_threshold_mm": 0.1,
+      "interface_role": "PEDESTAL_TO_SPECTROMETER_DEVICE",
+      "load_path_id": "a14_spectrometer_bench_lp03",
+      "min_triangle_surface_distance_mm": 0.0,
+      "object_a": "a14__PEDESTAL__DEVICE__DETECTOR_COLLIMATOR",
+      "object_b": "DEVICE__DETECTOR_COLLIMATOR",
+      "status": "PASS",
+      "table_hole_engagement_mm": null,
+      "triangle_overlap_pairs": 6
+    },
+    {
+      "aabb_intersection_depth_mm": [
+        20.0,
+        20.0,
+        0.200000763
+      ],
+      "annular_or_footprint_support_fraction": 1.0,
+      "assembly_id": "a14_spectrometer_bench",
+      "classification": "ALLOWED_CONTACT",
+      "gap_threshold_mm": 0.1,
+      "interface_role": "BENCH_TO_DEVICE_PEDESTAL",
+      "load_path_id": "a14_spectrometer_bench_lp04",
+      "min_triangle_surface_distance_mm": 0.0,
+      "object_a": "a14__OPEN_SPECTROMETER_BASE",
+      "object_b": "a14__PEDESTAL__DEVICE__DETECTOR_COLLIMATOR",
+      "status": "PASS",
+      "table_hole_engagement_mm": null,
+      "triangle_overlap_pairs": 4
+    },
+    {
+      "aabb_intersection_depth_mm": [
+        20.0,
+        20.0,
+        0.200000763
+      ],
+      "annular_or_footprint_support_fraction": 1.0,
+      "assembly_id": "a14_spectrometer_bench",
+      "classification": "ALLOWED_CONTACT",
+      "gap_threshold_mm": 0.1,
+      "interface_role": "PEDESTAL_TO_SPECTROMETER_DEVICE",
+      "load_path_id": "a14_spectrometer_bench_lp04",
+      "min_triangle_surface_distance_mm": 0.0,
+      "object_a": "a14__PEDESTAL__DEVICE__DETECTOR_COLLIMATOR",
+      "object_b": "DEVICE__DETECTOR_COLLIMATOR",
+      "status": "PASS",
+      "table_hole_engagement_mm": null,
+      "triangle_overlap_pairs": 6
+    },
+    {
+      "aabb_intersection_depth_mm": [
+        20.0,
+        20.0,
+        0.200000763
+      ],
+      "annular_or_footprint_support_fraction": 1.0,
+      "assembly_id": "a14_spectrometer_bench",
+      "classification": "ALLOWED_CONTACT",
+      "gap_threshold_mm": 0.1,
+      "interface_role": "BENCH_TO_DEVICE_PEDESTAL",
+      "load_path_id": "a14_spectrometer_bench_lp01",
+      "min_triangle_surface_distance_mm": 0.0,
+      "object_a": "a14__OPEN_SPECTROMETER_BASE",
+      "object_b": "a14__PEDESTAL__DEVICE__DIFFRACTION_GRATING",
+      "status": "PASS",
+      "table_hole_engagement_mm": null,
+      "triangle_overlap_pairs": 4
+    },
+    {
+      "aabb_intersection_depth_mm": [
+        8.0,
+        20.0,
+        0.200000763
+      ],
+      "annular_or_footprint_support_fraction": 0.4,
+      "assembly_id": "a14_spectrometer_bench",
+      "classification": "ALLOWED_CONTACT",
+      "gap_threshold_mm": 0.1,
+      "interface_role": "PEDESTAL_TO_SPECTROMETER_DEVICE",
+      "load_path_id": "a14_spectrometer_bench_lp01",
+      "min_triangle_surface_distance_mm": 0.0,
+      "object_a": "a14__PEDESTAL__DEVICE__DIFFRACTION_GRATING",
+      "object_b": "DEVICE__DIFFRACTION_GRATING",
+      "status": "PASS",
+      "table_hole_engagement_mm": null,
+      "triangle_overlap_pairs": 8
+    },
+    {
+      "aabb_intersection_depth_mm": [
+        20.0,
+        20.0,
+        0.200000763
+      ],
+      "annular_or_footprint_support_fraction": 1.0,
+      "assembly_id": "a14_spectrometer_bench",
+      "classification": "ALLOWED_CONTACT",
+      "gap_threshold_mm": 0.1,
+      "interface_role": "BENCH_TO_DEVICE_PEDESTAL",
+      "load_path_id": "a14_spectrometer_bench_lp02",
+      "min_triangle_surface_distance_mm": 0.0,
+      "object_a": "a14__OPEN_SPECTROMETER_BASE",
+      "object_b": "a14__PEDESTAL__DEVICE__DIFFRACTION_GRATING",
+      "status": "PASS",
+      "table_hole_engagement_mm": null,
+      "triangle_overlap_pairs": 4
+    },
+    {
+      "aabb_intersection_depth_mm": [
+        8.0,
+        20.0,
+        0.200000763
+      ],
+      "annular_or_footprint_support_fraction": 0.4,
+      "assembly_id": "a14_spectrometer_bench",
+      "classification": "ALLOWED_CONTACT",
+      "gap_threshold_mm": 0.1,
+      "interface_role": "PEDESTAL_TO_SPECTROMETER_DEVICE",
+      "load_path_id": "a14_spectrometer_bench_lp02",
+      "min_triangle_surface_distance_mm": 0.0,
+      "object_a": "a14__PEDESTAL__DEVICE__DIFFRACTION_GRATING",
+      "object_b": "DEVICE__DIFFRACTION_GRATING",
+      "status": "PASS",
+      "table_hole_engagement_mm": null,
+      "triangle_overlap_pairs": 8
+    },
+    {
+      "aabb_intersection_depth_mm": [
+        20.0,
+        20.0,
+        0.200000763
+      ],
+      "annular_or_footprint_support_fraction": 1.0,
+      "assembly_id": "a14_spectrometer_bench",
+      "classification": "ALLOWED_CONTACT",
+      "gap_threshold_mm": 0.1,
+      "interface_role": "BENCH_TO_DEVICE_PEDESTAL",
+      "load_path_id": "a14_spectrometer_bench_lp03",
+      "min_triangle_surface_distance_mm": 0.0,
+      "object_a": "a14__OPEN_SPECTROMETER_BASE",
+      "object_b": "a14__PEDESTAL__DEVICE__DIFFRACTION_GRATING",
+      "status": "PASS",
+      "table_hole_engagement_mm": null,
+      "triangle_overlap_pairs": 4
+    },
+    {
+      "aabb_intersection_depth_mm": [
+        8.0,
+        20.0,
+        0.200000763
+      ],
+      "annular_or_footprint_support_fraction": 0.4,
+      "assembly_id": "a14_spectrometer_bench",
+      "classification": "ALLOWED_CONTACT",
+      "gap_threshold_mm": 0.1,
+      "interface_role": "PEDESTAL_TO_SPECTROMETER_DEVICE",
+      "load_path_id": "a14_spectrometer_bench_lp03",
+      "min_triangle_surface_distance_mm": 0.0,
+      "object_a": "a14__PEDESTAL__DEVICE__DIFFRACTION_GRATING",
+      "object_b": "DEVICE__DIFFRACTION_GRATING",
+      "status": "PASS",
+      "table_hole_engagement_mm": null,
+      "triangle_overlap_pairs": 8
+    },
+    {
+      "aabb_intersection_depth_mm": [
+        20.0,
+        20.0,
+        0.200000763
+      ],
+      "annular_or_footprint_support_fraction": 1.0,
+      "assembly_id": "a14_spectrometer_bench",
+      "classification": "ALLOWED_CONTACT",
+      "gap_threshold_mm": 0.1,
+      "interface_role": "BENCH_TO_DEVICE_PEDESTAL",
+      "load_path_id": "a14_spectrometer_bench_lp04",
+      "min_triangle_surface_distance_mm": 0.0,
+      "object_a": "a14__OPEN_SPECTROMETER_BASE",
+      "object_b": "a14__PEDESTAL__DEVICE__DIFFRACTION_GRATING",
+      "status": "PASS",
+      "table_hole_engagement_mm": null,
+      "triangle_overlap_pairs": 4
+    },
+    {
+      "aabb_intersection_depth_mm": [
+        8.0,
+        20.0,
+        0.200000763
+      ],
+      "annular_or_footprint_support_fraction": 0.4,
+      "assembly_id": "a14_spectrometer_bench",
+      "classification": "ALLOWED_CONTACT",
+      "gap_threshold_mm": 0.1,
+      "interface_role": "PEDESTAL_TO_SPECTROMETER_DEVICE",
+      "load_path_id": "a14_spectrometer_bench_lp04",
+      "min_triangle_surface_distance_mm": 0.0,
+      "object_a": "a14__PEDESTAL__DEVICE__DIFFRACTION_GRATING",
+      "object_b": "DEVICE__DIFFRACTION_GRATING",
+      "status": "PASS",
+      "table_hole_engagement_mm": null,
+      "triangle_overlap_pairs": 8
+    },
+    {
+      "aabb_intersection_depth_mm": [
+        20.0,
+        20.0,
+        0.200000763
+      ],
+      "annular_or_footprint_support_fraction": 1.0,
+      "assembly_id": "a14_spectrometer_bench",
+      "classification": "ALLOWED_CONTACT",
+      "gap_threshold_mm": 0.1,
+      "interface_role": "BENCH_TO_DEVICE_PEDESTAL",
+      "load_path_id": "a14_spectrometer_bench_lp01",
+      "min_triangle_surface_distance_mm": 0.0,
+      "object_a": "a14__OPEN_SPECTROMETER_BASE",
+      "object_b": "a14__PEDESTAL__DEVICE__SPECTROMETER_LENS",
+      "status": "PASS",
+      "table_hole_engagement_mm": null,
+      "triangle_overlap_pairs": 4
+    },
+    {
+      "aabb_intersection_depth_mm": [
+        12.0,
+        20.0,
+        0.200000763
+      ],
+      "annular_or_footprint_support_fraction": 0.6,
+      "assembly_id": "a14_spectrometer_bench",
+      "classification": "ALLOWED_CONTACT",
+      "gap_threshold_mm": 0.1,
+      "interface_role": "PEDESTAL_TO_SPECTROMETER_DEVICE",
+      "load_path_id": "a14_spectrometer_bench_lp01",
+      "min_triangle_surface_distance_mm": 0.0,
+      "object_a": "a14__PEDESTAL__DEVICE__SPECTROMETER_LENS",
+      "object_b": "DEVICE__SPECTROMETER_LENS",
+      "status": "PASS",
+      "table_hole_engagement_mm": null,
+      "triangle_overlap_pairs": 4
+    },
+    {
+      "aabb_intersection_depth_mm": [
+        20.0,
+        20.0,
+        0.200000763
+      ],
+      "annular_or_footprint_support_fraction": 1.0,
+      "assembly_id": "a14_spectrometer_bench",
+      "classification": "ALLOWED_CONTACT",
+      "gap_threshold_mm": 0.1,
+      "interface_role": "BENCH_TO_DEVICE_PEDESTAL",
+      "load_path_id": "a14_spectrometer_bench_lp02",
+      "min_triangle_surface_distance_mm": 0.0,
+      "object_a": "a14__OPEN_SPECTROMETER_BASE",
+      "object_b": "a14__PEDESTAL__DEVICE__SPECTROMETER_LENS",
+      "status": "PASS",
+      "table_hole_engagement_mm": null,
+      "triangle_overlap_pairs": 4
+    },
+    {
+      "aabb_intersection_depth_mm": [
+        12.0,
+        20.0,
+        0.200000763
+      ],
+      "annular_or_footprint_support_fraction": 0.6,
+      "assembly_id": "a14_spectrometer_bench",
+      "classification": "ALLOWED_CONTACT",
+      "gap_threshold_mm": 0.1,
+      "interface_role": "PEDESTAL_TO_SPECTROMETER_DEVICE",
+      "load_path_id": "a14_spectrometer_bench_lp02",
+      "min_triangle_surface_distance_mm": 0.0,
+      "object_a": "a14__PEDESTAL__DEVICE__SPECTROMETER_LENS",
+      "object_b": "DEVICE__SPECTROMETER_LENS",
+      "status": "PASS",
+      "table_hole_engagement_mm": null,
+      "triangle_overlap_pairs": 4
+    },
+    {
+      "aabb_intersection_depth_mm": [
+        20.0,
+        20.0,
+        0.200000763
+      ],
+      "annular_or_footprint_support_fraction": 1.0,
+      "assembly_id": "a14_spectrometer_bench",
+      "classification": "ALLOWED_CONTACT",
+      "gap_threshold_mm": 0.1,
+      "interface_role": "BENCH_TO_DEVICE_PEDESTAL",
+      "load_path_id": "a14_spectrometer_bench_lp03",
+      "min_triangle_surface_distance_mm": 0.0,
+      "object_a": "a14__OPEN_SPECTROMETER_BASE",
+      "object_b": "a14__PEDESTAL__DEVICE__SPECTROMETER_LENS",
+      "status": "PASS",
+      "table_hole_engagement_mm": null,
+      "triangle_overlap_pairs": 4
+    },
+    {
+      "aabb_intersection_depth_mm": [
+        12.0,
+        20.0,
+        0.200000763
+      ],
+      "annular_or_footprint_support_fraction": 0.6,
+      "assembly_id": "a14_spectrometer_bench",
+      "classification": "ALLOWED_CONTACT",
+      "gap_threshold_mm": 0.1,
+      "interface_role": "PEDESTAL_TO_SPECTROMETER_DEVICE",
+      "load_path_id": "a14_spectrometer_bench_lp03",
+      "min_triangle_surface_distance_mm": 0.0,
+      "object_a": "a14__PEDESTAL__DEVICE__SPECTROMETER_LENS",
+      "object_b": "DEVICE__SPECTROMETER_LENS",
+      "status": "PASS",
+      "table_hole_engagement_mm": null,
+      "triangle_overlap_pairs": 4
+    },
+    {
+      "aabb_intersection_depth_mm": [
+        20.0,
+        20.0,
+        0.200000763
+      ],
+      "annular_or_footprint_support_fraction": 1.0,
+      "assembly_id": "a14_spectrometer_bench",
+      "classification": "ALLOWED_CONTACT",
+      "gap_threshold_mm": 0.1,
+      "interface_role": "BENCH_TO_DEVICE_PEDESTAL",
+      "load_path_id": "a14_spectrometer_bench_lp04",
+      "min_triangle_surface_distance_mm": 0.0,
+      "object_a": "a14__OPEN_SPECTROMETER_BASE",
+      "object_b": "a14__PEDESTAL__DEVICE__SPECTROMETER_LENS",
+      "status": "PASS",
+      "table_hole_engagement_mm": null,
+      "triangle_overlap_pairs": 4
+    },
+    {
+      "aabb_intersection_depth_mm": [
+        12.0,
+        20.0,
+        0.200000763
+      ],
+      "annular_or_footprint_support_fraction": 0.6,
+      "assembly_id": "a14_spectrometer_bench",
+      "classification": "ALLOWED_CONTACT",
+      "gap_threshold_mm": 0.1,
+      "interface_role": "PEDESTAL_TO_SPECTROMETER_DEVICE",
+      "load_path_id": "a14_spectrometer_bench_lp04",
+      "min_triangle_surface_distance_mm": 0.0,
+      "object_a": "a14__PEDESTAL__DEVICE__SPECTROMETER_LENS",
+      "object_b": "DEVICE__SPECTROMETER_LENS",
+      "status": "PASS",
+      "table_hole_engagement_mm": null,
+      "triangle_overlap_pairs": 4
+    },
+    {
+      "aabb_intersection_depth_mm": [
+        20.0,
+        20.0,
+        0.200000763
+      ],
+      "annular_or_footprint_support_fraction": 1.0,
+      "assembly_id": "a14_spectrometer_bench",
+      "classification": "ALLOWED_CONTACT",
+      "gap_threshold_mm": 0.1,
+      "interface_role": "BENCH_TO_DEVICE_PEDESTAL",
+      "load_path_id": "a14_spectrometer_bench_lp01",
+      "min_triangle_surface_distance_mm": 0.0,
+      "object_a": "a14__OPEN_SPECTROMETER_BASE",
+      "object_b": "a14__PEDESTAL__DEVICE__LINE_CAMERA",
+      "status": "PASS",
+      "table_hole_engagement_mm": null,
+      "triangle_overlap_pairs": 4
+    },
+    {
+      "aabb_intersection_depth_mm": [
+        20.0,
+        20.0,
+        0.200000763
+      ],
+      "annular_or_footprint_support_fraction": 1.0,
+      "assembly_id": "a14_spectrometer_bench",
+      "classification": "ALLOWED_CONTACT",
+      "gap_threshold_mm": 0.1,
+      "interface_role": "PEDESTAL_TO_SPECTROMETER_DEVICE",
+      "load_path_id": "a14_spectrometer_bench_lp01",
+      "min_triangle_surface_distance_mm": 0.0,
+      "object_a": "a14__PEDESTAL__DEVICE__LINE_CAMERA",
+      "object_b": "DEVICE__LINE_CAMERA",
+      "status": "PASS",
+      "table_hole_engagement_mm": null,
+      "triangle_overlap_pairs": 4
+    },
+    {
+      "aabb_intersection_depth_mm": [
+        20.0,
+        20.0,
+        0.200000763
+      ],
+      "annular_or_footprint_support_fraction": 1.0,
+      "assembly_id": "a14_spectrometer_bench",
+      "classification": "ALLOWED_CONTACT",
+      "gap_threshold_mm": 0.1,
+      "interface_role": "BENCH_TO_DEVICE_PEDESTAL",
+      "load_path_id": "a14_spectrometer_bench_lp02",
+      "min_triangle_surface_distance_mm": 0.0,
+      "object_a": "a14__OPEN_SPECTROMETER_BASE",
+      "object_b": "a14__PEDESTAL__DEVICE__LINE_CAMERA",
+      "status": "PASS",
+      "table_hole_engagement_mm": null,
+      "triangle_overlap_pairs": 4
+    },
+    {
+      "aabb_intersection_depth_mm": [
+        20.0,
+        20.0,
+        0.200000763
+      ],
+      "annular_or_footprint_support_fraction": 1.0,
+      "assembly_id": "a14_spectrometer_bench",
+      "classification": "ALLOWED_CONTACT",
+      "gap_threshold_mm": 0.1,
+      "interface_role": "PEDESTAL_TO_SPECTROMETER_DEVICE",
+      "load_path_id": "a14_spectrometer_bench_lp02",
+      "min_triangle_surface_distance_mm": 0.0,
+      "object_a": "a14__PEDESTAL__DEVICE__LINE_CAMERA",
+      "object_b": "DEVICE__LINE_CAMERA",
+      "status": "PASS",
+      "table_hole_engagement_mm": null,
+      "triangle_overlap_pairs": 4
+    },
+    {
+      "aabb_intersection_depth_mm": [
+        20.0,
+        20.0,
+        0.200000763
+      ],
+      "annular_or_footprint_support_fraction": 1.0,
+      "assembly_id": "a14_spectrometer_bench",
+      "classification": "ALLOWED_CONTACT",
+      "gap_threshold_mm": 0.1,
+      "interface_role": "BENCH_TO_DEVICE_PEDESTAL",
+      "load_path_id": "a14_spectrometer_bench_lp03",
+      "min_triangle_surface_distance_mm": 0.0,
+      "object_a": "a14__OPEN_SPECTROMETER_BASE",
+      "object_b": "a14__PEDESTAL__DEVICE__LINE_CAMERA",
+      "status": "PASS",
+      "table_hole_engagement_mm": null,
+      "triangle_overlap_pairs": 4
+    },
+    {
+      "aabb_intersection_depth_mm": [
+        20.0,
+        20.0,
+        0.200000763
+      ],
+      "annular_or_footprint_support_fraction": 1.0,
+      "assembly_id": "a14_spectrometer_bench",
+      "classification": "ALLOWED_CONTACT",
+      "gap_threshold_mm": 0.1,
+      "interface_role": "PEDESTAL_TO_SPECTROMETER_DEVICE",
+      "load_path_id": "a14_spectrometer_bench_lp03",
+      "min_triangle_surface_distance_mm": 0.0,
+      "object_a": "a14__PEDESTAL__DEVICE__LINE_CAMERA",
+      "object_b": "DEVICE__LINE_CAMERA",
+      "status": "PASS",
+      "table_hole_engagement_mm": null,
+      "triangle_overlap_pairs": 4
+    },
+    {
+      "aabb_intersection_depth_mm": [
+        20.0,
+        20.0,
+        0.200000763
+      ],
+      "annular_or_footprint_support_fraction": 1.0,
+      "assembly_id": "a14_spectrometer_bench",
+      "classification": "ALLOWED_CONTACT",
+      "gap_threshold_mm": 0.1,
+      "interface_role": "BENCH_TO_DEVICE_PEDESTAL",
+      "load_path_id": "a14_spectrometer_bench_lp04",
+      "min_triangle_surface_distance_mm": 0.0,
+      "object_a": "a14__OPEN_SPECTROMETER_BASE",
+      "object_b": "a14__PEDESTAL__DEVICE__LINE_CAMERA",
+      "status": "PASS",
+      "table_hole_engagement_mm": null,
+      "triangle_overlap_pairs": 4
+    },
+    {
+      "aabb_intersection_depth_mm": [
+        20.0,
+        20.0,
+        0.200000763
+      ],
+      "annular_or_footprint_support_fraction": 1.0,
+      "assembly_id": "a14_spectrometer_bench",
+      "classification": "ALLOWED_CONTACT",
+      "gap_threshold_mm": 0.1,
+      "interface_role": "PEDESTAL_TO_SPECTROMETER_DEVICE",
+      "load_path_id": "a14_spectrometer_bench_lp04",
+      "min_triangle_surface_distance_mm": 0.0,
+      "object_a": "a14__PEDESTAL__DEVICE__LINE_CAMERA",
+      "object_b": "DEVICE__LINE_CAMERA",
+      "status": "PASS",
+      "table_hole_engagement_mm": null,
+      "triangle_overlap_pairs": 4
+    }
+  ],
+  "load_path_count": 19,
+  "load_path_status_counts": {
+    "PASS": 8,
+    "UNVERIFIED": 11
+  },
+  "load_paths": [
+    {
+      "interface_count": 3,
+      "load_path_id": "a01_sld_source_lp01",
+      "status": "PASS"
+    },
+    {
+      "interface_count": 5,
+      "load_path_id": "a02_fiber_management_lp01",
+      "status": "PASS"
+    },
+    {
+      "interface_count": 5,
+      "load_path_id": "a02_fiber_management_lp02",
+      "status": "PASS"
+    },
+    {
+      "interface_count": 5,
+      "load_path_id": "a02_fiber_management_lp03",
+      "status": "UNVERIFIED"
+    },
+    {
+      "interface_count": 9,
+      "load_path_id": "a03_sample_collimator_lp01",
+      "status": "UNVERIFIED"
+    },
+    {
+      "interface_count": 3,
+      "load_path_id": "a04_sample_galvo_lp01",
+      "status": "UNVERIFIED"
+    },
+    {
+      "interface_count": 8,
+      "load_path_id": "a05_sample_lens_lp01",
+      "status": "UNVERIFIED"
+    },
+    {
+      "interface_count": 3,
+      "load_path_id": "a06_sample_fixture_lp01",
+      "status": "PASS"
+    },
+    {
+      "interface_count": 6,
+      "load_path_id": "a07_reference_delay_collimator_lp01",
+      "status": "UNVERIFIED"
+    },
+    {
+      "interface_count": 7,
+      "load_path_id": "a08_reference_npbs_lp01",
+      "status": "UNVERIFIED"
+    },
+    {
+      "interface_count": 3,
+      "load_path_id": "a09_reference_galvo_lp01",
+      "status": "UNVERIFIED"
+    },
+    {
+      "interface_count": 8,
+      "load_path_id": "a10_reference_lens_1_lp01",
+      "status": "UNVERIFIED"
+    },
+    {
+      "interface_count": 8,
+      "load_path_id": "a11_reference_mirror_1_lp01",
+      "status": "UNVERIFIED"
+    },
+    {
+      "interface_count": 8,
+      "load_path_id": "a12_reference_lens_2_lp01",
+      "status": "UNVERIFIED"
+    },
+    {
+      "interface_count": 8,
+      "load_path_id": "a13_reference_mirror_2_lp01",
+      "status": "UNVERIFIED"
+    },
+    {
+      "interface_count": 13,
+      "load_path_id": "a14_spectrometer_bench_lp01",
+      "status": "PASS"
+    },
+    {
+      "interface_count": 13,
+      "load_path_id": "a14_spectrometer_bench_lp02",
+      "status": "PASS"
+    },
+    {
+      "interface_count": 13,
+      "load_path_id": "a14_spectrometer_bench_lp03",
+      "status": "PASS"
+    },
+    {
+      "interface_count": 13,
+      "load_path_id": "a14_spectrometer_bench_lp04",
+      "status": "PASS"
+    }
+  ],
+  "narrow_phase": "TRIANGLE_BVH_OVERLAP_OR_NEAREST_TRIANGLE_SURFACE_DISTANCE",
+  "phase": "PHASE_2_REPRESENTATIVE_SMOKE",
+  "schema_version": "1.0",
+  "status": "UNVERIFIED",
+  "thresholds": {
+    "contact_gap_max_mm": 0.1,
+    "local_bearing_support_fraction_min": 0.25,
+    "table_hole_engagement_min_mm": 4.0
+  }
+}

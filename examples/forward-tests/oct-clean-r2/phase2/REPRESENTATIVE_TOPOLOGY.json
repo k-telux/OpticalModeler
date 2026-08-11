@@ -1,0 +1,2319 @@
+{
+  "automatic_reciprocal_edge_generation": false,
+  "deferred_required_full_graph": {
+    "node_ids": [
+      "n24_analog_output_daq",
+      "n25_sample_galvo_driver",
+      "n26_reference_galvo_driver",
+      "n27_sld_controller",
+      "n29_display_storage"
+    ],
+    "path_prefixes": [
+      "p07_",
+      "p08_",
+      "p09_",
+      "p10_",
+      "p11_",
+      "p12_",
+      "p15_",
+      "p16_"
+    ],
+    "status": "UNVERIFIED"
+  },
+  "domain_counts": {
+    "electrical_data": 1,
+    "free_space_optical": 25,
+    "guided_fiber": 10
+  },
+  "edge_count": 36,
+  "edges": [
+    {
+      "directionality": "directed",
+      "edge_id": "e01",
+      "edge_type": "guided_fiber",
+      "evidence_class": "FIGURE1_SCHEMATIC_OR_METHODS",
+      "from": {
+        "node_id": "n01_sld_source",
+        "port_id": "p_light"
+      },
+      "path_ids": [
+        "p01_sample_forward",
+        "p03_reference_1_forward",
+        "p05_reference_2_forward"
+      ],
+      "purpose": "source delivery",
+      "required": true,
+      "to": {
+        "node_id": "n02_fiber_coupler",
+        "port_id": "p_source"
+      }
+    },
+    {
+      "directionality": "directed",
+      "edge_id": "e02",
+      "edge_type": "guided_fiber",
+      "evidence_class": "FIGURE1_SCHEMATIC_OR_METHODS",
+      "from": {
+        "node_id": "n02_fiber_coupler",
+        "port_id": "p_sample"
+      },
+      "path_ids": [
+        "p01_sample_forward"
+      ],
+      "purpose": "sample forward fiber",
+      "required": true,
+      "to": {
+        "node_id": "n03_sample_pc",
+        "port_id": "p_in"
+      }
+    },
+    {
+      "directionality": "directed",
+      "edge_id": "e03",
+      "edge_type": "guided_fiber",
+      "evidence_class": "FIGURE1_SCHEMATIC_OR_METHODS",
+      "from": {
+        "node_id": "n03_sample_pc",
+        "port_id": "p_out"
+      },
+      "path_ids": [
+        "p01_sample_forward"
+      ],
+      "purpose": "sample forward fiber",
+      "required": true,
+      "to": {
+        "node_id": "n04_sample_collimator",
+        "port_id": "p_fiber"
+      }
+    },
+    {
+      "directionality": "directed",
+      "edge_id": "e04",
+      "edge_type": "free_space_optical",
+      "evidence_class": "FIGURE1_SCHEMATIC_OR_METHODS",
+      "from": {
+        "node_id": "n04_sample_collimator",
+        "port_id": "p_free"
+      },
+      "path_ids": [
+        "p01_sample_forward"
+      ],
+      "purpose": "sample forward free space",
+      "required": true,
+      "to": {
+        "node_id": "n05_sample_galvo_x",
+        "port_id": "p_in"
+      }
+    },
+    {
+      "directionality": "directed",
+      "edge_id": "e05",
+      "edge_type": "free_space_optical",
+      "evidence_class": "FIGURE1_SCHEMATIC_OR_METHODS",
+      "from": {
+        "node_id": "n05_sample_galvo_x",
+        "port_id": "p_out"
+      },
+      "path_ids": [
+        "p01_sample_forward"
+      ],
+      "purpose": "sample forward free space",
+      "required": true,
+      "to": {
+        "node_id": "n06_sample_galvo_y",
+        "port_id": "p_in"
+      }
+    },
+    {
+      "directionality": "directed",
+      "edge_id": "e06",
+      "edge_type": "free_space_optical",
+      "evidence_class": "FIGURE1_SCHEMATIC_OR_METHODS",
+      "from": {
+        "node_id": "n06_sample_galvo_y",
+        "port_id": "p_out"
+      },
+      "path_ids": [
+        "p01_sample_forward"
+      ],
+      "purpose": "sample forward free space",
+      "required": true,
+      "to": {
+        "node_id": "n07_sample_lens_l0",
+        "port_id": "p_upstream"
+      }
+    },
+    {
+      "directionality": "directed",
+      "edge_id": "e07",
+      "edge_type": "free_space_optical",
+      "evidence_class": "FIGURE1_SCHEMATIC_OR_METHODS",
+      "from": {
+        "node_id": "n07_sample_lens_l0",
+        "port_id": "p_downstream"
+      },
+      "path_ids": [
+        "p01_sample_forward"
+      ],
+      "purpose": "sample illumination",
+      "required": true,
+      "to": {
+        "node_id": "n08_sample",
+        "port_id": "p_optical"
+      }
+    },
+    {
+      "directionality": "directed",
+      "edge_id": "e08",
+      "edge_type": "free_space_optical",
+      "evidence_class": "INFERRED_RECIPROCAL_PATH",
+      "from": {
+        "node_id": "n08_sample",
+        "port_id": "p_optical"
+      },
+      "path_ids": [
+        "p02_sample_return_detection"
+      ],
+      "purpose": "sample backscatter return",
+      "required": true,
+      "to": {
+        "node_id": "n07_sample_lens_l0",
+        "port_id": "p_downstream"
+      }
+    },
+    {
+      "directionality": "directed",
+      "edge_id": "e09",
+      "edge_type": "free_space_optical",
+      "evidence_class": "INFERRED_RECIPROCAL_PATH",
+      "from": {
+        "node_id": "n07_sample_lens_l0",
+        "port_id": "p_upstream"
+      },
+      "path_ids": [
+        "p02_sample_return_detection"
+      ],
+      "purpose": "sample return free space",
+      "required": true,
+      "to": {
+        "node_id": "n06_sample_galvo_y",
+        "port_id": "p_out"
+      }
+    },
+    {
+      "directionality": "directed",
+      "edge_id": "e10",
+      "edge_type": "free_space_optical",
+      "evidence_class": "INFERRED_RECIPROCAL_PATH",
+      "from": {
+        "node_id": "n06_sample_galvo_y",
+        "port_id": "p_in"
+      },
+      "path_ids": [
+        "p02_sample_return_detection"
+      ],
+      "purpose": "sample return free space",
+      "required": true,
+      "to": {
+        "node_id": "n05_sample_galvo_x",
+        "port_id": "p_out"
+      }
+    },
+    {
+      "directionality": "directed",
+      "edge_id": "e11",
+      "edge_type": "free_space_optical",
+      "evidence_class": "INFERRED_RECIPROCAL_PATH",
+      "from": {
+        "node_id": "n05_sample_galvo_x",
+        "port_id": "p_in"
+      },
+      "path_ids": [
+        "p02_sample_return_detection"
+      ],
+      "purpose": "sample return free space",
+      "required": true,
+      "to": {
+        "node_id": "n04_sample_collimator",
+        "port_id": "p_free"
+      }
+    },
+    {
+      "directionality": "directed",
+      "edge_id": "e12",
+      "edge_type": "guided_fiber",
+      "evidence_class": "INFERRED_RECIPROCAL_PATH",
+      "from": {
+        "node_id": "n04_sample_collimator",
+        "port_id": "p_fiber"
+      },
+      "path_ids": [
+        "p02_sample_return_detection"
+      ],
+      "purpose": "sample return fiber",
+      "required": true,
+      "to": {
+        "node_id": "n03_sample_pc",
+        "port_id": "p_out"
+      }
+    },
+    {
+      "directionality": "directed",
+      "edge_id": "e13",
+      "edge_type": "guided_fiber",
+      "evidence_class": "INFERRED_RECIPROCAL_PATH",
+      "from": {
+        "node_id": "n03_sample_pc",
+        "port_id": "p_in"
+      },
+      "path_ids": [
+        "p02_sample_return_detection"
+      ],
+      "purpose": "sample return to combiner",
+      "required": true,
+      "to": {
+        "node_id": "n02_fiber_coupler",
+        "port_id": "p_sample"
+      }
+    },
+    {
+      "directionality": "directed",
+      "edge_id": "e14",
+      "edge_type": "guided_fiber",
+      "evidence_class": "FIGURE1_SCHEMATIC_OR_METHODS",
+      "from": {
+        "node_id": "n02_fiber_coupler",
+        "port_id": "p_reference"
+      },
+      "path_ids": [
+        "p03_reference_1_forward",
+        "p05_reference_2_forward"
+      ],
+      "purpose": "reference forward fiber",
+      "required": true,
+      "to": {
+        "node_id": "n09_reference_pc",
+        "port_id": "p_in"
+      }
+    },
+    {
+      "directionality": "directed",
+      "edge_id": "e15",
+      "edge_type": "guided_fiber",
+      "evidence_class": "FIGURE1_SCHEMATIC_OR_METHODS",
+      "from": {
+        "node_id": "n09_reference_pc",
+        "port_id": "p_out"
+      },
+      "path_ids": [
+        "p03_reference_1_forward",
+        "p05_reference_2_forward"
+      ],
+      "purpose": "reference forward fiber",
+      "required": true,
+      "to": {
+        "node_id": "n10_reference_collimator",
+        "port_id": "p_fiber"
+      }
+    },
+    {
+      "directionality": "directed",
+      "edge_id": "e16",
+      "edge_type": "free_space_optical",
+      "evidence_class": "FIGURE1_SCHEMATIC_OR_METHODS",
+      "from": {
+        "node_id": "n10_reference_collimator",
+        "port_id": "p_free"
+      },
+      "path_ids": [
+        "p03_reference_1_forward",
+        "p05_reference_2_forward"
+      ],
+      "purpose": "reference common free space",
+      "required": true,
+      "to": {
+        "node_id": "n11_reference_npbs",
+        "port_id": "p_common"
+      }
+    },
+    {
+      "directionality": "directed",
+      "edge_id": "e17",
+      "edge_type": "free_space_optical",
+      "evidence_class": "FIGURE1_SCHEMATIC_OR_METHODS",
+      "from": {
+        "node_id": "n11_reference_npbs",
+        "port_id": "p_arm1"
+      },
+      "path_ids": [
+        "p03_reference_1_forward"
+      ],
+      "purpose": "reference sub-arm 1 forward",
+      "required": true,
+      "to": {
+        "node_id": "n12_reference_galvo_gs1",
+        "port_id": "p_in"
+      }
+    },
+    {
+      "directionality": "directed",
+      "edge_id": "e18",
+      "edge_type": "free_space_optical",
+      "evidence_class": "FIGURE1_SCHEMATIC_OR_METHODS",
+      "from": {
+        "node_id": "n12_reference_galvo_gs1",
+        "port_id": "p_out"
+      },
+      "path_ids": [
+        "p03_reference_1_forward"
+      ],
+      "purpose": "reference sub-arm 1 forward",
+      "required": true,
+      "to": {
+        "node_id": "n13_reference_lens_l1",
+        "port_id": "p_upstream"
+      }
+    },
+    {
+      "directionality": "directed",
+      "edge_id": "e19",
+      "edge_type": "free_space_optical",
+      "evidence_class": "FIGURE1_SCHEMATIC_OR_METHODS",
+      "from": {
+        "node_id": "n13_reference_lens_l1",
+        "port_id": "p_downstream"
+      },
+      "path_ids": [
+        "p03_reference_1_forward"
+      ],
+      "purpose": "reference sub-arm 1 termination",
+      "required": true,
+      "to": {
+        "node_id": "n14_reference_mirror_m1",
+        "port_id": "p_optical"
+      }
+    },
+    {
+      "directionality": "directed",
+      "edge_id": "e20",
+      "edge_type": "free_space_optical",
+      "evidence_class": "INFERRED_RECIPROCAL_PATH",
+      "from": {
+        "node_id": "n14_reference_mirror_m1",
+        "port_id": "p_optical"
+      },
+      "path_ids": [
+        "p04_reference_1_return_detection"
+      ],
+      "purpose": "reference sub-arm 1 return",
+      "required": true,
+      "to": {
+        "node_id": "n13_reference_lens_l1",
+        "port_id": "p_downstream"
+      }
+    },
+    {
+      "directionality": "directed",
+      "edge_id": "e21",
+      "edge_type": "free_space_optical",
+      "evidence_class": "INFERRED_RECIPROCAL_PATH",
+      "from": {
+        "node_id": "n13_reference_lens_l1",
+        "port_id": "p_upstream"
+      },
+      "path_ids": [
+        "p04_reference_1_return_detection"
+      ],
+      "purpose": "reference sub-arm 1 return",
+      "required": true,
+      "to": {
+        "node_id": "n12_reference_galvo_gs1",
+        "port_id": "p_out"
+      }
+    },
+    {
+      "directionality": "directed",
+      "edge_id": "e22",
+      "edge_type": "free_space_optical",
+      "evidence_class": "INFERRED_RECIPROCAL_PATH",
+      "from": {
+        "node_id": "n12_reference_galvo_gs1",
+        "port_id": "p_in"
+      },
+      "path_ids": [
+        "p04_reference_1_return_detection"
+      ],
+      "purpose": "reference sub-arm 1 recombination",
+      "required": true,
+      "to": {
+        "node_id": "n11_reference_npbs",
+        "port_id": "p_arm1"
+      }
+    },
+    {
+      "directionality": "directed",
+      "edge_id": "e23",
+      "edge_type": "free_space_optical",
+      "evidence_class": "FIGURE1_SCHEMATIC_OR_METHODS",
+      "from": {
+        "node_id": "n11_reference_npbs",
+        "port_id": "p_arm2"
+      },
+      "path_ids": [
+        "p05_reference_2_forward"
+      ],
+      "purpose": "reference sub-arm 2 forward",
+      "required": true,
+      "to": {
+        "node_id": "n15_reference_galvo_gs2",
+        "port_id": "p_in"
+      }
+    },
+    {
+      "directionality": "directed",
+      "edge_id": "e24",
+      "edge_type": "free_space_optical",
+      "evidence_class": "FIGURE1_SCHEMATIC_OR_METHODS",
+      "from": {
+        "node_id": "n15_reference_galvo_gs2",
+        "port_id": "p_out"
+      },
+      "path_ids": [
+        "p05_reference_2_forward"
+      ],
+      "purpose": "reference sub-arm 2 forward",
+      "required": true,
+      "to": {
+        "node_id": "n16_reference_lens_l2",
+        "port_id": "p_upstream"
+      }
+    },
+    {
+      "directionality": "directed",
+      "edge_id": "e25",
+      "edge_type": "free_space_optical",
+      "evidence_class": "FIGURE1_SCHEMATIC_OR_METHODS",
+      "from": {
+        "node_id": "n16_reference_lens_l2",
+        "port_id": "p_downstream"
+      },
+      "path_ids": [
+        "p05_reference_2_forward"
+      ],
+      "purpose": "reference sub-arm 2 termination",
+      "required": true,
+      "to": {
+        "node_id": "n17_reference_mirror_m2",
+        "port_id": "p_optical"
+      }
+    },
+    {
+      "directionality": "directed",
+      "edge_id": "e26",
+      "edge_type": "free_space_optical",
+      "evidence_class": "INFERRED_RECIPROCAL_PATH",
+      "from": {
+        "node_id": "n17_reference_mirror_m2",
+        "port_id": "p_optical"
+      },
+      "path_ids": [
+        "p06_reference_2_return_detection"
+      ],
+      "purpose": "reference sub-arm 2 return",
+      "required": true,
+      "to": {
+        "node_id": "n16_reference_lens_l2",
+        "port_id": "p_downstream"
+      }
+    },
+    {
+      "directionality": "directed",
+      "edge_id": "e27",
+      "edge_type": "free_space_optical",
+      "evidence_class": "INFERRED_RECIPROCAL_PATH",
+      "from": {
+        "node_id": "n16_reference_lens_l2",
+        "port_id": "p_upstream"
+      },
+      "path_ids": [
+        "p06_reference_2_return_detection"
+      ],
+      "purpose": "reference sub-arm 2 return",
+      "required": true,
+      "to": {
+        "node_id": "n15_reference_galvo_gs2",
+        "port_id": "p_out"
+      }
+    },
+    {
+      "directionality": "directed",
+      "edge_id": "e28",
+      "edge_type": "free_space_optical",
+      "evidence_class": "INFERRED_RECIPROCAL_PATH",
+      "from": {
+        "node_id": "n15_reference_galvo_gs2",
+        "port_id": "p_in"
+      },
+      "path_ids": [
+        "p06_reference_2_return_detection"
+      ],
+      "purpose": "reference sub-arm 2 recombination",
+      "required": true,
+      "to": {
+        "node_id": "n11_reference_npbs",
+        "port_id": "p_arm2"
+      }
+    },
+    {
+      "directionality": "directed",
+      "edge_id": "e29",
+      "edge_type": "free_space_optical",
+      "evidence_class": "INFERRED_RECIPROCAL_PATH",
+      "from": {
+        "node_id": "n11_reference_npbs",
+        "port_id": "p_common"
+      },
+      "path_ids": [
+        "p04_reference_1_return_detection",
+        "p06_reference_2_return_detection"
+      ],
+      "purpose": "reference combined return",
+      "required": true,
+      "to": {
+        "node_id": "n10_reference_collimator",
+        "port_id": "p_free"
+      }
+    },
+    {
+      "directionality": "directed",
+      "edge_id": "e30",
+      "edge_type": "guided_fiber",
+      "evidence_class": "INFERRED_RECIPROCAL_PATH",
+      "from": {
+        "node_id": "n10_reference_collimator",
+        "port_id": "p_fiber"
+      },
+      "path_ids": [
+        "p04_reference_1_return_detection",
+        "p06_reference_2_return_detection"
+      ],
+      "purpose": "reference return fiber",
+      "required": true,
+      "to": {
+        "node_id": "n09_reference_pc",
+        "port_id": "p_out"
+      }
+    },
+    {
+      "directionality": "directed",
+      "edge_id": "e31",
+      "edge_type": "guided_fiber",
+      "evidence_class": "INFERRED_RECIPROCAL_PATH",
+      "from": {
+        "node_id": "n09_reference_pc",
+        "port_id": "p_in"
+      },
+      "path_ids": [
+        "p04_reference_1_return_detection",
+        "p06_reference_2_return_detection"
+      ],
+      "purpose": "reference return to combiner",
+      "required": true,
+      "to": {
+        "node_id": "n02_fiber_coupler",
+        "port_id": "p_reference"
+      }
+    },
+    {
+      "directionality": "directed",
+      "edge_id": "e32",
+      "edge_type": "guided_fiber",
+      "evidence_class": "FIGURE1_SCHEMATIC_OR_METHODS",
+      "from": {
+        "node_id": "n02_fiber_coupler",
+        "port_id": "p_detector"
+      },
+      "path_ids": [
+        "p02_sample_return_detection",
+        "p04_reference_1_return_detection",
+        "p06_reference_2_return_detection"
+      ],
+      "purpose": "recombined interferogram delivery",
+      "required": true,
+      "to": {
+        "node_id": "n18_detector_collimator",
+        "port_id": "p_fiber"
+      }
+    },
+    {
+      "directionality": "directed",
+      "edge_id": "e33",
+      "edge_type": "free_space_optical",
+      "evidence_class": "FIGURE1_SCHEMATIC_OR_METHODS",
+      "from": {
+        "node_id": "n18_detector_collimator",
+        "port_id": "p_free"
+      },
+      "path_ids": [
+        "p02_sample_return_detection",
+        "p04_reference_1_return_detection",
+        "p06_reference_2_return_detection"
+      ],
+      "purpose": "spectrometer collimated beam",
+      "required": true,
+      "to": {
+        "node_id": "n19_diffraction_grating",
+        "port_id": "p_in"
+      }
+    },
+    {
+      "directionality": "directed",
+      "edge_id": "e34",
+      "edge_type": "free_space_optical",
+      "evidence_class": "FIGURE1_SCHEMATIC_OR_METHODS",
+      "from": {
+        "node_id": "n19_diffraction_grating",
+        "port_id": "p_out"
+      },
+      "path_ids": [
+        "p02_sample_return_detection",
+        "p04_reference_1_return_detection",
+        "p06_reference_2_return_detection"
+      ],
+      "purpose": "dispersed spectrum",
+      "required": true,
+      "to": {
+        "node_id": "n20_spectrometer_lens",
+        "port_id": "p_in"
+      }
+    },
+    {
+      "directionality": "directed",
+      "edge_id": "e35",
+      "edge_type": "free_space_optical",
+      "evidence_class": "FIGURE1_SCHEMATIC_OR_METHODS",
+      "from": {
+        "node_id": "n20_spectrometer_lens",
+        "port_id": "p_out"
+      },
+      "path_ids": [
+        "p02_sample_return_detection",
+        "p04_reference_1_return_detection",
+        "p06_reference_2_return_detection"
+      ],
+      "purpose": "spectrum at camera",
+      "required": true,
+      "to": {
+        "node_id": "n21_line_camera",
+        "port_id": "p_optical"
+      }
+    },
+    {
+      "directionality": "directed",
+      "edge_id": "e52",
+      "edge_type": "electrical_data",
+      "evidence_class": "FIGURE1_DIRECT_DATA_CONNECTION",
+      "from": {
+        "node_id": "n21_line_camera",
+        "port_id": "p_data"
+      },
+      "path_ids": [
+        "p14_spectral_acquisition"
+      ],
+      "purpose": "paper-baseline CMOS-to-computer data connection",
+      "required": true,
+      "signal_class": "DATA",
+      "to": {
+        "node_id": "n23_control_computer",
+        "port_id": "p_acq_data"
+      }
+    }
+  ],
+  "excluded_optional": {
+    "node_ids": [
+      "n22_frame_grabber",
+      "n28_spectrometer_controller"
+    ],
+    "path_prefixes": [
+      "p13_",
+      "p17_",
+      "p18_"
+    ]
+  },
+  "explicit_return_edges_with_inferred_reciprocal_evidence": [
+    "e08",
+    "e09",
+    "e10",
+    "e11",
+    "e12",
+    "e13",
+    "e20",
+    "e21",
+    "e22",
+    "e26",
+    "e27",
+    "e28",
+    "e29",
+    "e30",
+    "e31"
+  ],
+  "nodes": [
+    {
+      "experimental_role": "837 nm broadband SLD source",
+      "internal_transfers": [],
+      "node_id": "n01_sld_source",
+      "node_type": "OPTICAL_SOURCE",
+      "optional": false,
+      "physical_instance_id": "inst_sld_source",
+      "planned_representation": {
+        "classification": "MODELED_DECLARED",
+        "component_id": null,
+        "exact_model": "SLD-371-HP2",
+        "geometry_status": "NOT_STARTED_PHASE_1",
+        "identity_source_locator": "Wu2016 methods hardware paragraph following Figure 1.",
+        "note": "Superlum source named by the paper; no vendor CAD acquired.",
+        "official_cad_claim": false,
+        "source_fidelity": "PAPER_EXACT_MODEL"
+      },
+      "ports": [
+        {
+          "direction": "out",
+          "domain": "guided_fiber",
+          "function": "broadband source output",
+          "port_id": "p_light"
+        },
+        {
+          "direction": "in",
+          "domain": "electrical_data",
+          "function": "source drive and power",
+          "port_id": "p_power",
+          "signal_class": "POWER"
+        }
+      ],
+      "subcomponent_role": "WHOLE_COMPONENT",
+      "support_required": true,
+      "topology_source_locator": "Wu2016 Figure 1"
+    },
+    {
+      "experimental_role": "2x2 50:50 main interferometer split and return recombination",
+      "internal_transfers": [
+        {
+          "from_port": "p_source",
+          "to_port": "p_sample",
+          "transfer_kind": "SPLIT"
+        },
+        {
+          "from_port": "p_source",
+          "to_port": "p_reference",
+          "transfer_kind": "SPLIT"
+        },
+        {
+          "from_port": "p_sample",
+          "to_port": "p_detector",
+          "transfer_kind": "COMBINE"
+        },
+        {
+          "from_port": "p_reference",
+          "to_port": "p_detector",
+          "transfer_kind": "COMBINE"
+        }
+      ],
+      "node_id": "n02_fiber_coupler",
+      "node_type": "FIBER_COMPONENT",
+      "optional": false,
+      "physical_instance_id": "inst_fiber_coupler",
+      "planned_representation": {
+        "classification": "OFFICIAL_CAD_REFERENCE",
+        "component_id": "cad_tw850r5a2",
+        "exact_model": "TW850R5A2",
+        "geometry_status": "NOT_STARTED_PHASE_1",
+        "identity_source_locator": "Official Thorlabs exact-model record in SOURCE_LOCK/CAD_MANIFEST; experimental role is an engineering selection.",
+        "note": "Matches the paper's 50:50 wideband fiber-coupler role; brand/model not specified in paper.",
+        "official_cad_claim": true,
+        "source_fidelity": "ENGINEERING_SUBSTITUTION"
+      },
+      "ports": [
+        {
+          "direction": "bidirectional",
+          "domain": "guided_fiber",
+          "function": "source port",
+          "port_id": "p_source"
+        },
+        {
+          "direction": "bidirectional",
+          "domain": "guided_fiber",
+          "function": "sample-arm port",
+          "port_id": "p_sample"
+        },
+        {
+          "direction": "bidirectional",
+          "domain": "guided_fiber",
+          "function": "reference-arm port",
+          "port_id": "p_reference"
+        },
+        {
+          "direction": "bidirectional",
+          "domain": "guided_fiber",
+          "function": "detection port",
+          "port_id": "p_detector"
+        }
+      ],
+      "subcomponent_role": "WHOLE_COMPONENT",
+      "support_required": true,
+      "topology_source_locator": "Wu2016 Figure 1"
+    },
+    {
+      "experimental_role": "sample-arm fiber polarization controller",
+      "internal_transfers": [
+        {
+          "from_port": "p_in",
+          "to_port": "p_out",
+          "transfer_kind": "TRANSMIT"
+        },
+        {
+          "from_port": "p_out",
+          "to_port": "p_in",
+          "transfer_kind": "TRANSMIT"
+        }
+      ],
+      "node_id": "n03_sample_pc",
+      "node_type": "FIBER_COMPONENT",
+      "optional": false,
+      "physical_instance_id": "inst_sample_pc",
+      "planned_representation": {
+        "classification": "OFFICIAL_CAD_REFERENCE",
+        "component_id": "cad_fpc030",
+        "exact_model": "FPC030",
+        "geometry_status": "NOT_STARTED_PHASE_1",
+        "identity_source_locator": "Official Thorlabs exact-model record in SOURCE_LOCK/CAD_MANIFEST; experimental role is an engineering selection.",
+        "note": "",
+        "official_cad_claim": true,
+        "source_fidelity": "ENGINEERING_SUBSTITUTION"
+      },
+      "ports": [
+        {
+          "direction": "bidirectional",
+          "domain": "guided_fiber",
+          "function": "coupler side",
+          "port_id": "p_in"
+        },
+        {
+          "direction": "bidirectional",
+          "domain": "guided_fiber",
+          "function": "collimator side",
+          "port_id": "p_out"
+        }
+      ],
+      "subcomponent_role": "WHOLE_COMPONENT",
+      "support_required": true,
+      "topology_source_locator": "Wu2016 Figure 1"
+    },
+    {
+      "experimental_role": "sample-arm fiber/free-space collimator",
+      "internal_transfers": [
+        {
+          "from_port": "p_fiber",
+          "to_port": "p_free",
+          "transfer_kind": "COUPLE"
+        },
+        {
+          "from_port": "p_free",
+          "to_port": "p_fiber",
+          "transfer_kind": "COUPLE"
+        }
+      ],
+      "node_id": "n04_sample_collimator",
+      "node_type": "FIBER_FREE_SPACE_INTERFACE",
+      "optional": false,
+      "physical_instance_id": "inst_sample_collimator",
+      "planned_representation": {
+        "classification": "OFFICIAL_CAD_REFERENCE",
+        "component_id": "cad_f240apc_850",
+        "exact_model": "F240APC-850",
+        "geometry_status": "NOT_STARTED_PHASE_1",
+        "identity_source_locator": "Official Thorlabs exact-model record in SOURCE_LOCK/CAD_MANIFEST; experimental role is an engineering selection.",
+        "note": "",
+        "official_cad_claim": true,
+        "source_fidelity": "ENGINEERING_SUBSTITUTION"
+      },
+      "ports": [
+        {
+          "direction": "bidirectional",
+          "domain": "guided_fiber",
+          "function": "fiber face",
+          "port_id": "p_fiber"
+        },
+        {
+          "direction": "bidirectional",
+          "domain": "free_space_optical",
+          "function": "free-space aperture",
+          "port_id": "p_free"
+        }
+      ],
+      "subcomponent_role": "WHOLE_COMPONENT",
+      "support_required": true,
+      "topology_source_locator": "Wu2016 Figure 1"
+    },
+    {
+      "experimental_role": "sample scanner first axis",
+      "internal_transfers": [
+        {
+          "from_port": "p_in",
+          "to_port": "p_out",
+          "transfer_kind": "REFLECT"
+        },
+        {
+          "from_port": "p_out",
+          "to_port": "p_in",
+          "transfer_kind": "REFLECT"
+        }
+      ],
+      "node_id": "n05_sample_galvo_x",
+      "node_type": "FREE_SPACE_OPTIC",
+      "optional": false,
+      "physical_instance_id": "inst_gvs012_sample",
+      "planned_representation": {
+        "classification": "OFFICIAL_CAD_REFERENCE",
+        "component_id": "cad_gvs012",
+        "exact_model": "GVS012",
+        "geometry_status": "NOT_STARTED_PHASE_1",
+        "identity_source_locator": "Official Thorlabs exact-model record in SOURCE_LOCK/CAD_MANIFEST; experimental role is an engineering selection.",
+        "note": "Axis X of the sample-side engineering-substitution GVS012 instance.",
+        "official_cad_claim": true,
+        "source_fidelity": "ENGINEERING_SUBSTITUTION"
+      },
+      "ports": [
+        {
+          "direction": "bidirectional",
+          "domain": "free_space_optical",
+          "function": "incoming beam",
+          "port_id": "p_in"
+        },
+        {
+          "direction": "bidirectional",
+          "domain": "free_space_optical",
+          "function": "reflected beam",
+          "port_id": "p_out"
+        },
+        {
+          "direction": "in",
+          "domain": "electrical_data",
+          "function": "X-axis command",
+          "port_id": "p_control",
+          "signal_class": "CONTROL"
+        }
+      ],
+      "subcomponent_role": "X_MIRROR",
+      "support_required": true,
+      "topology_source_locator": "Wu2016 Figure 1"
+    },
+    {
+      "experimental_role": "sample scanner second axis",
+      "internal_transfers": [
+        {
+          "from_port": "p_in",
+          "to_port": "p_out",
+          "transfer_kind": "REFLECT"
+        },
+        {
+          "from_port": "p_out",
+          "to_port": "p_in",
+          "transfer_kind": "REFLECT"
+        }
+      ],
+      "node_id": "n06_sample_galvo_y",
+      "node_type": "FREE_SPACE_OPTIC",
+      "optional": false,
+      "physical_instance_id": "inst_gvs012_sample",
+      "planned_representation": {
+        "classification": "OFFICIAL_CAD_REFERENCE",
+        "component_id": "cad_gvs012",
+        "exact_model": "GVS012",
+        "geometry_status": "NOT_STARTED_PHASE_1",
+        "identity_source_locator": "Official Thorlabs exact-model record in SOURCE_LOCK/CAD_MANIFEST; experimental role is an engineering selection.",
+        "note": "Axis Y of the sample-side engineering-substitution GVS012 instance.",
+        "official_cad_claim": true,
+        "source_fidelity": "ENGINEERING_SUBSTITUTION"
+      },
+      "ports": [
+        {
+          "direction": "bidirectional",
+          "domain": "free_space_optical",
+          "function": "incoming beam",
+          "port_id": "p_in"
+        },
+        {
+          "direction": "bidirectional",
+          "domain": "free_space_optical",
+          "function": "reflected beam",
+          "port_id": "p_out"
+        },
+        {
+          "direction": "in",
+          "domain": "electrical_data",
+          "function": "Y-axis command",
+          "port_id": "p_control",
+          "signal_class": "CONTROL"
+        }
+      ],
+      "subcomponent_role": "Y_MIRROR",
+      "support_required": true,
+      "topology_source_locator": "Wu2016 Figure 1"
+    },
+    {
+      "experimental_role": "75 mm sample-arm achromatic scan lens L0",
+      "internal_transfers": [
+        {
+          "from_port": "p_upstream",
+          "to_port": "p_downstream",
+          "transfer_kind": "TRANSMIT"
+        },
+        {
+          "from_port": "p_downstream",
+          "to_port": "p_upstream",
+          "transfer_kind": "TRANSMIT"
+        }
+      ],
+      "node_id": "n07_sample_lens_l0",
+      "node_type": "FREE_SPACE_OPTIC",
+      "optional": false,
+      "physical_instance_id": "inst_sample_lens_l0",
+      "planned_representation": {
+        "classification": "OFFICIAL_CAD_REFERENCE",
+        "component_id": "cad_ac254_075_b_ml",
+        "exact_model": "AC254-075-B-ML",
+        "geometry_status": "NOT_STARTED_PHASE_1",
+        "identity_source_locator": "Official Thorlabs exact-model record in SOURCE_LOCK/CAD_MANIFEST; experimental role is an engineering selection.",
+        "note": "Matches the paper's stated 75 mm achromat role; exact maker/model not stated.",
+        "official_cad_claim": true,
+        "source_fidelity": "ENGINEERING_SUBSTITUTION_MATCHED_SPEC"
+      },
+      "ports": [
+        {
+          "direction": "bidirectional",
+          "domain": "free_space_optical",
+          "function": "scanner side",
+          "port_id": "p_upstream"
+        },
+        {
+          "direction": "bidirectional",
+          "domain": "free_space_optical",
+          "function": "sample side",
+          "port_id": "p_downstream"
+        }
+      ],
+      "subcomponent_role": "WHOLE_COMPONENT",
+      "support_required": true,
+      "topology_source_locator": "Wu2016 Figure 1"
+    },
+    {
+      "experimental_role": "scanned sample and backscatter origin",
+      "internal_transfers": [
+        {
+          "from_port": "p_optical",
+          "to_port": "p_optical",
+          "transfer_kind": "REFLECT"
+        }
+      ],
+      "node_id": "n08_sample",
+      "node_type": "SAMPLE",
+      "optional": false,
+      "physical_instance_id": "inst_sample",
+      "planned_representation": {
+        "classification": "MODELED_DECLARED",
+        "component_id": null,
+        "exact_model": null,
+        "geometry_status": "NOT_STARTED_PHASE_1",
+        "identity_source_locator": "Wu2016 Figure 1 and methods text; no official CAD identity is claimed.",
+        "note": "No sample geometry is created in Phase 1.",
+        "official_cad_claim": false,
+        "source_fidelity": "PAPER_DECLARED_GENERIC"
+      },
+      "ports": [
+        {
+          "direction": "bidirectional",
+          "domain": "free_space_optical",
+          "function": "sample surface",
+          "port_id": "p_optical"
+        }
+      ],
+      "subcomponent_role": "WHOLE_COMPONENT",
+      "support_required": true,
+      "topology_source_locator": "Wu2016 Figure 1"
+    },
+    {
+      "experimental_role": "reference-arm fiber polarization controller",
+      "internal_transfers": [
+        {
+          "from_port": "p_in",
+          "to_port": "p_out",
+          "transfer_kind": "TRANSMIT"
+        },
+        {
+          "from_port": "p_out",
+          "to_port": "p_in",
+          "transfer_kind": "TRANSMIT"
+        }
+      ],
+      "node_id": "n09_reference_pc",
+      "node_type": "FIBER_COMPONENT",
+      "optional": false,
+      "physical_instance_id": "inst_reference_pc",
+      "planned_representation": {
+        "classification": "OFFICIAL_CAD_REFERENCE",
+        "component_id": "cad_fpc030",
+        "exact_model": "FPC030",
+        "geometry_status": "NOT_STARTED_PHASE_1",
+        "identity_source_locator": "Official Thorlabs exact-model record in SOURCE_LOCK/CAD_MANIFEST; experimental role is an engineering selection.",
+        "note": "",
+        "official_cad_claim": true,
+        "source_fidelity": "ENGINEERING_SUBSTITUTION"
+      },
+      "ports": [
+        {
+          "direction": "bidirectional",
+          "domain": "guided_fiber",
+          "function": "coupler side",
+          "port_id": "p_in"
+        },
+        {
+          "direction": "bidirectional",
+          "domain": "guided_fiber",
+          "function": "collimator side",
+          "port_id": "p_out"
+        }
+      ],
+      "subcomponent_role": "WHOLE_COMPONENT",
+      "support_required": true,
+      "topology_source_locator": "Wu2016 Figure 1"
+    },
+    {
+      "experimental_role": "reference-arm collimator on delay translation stage",
+      "internal_transfers": [
+        {
+          "from_port": "p_fiber",
+          "to_port": "p_free",
+          "transfer_kind": "COUPLE"
+        },
+        {
+          "from_port": "p_free",
+          "to_port": "p_fiber",
+          "transfer_kind": "COUPLE"
+        }
+      ],
+      "node_id": "n10_reference_collimator",
+      "node_type": "FIBER_FREE_SPACE_INTERFACE",
+      "optional": false,
+      "physical_instance_id": "inst_reference_collimator",
+      "planned_representation": {
+        "classification": "OFFICIAL_CAD_REFERENCE",
+        "component_id": "cad_f240apc_850",
+        "exact_model": "F240APC-850",
+        "geometry_status": "NOT_STARTED_PHASE_1",
+        "identity_source_locator": "Official Thorlabs exact-model record in SOURCE_LOCK/CAD_MANIFEST; experimental role is an engineering selection.",
+        "note": "",
+        "official_cad_claim": true,
+        "source_fidelity": "ENGINEERING_SUBSTITUTION"
+      },
+      "ports": [
+        {
+          "direction": "bidirectional",
+          "domain": "guided_fiber",
+          "function": "fiber face",
+          "port_id": "p_fiber"
+        },
+        {
+          "direction": "bidirectional",
+          "domain": "free_space_optical",
+          "function": "free-space aperture",
+          "port_id": "p_free"
+        }
+      ],
+      "subcomponent_role": "WHOLE_COMPONENT",
+      "support_required": true,
+      "topology_source_locator": "Wu2016 Figure 1"
+    },
+    {
+      "experimental_role": "wideband NPBS splitting and recombining the two reference sub-arms",
+      "internal_transfers": [
+        {
+          "from_port": "p_common",
+          "to_port": "p_arm1",
+          "transfer_kind": "SPLIT"
+        },
+        {
+          "from_port": "p_common",
+          "to_port": "p_arm2",
+          "transfer_kind": "SPLIT"
+        },
+        {
+          "from_port": "p_arm1",
+          "to_port": "p_common",
+          "transfer_kind": "COMBINE"
+        },
+        {
+          "from_port": "p_arm2",
+          "to_port": "p_common",
+          "transfer_kind": "COMBINE"
+        }
+      ],
+      "node_id": "n11_reference_npbs",
+      "node_type": "FREE_SPACE_OPTIC",
+      "optional": false,
+      "physical_instance_id": "inst_reference_npbs",
+      "planned_representation": {
+        "classification": "OFFICIAL_CAD_REFERENCE",
+        "component_id": "cad_ccm1_bs014",
+        "exact_model": "CCM1-BS014",
+        "geometry_status": "NOT_STARTED_PHASE_1",
+        "identity_source_locator": "Official Thorlabs exact-model record in SOURCE_LOCK/CAD_MANIFEST; experimental role is an engineering selection.",
+        "note": "This NPBS is inside the dual-reference branch; it does not duplicate the main fiber coupler.",
+        "official_cad_claim": true,
+        "source_fidelity": "ENGINEERING_SUBSTITUTION"
+      },
+      "ports": [
+        {
+          "direction": "bidirectional",
+          "domain": "free_space_optical",
+          "function": "fiber-collimator common port",
+          "port_id": "p_common"
+        },
+        {
+          "direction": "bidirectional",
+          "domain": "free_space_optical",
+          "function": "reference sub-arm 1",
+          "port_id": "p_arm1"
+        },
+        {
+          "direction": "bidirectional",
+          "domain": "free_space_optical",
+          "function": "reference sub-arm 2",
+          "port_id": "p_arm2"
+        }
+      ],
+      "subcomponent_role": "WHOLE_COMPONENT",
+      "support_required": true,
+      "topology_source_locator": "Wu2016 Figure 1"
+    },
+    {
+      "experimental_role": "reference sub-arm 1 deflector GS1",
+      "internal_transfers": [
+        {
+          "from_port": "p_in",
+          "to_port": "p_out",
+          "transfer_kind": "REFLECT"
+        },
+        {
+          "from_port": "p_out",
+          "to_port": "p_in",
+          "transfer_kind": "REFLECT"
+        }
+      ],
+      "node_id": "n12_reference_galvo_gs1",
+      "node_type": "FREE_SPACE_OPTIC",
+      "optional": false,
+      "physical_instance_id": "inst_gvs012_reference",
+      "planned_representation": {
+        "classification": "OFFICIAL_CAD_REFERENCE",
+        "component_id": "cad_gvs012",
+        "exact_model": "GVS012",
+        "geometry_status": "NOT_STARTED_PHASE_1",
+        "identity_source_locator": "Wu2016 methods hardware paragraph following Figure 1.",
+        "note": "Paper identifies GS1/GS2 as the two mirrors of one Thorlabs GVS012.",
+        "official_cad_claim": true,
+        "source_fidelity": "PAPER_EXACT_MODEL"
+      },
+      "ports": [
+        {
+          "direction": "bidirectional",
+          "domain": "free_space_optical",
+          "function": "NPBS side",
+          "port_id": "p_in"
+        },
+        {
+          "direction": "bidirectional",
+          "domain": "free_space_optical",
+          "function": "L1 side",
+          "port_id": "p_out"
+        },
+        {
+          "direction": "in",
+          "domain": "electrical_data",
+          "function": "first reference-axis command",
+          "port_id": "p_control",
+          "signal_class": "CONTROL"
+        }
+      ],
+      "subcomponent_role": "X_MIRROR",
+      "support_required": true,
+      "topology_source_locator": "Wu2016 Figure 1"
+    },
+    {
+      "experimental_role": "30 mm reference sub-arm 1 lens L1",
+      "internal_transfers": [
+        {
+          "from_port": "p_upstream",
+          "to_port": "p_downstream",
+          "transfer_kind": "TRANSMIT"
+        },
+        {
+          "from_port": "p_downstream",
+          "to_port": "p_upstream",
+          "transfer_kind": "TRANSMIT"
+        }
+      ],
+      "node_id": "n13_reference_lens_l1",
+      "node_type": "FREE_SPACE_OPTIC",
+      "optional": false,
+      "physical_instance_id": "inst_reference_lens_l1",
+      "planned_representation": {
+        "classification": "OFFICIAL_CAD_REFERENCE",
+        "component_id": "cad_ac254_030_b_ml",
+        "exact_model": "AC254-030-B-ML",
+        "geometry_status": "NOT_STARTED_PHASE_1",
+        "identity_source_locator": "Official Thorlabs exact-model record in SOURCE_LOCK/CAD_MANIFEST; experimental role is an engineering selection.",
+        "note": "",
+        "official_cad_claim": true,
+        "source_fidelity": "ENGINEERING_SUBSTITUTION_MATCHED_SPEC"
+      },
+      "ports": [
+        {
+          "direction": "bidirectional",
+          "domain": "free_space_optical",
+          "function": "GS1 side",
+          "port_id": "p_upstream"
+        },
+        {
+          "direction": "bidirectional",
+          "domain": "free_space_optical",
+          "function": "M1 side",
+          "port_id": "p_downstream"
+        }
+      ],
+      "subcomponent_role": "WHOLE_COMPONENT",
+      "support_required": true,
+      "topology_source_locator": "Wu2016 Figure 1"
+    },
+    {
+      "experimental_role": "reference reflector M1 for sub-arm 1",
+      "internal_transfers": [
+        {
+          "from_port": "p_optical",
+          "to_port": "p_optical",
+          "transfer_kind": "REFLECT"
+        }
+      ],
+      "node_id": "n14_reference_mirror_m1",
+      "node_type": "REFERENCE_TARGET",
+      "optional": false,
+      "physical_instance_id": "inst_reference_mirror_m1",
+      "planned_representation": {
+        "classification": "OFFICIAL_CAD_REFERENCE",
+        "component_id": "cad_bb1_e03",
+        "exact_model": "BB1-E03",
+        "geometry_status": "NOT_STARTED_PHASE_1",
+        "identity_source_locator": "Official Thorlabs exact-model record in SOURCE_LOCK/CAD_MANIFEST; experimental role is an engineering selection.",
+        "note": "",
+        "official_cad_claim": true,
+        "source_fidelity": "ENGINEERING_SUBSTITUTION_MATCHED_BAND"
+      },
+      "ports": [
+        {
+          "direction": "bidirectional",
+          "domain": "free_space_optical",
+          "function": "mirror surface",
+          "port_id": "p_optical"
+        }
+      ],
+      "subcomponent_role": "WHOLE_COMPONENT",
+      "support_required": true,
+      "topology_source_locator": "Wu2016 Figure 1"
+    },
+    {
+      "experimental_role": "reference sub-arm 2 deflector GS2",
+      "internal_transfers": [
+        {
+          "from_port": "p_in",
+          "to_port": "p_out",
+          "transfer_kind": "REFLECT"
+        },
+        {
+          "from_port": "p_out",
+          "to_port": "p_in",
+          "transfer_kind": "REFLECT"
+        }
+      ],
+      "node_id": "n15_reference_galvo_gs2",
+      "node_type": "FREE_SPACE_OPTIC",
+      "optional": false,
+      "physical_instance_id": "inst_gvs012_reference",
+      "planned_representation": {
+        "classification": "OFFICIAL_CAD_REFERENCE",
+        "component_id": "cad_gvs012",
+        "exact_model": "GVS012",
+        "geometry_status": "NOT_STARTED_PHASE_1",
+        "identity_source_locator": "Wu2016 methods hardware paragraph following Figure 1.",
+        "note": "Paper identifies GS1/GS2 as the two mirrors of one Thorlabs GVS012.",
+        "official_cad_claim": true,
+        "source_fidelity": "PAPER_EXACT_MODEL"
+      },
+      "ports": [
+        {
+          "direction": "bidirectional",
+          "domain": "free_space_optical",
+          "function": "NPBS side",
+          "port_id": "p_in"
+        },
+        {
+          "direction": "bidirectional",
+          "domain": "free_space_optical",
+          "function": "L2 side",
+          "port_id": "p_out"
+        },
+        {
+          "direction": "in",
+          "domain": "electrical_data",
+          "function": "second reference-axis command",
+          "port_id": "p_control",
+          "signal_class": "CONTROL"
+        }
+      ],
+      "subcomponent_role": "Y_MIRROR",
+      "support_required": true,
+      "topology_source_locator": "Wu2016 Figure 1"
+    },
+    {
+      "experimental_role": "30 mm reference sub-arm 2 lens L2",
+      "internal_transfers": [
+        {
+          "from_port": "p_upstream",
+          "to_port": "p_downstream",
+          "transfer_kind": "TRANSMIT"
+        },
+        {
+          "from_port": "p_downstream",
+          "to_port": "p_upstream",
+          "transfer_kind": "TRANSMIT"
+        }
+      ],
+      "node_id": "n16_reference_lens_l2",
+      "node_type": "FREE_SPACE_OPTIC",
+      "optional": false,
+      "physical_instance_id": "inst_reference_lens_l2",
+      "planned_representation": {
+        "classification": "OFFICIAL_CAD_REFERENCE",
+        "component_id": "cad_ac254_030_b_ml",
+        "exact_model": "AC254-030-B-ML",
+        "geometry_status": "NOT_STARTED_PHASE_1",
+        "identity_source_locator": "Official Thorlabs exact-model record in SOURCE_LOCK/CAD_MANIFEST; experimental role is an engineering selection.",
+        "note": "",
+        "official_cad_claim": true,
+        "source_fidelity": "ENGINEERING_SUBSTITUTION_MATCHED_SPEC"
+      },
+      "ports": [
+        {
+          "direction": "bidirectional",
+          "domain": "free_space_optical",
+          "function": "GS2 side",
+          "port_id": "p_upstream"
+        },
+        {
+          "direction": "bidirectional",
+          "domain": "free_space_optical",
+          "function": "M2 side",
+          "port_id": "p_downstream"
+        }
+      ],
+      "subcomponent_role": "WHOLE_COMPONENT",
+      "support_required": true,
+      "topology_source_locator": "Wu2016 Figure 1"
+    },
+    {
+      "experimental_role": "reference reflector M2 for sub-arm 2",
+      "internal_transfers": [
+        {
+          "from_port": "p_optical",
+          "to_port": "p_optical",
+          "transfer_kind": "REFLECT"
+        }
+      ],
+      "node_id": "n17_reference_mirror_m2",
+      "node_type": "REFERENCE_TARGET",
+      "optional": false,
+      "physical_instance_id": "inst_reference_mirror_m2",
+      "planned_representation": {
+        "classification": "OFFICIAL_CAD_REFERENCE",
+        "component_id": "cad_bb1_e03",
+        "exact_model": "BB1-E03",
+        "geometry_status": "NOT_STARTED_PHASE_1",
+        "identity_source_locator": "Official Thorlabs exact-model record in SOURCE_LOCK/CAD_MANIFEST; experimental role is an engineering selection.",
+        "note": "",
+        "official_cad_claim": true,
+        "source_fidelity": "ENGINEERING_SUBSTITUTION_MATCHED_BAND"
+      },
+      "ports": [
+        {
+          "direction": "bidirectional",
+          "domain": "free_space_optical",
+          "function": "mirror surface",
+          "port_id": "p_optical"
+        }
+      ],
+      "subcomponent_role": "WHOLE_COMPONENT",
+      "support_required": true,
+      "topology_source_locator": "Wu2016 Figure 1"
+    },
+    {
+      "experimental_role": "spectrometer input collimator, paper states 60 mm focal length",
+      "internal_transfers": [
+        {
+          "from_port": "p_fiber",
+          "to_port": "p_free",
+          "transfer_kind": "COUPLE"
+        }
+      ],
+      "node_id": "n18_detector_collimator",
+      "node_type": "FIBER_FREE_SPACE_INTERFACE",
+      "optional": false,
+      "physical_instance_id": "inst_detector_collimator",
+      "planned_representation": {
+        "classification": "MODELED_DECLARED",
+        "component_id": null,
+        "exact_model": null,
+        "geometry_status": "NOT_STARTED_PHASE_1",
+        "identity_source_locator": "Wu2016 Figure 1 and methods text; no official CAD identity is claimed.",
+        "note": "Paper names OZ Optics and focal length, but no exact model or CAD is claimed.",
+        "official_cad_claim": false,
+        "source_fidelity": "PAPER_SPEC_ONLY"
+      },
+      "ports": [
+        {
+          "direction": "in",
+          "domain": "guided_fiber",
+          "function": "interferometer fiber input",
+          "port_id": "p_fiber"
+        },
+        {
+          "direction": "out",
+          "domain": "free_space_optical",
+          "function": "collimated spectrum",
+          "port_id": "p_free"
+        }
+      ],
+      "subcomponent_role": "WHOLE_COMPONENT",
+      "support_required": true,
+      "topology_source_locator": "Wu2016 Figure 1"
+    },
+    {
+      "experimental_role": "transmissive 1800 lines/mm spectrometer grating",
+      "internal_transfers": [
+        {
+          "from_port": "p_in",
+          "to_port": "p_out",
+          "transfer_kind": "DIFFRACT"
+        }
+      ],
+      "node_id": "n19_diffraction_grating",
+      "node_type": "FREE_SPACE_OPTIC",
+      "optional": false,
+      "physical_instance_id": "inst_diffraction_grating",
+      "planned_representation": {
+        "classification": "MODELED_DECLARED",
+        "component_id": null,
+        "exact_model": null,
+        "geometry_status": "NOT_STARTED_PHASE_1",
+        "identity_source_locator": "Wu2016 Figure 1 and methods text; no official CAD identity is claimed.",
+        "note": "No exact grating model is stated.",
+        "official_cad_claim": false,
+        "source_fidelity": "PAPER_SPEC_ONLY"
+      },
+      "ports": [
+        {
+          "direction": "in",
+          "domain": "free_space_optical",
+          "function": "collimated input",
+          "port_id": "p_in"
+        },
+        {
+          "direction": "out",
+          "domain": "free_space_optical",
+          "function": "dispersed output",
+          "port_id": "p_out"
+        }
+      ],
+      "subcomponent_role": "WHOLE_COMPONENT",
+      "support_required": true,
+      "topology_source_locator": "Wu2016 Figure 1"
+    },
+    {
+      "experimental_role": "105 mm Nikon camera lens focusing dispersed spectrum",
+      "internal_transfers": [
+        {
+          "from_port": "p_in",
+          "to_port": "p_out",
+          "transfer_kind": "TRANSMIT"
+        }
+      ],
+      "node_id": "n20_spectrometer_lens",
+      "node_type": "FREE_SPACE_OPTIC",
+      "optional": false,
+      "physical_instance_id": "inst_spectrometer_lens",
+      "planned_representation": {
+        "classification": "MODELED_DECLARED",
+        "component_id": null,
+        "exact_model": "Nikon f=105 mm camera lens",
+        "geometry_status": "NOT_STARTED_PHASE_1",
+        "identity_source_locator": "Wu2016 Figure 1 and methods text; no official CAD identity is claimed.",
+        "note": "Exact product model is not stated.",
+        "official_cad_claim": false,
+        "source_fidelity": "PAPER_SPEC_ONLY"
+      },
+      "ports": [
+        {
+          "direction": "in",
+          "domain": "free_space_optical",
+          "function": "dispersed input",
+          "port_id": "p_in"
+        },
+        {
+          "direction": "out",
+          "domain": "free_space_optical",
+          "function": "focused spectrum",
+          "port_id": "p_out"
+        }
+      ],
+      "subcomponent_role": "WHOLE_COMPONENT",
+      "support_required": true,
+      "topology_source_locator": "Wu2016 Figure 1"
+    },
+    {
+      "experimental_role": "Basler 2048-pixel line camera optical/electrical endpoint",
+      "internal_transfers": [
+        {
+          "from_port": "p_optical",
+          "to_port": "p_data",
+          "transfer_kind": "DETECT"
+        }
+      ],
+      "node_id": "n21_line_camera",
+      "node_type": "DETECTOR",
+      "optional": false,
+      "physical_instance_id": "inst_line_camera",
+      "planned_representation": {
+        "classification": "MODELED_DECLARED",
+        "component_id": null,
+        "exact_model": "Basler sp2048-70km",
+        "geometry_status": "NOT_STARTED_PHASE_1",
+        "identity_source_locator": "Wu2016 methods hardware paragraph following Figure 1.",
+        "note": "Model string is transcribed exactly as printed in the paper; no vendor CAD acquired.",
+        "official_cad_claim": false,
+        "source_fidelity": "PAPER_EXACT_MODEL"
+      },
+      "ports": [
+        {
+          "direction": "in",
+          "domain": "free_space_optical",
+          "function": "line sensor",
+          "port_id": "p_optical"
+        },
+        {
+          "direction": "out",
+          "domain": "electrical_data",
+          "function": "digitized line data",
+          "port_id": "p_data",
+          "signal_class": "DATA"
+        },
+        {
+          "direction": "in",
+          "domain": "electrical_data",
+          "function": "line trigger and timing",
+          "port_id": "p_timing",
+          "signal_class": "TIMING"
+        }
+      ],
+      "subcomponent_role": "WHOLE_COMPONENT",
+      "support_required": true,
+      "topology_source_locator": "Wu2016 Figure 1"
+    },
+    {
+      "experimental_role": "acquisition, reconstruction, control, display, and storage host",
+      "internal_transfers": [],
+      "node_id": "n23_control_computer",
+      "node_type": "COMPUTE",
+      "optional": false,
+      "physical_instance_id": "inst_control_computer",
+      "planned_representation": {
+        "classification": "MODELED_DECLARED",
+        "component_id": null,
+        "exact_model": null,
+        "geometry_status": "NOT_STARTED_PHASE_1",
+        "identity_source_locator": "Wu2016 Figure 1 and methods text; no official CAD identity is claimed.",
+        "note": "",
+        "official_cad_claim": false,
+        "source_fidelity": "ENGINEERING_INFERENCE"
+      },
+      "ports": [
+        {
+          "direction": "in",
+          "domain": "electrical_data",
+          "function": "spectral acquisition",
+          "port_id": "p_acq_data",
+          "signal_class": "DATA"
+        },
+        {
+          "direction": "out",
+          "domain": "electrical_data",
+          "function": "scan-control stream",
+          "port_id": "p_daq_control",
+          "signal_class": "CONTROL"
+        },
+        {
+          "direction": "out",
+          "domain": "electrical_data",
+          "function": "source control",
+          "port_id": "p_source_control",
+          "signal_class": "CONTROL"
+        },
+        {
+          "direction": "out",
+          "domain": "electrical_data",
+          "function": "spectrometer configuration",
+          "port_id": "p_spec_control",
+          "signal_class": "CONTROL"
+        },
+        {
+          "direction": "out",
+          "domain": "electrical_data",
+          "function": "display output",
+          "port_id": "p_display_data",
+          "signal_class": "DATA"
+        },
+        {
+          "direction": "out",
+          "domain": "electrical_data",
+          "function": "storage output",
+          "port_id": "p_storage_data",
+          "signal_class": "DATA"
+        }
+      ],
+      "subcomponent_role": "WHOLE_COMPONENT",
+      "support_required": false,
+      "topology_source_locator": "Wu2016 Figure 1 computer block and methods"
+    }
+  ],
+  "path_count": 7,
+  "paths": [
+    {
+      "end": {
+        "node_id": "n08_sample",
+        "port_id": "p_optical"
+      },
+      "evidence_class": "FIGURE1_SCHEMATIC_OR_METHODS",
+      "ordered_edge_ids": [
+        "e01",
+        "e02",
+        "e03",
+        "e04",
+        "e05",
+        "e06",
+        "e07"
+      ],
+      "path_class": "MIXED_OPTICAL",
+      "path_id": "p01_sample_forward",
+      "purpose": "source through guided fiber and sample free space to scanned sample",
+      "required": true,
+      "start": {
+        "node_id": "n01_sld_source",
+        "port_id": "p_light"
+      }
+    },
+    {
+      "end": {
+        "node_id": "n21_line_camera",
+        "port_id": "p_optical"
+      },
+      "evidence_class": "INFERRED_RECIPROCAL_PATH_WITH_FIGURE_DETECTION_CHAIN",
+      "inference_basis": "Figure 1 draws an undirected reciprocal sample path; the paper discusses round-trip OCT acquisition and the sample is a backscatter endpoint.",
+      "ordered_edge_ids": [
+        "e08",
+        "e09",
+        "e10",
+        "e11",
+        "e12",
+        "e13",
+        "e32",
+        "e33",
+        "e34",
+        "e35"
+      ],
+      "path_class": "MIXED_OPTICAL",
+      "path_id": "p02_sample_return_detection",
+      "purpose": "sample backscatter through return fiber, main recombination, and spectrometer to camera",
+      "required": true,
+      "start": {
+        "node_id": "n08_sample",
+        "port_id": "p_optical"
+      }
+    },
+    {
+      "end": {
+        "node_id": "n14_reference_mirror_m1",
+        "port_id": "p_optical"
+      },
+      "evidence_class": "FIGURE1_SCHEMATIC_OR_METHODS",
+      "ordered_edge_ids": [
+        "e01",
+        "e14",
+        "e15",
+        "e16",
+        "e17",
+        "e18",
+        "e19"
+      ],
+      "path_class": "MIXED_OPTICAL",
+      "path_id": "p03_reference_1_forward",
+      "purpose": "source through reference common path and sub-arm 1 to M1",
+      "required": true,
+      "start": {
+        "node_id": "n01_sld_source",
+        "port_id": "p_light"
+      }
+    },
+    {
+      "end": {
+        "node_id": "n21_line_camera",
+        "port_id": "p_optical"
+      },
+      "evidence_class": "INFERRED_RECIPROCAL_PATH_WITH_FIGURE_DETECTION_CHAIN",
+      "inference_basis": "Figure 1 draws an undirected M1 reflector path and the text specifies round-trip reference delays; directed return edges are a reciprocal-path expansion.",
+      "ordered_edge_ids": [
+        "e20",
+        "e21",
+        "e22",
+        "e29",
+        "e30",
+        "e31",
+        "e32",
+        "e33",
+        "e34",
+        "e35"
+      ],
+      "path_class": "MIXED_OPTICAL",
+      "path_id": "p04_reference_1_return_detection",
+      "purpose": "M1 return through NPBS and main fiber recombination to camera",
+      "required": true,
+      "start": {
+        "node_id": "n14_reference_mirror_m1",
+        "port_id": "p_optical"
+      }
+    },
+    {
+      "end": {
+        "node_id": "n17_reference_mirror_m2",
+        "port_id": "p_optical"
+      },
+      "evidence_class": "FIGURE1_SCHEMATIC_OR_METHODS",
+      "ordered_edge_ids": [
+        "e01",
+        "e14",
+        "e15",
+        "e16",
+        "e23",
+        "e24",
+        "e25"
+      ],
+      "path_class": "MIXED_OPTICAL",
+      "path_id": "p05_reference_2_forward",
+      "purpose": "source through reference common path and sub-arm 2 to M2",
+      "required": true,
+      "start": {
+        "node_id": "n01_sld_source",
+        "port_id": "p_light"
+      }
+    },
+    {
+      "end": {
+        "node_id": "n21_line_camera",
+        "port_id": "p_optical"
+      },
+      "evidence_class": "INFERRED_RECIPROCAL_PATH_WITH_FIGURE_DETECTION_CHAIN",
+      "inference_basis": "Figure 1 draws an undirected M2 reflector path and the text specifies round-trip reference delays; directed return edges are a reciprocal-path expansion.",
+      "ordered_edge_ids": [
+        "e26",
+        "e27",
+        "e28",
+        "e29",
+        "e30",
+        "e31",
+        "e32",
+        "e33",
+        "e34",
+        "e35"
+      ],
+      "path_class": "MIXED_OPTICAL",
+      "path_id": "p06_reference_2_return_detection",
+      "purpose": "M2 return through NPBS and main fiber recombination to camera",
+      "required": true,
+      "start": {
+        "node_id": "n17_reference_mirror_m2",
+        "port_id": "p_optical"
+      }
+    },
+    {
+      "end": {
+        "node_id": "n23_control_computer",
+        "port_id": "p_acq_data"
+      },
+      "evidence_class": "FIGURE1_DIRECT_DATA_CONNECTION",
+      "ordered_edge_ids": [
+        "e52"
+      ],
+      "path_class": "ELECTRICAL_DATA",
+      "path_id": "p14_spectral_acquisition",
+      "purpose": "paper-baseline direct CMOS-to-computer acquisition abstraction",
+      "required": true,
+      "start": {
+        "node_id": "n21_line_camera",
+        "port_id": "p_data"
+      }
+    }
+  ],
+  "phase": "PHASE_2_REPRESENTATIVE_SMOKE",
+  "physical_instance_count": 20,
+  "physical_instances": [
+    {
+      "component_id": null,
+      "exact_model": null,
+      "node_ids": [
+        "n23_control_computer"
+      ],
+      "optional": false,
+      "physical_instance_id": "inst_control_computer",
+      "source_fidelity": [
+        "ENGINEERING_INFERENCE"
+      ],
+      "subcomponent_roles": {
+        "n23_control_computer": "WHOLE_COMPONENT"
+      },
+      "support_required": false
+    },
+    {
+      "component_id": null,
+      "exact_model": null,
+      "node_ids": [
+        "n18_detector_collimator"
+      ],
+      "optional": false,
+      "physical_instance_id": "inst_detector_collimator",
+      "source_fidelity": [
+        "PAPER_SPEC_ONLY"
+      ],
+      "subcomponent_roles": {
+        "n18_detector_collimator": "WHOLE_COMPONENT"
+      },
+      "support_required": true
+    },
+    {
+      "component_id": null,
+      "exact_model": null,
+      "node_ids": [
+        "n19_diffraction_grating"
+      ],
+      "optional": false,
+      "physical_instance_id": "inst_diffraction_grating",
+      "source_fidelity": [
+        "PAPER_SPEC_ONLY"
+      ],
+      "subcomponent_roles": {
+        "n19_diffraction_grating": "WHOLE_COMPONENT"
+      },
+      "support_required": true
+    },
+    {
+      "component_id": "cad_tw850r5a2",
+      "exact_model": "TW850R5A2",
+      "node_ids": [
+        "n02_fiber_coupler"
+      ],
+      "optional": false,
+      "physical_instance_id": "inst_fiber_coupler",
+      "source_fidelity": [
+        "ENGINEERING_SUBSTITUTION"
+      ],
+      "subcomponent_roles": {
+        "n02_fiber_coupler": "WHOLE_COMPONENT"
+      },
+      "support_required": true
+    },
+    {
+      "component_id": "cad_gvs012",
+      "exact_model": "GVS012",
+      "node_ids": [
+        "n12_reference_galvo_gs1",
+        "n15_reference_galvo_gs2"
+      ],
+      "optional": false,
+      "physical_instance_id": "inst_gvs012_reference",
+      "source_fidelity": [
+        "PAPER_EXACT_MODEL"
+      ],
+      "subcomponent_roles": {
+        "n12_reference_galvo_gs1": "X_MIRROR",
+        "n15_reference_galvo_gs2": "Y_MIRROR"
+      },
+      "support_required": true
+    },
+    {
+      "component_id": "cad_gvs012",
+      "exact_model": "GVS012",
+      "node_ids": [
+        "n05_sample_galvo_x",
+        "n06_sample_galvo_y"
+      ],
+      "optional": false,
+      "physical_instance_id": "inst_gvs012_sample",
+      "source_fidelity": [
+        "ENGINEERING_SUBSTITUTION"
+      ],
+      "subcomponent_roles": {
+        "n05_sample_galvo_x": "X_MIRROR",
+        "n06_sample_galvo_y": "Y_MIRROR"
+      },
+      "support_required": true
+    },
+    {
+      "component_id": null,
+      "exact_model": "Basler sp2048-70km",
+      "node_ids": [
+        "n21_line_camera"
+      ],
+      "optional": false,
+      "physical_instance_id": "inst_line_camera",
+      "source_fidelity": [
+        "PAPER_EXACT_MODEL"
+      ],
+      "subcomponent_roles": {
+        "n21_line_camera": "WHOLE_COMPONENT"
+      },
+      "support_required": true
+    },
+    {
+      "component_id": "cad_f240apc_850",
+      "exact_model": "F240APC-850",
+      "node_ids": [
+        "n10_reference_collimator"
+      ],
+      "optional": false,
+      "physical_instance_id": "inst_reference_collimator",
+      "source_fidelity": [
+        "ENGINEERING_SUBSTITUTION"
+      ],
+      "subcomponent_roles": {
+        "n10_reference_collimator": "WHOLE_COMPONENT"
+      },
+      "support_required": true
+    },
+    {
+      "component_id": "cad_ac254_030_b_ml",
+      "exact_model": "AC254-030-B-ML",
+      "node_ids": [
+        "n13_reference_lens_l1"
+      ],
+      "optional": false,
+      "physical_instance_id": "inst_reference_lens_l1",
+      "source_fidelity": [
+        "ENGINEERING_SUBSTITUTION_MATCHED_SPEC"
+      ],
+      "subcomponent_roles": {
+        "n13_reference_lens_l1": "WHOLE_COMPONENT"
+      },
+      "support_required": true
+    },
+    {
+      "component_id": "cad_ac254_030_b_ml",
+      "exact_model": "AC254-030-B-ML",
+      "node_ids": [
+        "n16_reference_lens_l2"
+      ],
+      "optional": false,
+      "physical_instance_id": "inst_reference_lens_l2",
+      "source_fidelity": [
+        "ENGINEERING_SUBSTITUTION_MATCHED_SPEC"
+      ],
+      "subcomponent_roles": {
+        "n16_reference_lens_l2": "WHOLE_COMPONENT"
+      },
+      "support_required": true
+    },
+    {
+      "component_id": "cad_bb1_e03",
+      "exact_model": "BB1-E03",
+      "node_ids": [
+        "n14_reference_mirror_m1"
+      ],
+      "optional": false,
+      "physical_instance_id": "inst_reference_mirror_m1",
+      "source_fidelity": [
+        "ENGINEERING_SUBSTITUTION_MATCHED_BAND"
+      ],
+      "subcomponent_roles": {
+        "n14_reference_mirror_m1": "WHOLE_COMPONENT"
+      },
+      "support_required": true
+    },
+    {
+      "component_id": "cad_bb1_e03",
+      "exact_model": "BB1-E03",
+      "node_ids": [
+        "n17_reference_mirror_m2"
+      ],
+      "optional": false,
+      "physical_instance_id": "inst_reference_mirror_m2",
+      "source_fidelity": [
+        "ENGINEERING_SUBSTITUTION_MATCHED_BAND"
+      ],
+      "subcomponent_roles": {
+        "n17_reference_mirror_m2": "WHOLE_COMPONENT"
+      },
+      "support_required": true
+    },
+    {
+      "component_id": "cad_ccm1_bs014",
+      "exact_model": "CCM1-BS014",
+      "node_ids": [
+        "n11_reference_npbs"
+      ],
+      "optional": false,
+      "physical_instance_id": "inst_reference_npbs",
+      "source_fidelity": [
+        "ENGINEERING_SUBSTITUTION"
+      ],
+      "subcomponent_roles": {
+        "n11_reference_npbs": "WHOLE_COMPONENT"
+      },
+      "support_required": true
+    },
+    {
+      "component_id": "cad_fpc030",
+      "exact_model": "FPC030",
+      "node_ids": [
+        "n09_reference_pc"
+      ],
+      "optional": false,
+      "physical_instance_id": "inst_reference_pc",
+      "source_fidelity": [
+        "ENGINEERING_SUBSTITUTION"
+      ],
+      "subcomponent_roles": {
+        "n09_reference_pc": "WHOLE_COMPONENT"
+      },
+      "support_required": true
+    },
+    {
+      "component_id": null,
+      "exact_model": null,
+      "node_ids": [
+        "n08_sample"
+      ],
+      "optional": false,
+      "physical_instance_id": "inst_sample",
+      "source_fidelity": [
+        "PAPER_DECLARED_GENERIC"
+      ],
+      "subcomponent_roles": {
+        "n08_sample": "WHOLE_COMPONENT"
+      },
+      "support_required": true
+    },
+    {
+      "component_id": "cad_f240apc_850",
+      "exact_model": "F240APC-850",
+      "node_ids": [
+        "n04_sample_collimator"
+      ],
+      "optional": false,
+      "physical_instance_id": "inst_sample_collimator",
+      "source_fidelity": [
+        "ENGINEERING_SUBSTITUTION"
+      ],
+      "subcomponent_roles": {
+        "n04_sample_collimator": "WHOLE_COMPONENT"
+      },
+      "support_required": true
+    },
+    {
+      "component_id": "cad_ac254_075_b_ml",
+      "exact_model": "AC254-075-B-ML",
+      "node_ids": [
+        "n07_sample_lens_l0"
+      ],
+      "optional": false,
+      "physical_instance_id": "inst_sample_lens_l0",
+      "source_fidelity": [
+        "ENGINEERING_SUBSTITUTION_MATCHED_SPEC"
+      ],
+      "subcomponent_roles": {
+        "n07_sample_lens_l0": "WHOLE_COMPONENT"
+      },
+      "support_required": true
+    },
+    {
+      "component_id": "cad_fpc030",
+      "exact_model": "FPC030",
+      "node_ids": [
+        "n03_sample_pc"
+      ],
+      "optional": false,
+      "physical_instance_id": "inst_sample_pc",
+      "source_fidelity": [
+        "ENGINEERING_SUBSTITUTION"
+      ],
+      "subcomponent_roles": {
+        "n03_sample_pc": "WHOLE_COMPONENT"
+      },
+      "support_required": true
+    },
+    {
+      "component_id": null,
+      "exact_model": "SLD-371-HP2",
+      "node_ids": [
+        "n01_sld_source"
+      ],
+      "optional": false,
+      "physical_instance_id": "inst_sld_source",
+      "source_fidelity": [
+        "PAPER_EXACT_MODEL"
+      ],
+      "subcomponent_roles": {
+        "n01_sld_source": "WHOLE_COMPONENT"
+      },
+      "support_required": true
+    },
+    {
+      "component_id": null,
+      "exact_model": "Nikon f=105 mm camera lens",
+      "node_ids": [
+        "n20_spectrometer_lens"
+      ],
+      "optional": false,
+      "physical_instance_id": "inst_spectrometer_lens",
+      "source_fidelity": [
+        "PAPER_SPEC_ONLY"
+      ],
+      "subcomponent_roles": {
+        "n20_spectrometer_lens": "WHOLE_COMPONENT"
+      },
+      "support_required": true
+    }
+  ],
+  "role_node_count": 22,
+  "schema_version": "1.0",
+  "selection_rule": "MINIMAL_FROZEN_ID_INDUCED_PATH_CLOSURE_WITHOUT_REWIRING",
+  "semantic_boundaries": {
+    "custom_spectrometer": "TOPOLOGY_AND_CAMERA_ENDPOINT_ONLY; RESOLUTION_AND_IMAGING_PERFORMANCE_UNVERIFIED",
+    "main_fiber_coupler": "FOUR_CONNECTOR_FRAMES_GEOMETRICALLY_AUDITED; INTERNAL_50_50_SPLIT_COMBINE_DECLARED_NOT_PROVEN",
+    "reciprocal_paths": "EXPLICIT_DIRECTED_RETURN_EDGES_RETAINED; EVIDENCE_CLASS=INFERRED_RECIPROCAL_PATH; NO_AUTOMATIC_RECIPROCAL_EDGE_GENERATION",
+    "reference_npbs": "CENTRAL_RAY_SPLIT_RECOMBINE_GEOMETRY_ONLY; 50_50_THROUGHPUT_UNVERIFIED"
+  },
+  "status": "PARTIAL_SCOPED"
+}

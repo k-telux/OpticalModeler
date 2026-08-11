@@ -1,0 +1,75 @@
+{
+  "overall_status": "BLOCKED",
+  "rows": [
+    {
+      "scope": "frozen_phase1_integrity",
+      "status": "PASS"
+    },
+    {
+      "scope": "four_representative_risk_coverage",
+      "status": "PASS"
+    },
+    {
+      "scope": "official_runtime_version_and_binary_lock",
+      "status": "PASS"
+    },
+    {
+      "reason": "Assembly definition names occur in flattened OBJ paths, but one-to-one occurrence hierarchy retention is not proven.",
+      "scope": "B3060A_OCCT_XCAF",
+      "status": "PARTIAL_SCOPED"
+    },
+    {
+      "reason": "Valid surface model with zero manifold solids; remains surface-only.",
+      "scope": "RMS10X_OCCT_XCAF",
+      "status": "PARTIAL_SCOPED"
+    },
+    {
+      "scope": "MBT613D_M_OCCT_XCAF",
+      "status": "PASS"
+    },
+    {
+      "reason": "Native bbox is an unbounded sentinel and both fixed-policy serial meshes return Failure with 36 empty faces.",
+      "scope": "PDA100A2_OCCT_XCAF",
+      "status": "BLOCKED"
+    },
+    {
+      "scope": "B3060A_Blender_raw_clean_reopen",
+      "status": "PARTIAL_SCOPED"
+    },
+    {
+      "scope": "RMS10X_Blender_raw_clean_reopen",
+      "status": "PARTIAL_SCOPED"
+    },
+    {
+      "reason": "Explicit cleanup removes zero-area triangles but produces 1586 nonmanifold edges; both states are audited.",
+      "scope": "MBT613D_M_Blender_raw_clean_reopen",
+      "status": "PARTIAL_SCOPED"
+    },
+    {
+      "reason": "Not executed because the OCCT serial mesh gate failed.",
+      "scope": "PDA100A2_Blender",
+      "status": "BLOCKED"
+    },
+    {
+      "reason": "No authoritative per-SKU port frames exist in frozen Phase 1.",
+      "scope": "semantic_optical_fiber_detector_ports",
+      "status": "UNVERIFIED"
+    },
+    {
+      "reason": "No reconstructable geometry is public.",
+      "scope": "vendor_CAD_OBJ_MTL_Blend_publication",
+      "status": "PASS"
+    },
+    {
+      "reason": "Not executed.",
+      "scope": "GLB_generation",
+      "status": "PASS"
+    },
+    {
+      "reason": "Not authorized and not executed.",
+      "scope": "remaining_fourteen_models",
+      "status": "UNVERIFIED"
+    }
+  ],
+  "schema": "opticalmodeler.phase2_scope_status_matrix.v1"
+}

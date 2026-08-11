@@ -1,0 +1,1251 @@
+{
+  "opencv": {
+    "algorithm_family": "HSV_MASK_PLUS_DISTANCE_TRANSFORM_AND_PROJECTED_ENDPOINT_NEIGHBORHOOD",
+    "version": "4.13.0"
+  },
+  "phase": "PHASE_2_REPRESENTATIVE_SMOKE",
+  "schema_version": "1.0",
+  "status": "PASS",
+  "threshold_freeze": {
+    "hsv_thresholds_opencv_scale": {
+      "electrical_data": {
+        "hue_ranges": [
+          [
+            58,
+            75
+          ]
+        ],
+        "s_min": 45,
+        "v_min": 100
+      },
+      "free_space_optical": {
+        "hue_ranges": [
+          [
+            170,
+            179
+          ],
+          [
+            0,
+            4
+          ]
+        ],
+        "s_min": 35,
+        "v_min": 140
+      },
+      "guided_fiber": {
+        "hue_ranges": [
+          [
+            90,
+            101
+          ]
+        ],
+        "s_min": 35,
+        "v_min": 120
+      }
+    },
+    "minimum_mean_bgr": 80.0,
+    "minimum_projection_hit_fraction": 0.5,
+    "minimum_stddev_bgr": 8.0,
+    "projection_adjacency_radius_px": 8.0,
+    "statement": "HSV, pixel-count, adjacency-radius, brightness, and role-contrast thresholds were fixed before the recorded audit run.",
+    "status": "PASS"
+  },
+  "views": {
+    "axial": {
+      "artifact": "evidence/render_axial.png",
+      "byte_length": 879649,
+      "clipped_white_fraction": 0.005061111,
+      "dark_pixel_fraction": 0.0,
+      "mean_bgr": 189.746893122,
+      "metadata_stripped": true,
+      "png_chunks": [
+        "IHDR",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IEND"
+      ],
+      "projection_mask_adjacency": {
+        "electrical_data": {
+          "hit_count": 0,
+          "hit_fraction": null,
+          "per_object": {},
+          "radius_px": 8.0,
+          "sample_count": 0,
+          "status": "PASS"
+        },
+        "free_space_optical": {
+          "hit_count": 15,
+          "hit_fraction": 0.789473684,
+          "per_object": {
+            "FS_VIS__e04": {
+              "hit_count": 2,
+              "hit_fraction": 1.0,
+              "sample_count": 2
+            },
+            "FS_VIS__e05": {
+              "hit_count": 2,
+              "hit_fraction": 1.0,
+              "sample_count": 2
+            },
+            "FS_VIS__e06": {
+              "hit_count": 1,
+              "hit_fraction": 0.5,
+              "sample_count": 2
+            },
+            "FS_VIS__e07": {
+              "hit_count": 1,
+              "hit_fraction": 1.0,
+              "sample_count": 1
+            },
+            "FS_VIS__e16": {
+              "hit_count": 1,
+              "hit_fraction": 0.5,
+              "sample_count": 2
+            },
+            "FS_VIS__e17": {
+              "hit_count": 2,
+              "hit_fraction": 1.0,
+              "sample_count": 2
+            },
+            "FS_VIS__e18": {
+              "hit_count": 1,
+              "hit_fraction": 1.0,
+              "sample_count": 1
+            },
+            "FS_VIS__e23": {
+              "hit_count": 2,
+              "hit_fraction": 1.0,
+              "sample_count": 2
+            },
+            "FS_VIS__e33": {
+              "hit_count": 1,
+              "hit_fraction": 0.5,
+              "sample_count": 2
+            },
+            "FS_VIS__e34": {
+              "hit_count": 1,
+              "hit_fraction": 0.5,
+              "sample_count": 2
+            },
+            "FS_VIS__e35": {
+              "hit_count": 1,
+              "hit_fraction": 1.0,
+              "sample_count": 1
+            }
+          },
+          "radius_px": 8.0,
+          "sample_count": 19,
+          "status": "PASS"
+        },
+        "guided_fiber": {
+          "hit_count": 121,
+          "hit_fraction": 0.876811594,
+          "per_object": {
+            "GF__fiber_run_detector": {
+              "hit_count": 21,
+              "hit_fraction": 0.913043478,
+              "sample_count": 23
+            },
+            "GF__fiber_run_reference_coupler_pc": {
+              "hit_count": 23,
+              "hit_fraction": 1.0,
+              "sample_count": 23
+            },
+            "GF__fiber_run_reference_pc_collimator": {
+              "hit_count": 20,
+              "hit_fraction": 0.869565217,
+              "sample_count": 23
+            },
+            "GF__fiber_run_sample_coupler_pc": {
+              "hit_count": 23,
+              "hit_fraction": 1.0,
+              "sample_count": 23
+            },
+            "GF__fiber_run_sample_pc_collimator": {
+              "hit_count": 14,
+              "hit_fraction": 0.608695652,
+              "sample_count": 23
+            },
+            "GF__fiber_run_source": {
+              "hit_count": 20,
+              "hit_fraction": 0.869565217,
+              "sample_count": 23
+            }
+          },
+          "radius_px": 8.0,
+          "sample_count": 138,
+          "status": "PASS"
+        }
+      },
+      "required_mask_minimums": {
+        "free_space_optical": 1000,
+        "guided_fiber": 1000
+      },
+      "sha256": "45532d0f9b6f88ae65cd576fbfd40f16b51338258932d4829f08023538c8fd51",
+      "shape_hwc": [
+        900,
+        1400,
+        3
+      ],
+      "status": "PASS",
+      "stddev_bgr": 27.793148758,
+      "top_reference_branch_continuity": null,
+      "top_role_visibility": null,
+      "transport_mask_pixel_counts": {
+        "electrical_data": 0,
+        "free_space_optical": 7653,
+        "guided_fiber": 13298
+      }
+    },
+    "cutaway": {
+      "artifact": "evidence/render_cutaway.png",
+      "byte_length": 966310,
+      "clipped_white_fraction": 0.007007937,
+      "dark_pixel_fraction": 0.0,
+      "mean_bgr": 180.434747354,
+      "metadata_stripped": true,
+      "png_chunks": [
+        "IHDR",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IEND"
+      ],
+      "projection_mask_adjacency": {
+        "electrical_data": {
+          "hit_count": 8,
+          "hit_fraction": 0.8,
+          "per_object": {
+            "ED__e52_CMOS_TO_COMPUTER": {
+              "hit_count": 8,
+              "hit_fraction": 0.8,
+              "sample_count": 10
+            }
+          },
+          "radius_px": 8.0,
+          "sample_count": 10,
+          "status": "PASS"
+        },
+        "free_space_optical": {
+          "hit_count": 15,
+          "hit_fraction": 0.576923077,
+          "per_object": {
+            "FS_VIS__e04": {
+              "hit_count": 2,
+              "hit_fraction": 1.0,
+              "sample_count": 2
+            },
+            "FS_VIS__e05": {
+              "hit_count": 0,
+              "hit_fraction": 0.0,
+              "sample_count": 2
+            },
+            "FS_VIS__e06": {
+              "hit_count": 1,
+              "hit_fraction": 0.5,
+              "sample_count": 2
+            },
+            "FS_VIS__e07": {
+              "hit_count": 1,
+              "hit_fraction": 1.0,
+              "sample_count": 1
+            },
+            "FS_VIS__e16": {
+              "hit_count": 1,
+              "hit_fraction": 0.5,
+              "sample_count": 2
+            },
+            "FS_VIS__e17": {
+              "hit_count": 2,
+              "hit_fraction": 1.0,
+              "sample_count": 2
+            },
+            "FS_VIS__e18": {
+              "hit_count": 1,
+              "hit_fraction": 0.5,
+              "sample_count": 2
+            },
+            "FS_VIS__e19": {
+              "hit_count": 1,
+              "hit_fraction": 1.0,
+              "sample_count": 1
+            },
+            "FS_VIS__e23": {
+              "hit_count": 1,
+              "hit_fraction": 0.5,
+              "sample_count": 2
+            },
+            "FS_VIS__e24": {
+              "hit_count": 1,
+              "hit_fraction": 0.5,
+              "sample_count": 2
+            },
+            "FS_VIS__e25": {
+              "hit_count": 1,
+              "hit_fraction": 0.5,
+              "sample_count": 2
+            },
+            "FS_VIS__e33": {
+              "hit_count": 1,
+              "hit_fraction": 0.5,
+              "sample_count": 2
+            },
+            "FS_VIS__e34": {
+              "hit_count": 1,
+              "hit_fraction": 0.5,
+              "sample_count": 2
+            },
+            "FS_VIS__e35": {
+              "hit_count": 1,
+              "hit_fraction": 0.5,
+              "sample_count": 2
+            }
+          },
+          "radius_px": 8.0,
+          "sample_count": 26,
+          "status": "PASS"
+        },
+        "guided_fiber": {
+          "hit_count": 121,
+          "hit_fraction": 0.876811594,
+          "per_object": {
+            "GF__fiber_run_detector": {
+              "hit_count": 21,
+              "hit_fraction": 0.913043478,
+              "sample_count": 23
+            },
+            "GF__fiber_run_reference_coupler_pc": {
+              "hit_count": 21,
+              "hit_fraction": 0.913043478,
+              "sample_count": 23
+            },
+            "GF__fiber_run_reference_pc_collimator": {
+              "hit_count": 15,
+              "hit_fraction": 0.652173913,
+              "sample_count": 23
+            },
+            "GF__fiber_run_sample_coupler_pc": {
+              "hit_count": 23,
+              "hit_fraction": 1.0,
+              "sample_count": 23
+            },
+            "GF__fiber_run_sample_pc_collimator": {
+              "hit_count": 20,
+              "hit_fraction": 0.869565217,
+              "sample_count": 23
+            },
+            "GF__fiber_run_source": {
+              "hit_count": 21,
+              "hit_fraction": 0.913043478,
+              "sample_count": 23
+            }
+          },
+          "radius_px": 8.0,
+          "sample_count": 138,
+          "status": "PASS"
+        }
+      },
+      "required_mask_minimums": {
+        "electrical_data": 1000,
+        "free_space_optical": 1000,
+        "guided_fiber": 1000
+      },
+      "sha256": "a782791964e401c37e224f91e3e460ff28ab94206f546163d876bea62f2861ce",
+      "shape_hwc": [
+        900,
+        1400,
+        3
+      ],
+      "status": "PASS",
+      "stddev_bgr": 36.06924169,
+      "top_reference_branch_continuity": null,
+      "top_role_visibility": null,
+      "transport_mask_pixel_counts": {
+        "electrical_data": 10028,
+        "free_space_optical": 10486,
+        "guided_fiber": 19010
+      }
+    },
+    "side": {
+      "artifact": "evidence/render_side.png",
+      "byte_length": 796482,
+      "clipped_white_fraction": 0.002169841,
+      "dark_pixel_fraction": 0.0,
+      "mean_bgr": 205.039222222,
+      "metadata_stripped": true,
+      "png_chunks": [
+        "IHDR",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IEND"
+      ],
+      "projection_mask_adjacency": {
+        "electrical_data": {
+          "hit_count": 16,
+          "hit_fraction": 0.888888889,
+          "per_object": {
+            "ED__e52_CMOS_TO_COMPUTER": {
+              "hit_count": 16,
+              "hit_fraction": 0.888888889,
+              "sample_count": 18
+            }
+          },
+          "radius_px": 8.0,
+          "sample_count": 18,
+          "status": "PASS"
+        },
+        "free_space_optical": {
+          "hit_count": 28,
+          "hit_fraction": 1.0,
+          "per_object": {
+            "FS_VIS__e04": {
+              "hit_count": 2,
+              "hit_fraction": 1.0,
+              "sample_count": 2
+            },
+            "FS_VIS__e05": {
+              "hit_count": 2,
+              "hit_fraction": 1.0,
+              "sample_count": 2
+            },
+            "FS_VIS__e06": {
+              "hit_count": 2,
+              "hit_fraction": 1.0,
+              "sample_count": 2
+            },
+            "FS_VIS__e07": {
+              "hit_count": 2,
+              "hit_fraction": 1.0,
+              "sample_count": 2
+            },
+            "FS_VIS__e16": {
+              "hit_count": 2,
+              "hit_fraction": 1.0,
+              "sample_count": 2
+            },
+            "FS_VIS__e17": {
+              "hit_count": 2,
+              "hit_fraction": 1.0,
+              "sample_count": 2
+            },
+            "FS_VIS__e18": {
+              "hit_count": 2,
+              "hit_fraction": 1.0,
+              "sample_count": 2
+            },
+            "FS_VIS__e19": {
+              "hit_count": 2,
+              "hit_fraction": 1.0,
+              "sample_count": 2
+            },
+            "FS_VIS__e23": {
+              "hit_count": 2,
+              "hit_fraction": 1.0,
+              "sample_count": 2
+            },
+            "FS_VIS__e24": {
+              "hit_count": 2,
+              "hit_fraction": 1.0,
+              "sample_count": 2
+            },
+            "FS_VIS__e25": {
+              "hit_count": 2,
+              "hit_fraction": 1.0,
+              "sample_count": 2
+            },
+            "FS_VIS__e33": {
+              "hit_count": 2,
+              "hit_fraction": 1.0,
+              "sample_count": 2
+            },
+            "FS_VIS__e34": {
+              "hit_count": 2,
+              "hit_fraction": 1.0,
+              "sample_count": 2
+            },
+            "FS_VIS__e35": {
+              "hit_count": 2,
+              "hit_fraction": 1.0,
+              "sample_count": 2
+            }
+          },
+          "radius_px": 8.0,
+          "sample_count": 28,
+          "status": "PASS"
+        },
+        "guided_fiber": {
+          "hit_count": 93,
+          "hit_fraction": 0.788135593,
+          "per_object": {
+            "GF__fiber_run_detector": {
+              "hit_count": 23,
+              "hit_fraction": 1.0,
+              "sample_count": 23
+            },
+            "GF__fiber_run_reference_coupler_pc": {
+              "hit_count": 23,
+              "hit_fraction": 1.0,
+              "sample_count": 23
+            },
+            "GF__fiber_run_reference_pc_collimator": {
+              "hit_count": 17,
+              "hit_fraction": 0.739130435,
+              "sample_count": 23
+            },
+            "GF__fiber_run_sample_coupler_pc": {
+              "hit_count": 7,
+              "hit_fraction": 0.304347826,
+              "sample_count": 23
+            },
+            "GF__fiber_run_sample_pc_collimator": {
+              "hit_count": 23,
+              "hit_fraction": 1.0,
+              "sample_count": 23
+            },
+            "GF__fiber_run_source": {
+              "hit_count": 0,
+              "hit_fraction": 0.0,
+              "sample_count": 3
+            }
+          },
+          "radius_px": 8.0,
+          "sample_count": 118,
+          "status": "PASS"
+        }
+      },
+      "required_mask_minimums": {
+        "electrical_data": 1000,
+        "free_space_optical": 1000,
+        "guided_fiber": 1000
+      },
+      "sha256": "f3d6aa14df0aaac0d2ef41fe37ba7c7533ff1885e0e6024bd39116d6b3fc2190",
+      "shape_hwc": [
+        900,
+        1400,
+        3
+      ],
+      "status": "PASS",
+      "stddev_bgr": 20.096658129,
+      "top_reference_branch_continuity": null,
+      "top_role_visibility": null,
+      "transport_mask_pixel_counts": {
+        "electrical_data": 2027,
+        "free_space_optical": 3515,
+        "guided_fiber": 1568
+      }
+    },
+    "top": {
+      "artifact": "evidence/render_top.png",
+      "byte_length": 876419,
+      "clipped_white_fraction": 0.001945238,
+      "dark_pixel_fraction": 0.0,
+      "mean_bgr": 186.966616667,
+      "metadata_stripped": true,
+      "png_chunks": [
+        "IHDR",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IDAT",
+        "IEND"
+      ],
+      "projection_mask_adjacency": {
+        "electrical_data": {
+          "hit_count": 23,
+          "hit_fraction": 0.92,
+          "per_object": {
+            "ED__e52_CMOS_TO_COMPUTER": {
+              "hit_count": 23,
+              "hit_fraction": 0.92,
+              "sample_count": 25
+            }
+          },
+          "radius_px": 8.0,
+          "sample_count": 25,
+          "status": "PASS"
+        },
+        "free_space_optical": {
+          "hit_count": 26,
+          "hit_fraction": 0.928571429,
+          "per_object": {
+            "FS_VIS__e04": {
+              "hit_count": 2,
+              "hit_fraction": 1.0,
+              "sample_count": 2
+            },
+            "FS_VIS__e05": {
+              "hit_count": 2,
+              "hit_fraction": 1.0,
+              "sample_count": 2
+            },
+            "FS_VIS__e06": {
+              "hit_count": 2,
+              "hit_fraction": 1.0,
+              "sample_count": 2
+            },
+            "FS_VIS__e07": {
+              "hit_count": 2,
+              "hit_fraction": 1.0,
+              "sample_count": 2
+            },
+            "FS_VIS__e16": {
+              "hit_count": 2,
+              "hit_fraction": 1.0,
+              "sample_count": 2
+            },
+            "FS_VIS__e17": {
+              "hit_count": 2,
+              "hit_fraction": 1.0,
+              "sample_count": 2
+            },
+            "FS_VIS__e18": {
+              "hit_count": 2,
+              "hit_fraction": 1.0,
+              "sample_count": 2
+            },
+            "FS_VIS__e19": {
+              "hit_count": 1,
+              "hit_fraction": 0.5,
+              "sample_count": 2
+            },
+            "FS_VIS__e23": {
+              "hit_count": 2,
+              "hit_fraction": 1.0,
+              "sample_count": 2
+            },
+            "FS_VIS__e24": {
+              "hit_count": 2,
+              "hit_fraction": 1.0,
+              "sample_count": 2
+            },
+            "FS_VIS__e25": {
+              "hit_count": 1,
+              "hit_fraction": 0.5,
+              "sample_count": 2
+            },
+            "FS_VIS__e33": {
+              "hit_count": 2,
+              "hit_fraction": 1.0,
+              "sample_count": 2
+            },
+            "FS_VIS__e34": {
+              "hit_count": 2,
+              "hit_fraction": 1.0,
+              "sample_count": 2
+            },
+            "FS_VIS__e35": {
+              "hit_count": 2,
+              "hit_fraction": 1.0,
+              "sample_count": 2
+            }
+          },
+          "radius_px": 8.0,
+          "sample_count": 28,
+          "status": "PASS"
+        },
+        "guided_fiber": {
+          "hit_count": 133,
+          "hit_fraction": 0.977941176,
+          "per_object": {
+            "GF__fiber_run_detector": {
+              "hit_count": 23,
+              "hit_fraction": 1.0,
+              "sample_count": 23
+            },
+            "GF__fiber_run_reference_coupler_pc": {
+              "hit_count": 23,
+              "hit_fraction": 1.0,
+              "sample_count": 23
+            },
+            "GF__fiber_run_reference_pc_collimator": {
+              "hit_count": 23,
+              "hit_fraction": 1.0,
+              "sample_count": 23
+            },
+            "GF__fiber_run_sample_coupler_pc": {
+              "hit_count": 23,
+              "hit_fraction": 1.0,
+              "sample_count": 23
+            },
+            "GF__fiber_run_sample_pc_collimator": {
+              "hit_count": 23,
+              "hit_fraction": 1.0,
+              "sample_count": 23
+            },
+            "GF__fiber_run_source": {
+              "hit_count": 18,
+              "hit_fraction": 0.857142857,
+              "sample_count": 21
+            }
+          },
+          "radius_px": 8.0,
+          "sample_count": 136,
+          "status": "PASS"
+        }
+      },
+      "required_mask_minimums": {
+        "electrical_data": 1000,
+        "free_space_optical": 1000,
+        "guided_fiber": 1000
+      },
+      "sha256": "5d76af0199e4ddef3e5aad76a4ab211e98fed006c19d568766fb216fe7807785",
+      "shape_hwc": [
+        900,
+        1400,
+        3
+      ],
+      "status": "PASS",
+      "stddev_bgr": 35.645969586,
+      "top_reference_branch_continuity": {
+        "reference_arm_1": {
+          "segment_mask_adjacency": {
+            "FS_VIS__e17": true,
+            "FS_VIS__e18": true,
+            "FS_VIS__e19": true
+          },
+          "segments": [
+            "FS_VIS__e17",
+            "FS_VIS__e18",
+            "FS_VIS__e19"
+          ],
+          "status": "PASS"
+        },
+        "reference_arm_2": {
+          "segment_mask_adjacency": {
+            "FS_VIS__e23": true,
+            "FS_VIS__e24": true,
+            "FS_VIS__e25": true
+          },
+          "segments": [
+            "FS_VIS__e23",
+            "FS_VIS__e24",
+            "FS_VIS__e25"
+          ],
+          "status": "PASS"
+        }
+      },
+      "top_role_visibility": {
+        "contrast_pass_count": 22,
+        "contrast_threshold": 15.0,
+        "in_frame_count": 22,
+        "records": {
+          "n01_sld_source": {
+            "in_frame": true,
+            "local_background_contrast": 26.98786087
+          },
+          "n02_fiber_coupler": {
+            "in_frame": true,
+            "local_background_contrast": 106.57826087
+          },
+          "n03_sample_pc": {
+            "in_frame": true,
+            "local_background_contrast": 40.45506087
+          },
+          "n04_sample_collimator": {
+            "in_frame": true,
+            "local_background_contrast": 90.33346087
+          },
+          "n05_sample_galvo_x": {
+            "in_frame": true,
+            "local_background_contrast": 45.12066087
+          },
+          "n06_sample_galvo_y": {
+            "in_frame": true,
+            "local_background_contrast": 45.12066087
+          },
+          "n07_sample_lens_l0": {
+            "in_frame": true,
+            "local_background_contrast": 73.79426087
+          },
+          "n08_sample": {
+            "in_frame": true,
+            "local_background_contrast": 26.99426087
+          },
+          "n09_reference_pc": {
+            "in_frame": true,
+            "local_background_contrast": 70.41826087
+          },
+          "n10_reference_collimator": {
+            "in_frame": true,
+            "local_background_contrast": 101.90146087
+          },
+          "n11_reference_npbs": {
+            "in_frame": true,
+            "local_background_contrast": 47.62466087
+          },
+          "n12_reference_galvo_gs1": {
+            "in_frame": true,
+            "local_background_contrast": 46.91106087
+          },
+          "n13_reference_lens_l1": {
+            "in_frame": true,
+            "local_background_contrast": 72.05986087
+          },
+          "n14_reference_mirror_m1": {
+            "in_frame": true,
+            "local_background_contrast": 73.54946087
+          },
+          "n15_reference_galvo_gs2": {
+            "in_frame": true,
+            "local_background_contrast": 46.91106087
+          },
+          "n16_reference_lens_l2": {
+            "in_frame": true,
+            "local_background_contrast": 63.51106087
+          },
+          "n17_reference_mirror_m2": {
+            "in_frame": true,
+            "local_background_contrast": 85.82786087
+          },
+          "n18_detector_collimator": {
+            "in_frame": true,
+            "local_background_contrast": 26.99906087
+          },
+          "n19_diffraction_grating": {
+            "in_frame": true,
+            "local_background_contrast": 74.80066087
+          },
+          "n20_spectrometer_lens": {
+            "in_frame": true,
+            "local_background_contrast": 43.17346087
+          },
+          "n21_line_camera": {
+            "in_frame": true,
+            "local_background_contrast": 26.99746087
+          },
+          "n23_control_computer": {
+            "in_frame": true,
+            "local_background_contrast": 26.96226087
+          }
+        },
+        "required_role_count": 22,
+        "status": "PASS"
+      },
+      "transport_mask_pixel_counts": {
+        "electrical_data": 2922,
+        "free_space_optical": 3922,
+        "guided_fiber": 3871
+      }
+    }
+  }
+}

@@ -1,0 +1,145 @@
+{
+  "artifacts": [
+    {
+      "byte_length": 2544,
+      "media_type": "text/markdown",
+      "path": "PHASE_2_REPRESENTATIVE_SMOKE_GATE.md",
+      "role": "PHASE_2_GATE",
+      "sha256": "969aaf7341d045e0fd2e31c02ff3020bfc502d6e9cf2001534f7d6573deb1913"
+    },
+    {
+      "byte_length": 796,
+      "media_type": "text/markdown",
+      "path": "README.md",
+      "role": "HUMAN_OVERVIEW",
+      "sha256": "b8bfa6dce343a619974575241ba77b761b85d1cadb2d5ed0828e264a5c7e44da"
+    },
+    {
+      "byte_length": 879649,
+      "media_type": "image/png",
+      "path": "evidence/render_axial.png",
+      "role": "AXIAL_RENDER",
+      "sha256": "45532d0f9b6f88ae65cd576fbfd40f16b51338258932d4829f08023538c8fd51"
+    },
+    {
+      "byte_length": 966310,
+      "media_type": "image/png",
+      "path": "evidence/render_cutaway.png",
+      "role": "CUTAWAY_RENDER",
+      "sha256": "a782791964e401c37e224f91e3e460ff28ab94206f546163d876bea62f2861ce"
+    },
+    {
+      "byte_length": 86063,
+      "media_type": "application/json",
+      "path": "evidence/render_projection.json",
+      "role": "RENDER_PIXEL_PROJECTION",
+      "sha256": "918a23ec785b245b0fa900ea28b0f43cd4d1787d2a99f340f65aa38c411dfeb3"
+    },
+    {
+      "byte_length": 796482,
+      "media_type": "image/png",
+      "path": "evidence/render_side.png",
+      "role": "SIDE_RENDER",
+      "sha256": "f3d6aa14df0aaac0d2ef41fe37ba7c7533ff1885e0e6024bd39116d6b3fc2190"
+    },
+    {
+      "byte_length": 876419,
+      "media_type": "image/png",
+      "path": "evidence/render_top.png",
+      "role": "TOP_RENDER",
+      "sha256": "5d76af0199e4ddef3e5aad76a4ab211e98fed006c19d568766fb216fe7807785"
+    },
+    {
+      "byte_length": 180286,
+      "media_type": "application/json",
+      "path": "phase2/LOAD_PATH_AUDIT.json",
+      "role": "LOAD_PATH_AUDIT",
+      "sha256": "2f4f789f9b941a0172aeb62102820fcc5d7207a7ecf2533f926172160193d9ea"
+    },
+    {
+      "byte_length": 32496,
+      "media_type": "application/json",
+      "path": "phase2/MESH_CLEANLINESS_AUDIT.json",
+      "role": "MESH_CLEANLINESS_AUDIT",
+      "sha256": "858275203c09181d9e4929fba1281f634186012b024d88618f071f98d4732815"
+    },
+    {
+      "byte_length": 31400,
+      "media_type": "application/json",
+      "path": "phase2/RENDER_OPENCV_AUDIT.json",
+      "role": "RENDER_OPENCV_AUDIT",
+      "sha256": "2890235939ce09efe04a87bb6e274eea87c6c63558990110db99821595d2b662"
+    },
+    {
+      "byte_length": 70306,
+      "media_type": "application/json",
+      "path": "phase2/REPRESENTATIVE_TOPOLOGY.json",
+      "role": "REPRESENTATIVE_TOPOLOGY",
+      "sha256": "f9cc206249617c27544d256f3d46b3492896cf3c9fdf5509c9205289380cae0f"
+    },
+    {
+      "byte_length": 7945,
+      "media_type": "application/json",
+      "path": "phase2/RUNTIME_LOCK.json",
+      "role": "RUNTIME_LOCK",
+      "sha256": "0747763512c646eb6dbba156616e478311e6ebb375405ac016b4f17be8c8d2d8"
+    },
+    {
+      "byte_length": 2598,
+      "media_type": "application/json",
+      "path": "phase2/SCOPE_STATUS_MATRIX.json",
+      "role": "SCOPE_STATUS_MATRIX",
+      "sha256": "de181a22b49501aa49a90111b9955b6af8778b9d13e7ebfbbdcf67854d30daac"
+    },
+    {
+      "byte_length": 1135,
+      "media_type": "application/json",
+      "path": "phase2/SOURCE_LOCK.json",
+      "role": "SOURCE_LOCK",
+      "sha256": "aad766c3de81184acf34621cf2899a10568449b0297a9d89650ddaa3779030fc"
+    },
+    {
+      "byte_length": 23277,
+      "media_type": "application/json",
+      "path": "phase2/TRANSPORT_AUDIT.json",
+      "role": "TRANSPORT_AUDIT",
+      "sha256": "62eca90bb00f18ee9046ef040b13b81cded0523ecd57b9e23b2c382ec3639b5e"
+    },
+    {
+      "byte_length": 1450,
+      "media_type": "application/json",
+      "path": "phase2/VALIDATION_REPORT.json",
+      "role": "VALIDATION_REPORT",
+      "sha256": "2918e00f85982c92453b9a8947b606eefc706be11fb0edc05656ffad3362daaf"
+    },
+    {
+      "byte_length": 98279,
+      "media_type": "application/json",
+      "path": "phase2/XCAF_BLENDER_AUDIT.json",
+      "role": "XCAF_BLENDER_AUDIT",
+      "sha256": "790898d9729ed8aa2e62317780ca77143c665ed3661b59f7b57078d701fe29eb"
+    },
+    {
+      "byte_length": 7294,
+      "media_type": "text/x-python",
+      "path": "tools/validate_phase2_gate.py",
+      "role": "PUBLIC_VALIDATOR",
+      "sha256": "d5f34f8744841db4304af9cc0eb1b2a3d0bbfcb7289c17234bd3396d684e0a6d"
+    }
+  ],
+  "audit_scope": "PARTIAL_SCOPED",
+  "frozen_phase1_manifest_sha256": "7513c352768915cb96c0161b842f04505af75b98cedab1f41d1259fd07ae8ce6",
+  "packaged_at_utc": "2026-08-09T19:31:40.259Z",
+  "phase": "PHASE_2_REPRESENTATIVE_SMOKE",
+  "phase2_representative_smoke_gate": "UNVERIFIED",
+  "private_context_reads": 0,
+  "propagation_authorized": false,
+  "public_blend_count": 0,
+  "public_derived_mesh_count": 0,
+  "public_vendor_cad_count": 0,
+  "release_id": "wu-2016-sfdm-sdoct-phase2-representative-smoke-v1",
+  "schema_version": "1.0",
+  "self_hash_policy": "MANIFEST.json and MANIFEST.sha256 are excluded from artifacts; MANIFEST.sha256 hashes the exact MANIFEST.json bytes.",
+  "vendor_redistribution": "UNVERIFIED",
+  "whole_system_status": "UNVERIFIED"
+}

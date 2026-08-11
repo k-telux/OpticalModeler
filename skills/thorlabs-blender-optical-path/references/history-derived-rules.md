@@ -41,6 +41,11 @@ The originating G1/G2 build session contained 162 user-role records and 513 assi
 | Placeholders survived a final package | Role inventory covered only changed objects | Scan the full scene for duplicate roles, placeholder names, and materials. |
 | Evidence became stale | Scene/export changed after audit | Treat every upstream write as invalidating downstream evidence. |
 | Nature styling hid science | Darkness, bloom, or perspective masked geometry | Freeze geometry, keep bright audit views, and use separate editorial renders. |
+| Released locks could not be replayed | A final port move existed only in the lock/Blend while the public script still snapped to an older location | Recompute normalized semantic build parameters from the published script; require zero field differences and reason-bearing source overrides. |
+| README counts drifted from saved-scene evidence | Human prose duplicated ray and port counts | Derive claims from evidence and assert evidence/prose/gate/manifest equality while rejecting stale literals. |
+| Binary metadata leaked private paths | Text-only sanitizers skipped PNG chunks and undecodable files | Scan bytes and UTF-16, parse container metadata, fail on skips, and strip public-copy metadata while preserving pixel hashes. |
+| Clean packaging was mistaken for conversion PASS | A public bundle was leak-free although a CAD model still had sentinel bounds, empty faces, or failed meshing | Keep sanitization and conversion as separate status axes; the more severe geometry verdict remains authoritative. |
+| Analytical estimates were reported as reopen geometry | A copied clamp-gap estimate was labeled a measured saved-mesh field | Recompute geometric claims from reopened mesh or label them `UNVERIFIED_ANALYTIC_ESTIMATE` and exclude them from geometry PASS. |
 
 ## Durable management rules
 

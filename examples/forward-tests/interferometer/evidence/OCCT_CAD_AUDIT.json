@@ -1,0 +1,2382 @@
+{
+  "asset_count": 30,
+  "assets": [
+    {
+      "asset_id": "F240FC-780",
+      "bbox": {
+        "center_occt_mm": [
+          0.0,
+          0.0,
+          -2.4845135287058144
+        ],
+        "max_occt_mm": [
+          6.000000000000002,
+          6.000000000000002,
+          6.3500000000000005
+        ],
+        "method": "BRepBndLib.AddOptimal(useTriangulation=false,useShapeTolerance=false)",
+        "metres_per_occt_unit": 0.001,
+        "min_occt_mm": [
+          -6.000000000000002,
+          -6.000000000000002,
+          -11.31902705741163
+        ],
+        "occt_transfer_length_unit": "millimetre",
+        "size_occt_mm": [
+          12.000000000000004,
+          12.000000000000004,
+          17.66902705741163
+        ]
+      },
+      "brep_check_valid": true,
+      "native_length_unit_names": [
+        "millimetre"
+      ],
+      "official_model": "F240FC-780",
+      "phase1_declared_native_length_unit": "millimetre",
+      "private_stl_sha256": "8ab06b0ebd54c9df9095f8531fe9f0f48c9c9ea53c697b0c7912e63d65f9782c",
+      "semantic_ports": {
+        "bbox_center": {
+          "axis_local": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "point_occt_mm": [
+            0.0,
+            0.0,
+            -2.4845135287058144
+          ],
+          "status": "GEOMETRIC_DATUM_ONLY"
+        }
+      },
+      "source_step_sha256": "846b1d310bf68b6c343619517cf922a9b1f275c88db50c06d6c47e9a0a8c721c",
+      "status": "OCCT_IMPORTED_SEMANTIC_INTERFACES_UNVERIFIED",
+      "topology_counts": {
+        "compound": 1,
+        "compsolid": 0,
+        "edge": 762,
+        "face": 106,
+        "shell": 3,
+        "solid": 3,
+        "vertex": 1524
+      },
+      "xcaf_root_count": 1
+    },
+    {
+      "asset_id": "GTH5-B",
+      "bbox": {
+        "center_occt_mm": [
+          0.0,
+          8.881784197001252e-16,
+          -8.881784197001252e-16
+        ],
+        "max_occt_mm": [
+          3.0000000000000027,
+          3.0000000000000053,
+          10.298332710485983
+        ],
+        "method": "BRepBndLib.AddOptimal(useTriangulation=false,useShapeTolerance=false)",
+        "metres_per_occt_unit": 0.001,
+        "min_occt_mm": [
+          -3.0000000000000027,
+          -3.0000000000000036,
+          -10.298332710485985
+        ],
+        "occt_transfer_length_unit": "millimetre",
+        "size_occt_mm": [
+          6.000000000000005,
+          6.000000000000009,
+          20.596665420971966
+        ]
+      },
+      "brep_check_valid": true,
+      "native_length_unit_names": [
+        "millimetre"
+      ],
+      "official_model": "GTH5-B",
+      "phase1_declared_native_length_unit": "millimetre",
+      "private_stl_sha256": "8dc4b54c9013a70118b5ca6d2a75f0c3f12b130575ee4d5710bc0e8cfe2edd63",
+      "semantic_ports": {
+        "bbox_center": {
+          "axis_local": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "point_occt_mm": [
+            0.0,
+            8.881784197001252e-16,
+            -8.881784197001252e-16
+          ],
+          "status": "GEOMETRIC_DATUM_ONLY"
+        }
+      },
+      "source_step_sha256": "17bbfecd5b2e3a4d5e9b25547b87f6a7943e5411fb2d038d1144962cca563197",
+      "status": "OCCT_IMPORTED_SEMANTIC_INTERFACES_UNVERIFIED",
+      "topology_counts": {
+        "compound": 1,
+        "compsolid": 0,
+        "edge": 184,
+        "face": 44,
+        "shell": 2,
+        "solid": 2,
+        "vertex": 368
+      },
+      "xcaf_root_count": 1
+    },
+    {
+      "asset_id": "BS014",
+      "bbox": {
+        "center_occt_mm": [
+          12.700000000000001,
+          12.700000000000001,
+          -12.700000000000001
+        ],
+        "max_occt_mm": [
+          25.400000000000002,
+          25.400000000000002,
+          1.3739009929736312e-15
+        ],
+        "method": "BRepBndLib.AddOptimal(useTriangulation=false,useShapeTolerance=false)",
+        "metres_per_occt_unit": 0.001,
+        "min_occt_mm": [
+          -9.583083854271148e-18,
+          -1.0547118733938987e-15,
+          -25.400000000000002
+        ],
+        "occt_transfer_length_unit": "millimetre",
+        "size_occt_mm": [
+          25.400000000000002,
+          25.400000000000002,
+          25.400000000000002
+        ]
+      },
+      "brep_check_valid": true,
+      "native_length_unit_names": [
+        "millimetre"
+      ],
+      "official_model": "BS014",
+      "phase1_declared_native_length_unit": "millimetre",
+      "private_stl_sha256": "abad886e83193c6bea3f63b5ab04399bd11b95e17f832ce374c0cfd8d262a451",
+      "semantic_ports": {
+        "bbox_center": {
+          "axis_local": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "point_occt_mm": [
+            12.700000000000001,
+            12.700000000000001,
+            -12.700000000000001
+          ],
+          "status": "GEOMETRIC_DATUM_ONLY"
+        },
+        "coating_center": {
+          "axis_local": [
+            0.7071067811865476,
+            -0.7071067811865476,
+            0.0
+          ],
+          "point_occt_mm": [
+            12.700000000000001,
+            12.700000000000001,
+            -12.700000000000001
+          ],
+          "status": "MODELED_INTERNAL_PLANE_NOT_PRESENT_IN_STEP"
+        },
+        "face_neg_x": {
+          "axis_local": [
+            -1.0,
+            0.0,
+            0.0
+          ],
+          "point_occt_mm": [
+            -9.583083854271148e-18,
+            12.700000000000001,
+            -12.700000000000001
+          ],
+          "status": "BBOX_FACE_INFERENCE_UNVERIFIED"
+        },
+        "face_neg_y": {
+          "axis_local": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "point_occt_mm": [
+            12.700000000000001,
+            -1.0547118733938987e-15,
+            -12.700000000000001
+          ],
+          "status": "BBOX_FACE_INFERENCE_UNVERIFIED"
+        },
+        "face_pos_x": {
+          "axis_local": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "point_occt_mm": [
+            25.400000000000002,
+            12.700000000000001,
+            -12.700000000000001
+          ],
+          "status": "BBOX_FACE_INFERENCE_UNVERIFIED"
+        },
+        "face_pos_y": {
+          "axis_local": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "point_occt_mm": [
+            12.700000000000001,
+            25.400000000000002,
+            -12.700000000000001
+          ],
+          "status": "BBOX_FACE_INFERENCE_UNVERIFIED"
+        }
+      },
+      "source_step_sha256": "6a3dbaf1760edd878703c95ebc53a83c362b82ea15f11d709c12cd87e8189f6b",
+      "status": "OCCT_IMPORTED_SEMANTIC_INTERFACES_UNVERIFIED",
+      "topology_counts": {
+        "compound": 0,
+        "compsolid": 0,
+        "edge": 136,
+        "face": 38,
+        "shell": 1,
+        "solid": 0,
+        "vertex": 272
+      },
+      "xcaf_root_count": 1
+    },
+    {
+      "asset_id": "PS976M-B",
+      "bbox": {
+        "center_occt_mm": [
+          0.0,
+          -9.699187586420521e-08,
+          0.0
+        ],
+        "max_occt_mm": [
+          27.940000100000002,
+          27.940000100000006,
+          27.305
+        ],
+        "method": "BRepBndLib.AddOptimal(useTriangulation=false,useShapeTolerance=false)",
+        "metres_per_occt_unit": 0.001,
+        "min_occt_mm": [
+          -27.940000100000002,
+          -27.940000293983758,
+          -27.305
+        ],
+        "occt_transfer_length_unit": "millimetre",
+        "size_occt_mm": [
+          55.880000200000005,
+          55.880000393983764,
+          54.61
+        ]
+      },
+      "brep_check_valid": true,
+      "native_length_unit_names": [
+        "millimetre"
+      ],
+      "official_model": "PS976M-B",
+      "phase1_declared_native_length_unit": "millimetre",
+      "private_stl_sha256": "b31657c6423203f682a45c53d23272b9bf370d1086d54c3d9d1f331ee989df0d",
+      "semantic_ports": {
+        "bbox_center": {
+          "axis_local": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "point_occt_mm": [
+            0.0,
+            -9.699187586420521e-08,
+            0.0
+          ],
+          "status": "GEOMETRIC_DATUM_ONLY"
+        },
+        "retro_in": {
+          "axis_local": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "point_occt_mm": [
+            0.0,
+            -9.699187586420521e-08,
+            0.0
+          ],
+          "status": "BBOX_AXIS_INFERENCE_UNVERIFIED"
+        },
+        "retro_out": {
+          "axis_local": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "point_occt_mm": [
+            0.0,
+            -9.699187586420521e-08,
+            8.0
+          ],
+          "status": "FORWARD_TEST_8MM_OFFSET_NOT_VENDOR_VERIFIED"
+        }
+      },
+      "source_step_sha256": "a99745585136376b1d970e854dfc5d5cccd184651adeae66400045f90d2a726b",
+      "status": "OCCT_IMPORTED_SEMANTIC_INTERFACES_UNVERIFIED",
+      "topology_counts": {
+        "compound": 1,
+        "compsolid": 0,
+        "edge": 762,
+        "face": 100,
+        "shell": 5,
+        "solid": 5,
+        "vertex": 1524
+      },
+      "xcaf_root_count": 1
+    },
+    {
+      "asset_id": "ZST225B",
+      "bbox": {
+        "center_occt_mm": [
+          -8.390466666666697,
+          1.4459810503630877e-05,
+          2.1316282072803006e-14
+        ],
+        "max_occt_mm": [
+          140.99999999999997,
+          9.500029019663566,
+          15.5000001
+        ],
+        "method": "BRepBndLib.AddOptimal(useTriangulation=false,useShapeTolerance=false)",
+        "metres_per_occt_unit": 0.001,
+        "min_occt_mm": [
+          -157.78093333333337,
+          -9.50000010004256,
+          -15.500000099999957
+        ],
+        "occt_transfer_length_unit": "millimetre",
+        "size_occt_mm": [
+          298.78093333333334,
+          19.000029119706127,
+          31.000000199999956
+        ]
+      },
+      "brep_check_valid": true,
+      "native_length_unit_names": [
+        "millimetre"
+      ],
+      "official_model": "ZST225B",
+      "phase1_declared_native_length_unit": "millimetre",
+      "private_stl_sha256": "ed2d38390c51c1b2b9c3ea2906bda7f95ba0b9b275e0f2c3749a753d9605f3b0",
+      "semantic_ports": {
+        "bbox_center": {
+          "axis_local": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "point_occt_mm": [
+            -8.390466666666697,
+            1.4459810503630877e-05,
+            2.1316282072803006e-14
+          ],
+          "status": "GEOMETRIC_DATUM_ONLY"
+        },
+        "support_axis": {
+          "axis_local": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "point_occt_mm": [
+            -8.390466666666697,
+            1.4459810503630877e-05,
+            2.1316282072803006e-14
+          ],
+          "status": "BBOX_INFERRED_AXIS_UNVERIFIED"
+        },
+        "support_bottom": {
+          "axis_local": [
+            -1.0,
+            0.0,
+            0.0
+          ],
+          "point_occt_mm": [
+            -157.78093333333337,
+            1.4459810503630877e-05,
+            2.1316282072803006e-14
+          ],
+          "status": "BBOX_INFERRED_INTERFACE_UNVERIFIED"
+        },
+        "support_top": {
+          "axis_local": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "point_occt_mm": [
+            140.99999999999997,
+            1.4459810503630877e-05,
+            2.1316282072803006e-14
+          ],
+          "status": "BBOX_INFERRED_INTERFACE_UNVERIFIED"
+        }
+      },
+      "source_step_sha256": "9b213c6d493d36538235293fd3693e8f12368e2711f3199800199114fa967760",
+      "status": "OCCT_IMPORTED_SEMANTIC_INTERFACES_UNVERIFIED",
+      "topology_counts": {
+        "compound": 1,
+        "compsolid": 0,
+        "edge": 3042,
+        "face": 517,
+        "shell": 40,
+        "solid": 0,
+        "vertex": 6084
+      },
+      "xcaf_root_count": 1
+    },
+    {
+      "asset_id": "PRM1_MZ8",
+      "bbox": {
+        "center_occt_mm": [
+          56.304878127025525,
+          108.49346869508713,
+          168.42195100712962
+        ],
+        "max_occt_mm": [
+          132.52935733464963,
+          119.99346879508713,
+          209.29695110712962
+        ],
+        "method": "BRepBndLib.AddOptimal(useTriangulation=false,useShapeTolerance=false)",
+        "metres_per_occt_unit": 0.001,
+        "min_occt_mm": [
+          -19.919601080598582,
+          96.99346859508714,
+          127.5469509071296
+        ],
+        "occt_transfer_length_unit": "millimetre",
+        "size_occt_mm": [
+          152.44895841524823,
+          23.000000199999988,
+          81.75000020000002
+        ]
+      },
+      "brep_check_valid": true,
+      "native_length_unit_names": [
+        "millimetre"
+      ],
+      "official_model": "PRM1/MZ8",
+      "phase1_declared_native_length_unit": "millimetre",
+      "private_stl_sha256": "767c859d4dc737e8ded3e392d89ef92a6d3a45248dca08b2878c61af96b9a163",
+      "semantic_ports": {
+        "bbox_center": {
+          "axis_local": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "point_occt_mm": [
+            56.304878127025525,
+            108.49346869508713,
+            168.42195100712962
+          ],
+          "status": "GEOMETRIC_DATUM_ONLY"
+        }
+      },
+      "source_step_sha256": "2889c5d3242fac79c5ee7720f9aa71ae0374af02b7ac822aad443ac86451c1ab",
+      "status": "OCCT_IMPORTED_SEMANTIC_INTERFACES_UNVERIFIED",
+      "topology_counts": {
+        "compound": 1,
+        "compsolid": 0,
+        "edge": 36302,
+        "face": 6574,
+        "shell": 50,
+        "solid": 50,
+        "vertex": 72604
+      },
+      "xcaf_root_count": 1
+    },
+    {
+      "asset_id": "FB810-10",
+      "bbox": {
+        "center_occt_mm": [
+          0.0,
+          1.7763568394002505e-15,
+          0.0
+        ],
+        "max_occt_mm": [
+          12.700000099999986,
+          12.700000099999988,
+          3.15
+        ],
+        "method": "BRepBndLib.AddOptimal(useTriangulation=false,useShapeTolerance=false)",
+        "metres_per_occt_unit": 0.001,
+        "min_occt_mm": [
+          -12.700000099999986,
+          -12.700000099999984,
+          -3.15
+        ],
+        "occt_transfer_length_unit": "millimetre",
+        "size_occt_mm": [
+          25.400000199999972,
+          25.400000199999972,
+          6.3
+        ]
+      },
+      "brep_check_valid": true,
+      "native_length_unit_names": [
+        "millimetre"
+      ],
+      "official_model": "FB810-10",
+      "phase1_declared_native_length_unit": "millimetre",
+      "private_stl_sha256": "97a1cde364dc77f84e388c541d11acf8c1f4d932cf9fe7d8b342f08aa25d500d",
+      "semantic_ports": {
+        "bbox_center": {
+          "axis_local": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "point_occt_mm": [
+            0.0,
+            1.7763568394002505e-15,
+            0.0
+          ],
+          "status": "GEOMETRIC_DATUM_ONLY"
+        }
+      },
+      "source_step_sha256": "52b4fc5709d508026d5ea3cb7273ac43feff7adcaccdb88687b87e03cedac4f7",
+      "status": "OCCT_IMPORTED_SEMANTIC_INTERFACES_UNVERIFIED",
+      "topology_counts": {
+        "compound": 0,
+        "compsolid": 0,
+        "edge": 928,
+        "face": 73,
+        "shell": 1,
+        "solid": 1,
+        "vertex": 1856
+      },
+      "xcaf_root_count": 1
+    },
+    {
+      "asset_id": "WG41010-B",
+      "bbox": {
+        "center_occt_mm": [
+          0.0,
+          0.0,
+          -1.3877787807814457e-16
+        ],
+        "max_occt_mm": [
+          12.7,
+          12.7,
+          0.49999999999999994
+        ],
+        "method": "BRepBndLib.AddOptimal(useTriangulation=false,useShapeTolerance=false)",
+        "metres_per_occt_unit": 0.001,
+        "min_occt_mm": [
+          -12.7,
+          -12.7,
+          -0.5000000000000002
+        ],
+        "occt_transfer_length_unit": "millimetre",
+        "size_occt_mm": [
+          25.4,
+          25.4,
+          1.0000000000000002
+        ]
+      },
+      "brep_check_valid": true,
+      "native_length_unit_names": [
+        "INCH"
+      ],
+      "official_model": "WG41010-B",
+      "phase1_declared_native_length_unit": "inch",
+      "private_stl_sha256": "f313c320415910d49fe0e3c9738f1f2d2f0c2dc23586afb41c06dcb57b255103",
+      "semantic_ports": {
+        "bbox_center": {
+          "axis_local": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "point_occt_mm": [
+            0.0,
+            0.0,
+            -1.3877787807814457e-16
+          ],
+          "status": "GEOMETRIC_DATUM_ONLY"
+        }
+      },
+      "source_step_sha256": "e002d960e9dd89e1f1924972aa2b862775e412220f37908a34def0012f610456",
+      "status": "OCCT_IMPORTED_SEMANTIC_INTERFACES_UNVERIFIED",
+      "topology_counts": {
+        "compound": 0,
+        "compsolid": 0,
+        "edge": 28,
+        "face": 8,
+        "shell": 1,
+        "solid": 1,
+        "vertex": 56
+      },
+      "xcaf_root_count": 1
+    },
+    {
+      "asset_id": "M42L02",
+      "bbox": {
+        "center_occt_mm": [
+          -31.645110781000803,
+          -41.32774952344557,
+          -58.31072768006602
+        ],
+        "max_occt_mm": [
+          -20.777096082992287,
+          -12.679734825437068,
+          139.55027231993395
+        ],
+        "method": "BRepBndLib.AddOptimal(useTriangulation=false,useShapeTolerance=false)",
+        "metres_per_occt_unit": 0.001,
+        "min_occt_mm": [
+          -42.51312547900932,
+          -69.97576422145407,
+          -256.171727680066
+        ],
+        "occt_transfer_length_unit": "millimetre",
+        "size_occt_mm": [
+          21.73602939601703,
+          57.296029396017005,
+          395.722
+        ]
+      },
+      "brep_check_valid": true,
+      "native_length_unit_names": [
+        "INCH"
+      ],
+      "official_model": "M42L02",
+      "phase1_declared_native_length_unit": "inch",
+      "private_stl_sha256": "d0cf839a736f1ee004f0662fa3f94ee8ef95c86801ad8295981385db34e2ccd3",
+      "semantic_ports": {
+        "bbox_center": {
+          "axis_local": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "point_occt_mm": [
+            -31.645110781000803,
+            -41.32774952344557,
+            -58.31072768006602
+          ],
+          "status": "GEOMETRIC_DATUM_ONLY"
+        }
+      },
+      "source_step_sha256": "f123c39bb3b436a7b0723f7129957237abc111dc6d9bc468a9052d33f8b13862",
+      "status": "OCCT_IMPORTED_SEMANTIC_INTERFACES_UNVERIFIED",
+      "topology_counts": {
+        "compound": 1,
+        "compsolid": 0,
+        "edge": 4308,
+        "face": 754,
+        "shell": 9,
+        "solid": 9,
+        "vertex": 8616
+      },
+      "xcaf_root_count": 1
+    },
+    {
+      "asset_id": "DMLP735B",
+      "bbox": {
+        "center_occt_mm": [
+          17.500000000000004,
+          26.0,
+          1.5
+        ],
+        "max_occt_mm": [
+          35.00000000000001,
+          52.0,
+          3.0
+        ],
+        "method": "BRepBndLib.AddOptimal(useTriangulation=false,useShapeTolerance=false)",
+        "metres_per_occt_unit": 0.001,
+        "min_occt_mm": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "occt_transfer_length_unit": "millimetre",
+        "size_occt_mm": [
+          35.00000000000001,
+          52.0,
+          3.0
+        ]
+      },
+      "brep_check_valid": true,
+      "native_length_unit_names": [
+        "millimetre"
+      ],
+      "official_model": "DMLP735B",
+      "phase1_declared_native_length_unit": "millimetre",
+      "private_stl_sha256": "335d4fdbb2412f3bd7c65b57f7d5a177e66b2275d9974edeefecd17ba412d849",
+      "semantic_ports": {
+        "bbox_center": {
+          "axis_local": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "point_occt_mm": [
+            17.500000000000004,
+            26.0,
+            1.5
+          ],
+          "status": "GEOMETRIC_DATUM_ONLY"
+        },
+        "front_surface": {
+          "axis_local": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "point_occt_mm": [
+            17.500000000000004,
+            26.0,
+            3.0
+          ],
+          "status": "BBOX_FACE_INFERENCE_UNVERIFIED"
+        },
+        "optical_center": {
+          "axis_local": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "point_occt_mm": [
+            17.500000000000004,
+            26.0,
+            1.5
+          ],
+          "status": "MINIMUM_BBOX_AXIS_INFERENCE_UNVERIFIED"
+        }
+      },
+      "source_step_sha256": "1746e200b079fe1a1a65cecf591f6a65be22f8f8c9443f13c2e872315cd2b037",
+      "status": "OCCT_IMPORTED_SEMANTIC_INTERFACES_UNVERIFIED",
+      "topology_counts": {
+        "compound": 0,
+        "compsolid": 0,
+        "edge": 24,
+        "face": 6,
+        "shell": 1,
+        "solid": 1,
+        "vertex": 48
+      },
+      "xcaf_root_count": 1
+    },
+    {
+      "asset_id": "DET10A2",
+      "bbox": {
+        "center_occt_mm": [
+          0.11750030517578125,
+          10.44890022277832,
+          -10.909299954771996
+        ],
+        "max_occt_mm": [
+          25.0,
+          45.89780044555664,
+          0.3301999866962433
+        ],
+        "method": "FALLBACK_OCCT_TESSELLATED_STL_BBOX_AFTER_INVALID_BREP_BOUND",
+        "metres_per_occt_unit": 0.001,
+        "min_occt_mm": [
+          -24.764999389648438,
+          -25.0,
+          -22.148799896240234
+        ],
+        "occt_transfer_length_unit": "millimetre",
+        "size_occt_mm": [
+          49.76499938964844,
+          70.89780044555664,
+          22.478999882936478
+        ]
+      },
+      "brep_check_valid": true,
+      "native_length_unit_names": [
+        "INCH"
+      ],
+      "official_model": "DET10A2",
+      "phase1_declared_native_length_unit": "inch",
+      "private_stl_sha256": "4663fd8fc84beff024f244e65f927b01a1e38bd76be4f187d73be892b39ef8e9",
+      "semantic_ports": {
+        "bbox_center": {
+          "axis_local": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "point_occt_mm": [
+            0.11750030517578125,
+            10.44890022277832,
+            -10.909299954771996
+          ],
+          "status": "GEOMETRIC_DATUM_ONLY"
+        },
+        "sensor_center": {
+          "axis_local": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "point_occt_mm": [
+            0.11750030517578125,
+            10.44890022277832,
+            -10.909299954771996
+          ],
+          "status": "BBOX_AXIS_INFERENCE_UNVERIFIED"
+        }
+      },
+      "source_step_sha256": "f2bd26bed86bfc86c7caf8cfbcf6ccef379c280928b6a1706510f83c5b884328",
+      "status": "OCCT_IMPORTED_SEMANTIC_INTERFACES_UNVERIFIED",
+      "topology_counts": {
+        "compound": 1,
+        "compsolid": 0,
+        "edge": 14832,
+        "face": 2896,
+        "shell": 107,
+        "solid": 107,
+        "vertex": 29664
+      },
+      "xcaf_root_count": 1
+    },
+    {
+      "asset_id": "PDA100A2",
+      "bbox": {
+        "center_occt_mm": [
+          -1.2413578033447266,
+          10.44890022277832,
+          -10.909299954771996
+        ],
+        "max_occt_mm": [
+          25.0,
+          45.89780044555664,
+          0.3301999866962433
+        ],
+        "method": "FALLBACK_OCCT_TESSELLATED_STL_BBOX_AFTER_INVALID_BREP_BOUND",
+        "metres_per_occt_unit": 0.001,
+        "min_occt_mm": [
+          -27.482715606689453,
+          -25.0,
+          -22.148799896240234
+        ],
+        "occt_transfer_length_unit": "millimetre",
+        "size_occt_mm": [
+          52.48271560668945,
+          70.89780044555664,
+          22.478999882936478
+        ]
+      },
+      "brep_check_valid": true,
+      "native_length_unit_names": [
+        "INCH"
+      ],
+      "official_model": "PDA100A2",
+      "phase1_declared_native_length_unit": "inch",
+      "private_stl_sha256": "2f0a88897ac9c137381edb023bb39b8cec73ccdab3a08c0be9c237d846d74486",
+      "semantic_ports": {
+        "bbox_center": {
+          "axis_local": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "point_occt_mm": [
+            -1.2413578033447266,
+            10.44890022277832,
+            -10.909299954771996
+          ],
+          "status": "GEOMETRIC_DATUM_ONLY"
+        },
+        "sensor_center": {
+          "axis_local": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "point_occt_mm": [
+            -1.2413578033447266,
+            10.44890022277832,
+            -10.909299954771996
+          ],
+          "status": "BBOX_AXIS_INFERENCE_UNVERIFIED"
+        }
+      },
+      "source_step_sha256": "39e2a4456902af7de69b97a70acbc8ec52514944c52ef2ee7a8b313bdbb3e9ca",
+      "status": "OCCT_IMPORTED_SEMANTIC_INTERFACES_UNVERIFIED",
+      "topology_counts": {
+        "compound": 1,
+        "compsolid": 0,
+        "edge": 26890,
+        "face": 5174,
+        "shell": 141,
+        "solid": 141,
+        "vertex": 53780
+      },
+      "xcaf_root_count": 1
+    },
+    {
+      "asset_id": "SPDMH2",
+      "bbox": {
+        "center_occt_mm": [
+          -1.4210854715202004e-14,
+          33.090999999999994,
+          20.05
+        ],
+        "max_occt_mm": [
+          38.0,
+          86.00000009999998,
+          40.10000010000002
+        ],
+        "method": "BRepBndLib.AddOptimal(useTriangulation=false,useShapeTolerance=false)",
+        "metres_per_occt_unit": 0.001,
+        "min_occt_mm": [
+          -38.00000000000003,
+          -19.818000099999995,
+          -1.0000001421085471e-07
+        ],
+        "occt_transfer_length_unit": "millimetre",
+        "size_occt_mm": [
+          76.00000000000003,
+          105.81800019999997,
+          40.10000020000003
+        ]
+      },
+      "brep_check_valid": false,
+      "native_length_unit_names": [
+        "INCH"
+      ],
+      "official_model": "SPDMH2",
+      "phase1_declared_native_length_unit": "inch",
+      "private_stl_sha256": "f20677fdaaca4db655a36a2f41e0c2feceb4dccfab2ff84f04d07319b680e7c7",
+      "semantic_ports": {
+        "bbox_center": {
+          "axis_local": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "point_occt_mm": [
+            -1.4210854715202004e-14,
+            33.090999999999994,
+            20.05
+          ],
+          "status": "GEOMETRIC_DATUM_ONLY"
+        },
+        "sensor_center": {
+          "axis_local": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "point_occt_mm": [
+            -1.4210854715202004e-14,
+            33.090999999999994,
+            20.05
+          ],
+          "status": "BBOX_AXIS_INFERENCE_UNVERIFIED"
+        }
+      },
+      "source_step_sha256": "82a377dd2b1887b4be6f01bd85cec4a046c2863da072499ce81e0d55032814a4",
+      "status": "OCCT_IMPORTED_SEMANTIC_INTERFACES_UNVERIFIED",
+      "topology_counts": {
+        "compound": 1,
+        "compsolid": 0,
+        "edge": 17395,
+        "face": 3323,
+        "shell": 27,
+        "solid": 0,
+        "vertex": 34790
+      },
+      "xcaf_root_count": 1
+    },
+    {
+      "asset_id": "KM100",
+      "bbox": {
+        "center_occt_mm": [
+          0.2749288923777069,
+          17.134170434261435,
+          -1.2793328354094644
+        ],
+        "max_occt_mm": [
+          26.50042120483119,
+          36.78978980893055,
+          24.946174852133797
+        ],
+        "method": "BRepBndLib.AddOptimal(useTriangulation=false,useShapeTolerance=false)",
+        "metres_per_occt_unit": 0.001,
+        "min_occt_mm": [
+          -25.950563420075778,
+          -2.521448940407678,
+          -27.504840522952726
+        ],
+        "occt_transfer_length_unit": "millimetre",
+        "size_occt_mm": [
+          52.450984624906965,
+          39.31123874933823,
+          52.45101537508653
+        ]
+      },
+      "brep_check_valid": true,
+      "native_length_unit_names": [
+        "INCH"
+      ],
+      "official_model": "KM100",
+      "phase1_declared_native_length_unit": "inch",
+      "private_stl_sha256": "c05ec8a73ad24d7a786dfd362520dcff1b995fbea4d86b752e5ae1efe521f2a0",
+      "semantic_ports": {
+        "bbox_center": {
+          "axis_local": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "point_occt_mm": [
+            0.2749288923777069,
+            17.134170434261435,
+            -1.2793328354094644
+          ],
+          "status": "GEOMETRIC_DATUM_ONLY"
+        },
+        "support_axis": {
+          "axis_local": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "point_occt_mm": [
+            0.2749288923777069,
+            17.134170434261435,
+            -1.2793328354094644
+          ],
+          "status": "BBOX_INFERRED_AXIS_UNVERIFIED"
+        },
+        "support_bottom": {
+          "axis_local": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "point_occt_mm": [
+            0.2749288923777069,
+            -2.521448940407678,
+            -1.2793328354094644
+          ],
+          "status": "BBOX_INFERRED_INTERFACE_UNVERIFIED"
+        },
+        "support_top": {
+          "axis_local": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "point_occt_mm": [
+            0.2749288923777069,
+            36.78978980893055,
+            -1.2793328354094644
+          ],
+          "status": "BBOX_INFERRED_INTERFACE_UNVERIFIED"
+        }
+      },
+      "source_step_sha256": "1e93ada28a3ca69455bb189c920cb181dcbdcb3ea3e31e66f33c1e281c6e8b82",
+      "status": "OCCT_IMPORTED_SEMANTIC_INTERFACES_UNVERIFIED",
+      "topology_counts": {
+        "compound": 1,
+        "compsolid": 0,
+        "edge": 3464,
+        "face": 724,
+        "shell": 17,
+        "solid": 17,
+        "vertex": 6928
+      },
+      "xcaf_root_count": 1
+    },
+    {
+      "asset_id": "BB1-E03",
+      "bbox": {
+        "center_occt_mm": [
+          -34.412041284838324,
+          10.815336246650986,
+          10.810985302577517
+        ],
+        "max_occt_mm": [
+          -21.712041284838325,
+          23.515336246650985,
+          13.810985352577518
+        ],
+        "method": "BRepBndLib.AddOptimal(useTriangulation=false,useShapeTolerance=false)",
+        "metres_per_occt_unit": 0.001,
+        "min_occt_mm": [
+          -47.11204128483833,
+          -1.8846637533490131,
+          7.810985252577516
+        ],
+        "occt_transfer_length_unit": "millimetre",
+        "size_occt_mm": [
+          25.400000000000002,
+          25.4,
+          6.000000100000002
+        ]
+      },
+      "brep_check_valid": true,
+      "native_length_unit_names": [
+        "INCH"
+      ],
+      "official_model": "BB1-E03",
+      "phase1_declared_native_length_unit": "inch",
+      "private_stl_sha256": "c661ac9317175e345dc5f8833614fe2da50b244752c4c0c452002cfb4ec2cf0c",
+      "semantic_ports": {
+        "bbox_center": {
+          "axis_local": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "point_occt_mm": [
+            -34.412041284838324,
+            10.815336246650986,
+            10.810985302577517
+          ],
+          "status": "GEOMETRIC_DATUM_ONLY"
+        },
+        "front_surface": {
+          "axis_local": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "point_occt_mm": [
+            -34.412041284838324,
+            10.815336246650986,
+            13.810985352577518
+          ],
+          "status": "BBOX_FACE_INFERENCE_UNVERIFIED"
+        },
+        "optical_center": {
+          "axis_local": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "point_occt_mm": [
+            -34.412041284838324,
+            10.815336246650986,
+            10.810985302577517
+          ],
+          "status": "MINIMUM_BBOX_AXIS_INFERENCE_UNVERIFIED"
+        }
+      },
+      "source_step_sha256": "014ea3295d648282bfc9dae4eae54aa685583883cc356cc98097a472c0bdca6b",
+      "status": "OCCT_IMPORTED_SEMANTIC_INTERFACES_UNVERIFIED",
+      "topology_counts": {
+        "compound": 0,
+        "compsolid": 0,
+        "edge": 1162,
+        "face": 222,
+        "shell": 1,
+        "solid": 1,
+        "vertex": 2324
+      },
+      "xcaf_root_count": 1
+    },
+    {
+      "asset_id": "LMR1_M",
+      "bbox": {
+        "center_occt_mm": [
+          -9.515556774488232,
+          4.799568196290237,
+          1.760473873367192
+        ],
+        "max_occt_mm": [
+          5.724443225511765,
+          23.468568196290235,
+          6.840473923367193
+        ],
+        "method": "BRepBndLib.AddOptimal(useTriangulation=false,useShapeTolerance=false)",
+        "metres_per_occt_unit": 0.001,
+        "min_occt_mm": [
+          -24.75555677448823,
+          -13.86943180370976,
+          -3.3195261766328086
+        ],
+        "occt_transfer_length_unit": "millimetre",
+        "size_occt_mm": [
+          30.479999999999997,
+          37.337999999999994,
+          10.160000100000001
+        ]
+      },
+      "brep_check_valid": true,
+      "native_length_unit_names": [
+        "INCH"
+      ],
+      "official_model": "LMR1/M",
+      "phase1_declared_native_length_unit": "inch",
+      "private_stl_sha256": "1b0837d23aaa91e2c67b0355257f7294fc15d18fb0d443b6be3830aad3d563a2",
+      "semantic_ports": {
+        "bbox_center": {
+          "axis_local": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "point_occt_mm": [
+            -9.515556774488232,
+            4.799568196290237,
+            1.760473873367192
+          ],
+          "status": "GEOMETRIC_DATUM_ONLY"
+        }
+      },
+      "source_step_sha256": "cf779637f670686cc4b315f554d23d065e3a7ea55fdc3d188ffb21050cea832b",
+      "status": "OCCT_IMPORTED_SEMANTIC_INTERFACES_UNVERIFIED",
+      "topology_counts": {
+        "compound": 1,
+        "compsolid": 0,
+        "edge": 1386,
+        "face": 267,
+        "shell": 2,
+        "solid": 2,
+        "vertex": 2772
+      },
+      "xcaf_root_count": 1
+    },
+    {
+      "asset_id": "SM1D12C",
+      "bbox": {
+        "center_occt_mm": [
+          5.329070518200751e-15,
+          1.765299950000001,
+          6.5405
+        ],
+        "max_occt_mm": [
+          17.7800001,
+          21.3106,
+          13.081
+        ],
+        "method": "BRepBndLib.AddOptimal(useTriangulation=false,useShapeTolerance=false)",
+        "metres_per_occt_unit": 0.001,
+        "min_occt_mm": [
+          -17.780000099999988,
+          -17.7800001,
+          -2.220446049250313e-16
+        ],
+        "occt_transfer_length_unit": "millimetre",
+        "size_occt_mm": [
+          35.56000019999999,
+          39.0906001,
+          13.081
+        ]
+      },
+      "brep_check_valid": true,
+      "native_length_unit_names": [
+        "INCH"
+      ],
+      "official_model": "SM1D12C",
+      "phase1_declared_native_length_unit": "inch",
+      "private_stl_sha256": "9b181a157a548af70bdc4ff8fd3b3cfa717545164a046a530fc61c2313879bd1",
+      "semantic_ports": {
+        "bbox_center": {
+          "axis_local": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "point_occt_mm": [
+            5.329070518200751e-15,
+            1.765299950000001,
+            6.5405
+          ],
+          "status": "GEOMETRIC_DATUM_ONLY"
+        }
+      },
+      "source_step_sha256": "7b78faa7b13c840d873dc7d4d864689eb2f7e22e9ee7de207f5367a4f5951322",
+      "status": "OCCT_IMPORTED_SEMANTIC_INTERFACES_UNVERIFIED",
+      "topology_counts": {
+        "compound": 1,
+        "compsolid": 0,
+        "edge": 3756,
+        "face": 606,
+        "shell": 18,
+        "solid": 18,
+        "vertex": 7512
+      },
+      "xcaf_root_count": 1
+    },
+    {
+      "asset_id": "PT3_M",
+      "bbox": {
+        "center_occt_mm": [
+          -37.55719831700002,
+          107.40390000002604,
+          27.390601682987054
+        ],
+        "max_occt_mm": [
+          50.80000000000008,
+          219.3798000000327,
+          125.90780000000007
+        ],
+        "method": "BRepBndLib.AddOptimal(useTriangulation=false,useShapeTolerance=false)",
+        "metres_per_occt_unit": 0.001,
+        "min_occt_mm": [
+          -125.91439663400013,
+          -4.57199999998061,
+          -71.12659663402596
+        ],
+        "occt_transfer_length_unit": "millimetre",
+        "size_occt_mm": [
+          176.7143966340002,
+          223.95180000001332,
+          197.03439663402602
+        ]
+      },
+      "brep_check_valid": true,
+      "native_length_unit_names": [
+        "millimetre"
+      ],
+      "official_model": "PT3/M",
+      "phase1_declared_native_length_unit": "millimetre",
+      "private_stl_sha256": "f65e8675d306ac69ebb982753e289882b796e1fa7fd06700d8e64f4a3f665aa9",
+      "semantic_ports": {
+        "bbox_center": {
+          "axis_local": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "point_occt_mm": [
+            -37.55719831700002,
+            107.40390000002604,
+            27.390601682987054
+          ],
+          "status": "GEOMETRIC_DATUM_ONLY"
+        },
+        "support_axis": {
+          "axis_local": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "point_occt_mm": [
+            -37.55719831700002,
+            107.40390000002604,
+            27.390601682987054
+          ],
+          "status": "BBOX_INFERRED_AXIS_UNVERIFIED"
+        },
+        "support_bottom": {
+          "axis_local": [
+            -1.0,
+            0.0,
+            0.0
+          ],
+          "point_occt_mm": [
+            -125.91439663400013,
+            107.40390000002604,
+            27.390601682987054
+          ],
+          "status": "BBOX_INFERRED_INTERFACE_UNVERIFIED"
+        },
+        "support_top": {
+          "axis_local": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "point_occt_mm": [
+            50.80000000000008,
+            107.40390000002604,
+            27.390601682987054
+          ],
+          "status": "BBOX_INFERRED_INTERFACE_UNVERIFIED"
+        }
+      },
+      "source_step_sha256": "8ab3864dc31b7c58a0e6784392b4935a8bd80d141691ad88d18fc95c54251d8a",
+      "status": "OCCT_IMPORTED_SEMANTIC_INTERFACES_UNVERIFIED",
+      "topology_counts": {
+        "compound": 1,
+        "compsolid": 0,
+        "edge": 44760,
+        "face": 9067,
+        "shell": 212,
+        "solid": 212,
+        "vertex": 89520
+      },
+      "xcaf_root_count": 1
+    },
+    {
+      "asset_id": "BA1_M",
+      "bbox": {
+        "center_occt_mm": [
+          0.0,
+          0.0,
+          5.000000147248329e-08
+        ],
+        "max_occt_mm": [
+          37.5000001,
+          5.0000001,
+          12.496800100000002
+        ],
+        "method": "BRepBndLib.AddOptimal(useTriangulation=false,useShapeTolerance=false)",
+        "metres_per_occt_unit": 0.001,
+        "min_occt_mm": [
+          -37.5000001,
+          -5.0000001,
+          -12.496799999999999
+        ],
+        "occt_transfer_length_unit": "millimetre",
+        "size_occt_mm": [
+          75.0000002,
+          10.0000002,
+          24.993600100000002
+        ]
+      },
+      "brep_check_valid": true,
+      "native_length_unit_names": [
+        "millimetre"
+      ],
+      "official_model": "BA1/M",
+      "phase1_declared_native_length_unit": "millimetre",
+      "private_stl_sha256": "c78bc4b80b849b6f162a39a3be810ed9d171b693177c92c723dc937fa3518e32",
+      "semantic_ports": {
+        "bbox_center": {
+          "axis_local": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "point_occt_mm": [
+            0.0,
+            0.0,
+            5.000000147248329e-08
+          ],
+          "status": "GEOMETRIC_DATUM_ONLY"
+        },
+        "support_axis": {
+          "axis_local": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "point_occt_mm": [
+            0.0,
+            0.0,
+            5.000000147248329e-08
+          ],
+          "status": "BBOX_INFERRED_AXIS_UNVERIFIED"
+        },
+        "support_bottom": {
+          "axis_local": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "point_occt_mm": [
+            0.0,
+            -5.0000001,
+            5.000000147248329e-08
+          ],
+          "status": "BBOX_INFERRED_INTERFACE_UNVERIFIED"
+        },
+        "support_top": {
+          "axis_local": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "point_occt_mm": [
+            0.0,
+            5.0000001,
+            5.000000147248329e-08
+          ],
+          "status": "BBOX_INFERRED_INTERFACE_UNVERIFIED"
+        }
+      },
+      "source_step_sha256": "cb07a772a3893b4b44933de5c9efbe903be81be1efc2b91b8dc57914434a46a7",
+      "status": "OCCT_IMPORTED_SEMANTIC_INTERFACES_UNVERIFIED",
+      "topology_counts": {
+        "compound": 0,
+        "compsolid": 0,
+        "edge": 1176,
+        "face": 221,
+        "shell": 1,
+        "solid": 1,
+        "vertex": 2352
+      },
+      "xcaf_root_count": 1
+    },
+    {
+      "asset_id": "BSH1",
+      "bbox": {
+        "center_occt_mm": [
+          -5.000000236066171e-08,
+          5.000000058430487e-08,
+          1.7763568394002505e-15
+        ],
+        "max_occt_mm": [
+          19.050000000000008,
+          4.127500100000002,
+          19.050000000000004
+        ],
+        "method": "BRepBndLib.AddOptimal(useTriangulation=false,useShapeTolerance=false)",
+        "metres_per_occt_unit": 0.001,
+        "min_occt_mm": [
+          -19.050000100000013,
+          -4.1275,
+          -19.05
+        ],
+        "occt_transfer_length_unit": "millimetre",
+        "size_occt_mm": [
+          38.10000010000002,
+          8.255000100000002,
+          38.10000000000001
+        ]
+      },
+      "brep_check_valid": true,
+      "native_length_unit_names": [
+        "INCH"
+      ],
+      "official_model": "BSH1",
+      "phase1_declared_native_length_unit": "inch",
+      "private_stl_sha256": "d7fab58afee91c5d75913ac53df5b6cf9ee0e49d218e69da40d691c2c0bb45e6",
+      "semantic_ports": {
+        "bbox_center": {
+          "axis_local": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "point_occt_mm": [
+            -5.000000236066171e-08,
+            5.000000058430487e-08,
+            1.7763568394002505e-15
+          ],
+          "status": "GEOMETRIC_DATUM_ONLY"
+        },
+        "support_axis": {
+          "axis_local": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "point_occt_mm": [
+            -5.000000236066171e-08,
+            5.000000058430487e-08,
+            1.7763568394002505e-15
+          ],
+          "status": "BBOX_INFERRED_AXIS_UNVERIFIED"
+        },
+        "support_bottom": {
+          "axis_local": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "point_occt_mm": [
+            -5.000000236066171e-08,
+            -4.1275,
+            1.7763568394002505e-15
+          ],
+          "status": "BBOX_INFERRED_INTERFACE_UNVERIFIED"
+        },
+        "support_top": {
+          "axis_local": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "point_occt_mm": [
+            -5.000000236066171e-08,
+            4.127500100000002,
+            1.7763568394002505e-15
+          ],
+          "status": "BBOX_INFERRED_INTERFACE_UNVERIFIED"
+        }
+      },
+      "source_step_sha256": "980699e03aab71c745ef75e5f89d79ae48ed07d7c00424fbd908ad2fc5248472",
+      "status": "OCCT_IMPORTED_SEMANTIC_INTERFACES_UNVERIFIED",
+      "topology_counts": {
+        "compound": 1,
+        "compsolid": 0,
+        "edge": 3026,
+        "face": 608,
+        "shell": 9,
+        "solid": 9,
+        "vertex": 6052
+      },
+      "xcaf_root_count": 1
+    },
+    {
+      "asset_id": "WPH10M-808",
+      "bbox": {
+        "center_occt_mm": [
+          4.999999880794803e-08,
+          0.0,
+          -2.741250906268533e-07
+        ],
+        "max_occt_mm": [
+          6.3500001,
+          15.24,
+          15.240001095242517
+        ],
+        "method": "BRepBndLib.AddOptimal(useTriangulation=false,useShapeTolerance=false)",
+        "metres_per_occt_unit": 0.001,
+        "min_occt_mm": [
+          -6.350000000000002,
+          -15.24,
+          -15.240001643492699
+        ],
+        "occt_transfer_length_unit": "millimetre",
+        "size_occt_mm": [
+          12.700000100000002,
+          30.48,
+          30.480002738735216
+        ]
+      },
+      "brep_check_valid": true,
+      "native_length_unit_names": [
+        "millimetre"
+      ],
+      "official_model": "WPH10M-808",
+      "phase1_declared_native_length_unit": "millimetre",
+      "private_stl_sha256": "0b2f2ef4620743274fc71f21ed0c35371936c15370e94a1fcee344af552bc246",
+      "semantic_ports": {
+        "bbox_center": {
+          "axis_local": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "point_occt_mm": [
+            4.999999880794803e-08,
+            0.0,
+            -2.741250906268533e-07
+          ],
+          "status": "GEOMETRIC_DATUM_ONLY"
+        }
+      },
+      "source_step_sha256": "84954ee1576622b3165619be3dbdb7d73931ba1758aebb645b9378a90df3a10e",
+      "status": "OCCT_IMPORTED_SEMANTIC_INTERFACES_UNVERIFIED",
+      "topology_counts": {
+        "compound": 1,
+        "compsolid": 0,
+        "edge": 3042,
+        "face": 512,
+        "shell": 6,
+        "solid": 6,
+        "vertex": 6084
+      },
+      "xcaf_root_count": 1
+    },
+    {
+      "asset_id": "WPQ10M-808",
+      "bbox": {
+        "center_occt_mm": [
+          2.535366975638908,
+          5.329070518200751e-15,
+          -2.7412508885049647e-07
+        ],
+        "max_occt_mm": [
+          8.885367025638908,
+          15.240000000000006,
+          15.240001095242517
+        ],
+        "method": "BRepBndLib.AddOptimal(useTriangulation=false,useShapeTolerance=false)",
+        "metres_per_occt_unit": 0.001,
+        "min_occt_mm": [
+          -3.8146330743610926,
+          -15.239999999999995,
+          -15.240001643492695
+        ],
+        "occt_transfer_length_unit": "millimetre",
+        "size_occt_mm": [
+          12.7000001,
+          30.48,
+          30.480002738735212
+        ]
+      },
+      "brep_check_valid": true,
+      "native_length_unit_names": [
+        "millimetre"
+      ],
+      "official_model": "WPQ10M-808",
+      "phase1_declared_native_length_unit": "millimetre",
+      "private_stl_sha256": "b34f71434b6015950d76e014404c70ce21fbde00515f07e620baa0dde302c746",
+      "semantic_ports": {
+        "bbox_center": {
+          "axis_local": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "point_occt_mm": [
+            2.535366975638908,
+            5.329070518200751e-15,
+            -2.7412508885049647e-07
+          ],
+          "status": "GEOMETRIC_DATUM_ONLY"
+        }
+      },
+      "source_step_sha256": "51a38e7a9f0122f57f51d68bfadacff5bddb5648750efc7ad826caf4198491f0",
+      "status": "OCCT_IMPORTED_SEMANTIC_INTERFACES_UNVERIFIED",
+      "topology_counts": {
+        "compound": 1,
+        "compsolid": 0,
+        "edge": 3044,
+        "face": 513,
+        "shell": 6,
+        "solid": 6,
+        "vertex": 6088
+      },
+      "xcaf_root_count": 1
+    },
+    {
+      "asset_id": "RSP1_M",
+      "bbox": {
+        "center_occt_mm": [
+          0.0,
+          0.0,
+          -0.23114000876704566
+        ],
+        "max_occt_mm": [
+          28.194000100000004,
+          7.747000099999999,
+          27.731720100000004
+        ],
+        "method": "BRepBndLib.AddOptimal(useTriangulation=false,useShapeTolerance=false)",
+        "metres_per_occt_unit": 0.001,
+        "min_occt_mm": [
+          -28.194000100000004,
+          -7.747000099999999,
+          -28.194000117534095
+        ],
+        "occt_transfer_length_unit": "millimetre",
+        "size_occt_mm": [
+          56.38800020000001,
+          15.494000199999999,
+          55.9257202175341
+        ]
+      },
+      "brep_check_valid": true,
+      "native_length_unit_names": [
+        "INCH"
+      ],
+      "official_model": "RSP1/M",
+      "phase1_declared_native_length_unit": "inch",
+      "private_stl_sha256": "6acfc8bedde155e31adf8114b35445f73b2102a205dabbc474732914833087eb",
+      "semantic_ports": {
+        "bbox_center": {
+          "axis_local": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "point_occt_mm": [
+            0.0,
+            0.0,
+            -0.23114000876704566
+          ],
+          "status": "GEOMETRIC_DATUM_ONLY"
+        }
+      },
+      "source_step_sha256": "5e9084f9462d78df0206926a563da2f553474ea4a726c663213adac5fc39e774",
+      "status": "OCCT_IMPORTED_SEMANTIC_INTERFACES_UNVERIFIED",
+      "topology_counts": {
+        "compound": 1,
+        "compsolid": 0,
+        "edge": 12442,
+        "face": 2409,
+        "shell": 7,
+        "solid": 7,
+        "vertex": 24884
+      },
+      "xcaf_root_count": 1
+    },
+    {
+      "asset_id": "LJ1695L1-B",
+      "bbox": {
+        "center_occt_mm": [
+          0.0,
+          8.881784197001252e-16,
+          5.000000058430487e-08
+        ],
+        "max_occt_mm": [
+          16.000000100000005,
+          15.000000100000005,
+          3.4000001000000033
+        ],
+        "method": "BRepBndLib.AddOptimal(useTriangulation=false,useShapeTolerance=false)",
+        "metres_per_occt_unit": 0.001,
+        "min_occt_mm": [
+          -16.000000100000005,
+          -15.000000100000003,
+          -3.400000000000002
+        ],
+        "occt_transfer_length_unit": "millimetre",
+        "size_occt_mm": [
+          32.00000020000001,
+          30.00000020000001,
+          6.800000100000005
+        ]
+      },
+      "brep_check_valid": true,
+      "native_length_unit_names": [
+        "INCH"
+      ],
+      "official_model": "LJ1695L1-B",
+      "phase1_declared_native_length_unit": "inch",
+      "private_stl_sha256": "68ccae63ba0642b51a4dd5801540f88ebbadfe3ceaedc9ece9ff094ba3d3d1c9",
+      "semantic_ports": {
+        "bbox_center": {
+          "axis_local": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "point_occt_mm": [
+            0.0,
+            8.881784197001252e-16,
+            5.000000058430487e-08
+          ],
+          "status": "GEOMETRIC_DATUM_ONLY"
+        }
+      },
+      "source_step_sha256": "df510f985414d3b8ea927d68f21dc2b44bdcf1f7b9d23bac0607f2387cf1816d",
+      "status": "OCCT_IMPORTED_SEMANTIC_INTERFACES_UNVERIFIED",
+      "topology_counts": {
+        "compound": 0,
+        "compsolid": 0,
+        "edge": 78,
+        "face": 15,
+        "shell": 1,
+        "solid": 0,
+        "vertex": 156
+      },
+      "xcaf_root_count": 1
+    },
+    {
+      "asset_id": "CH1A",
+      "bbox": {
+        "center_occt_mm": [
+          21.209000000000003,
+          2.7559000499999775,
+          -29.20999995
+        ],
+        "max_occt_mm": [
+          42.41800010000001,
+          10.668000099999981,
+          1.000000001110223e-07
+        ],
+        "method": "BRepBndLib.AddOptimal(useTriangulation=false,useShapeTolerance=false)",
+        "metres_per_occt_unit": 0.001,
+        "min_occt_mm": [
+          -1.000000013010426e-07,
+          -5.156200000000026,
+          -58.42
+        ],
+        "occt_transfer_length_unit": "millimetre",
+        "size_occt_mm": [
+          42.41800020000001,
+          15.824200100000006,
+          58.4200001
+        ]
+      },
+      "brep_check_valid": true,
+      "native_length_unit_names": [
+        "millimetre"
+      ],
+      "official_model": "CH1A",
+      "phase1_declared_native_length_unit": "millimetre",
+      "private_stl_sha256": "58c33d4167b104634ff8e360b93b1e8dd46ca58071ca557e44ee6bc995cca37a",
+      "semantic_ports": {
+        "bbox_center": {
+          "axis_local": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "point_occt_mm": [
+            21.209000000000003,
+            2.7559000499999775,
+            -29.20999995
+          ],
+          "status": "GEOMETRIC_DATUM_ONLY"
+        }
+      },
+      "source_step_sha256": "764dde30db8b5c0e20107fc2fa70a34f01ce3f8c608e1216dd0e4aaed2decc91",
+      "status": "OCCT_IMPORTED_SEMANTIC_INTERFACES_UNVERIFIED",
+      "topology_counts": {
+        "compound": 1,
+        "compsolid": 0,
+        "edge": 1882,
+        "face": 379,
+        "shell": 8,
+        "solid": 8,
+        "vertex": 3764
+      },
+      "xcaf_root_count": 1
+    },
+    {
+      "asset_id": "MB60120_M",
+      "bbox": {
+        "center_occt_mm": [
+          1.1368683772161603e-13,
+          6.35000000000005,
+          5.0005525054075406e-08
+        ],
+        "max_occt_mm": [
+          600.0000000000002,
+          12.700000000000111,
+          300.0000001000112
+        ],
+        "method": "BRepBndLib.AddOptimal(useTriangulation=false,useShapeTolerance=false)",
+        "metres_per_occt_unit": 0.001,
+        "min_occt_mm": [
+          -600.0,
+          -1.0436096431476471e-14,
+          -300.00000000000017
+        ],
+        "occt_transfer_length_unit": "millimetre",
+        "size_occt_mm": [
+          1200.0000000000002,
+          12.700000000000122,
+          600.0000001000114
+        ]
+      },
+      "brep_check_valid": true,
+      "native_length_unit_names": [
+        "millimetre"
+      ],
+      "official_model": "MB60120/M",
+      "phase1_declared_native_length_unit": "millimetre",
+      "private_stl_sha256": "a871023288786a0933b5e1b4090ae7246ec633ae8e43d0dd8cf0c8589f75a7e7",
+      "semantic_ports": {
+        "bbox_center": {
+          "axis_local": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "point_occt_mm": [
+            1.1368683772161603e-13,
+            6.35000000000005,
+            5.0005525054075406e-08
+          ],
+          "status": "GEOMETRIC_DATUM_ONLY"
+        },
+        "top_surface_datum": {
+          "axis_local": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "point_occt_mm": [
+            1.1368683772161603e-13,
+            12.700000000000111,
+            5.0005525054075406e-08
+          ],
+          "status": "BBOX_DATUM_NOT_FACE_ID"
+        }
+      },
+      "source_step_sha256": "62f8427d474139aa0c01411b2602e5807befbf93257cc5119ad35f2e99e23b03",
+      "status": "OCCT_IMPORTED_SEMANTIC_INTERFACES_UNVERIFIED",
+      "topology_counts": {
+        "compound": 1,
+        "compsolid": 0,
+        "edge": 34064,
+        "face": 7255,
+        "shell": 1,
+        "solid": 1,
+        "vertex": 68128
+      },
+      "xcaf_root_count": 1
+    },
+    {
+      "asset_id": "BMF4_M",
+      "bbox": {
+        "center_occt_mm": [
+          0.0,
+          8.50000005,
+          0.0
+        ],
+        "max_occt_mm": [
+          9.5,
+          17.0000001,
+          9.5
+        ],
+        "method": "BRepBndLib.AddOptimal(useTriangulation=false,useShapeTolerance=false)",
+        "metres_per_occt_unit": 0.001,
+        "min_occt_mm": [
+          -9.5,
+          -1.7763568394002505e-15,
+          -9.5
+        ],
+        "occt_transfer_length_unit": "millimetre",
+        "size_occt_mm": [
+          19.0,
+          17.0000001,
+          19.0
+        ]
+      },
+      "brep_check_valid": true,
+      "native_length_unit_names": [
+        "INCH"
+      ],
+      "official_model": "BMF4/M",
+      "phase1_declared_native_length_unit": "inch",
+      "private_stl_sha256": "1f5212920cfa9dc4ee4f204dfc202a372ad52dbbcc751cfa1da334190aacff69",
+      "semantic_ports": {
+        "bbox_center": {
+          "axis_local": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "point_occt_mm": [
+            0.0,
+            8.50000005,
+            0.0
+          ],
+          "status": "GEOMETRIC_DATUM_ONLY"
+        },
+        "support_axis": {
+          "axis_local": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "point_occt_mm": [
+            0.0,
+            8.50000005,
+            0.0
+          ],
+          "status": "BBOX_INFERRED_AXIS_UNVERIFIED"
+        },
+        "support_bottom": {
+          "axis_local": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "point_occt_mm": [
+            0.0,
+            -1.7763568394002505e-15,
+            0.0
+          ],
+          "status": "BBOX_INFERRED_INTERFACE_UNVERIFIED"
+        },
+        "support_top": {
+          "axis_local": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "point_occt_mm": [
+            0.0,
+            17.0000001,
+            0.0
+          ],
+          "status": "BBOX_INFERRED_INTERFACE_UNVERIFIED"
+        }
+      },
+      "source_step_sha256": "880b387d0e7298fb068fe6a202054e408dd534ecc67e21ae9e38ec97648fc666",
+      "status": "OCCT_IMPORTED_SEMANTIC_INTERFACES_UNVERIFIED",
+      "topology_counts": {
+        "compound": 0,
+        "compsolid": 0,
+        "edge": 278,
+        "face": 59,
+        "shell": 1,
+        "solid": 1,
+        "vertex": 556
+      },
+      "xcaf_root_count": 1
+    },
+    {
+      "asset_id": "TR75_M",
+      "bbox": {
+        "center_occt_mm": [
+          0.0,
+          39.979600049999995,
+          0.0
+        ],
+        "max_occt_mm": [
+          6.3373001,
+          79.95920009999999,
+          6.3373001
+        ],
+        "method": "BRepBndLib.AddOptimal(useTriangulation=false,useShapeTolerance=false)",
+        "metres_per_occt_unit": 0.001,
+        "min_occt_mm": [
+          -6.3373001,
+          -1.1102230246251565e-16,
+          -6.3373001
+        ],
+        "occt_transfer_length_unit": "millimetre",
+        "size_occt_mm": [
+          12.6746002,
+          79.95920009999999,
+          12.6746002
+        ]
+      },
+      "brep_check_valid": true,
+      "native_length_unit_names": [
+        "millimetre"
+      ],
+      "official_model": "TR75/M",
+      "phase1_declared_native_length_unit": "millimetre",
+      "private_stl_sha256": "5e681a517fc19e7297f7de8a2c4b68b30aef30366ddca91fbc5c6da8942bad69",
+      "semantic_ports": {
+        "bbox_center": {
+          "axis_local": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "point_occt_mm": [
+            0.0,
+            39.979600049999995,
+            0.0
+          ],
+          "status": "GEOMETRIC_DATUM_ONLY"
+        },
+        "support_axis": {
+          "axis_local": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "point_occt_mm": [
+            0.0,
+            39.979600049999995,
+            0.0
+          ],
+          "status": "BBOX_INFERRED_AXIS_UNVERIFIED"
+        },
+        "support_bottom": {
+          "axis_local": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "point_occt_mm": [
+            0.0,
+            -1.1102230246251565e-16,
+            0.0
+          ],
+          "status": "BBOX_INFERRED_INTERFACE_UNVERIFIED"
+        },
+        "support_top": {
+          "axis_local": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "point_occt_mm": [
+            0.0,
+            79.95920009999999,
+            0.0
+          ],
+          "status": "BBOX_INFERRED_INTERFACE_UNVERIFIED"
+        }
+      },
+      "source_step_sha256": "eb1f1561ead23f7091de641fede6ef2a995e5304e6b118c5ee3be8fc71a7e9aa",
+      "status": "OCCT_IMPORTED_SEMANTIC_INTERFACES_UNVERIFIED",
+      "topology_counts": {
+        "compound": 1,
+        "compsolid": 0,
+        "edge": 328,
+        "face": 72,
+        "shell": 2,
+        "solid": 2,
+        "vertex": 656
+      },
+      "xcaf_root_count": 1
+    },
+    {
+      "asset_id": "PH75_M",
+      "bbox": {
+        "center_occt_mm": [
+          1.3906635743978768,
+          5.554710521419214,
+          0.24405874703114705
+        ],
+        "max_occt_mm": [
+          13.890663674397876,
+          43.054710571419214,
+          17.75260884703115
+        ],
+        "method": "BRepBndLib.AddOptimal(useTriangulation=false,useShapeTolerance=false)",
+        "metres_per_occt_unit": 0.001,
+        "min_occt_mm": [
+          -11.109336525602123,
+          -31.945289528580787,
+          -17.264491352968857
+        ],
+        "occt_transfer_length_unit": "millimetre",
+        "size_occt_mm": [
+          25.0000002,
+          75.0000001,
+          35.01710020000001
+        ]
+      },
+      "brep_check_valid": true,
+      "native_length_unit_names": [
+        "INCH"
+      ],
+      "official_model": "PH75/M",
+      "phase1_declared_native_length_unit": "inch",
+      "private_stl_sha256": "12ff31084f136acb7f577ca3f6253091dd339f7e4dcb6d01334fa3a3863e37c9",
+      "semantic_ports": {
+        "bbox_center": {
+          "axis_local": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "point_occt_mm": [
+            1.3906635743978768,
+            5.554710521419214,
+            0.24405874703114705
+          ],
+          "status": "GEOMETRIC_DATUM_ONLY"
+        },
+        "support_axis": {
+          "axis_local": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "point_occt_mm": [
+            1.3906635743978768,
+            5.554710521419214,
+            0.24405874703114705
+          ],
+          "status": "BBOX_INFERRED_AXIS_UNVERIFIED"
+        },
+        "support_bottom": {
+          "axis_local": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "point_occt_mm": [
+            1.3906635743978768,
+            -31.945289528580787,
+            0.24405874703114705
+          ],
+          "status": "BBOX_INFERRED_INTERFACE_UNVERIFIED"
+        },
+        "support_top": {
+          "axis_local": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "point_occt_mm": [
+            1.3906635743978768,
+            43.054710571419214,
+            0.24405874703114705
+          ],
+          "status": "BBOX_INFERRED_INTERFACE_UNVERIFIED"
+        }
+      },
+      "source_step_sha256": "ec26270fcc2f78c1a7041b56cb017be12abaf185ff9f8ec7d0b859ca04e2497c",
+      "status": "OCCT_IMPORTED_SEMANTIC_INTERFACES_UNVERIFIED",
+      "topology_counts": {
+        "compound": 1,
+        "compsolid": 0,
+        "edge": 2102,
+        "face": 408,
+        "shell": 6,
+        "solid": 6,
+        "vertex": 4204
+      },
+      "xcaf_root_count": 1
+    },
+    {
+      "asset_id": "BT500_M",
+      "bbox": {
+        "center_occt_mm": [
+          1.4210854715202004e-14,
+          -38.10000004999999,
+          0.0
+        ],
+        "max_occt_mm": [
+          62.61100000000002,
+          25.400000000000006,
+          19.05
+        ],
+        "method": "BRepBndLib.AddOptimal(useTriangulation=false,useShapeTolerance=false)",
+        "metres_per_occt_unit": 0.001,
+        "min_occt_mm": [
+          -62.61099999999999,
+          -101.60000009999999,
+          -19.05
+        ],
+        "occt_transfer_length_unit": "millimetre",
+        "size_occt_mm": [
+          125.22200000000001,
+          127.0000001,
+          38.1
+        ]
+      },
+      "brep_check_valid": true,
+      "native_length_unit_names": [
+        "INCH"
+      ],
+      "official_model": "BT500/M",
+      "phase1_declared_native_length_unit": "inch",
+      "private_stl_sha256": "878b27b3ff08a346362d0823ac4dff9dc5f110ffc5b5f6ebcb6f085f6b9554c5",
+      "semantic_ports": {
+        "bbox_center": {
+          "axis_local": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "point_occt_mm": [
+            1.4210854715202004e-14,
+            -38.10000004999999,
+            0.0
+          ],
+          "status": "GEOMETRIC_DATUM_ONLY"
+        }
+      },
+      "source_step_sha256": "9db6b4f2de7dfdf4ad9e2a4fd5b4bdfa735bf08e414839ea4e41c7638ecf3b05",
+      "status": "OCCT_IMPORTED_SEMANTIC_INTERFACES_UNVERIFIED",
+      "topology_counts": {
+        "compound": 1,
+        "compsolid": 0,
+        "edge": 256,
+        "face": 49,
+        "shell": 3,
+        "solid": 0,
+        "vertex": 512
+      },
+      "xcaf_root_count": 1
+    }
+  ],
+  "fail_closed": [
+    "All STEP hashes match the frozen Phase-1 CAD manifest; import and numeric bounds do not prove compatibility.",
+    "Per-file native units are preserved; no global scale assumption is permitted.",
+    "SPDMH2 and any other invalid BRep retain numeric-bound-only status; mesh cleanup cannot repair vendor BRep semantics.",
+    "Semantic ports are bbox/model datums unless an exact vendor face identity is separately established.",
+    "All original STEP and derived STL files remain PRIVATE_ONLY and are excluded from the public package."
+  ],
+  "global_status": "PARTIAL_SCOPED_OCCT_IMPORT; SEMANTIC_PORTS_AND_MECHANICAL_INTERFACES_UNVERIFIED",
+  "schema": "full-40-node-occt-native-summary-v1",
+  "scope": "ALL_30_SELECTED_OFFICIAL_CAD_FAMILIES_FOR_FULL_40_NODE_PROPAGATION"
+}

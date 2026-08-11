@@ -32,6 +32,12 @@ OpticalModeler は、実験室の光路を Blender で再構築する証拠優�
 
 匿名化済みの [G1/G2 ケーススタディ](examples/g1g2/README.md)には、2D 入力、3D レンダー、機械可読の受け入れ記録が含まれます。メーカー STEP/CAD と大容量の実験用 `.blend` は Git に含めません。
 
+## 公開 forward test
+
+[4 トラックの公開テスト行列](examples/forward-tests/README.md)は、公開 `v1.0.0` Skill だけを使用した light-sheet/N04、自由空間干渉計、OCT、Thorlabs CAD conversion の分離テストです。Sanitized evidence package、完全な workflow、generation log、replay script を公開し、N04 は propagation `PASS` / model `PARTIAL_SCOPED`、interferometer は `PARTIAL_SCOPED`、OCT は `UNVERIFIED`、CAD conversion は `BLOCKED` のまま保持します。
+
+公開 script の semantic replay、evidence 由来の README/GATE 数値、binary/PNG metadata の fail-closed scan が release gate に追加されました。Sanitization `PASS` は geometry/conversion `BLOCKED` を上書きしません。
+
 ## インストール
 
 ```bash

@@ -1,0 +1,90 @@
+{
+  "audit_scope": "PARTIAL_SCOPED",
+  "phase": "PHASE_2_REPRESENTATIVE_SMOKE",
+  "phase2_representative_smoke_gate": "UNVERIFIED",
+  "propagation_authorized": false,
+  "rows": [
+    {
+      "evidence": "0",
+      "gate": "PRIVATE_CONTEXT_READS",
+      "status": "PASS"
+    },
+    {
+      "evidence": "7513c352768915cb96c0161b842f04505af75b98cedab1f41d1259fd07ae8ce6",
+      "gate": "FROZEN_PHASE1_HASH",
+      "status": "PASS"
+    },
+    {
+      "evidence": "048766250538f169d924c31bbdd39bf0c255c63f",
+      "gate": "FIXED_PUBLIC_CHECKOUT",
+      "status": "PASS"
+    },
+    {
+      "evidence": "25bdb2e3f8ed0bac9d51b7a25fbea0f712a8d80346f2efc9dbe24d85e910c310",
+      "gate": "BLENDER_RUNTIME_LOCK",
+      "status": "PASS"
+    },
+    {
+      "evidence": "afe36b6abcc7964d0f8b0404ccb16e7c1f6ddd8e43b450c865f7e7f092440e9d",
+      "gate": "OCCT_XCAF_RUNTIME_LOCK",
+      "status": "PASS"
+    },
+    {
+      "evidence": "17 families; 52 instances; 50 ports",
+      "gate": "XCAF_NATIVE_AND_BLENDER_EVALUATED",
+      "status": "PASS"
+    },
+    {
+      "evidence": "PASS=9; UNVERIFIED=16",
+      "gate": "FREE_SPACE_ZERO_RADIUS",
+      "status": "UNVERIFIED"
+    },
+    {
+      "evidence": "6 physical runs / 10 semantic edges",
+      "gate": "GUIDED_FIBER",
+      "status": "PASS"
+    },
+    {
+      "evidence": "geometry PASS; connector standard and performance UNVERIFIED",
+      "gate": "ELECTRICAL_DATA_E52",
+      "status": "PARTIAL_SCOPED"
+    },
+    {
+      "evidence": "PASS=8 / 19",
+      "gate": "LOAD_PATHS_AND_CONTACTS",
+      "status": "UNVERIFIED"
+    },
+    {
+      "evidence": "0 undeclared triangle-BVH collision pairs",
+      "gate": "ILLEGAL_COLLISIONS",
+      "status": "PASS"
+    },
+    {
+      "evidence": "safe cleanup recorded; watertightness not claimed for all families",
+      "gate": "MESH_CLEANLINESS",
+      "status": "PARTIAL_SCOPED"
+    },
+    {
+      "evidence": "00fbe0b5822b01ed5ec29133e7505a8a06390974e3a88ef4642d8c91c60de26d",
+      "gate": "SAVED_BLEND_REOPEN",
+      "status": "PASS"
+    },
+    {
+      "evidence": "top/side/axial/cutaway",
+      "gate": "FOUR_RENDER_OPENCV",
+      "status": "PASS"
+    },
+    {
+      "evidence": "0 vendor CAD, derived mesh, or Blend files published",
+      "gate": "VENDOR_CAD_REDISTRIBUTION",
+      "status": "UNVERIFIED"
+    },
+    {
+      "evidence": "7 role nodes remain excluded or deferred",
+      "gate": "WHOLE_SYSTEM",
+      "status": "UNVERIFIED"
+    }
+  ],
+  "schema_version": "1.0",
+  "whole_system_status": "UNVERIFIED"
+}

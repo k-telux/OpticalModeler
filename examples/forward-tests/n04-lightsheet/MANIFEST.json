@@ -1,0 +1,152 @@
+{
+  "schema": "opticalmodeler.public-example-manifest.v1",
+  "status": "PASS",
+  "self_excluding": true,
+  "entries": [
+    {
+      "path": "BUILD_PARAMS.json",
+      "bytes": 56554,
+      "sha256": "69fb2f1a744093669fa1488f89a05809230f7eca723f0b2f3cde6702e3dc85dd"
+    },
+    {
+      "path": "BUILD_PARAMS_RECOMPUTE_AUDIT.json",
+      "bytes": 6311,
+      "sha256": "6e66d3c750f5d65ee5c0fda463b8740561a324339d05aa001fc9cb1f06272080"
+    },
+    {
+      "path": "CAD_MANIFEST.json",
+      "bytes": 278431,
+      "sha256": "db72d29c4a715fb0e0c562023846c3c3ca4c6b429993b7c4e32c920a9c08a809"
+    },
+    {
+      "path": "EXCLUSIONS.md",
+      "bytes": 1018,
+      "sha256": "fc8d2d5e57e1d59eff71cd1386230eb599612aa8bcb73923989e10b4dbf80ce8"
+    },
+    {
+      "path": "GENERATION_LOG.md",
+      "bytes": 2856,
+      "sha256": "34301cbe0d62436fa8d76d416325b40ad7d275c72a74e710816ce29c1282901c"
+    },
+    {
+      "path": "literature/Dibaji2024_article.pdf",
+      "bytes": 1671553,
+      "sha256": "2e45df56280998013a9a60ecfdbf109df7c0c20021e9117b01819d88bcbb902d"
+    },
+    {
+      "path": "literature/Dibaji2024_SuppFig2.png",
+      "bytes": 407832,
+      "sha256": "4533c6168a44a2252c0a4be59725d0c5bcd0aa4f2a6da7e3e155fd685c95ad59"
+    },
+    {
+      "path": "literature/Dibaji2024_supplement.pdf",
+      "bytes": 1947360,
+      "sha256": "ff9f59b32997a447e78650b05c5c692e8bdca53792d0882ca95f508ab982f5e4"
+    },
+    {
+      "path": "MECHANICAL_INTERFACE_LOCK.json",
+      "bytes": 11101,
+      "sha256": "42ae9f01eed042bf62153ddb1241c61f556cedb49ecb39f3ac37d3f0e7b7d881"
+    },
+    {
+      "path": "PUBLIC_EXAMPLE_GATE.json",
+      "bytes": 1741,
+      "sha256": "f7d4bcd86996bf3dc45711e4a84ae3b73273cc653ce0f8c6106c6b62c6e73f6b"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3055,
+      "sha256": "3633196b7ceb10069cd209013ef1e65aae9f05426f90d75f4733ce4059834f81"
+    },
+    {
+      "path": "renders/FAMILY_N04_reaudit.png",
+      "bytes": 1836060,
+      "sha256": "094b695ffad977f5c5d00935df33e87c3b683664d780f81d4ce0cdf7313e7536"
+    },
+    {
+      "path": "renders/FULL_32_overall_top.png",
+      "bytes": 1697588,
+      "sha256": "630338e2b16c2b7d3d33b75eb232794595e466e7a321165bcaef05a2ecb49bed"
+    },
+    {
+      "path": "REVOKED_FULL_32_NODE_PROPAGATION_GATE_v1.json",
+      "bytes": 1026,
+      "sha256": "924ef730729c8cbbd3dd4c251c56d5555e2b6c423176adaa84e24229f6cbe4ab"
+    },
+    {
+      "path": "REVOKED_FULL_32_NODE_PROPAGATION_GATE_v2.json",
+      "bytes": 1414,
+      "sha256": "75b9c254ddb60b6a040ba97844c857bc47c13b2125f653d0b131bee9fbdc3d9d"
+    },
+    {
+      "path": "SANITIZATION_REPORT.json",
+      "bytes": 1519,
+      "sha256": "d511fbbdc441d7b5421d293bd4529eddfd45f4a896e0af473c9f9669d96c693c"
+    },
+    {
+      "path": "scripts/audit_reopened_full.py",
+      "bytes": 39003,
+      "sha256": "a0b95a9955b08e027fff1387dabb0d5ae706334b391af22da3e2e273157802eb"
+    },
+    {
+      "path": "scripts/finalize_native_ports.py",
+      "bytes": 5933,
+      "sha256": "b663c418a87188125242cd1602f3a45b1cda02933929e2a15605ef28bd1c8560"
+    },
+    {
+      "path": "scripts/generate_full_scene.py",
+      "bytes": 51363,
+      "sha256": "f7a86e71c54ac2133a58ba137daa2ab45511b199d510c37bf9e2a4c9f7a4f880"
+    },
+    {
+      "path": "scripts/make_full_locks.py",
+      "bytes": 15076,
+      "sha256": "87135ccbb62c50b6e5371252daa75b2879ba982b2ec68c628b1746829d34d2c9"
+    },
+    {
+      "path": "scripts/opencv_audit_full.py",
+      "bytes": 9703,
+      "sha256": "3db91024c183d6d9eb4b12d395c556e0bcf1b1c88350f979ea01d44a71b60f5f"
+    },
+    {
+      "path": "scripts/prepare_full_cad.py",
+      "bytes": 16941,
+      "sha256": "83288748465a23a5751e4e5c017f9c820ba500d30bb3364d71b03a5ffc7f158d"
+    },
+    {
+      "path": "scripts/probe_mount_apertures.py",
+      "bytes": 3404,
+      "sha256": "2002ece2a27d24ffe85584317cc22f6c4fcefc3b4c8d45f055e361734d7503ad"
+    },
+    {
+      "path": "scripts/verify_and_render_gate.py",
+      "bytes": 16665,
+      "sha256": "3fc35556c757997f4e72a19168d81b4e70754bc887d514f70d47f0ac8720e98e"
+    },
+    {
+      "path": "scripts/verify_build_params_recompute.py",
+      "bytes": 5756,
+      "sha256": "af42cb081fff8b2a9cd3ef55b1e9633916bf2b0ea3b81ca99ccd59bc96a5e436"
+    },
+    {
+      "path": "SOURCE_ADDENDUM.json",
+      "bytes": 5060,
+      "sha256": "2781e96197aa77cd8fa0cf78a901c6b97a11be0d7bdb5fab0626968ebc6be515"
+    },
+    {
+      "path": "SOURCE_LOCK.json",
+      "bytes": 7102,
+      "sha256": "7b9f18aa536c3433184ca9c971b56c0708e85859cc41e34bfc537db1afc7b0d3"
+    },
+    {
+      "path": "TOPOLOGY_MAP.json",
+      "bytes": 68219,
+      "sha256": "d9f4c7ccaded318bc69ce0f4b3bd027afaddc3e211b9cabb6aeb8ff895237dd2"
+    },
+    {
+      "path": "WORKFLOW.md",
+      "bytes": 6431,
+      "sha256": "e1eb475264d87a4dba4e5915fbf16bab437a84df9b2d7c30168babfd3c9851ff"
+    }
+  ]
+}

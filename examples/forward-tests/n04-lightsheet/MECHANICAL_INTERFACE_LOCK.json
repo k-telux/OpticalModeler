@@ -1,0 +1,417 @@
+{
+  "schema": "opticalmodeler.full32.mechanical-interface-lock.v3",
+  "generated_utc": "2026-08-09T20:25:40.836068Z",
+  "status": "PASS",
+  "scope": "CAD_NATIVE_MOUNT_AXES_INTERFACE_SEATS_AND_MODELED_LOAD_WITNESSES",
+  "drawing_source_lock": [
+    {
+      "part_number": "POLARIS-K1T2",
+      "product_page_url": "https://www.thorlabs.com/item/POLARIS-K1T2",
+      "catalog_pdf_url": "https://thin01mstroc282prod.dxcloud.episerver.net/globalassets/items/p/po/pol/polaris-k1t2/ttn019973-e0w.pdf?v=0116021948",
+      "verified_official_media_url": "https://media.thorlabs.com/globalassets/items/p/po/pol/polaris-k1t2/ttn019973-e0w.pdf?v=0116021948",
+      "original_filename": "TTN019973-E0W.pdf",
+      "bytes": 356098,
+      "sha256": "6e28302739d67dc66413bf5f4f2eded36bb43d459b7b875b4c4716fa6aa38c20",
+      "retrieved_utc": "2026-08-09T20:08:53.639128Z",
+      "reverified_utc": "2026-08-09T18:45:28.755096Z",
+      "remote_reverification_status": "PASS",
+      "redistribution_status": "BLOCKED",
+      "redistribution_reason": "NO_EXPLICIT_VENDOR_DRAWING_REDISTRIBUTION_PERMISSION_FOUND",
+      "public_candidate_inclusion": false
+    },
+    {
+      "part_number": "KM2536",
+      "product_page_url": "https://www.thorlabs.com/item/KM2536",
+      "catalog_pdf_url": "https://thin01mstroc282prod.dxcloud.episerver.net/globalassets/items/k/km/km2/km2536/ttn304435-e0w.pdf?v=0116120016",
+      "verified_official_media_url": "https://media.thorlabs.com/globalassets/items/k/km/km2/km2536/ttn304435-e0w.pdf?v=0116120016",
+      "original_filename": "TTN304435-E0W.pdf",
+      "bytes": 183595,
+      "sha256": "f2465bf809bc846628e6b8df4404cab35d0889937a57ee2a52cc54077477459a",
+      "retrieved_utc": "2026-08-09T20:08:53.627409Z",
+      "reverified_utc": "2026-08-09T18:45:30.261187Z",
+      "remote_reverification_status": "PASS",
+      "redistribution_status": "BLOCKED",
+      "redistribution_reason": "NO_EXPLICIT_VENDOR_DRAWING_REDISTRIBUTION_PERMISSION_FOUND",
+      "public_candidate_inclusion": false
+    },
+    {
+      "part_number": "SM2RC/M",
+      "product_page_url": "https://www.thorlabs.com/item/SM2RC_M",
+      "catalog_pdf_url": "https://thin01mstroc282prod.dxcloud.episerver.net/globalassets/items/s/sm/sm2/sm2rc_m/13353-e0w.pdf?v=0116025918",
+      "verified_official_media_url": "https://media.thorlabs.com/globalassets/items/s/sm/sm2/sm2rc_m/13353-e0w.pdf?v=0116025918",
+      "original_filename": "13353-E0W.pdf",
+      "bytes": 134905,
+      "sha256": "6c7318c17ad7bdab7f6a03bf6a7bb99fc2788c5518b7461234a320204b90f2ca",
+      "retrieved_utc": "2026-08-09T20:08:53.644129Z",
+      "reverified_utc": "2026-08-09T18:45:33.916337Z",
+      "remote_reverification_status": "PASS",
+      "redistribution_status": "BLOCKED",
+      "redistribution_reason": "NO_EXPLICIT_VENDOR_DRAWING_REDISTRIBUTION_PERMISSION_FOUND",
+      "public_candidate_inclusion": false
+    },
+    {
+      "part_number": "LPSA5/M",
+      "product_page_url": "https://www.thorlabs.com/item/LPSA5_M",
+      "catalog_pdf_url": "https://thin01mstroc282prod.dxcloud.episerver.net/globalassets/items/l/lp/lps/lpsa5_m/etn035818-e0w.pdf?v=0116125736",
+      "verified_official_media_url": "https://media.thorlabs.com/globalassets/items/l/lp/lps/lpsa5_m/etn035818-e0w.pdf?v=0116125736",
+      "original_filename": "ETN035818-E0W.pdf",
+      "bytes": 139940,
+      "sha256": "7294a805c78ffd3b41b7a9c85ff4be508346bec09f798fd70a2ad978752db087",
+      "retrieved_utc": "2026-08-09T20:08:53.634415Z",
+      "reverified_utc": "2026-08-09T18:45:34.694901Z",
+      "remote_reverification_status": "PASS",
+      "redistribution_status": "BLOCKED",
+      "redistribution_reason": "NO_EXPLICIT_VENDOR_DRAWING_REDISTRIBUTION_PERMISSION_FOUND",
+      "public_candidate_inclusion": false
+    }
+  ],
+  "native_axis_rules": [
+    {
+      "part_number": "SM1RC/M",
+      "native_axis": [
+        0,
+        0,
+        1
+      ],
+      "native_up": [
+        0,
+        1,
+        0
+      ],
+      "origin_policy": "accepted N04 r3 lock for N04; optimal-bbox symmetry for other nodes"
+    },
+    {
+      "part_number": "SM2RC/M",
+      "native_axis": [
+        0,
+        0,
+        1
+      ],
+      "native_up": [
+        0,
+        1,
+        0
+      ],
+      "origin_mm": [
+        0,
+        0,
+        0
+      ],
+      "origin_policy": "manufacturer construction datum and official drawing axis"
+    },
+    {
+      "part_number": "SM1TC",
+      "native_axis": [
+        0,
+        0,
+        1
+      ],
+      "native_up": [
+        0,
+        1,
+        0
+      ],
+      "origin_policy": "CAD-native measured symmetry axis"
+    },
+    {
+      "part_number": "SM1ZM",
+      "native_axis": [
+        0,
+        0,
+        1
+      ],
+      "native_up": [
+        0,
+        1,
+        0
+      ],
+      "origin_policy": "CAD-native measured symmetry axis"
+    },
+    {
+      "part_number": "KM2536",
+      "native_axis": [
+        1,
+        0,
+        0
+      ],
+      "native_up": [
+        0,
+        0,
+        1
+      ],
+      "origin_policy": "CAD-native measured aperture/seat axis"
+    },
+    {
+      "part_number": "LMR1/M",
+      "native_axis": [
+        0,
+        0,
+        1
+      ],
+      "native_up": [
+        0,
+        1,
+        0
+      ],
+      "origin_policy": "CAD-native measured symmetry axis"
+    },
+    {
+      "part_number": "CLR1/M",
+      "native_axis": [
+        0,
+        0,
+        1
+      ],
+      "native_up": [
+        0,
+        1,
+        0
+      ],
+      "origin_policy": "CAD-native measured symmetry axis"
+    },
+    {
+      "part_number": "GHS003/M",
+      "native_axis": [
+        1,
+        0,
+        0
+      ],
+      "native_up": [
+        0,
+        1,
+        0
+      ],
+      "origin_policy": "CAD-native measured housing axis"
+    },
+    {
+      "part_number": "QSM5/M",
+      "native_axis": [
+        1,
+        0,
+        0
+      ],
+      "native_up": [
+        0,
+        1,
+        0
+      ],
+      "origin_policy": "CAD-native measured scanner axis"
+    },
+    {
+      "part_number": "M2M25S",
+      "native_axis": [
+        0,
+        1,
+        0
+      ],
+      "native_up": [
+        0,
+        0,
+        1
+      ],
+      "origin_policy": "CAD-native measured threaded axis"
+    },
+    {
+      "part_number": "POLARIS-K1T2",
+      "native_axis": [
+        1,
+        0,
+        0
+      ],
+      "native_up": [
+        0,
+        0,
+        1
+      ],
+      "origin_mm": [
+        0,
+        0,
+        0
+      ],
+      "origin_policy": "manufacturer construction datum and official drawing axis"
+    },
+    {
+      "part_number": "RSP1/M",
+      "native_axis": [
+        0,
+        1,
+        0
+      ],
+      "native_up": [
+        0,
+        0,
+        1
+      ],
+      "origin_policy": "CAD-native measured rotation axis"
+    },
+    {
+      "part_number": "LPSA5/M",
+      "native_axis": [
+        0,
+        0,
+        1
+      ],
+      "native_up": [
+        0,
+        1,
+        0
+      ],
+      "origin_policy": "CAD-native measured mirror-seat axis"
+    },
+    {
+      "part_number": "SM1A9",
+      "native_axis": [
+        1,
+        0,
+        0
+      ],
+      "native_up": [
+        0,
+        0,
+        1
+      ],
+      "origin_policy": "CAD-native measured threaded axis"
+    }
+  ],
+  "drawing_grounded_interfaces": [
+    {
+      "part_number": "POLARIS-K1T2",
+      "facts": [
+        "accepts 25.4 mm optic",
+        "22.8 mm transmissive clear aperture",
+        "two included retaining rings"
+      ],
+      "modeled_native_axis": [
+        1,
+        0,
+        0
+      ],
+      "modeled_native_origin_mm": [
+        0,
+        0,
+        0
+      ],
+      "mapped_nodes": [
+        "N20",
+        "N21",
+        "N28",
+        "N31"
+      ]
+    },
+    {
+      "part_number": "KM2536",
+      "facts": [
+        "accepts 25 x 36 x 1 mm optic",
+        "1 mm optic seat",
+        "spring clamps",
+        "25.4 mm clear aperture"
+      ],
+      "modeled_native_axis": [
+        1,
+        0,
+        0
+      ],
+      "surface_normal_setback_mm": 18.0,
+      "mapped_nodes": [
+        "N03",
+        "N26",
+        "N29"
+      ]
+    },
+    {
+      "part_number": "SM2RC/M",
+      "facts": [
+        "accepts SM2 lens tubes",
+        "M5 locking screw",
+        "M4 mounting hole"
+      ],
+      "modeled_native_axis": [
+        0,
+        0,
+        1
+      ],
+      "modeled_native_origin_mm": [
+        0,
+        0,
+        0
+      ],
+      "mapped_nodes": [
+        "N12",
+        "N13",
+        "N14",
+        "N16",
+        "N17",
+        "N18",
+        "N22",
+        "N25"
+      ]
+    },
+    {
+      "part_number": "LPSA5/M",
+      "facts": [
+        "7.2 mm mirror hole",
+        "2.0 mm seat depth",
+        "two M3 countersunk attachment holes"
+      ],
+      "modeled_native_axis": [
+        0,
+        0,
+        1
+      ],
+      "surface_normal_setback_mm": 3.5,
+      "mapped_nodes": [
+        "N24"
+      ]
+    }
+  ],
+  "load_path_evidence": {
+    "modeled_non_thorlabs_load_link_count": 156,
+    "all_links_labeled_non_thorlabs": true,
+    "all_endpoint_narrow_phase_bvh_status": "PASS",
+    "family_count_independently_gated": 16,
+    "N04_direct_official_clamp_optic_contact_pairs": 2425,
+    "N24_stage_controller_split": {
+      "stage_object": "OFFICIAL__N24__LPS710E_M__1__CAD1",
+      "stage_subrole": "GUIDED_PIEZO_STAGE",
+      "controller_object": "OFFICIAL__N24__LPS710E_M__1__CAD2",
+      "controller_subrole": "PAIRED_CONTROLLER",
+      "stage_link_objects": [
+        "MODELED_LOAD_LINK__N24__01",
+        "MODELED_LOAD_LINK__N24__02"
+      ],
+      "stage_endpoint_contacts": [
+        {
+          "kind": "to_object",
+          "object_name": "OFFICIAL__N24__LPS710E_M__1__CAD1",
+          "aabb_overlap": true,
+          "bvh_contact_pairs": 207,
+          "status": "PASS"
+        },
+        {
+          "kind": "from_object",
+          "object_name": "OFFICIAL__N24__LPS710E_M__1__CAD1",
+          "aabb_overlap": true,
+          "bvh_contact_pairs": 284,
+          "status": "PASS"
+        }
+      ],
+      "stage_endpoint_contact_count": 2,
+      "controller_in_load_path": false,
+      "status": "PASS",
+      "claim_boundary": "GEOMETRIC_MODELED_LOAD_PATH_ONLY; LITERAL_TRAVEL_AND_DYNAMIC_PERFORMANCE_BLOCKED"
+    }
+  },
+  "experimental_object": {
+    "node_id": "N15",
+    "identity": "MODELED_NON_THORLABS_LITERATURE_SPECIFIC_EXPERIMENTAL_CHAMBER",
+    "catalog_component_claim": false,
+    "official_thorlabs_claim": false,
+    "final_mesh_cleanliness_status": "PASS"
+  },
+  "claim_boundaries": {
+    "generic_fasteners_and_joining_witnesses": "MODELED_NON_THORLABS",
+    "force_torque_calibration": "BLOCKED",
+    "literal_paper_performance": "BLOCKED",
+    "vendor_cad_redistribution": "BLOCKED"
+  }
+}

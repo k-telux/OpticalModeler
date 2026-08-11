@@ -1,0 +1,20 @@
+{
+  "schema": "opticalmodeler.public-png-sanitization.v1",
+  "status": "PASS",
+  "records": [
+    {
+      "path": "../input/fig_s17_componentlibrary_g1g2.png",
+      "source_sha256": "482a43dd03a9caef821cc6e4360453eb4bcbac3ec87ce1223b923bd95075a576",
+      "public_sha256": "1114b1739d5851cbaaf82ace16cbc6c602f050349ae9d5ed11d532d92ebcb957",
+      "source_bytes": 97729,
+      "public_bytes": 97692,
+      "removed_chunks": {
+        "tEXt": 1
+      },
+      "ihdr_sha256": "6062b994b23fbcc7a0706f029a284e81bf035a3ab9a5c55f8e76768eed56d636",
+      "idat_sha256": "d163092b7b3e794b26bd9dafcd13eb81c415076d75ee6105fff2c2df40ecd284",
+      "decoded_scanline_sha256": "6ecadbd842eb3fa47f5b7849d6fb060ee12e1ef5cd030a7726abd440acf6dd75",
+      "pixel_data_unchanged": true
+    }
+  ]
+}

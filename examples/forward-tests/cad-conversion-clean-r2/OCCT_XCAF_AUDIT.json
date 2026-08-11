@@ -1,0 +1,1252 @@
+{
+  "execution_policy": "Four locked representatives only; rejected preflight retained; canonical r2 uses finite-part exact-geometry bbox, two sequential OCCT processes per item, incmesh parallel=0 and watson, no OCCT task overlaps, no GLB.",
+  "generated_at_utc": "2026-08-09T19:00:54Z",
+  "private_geometry_retained_outside_public_package": true,
+  "rejected_preflight": {
+    "private_revision_retained": true,
+    "reason": "PDA100A2 exact-geometry bbox included unbounded surface extents (+/-1e100), producing an invalid mesh policy and explicit OCCT Meshing statuses: Failure. Evidence remains in the private occt revision; no preflight geometry is public.",
+    "status": "REJECTED"
+  },
+  "result_count": 4,
+  "results": [
+    {
+      "brep_gate": "PASS",
+      "determinism_gate": {
+        "exact_material_library_repeat": true,
+        "exact_obj_sha256_repeat": true,
+        "semantic_signature_repeat": true,
+        "status": "PASS"
+      },
+      "locked_input": {
+        "bytes": 3366569,
+        "sha256": "2319526c7b54b1447a6a9603dbac6e8b31849199884c594614b0eb8b8437a358"
+      },
+      "name_retention_gate": {
+        "claim_limit": "Counts prove syntax retention only; they do not prove one-to-one assembly hierarchy retention.",
+        "obj_unique_group_count": 12,
+        "status": "PARTIAL_SCOPED",
+        "xcaf_assembly_like": true,
+        "xcaf_definition_name_count": 16,
+        "xcaf_definition_names_matched_in_obj_groups": 16,
+        "xcaf_named_shape_label_count": 49,
+        "xcaf_nomenclature_nonempty_line_count": 16
+      },
+      "native_bbox_gate": "PASS",
+      "partial_reasons": [
+        "name_retention_not_complete"
+      ],
+      "run1": {
+        "aggregate_brep_valid": true,
+        "aggregate_brep_validity": "This shape seems to be valid",
+        "aggregate_tolerance_report": "Tolerance MAX=9.9999999999999995e-08 AVG=9.9999999999999995e-08 MIN=9.9999999999999995e-08\nFACE    : MAX=9.9999999999999995e-08 AVG=9.9999999999999995e-08 MIN=9.9999999999999995e-08\nEDGE    : MAX=9.9999999999999995e-08 AVG=9.9999999999999995e-08 MIN=9.9999999999999995e-08\nVERTEX  : MAX=9.9999999999999995e-08 AVG=9.9999999999999995e-08 MIN=9.9999999999999995e-08",
+        "aggregate_topology": {
+          "compound": 1,
+          "compsolid": 0,
+          "edge": 7694,
+          "face": 2756,
+          "shape": 19181,
+          "shell": 46,
+          "solid": 46,
+          "vertex": 5076,
+          "wire": 3562
+        },
+        "all_faces_triangulated": true,
+        "document_length_scale_to_m": 0.001,
+        "document_length_unit": "mm",
+        "exit_code": 0,
+        "mesh_policy": {
+          "algorithm": "watson",
+          "angular_deflection_deg": 10,
+          "force_remesh": 1,
+          "interior_angle_deg": 10,
+          "linear_deflection_mm": 0.06734983296193095,
+          "minimum_size_mm": 0.006734983296193095,
+          "parallel": 0,
+          "relative": 0,
+          "source": "bounded_native_bbox"
+        },
+        "native_bbox_bounded": true,
+        "native_bbox_diagonal_mm": 673.4983296193094,
+        "native_bbox_mm": [
+          -2.842170943040401e-14,
+          0.0,
+          -300.00000000000006,
+          600.0,
+          59.99999999999999,
+          0.0
+        ],
+        "native_bbox_status": "BOUNDED",
+        "obj": {
+          "all_groups_nonempty": true,
+          "bytes": 19070722,
+          "counts": {
+            "face": 131520,
+            "group": 36,
+            "material_use": 0,
+            "normal": 135420,
+            "texture_coordinate": 135420,
+            "vertex": 135420
+          },
+          "group_name_max_length": 131,
+          "group_samples": [
+            "B3060A/107400 - Breadboard Top Skin_107400-02",
+            "B3060A/107435 - Corner Angle 60mm Breadboard",
+            "B3060A/107440 - Printed Desktop 49mm Width_107440-01 - 600mm Breadboard/107461 - Desktop Roll Cut to 49mm_METRIC - 900mm Breadboard",
+            "B3060A/107461 - Desktop Roll Cut to 49mm_METRIC - 300mm Breadboard",
+            "B3060A/107500 - Side Panel 300 x 60mm Breadboard/C Section^107500 - Side Panel 300 x 60mm Breadboard",
+            "B3060A/107500 - Side Panel 300 x 60mm Breadboard/End Cap^107500 - Side Panel 300 x 60mm Breadboard",
+            "B3060A/107500 - Side Panel 300 x 60mm Breadboard/Sealing Strip^107500 - Side Panel 300 x 60mm Breadboard",
+            "B3060A/107502 - Side Panel 600 x 60mm Breadboard/C Section^107502 - Side Panel 600 x 60mm Breadboard",
+            "B3060A/107502 - Side Panel 600 x 60mm Breadboard/End Cap^107502 - Side Panel 600 x 60mm Breadboard",
+            "B3060A/107502 - Side Panel 600 x 60mm Breadboard/Sealing Strip^107502 - Side Panel 600 x 60mm Breadboard",
+            "B3060A/107559 - Breadboard Base Skin 300 x 600",
+            "B3060A/FE0053 - 50mm Width Core_METRIC - 600mm Breadboard"
+          ],
+          "material_library": null,
+          "nonfinite_vertex_count": 0,
+          "root_group_samples": [
+            "B3060A"
+          ],
+          "sha256": "67086d6b1ecc074c94570371ccadb84d841c5d5a17729bb245482cc3a1ab9001",
+          "unique_group_count": 12,
+          "vertex_bbox_m": [
+            0.0,
+            0.0,
+            -0.3,
+            0.6,
+            0.06,
+            0.0
+          ]
+        },
+        "post_mesh_counts": {
+          "empty_face_count": 0,
+          "empty_face_line_present": false,
+          "face_count": 2756,
+          "maximal_deflection": 0.01189723022688522,
+          "node_count": 135420,
+          "polygon_on_triangulation_count": 15388,
+          "triangle_count": 131520
+        },
+        "post_mesh_info": "This shape contains 2756 faces.\n                    131520 triangles.\n                    135420 nodes.\n                    15388 polygons on triangulation.\nMaximal deflection 0.011897230226885221\nMeshing deflection 0.06734983296193095\nMeshing angular deflection 10\nMeshing min size 0.0067349832961930952",
+        "pre_mesh_info": "This shape contains 2756 faces.\n                    2756 empty faces.\n                    0 triangles.\n                    0 nodes.\n                    0 polygons on triangulation.\nMaximal deflection 0",
+        "private_log_bytes": 19474,
+        "private_log_retained": true,
+        "private_log_sha256": "1d5a92a0d03c2ec5a01a1f03f76778920a54d20520f66304945a8f6ae8e80d3f",
+        "serial_mesh_no_error": true,
+        "serial_mesh_result": "Incremental Mesh, multi-threading OFF\nMeshing statuses: NoError",
+        "step_file_unit": "millimetre",
+        "top_level_shape_count": 16,
+        "top_level_shapes": [
+          {
+            "brep_valid": true,
+            "brep_validity": "This shape seems to be valid",
+            "label": "0:1:1:1",
+            "location_summary": "Label 0:1:1:1 doesn't contain XCAFDoc_Location attribute",
+            "topology": {
+              "compound": 1,
+              "compsolid": 0,
+              "edge": 7694,
+              "face": 2756,
+              "shape": 19181,
+              "shell": 46,
+              "solid": 46,
+              "vertex": 5076,
+              "wire": 3562
+            }
+          },
+          {
+            "brep_valid": true,
+            "brep_validity": "This shape seems to be valid",
+            "label": "0:1:1:2",
+            "location_summary": "Label 0:1:1:2 doesn't contain XCAFDoc_Location attribute",
+            "topology": {
+              "compound": 0,
+              "compsolid": 0,
+              "edge": 96,
+              "face": 34,
+              "shape": 254,
+              "shell": 1,
+              "solid": 1,
+              "vertex": 64,
+              "wire": 58
+            }
+          },
+          {
+            "brep_valid": true,
+            "brep_validity": "This shape seems to be valid",
+            "label": "0:1:1:3",
+            "location_summary": "Label 0:1:1:3 doesn't contain XCAFDoc_Location attribute",
+            "topology": {
+              "compound": 1,
+              "compsolid": 0,
+              "edge": 274,
+              "face": 110,
+              "shape": 701,
+              "shell": 4,
+              "solid": 4,
+              "vertex": 172,
+              "wire": 136
+            }
+          },
+          {
+            "brep_valid": true,
+            "brep_validity": "This shape seems to be valid",
+            "label": "0:1:1:4",
+            "location_summary": "Label 0:1:1:4 doesn't contain XCAFDoc_Location attribute",
+            "topology": {
+              "compound": 0,
+              "compsolid": 0,
+              "edge": 100,
+              "face": 46,
+              "shape": 254,
+              "shell": 1,
+              "solid": 1,
+              "vertex": 56,
+              "wire": 50
+            }
+          },
+          {
+            "brep_valid": true,
+            "brep_validity": "This shape seems to be valid",
+            "label": "0:1:1:5",
+            "location_summary": "Label 0:1:1:5 doesn't contain XCAFDoc_Location attribute",
+            "topology": {
+              "compound": 0,
+              "compsolid": 0,
+              "edge": 126,
+              "face": 44,
+              "shape": 322,
+              "shell": 1,
+              "solid": 1,
+              "vertex": 84,
+              "wire": 66
+            }
+          },
+          {
+            "brep_valid": true,
+            "brep_validity": "This shape seems to be valid",
+            "label": "0:1:1:6",
+            "location_summary": "Label 0:1:1:6 doesn't contain XCAFDoc_Location attribute",
+            "topology": {
+              "compound": 0,
+              "compsolid": 0,
+              "edge": 24,
+              "face": 10,
+              "shape": 62,
+              "shell": 1,
+              "solid": 1,
+              "vertex": 16,
+              "wire": 10
+            }
+          },
+          {
+            "brep_valid": true,
+            "brep_validity": "This shape seems to be valid",
+            "label": "0:1:1:7",
+            "location_summary": "Label 0:1:1:7 doesn't contain XCAFDoc_Location attribute",
+            "topology": {
+              "compound": 1,
+              "compsolid": 0,
+              "edge": 442,
+              "face": 166,
+              "shape": 1121,
+              "shell": 4,
+              "solid": 4,
+              "vertex": 284,
+              "wire": 220
+            }
+          },
+          {
+            "brep_valid": true,
+            "brep_validity": "This shape seems to be valid",
+            "label": "0:1:1:8",
+            "location_summary": "Label 0:1:1:8 doesn't contain XCAFDoc_Location attribute",
+            "topology": {
+              "compound": 0,
+              "compsolid": 0,
+              "edge": 196,
+              "face": 78,
+              "shape": 482,
+              "shell": 1,
+              "solid": 1,
+              "vertex": 120,
+              "wire": 86
+            }
+          },
+          {
+            "brep_valid": true,
+            "brep_validity": "This shape seems to be valid",
+            "label": "0:1:1:9",
+            "location_summary": "Label 0:1:1:9 doesn't contain XCAFDoc_Location attribute",
+            "topology": {
+              "compound": 0,
+              "compsolid": 0,
+              "edge": 198,
+              "face": 68,
+              "shape": 514,
+              "shell": 1,
+              "solid": 1,
+              "vertex": 132,
+              "wire": 114
+            }
+          },
+          {
+            "brep_valid": true,
+            "brep_validity": "This shape seems to be valid",
+            "label": "0:1:1:10",
+            "location_summary": "Label 0:1:1:10 doesn't contain XCAFDoc_Location attribute",
+            "topology": {
+              "compound": 0,
+              "compsolid": 0,
+              "edge": 24,
+              "face": 10,
+              "shape": 62,
+              "shell": 1,
+              "solid": 1,
+              "vertex": 16,
+              "wire": 10
+            }
+          },
+          {
+            "brep_valid": true,
+            "brep_validity": "This shape seems to be valid",
+            "label": "0:1:1:11",
+            "location_summary": "Label 0:1:1:11 doesn't contain XCAFDoc_Location attribute",
+            "topology": {
+              "compound": 1,
+              "compsolid": 0,
+              "edge": 288,
+              "face": 100,
+              "shape": 685,
+              "shell": 2,
+              "solid": 2,
+              "vertex": 192,
+              "wire": 100
+            }
+          },
+          {
+            "brep_valid": true,
+            "brep_validity": "This shape seems to be valid",
+            "label": "0:1:1:12",
+            "location_summary": "Label 0:1:1:12 doesn't contain XCAFDoc_Location attribute",
+            "topology": {
+              "compound": 0,
+              "compsolid": 0,
+              "edge": 1752,
+              "face": 586,
+              "shape": 4670,
+              "shell": 1,
+              "solid": 1,
+              "vertex": 1168,
+              "wire": 1162
+            }
+          },
+          {
+            "brep_valid": true,
+            "brep_validity": "This shape seems to be valid",
+            "label": "0:1:1:13",
+            "location_summary": "Label 0:1:1:13 doesn't contain XCAFDoc_Location attribute",
+            "topology": {
+              "compound": 1,
+              "compsolid": 0,
+              "edge": 699,
+              "face": 258,
+              "shape": 1707,
+              "shell": 1,
+              "solid": 1,
+              "vertex": 466,
+              "wire": 281
+            }
+          },
+          {
+            "brep_valid": true,
+            "brep_validity": "This shape seems to be valid",
+            "label": "0:1:1:14",
+            "location_summary": "Label 0:1:1:14 doesn't contain XCAFDoc_Location attribute",
+            "topology": {
+              "compound": 0,
+              "compsolid": 0,
+              "edge": 699,
+              "face": 258,
+              "shape": 1706,
+              "shell": 1,
+              "solid": 1,
+              "vertex": 466,
+              "wire": 281
+            }
+          },
+          {
+            "brep_valid": true,
+            "brep_validity": "This shape seems to be valid",
+            "label": "0:1:1:15",
+            "location_summary": "Label 0:1:1:15 doesn't contain XCAFDoc_Location attribute",
+            "topology": {
+              "compound": 0,
+              "compsolid": 0,
+              "edge": 28,
+              "face": 14,
+              "shape": 74,
+              "shell": 1,
+              "solid": 1,
+              "vertex": 16,
+              "wire": 14
+            }
+          },
+          {
+            "brep_valid": true,
+            "brep_validity": "This shape seems to be valid",
+            "label": "0:1:1:16",
+            "location_summary": "Label 0:1:1:16 doesn't contain XCAFDoc_Location attribute",
+            "topology": {
+              "compound": 0,
+              "compsolid": 0,
+              "edge": 12,
+              "face": 6,
+              "shape": 34,
+              "shell": 1,
+              "solid": 1,
+              "vertex": 8,
+              "wire": 6
+            }
+          }
+        ],
+        "xcaf": {
+          "assembly_graph_node_syntax_count": 49,
+          "assembly_tree_nonempty_line_count": 43,
+          "color_definition_count": 0,
+          "definition_name_count": 16,
+          "definition_name_set_sha256": "8a43f62d91fdb8c111bd9cb2505444bc206136895705aa2d7e624c511d9c4b55",
+          "labels_with_color_link_count": 0,
+          "labels_with_layer_link_count": 0,
+          "labels_with_name_count": 49,
+          "labels_with_visual_material_link_count": 0,
+          "layer_definition_count": 0,
+          "nomenclature_nonempty_line_count": 16,
+          "private_full_tree_log_retained": true,
+          "shape_label_count": 49,
+          "visual_material_definition_count": 0
+        },
+        "xcaf_to_obj_definition_name_match_count": 16
+      },
+      "run2_repeat_evidence": {
+        "aggregate_brep_valid": true,
+        "aggregate_topology": {
+          "compound": 1,
+          "compsolid": 0,
+          "edge": 7694,
+          "face": 2756,
+          "shape": 19181,
+          "shell": 46,
+          "solid": 46,
+          "vertex": 5076,
+          "wire": 3562
+        },
+        "all_faces_triangulated": true,
+        "native_bbox_mm": [
+          -2.842170943040401e-14,
+          0.0,
+          -300.00000000000006,
+          600.0,
+          59.99999999999999,
+          0.0
+        ],
+        "native_bbox_status": "BOUNDED",
+        "obj": {
+          "all_groups_nonempty": true,
+          "bytes": 19070722,
+          "counts": {
+            "face": 131520,
+            "group": 36,
+            "material_use": 0,
+            "normal": 135420,
+            "texture_coordinate": 135420,
+            "vertex": 135420
+          },
+          "group_name_max_length": 131,
+          "group_samples": [
+            "B3060A/107400 - Breadboard Top Skin_107400-02",
+            "B3060A/107435 - Corner Angle 60mm Breadboard",
+            "B3060A/107440 - Printed Desktop 49mm Width_107440-01 - 600mm Breadboard/107461 - Desktop Roll Cut to 49mm_METRIC - 900mm Breadboard",
+            "B3060A/107461 - Desktop Roll Cut to 49mm_METRIC - 300mm Breadboard",
+            "B3060A/107500 - Side Panel 300 x 60mm Breadboard/C Section^107500 - Side Panel 300 x 60mm Breadboard",
+            "B3060A/107500 - Side Panel 300 x 60mm Breadboard/End Cap^107500 - Side Panel 300 x 60mm Breadboard",
+            "B3060A/107500 - Side Panel 300 x 60mm Breadboard/Sealing Strip^107500 - Side Panel 300 x 60mm Breadboard",
+            "B3060A/107502 - Side Panel 600 x 60mm Breadboard/C Section^107502 - Side Panel 600 x 60mm Breadboard",
+            "B3060A/107502 - Side Panel 600 x 60mm Breadboard/End Cap^107502 - Side Panel 600 x 60mm Breadboard",
+            "B3060A/107502 - Side Panel 600 x 60mm Breadboard/Sealing Strip^107502 - Side Panel 600 x 60mm Breadboard",
+            "B3060A/107559 - Breadboard Base Skin 300 x 600",
+            "B3060A/FE0053 - 50mm Width Core_METRIC - 600mm Breadboard"
+          ],
+          "material_library": null,
+          "nonfinite_vertex_count": 0,
+          "root_group_samples": [
+            "B3060A"
+          ],
+          "sha256": "67086d6b1ecc074c94570371ccadb84d841c5d5a17729bb245482cc3a1ab9001",
+          "unique_group_count": 12,
+          "vertex_bbox_m": [
+            0.0,
+            0.0,
+            -0.3,
+            0.6,
+            0.06,
+            0.0
+          ]
+        },
+        "post_mesh_counts": {
+          "empty_face_count": 0,
+          "empty_face_line_present": false,
+          "face_count": 2756,
+          "maximal_deflection": 0.01189723022688522,
+          "node_count": 135420,
+          "polygon_on_triangulation_count": 15388,
+          "triangle_count": 131520
+        },
+        "post_mesh_info": "This shape contains 2756 faces.\n                    131520 triangles.\n                    135420 nodes.\n                    15388 polygons on triangulation.\nMaximal deflection 0.011897230226885221\nMeshing deflection 0.06734983296193095\nMeshing angular deflection 10\nMeshing min size 0.0067349832961930952",
+        "private_log_bytes": 19474,
+        "private_log_sha256": "cc37446529f8540ff800ab131557dc3a82ffc8c7c4b1909923a3edcb2b35da0a",
+        "serial_mesh_no_error": true
+      },
+      "serial_mesh_gate": "PASS",
+      "sku": "B3060A",
+      "status": "PARTIAL_SCOPED",
+      "surface_classification": "manifold_solid_present",
+      "unit_gate": {
+        "document_length_scale_to_m": 0.001,
+        "document_length_unit": "mm",
+        "inch_to_mm_conversion_exercised": false,
+        "status": "PASS",
+        "step_file_unit": "millimetre"
+      },
+      "vendor_and_derived_geometry_publication": "PROHIBITED"
+    },
+    {
+      "brep_gate": "PASS",
+      "determinism_gate": {
+        "exact_material_library_repeat": true,
+        "exact_obj_sha256_repeat": true,
+        "semantic_signature_repeat": true,
+        "status": "PASS"
+      },
+      "locked_input": {
+        "bytes": 5807878,
+        "sha256": "d94f6d509fcdbaed28d2f9acda4c2eb953a05f42ed86b12efe5ebefbfb1fcbc1"
+      },
+      "name_retention_gate": {
+        "claim_limit": "Counts prove syntax retention only; they do not prove one-to-one assembly hierarchy retention.",
+        "obj_unique_group_count": 1,
+        "status": "PASS",
+        "xcaf_assembly_like": false,
+        "xcaf_definition_name_count": 1,
+        "xcaf_definition_names_matched_in_obj_groups": 1,
+        "xcaf_named_shape_label_count": 1,
+        "xcaf_nomenclature_nonempty_line_count": 1
+      },
+      "native_bbox_gate": "PASS",
+      "partial_reasons": [
+        "surface_only_no_manifold_solid"
+      ],
+      "run1": {
+        "aggregate_brep_valid": true,
+        "aggregate_brep_validity": "This shape seems to be valid",
+        "aggregate_tolerance_report": "Tolerance MAX=0.00039579392101298731 AVG=1.1946687423606147e-05 MIN=9.9999999999999995e-08\nFACE    : MAX=9.9999999999999995e-08 AVG=9.9999999999999995e-08 MIN=9.9999999999999995e-08\nEDGE    : MAX=0.00039579392101298731 AVG=7.1501603300061923e-06 MIN=9.9999999999999995e-08\nVERTEX  : MAX=0.00039579392101298731 AVG=1.5316085874915716e-05 MIN=9.9999999999999995e-08",
+        "aggregate_topology": {
+          "compound": 1,
+          "compsolid": 0,
+          "edge": 2019,
+          "face": 503,
+          "shape": 4581,
+          "shell": 2,
+          "solid": 0,
+          "vertex": 1456,
+          "wire": 600
+        },
+        "all_faces_triangulated": true,
+        "document_length_scale_to_m": 0.001,
+        "document_length_unit": "mm",
+        "exit_code": 0,
+        "mesh_policy": {
+          "algorithm": "watson",
+          "angular_deflection_deg": 10,
+          "force_remesh": 1,
+          "interior_angle_deg": 10,
+          "linear_deflection_mm": 0.01,
+          "minimum_size_mm": 0.001,
+          "parallel": 0,
+          "relative": 0,
+          "source": "bounded_native_bbox"
+        },
+        "native_bbox_bounded": true,
+        "native_bbox_diagonal_mm": 51.54283771685565,
+        "native_bbox_mm": [
+          -23.074092229049274,
+          -35.97503710138287,
+          6.228881796447996,
+          15.715907770950725,
+          -11.9750368866721,
+          30.22888199644801
+        ],
+        "native_bbox_status": "BOUNDED",
+        "obj": {
+          "all_groups_nonempty": true,
+          "bytes": 4017008,
+          "counts": {
+            "face": 32313,
+            "group": 1,
+            "material_use": 58,
+            "normal": 28049,
+            "texture_coordinate": 28049,
+            "vertex": 28049
+          },
+          "group_name_max_length": 13,
+          "group_samples": [
+            "TTN088605-E0W"
+          ],
+          "material_library": {
+            "bytes": 650,
+            "sha256": "b9948527fff181697ca17cea692cdc71f3618fc2ef4a7f2710535423c5939446"
+          },
+          "nonfinite_vertex_count": 0,
+          "root_group_samples": [
+            "TTN088605-E0W"
+          ],
+          "sha256": "3dacce536455332ef609f3bdd95c688904a695433720aaf49d7e3aaa555632ac",
+          "unique_group_count": 1,
+          "vertex_bbox_m": [
+            -0.023074,
+            -0.035975,
+            0.006229,
+            0.015716,
+            -0.011975,
+            0.030229
+          ]
+        },
+        "post_mesh_counts": {
+          "empty_face_count": 0,
+          "empty_face_line_present": false,
+          "face_count": 503,
+          "maximal_deflection": 0.041242339079493914,
+          "node_count": 28049,
+          "polygon_on_triangulation_count": 3068,
+          "triangle_count": 32313
+        },
+        "post_mesh_info": "This shape contains 503 faces.\n                    32313 triangles.\n                    28049 nodes.\n                    3068 polygons on triangulation.\nMaximal deflection 0.041242339079493914\nMeshing deflection 0.01\nMeshing angular deflection 10\nMeshing min size 0.001",
+        "pre_mesh_info": "This shape contains 503 faces.\n                    503 empty faces.\n                    0 triangles.\n                    0 nodes.\n                    0 polygons on triangulation.\nMaximal deflection 0",
+        "private_log_bytes": 5173,
+        "private_log_retained": true,
+        "private_log_sha256": "bcca6af61d87579a14e14eb6020a78dc0ea059266befb3c3dcb929faba89ccf0",
+        "serial_mesh_no_error": true,
+        "serial_mesh_result": "Incremental Mesh, multi-threading OFF\nMeshing statuses: NoError",
+        "step_file_unit": "inch",
+        "top_level_shape_count": 1,
+        "top_level_shapes": [
+          {
+            "brep_valid": true,
+            "brep_validity": "This shape seems to be valid",
+            "label": "0:1:1:1",
+            "location_summary": "Label 0:1:1:1 doesn't contain XCAFDoc_Location attribute",
+            "topology": {
+              "compound": 1,
+              "compsolid": 0,
+              "edge": 2019,
+              "face": 503,
+              "shape": 4581,
+              "shell": 2,
+              "solid": 0,
+              "vertex": 1456,
+              "wire": 600
+            }
+          }
+        ],
+        "xcaf": {
+          "assembly_graph_node_syntax_count": 1,
+          "assembly_tree_nonempty_line_count": 1,
+          "color_definition_count": 6,
+          "definition_name_count": 1,
+          "definition_name_set_sha256": "c7c8c43a95915d3c1fb7d6adccf6e135c4f2dbaaba1f0a9ff9936d7cecd12ad2",
+          "labels_with_color_link_count": 504,
+          "labels_with_layer_link_count": 0,
+          "labels_with_name_count": 1,
+          "labels_with_visual_material_link_count": 0,
+          "layer_definition_count": 0,
+          "nomenclature_nonempty_line_count": 1,
+          "private_full_tree_log_retained": true,
+          "shape_label_count": 504,
+          "visual_material_definition_count": 0
+        },
+        "xcaf_to_obj_definition_name_match_count": 1
+      },
+      "run2_repeat_evidence": {
+        "aggregate_brep_valid": true,
+        "aggregate_topology": {
+          "compound": 1,
+          "compsolid": 0,
+          "edge": 2019,
+          "face": 503,
+          "shape": 4581,
+          "shell": 2,
+          "solid": 0,
+          "vertex": 1456,
+          "wire": 600
+        },
+        "all_faces_triangulated": true,
+        "native_bbox_mm": [
+          -23.074092229049274,
+          -35.97503710138287,
+          6.228881796447996,
+          15.715907770950725,
+          -11.9750368866721,
+          30.22888199644801
+        ],
+        "native_bbox_status": "BOUNDED",
+        "obj": {
+          "all_groups_nonempty": true,
+          "bytes": 4017008,
+          "counts": {
+            "face": 32313,
+            "group": 1,
+            "material_use": 58,
+            "normal": 28049,
+            "texture_coordinate": 28049,
+            "vertex": 28049
+          },
+          "group_name_max_length": 13,
+          "group_samples": [
+            "TTN088605-E0W"
+          ],
+          "material_library": {
+            "bytes": 650,
+            "sha256": "b9948527fff181697ca17cea692cdc71f3618fc2ef4a7f2710535423c5939446"
+          },
+          "nonfinite_vertex_count": 0,
+          "root_group_samples": [
+            "TTN088605-E0W"
+          ],
+          "sha256": "3dacce536455332ef609f3bdd95c688904a695433720aaf49d7e3aaa555632ac",
+          "unique_group_count": 1,
+          "vertex_bbox_m": [
+            -0.023074,
+            -0.035975,
+            0.006229,
+            0.015716,
+            -0.011975,
+            0.030229
+          ]
+        },
+        "post_mesh_counts": {
+          "empty_face_count": 0,
+          "empty_face_line_present": false,
+          "face_count": 503,
+          "maximal_deflection": 0.041242339079493914,
+          "node_count": 28049,
+          "polygon_on_triangulation_count": 3068,
+          "triangle_count": 32313
+        },
+        "post_mesh_info": "This shape contains 503 faces.\n                    32313 triangles.\n                    28049 nodes.\n                    3068 polygons on triangulation.\nMaximal deflection 0.041242339079493914\nMeshing deflection 0.01\nMeshing angular deflection 10\nMeshing min size 0.001",
+        "private_log_bytes": 5173,
+        "private_log_sha256": "348a1553031759231467a8be8ee0a7b79341d3cb2f25354acf1be4a23f9b8e9d",
+        "serial_mesh_no_error": true
+      },
+      "serial_mesh_gate": "PASS",
+      "sku": "RMS10X",
+      "status": "PARTIAL_SCOPED",
+      "surface_classification": "surface_only_partial",
+      "unit_gate": {
+        "document_length_scale_to_m": 0.001,
+        "document_length_unit": "mm",
+        "inch_to_mm_conversion_exercised": true,
+        "status": "PASS",
+        "step_file_unit": "inch"
+      },
+      "vendor_and_derived_geometry_publication": "PROHIBITED"
+    },
+    {
+      "brep_gate": "PASS",
+      "determinism_gate": {
+        "exact_material_library_repeat": true,
+        "exact_obj_sha256_repeat": true,
+        "semantic_signature_repeat": true,
+        "status": "PASS"
+      },
+      "locked_input": {
+        "bytes": 29128874,
+        "sha256": "d41eb340331d24aa1d9555f772ef79df41929d8d377529b87dd966902d1df4ab"
+      },
+      "name_retention_gate": {
+        "claim_limit": "Counts prove syntax retention only; they do not prove one-to-one assembly hierarchy retention.",
+        "obj_unique_group_count": 1,
+        "status": "PASS",
+        "xcaf_assembly_like": false,
+        "xcaf_definition_name_count": 1,
+        "xcaf_definition_names_matched_in_obj_groups": 1,
+        "xcaf_named_shape_label_count": 1,
+        "xcaf_nomenclature_nonempty_line_count": 1
+      },
+      "native_bbox_gate": "PASS",
+      "partial_reasons": [],
+      "run1": {
+        "aggregate_brep_valid": true,
+        "aggregate_brep_validity": "This shape seems to be valid",
+        "aggregate_tolerance_report": "Tolerance MAX=0.012899749194199816 AVG=7.8142699342947781e-05 MIN=9.9999999999999995e-08\nFACE    : MAX=9.9999999999999995e-08 AVG=9.9999999999999995e-08 MIN=9.9999999999999995e-08\nEDGE    : MAX=0.009276385871809437 AVG=4.2454780937208154e-05 MIN=9.9999999999999995e-08\nVERTEX  : MAX=0.012899749194199816 AVG=0.00010371388580487991 MIN=9.9999999999999995e-08",
+        "aggregate_topology": {
+          "compound": 1,
+          "compsolid": 0,
+          "edge": 15392,
+          "face": 6058,
+          "shape": 38246,
+          "shell": 156,
+          "solid": 156,
+          "vertex": 9736,
+          "wire": 6747
+        },
+        "all_faces_triangulated": true,
+        "document_length_scale_to_m": 0.001,
+        "document_length_unit": "mm",
+        "exit_code": 0,
+        "mesh_policy": {
+          "algorithm": "watson",
+          "angular_deflection_deg": 10,
+          "force_remesh": 1,
+          "interior_angle_deg": 10,
+          "linear_deflection_mm": 0.021706015158187705,
+          "minimum_size_mm": 0.0021706015158187704,
+          "parallel": 0,
+          "relative": 0,
+          "source": "bounded_native_bbox"
+        },
+        "native_bbox_bounded": true,
+        "native_bbox_diagonal_mm": 217.06015158187702,
+        "native_bbox_mm": [
+          -40.485033062544225,
+          -0.20000009999999782,
+          73.03799548426936,
+          122.50829755285386,
+          87.30000000000001,
+          186.5810866970198
+        ],
+        "native_bbox_status": "BOUNDED",
+        "obj": {
+          "all_groups_nonempty": true,
+          "bytes": 340530938,
+          "counts": {
+            "face": 2997614,
+            "group": 1,
+            "material_use": 497,
+            "normal": 1662079,
+            "texture_coordinate": 1662079,
+            "vertex": 1662079
+          },
+          "group_name_max_length": 9,
+          "group_samples": [
+            "MBT613D-M"
+          ],
+          "material_library": {
+            "bytes": 2907,
+            "sha256": "d351950d2744a4c0ab4875d4976a1c75f75a4e334567b780de030a9162bcb228"
+          },
+          "nonfinite_vertex_count": 0,
+          "root_group_samples": [
+            "MBT613D-M"
+          ],
+          "sha256": "95428e3a1009498edd283a023538c77714ce54228a133053fc01765abdf6561e",
+          "unique_group_count": 1,
+          "vertex_bbox_m": [
+            -0.040485,
+            -0.0002,
+            0.073038,
+            0.122508,
+            0.0873,
+            0.186581
+          ]
+        },
+        "post_mesh_counts": {
+          "empty_face_count": 0,
+          "empty_face_line_present": false,
+          "face_count": 6058,
+          "maximal_deflection": 0.07335270896891725,
+          "node_count": 1662079,
+          "polygon_on_triangulation_count": 30567,
+          "triangle_count": 2997614
+        },
+        "post_mesh_info": "This shape contains 6058 faces.\n                    2997614 triangles.\n                    1662079 nodes.\n                    30567 polygons on triangulation.\nMaximal deflection 0.073352708968917255\nMeshing deflection 0.021706015158187705\nMeshing angular deflection 10\nMeshing min size 0.0021706015158187704",
+        "pre_mesh_info": "This shape contains 6058 faces.\n                    6058 empty faces.\n                    0 triangles.\n                    0 nodes.\n                    0 polygons on triangulation.\nMaximal deflection 0",
+        "private_log_bytes": 5538,
+        "private_log_retained": true,
+        "private_log_sha256": "d7ce5f56e0b5fcc5dfe2688e67305ac95c22ac07d3a5dd8c3cdaae1af3f9e570",
+        "serial_mesh_no_error": true,
+        "serial_mesh_result": "Incremental Mesh, multi-threading OFF\nMeshing statuses: NoError",
+        "step_file_unit": "millimetre",
+        "top_level_shape_count": 1,
+        "top_level_shapes": [
+          {
+            "brep_valid": true,
+            "brep_validity": "This shape seems to be valid",
+            "label": "0:1:1:1",
+            "location_summary": "Label 0:1:1:1 doesn't contain XCAFDoc_Location attribute",
+            "topology": {
+              "compound": 1,
+              "compsolid": 0,
+              "edge": 15392,
+              "face": 6058,
+              "shape": 38246,
+              "shell": 156,
+              "solid": 156,
+              "vertex": 9736,
+              "wire": 6747
+            }
+          }
+        ],
+        "xcaf": {
+          "assembly_graph_node_syntax_count": 1,
+          "assembly_tree_nonempty_line_count": 1,
+          "color_definition_count": 24,
+          "definition_name_count": 1,
+          "definition_name_set_sha256": "2119bc71565aab130783a91e798e9317e8f4a9b76239c3737fa3f00b8d8a0ebf",
+          "labels_with_color_link_count": 6215,
+          "labels_with_layer_link_count": 0,
+          "labels_with_name_count": 1,
+          "labels_with_visual_material_link_count": 0,
+          "layer_definition_count": 0,
+          "nomenclature_nonempty_line_count": 1,
+          "private_full_tree_log_retained": true,
+          "shape_label_count": 6215,
+          "visual_material_definition_count": 0
+        },
+        "xcaf_to_obj_definition_name_match_count": 1
+      },
+      "run2_repeat_evidence": {
+        "aggregate_brep_valid": true,
+        "aggregate_topology": {
+          "compound": 1,
+          "compsolid": 0,
+          "edge": 15392,
+          "face": 6058,
+          "shape": 38246,
+          "shell": 156,
+          "solid": 156,
+          "vertex": 9736,
+          "wire": 6747
+        },
+        "all_faces_triangulated": true,
+        "native_bbox_mm": [
+          -40.485033062544225,
+          -0.20000009999999782,
+          73.03799548426936,
+          122.50829755285386,
+          87.30000000000001,
+          186.5810866970198
+        ],
+        "native_bbox_status": "BOUNDED",
+        "obj": {
+          "all_groups_nonempty": true,
+          "bytes": 340530938,
+          "counts": {
+            "face": 2997614,
+            "group": 1,
+            "material_use": 497,
+            "normal": 1662079,
+            "texture_coordinate": 1662079,
+            "vertex": 1662079
+          },
+          "group_name_max_length": 9,
+          "group_samples": [
+            "MBT613D-M"
+          ],
+          "material_library": {
+            "bytes": 2907,
+            "sha256": "d351950d2744a4c0ab4875d4976a1c75f75a4e334567b780de030a9162bcb228"
+          },
+          "nonfinite_vertex_count": 0,
+          "root_group_samples": [
+            "MBT613D-M"
+          ],
+          "sha256": "95428e3a1009498edd283a023538c77714ce54228a133053fc01765abdf6561e",
+          "unique_group_count": 1,
+          "vertex_bbox_m": [
+            -0.040485,
+            -0.0002,
+            0.073038,
+            0.122508,
+            0.0873,
+            0.186581
+          ]
+        },
+        "post_mesh_counts": {
+          "empty_face_count": 0,
+          "empty_face_line_present": false,
+          "face_count": 6058,
+          "maximal_deflection": 0.07335270896891725,
+          "node_count": 1662079,
+          "polygon_on_triangulation_count": 30567,
+          "triangle_count": 2997614
+        },
+        "post_mesh_info": "This shape contains 6058 faces.\n                    2997614 triangles.\n                    1662079 nodes.\n                    30567 polygons on triangulation.\nMaximal deflection 0.073352708968917255\nMeshing deflection 0.021706015158187705\nMeshing angular deflection 10\nMeshing min size 0.0021706015158187704",
+        "private_log_bytes": 5538,
+        "private_log_sha256": "a9d12b530e4ce068977596612163646fb3354df6899b308e816c0537546da1e6",
+        "serial_mesh_no_error": true
+      },
+      "serial_mesh_gate": "PASS",
+      "sku": "MBT613D/M",
+      "status": "PASS",
+      "surface_classification": "manifold_solid_present",
+      "unit_gate": {
+        "document_length_scale_to_m": 0.001,
+        "document_length_unit": "mm",
+        "inch_to_mm_conversion_exercised": false,
+        "status": "PASS",
+        "step_file_unit": "millimetre"
+      },
+      "vendor_and_derived_geometry_publication": "PROHIBITED"
+    },
+    {
+      "brep_gate": "PASS",
+      "determinism_gate": {
+        "exact_material_library_repeat": true,
+        "exact_obj_sha256_repeat": true,
+        "semantic_signature_repeat": true,
+        "status": "PASS"
+      },
+      "locked_input": {
+        "bytes": 26405907,
+        "sha256": "39e2a4456902af7de69b97a70acbc8ec52514944c52ef2ee7a8b313bdbb3e9ca"
+      },
+      "name_retention_gate": {
+        "claim_limit": "Counts prove syntax retention only; they do not prove one-to-one assembly hierarchy retention.",
+        "obj_unique_group_count": 1,
+        "status": "PASS",
+        "xcaf_assembly_like": false,
+        "xcaf_definition_name_count": 1,
+        "xcaf_definition_names_matched_in_obj_groups": 1,
+        "xcaf_named_shape_label_count": 1,
+        "xcaf_nomenclature_nonempty_line_count": 1
+      },
+      "native_bbox_gate": "UNVERIFIED",
+      "partial_reasons": [
+        "native_exact_bbox_unbounded_sentinel"
+      ],
+      "run1": {
+        "aggregate_brep_valid": true,
+        "aggregate_brep_validity": "This shape seems to be valid",
+        "aggregate_tolerance_report": "Tolerance MAX=0.0010285148968233833 AVG=3.2817859140791198e-05 MIN=9.9999999999999995e-08\nFACE    : MAX=9.9999999999999995e-08 AVG=9.9999999999999995e-08 MIN=9.9999999999999995e-08\nEDGE    : MAX=0.0010285148968233833 AVG=2.030246316209724e-05 MIN=9.9999999999999995e-08\nVERTEX  : MAX=0.0010285148968233833 AVG=4.2223236624310382e-05 MIN=9.9999999999999995e-08",
+        "aggregate_topology": {
+          "compound": 1,
+          "compsolid": 0,
+          "edge": 13532,
+          "face": 5174,
+          "shape": 33145,
+          "shell": 141,
+          "solid": 141,
+          "vertex": 8681,
+          "wire": 5475
+        },
+        "all_faces_triangulated": false,
+        "document_length_scale_to_m": 0.001,
+        "document_length_unit": "mm",
+        "exit_code": 0,
+        "mesh_policy": {
+          "algorithm": "watson",
+          "angular_deflection_deg": 10,
+          "force_remesh": 1,
+          "interior_angle_deg": 10,
+          "linear_deflection_mm": 0.01,
+          "minimum_size_mm": 0.001,
+          "parallel": 0,
+          "relative": 0,
+          "source": "fixed_mm_fallback_for_unbounded_native_bbox"
+        },
+        "native_bbox_bounded": false,
+        "native_bbox_diagonal_mm": null,
+        "native_bbox_mm": [
+          -1e+100,
+          -1e+100,
+          -1e+100,
+          1e+100,
+          1e+100,
+          1e+100
+        ],
+        "native_bbox_status": "UNBOUNDED_SENTINEL",
+        "obj": {
+          "all_groups_nonempty": true,
+          "bytes": 42346470,
+          "counts": {
+            "face": 326556,
+            "group": 1,
+            "material_use": 841,
+            "normal": 266300,
+            "texture_coordinate": 266300,
+            "vertex": 266300
+          },
+          "group_name_max_length": 13,
+          "group_samples": [
+            "TTN134694-E0W"
+          ],
+          "material_library": {
+            "bytes": 1955,
+            "sha256": "ad7034e2700812a3a9ecee21537545c75925aa16d8134a409c7bf76642b4a7ae"
+          },
+          "nonfinite_vertex_count": 0,
+          "root_group_samples": [
+            "TTN134694-E0W"
+          ],
+          "sha256": "cfb19729fd9e4c75b07db8fe142b07030c5bca599a810be132812c3fe2edbb7c",
+          "unique_group_count": 1,
+          "vertex_bbox_m": [
+            -0.027483,
+            -0.025,
+            -0.022149,
+            0.025,
+            0.045898,
+            0.00033
+          ]
+        },
+        "post_mesh_counts": {
+          "empty_face_count": 36,
+          "empty_face_line_present": true,
+          "face_count": 5174,
+          "maximal_deflection": 0.0325505970578408,
+          "node_count": 266300,
+          "polygon_on_triangulation_count": 26890,
+          "triangle_count": 326556
+        },
+        "post_mesh_info": "This shape contains 5174 faces.\n                    36 empty faces.\n                    326556 triangles.\n                    266300 nodes.\n                    26890 polygons on triangulation.\nMaximal deflection 0.032550597057840802\nMeshing deflection 0.01\nMeshing angular deflection 10\nMeshing min size 0.001",
+        "pre_mesh_info": "This shape contains 5174 faces.\n                    5174 empty faces.\n                    0 triangles.\n                    0 nodes.\n                    0 polygons on triangulation.\nMaximal deflection 0",
+        "private_log_bytes": 5405,
+        "private_log_retained": true,
+        "private_log_sha256": "81d4ce5638425bc7fb12f5482918ed2a06f557b08fced6811b77848f34537423",
+        "serial_mesh_no_error": false,
+        "serial_mesh_result": "Incremental Mesh, multi-threading OFF\nMeshing statuses: Failure",
+        "step_file_unit": "inch",
+        "top_level_shape_count": 1,
+        "top_level_shapes": [
+          {
+            "brep_valid": true,
+            "brep_validity": "This shape seems to be valid",
+            "label": "0:1:1:1",
+            "location_summary": "Label 0:1:1:1 doesn't contain XCAFDoc_Location attribute",
+            "topology": {
+              "compound": 1,
+              "compsolid": 0,
+              "edge": 13532,
+              "face": 5174,
+              "shape": 33145,
+              "shell": 141,
+              "solid": 141,
+              "vertex": 8681,
+              "wire": 5475
+            }
+          }
+        ],
+        "xcaf": {
+          "assembly_graph_node_syntax_count": 1,
+          "assembly_tree_nonempty_line_count": 1,
+          "color_definition_count": 17,
+          "definition_name_count": 1,
+          "definition_name_set_sha256": "24e799d843f3d9c6cf725480730d62082e11855e5f9bd078e6c6033680476924",
+          "labels_with_color_link_count": 5316,
+          "labels_with_layer_link_count": 0,
+          "labels_with_name_count": 1,
+          "labels_with_visual_material_link_count": 0,
+          "layer_definition_count": 0,
+          "nomenclature_nonempty_line_count": 1,
+          "private_full_tree_log_retained": true,
+          "shape_label_count": 5316,
+          "visual_material_definition_count": 0
+        },
+        "xcaf_to_obj_definition_name_match_count": 1
+      },
+      "run2_repeat_evidence": {
+        "aggregate_brep_valid": true,
+        "aggregate_topology": {
+          "compound": 1,
+          "compsolid": 0,
+          "edge": 13532,
+          "face": 5174,
+          "shape": 33145,
+          "shell": 141,
+          "solid": 141,
+          "vertex": 8681,
+          "wire": 5475
+        },
+        "all_faces_triangulated": false,
+        "native_bbox_mm": [
+          -1e+100,
+          -1e+100,
+          -1e+100,
+          1e+100,
+          1e+100,
+          1e+100
+        ],
+        "native_bbox_status": "UNBOUNDED_SENTINEL",
+        "obj": {
+          "all_groups_nonempty": true,
+          "bytes": 42346470,
+          "counts": {
+            "face": 326556,
+            "group": 1,
+            "material_use": 841,
+            "normal": 266300,
+            "texture_coordinate": 266300,
+            "vertex": 266300
+          },
+          "group_name_max_length": 13,
+          "group_samples": [
+            "TTN134694-E0W"
+          ],
+          "material_library": {
+            "bytes": 1955,
+            "sha256": "ad7034e2700812a3a9ecee21537545c75925aa16d8134a409c7bf76642b4a7ae"
+          },
+          "nonfinite_vertex_count": 0,
+          "root_group_samples": [
+            "TTN134694-E0W"
+          ],
+          "sha256": "cfb19729fd9e4c75b07db8fe142b07030c5bca599a810be132812c3fe2edbb7c",
+          "unique_group_count": 1,
+          "vertex_bbox_m": [
+            -0.027483,
+            -0.025,
+            -0.022149,
+            0.025,
+            0.045898,
+            0.00033
+          ]
+        },
+        "post_mesh_counts": {
+          "empty_face_count": 36,
+          "empty_face_line_present": true,
+          "face_count": 5174,
+          "maximal_deflection": 0.0325505970578408,
+          "node_count": 266300,
+          "polygon_on_triangulation_count": 26890,
+          "triangle_count": 326556
+        },
+        "post_mesh_info": "This shape contains 5174 faces.\n                    36 empty faces.\n                    326556 triangles.\n                    266300 nodes.\n                    26890 polygons on triangulation.\nMaximal deflection 0.032550597057840802\nMeshing deflection 0.01\nMeshing angular deflection 10\nMeshing min size 0.001",
+        "private_log_bytes": 5405,
+        "private_log_sha256": "630496e48edf56d8b7088282b252be3acd8ac492bac0117f162b099f9bc5aff9",
+        "serial_mesh_no_error": false
+      },
+      "serial_mesh_gate": "BLOCKED",
+      "sku": "PDA100A2",
+      "status": "BLOCKED",
+      "surface_classification": "manifold_solid_present",
+      "unit_gate": {
+        "document_length_scale_to_m": 0.001,
+        "document_length_unit": "mm",
+        "inch_to_mm_conversion_exercised": true,
+        "status": "PASS",
+        "step_file_unit": "inch"
+      },
+      "vendor_and_derived_geometry_publication": "PROHIBITED"
+    }
+  ],
+  "runtime_lock": {
+    "drawexe_sha256": "90571d83d136ad8177507cc9ae1489be78551d7e3865c55a61bad4175a44dd23",
+    "occt_version": "8.0.0"
+  },
+  "schema": "opticalmodeler.phase2_occt_xcaf_audit.v1",
+  "script_hashes": {
+    "occt_audit_one_tcl_sha256": "eb974d04497b0fe4c311465eec5a43c301172d4f0fbbb189d5e4906eb9355e4b",
+    "run_occt_conversion_py_sha256": "9416d447e1effdf69822029920ec7dbe9cf1b0bbf5128290e5efd82c2472f8c3"
+  },
+  "status": "BLOCKED"
+}

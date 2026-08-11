@@ -1,0 +1,62 @@
+{
+  "allowed_extensions": [
+    ".json",
+    ".md"
+  ],
+  "authoritative_saved_reopen_counts": {
+    "semantic_port_numeric_pass_count": 497,
+    "semantic_port_record_count": 497,
+    "zero_radius_ray_record_count": 32,
+    "zero_radius_ray_state_counts": {
+      "CALIBRATION_M_AUX_INSERTED": 5,
+      "LOCK": 6,
+      "LOCK_MEASUREMENT_M_AUX_REMOVED": 14,
+      "MEASUREMENT_M_AUX_REMOVED": 7
+    }
+  },
+  "generated_at_utc": "2026-08-09T20:29:05.473217+00:00",
+  "json_parse_count": 8,
+  "markdown_count": 2,
+  "private_artifacts_included": false,
+  "sanitization": {
+    "hit_files": {
+      "absolute_windows_path": [],
+      "forbidden_global_skill": [],
+      "forbidden_private_project": [],
+      "local_username": [],
+      "private_binary_magic": []
+    },
+    "nul_file_count": 0,
+    "nul_files": [],
+    "patterns": {
+      "absolute_windows_path": 0,
+      "forbidden_global_skill": 0,
+      "forbidden_private_project": 0,
+      "local_username": 0,
+      "private_binary_magic": 0
+    },
+    "status": "PASS_ZERO_PRIVATE_ABSOLUTE_PATH_USERNAME_AND_BINARY_PAYLOAD"
+  },
+  "schema": "full-40-node-public-validation-v1",
+  "status": "PASS_PRE_MANIFEST_PUBLIC_CONTENT_VALIDATION",
+  "topology_counts": {
+    "branches": 14,
+    "edges": 66,
+    "nodes": 40,
+    "states": 4
+  },
+  "upstream_locks": {
+    "phase1": {
+      "entry_count": 10,
+      "manifest_self_sha256": "db4af71aa3c76a48ae6e76dc808b1f7050c08cf79c6ab728ecbd87f1455e3670",
+      "mismatch_count": 0,
+      "mismatches": []
+    },
+    "representative": {
+      "entry_count": 9,
+      "manifest_self_sha256": "844e10273c9a97dbf836d63545d3b43a2fef5f4112cbf0070ae3d7efb45d3535",
+      "mismatch_count": 0,
+      "mismatches": []
+    }
+  }
+}

@@ -2,3 +2,8 @@
 *.png binary
 *.jpg binary
 *.jpeg binary
+*.pdf binary
+
+# Frozen forward-test packages are byte-addressed by their manifests. Preserve
+# their source bytes; CRLF is a valid line ending rather than trailing space.
+examples/forward-tests/** -text whitespace=cr-at-eol

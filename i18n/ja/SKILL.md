@@ -26,8 +26,8 @@ description: 2D 光学回路図とメーカー CAD から、物理的に妥当�
 5. 実テーブル穴から fastener、clamp、holder、post、mount、device を post-first で組みます。
 6. 共通の配置原因を修正し、代表 1 台を証明してから展開し、保存後に全コピーを再監査します。
 7. beauty render より先に明るい mechanical/axial/cutaway 監査画像を作ります。
-8. reopen、ray/BVH、OpenCV、GLB reimport、report、manifest、hash、active-rule matrix を完了します。
+8. 公開スクリプトから同一 semantic lock を再計算し、README/GATE の数値を機械証拠から導出してから、reopen、ray/BVH、OpenCV、GLB reimport、binary/PNG metadata sanitization、manifest、hash、active-rule matrix を完了します。
 
 自由空間光、ガイドファイバー、電気ケーブルは別 family とします。開口は実際に開いていなければなりません。物理 PASS 後にのみ Nature スタイルの材質、照明、カメラ、注釈を変更できます。
 
-`PASS` は全適用ゲートの新しい証拠、`PARTIAL/SCOPED` は限定範囲、`UNVERIFIED` は証拠不足、`BLOCKED` は既知の失敗を表します。
+`PASS` は全適用ゲートの新しい証拠、`PARTIAL/SCOPED` は blocker を列挙した限定範囲かつ final/release=false、`UNVERIFIED` は証拠不足、`BLOCKED` は既知の失敗を表します。Sanitization PASS は CAD conversion PASS を意味しません。

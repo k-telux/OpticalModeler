@@ -10,3 +10,5 @@ This sanitized case study shows the transformation from a 2D pump-probe/G1/G2 sc
 | Acceptance | [v18_nature_final_acceptance.json](evidence/v18_nature_final_acceptance.json) |
 
 The example proves workflow output and evidence packaging. It does not ship or license the source laboratory Blend or manufacturer CAD, and it does not certify real-world mechanical fit or spectral performance.
+
+The public input PNG was container-sanitized without changing its `IDAT` or decoded pixels; see [public_png_sanitization.json](evidence/public_png_sanitization.json). For reproducible generation scripts and fail-closed results from fresh public-only runs, continue to the [forward-test matrix](../forward-tests/README.md).

@@ -1,0 +1,102 @@
+{
+  "entries": [
+    {
+      "bytes": 1176,
+      "path": "GATE_DECISION.json",
+      "sha256": "fb7d9712433a0ebc1746cb6bfc8417aef2b1a68db0012ac71d316a7df4f9b3c6"
+    },
+    {
+      "bytes": 670385,
+      "path": "MESH_AND_BLENDER_AUDIT.json",
+      "sha256": "f12fc719211bf5454f9bd9dbbc4bb64ce97a12db429dcb00c9ffd8e4bc3593ea"
+    },
+    {
+      "bytes": 47314,
+      "path": "OCCT_XCAF_AUDIT.json",
+      "sha256": "c8851c9b637c1cebd0b6c642d8084e300ddfb0f506087643a80e676532fe9b00"
+    },
+    {
+      "bytes": 1073,
+      "path": "README.md",
+      "sha256": "a4baa0df43f9fb10b762dc95976e6b29533ef63a663c2d58613c77df67818c54"
+    },
+    {
+      "bytes": 229452,
+      "path": "renders/B3060A_audit_render.png",
+      "sha256": "bc786ae884876062758f0097a230c630f04d9869560d673e5bba55e6be6f25a8"
+    },
+    {
+      "bytes": 250848,
+      "path": "renders/MBT613D_M_audit_render.png",
+      "sha256": "372dfefac341140f5f50854fa84e7e0083507be1f7e492db3ecdfd6acd0c6de2"
+    },
+    {
+      "bytes": 289141,
+      "path": "renders/RMS10X_audit_render.png",
+      "sha256": "24ca72c4894939830f354c94de94eaabe66ab8719eaae1b12188109f3f9e75b4"
+    },
+    {
+      "bytes": 3094,
+      "path": "REPRESENTATIVE_LOCK.json",
+      "sha256": "1e2e0e77e146173712e430937451b99fac01ee118bedee08d5ef0eec136b02b8"
+    },
+    {
+      "bytes": 56978,
+      "path": "RUNTIME_BINARY_MANIFEST.sha256",
+      "sha256": "b3e634835d26ab86244a337ebafc63f5540c6d7ef86905b7829d0fd7e4e72c76"
+    },
+    {
+      "bytes": 5035,
+      "path": "RUNTIME_LOCK.json",
+      "sha256": "994a9b775be0d11463cfe2fdc89f99937a59ff2471c68ee3eee3affc2165be51"
+    },
+    {
+      "bytes": 2168,
+      "path": "SCOPE_STATUS_MATRIX.json",
+      "sha256": "8c3676f219eca806254cc25df19d80c57dc9dd1ff91eab4985a2b606695e279d"
+    },
+    {
+      "bytes": 24286,
+      "path": "scripts/blender_stage.py",
+      "sha256": "5b5a73cb5e4d73035666175d004b4b13550f8d652b6d4f33c30ca43a676627cc"
+    },
+    {
+      "bytes": 9352,
+      "path": "scripts/lock_runtime.py",
+      "sha256": "37717699ce747c5f127d0b31db93ebe632b23442e187419e5b72687ffc263038"
+    },
+    {
+      "bytes": 5677,
+      "path": "scripts/occt_audit_one.tcl",
+      "sha256": "eb974d04497b0fe4c311465eec5a43c301172d4f0fbbb189d5e4906eb9355e4b"
+    },
+    {
+      "bytes": 20653,
+      "path": "scripts/run_blender_smoke.py",
+      "sha256": "0310a27fa5c344ea4b2f32e6e9ec0cc01f6ad98fab823208dd8d343ebf34c9b7"
+    },
+    {
+      "bytes": 24394,
+      "path": "scripts/run_occt_conversion.py",
+      "sha256": "9416d447e1effdf69822029920ec7dbe9cf1b0bbf5128290e5efd82c2472f8c3"
+    },
+    {
+      "bytes": 10031,
+      "path": "scripts/verify_public_package.py",
+      "sha256": "145e42c31ccb9d4c02d3dac8d140a70d406b75f5615b960940617b1fd18e4fa1"
+    },
+    {
+      "bytes": 1346,
+      "path": "SOURCE_AND_PHASE1_LOCK.json",
+      "sha256": "4a4eb3604de9e9cd4370e8fea6d5ec5dd42a4d991d7e89b6491c257567015549"
+    },
+    {
+      "bytes": 5442,
+      "path": "VALIDATION.json",
+      "sha256": "fb16deed8ef24e434dc7a427d01a51907a364470cf389097f5b683fb6a410e66"
+    }
+  ],
+  "entry_count": 19,
+  "schema": "opticalmodeler.phase2_public_file_manifest.v1",
+  "scope": "All public files except this manifest and MANIFEST.sha256; no vendor CAD, OBJ, MTL, Blend, GLB, or other reconstructable geometry."
+}

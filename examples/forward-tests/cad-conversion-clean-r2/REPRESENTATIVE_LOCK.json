@@ -1,0 +1,65 @@
+{
+  "schema": "opticalmodeler.phase2_representative_lock.v1",
+  "status": "PASS",
+  "locked_at_utc": "2026-08-09T17:48:45Z",
+  "selection_policy": "Smallest user-authorized set (4) that covers every required conversion-risk class from the frozen 18-record Phase 1 manifest; no Phase 1 result expectation was used.",
+  "phase1_freeze": {
+    "cad_manifest_sha256": "f4fa6dda15a3781f45db3c1a6ad139e16c08e7413c1aa55f205d5539b5e24e12",
+    "source_lock_sha256": "52c24c3d42156419200075fd95dda767272b132d4d95126a4918b7f6c5e3c32a",
+    "gate_decision_sha256": "4e31f0184b7913ff82fc59b0831035ea21827e55eabbff1baee9aa8f2c79d4d9",
+    "manifest_sha256_file_sha256": "bd73b442f23a6e2975b06d23f72ba339eb776e622860bb5a167067ad122c59c5"
+  },
+  "required_risks": [
+    "step_millimetre",
+    "inch_to_mm_conversion",
+    "assembly_or_multi_product",
+    "surface_model_without_manifold_solid",
+    "large_or_complex_structural_part",
+    "optical_or_fiber_launch_or_detector_instrument"
+  ],
+  "representatives": [
+    {
+      "sku": "B3060A",
+      "cache_filename": "02_B3060A__25507-E0W.step",
+      "raw_bytes": 3366569,
+      "raw_sha256": "2319526c7b54b1447a6a9603dbac6e8b31849199884c594614b0eb8b8437a358",
+      "phase1_text_unit": "millimetre",
+      "phase1_text_structure": "assembly_or_multi_product_syntax",
+      "phase1_text_geometry": "solid_brep_syntax",
+      "risk_coverage": ["step_millimetre", "assembly_or_multi_product", "large_or_complex_structural_part"]
+    },
+    {
+      "sku": "RMS10X",
+      "cache_filename": "12_RMS10X__TTN088605-E0W.step",
+      "raw_bytes": 5807878,
+      "raw_sha256": "d94f6d509fcdbaed28d2f9acda4c2eb953a05f42ed86b12efe5ebefbfb1fcbc1",
+      "phase1_text_unit": "inch",
+      "phase1_text_structure": "single_product_part_syntax",
+      "phase1_text_geometry": "surface_model_syntax",
+      "risk_coverage": ["inch_to_mm_conversion", "surface_model_without_manifold_solid", "optical_or_fiber_launch_or_detector_instrument"]
+    },
+    {
+      "sku": "MBT613D/M",
+      "cache_filename": "13_MBT613D_M__22053-E0W.step",
+      "raw_bytes": 29128874,
+      "raw_sha256": "d41eb340331d24aa1d9555f772ef79df41929d8d377529b87dd966902d1df4ab",
+      "phase1_text_unit": "millimetre",
+      "phase1_text_structure": "single_product_part_syntax",
+      "phase1_text_geometry": "solid_brep_syntax",
+      "risk_coverage": ["step_millimetre", "large_or_complex_structural_part", "optical_or_fiber_launch_or_detector_instrument"]
+    },
+    {
+      "sku": "PDA100A2",
+      "cache_filename": "16_PDA100A2__TTN134694-E0W.step",
+      "raw_bytes": 26405907,
+      "raw_sha256": "39e2a4456902af7de69b97a70acbc8ec52514944c52ef2ee7a8b313bdbb3e9ca",
+      "phase1_text_unit": "inch",
+      "phase1_text_structure": "single_product_part_syntax",
+      "phase1_text_geometry": "solid_brep_syntax",
+      "risk_coverage": ["inch_to_mm_conversion", "large_or_complex_structural_part", "optical_or_fiber_launch_or_detector_instrument"]
+    }
+  ],
+  "representative_count": 4,
+  "all_required_risks_covered": true,
+  "conversion_authorization": "BLOCKED_UNTIL_RUNTIME_LOCK_PASS"
+}

@@ -1,0 +1,174 @@
+{
+  "active_runtimes": {
+    "blender": {
+      "archive_byte_length": 398917359,
+      "archive_sha256_expected": "317ef64e7a2c3cc79ec810c766ae9828aff865bea78039dc695b3f1118c34b4f",
+      "archive_sha256_observed": "317ef64e7a2c3cc79ec810c766ae9828aff865bea78039dc695b3f1118c34b4f",
+      "archive_status": "PASS",
+      "binary": {
+        "basename": "blender.exe",
+        "byte_length": 96054232,
+        "file_version": "4.5",
+        "location_disclosed": false,
+        "origin_archive_sha256": "317ef64e7a2c3cc79ec810c766ae9828aff865bea78039dc695b3f1118c34b4f",
+        "sha256": "25bdb2e3f8ed0bac9d51b7a25fbea0f712a8d80346f2efc9dbe24d85e910c310"
+      },
+      "binary_status": "PASS",
+      "official_archive_url": "https://download.blender.org/release/Blender4.5/blender-4.5.12-windows-x64.zip",
+      "official_checksum_url": "https://download.blender.org/release/Blender4.5/blender-4.5.12.sha256",
+      "platform": "Windows x64 portable",
+      "runtime_build_hash": "84afd5f785f7",
+      "runtime_status": "PASS",
+      "source_repository": "https://projects.blender.org/blender/blender.git",
+      "source_tag": "v4.5.12",
+      "source_tag_commit": "84afd5f785f7569b97cf3257000403e7847120a8",
+      "source_tag_type": "lightweight",
+      "version": "4.5.12 LTS"
+    },
+    "occt_xcaf": {
+      "archive_byte_length": 257767212,
+      "archive_sha256_expected": "afe36b6abcc7964d0f8b0404ccb16e7c1f6ddd8e43b450c865f7e7f092440e9d",
+      "archive_sha256_observed": "afe36b6abcc7964d0f8b0404ccb16e7c1f6ddd8e43b450c865f7e7f092440e9d",
+      "archive_status": "PASS",
+      "binaries": [
+        {
+          "basename": "DRAWEXE.exe",
+          "byte_length": 12800,
+          "file_version": "8.0.1",
+          "location_disclosed": false,
+          "origin_archive_sha256": "afe36b6abcc7964d0f8b0404ccb16e7c1f6ddd8e43b450c865f7e7f092440e9d",
+          "sha256": "ce9f5948b5ea6b7f53f9dc1bda12fddebd0b88b9e867c8359da7a4ea18e15ca9"
+        },
+        {
+          "basename": "TKernel.dll",
+          "byte_length": 1712640,
+          "file_version": "8.0.1",
+          "location_disclosed": false,
+          "origin_archive_sha256": "afe36b6abcc7964d0f8b0404ccb16e7c1f6ddd8e43b450c865f7e7f092440e9d",
+          "sha256": "b2ff9d190e21c5bbbc4e57a9415740953603c4ab62f02f4f48f906c1cae1e734"
+        },
+        {
+          "basename": "TKLCAF.dll",
+          "byte_length": 676864,
+          "file_version": "8.0.1",
+          "location_disclosed": false,
+          "origin_archive_sha256": "afe36b6abcc7964d0f8b0404ccb16e7c1f6ddd8e43b450c865f7e7f092440e9d",
+          "sha256": "12cd5c2cbb807f72bb4b805101f0397ecb45384e0394f1ae0ff0a5d400482f8d"
+        },
+        {
+          "basename": "TKCAF.dll",
+          "byte_length": 498176,
+          "file_version": "8.0.1",
+          "location_disclosed": false,
+          "origin_archive_sha256": "afe36b6abcc7964d0f8b0404ccb16e7c1f6ddd8e43b450c865f7e7f092440e9d",
+          "sha256": "80d125ef108fa8c640aada8ce6eed4f9421aad50a3f985d976f8b794cad7e1c5"
+        },
+        {
+          "basename": "TKXCAF.dll",
+          "byte_length": 818176,
+          "file_version": "8.0.1",
+          "location_disclosed": false,
+          "origin_archive_sha256": "afe36b6abcc7964d0f8b0404ccb16e7c1f6ddd8e43b450c865f7e7f092440e9d",
+          "sha256": "0cb9e677d66bde36feb77a0d9a403edc60b61660852229cdb6286caaa5374df7"
+        },
+        {
+          "basename": "TKDESTEP.dll",
+          "byte_length": 5771264,
+          "file_version": "8.0.1",
+          "location_disclosed": false,
+          "origin_archive_sha256": "afe36b6abcc7964d0f8b0404ccb16e7c1f6ddd8e43b450c865f7e7f092440e9d",
+          "sha256": "ef398b9784238b710e4cd26f3222282cd029e34aba0bdc1c141f32bad4270006"
+        },
+        {
+          "basename": "TKXSDRAWSTEP.dll",
+          "byte_length": 118272,
+          "file_version": "8.0.1",
+          "location_disclosed": false,
+          "origin_archive_sha256": "afe36b6abcc7964d0f8b0404ccb16e7c1f6ddd8e43b450c865f7e7f092440e9d",
+          "sha256": "aaf441710d113e5ba8354fa6b14d72e8c00abd9e03aa75b21d9204098f77d749"
+        },
+        {
+          "basename": "TKXDEDRAW.dll",
+          "byte_length": 500224,
+          "file_version": "8.0.1",
+          "location_disclosed": false,
+          "origin_archive_sha256": "afe36b6abcc7964d0f8b0404ccb16e7c1f6ddd8e43b450c865f7e7f092440e9d",
+          "sha256": "05dced2feb3e0d1c7434161c861cf94dc17b1b4175cf3bad34aaf76d8ec32a9d"
+        },
+        {
+          "basename": "zlib1.dll",
+          "byte_length": 134144,
+          "file_version": "1.3.1",
+          "location_disclosed": false,
+          "origin_archive_sha256": "afe36b6abcc7964d0f8b0404ccb16e7c1f6ddd8e43b450c865f7e7f092440e9d",
+          "sha256": "7d612a16d04513c4764235a6c7c702485509f6ba244fdd6ef1fc98908c61832c"
+        }
+      ],
+      "binary_status": "PASS",
+      "bundled_zlib_resolution": {
+        "action": "The exact zlib1.dll bundled inside the verified official OCCT archive was placed beside the application binary.",
+        "reason": "A system-precedence legacy zlib caused an entry-point loader failure.",
+        "unverified_third_party_substitution": false,
+        "zlib_sha256": "7d612a16d04513c4764235a6c7c702485509f6ba244fdd6ef1fc98908c61832c",
+        "zlib_version": "1.3.1"
+      },
+      "nested_official_archive": {
+        "basename": "opencascade-8.0.1-vc14-64-combined.zip",
+        "byte_length": 263458033,
+        "expected_byte_length": 263458033,
+        "expected_sha256": "c60ce7c136ed389b06e05c0d2ffdf40f72928baf45ebb136fc2d52318dd30b4a",
+        "sha256": "c60ce7c136ed389b06e05c0d2ffdf40f72928baf45ebb136fc2d52318dd30b4a",
+        "status": "PASS"
+      },
+      "official_archive_url": "https://github.com/Open-Cascade-SAS/OCCT/releases/download/V8.0.1/occt-combined-release-no-pch.zip",
+      "official_release_url": "https://github.com/Open-Cascade-SAS/OCCT/releases/tag/V8.0.1",
+      "runtime_status": "PASS",
+      "runtime_version_readback": "Open CASCADE Technology 8.0.1",
+      "source_repository": "https://github.com/Open-Cascade-SAS/OCCT.git",
+      "source_tag": "V8.0.1",
+      "source_tag_commit": "b8f597c677811d1f9f4d8a97f5ae2825c0353a42",
+      "source_tag_type": "lightweight",
+      "version": "8.0.1",
+      "xcaf_step_smoke": {
+        "seventeen_family_scan_exit_code_zero_count": 17,
+        "status": "PASS",
+        "stepcafcontrol_reader_real_vendor_step": "PASS",
+        "xde_plugin_load": "PASS"
+      }
+    },
+    "python_opencv": {
+      "opencv": {
+        "basename": "cv2.pyd",
+        "byte_length": 74819072,
+        "file_version": "4.13.0",
+        "location_disclosed": false,
+        "origin": "GENERIC_RUNTIME",
+        "origin_archive_sha256": null,
+        "sha256": "78db0c836b952d9d5510140677463687c357a7166fddfa6ac7e31abb2d7d9bbd"
+      },
+      "opencv_version": "4.13.0",
+      "python": {
+        "basename": "python.exe",
+        "byte_length": 45568,
+        "file_version": "3.11.15",
+        "location_disclosed": false,
+        "origin": "GENERIC_RUNTIME",
+        "origin_archive_sha256": null,
+        "sha256": "6fc5d6db11f5af54c3bf11874e0c6c88f71829ed5a28b7873fe085b2773761a3"
+      },
+      "status": "PASS"
+    }
+  },
+  "phase": "PHASE_2_REPRESENTATIVE_SMOKE",
+  "rejected_candidate": {
+    "active": false,
+    "archive_byte_length": 258814881,
+    "archive_sha256": "afbef3457fbc4a2bdca0608e0fe284392f51e4c2c42ccbfb9df7168d8e4eb9b3",
+    "official_archive_url": "https://github.com/Open-Cascade-SAS/OCCT/releases/download/V7_9_3/opencascade-7.9.3-vc14-64-combined.zip",
+    "reason": "DRAWEXE loader entry-point failure in the tested Windows environment",
+    "runtime": "OCCT/XCAF 7.9.3 combined Windows release",
+    "status": "BLOCKED"
+  },
+  "schema_version": "1.0",
+  "status": "PASS"
+}

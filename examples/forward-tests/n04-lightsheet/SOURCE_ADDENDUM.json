@@ -1,0 +1,99 @@
+{
+  "schema": "opticalmodeler.full32.source-addendum.v3",
+  "generated_utc": "2026-08-09T20:25:40.476215Z",
+  "status": "PASS",
+  "scope": "GEOMETRY_PHASE_EXTERNAL_SOURCES_ADDED_AFTER_FROZEN_PHASE1",
+  "phase1_source_lock_immutable": true,
+  "thorlabs_official_drawing_sources": [
+    {
+      "part_number": "POLARIS-K1T2",
+      "product_page_url": "https://www.thorlabs.com/item/POLARIS-K1T2",
+      "catalog_pdf_url": "https://thin01mstroc282prod.dxcloud.episerver.net/globalassets/items/p/po/pol/polaris-k1t2/ttn019973-e0w.pdf?v=0116021948",
+      "verified_official_media_url": "https://media.thorlabs.com/globalassets/items/p/po/pol/polaris-k1t2/ttn019973-e0w.pdf?v=0116021948",
+      "original_filename": "TTN019973-E0W.pdf",
+      "bytes": 356098,
+      "sha256": "6e28302739d67dc66413bf5f4f2eded36bb43d459b7b875b4c4716fa6aa38c20",
+      "retrieved_utc": "2026-08-09T20:08:53.639128Z",
+      "reverified_utc": "2026-08-09T18:45:28.755096Z",
+      "remote_reverification_status": "PASS",
+      "redistribution_status": "BLOCKED",
+      "redistribution_reason": "NO_EXPLICIT_VENDOR_DRAWING_REDISTRIBUTION_PERMISSION_FOUND",
+      "public_candidate_inclusion": false
+    },
+    {
+      "part_number": "KM2536",
+      "product_page_url": "https://www.thorlabs.com/item/KM2536",
+      "catalog_pdf_url": "https://thin01mstroc282prod.dxcloud.episerver.net/globalassets/items/k/km/km2/km2536/ttn304435-e0w.pdf?v=0116120016",
+      "verified_official_media_url": "https://media.thorlabs.com/globalassets/items/k/km/km2/km2536/ttn304435-e0w.pdf?v=0116120016",
+      "original_filename": "TTN304435-E0W.pdf",
+      "bytes": 183595,
+      "sha256": "f2465bf809bc846628e6b8df4404cab35d0889937a57ee2a52cc54077477459a",
+      "retrieved_utc": "2026-08-09T20:08:53.627409Z",
+      "reverified_utc": "2026-08-09T18:45:30.261187Z",
+      "remote_reverification_status": "PASS",
+      "redistribution_status": "BLOCKED",
+      "redistribution_reason": "NO_EXPLICIT_VENDOR_DRAWING_REDISTRIBUTION_PERMISSION_FOUND",
+      "public_candidate_inclusion": false
+    },
+    {
+      "part_number": "SM2RC/M",
+      "product_page_url": "https://www.thorlabs.com/item/SM2RC_M",
+      "catalog_pdf_url": "https://thin01mstroc282prod.dxcloud.episerver.net/globalassets/items/s/sm/sm2/sm2rc_m/13353-e0w.pdf?v=0116025918",
+      "verified_official_media_url": "https://media.thorlabs.com/globalassets/items/s/sm/sm2/sm2rc_m/13353-e0w.pdf?v=0116025918",
+      "original_filename": "13353-E0W.pdf",
+      "bytes": 134905,
+      "sha256": "6c7318c17ad7bdab7f6a03bf6a7bb99fc2788c5518b7461234a320204b90f2ca",
+      "retrieved_utc": "2026-08-09T20:08:53.644129Z",
+      "reverified_utc": "2026-08-09T18:45:33.916337Z",
+      "remote_reverification_status": "PASS",
+      "redistribution_status": "BLOCKED",
+      "redistribution_reason": "NO_EXPLICIT_VENDOR_DRAWING_REDISTRIBUTION_PERMISSION_FOUND",
+      "public_candidate_inclusion": false
+    },
+    {
+      "part_number": "LPSA5/M",
+      "product_page_url": "https://www.thorlabs.com/item/LPSA5_M",
+      "catalog_pdf_url": "https://thin01mstroc282prod.dxcloud.episerver.net/globalassets/items/l/lp/lps/lpsa5_m/etn035818-e0w.pdf?v=0116125736",
+      "verified_official_media_url": "https://media.thorlabs.com/globalassets/items/l/lp/lps/lpsa5_m/etn035818-e0w.pdf?v=0116125736",
+      "original_filename": "ETN035818-E0W.pdf",
+      "bytes": 139940,
+      "sha256": "7294a805c78ffd3b41b7a9c85ff4be508346bec09f798fd70a2ad978752db087",
+      "retrieved_utc": "2026-08-09T20:08:53.634415Z",
+      "reverified_utc": "2026-08-09T18:45:34.694901Z",
+      "remote_reverification_status": "PASS",
+      "redistribution_status": "BLOCKED",
+      "redistribution_reason": "NO_EXPLICIT_VENDOR_DRAWING_REDISTRIBUTION_PERMISSION_FOUND",
+      "public_candidate_inclusion": false
+    }
+  ],
+  "runtime_source": {
+    "name": "Blender 5.2.0 LTS Windows x64 portable",
+    "source_url": "https://download.blender.org/release/Blender5.2/blender-5.2.0-windows-x64.zip",
+    "official_checksum_url": "https://download.blender.org/release/Blender5.2/blender-5.2.0.sha256",
+    "bytes": 404954661,
+    "sha256": "2d184b626c001692c362291911293b6a297179d618d95e9e9192c3a80318adc4",
+    "official_expected_sha256": "2d184b626c001692c362291911293b6a297179d618d95e9e9192c3a80318adc4",
+    "retrieved_utc": "2026-08-09T18:24:59.030633Z",
+    "hash_verification_status": "PASS",
+    "build_hash": "fbe6228777e7",
+    "public_candidate_inclusion": false,
+    "exclusion_reason": "RUNTIME_BINARY_NOT_NEEDED_IN_PUBLIC_EVIDENCE_PACKAGE"
+  },
+  "tool_dependencies": [
+    {
+      "name": "OpenCV",
+      "version": "4.13.0",
+      "role": "render-quality checks and audit overlays"
+    },
+    {
+      "name": "NumPy",
+      "version": "2.4.6",
+      "role": "deterministic image statistics"
+    },
+    {
+      "name": "OpenCascade",
+      "role": "native STEP transfer, millimetre bbox, and triangulation"
+    }
+  ],
+  "vendor_source_redistribution_status": "BLOCKED"
+}

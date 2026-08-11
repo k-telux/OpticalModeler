@@ -1,0 +1,1170 @@
+{
+  "asset_count": 17,
+  "assets": [
+    {
+      "component_id": "cad_gvs012",
+      "exact_model": "GVS012",
+      "metric_capture_and_safe_cleanup_status": "PASS",
+      "metrics": {
+        "after": {
+          "boundary_edges": 7285,
+          "duplicate_vertices_1e-8": 2939,
+          "edges": 14927,
+          "faces": 7523,
+          "invalid_numeric_vertices": 0,
+          "loose_edges": 0,
+          "loose_vertices": 0,
+          "nonmanifold_edges": 7285,
+          "signed_volume_native3": null,
+          "vertices": 7572,
+          "zero_area_faces": 0
+        },
+        "bbox_after_native": [
+          [
+            -26.879899979,
+            -6.0,
+            -0.540637016
+          ],
+          [
+            59.049999237,
+            61.245201111,
+            87.699996948
+          ]
+        ],
+        "bbox_before_native": [
+          [
+            -26.879899979,
+            -6.0,
+            -0.540637016
+          ],
+          [
+            59.049999237,
+            61.245201111,
+            87.699996948
+          ]
+        ],
+        "bbox_max_abs_delta_native": 0.0,
+        "before": {
+          "boundary_edges": 7339,
+          "duplicate_vertices_1e-8": 3033,
+          "edges": 14954,
+          "faces": 7523,
+          "invalid_numeric_vertices": 0,
+          "loose_edges": 0,
+          "loose_vertices": 0,
+          "nonmanifold_edges": 7339,
+          "signed_volume_native3": null,
+          "vertices": 7666,
+          "zero_area_faces": 0
+        },
+        "cleanup_operations": [
+          "remove_doubles_1e-7_native",
+          "dissolve_degenerate_1e-9_native",
+          "recalculate_face_normals"
+        ],
+        "decimation_or_remesh": false
+      },
+      "native_unit": "mm",
+      "status": "PARTIAL_SCOPED",
+      "watertightness_status": "UNVERIFIED"
+    },
+    {
+      "component_id": "cad_tw850r5a2",
+      "exact_model": "TW850R5A2",
+      "metric_capture_and_safe_cleanup_status": "PASS",
+      "metrics": {
+        "after": {
+          "boundary_edges": 63816,
+          "duplicate_vertices_1e-8": 33873,
+          "edges": 394785,
+          "faces": 241918,
+          "invalid_numeric_vertices": 0,
+          "loose_edges": 0,
+          "loose_vertices": 0,
+          "nonmanifold_edges": 63816,
+          "signed_volume_native3": null,
+          "vertices": 154651,
+          "zero_area_faces": 0
+        },
+        "bbox_after_native": [
+          [
+            -189.358001709,
+            16.139699936,
+            -4.466599941
+          ],
+          [
+            231.56199646,
+            30.238500595,
+            77.383399963
+          ]
+        ],
+        "bbox_before_native": [
+          [
+            -189.358001709,
+            16.139699936,
+            -4.466599941
+          ],
+          [
+            231.56199646,
+            30.238500595,
+            77.383399963
+          ]
+        ],
+        "bbox_max_abs_delta_native": 0.0,
+        "before": {
+          "boundary_edges": 64092,
+          "duplicate_vertices_1e-8": 34085,
+          "edges": 394923,
+          "faces": 241918,
+          "invalid_numeric_vertices": 0,
+          "loose_edges": 0,
+          "loose_vertices": 0,
+          "nonmanifold_edges": 64092,
+          "signed_volume_native3": null,
+          "vertices": 154863,
+          "zero_area_faces": 0
+        },
+        "cleanup_operations": [
+          "remove_doubles_1e-7_native",
+          "dissolve_degenerate_1e-9_native",
+          "recalculate_face_normals"
+        ],
+        "decimation_or_remesh": false
+      },
+      "native_unit": "mm",
+      "status": "PARTIAL_SCOPED",
+      "watertightness_status": "UNVERIFIED"
+    },
+    {
+      "component_id": "cad_fpc030",
+      "exact_model": "FPC030",
+      "metric_capture_and_safe_cleanup_status": "PASS",
+      "metrics": {
+        "after": {
+          "boundary_edges": 73956,
+          "duplicate_vertices_1e-8": 25166,
+          "edges": 288863,
+          "faces": 167970,
+          "invalid_numeric_vertices": 0,
+          "loose_edges": 0,
+          "loose_vertices": 0,
+          "nonmanifold_edges": 74032,
+          "signed_volume_native3": null,
+          "vertices": 109041,
+          "zero_area_faces": 0
+        },
+        "bbox_after_native": [
+          [
+            -3.896899939,
+            -0.403207988,
+            -0.778477013
+          ],
+          [
+            4.603099823,
+            2.07178998,
+            0.458523005
+          ]
+        ],
+        "bbox_before_native": [
+          [
+            -3.896899939,
+            -0.403207988,
+            -0.778477013
+          ],
+          [
+            4.603099823,
+            2.07178998,
+            0.458523005
+          ]
+        ],
+        "bbox_max_abs_delta_native": 0.0,
+        "before": {
+          "boundary_edges": 149234,
+          "duplicate_vertices_1e-8": 78607,
+          "edges": 326590,
+          "faces": 167982,
+          "invalid_numeric_vertices": 0,
+          "loose_edges": 0,
+          "loose_vertices": 0,
+          "nonmanifold_edges": 149234,
+          "signed_volume_native3": null,
+          "vertices": 162482,
+          "zero_area_faces": 8
+        },
+        "cleanup_operations": [
+          "remove_doubles_1e-7_native",
+          "dissolve_degenerate_1e-9_native",
+          "recalculate_face_normals"
+        ],
+        "decimation_or_remesh": false
+      },
+      "native_unit": "inch",
+      "status": "PARTIAL_SCOPED",
+      "watertightness_status": "UNVERIFIED"
+    },
+    {
+      "component_id": "cad_f240apc_850",
+      "exact_model": "F240APC-850",
+      "metric_capture_and_safe_cleanup_status": "PASS",
+      "metrics": {
+        "after": {
+          "boundary_edges": 5330,
+          "duplicate_vertices_1e-8": 2289,
+          "edges": 15385,
+          "faces": 8480,
+          "invalid_numeric_vertices": 0,
+          "loose_edges": 0,
+          "loose_vertices": 0,
+          "nonmanifold_edges": 5330,
+          "signed_volume_native3": null,
+          "vertices": 6527,
+          "zero_area_faces": 0
+        },
+        "bbox_after_native": [
+          [
+            -10.393400192,
+            -6.0,
+            -6.0
+          ],
+          [
+            7.257019997,
+            6.0,
+            6.0
+          ]
+        ],
+        "bbox_before_native": [
+          [
+            -10.393400192,
+            -6.0,
+            -6.0
+          ],
+          [
+            7.257019997,
+            6.0,
+            6.0
+          ]
+        ],
+        "bbox_max_abs_delta_native": 0.0,
+        "before": {
+          "boundary_edges": 6482,
+          "duplicate_vertices_1e-8": 3318,
+          "edges": 15964,
+          "faces": 8482,
+          "invalid_numeric_vertices": 0,
+          "loose_edges": 0,
+          "loose_vertices": 0,
+          "nonmanifold_edges": 6482,
+          "signed_volume_native3": null,
+          "vertices": 7556,
+          "zero_area_faces": 2
+        },
+        "cleanup_operations": [
+          "remove_doubles_1e-7_native",
+          "dissolve_degenerate_1e-9_native",
+          "recalculate_face_normals"
+        ],
+        "decimation_or_remesh": false
+      },
+      "native_unit": "mm",
+      "status": "PARTIAL_SCOPED",
+      "watertightness_status": "UNVERIFIED"
+    },
+    {
+      "component_id": "cad_ad12f",
+      "exact_model": "AD12F",
+      "metric_capture_and_safe_cleanup_status": "PASS",
+      "metrics": {
+        "after": {
+          "boundary_edges": 0,
+          "duplicate_vertices_1e-8": 0,
+          "edges": 12573,
+          "faces": 8382,
+          "invalid_numeric_vertices": 0,
+          "loose_edges": 0,
+          "loose_vertices": 0,
+          "nonmanifold_edges": 0,
+          "signed_volume_native3": 0.225042522,
+          "vertices": 4191,
+          "zero_area_faces": 0
+        },
+        "bbox_after_native": [
+          [
+            -0.517499983,
+            -0.517499983,
+            -0.29550001
+          ],
+          [
+            0.517499983,
+            0.517499983,
+            0.29550001
+          ]
+        ],
+        "bbox_before_native": [
+          [
+            -0.517499983,
+            -0.517499983,
+            -0.29550001
+          ],
+          [
+            0.517499983,
+            0.517499983,
+            0.29550001
+          ]
+        ],
+        "bbox_max_abs_delta_native": 0.0,
+        "before": {
+          "boundary_edges": 8740,
+          "duplicate_vertices_1e-8": 4683,
+          "edges": 16949,
+          "faces": 8386,
+          "invalid_numeric_vertices": 0,
+          "loose_edges": 0,
+          "loose_vertices": 0,
+          "nonmanifold_edges": 8740,
+          "signed_volume_native3": null,
+          "vertices": 8874,
+          "zero_area_faces": 4
+        },
+        "cleanup_operations": [
+          "remove_doubles_1e-7_native",
+          "dissolve_degenerate_1e-9_native",
+          "recalculate_face_normals"
+        ],
+        "decimation_or_remesh": false
+      },
+      "native_unit": "inch",
+      "status": "PASS",
+      "watertightness_status": "PASS"
+    },
+    {
+      "component_id": "cad_lmr1",
+      "exact_model": "LMR1",
+      "metric_capture_and_safe_cleanup_status": "PASS",
+      "metrics": {
+        "after": {
+          "boundary_edges": 3920,
+          "duplicate_vertices_1e-8": 1547,
+          "edges": 9277,
+          "faces": 4878,
+          "invalid_numeric_vertices": 0,
+          "loose_edges": 0,
+          "loose_vertices": 0,
+          "nonmanifold_edges": 3920,
+          "signed_volume_native3": null,
+          "vertices": 3986,
+          "zero_area_faces": 0
+        },
+        "bbox_after_native": [
+          [
+            -15.239999771,
+            -22.097999573,
+            -10.159999847
+          ],
+          [
+            15.239999771,
+            15.239999771,
+            0.0
+          ]
+        ],
+        "bbox_before_native": [
+          [
+            -15.239999771,
+            -22.097999573,
+            -10.159999847
+          ],
+          [
+            15.239999771,
+            15.239999771,
+            0.0
+          ]
+        ],
+        "bbox_max_abs_delta_native": 0.0,
+        "before": {
+          "boundary_edges": 4742,
+          "duplicate_vertices_1e-8": 2611,
+          "edges": 9691,
+          "faces": 4880,
+          "invalid_numeric_vertices": 0,
+          "loose_edges": 0,
+          "loose_vertices": 0,
+          "nonmanifold_edges": 4742,
+          "signed_volume_native3": null,
+          "vertices": 5050,
+          "zero_area_faces": 2
+        },
+        "cleanup_operations": [
+          "remove_doubles_1e-7_native",
+          "dissolve_degenerate_1e-9_native",
+          "recalculate_face_normals"
+        ],
+        "decimation_or_remesh": false
+      },
+      "native_unit": "mm",
+      "status": "PARTIAL_SCOPED",
+      "watertightness_status": "UNVERIFIED"
+    },
+    {
+      "component_id": "cad_ac254_075_b_ml",
+      "exact_model": "AC254-075-B-ML",
+      "metric_capture_and_safe_cleanup_status": "PASS",
+      "metrics": {
+        "after": {
+          "boundary_edges": 0,
+          "duplicate_vertices_1e-8": 0,
+          "edges": 16351,
+          "faces": 10918,
+          "invalid_numeric_vertices": 0,
+          "loose_edges": 0,
+          "loose_vertices": 0,
+          "nonmanifold_edges": 50,
+          "signed_volume_native3": null,
+          "vertices": 5440,
+          "zero_area_faces": 0
+        },
+        "bbox_after_native": [
+          [
+            -0.280000001,
+            -0.600000024,
+            -0.600000024
+          ],
+          [
+            0.280000001,
+            0.600000024,
+            0.600000024
+          ]
+        ],
+        "bbox_before_native": [
+          [
+            -0.280000001,
+            -0.600000024,
+            -0.600000024
+          ],
+          [
+            0.280000001,
+            0.600000024,
+            0.600000024
+          ]
+        ],
+        "bbox_max_abs_delta_native": 0.0,
+        "before": {
+          "boundary_edges": 11068,
+          "duplicate_vertices_1e-8": 5660,
+          "edges": 21989,
+          "faces": 10970,
+          "invalid_numeric_vertices": 0,
+          "loose_edges": 0,
+          "loose_vertices": 0,
+          "nonmanifold_edges": 11068,
+          "signed_volume_native3": null,
+          "vertices": 11100,
+          "zero_area_faces": 0
+        },
+        "cleanup_operations": [
+          "remove_doubles_1e-7_native",
+          "dissolve_degenerate_1e-9_native",
+          "recalculate_face_normals"
+        ],
+        "decimation_or_remesh": false
+      },
+      "native_unit": "inch",
+      "status": "PARTIAL_SCOPED",
+      "watertightness_status": "UNVERIFIED"
+    },
+    {
+      "component_id": "cad_ac254_030_b_ml",
+      "exact_model": "AC254-030-B-ML",
+      "metric_capture_and_safe_cleanup_status": "PASS",
+      "metrics": {
+        "after": {
+          "boundary_edges": 0,
+          "duplicate_vertices_1e-8": 0,
+          "edges": 17188,
+          "faces": 11476,
+          "invalid_numeric_vertices": 0,
+          "loose_edges": 0,
+          "loose_vertices": 0,
+          "nonmanifold_edges": 51,
+          "signed_volume_native3": null,
+          "vertices": 5719,
+          "zero_area_faces": 0
+        },
+        "bbox_after_native": [
+          [
+            -0.432047009,
+            -0.600000024,
+            -0.600000024
+          ],
+          [
+            0.340000004,
+            0.600000024,
+            0.600000024
+          ]
+        ],
+        "bbox_before_native": [
+          [
+            -0.432047009,
+            -0.600000024,
+            -0.600000024
+          ],
+          [
+            0.340000004,
+            0.600000024,
+            0.600000024
+          ]
+        ],
+        "bbox_max_abs_delta_native": 0.0,
+        "before": {
+          "boundary_edges": 11546,
+          "duplicate_vertices_1e-8": 5937,
+          "edges": 23185,
+          "faces": 11608,
+          "invalid_numeric_vertices": 0,
+          "loose_edges": 0,
+          "loose_vertices": 0,
+          "nonmanifold_edges": 11546,
+          "signed_volume_native3": null,
+          "vertices": 11656,
+          "zero_area_faces": 0
+        },
+        "cleanup_operations": [
+          "remove_doubles_1e-7_native",
+          "dissolve_degenerate_1e-9_native",
+          "recalculate_face_normals"
+        ],
+        "decimation_or_remesh": false
+      },
+      "native_unit": "inch",
+      "status": "PARTIAL_SCOPED",
+      "watertightness_status": "UNVERIFIED"
+    },
+    {
+      "component_id": "cad_ccm1_bs014",
+      "exact_model": "CCM1-BS014",
+      "metric_capture_and_safe_cleanup_status": "PASS",
+      "metrics": {
+        "after": {
+          "boundary_edges": 0,
+          "duplicate_vertices_1e-8": 0,
+          "edges": 27559,
+          "faces": 18378,
+          "invalid_numeric_vertices": 0,
+          "loose_edges": 0,
+          "loose_vertices": 0,
+          "nonmanifold_edges": 8,
+          "signed_volume_native3": null,
+          "vertices": 9147,
+          "zero_area_faces": 0
+        },
+        "bbox_after_native": [
+          [
+            -0.75,
+            -0.75,
+            -0.75
+          ],
+          [
+            0.75,
+            0.75,
+            0.75
+          ]
+        ],
+        "bbox_before_native": [
+          [
+            -0.75,
+            -0.75,
+            -0.75
+          ],
+          [
+            0.75,
+            0.75,
+            0.75
+          ]
+        ],
+        "bbox_max_abs_delta_native": 0.0,
+        "before": {
+          "boundary_edges": 19264,
+          "duplicate_vertices_1e-8": 10471,
+          "edges": 37211,
+          "faces": 18386,
+          "invalid_numeric_vertices": 0,
+          "loose_edges": 0,
+          "loose_vertices": 0,
+          "nonmanifold_edges": 19264,
+          "signed_volume_native3": null,
+          "vertices": 19618,
+          "zero_area_faces": 8
+        },
+        "cleanup_operations": [
+          "remove_doubles_1e-7_native",
+          "dissolve_degenerate_1e-9_native",
+          "recalculate_face_normals"
+        ],
+        "decimation_or_remesh": false
+      },
+      "native_unit": "inch",
+      "status": "PARTIAL_SCOPED",
+      "watertightness_status": "UNVERIFIED"
+    },
+    {
+      "component_id": "cad_bb1_e03",
+      "exact_model": "BB1-E03",
+      "metric_capture_and_safe_cleanup_status": "PASS",
+      "metrics": {
+        "after": {
+          "boundary_edges": 0,
+          "duplicate_vertices_1e-8": 0,
+          "edges": 5349,
+          "faces": 3566,
+          "invalid_numeric_vertices": 0,
+          "loose_edges": 0,
+          "loose_vertices": 0,
+          "nonmanifold_edges": 0,
+          "signed_volume_native3": 0.184286148,
+          "vertices": 1785,
+          "zero_area_faces": 0
+        },
+        "bbox_after_native": [
+          [
+            -1.854799986,
+            -0.074199401,
+            0.307518989
+          ],
+          [
+            -0.854804993,
+            0.925800979,
+            0.543739974
+          ]
+        ],
+        "bbox_before_native": [
+          [
+            -1.854799986,
+            -0.074199401,
+            0.307518989
+          ],
+          [
+            -0.854804993,
+            0.925800979,
+            0.543739974
+          ]
+        ],
+        "bbox_max_abs_delta_native": 0.0,
+        "before": {
+          "boundary_edges": 3958,
+          "duplicate_vertices_1e-8": 2174,
+          "edges": 7328,
+          "faces": 3566,
+          "invalid_numeric_vertices": 0,
+          "loose_edges": 0,
+          "loose_vertices": 0,
+          "nonmanifold_edges": 3958,
+          "signed_volume_native3": null,
+          "vertices": 3959,
+          "zero_area_faces": 0
+        },
+        "cleanup_operations": [
+          "remove_doubles_1e-7_native",
+          "dissolve_degenerate_1e-9_native",
+          "recalculate_face_normals"
+        ],
+        "decimation_or_remesh": false
+      },
+      "native_unit": "inch",
+      "status": "PASS",
+      "watertightness_status": "PASS"
+    },
+    {
+      "component_id": "cad_km100",
+      "exact_model": "KM100",
+      "metric_capture_and_safe_cleanup_status": "PASS",
+      "metrics": {
+        "after": {
+          "boundary_edges": 0,
+          "duplicate_vertices_1e-8": 0,
+          "edges": 32756,
+          "faces": 21837,
+          "invalid_numeric_vertices": 0,
+          "loose_edges": 0,
+          "loose_vertices": 0,
+          "nonmanifold_edges": 0,
+          "signed_volume_native3": 1.260134645,
+          "vertices": 10923,
+          "zero_area_faces": 1
+        },
+        "bbox_after_native": [
+          [
+            -1.021679997,
+            -0.099269599,
+            -1.082870007
+          ],
+          [
+            1.042690039,
+            1.448420048,
+            0.981498003
+          ]
+        ],
+        "bbox_before_native": [
+          [
+            -1.021679997,
+            -0.099269599,
+            -1.082870007
+          ],
+          [
+            1.042690039,
+            1.448420048,
+            0.981498003
+          ]
+        ],
+        "bbox_max_abs_delta_native": 0.0,
+        "before": {
+          "boundary_edges": 18786,
+          "duplicate_vertices_1e-8": 10032,
+          "edges": 42192,
+          "faces": 21866,
+          "invalid_numeric_vertices": 0,
+          "loose_edges": 0,
+          "loose_vertices": 0,
+          "nonmanifold_edges": 18786,
+          "signed_volume_native3": null,
+          "vertices": 20955,
+          "zero_area_faces": 29
+        },
+        "cleanup_operations": [
+          "remove_doubles_1e-7_native",
+          "dissolve_degenerate_1e-9_native",
+          "recalculate_face_normals"
+        ],
+        "decimation_or_remesh": false
+      },
+      "native_unit": "inch",
+      "status": "PARTIAL_SCOPED",
+      "watertightness_status": "UNVERIFIED"
+    },
+    {
+      "component_id": "cad_xr25p",
+      "exact_model": "XR25P",
+      "metric_capture_and_safe_cleanup_status": "PASS",
+      "metrics": {
+        "after": {
+          "boundary_edges": 4972,
+          "duplicate_vertices_1e-8": 1639,
+          "edges": 427513,
+          "faces": 283350,
+          "invalid_numeric_vertices": 0,
+          "loose_edges": 0,
+          "loose_vertices": 0,
+          "nonmanifold_edges": 4972,
+          "signed_volume_native3": null,
+          "vertices": 143268,
+          "zero_area_faces": 0
+        },
+        "bbox_after_native": [
+          [
+            -2.16534996,
+            -0.280000001,
+            -1.575919986
+          ],
+          [
+            2.904850006,
+            0.625513017,
+            2.250390053
+          ]
+        ],
+        "bbox_before_native": [
+          [
+            -2.16534996,
+            -0.280000001,
+            -1.575919986
+          ],
+          [
+            2.904850006,
+            0.625513017,
+            2.250390053
+          ]
+        ],
+        "bbox_max_abs_delta_native": 0.0,
+        "before": {
+          "boundary_edges": 231086,
+          "duplicate_vertices_1e-8": 120630,
+          "edges": 540814,
+          "faces": 283514,
+          "invalid_numeric_vertices": 0,
+          "loose_edges": 0,
+          "loose_vertices": 0,
+          "nonmanifold_edges": 231086,
+          "signed_volume_native3": null,
+          "vertices": 262259,
+          "zero_area_faces": 160
+        },
+        "cleanup_operations": [
+          "remove_doubles_1e-7_native",
+          "dissolve_degenerate_1e-9_native",
+          "recalculate_face_normals"
+        ],
+        "decimation_or_remesh": false
+      },
+      "native_unit": "inch",
+      "status": "PARTIAL_SCOPED",
+      "watertightness_status": "UNVERIFIED"
+    },
+    {
+      "component_id": "cad_cf125",
+      "exact_model": "CF125",
+      "metric_capture_and_safe_cleanup_status": "PASS",
+      "metrics": {
+        "after": {
+          "boundary_edges": 4430,
+          "duplicate_vertices_1e-8": 2428,
+          "edges": 8173,
+          "faces": 3972,
+          "invalid_numeric_vertices": 0,
+          "loose_edges": 0,
+          "loose_vertices": 0,
+          "nonmanifold_edges": 4430,
+          "signed_volume_native3": null,
+          "vertices": 4414,
+          "zero_area_faces": 0
+        },
+        "bbox_after_native": [
+          [
+            -26.473100662,
+            -33.81129837,
+            -13.731300354
+          ],
+          [
+            9.848859787,
+            -21.619300842,
+            60.055698395
+          ]
+        ],
+        "bbox_before_native": [
+          [
+            -26.473100662,
+            -33.81129837,
+            -13.731300354
+          ],
+          [
+            9.848859787,
+            -21.619300842,
+            60.055698395
+          ]
+        ],
+        "bbox_max_abs_delta_native": 0.0,
+        "before": {
+          "boundary_edges": 4446,
+          "duplicate_vertices_1e-8": 2492,
+          "edges": 8181,
+          "faces": 3972,
+          "invalid_numeric_vertices": 0,
+          "loose_edges": 0,
+          "loose_vertices": 0,
+          "nonmanifold_edges": 4446,
+          "signed_volume_native3": null,
+          "vertices": 4478,
+          "zero_area_faces": 0
+        },
+        "cleanup_operations": [
+          "remove_doubles_1e-7_native",
+          "dissolve_degenerate_1e-9_native",
+          "recalculate_face_normals"
+        ],
+        "decimation_or_remesh": false
+      },
+      "native_unit": "mm",
+      "status": "PARTIAL_SCOPED",
+      "watertightness_status": "UNVERIFIED"
+    },
+    {
+      "component_id": "cad_be1",
+      "exact_model": "BE1",
+      "metric_capture_and_safe_cleanup_status": "PASS",
+      "metrics": {
+        "after": {
+          "boundary_edges": 3990,
+          "duplicate_vertices_1e-8": 1924,
+          "edges": 7935,
+          "faces": 3960,
+          "invalid_numeric_vertices": 0,
+          "loose_edges": 0,
+          "loose_vertices": 0,
+          "nonmanifold_edges": 3990,
+          "signed_volume_native3": null,
+          "vertices": 3906,
+          "zero_area_faces": 0
+        },
+        "bbox_after_native": [
+          [
+            -15.875,
+            -4.698999882,
+            -15.875
+          ],
+          [
+            15.875,
+            7.619999886,
+            15.875
+          ]
+        ],
+        "bbox_before_native": [
+          [
+            -15.875,
+            -4.698999882,
+            -15.875
+          ],
+          [
+            15.875,
+            7.619999886,
+            15.875
+          ]
+        ],
+        "bbox_max_abs_delta_native": 0.0,
+        "before": {
+          "boundary_edges": 4374,
+          "duplicate_vertices_1e-8": 2392,
+          "edges": 8127,
+          "faces": 3960,
+          "invalid_numeric_vertices": 0,
+          "loose_edges": 0,
+          "loose_vertices": 0,
+          "nonmanifold_edges": 4374,
+          "signed_volume_native3": null,
+          "vertices": 4374,
+          "zero_area_faces": 0
+        },
+        "cleanup_operations": [
+          "remove_doubles_1e-7_native",
+          "dissolve_degenerate_1e-9_native",
+          "recalculate_face_normals"
+        ],
+        "decimation_or_remesh": false
+      },
+      "native_unit": "mm",
+      "status": "PARTIAL_SCOPED",
+      "watertightness_status": "UNVERIFIED"
+    },
+    {
+      "component_id": "cad_ph2",
+      "exact_model": "PH2",
+      "metric_capture_and_safe_cleanup_status": "PASS",
+      "metrics": {
+        "after": {
+          "boundary_edges": 0,
+          "duplicate_vertices_1e-8": 0,
+          "edges": 41031,
+          "faces": 27354,
+          "invalid_numeric_vertices": 0,
+          "loose_edges": 0,
+          "loose_vertices": 0,
+          "nonmanifold_edges": 0,
+          "signed_volume_native3": 1.198709433,
+          "vertices": 13681,
+          "zero_area_faces": 0
+        },
+        "bbox_after_native": [
+          [
+            -0.492125988,
+            -1.0,
+            -0.492125988
+          ],
+          [
+            0.492125988,
+            1.0,
+            0.902126014
+          ]
+        ],
+        "bbox_before_native": [
+          [
+            -0.492125988,
+            -1.0,
+            -0.492125988
+          ],
+          [
+            0.492125988,
+            1.0,
+            0.902126014
+          ]
+        ],
+        "bbox_max_abs_delta_native": 0.0,
+        "before": {
+          "boundary_edges": 8650,
+          "duplicate_vertices_1e-8": 4647,
+          "edges": 45362,
+          "faces": 27358,
+          "invalid_numeric_vertices": 0,
+          "loose_edges": 0,
+          "loose_vertices": 0,
+          "nonmanifold_edges": 8650,
+          "signed_volume_native3": null,
+          "vertices": 18328,
+          "zero_area_faces": 4
+        },
+        "cleanup_operations": [
+          "remove_doubles_1e-7_native",
+          "dissolve_degenerate_1e-9_native",
+          "recalculate_face_normals"
+        ],
+        "decimation_or_remesh": false
+      },
+      "native_unit": "inch",
+      "status": "PASS",
+      "watertightness_status": "PASS"
+    },
+    {
+      "component_id": "cad_tr2",
+      "exact_model": "TR2",
+      "metric_capture_and_safe_cleanup_status": "PASS",
+      "metrics": {
+        "after": {
+          "boundary_edges": 1108,
+          "duplicate_vertices_1e-8": 396,
+          "edges": 3905,
+          "faces": 2234,
+          "invalid_numeric_vertices": 0,
+          "loose_edges": 0,
+          "loose_vertices": 0,
+          "nonmanifold_edges": 1108,
+          "signed_volume_native3": null,
+          "vertices": 1515,
+          "zero_area_faces": 0
+        },
+        "bbox_after_native": [
+          [
+            -6.337299824,
+            -0.0,
+            -6.337299824
+          ],
+          [
+            6.337299824,
+            54.927501678,
+            6.337299824
+          ]
+        ],
+        "bbox_before_native": [
+          [
+            -6.337299824,
+            -0.0,
+            -6.337299824
+          ],
+          [
+            6.337299824,
+            54.927501678,
+            6.337299824
+          ]
+        ],
+        "bbox_max_abs_delta_native": 0.0,
+        "before": {
+          "boundary_edges": 2018,
+          "duplicate_vertices_1e-8": 1061,
+          "edges": 4372,
+          "faces": 2242,
+          "invalid_numeric_vertices": 0,
+          "loose_edges": 0,
+          "loose_vertices": 0,
+          "nonmanifold_edges": 2018,
+          "signed_volume_native3": null,
+          "vertices": 2180,
+          "zero_area_faces": 8
+        },
+        "cleanup_operations": [
+          "remove_doubles_1e-7_native",
+          "dissolve_degenerate_1e-9_native",
+          "recalculate_face_normals"
+        ],
+        "decimation_or_remesh": false
+      },
+      "native_unit": "mm",
+      "status": "PARTIAL_SCOPED",
+      "watertightness_status": "UNVERIFIED"
+    },
+    {
+      "component_id": "cad_mb2448",
+      "exact_model": "MB2448",
+      "metric_capture_and_safe_cleanup_status": "PASS",
+      "metrics": {
+        "after": {
+          "boundary_edges": 339720,
+          "duplicate_vertices_1e-8": 154497,
+          "edges": 807720,
+          "faces": 425240,
+          "invalid_numeric_vertices": 0,
+          "loose_edges": 0,
+          "loose_vertices": 0,
+          "nonmanifold_edges": 339720,
+          "signed_volume_native3": null,
+          "vertices": 364805,
+          "zero_area_faces": 0
+        },
+        "bbox_after_native": [
+          [
+            -609.599975586,
+            -0.0,
+            -304.799987793
+          ],
+          [
+            609.599975586,
+            12.699999809,
+            304.799987793
+          ]
+        ],
+        "bbox_before_native": [
+          [
+            -609.599975586,
+            -0.0,
+            -304.799987793
+          ],
+          [
+            609.599975586,
+            12.699999809,
+            304.799987793
+          ]
+        ],
+        "bbox_max_abs_delta_native": 0.0,
+        "before": {
+          "boundary_edges": 352080,
+          "duplicate_vertices_1e-8": 183244,
+          "edges": 813900,
+          "faces": 425240,
+          "invalid_numeric_vertices": 0,
+          "loose_edges": 0,
+          "loose_vertices": 0,
+          "nonmanifold_edges": 352080,
+          "signed_volume_native3": null,
+          "vertices": 393552,
+          "zero_area_faces": 0
+        },
+        "cleanup_operations": [
+          "remove_doubles_1e-7_native",
+          "dissolve_degenerate_1e-9_native",
+          "recalculate_face_normals"
+        ],
+        "decimation_or_remesh": false
+      },
+      "native_unit": "mm",
+      "status": "PARTIAL_SCOPED",
+      "watertightness_status": "UNVERIFIED"
+    }
+  ],
+  "boundary": "Safe cleanup and preservation metrics passed; several vendor-derived meshes retain boundary/non-manifold edges, so watertightness is not claimed.",
+  "cleanup_policy": {
+    "allowed": [
+      "remove_doubles_1e-7_native",
+      "dissolve_degenerate_1e-9_native",
+      "recalculate_face_normals"
+    ],
+    "cross_part_weld": false,
+    "decimation_or_remesh": false
+  },
+  "phase": "PHASE_2_REPRESENTATIVE_SMOKE",
+  "saved_blend_nonpublic_record": {
+    "build_fingerprint_sha256": "00fbe0b5822b01ed5ec29133e7505a8a06390974e3a88ef4642d8c91c60de26d",
+    "byte_length": 35894978,
+    "fingerprint_status": "PASS",
+    "public_file_included": false,
+    "reopen_fingerprint_sha256": "00fbe0b5822b01ed5ec29133e7505a8a06390974e3a88ef4642d8c91c60de26d",
+    "reopened_in_fresh_factory_startup_process": true,
+    "sha256": "de664a05c457eae2eb46e91566da22aea69dce3940c2f0aa52bfcf48e40b2be2"
+  },
+  "schema_version": "1.0",
+  "status": "PARTIAL_SCOPED",
+  "status_counts": {
+    "PARTIAL_SCOPED": 14,
+    "PASS": 3
+  }
+}

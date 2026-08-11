@@ -1,0 +1,36 @@
+{
+  "allowed_source_classes": [
+    "FROZEN_PUBLIC_PHASE1",
+    "FIXED_PUBLIC_CHECKOUT",
+    "OFFICIAL_PUBLIC_RUNTIME_RELEASES",
+    "GENERIC_RUNTIME"
+  ],
+  "fixed_public_checkout": {
+    "detached_head": "048766250538f169d924c31bbdd39bf0c255c63f",
+    "peeled_commit": "048766250538f169d924c31bbdd39bf0c255c63f",
+    "repository": "PUBLIC_REPOSITORY_FIXED_BY_DELEGATION",
+    "repository_url_disclosed": false,
+    "status": "PASS",
+    "tag": "v1.0.0",
+    "tag_type": "annotated",
+    "worktree_status_entries": 0
+  },
+  "frozen_phase1": {
+    "artifact_hash_mismatches": 0,
+    "artifact_hashes_verified": 10,
+    "manifest_sha256": "7513c352768915cb96c0161b842f04505af75b98cedab1f41d1259fd07ae8ce6",
+    "modified": false,
+    "status": "PASS"
+  },
+  "phase": "PHASE_2_REPRESENTATIVE_SMOKE",
+  "private_context_reads": 0,
+  "public_geometry_policy": {
+    "blend_files": 0,
+    "decision": "EXCLUDE_FROM_PUBLIC_PACKAGE",
+    "derived_mesh_files": 0,
+    "vendor_and_derived_geometry_redistribution": "UNVERIFIED",
+    "vendor_cad_files": 0
+  },
+  "schema_version": "1.0",
+  "status": "PASS"
+}

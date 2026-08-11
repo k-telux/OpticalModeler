@@ -1,0 +1,722 @@
+{
+  "electrical_data": {
+    "connector_and_transfer_claim": "UNVERIFIED",
+    "geometry_status": "PASS",
+    "record": {
+      "connector_standard": "UNVERIFIED",
+      "edge_id": "e52",
+      "endpoint_axis_abs_dot": [
+        0.999999937,
+        1.000000097
+      ],
+      "endpoint_gap_mm": [
+        0.0,
+        0.0
+      ],
+      "minimum_bend_radius_mm": 49.450328,
+      "opaque_aabb_penetration_candidates": [],
+      "source_port": "n21_line_camera.p_data",
+      "status": "PASS",
+      "target_port": "n23_control_computer.p_acq_data",
+      "transfer_performance": "UNVERIFIED"
+    },
+    "semantic_edge_count": 1,
+    "status": "PARTIAL_SCOPED"
+  },
+  "free_space_zero_radius": {
+    "boundary": "First-hit failures remain UNVERIFIED where an engineering-derived port does not identify a proven vendor optical surface or a mount is hit first.",
+    "physical_axis_object_count": 25,
+    "records": [
+      {
+        "centerline_radius_mm": 0.0,
+        "edge_id": "e04",
+        "endpoint_gap_mm": [
+          0.0,
+          0.0
+        ],
+        "expected_target_object": "DEVICE__SAMPLE_GVS012",
+        "explicit_directed_edge": true,
+        "first_hit_boundary": "ENGINEERING_PORT_TO_ROLE_BODY_FIRST_HIT",
+        "first_opaque_hit": {
+          "distance_mm": null,
+          "hit_point_mm": null,
+          "object_name": null
+        },
+        "inferred_reciprocal_evidence": false,
+        "source_port": "n04_sample_collimator.p_free",
+        "status": "UNVERIFIED",
+        "target_port": "n05_sample_galvo_x.p_in"
+      },
+      {
+        "centerline_radius_mm": 0.0,
+        "edge_id": "e05",
+        "endpoint_gap_mm": [
+          0.0,
+          0.0
+        ],
+        "expected_target_object": "DEVICE__SAMPLE_GVS012",
+        "explicit_directed_edge": true,
+        "first_hit_boundary": "INTRA_PHYSICAL_INSTANCE_TRANSFER",
+        "first_opaque_hit": {
+          "distance_mm": 0.0,
+          "hit_point_mm": [
+            65.226165771,
+            -137.690048218,
+            61.212993622
+          ],
+          "object_name": "DEVICE__SAMPLE_GVS012"
+        },
+        "inferred_reciprocal_evidence": false,
+        "source_port": "n05_sample_galvo_x.p_out",
+        "status": "PASS",
+        "target_port": "n06_sample_galvo_y.p_in"
+      },
+      {
+        "centerline_radius_mm": 0.0,
+        "edge_id": "e06",
+        "endpoint_gap_mm": [
+          0.0,
+          0.0
+        ],
+        "expected_target_object": "DEVICE__SAMPLE_LENS_L0",
+        "explicit_directed_edge": true,
+        "first_hit_boundary": "ENGINEERING_PORT_TO_ROLE_BODY_FIRST_HIT",
+        "first_opaque_hit": {
+          "distance_mm": null,
+          "hit_point_mm": null,
+          "object_name": null
+        },
+        "inferred_reciprocal_evidence": false,
+        "source_port": "n06_sample_galvo_y.p_out",
+        "status": "UNVERIFIED",
+        "target_port": "n07_sample_lens_l0.p_upstream"
+      },
+      {
+        "centerline_radius_mm": 0.0,
+        "edge_id": "e07",
+        "endpoint_gap_mm": [
+          0.0,
+          0.0
+        ],
+        "expected_target_object": "DEVICE__SAMPLE_FIXTURE",
+        "explicit_directed_edge": true,
+        "first_hit_boundary": "ENGINEERING_PORT_TO_ROLE_BODY_FIRST_HIT",
+        "first_opaque_hit": {
+          "distance_mm": 174.016830444,
+          "hit_point_mm": [
+            383.100036621,
+            -139.699996948,
+            9.790000916
+          ],
+          "object_name": "DEVICE__SAMPLE_FIXTURE"
+        },
+        "inferred_reciprocal_evidence": false,
+        "source_port": "n07_sample_lens_l0.p_downstream",
+        "status": "PASS",
+        "target_port": "n08_sample.p_optical"
+      },
+      {
+        "centerline_radius_mm": 0.0,
+        "edge_id": "e08",
+        "endpoint_gap_mm": [
+          0.0,
+          0.0
+        ],
+        "expected_target_object": "DEVICE__SAMPLE_LENS_L0",
+        "explicit_directed_edge": true,
+        "first_hit_boundary": "ENGINEERING_PORT_TO_ROLE_BODY_FIRST_HIT",
+        "first_opaque_hit": {
+          "distance_mm": null,
+          "hit_point_mm": null,
+          "object_name": null
+        },
+        "inferred_reciprocal_evidence": true,
+        "source_port": "n08_sample.p_optical",
+        "status": "UNVERIFIED",
+        "target_port": "n07_sample_lens_l0.p_downstream"
+      },
+      {
+        "centerline_radius_mm": 0.0,
+        "edge_id": "e09",
+        "endpoint_gap_mm": [
+          0.0,
+          0.0
+        ],
+        "expected_target_object": "DEVICE__SAMPLE_GVS012",
+        "explicit_directed_edge": true,
+        "first_hit_boundary": "ENGINEERING_PORT_TO_ROLE_BODY_FIRST_HIT",
+        "first_opaque_hit": {
+          "distance_mm": 103.758079529,
+          "hit_point_mm": [
+            106.422531128,
+            -134.325164795,
+            61.204544067
+          ],
+          "object_name": "DEVICE__SAMPLE_GVS012"
+        },
+        "inferred_reciprocal_evidence": true,
+        "source_port": "n07_sample_lens_l0.p_upstream",
+        "status": "PASS",
+        "target_port": "n06_sample_galvo_y.p_out"
+      },
+      {
+        "centerline_radius_mm": 0.0,
+        "edge_id": "e10",
+        "endpoint_gap_mm": [
+          0.0,
+          0.0
+        ],
+        "expected_target_object": "DEVICE__SAMPLE_GVS012",
+        "explicit_directed_edge": true,
+        "first_hit_boundary": "INTRA_PHYSICAL_INSTANCE_TRANSFER",
+        "first_opaque_hit": {
+          "distance_mm": 0.0,
+          "hit_point_mm": [
+            61.788974762,
+            -141.724761963,
+            61.212993622
+          ],
+          "object_name": "DEVICE__SAMPLE_GVS012"
+        },
+        "inferred_reciprocal_evidence": true,
+        "source_port": "n06_sample_galvo_y.p_in",
+        "status": "PASS",
+        "target_port": "n05_sample_galvo_x.p_out"
+      },
+      {
+        "centerline_radius_mm": 0.0,
+        "edge_id": "e11",
+        "endpoint_gap_mm": [
+          0.0,
+          0.0
+        ],
+        "expected_target_object": "DEVICE__SAMPLE_COLLIMATOR",
+        "explicit_directed_edge": true,
+        "first_hit_boundary": "ENGINEERING_PORT_TO_ROLE_BODY_FIRST_HIT",
+        "first_opaque_hit": {
+          "distance_mm": null,
+          "hit_point_mm": null,
+          "object_name": null
+        },
+        "inferred_reciprocal_evidence": true,
+        "source_port": "n05_sample_galvo_x.p_in",
+        "status": "UNVERIFIED",
+        "target_port": "n04_sample_collimator.p_free"
+      },
+      {
+        "centerline_radius_mm": 0.0,
+        "edge_id": "e16",
+        "endpoint_gap_mm": [
+          0.0,
+          0.0
+        ],
+        "expected_target_object": "DEVICE__REFERENCE_NPBS",
+        "explicit_directed_edge": true,
+        "first_hit_boundary": "ENGINEERING_PORT_TO_ROLE_BODY_FIRST_HIT",
+        "first_opaque_hit": {
+          "distance_mm": null,
+          "hit_point_mm": null,
+          "object_name": null
+        },
+        "inferred_reciprocal_evidence": false,
+        "source_port": "n10_reference_collimator.p_free",
+        "status": "UNVERIFIED",
+        "target_port": "n11_reference_npbs.p_common"
+      },
+      {
+        "centerline_radius_mm": 0.0,
+        "edge_id": "e17",
+        "endpoint_gap_mm": [
+          0.0,
+          0.0
+        ],
+        "expected_target_object": "DEVICE__REFERENCE_GVS012",
+        "explicit_directed_edge": true,
+        "first_hit_boundary": "ENGINEERING_PORT_TO_ROLE_BODY_FIRST_HIT",
+        "first_opaque_hit": {
+          "distance_mm": null,
+          "hit_point_mm": null,
+          "object_name": null
+        },
+        "inferred_reciprocal_evidence": false,
+        "source_port": "n11_reference_npbs.p_arm1",
+        "status": "UNVERIFIED",
+        "target_port": "n12_reference_galvo_gs1.p_in"
+      },
+      {
+        "centerline_radius_mm": 0.0,
+        "edge_id": "e18",
+        "endpoint_gap_mm": [
+          0.0,
+          0.0
+        ],
+        "expected_target_object": "DEVICE__REFERENCE_LENS_L1",
+        "explicit_directed_edge": true,
+        "first_hit_boundary": "ENGINEERING_PORT_TO_ROLE_BODY_FIRST_HIT",
+        "first_opaque_hit": {
+          "distance_mm": null,
+          "hit_point_mm": null,
+          "object_name": null
+        },
+        "inferred_reciprocal_evidence": false,
+        "source_port": "n12_reference_galvo_gs1.p_out",
+        "status": "UNVERIFIED",
+        "target_port": "n13_reference_lens_l1.p_upstream"
+      },
+      {
+        "centerline_radius_mm": 0.0,
+        "edge_id": "e19",
+        "endpoint_gap_mm": [
+          0.0,
+          0.0
+        ],
+        "expected_target_object": "DEVICE__REFERENCE_MIRROR_M1",
+        "explicit_directed_edge": true,
+        "first_hit_boundary": "ENGINEERING_PORT_TO_ROLE_BODY_FIRST_HIT",
+        "first_opaque_hit": {
+          "distance_mm": 91.604385376,
+          "hit_point_mm": [
+            444.309448242,
+            63.500003815,
+            84.571601868
+          ],
+          "object_name": "a11_reference_mirror_1__KM100"
+        },
+        "inferred_reciprocal_evidence": false,
+        "source_port": "n13_reference_lens_l1.p_downstream",
+        "status": "UNVERIFIED",
+        "target_port": "n14_reference_mirror_m1.p_optical"
+      },
+      {
+        "centerline_radius_mm": 0.0,
+        "edge_id": "e20",
+        "endpoint_gap_mm": [
+          0.0,
+          0.0
+        ],
+        "expected_target_object": "DEVICE__REFERENCE_LENS_L1",
+        "explicit_directed_edge": true,
+        "first_hit_boundary": "ENGINEERING_PORT_TO_ROLE_BODY_FIRST_HIT",
+        "first_opaque_hit": {
+          "distance_mm": 18.112375259,
+          "hit_point_mm": [
+            448.627502441,
+            63.500007629,
+            84.857025146
+          ],
+          "object_name": "a11_reference_mirror_1__KM100"
+        },
+        "inferred_reciprocal_evidence": true,
+        "source_port": "n14_reference_mirror_m1.p_optical",
+        "status": "UNVERIFIED",
+        "target_port": "n13_reference_lens_l1.p_downstream"
+      },
+      {
+        "centerline_radius_mm": 0.0,
+        "edge_id": "e21",
+        "endpoint_gap_mm": [
+          0.0,
+          0.0
+        ],
+        "expected_target_object": "DEVICE__REFERENCE_GVS012",
+        "explicit_directed_edge": true,
+        "first_hit_boundary": "ENGINEERING_PORT_TO_ROLE_BODY_FIRST_HIT",
+        "first_opaque_hit": {
+          "distance_mm": 96.989830017,
+          "hit_point_mm": [
+            258.822509766,
+            122.921310425,
+            58.552330017
+          ],
+          "object_name": "DEVICE__REFERENCE_GVS012"
+        },
+        "inferred_reciprocal_evidence": true,
+        "source_port": "n13_reference_lens_l1.p_upstream",
+        "status": "PASS",
+        "target_port": "n12_reference_galvo_gs1.p_out"
+      },
+      {
+        "centerline_radius_mm": 0.0,
+        "edge_id": "e22",
+        "endpoint_gap_mm": [
+          0.0,
+          0.0
+        ],
+        "expected_target_object": "DEVICE__REFERENCE_NPBS",
+        "explicit_directed_edge": true,
+        "first_hit_boundary": "ENGINEERING_PORT_TO_ROLE_BODY_FIRST_HIT",
+        "first_opaque_hit": {
+          "distance_mm": null,
+          "hit_point_mm": null,
+          "object_name": null
+        },
+        "inferred_reciprocal_evidence": true,
+        "source_port": "n12_reference_galvo_gs1.p_in",
+        "status": "UNVERIFIED",
+        "target_port": "n11_reference_npbs.p_arm1"
+      },
+      {
+        "centerline_radius_mm": 0.0,
+        "edge_id": "e23",
+        "endpoint_gap_mm": [
+          0.0,
+          0.0
+        ],
+        "expected_target_object": "DEVICE__REFERENCE_GVS012",
+        "explicit_directed_edge": true,
+        "first_hit_boundary": "ENGINEERING_PORT_TO_ROLE_BODY_FIRST_HIT",
+        "first_opaque_hit": {
+          "distance_mm": null,
+          "hit_point_mm": null,
+          "object_name": null
+        },
+        "inferred_reciprocal_evidence": false,
+        "source_port": "n11_reference_npbs.p_arm2",
+        "status": "UNVERIFIED",
+        "target_port": "n15_reference_galvo_gs2.p_in"
+      },
+      {
+        "centerline_radius_mm": 0.0,
+        "edge_id": "e24",
+        "endpoint_gap_mm": [
+          0.0,
+          0.0
+        ],
+        "expected_target_object": "DEVICE__REFERENCE_LENS_L2",
+        "explicit_directed_edge": true,
+        "first_hit_boundary": "ENGINEERING_PORT_TO_ROLE_BODY_FIRST_HIT",
+        "first_opaque_hit": {
+          "distance_mm": null,
+          "hit_point_mm": null,
+          "object_name": null
+        },
+        "inferred_reciprocal_evidence": false,
+        "source_port": "n15_reference_galvo_gs2.p_out",
+        "status": "UNVERIFIED",
+        "target_port": "n16_reference_lens_l2.p_upstream"
+      },
+      {
+        "centerline_radius_mm": 0.0,
+        "edge_id": "e25",
+        "endpoint_gap_mm": [
+          0.0,
+          0.0
+        ],
+        "expected_target_object": "DEVICE__REFERENCE_MIRROR_M2",
+        "explicit_directed_edge": true,
+        "first_hit_boundary": "ENGINEERING_PORT_TO_ROLE_BODY_FIRST_HIT",
+        "first_opaque_hit": {
+          "distance_mm": 91.604393005,
+          "hit_point_mm": [
+            444.30947876,
+            190.5,
+            84.571609497
+          ],
+          "object_name": "a13_reference_mirror_2__KM100"
+        },
+        "inferred_reciprocal_evidence": false,
+        "source_port": "n16_reference_lens_l2.p_downstream",
+        "status": "UNVERIFIED",
+        "target_port": "n17_reference_mirror_m2.p_optical"
+      },
+      {
+        "centerline_radius_mm": 0.0,
+        "edge_id": "e26",
+        "endpoint_gap_mm": [
+          0.0,
+          0.0
+        ],
+        "expected_target_object": "DEVICE__REFERENCE_LENS_L2",
+        "explicit_directed_edge": true,
+        "first_hit_boundary": "ENGINEERING_PORT_TO_ROLE_BODY_FIRST_HIT",
+        "first_opaque_hit": {
+          "distance_mm": 18.112375259,
+          "hit_point_mm": [
+            448.627502441,
+            190.5,
+            84.857025146
+          ],
+          "object_name": "a13_reference_mirror_2__KM100"
+        },
+        "inferred_reciprocal_evidence": true,
+        "source_port": "n17_reference_mirror_m2.p_optical",
+        "status": "UNVERIFIED",
+        "target_port": "n16_reference_lens_l2.p_downstream"
+      },
+      {
+        "centerline_radius_mm": 0.0,
+        "edge_id": "e27",
+        "endpoint_gap_mm": [
+          0.0,
+          0.0
+        ],
+        "expected_target_object": "DEVICE__REFERENCE_GVS012",
+        "explicit_directed_edge": true,
+        "first_hit_boundary": "ENGINEERING_PORT_TO_ROLE_BODY_FIRST_HIT",
+        "first_opaque_hit": {
+          "distance_mm": 83.896751404,
+          "hit_point_mm": [
+            258.822509766,
+            156.481002808,
+            58.552333832
+          ],
+          "object_name": "DEVICE__REFERENCE_GVS012"
+        },
+        "inferred_reciprocal_evidence": true,
+        "source_port": "n16_reference_lens_l2.p_upstream",
+        "status": "PASS",
+        "target_port": "n15_reference_galvo_gs2.p_out"
+      },
+      {
+        "centerline_radius_mm": 0.0,
+        "edge_id": "e28",
+        "endpoint_gap_mm": [
+          0.0,
+          0.0
+        ],
+        "expected_target_object": "DEVICE__REFERENCE_NPBS",
+        "explicit_directed_edge": true,
+        "first_hit_boundary": "ENGINEERING_PORT_TO_ROLE_BODY_FIRST_HIT",
+        "first_opaque_hit": {
+          "distance_mm": null,
+          "hit_point_mm": null,
+          "object_name": null
+        },
+        "inferred_reciprocal_evidence": true,
+        "source_port": "n15_reference_galvo_gs2.p_in",
+        "status": "UNVERIFIED",
+        "target_port": "n11_reference_npbs.p_arm2"
+      },
+      {
+        "centerline_radius_mm": 0.0,
+        "edge_id": "e29",
+        "endpoint_gap_mm": [
+          0.0,
+          0.0
+        ],
+        "expected_target_object": "DEVICE__REFERENCE_COLLIMATOR",
+        "explicit_directed_edge": true,
+        "first_hit_boundary": "ENGINEERING_PORT_TO_ROLE_BODY_FIRST_HIT",
+        "first_opaque_hit": {
+          "distance_mm": null,
+          "hit_point_mm": null,
+          "object_name": null
+        },
+        "inferred_reciprocal_evidence": true,
+        "source_port": "n11_reference_npbs.p_common",
+        "status": "UNVERIFIED",
+        "target_port": "n10_reference_collimator.p_free"
+      },
+      {
+        "centerline_radius_mm": 0.0,
+        "edge_id": "e33",
+        "endpoint_gap_mm": [
+          0.0,
+          0.0
+        ],
+        "expected_target_object": "DEVICE__DIFFRACTION_GRATING",
+        "explicit_directed_edge": true,
+        "first_hit_boundary": "ENGINEERING_PORT_TO_ROLE_BODY_FIRST_HIT",
+        "first_opaque_hit": {
+          "distance_mm": 94.800003052,
+          "hit_point_mm": [
+            -19.0,
+            245.0,
+            70.0
+          ],
+          "object_name": "DEVICE__DIFFRACTION_GRATING"
+        },
+        "inferred_reciprocal_evidence": false,
+        "source_port": "n18_detector_collimator.p_free",
+        "status": "PASS",
+        "target_port": "n19_diffraction_grating.p_in"
+      },
+      {
+        "centerline_radius_mm": 0.0,
+        "edge_id": "e34",
+        "endpoint_gap_mm": [
+          0.0,
+          0.0
+        ],
+        "expected_target_object": "DEVICE__SPECTROMETER_LENS",
+        "explicit_directed_edge": true,
+        "first_hit_boundary": "ENGINEERING_PORT_TO_ROLE_BODY_FIRST_HIT",
+        "first_opaque_hit": {
+          "distance_mm": 114.800003052,
+          "hit_point_mm": [
+            104.0,
+            245.0,
+            70.0
+          ],
+          "object_name": "DEVICE__SPECTROMETER_LENS"
+        },
+        "inferred_reciprocal_evidence": false,
+        "source_port": "n19_diffraction_grating.p_out",
+        "status": "PASS",
+        "target_port": "n20_spectrometer_lens.p_in"
+      },
+      {
+        "centerline_radius_mm": 0.0,
+        "edge_id": "e35",
+        "endpoint_gap_mm": [
+          0.0,
+          0.0
+        ],
+        "expected_target_object": "DEVICE__LINE_CAMERA",
+        "explicit_directed_edge": true,
+        "first_hit_boundary": "ENGINEERING_PORT_TO_ROLE_BODY_FIRST_HIT",
+        "first_opaque_hit": {
+          "distance_mm": 87.800003052,
+          "hit_point_mm": [
+            204.0,
+            245.0,
+            70.0
+          ],
+          "object_name": "DEVICE__LINE_CAMERA"
+        },
+        "inferred_reciprocal_evidence": false,
+        "source_port": "n20_spectrometer_lens.p_out",
+        "status": "PASS",
+        "target_port": "n21_line_camera.p_optical"
+      }
+    ],
+    "semantic_edge_count": 25,
+    "status": "UNVERIFIED",
+    "status_counts": {
+      "PASS": 9,
+      "UNVERIFIED": 16
+    }
+  },
+  "guided_fiber": {
+    "minimum_bend_radius_threshold_mm": 30.0,
+    "physical_run_count": 6,
+    "records": [
+      {
+        "endpoint_axis_abs_dot": [
+          0.99999997,
+          1.000000021
+        ],
+        "endpoint_gap_mm": [
+          0.0,
+          0.0
+        ],
+        "internal_black_box_boundary": "FPC_AND_COUPLER_INTERNAL_TRANSFER_NOT_GEOMETRICALLY_AUDITED",
+        "minimum_bend_radius_mm": 612.277747278,
+        "opaque_aabb_penetration_candidates": [],
+        "physical_run_id": "fiber_run_detector",
+        "semantic_edge_ids": [
+          "e32"
+        ],
+        "status": "PASS"
+      },
+      {
+        "endpoint_axis_abs_dot": [
+          1.000000004,
+          1.000000113
+        ],
+        "endpoint_gap_mm": [
+          0.0,
+          0.0
+        ],
+        "internal_black_box_boundary": "FPC_AND_COUPLER_INTERNAL_TRANSFER_NOT_GEOMETRICALLY_AUDITED",
+        "minimum_bend_radius_mm": 166.885472501,
+        "opaque_aabb_penetration_candidates": [],
+        "physical_run_id": "fiber_run_reference_coupler_pc",
+        "semantic_edge_ids": [
+          "e14",
+          "e31"
+        ],
+        "status": "PASS"
+      },
+      {
+        "endpoint_axis_abs_dot": [
+          1.0,
+          1.000000028
+        ],
+        "endpoint_gap_mm": [
+          0.0,
+          0.0
+        ],
+        "internal_black_box_boundary": "FPC_AND_COUPLER_INTERNAL_TRANSFER_NOT_GEOMETRICALLY_AUDITED",
+        "minimum_bend_radius_mm": 239.803041103,
+        "opaque_aabb_penetration_candidates": [],
+        "physical_run_id": "fiber_run_reference_pc_collimator",
+        "semantic_edge_ids": [
+          "e15",
+          "e30"
+        ],
+        "status": "PASS"
+      },
+      {
+        "endpoint_axis_abs_dot": [
+          1.000000004,
+          1.000000113
+        ],
+        "endpoint_gap_mm": [
+          0.0,
+          0.0
+        ],
+        "internal_black_box_boundary": "FPC_AND_COUPLER_INTERNAL_TRANSFER_NOT_GEOMETRICALLY_AUDITED",
+        "minimum_bend_radius_mm": 166.911018728,
+        "opaque_aabb_penetration_candidates": [],
+        "physical_run_id": "fiber_run_sample_coupler_pc",
+        "semantic_edge_ids": [
+          "e02",
+          "e13"
+        ],
+        "status": "PASS"
+      },
+      {
+        "endpoint_axis_abs_dot": [
+          0.999999955,
+          0.999999985
+        ],
+        "endpoint_gap_mm": [
+          0.0,
+          0.0
+        ],
+        "internal_black_box_boundary": "FPC_AND_COUPLER_INTERNAL_TRANSFER_NOT_GEOMETRICALLY_AUDITED",
+        "minimum_bend_radius_mm": 143.705986479,
+        "opaque_aabb_penetration_candidates": [],
+        "physical_run_id": "fiber_run_sample_pc_collimator",
+        "semantic_edge_ids": [
+          "e03",
+          "e12"
+        ],
+        "status": "PASS"
+      },
+      {
+        "endpoint_axis_abs_dot": [
+          1.000000015,
+          0.999999948
+        ],
+        "endpoint_gap_mm": [
+          0.0,
+          0.0
+        ],
+        "internal_black_box_boundary": "FPC_AND_COUPLER_INTERNAL_TRANSFER_NOT_GEOMETRICALLY_AUDITED",
+        "minimum_bend_radius_mm": 792.241041778,
+        "opaque_aabb_penetration_candidates": [],
+        "physical_run_id": "fiber_run_source",
+        "semantic_edge_ids": [
+          "e01"
+        ],
+        "status": "PASS"
+      }
+    ],
+    "semantic_edge_count": 10,
+    "status": "PASS",
+    "status_counts": {
+      "PASS": 6
+    }
+  },
+  "phase": "PHASE_2_REPRESENTATIVE_SMOKE",
+  "schema_version": "1.0",
+  "semantic_boundaries": {
+    "custom_spectrometer": "TOPOLOGY_AND_CAMERA_ENDPOINT_ONLY; RESOLUTION_AND_IMAGING_PERFORMANCE_UNVERIFIED",
+    "main_fiber_coupler": "FOUR_CONNECTOR_FRAMES_GEOMETRICALLY_AUDITED; INTERNAL_50_50_SPLIT_COMBINE_DECLARED_NOT_PROVEN",
+    "reciprocal_paths": "EXPLICIT_DIRECTED_RETURN_EDGES_RETAINED; EVIDENCE_CLASS=INFERRED_RECIPROCAL_PATH; NO_AUTOMATIC_RECIPROCAL_EDGE_GENERATION",
+    "reference_npbs": "CENTRAL_RAY_SPLIT_RECOMBINE_GEOMETRY_ONLY; 50_50_THROUGHPUT_UNVERIFIED"
+  },
+  "status": "UNVERIFIED"
+}

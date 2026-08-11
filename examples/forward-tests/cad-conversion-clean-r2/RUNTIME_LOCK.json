@@ -1,0 +1,106 @@
+{
+  "binary_manifest": {
+    "entry_count": 521,
+    "path": "RUNTIME_BINARY_MANIFEST.sha256",
+    "path_display_encoding": "Percent encoding is applied only to forbidden-token substrings in public path labels; binary hashes and entry order are unchanged.",
+    "private_original_sha256": "7fc3cba4540b2b503c7c55dc449d492227c73ef4fd161895d9d3cf701c94eb64",
+    "sha256": "b3e634835d26ab86244a337ebafc63f5540c6d7ef86905b7829d0fd7e4e72c76"
+  },
+  "blender": {
+    "archive_actual_sha256": "317ef64e7a2c3cc79ec810c766ae9828aff865bea78039dc695b3f1118c34b4f",
+    "archive_bytes": 398917359,
+    "archive_expected_sha256": "317ef64e7a2c3cc79ec810c766ae9828aff865bea78039dc695b3f1118c34b4f",
+    "core_binary": {
+      "bytes": 96054232,
+      "path": "blender/blender.exe",
+      "sha256": "25bdb2e3f8ed0bac9d51b7a25fbea0f712a8d80346f2efc9dbe24d85e910c310"
+    },
+    "official_archive_url": "https://download.blender.org/release/Blender4.5/blender-4.5.12-windows-x64.zip",
+    "official_release_directory": "https://download.blender.org/release/Blender4.5/",
+    "official_sha256_url": "https://download.blender.org/release/Blender4.5/blender-4.5.12.sha256",
+    "version": "4.5.12 LTS",
+    "version_probe": [
+      "Blender 4.5.12 LTS (hash 84afd5f785f7 built 2026-07-21 01:33:53)",
+      "Blender 4.5.12 LTS",
+      "\tbuild date: 2026-07-21",
+      "\tbuild time: 01:33:53",
+      "\tbuild commit date: 2026-07-20",
+      "\tbuild commit time: 13:37",
+      "\tbuild hash: 84afd5f785f7",
+      "\tbuild branch: blender-v4.5-release",
+      "\tbuild platform: Windows",
+      "\tbuild type: Release",
+      "\tbuild c flags: /W3 /w34062 /w34100 /w34115 /w34189 /w35038 /wd4018 /wd4146 /wd4065 /wd4127 /wd4181 /wd4200 /wd4244 /wd4267 /wd4305 /wd4800 /wd4828 /wd4996 /wd4661 /wd4848 /we4013 /we4133 /we4431 /we4033 /DWIN32 /D_WINDOWS /W3 /nologo /J /Gd /MP /bigobj /Zc:inline  ",
+      "\tbuild c++ flags: /W3 /w34062 /w34100 /w34115 /w34189 /w35038 /wd4018 /wd4146 /wd4065 /wd4127 /wd4181 /wd4200 /wd4244 /wd4267 /wd4305 /wd4800 /wd4828 /wd4996 /wd4661 /wd4848 /we4013 /we4133 /we4431 /we4033 /DWIN32 /D_WINDOWS /W3  /EHsc /nologo /J /Gd /MP /EHsc /bigobj /permissive- /Zc:__cplusplus /Zc:inline  ",
+      "\tbuild link flags: /MACHINE:X64  /SUBSYSTEM:CONSOLE /STACK:2097152 /ignore:4049 /ignore:4217 /ignore:4221",
+      "\tbuild system: CMake"
+    ]
+  },
+  "conversion_started_before_lock": false,
+  "environment_policy": "Isolated application-directory staging plus Windows system directories only; no ambient PATH entries are used by conversion subprocesses.",
+  "host_runtime": {
+    "machine": "AMD64",
+    "os": "Windows",
+    "os_release": "10",
+    "os_version": "10.0.26200",
+    "system_binary_count": 6
+  },
+  "locked_at_utc": "2026-08-09T18:01:33Z",
+  "occt": {
+    "archive_actual_sha256": "48fa1f384432b89a96f2c02f44ea7a034612111a891414486443d737918dfb50",
+    "archive_bytes": 252471468,
+    "archive_expected_sha256": "48fa1f384432b89a96f2c02f44ea7a034612111a891414486443d737918dfb50",
+    "core_binaries": [
+      {
+        "bytes": 12800,
+        "path": "occt-stage/bin/DRAWEXE.exe",
+        "sha256": "90571d83d136ad8177507cc9ae1489be78551d7e3865c55a61bad4175a44dd23"
+      },
+      {
+        "bytes": 5770240,
+        "path": "occt-stage/bin/TKDESTEP.dll",
+        "sha256": "a10251a88a8beeadfaac733ef8b80f05da1ed533eef31257bbeb577ff666b167"
+      },
+      {
+        "bytes": 1710080,
+        "path": "occt-stage/bin/TKernel.dll",
+        "sha256": "93aa23f428cd3dc9e4dd7679111c42131dc2f7c551b8d666dbf06e083d73e491"
+      },
+      {
+        "bytes": 817664,
+        "path": "occt-stage/bin/TKXCAF.dll",
+        "sha256": "b7023dc7515f596638faee3c5c40ffc3b253b09f2c40f7cf139f32e6409310e5"
+      }
+    ],
+    "isolated_stage_file_count": 271,
+    "official_archive_url": "https://github.com/Open-Cascade-SAS/OCCT/releases/download/V8_0_0/occt-combined-release-no-pch.zip",
+    "official_release_page": "https://github.com/Open-Cascade-SAS/OCCT/releases/tag/V8_0_0",
+    "stage_bytes_matching_official_archive": 271,
+    "version": "8.0.0",
+    "version_probe": [
+      "OCCT_VERSION=Open CASCADE Technology 8.0.0",
+      "Tk enabled (HAVE_TK)",
+      "TBB enabled (HAVE_TBB)",
+      "FreeType enabled (HAVE_FREETYPE)",
+      "FreeImage enabled (HAVE_FREEIMAGE)",
+      "FFmpeg enabled (HAVE_FFMPEG)",
+      "OpenGL: enabled (HAVE_OPENGL_EXT)",
+      "OpenGL ES: enabled (HAVE_GLES2_EXT)",
+      "OpenVR enabled (HAVE_OPENVR)",
+      "RapidJSON enabled (HAVE_RAPIDJSON)",
+      "Draco enabled (HAVE_DRACO)",
+      "VTK enabled (HAVE_VTK)",
+      "Exceptions disabled (No_Exception)",
+      "Compiler: MS Visual C++ 14.4 (_MSC_FULL_VER = 194435226)",
+      "Architecture: AMD64",
+      "OS: Windows"
+    ]
+  },
+  "public_sanitization_derivation": {
+    "binary_hash_values_changed": false,
+    "binary_path_labels_percent_encoded": true,
+    "private_runtime_lock_sha256": "2679c20a9c0785e43b3b314ce28fcf038894ee15b17d4b020cde0f264171d5ca"
+  },
+  "schema": "opticalmodeler.phase2_runtime_lock.v1",
+  "status": "PASS"
+}

@@ -1,0 +1,58 @@
+{
+  "checks": [
+    {
+      "check": "frozen_phase1_manifest_and_payload_hashes",
+      "count": 10,
+      "status": "PASS"
+    },
+    {
+      "check": "fixed_checkout_tag_head_and_clean_status",
+      "status": "PASS"
+    },
+    {
+      "check": "runtime_archive_and_binary_hash_lock",
+      "status": "PASS"
+    },
+    {
+      "check": "representative_topology_counts",
+      "status": "PASS"
+    },
+    {
+      "check": "xcaf_blender_and_port_thresholds",
+      "status": "PASS"
+    },
+    {
+      "check": "guided_fiber_geometry",
+      "status": "PASS"
+    },
+    {
+      "check": "electrical_data_geometry",
+      "status": "PASS"
+    },
+    {
+      "check": "undeclared_collision_count_zero",
+      "status": "PASS"
+    },
+    {
+      "check": "fresh_saved_blend_reopen_fingerprint",
+      "status": "PASS"
+    },
+    {
+      "check": "four_render_opencv_and_png_sanitization",
+      "status": "PASS"
+    },
+    {
+      "check": "public_geometry_file_counts_zero",
+      "status": "PASS"
+    }
+  ],
+  "geometry_gate_verdict": "UNVERIFIED",
+  "meaning": "The public package is internally consistent and sanitized; this does not upgrade the fail-closed geometry verdict.",
+  "phase": "PHASE_2_REPRESENTATIVE_SMOKE",
+  "private_context_reads": 0,
+  "public_blend_count": 0,
+  "public_derived_mesh_count": 0,
+  "public_vendor_cad_count": 0,
+  "schema_version": "1.0",
+  "status": "PASS"
+}

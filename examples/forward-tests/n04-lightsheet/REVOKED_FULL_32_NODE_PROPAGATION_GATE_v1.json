@@ -1,0 +1,24 @@
+{
+  "schema": "opticalmodeler.full32.revocation.v1",
+  "status": "BLOCKED",
+  "gate": "FULL_32_NODE_PROPAGATION_GATE_v1",
+  "prior_gate_status": "REVOKED",
+  "revocation_basis": "INDEPENDENT_FACTORY_REOPEN_AUDIT",
+  "revoked_blend": {
+    "bytes": 132759160,
+    "sha256": "59ad35f8d5dac3b2f77892cbe1f22d473e6bf277b208eac479b5d6d906bb1d4d",
+    "public_candidate_inclusion": false
+  },
+  "revoked_public_manifest_sha256": "852470edbc9b2a9d3808e515908c7749ea299ff1c0a27bd84a36624e761f7401",
+  "reproduced_blockers": [
+    "E042_HIT_MODELED_N15_CHAMBER_POLYGON_7",
+    "199_OF_286_USED_MESH_DATABLOCKS_CONTAINED_4218_NON_TRIANGULAR_FACES",
+    "E042_N31_ONE_SIDED_OR_TRUNCATED_FIRST_HIT_AUDIT_WAS_INSUFFICIENT",
+    "N24_LPS710E_STAGE_WAS_EXCLUDED_FROM_LOAD_LINK_ENDPOINTS"
+  ],
+  "read_only_reproduction_record": "work/full_32_node_propagation_v2/evidence/FACTORY_REOPEN_BLOCKER_BASELINE.json",
+  "phase1_immutable": true,
+  "n04_r3_immutable": true,
+  "literal_paper_performance": "BLOCKED",
+  "final_or_release": "BLOCKED"
+}

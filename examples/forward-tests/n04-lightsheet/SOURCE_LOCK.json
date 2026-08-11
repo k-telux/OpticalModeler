@@ -1,0 +1,155 @@
+{
+  "schema": "opticalmodeler.phase1.source-lock.v1",
+  "generated_utc": "2026-08-09T14:16:11.589Z",
+  "phase": "literature_selection_and_source_cad_topology_lock",
+  "status": "PASS",
+  "overall_requested_model_status": "PARTIAL_SCOPED",
+  "geometry_generation_authorized": false,
+  "baseline": {
+    "status": "PASS",
+    "repository_url": "https://github.com/k-telux/OpticalModeler.git",
+    "origin_url": "https://github.com/k-telux/OpticalModeler.git",
+    "annotated_tag": "v1.0.0",
+    "tag_object_sha": "2e283eacd39401c21287ffab7233143ceb3feed0",
+    "tag_object_type": "tag",
+    "peeled_commit": "048766250538f169d924c31bbdd39bf0c255c63f",
+    "checkout_head": "048766250538f169d924c31bbdd39bf0c255c63f",
+    "expected_peeled_commit": "048766250538f169d924c31bbdd39bf0c255c63f",
+    "exact_match": true
+  },
+  "guidance_lock": {
+    "status": "PASS",
+    "rule": "Only the checked-out public skill entrypoint and the public references it links are optical-modeling guidance.",
+    "locked_files": [
+      {
+        "relative_path": "skills/thorlabs-blender-optical-path/SKILL.md",
+        "role": "sole optical-modeling skill entrypoint",
+        "sha256": "b2aa16c46b92ab8490628b426ea22968111a8e3cce637a55444fe7ec5cf280f3",
+        "bytes": 4216,
+        "retrieved_utc": "2026-08-09T13:03:02.246Z"
+      },
+      {
+        "relative_path": "skills/thorlabs-blender-optical-path/references/physical-gates.md",
+        "role": "linked physical gate definitions",
+        "sha256": "fd5e1a88effcdd5eb350d577aea6335aed6716b343d41330dc49002513286ac4",
+        "bytes": 5465,
+        "retrieved_utc": "2026-08-09T13:03:02.250Z"
+      },
+      {
+        "relative_path": "skills/thorlabs-blender-optical-path/references/evidence-contract.md",
+        "role": "linked evidence contract",
+        "sha256": "b0dab4be1eb0b6738562d443c594158e8c40f90d2cc88ea75a34abf5bad4f514",
+        "bytes": 2632,
+        "retrieved_utc": "2026-08-09T13:03:02.247Z"
+      },
+      {
+        "relative_path": "skills/thorlabs-blender-optical-path/references/project-case-study.md",
+        "role": "linked fresh-build project case study",
+        "sha256": "268546f60335b0fef38ddce20033abad3b33d02fe7f2b87f3f6bb5db00d7ab4d",
+        "bytes": 2469,
+        "retrieved_utc": "2026-08-09T13:03:02.250Z"
+      }
+    ],
+    "intentionally_not_read": [
+      {
+        "relative_path": "skills/thorlabs-blender-optical-path/references/history-derived-rules.md",
+        "reason": "The public skill routes this only when revising an existing scene; this is a fresh build."
+      }
+    ],
+    "prohibited_sources_used": false
+  },
+  "literature": {
+    "status": "PASS",
+    "citation": "Hassan Dibaji et al., Axial de-scanning using remote focusing in the detection arm of light-sheet microscopy, Nature Communications 15, 5019 (2024).",
+    "doi": "10.1038/s41467-024-49291-0",
+    "article_url": "https://www.nature.com/articles/s41467-024-49291-0",
+    "supplement_url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41467-024-49291-0/MediaObjects/41467_2024_49291_MOESM1_ESM.pdf",
+    "open_access_license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "primary_schematic": "Supplementary Figure 2: implementation of the pmRF into the detection path of the light-sheet microscopy",
+    "supporting_schematic": "Main Figure 1b",
+    "topology_expansion_source": "Methods, Optical setup",
+    "files": [
+      {
+        "relative_path": "literature/Dibaji2024_article.pdf",
+        "source_url": "https://www.nature.com/articles/s41467-024-49291-0.pdf",
+        "role": "publisher article PDF",
+        "sha256": "2e45df56280998013a9a60ecfdbf109df7c0c20021e9117b01819d88bcbb902d",
+        "bytes": 1671553,
+        "retrieved_utc": "2026-08-09T13:13:06.482Z"
+      },
+      {
+        "relative_path": "literature/Dibaji2024_supplement.pdf",
+        "source_url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41467-024-49291-0/MediaObjects/41467_2024_49291_MOESM1_ESM.pdf",
+        "role": "publisher supplementary information",
+        "sha256": "ff9f59b32997a447e78650b05c5c692e8bdca53792d0882ca95f508ab982f5e4",
+        "bytes": 1947360,
+        "retrieved_utc": "2026-08-09T13:05:47.265Z"
+      },
+      {
+        "relative_path": "literature/Dibaji2024_Fig1.png",
+        "source_url": "https://www.nature.com/articles/s41467-024-49291-0",
+        "role": "rendered derivative of article Figure 1",
+        "sha256": "6a65847cbb062d943935d16faf7ad337af68a64bfb7820fa95d80acac9b0c4cb",
+        "bytes": 238270,
+        "retrieved_utc": "2026-08-09T13:13:12.296Z"
+      },
+      {
+        "relative_path": "literature/Dibaji2024_SuppFig2.png",
+        "source_url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41467-024-49291-0/MediaObjects/41467_2024_49291_MOESM1_ESM.pdf",
+        "role": "rendered derivative of Supplementary Figure 2; primary 2D topology input",
+        "sha256": "4533c6168a44a2252c0a4be59725d0c5bcd0aa4f2a6da7e3e155fd685c95ad59",
+        "bytes": 407832,
+        "retrieved_utc": "2026-08-09T13:06:06.637Z"
+      }
+    ],
+    "attribution": "Dibaji et al. (2024), licensed under CC BY 4.0; rendered figure derivatives retain attribution and are not vendor CAD."
+  },
+  "topology_summary": {
+    "status": "PASS",
+    "node_count": 32,
+    "directed_edge_traversal_count": 44,
+    "true_branch_point_count": 2,
+    "branch_arm_count": 4,
+    "source_merge_count": 1,
+    "focusing_or_imaging_relays": [
+      "N04-N06 spatial filter",
+      "N10-N14 illumination relay",
+      "N16-N22 pupil relay",
+      "N22-N24 remote focus",
+      "N25-N32 dual-color camera relay"
+    ],
+    "endpoint_nodes": [
+      "N32"
+    ],
+    "coordinate_frame_lock": {
+      "unit": "metre",
+      "origin": "center of T1225C top surface",
+      "x_axis": "2.5 m table length",
+      "y_axis": "1.2 m table width",
+      "z_axis": "up from table top"
+    }
+  },
+  "external_source_index": {
+    "paper_and_supplement": [
+      "https://www.nature.com/articles/s41467-024-49291-0",
+      "https://www.nature.com/articles/s41467-024-49291-0.pdf",
+      "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41467-024-49291-0/MediaObjects/41467_2024_49291_MOESM1_ESM.pdf"
+    ],
+    "official_catalog_sources": "All 53 product-page and 54 official STEP URLs are enumerated in CAD_MANIFEST.json.",
+    "thorlabs_terms": {
+      "url": "https://media.thorlabs.com/contentassets/dccc49005bd44a67b688dd5fb3acc4e0/thorlabs_terms_and_-agreements.pdf?v=0203022430",
+      "sha256": "933c051b9392311cb1a40765134c57903c4874f9b4ae5244200dbbd5fe8e52c4",
+      "bytes": 219806,
+      "retrieved_utc": "2026-08-09T13:50:52.313Z"
+    },
+    "creative_commons_license": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "exclusions": {
+    "vendor_cad_from_public_candidate": true,
+    "private_or_prior_optical_path_material": true,
+    "blender_geometry": true,
+    "blend_file": true,
+    "reason": "Mandatory phase gate; await supervisor approval."
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "blocking_evidence": [
+    "PDA100A2 native BRep bbox remains an unbounded +/-1e100 sentinel.",
+    "PDA100A2 fixed 0.01 mm serial meshing returns Failure in both deterministic runs.",
+    "PDA100A2 retains 36 empty faces in both runs and therefore was not imported into Blender."
+  ],
+  "claim_limits": [
+    "RMS10X remains surface-only with zero manifold solids.",
+    "B3060A assembly occurrence hierarchy retention is PARTIAL_SCOPED.",
+    "Semantic optical/fiber/detector ports are UNVERIFIED.",
+    "The remaining 14 Phase 1 models were not converted."
+  ],
+  "gate": "PHASE_2_CONVERSION_SMOKE_GATE",
+  "next_action": "STOP_AND_AWAIT_COORDINATION_APPROVAL",
+  "schema": "opticalmodeler.phase2_gate_decision.v1",
+  "scoped_successes": [
+    "B3060A, RMS10X, and MBT613D/M complete raw import, explicit cleanup, world-frame comparison, clean Blend save, and fresh-process reopen.",
+    "All three Blender bboxes match OCCT-derived OBJ and bounded native BRep references within 2 micrometres.",
+    "Every raw/clean mesh metric and every attributed cleanup delta remains separately recorded."
+  ],
+  "status": "BLOCKED",
+  "submitted_at_utc": "2026-08-09T19:06:30Z"
+}

@@ -1,0 +1,3758 @@
+{
+  "assets": [
+    {
+      "blender_template_bbox_native": [
+        [
+          -26.879899979,
+          -6.0,
+          -0.540637016
+        ],
+        [
+          59.049999237,
+          61.245201111,
+          87.699996948
+        ]
+      ],
+      "cleanup_bbox_max_abs_delta_native": 0.0,
+      "component_id": "cad_gvs012",
+      "crosswalk": {
+        "blender_template_object_count": 1,
+        "mapping": "EXPLICIT_MANY_TO_ONE_BY_LOGICAL_ASSET_ID",
+        "omitted_leaf_count": 0,
+        "xcaf_leaf_count": 273
+      },
+      "exact_model": "GVS012",
+      "final_media_url": "https://thin01mstroc282prod.dxcloud.episerver.net/globalassets/items/g/gv/gvs/gvs012/20382-e0w.step?v=0116114842",
+      "nonpublic_derived_mesh_sha256": "c88fe273f6e7cfddddc8b8db6e3d9e837f8023f357c41042b4b2be203e8a6f47",
+      "official_cad_url": "https://thin01mstroc282prod.dxcloud.episerver.net/globalassets/items/g/gv/gvs/gvs012/20382-e0w.step?v=0116114842",
+      "official_product_url": "https://www.thorlabs.com/item/gvs012",
+      "raw_byte_length": 1027543,
+      "raw_hash_recheck": "PASS",
+      "raw_sha256": "122483c5776e3826d94bb2bc44a3f0a52f2fc382321bed9414fe063a2f8d5417",
+      "retrieved_at_utc": "2026-08-09T17:17:14.550Z",
+      "scale_to_mm": 1.0,
+      "source_native_unit": "mm",
+      "status": "PASS",
+      "xcaf_brep_bbox_native": [
+        [
+          -26.895045871,
+          -6.0000001,
+          -0.6
+        ],
+        [
+          59.05,
+          61.26,
+          87.7
+        ]
+      ],
+      "xcaf_brep_counts": {
+        "compound": 1,
+        "compsolid": 0,
+        "edge": 763,
+        "face": 272,
+        "shape": 1876,
+        "shell": 24,
+        "solid": 0,
+        "vertex": 507,
+        "wire": 309
+      },
+      "xcaf_document_unit": "mm",
+      "xcaf_free_shape_labels": [
+        "0:1:1:1"
+      ],
+      "xcaf_label_tree": {
+        "canonical_sha256": "9e4d6d70eec191e6a19cad8a53793f6a841e84e328aa7dc83672bfa84993e7c1",
+        "entry_count": 273,
+        "public_detail": "COUNTS_ROOT_LABELS_AND_DIGEST_ONLY"
+      },
+      "xcaf_runtime_version": "Open CASCADE Technology 8.0.1",
+      "xcaf_to_blender_bbox_max_error_mm": 0.059362984
+    },
+    {
+      "blender_template_bbox_native": [
+        [
+          -189.358001709,
+          16.139699936,
+          -4.466599941
+        ],
+        [
+          231.56199646,
+          30.238500595,
+          77.383399963
+        ]
+      ],
+      "cleanup_bbox_max_abs_delta_native": 0.0,
+      "component_id": "cad_tw850r5a2",
+      "crosswalk": {
+        "blender_template_object_count": 1,
+        "mapping": "EXPLICIT_MANY_TO_ONE_BY_LOGICAL_ASSET_ID",
+        "omitted_leaf_count": 0,
+        "xcaf_leaf_count": 32
+      },
+      "exact_model": "TW850R5A2",
+      "final_media_url": "https://thin01mstroc282prod.dxcloud.episerver.net/globalassets/items/t/tw/tw8/tw850r5a2/ttn035210-e0w.step?v=0116033304",
+      "nonpublic_derived_mesh_sha256": "d9727751251dce0b9898f7fd0553ec439c1782abc7cf1ca4057a1633d9d1f466",
+      "official_cad_url": "https://thin01mstroc282prod.dxcloud.episerver.net/globalassets/items/t/tw/tw8/tw850r5a2/ttn035210-e0w.step?v=0116033304",
+      "official_product_url": "https://www.thorlabs.com/item/tw850r5a2",
+      "raw_byte_length": 3750117,
+      "raw_hash_recheck": "PASS",
+      "raw_sha256": "fc0ec01cd00976eea8c29af273d90b16a26be24afd9dccd54c0a031e903a281b",
+      "retrieved_at_utc": "2026-08-09T17:17:23.096Z",
+      "scale_to_mm": 1.0,
+      "source_native_unit": "mm",
+      "status": "PASS",
+      "xcaf_brep_bbox_native": [
+        [
+          -189.358266429,
+          16.139655309,
+          -4.466602902
+        ],
+        [
+          231.561733571,
+          30.238515795,
+          77.383397298
+        ]
+      ],
+      "xcaf_brep_counts": {
+        "compound": 3,
+        "compsolid": 0,
+        "edge": 2059,
+        "face": 657,
+        "shape": 5066,
+        "shell": 18,
+        "solid": 18,
+        "vertex": 1525,
+        "wire": 786
+      },
+      "xcaf_document_unit": "mm",
+      "xcaf_free_shape_labels": [
+        "0:1:1:1"
+      ],
+      "xcaf_label_tree": {
+        "canonical_sha256": "dd53b7d24e29ea1ad1ba518e068d6ee6b45ba542c511cc0460c8fb4c9988e29f",
+        "entry_count": 32,
+        "public_detail": "COUNTS_ROOT_LABELS_AND_DIGEST_ONLY"
+      },
+      "xcaf_runtime_version": "Open CASCADE Technology 8.0.1",
+      "xcaf_to_blender_bbox_max_error_mm": 0.00026472
+    },
+    {
+      "blender_template_bbox_native": [
+        [
+          -3.896899939,
+          -0.403207988,
+          -0.778477013
+        ],
+        [
+          4.603099823,
+          2.07178998,
+          0.458523005
+        ]
+      ],
+      "cleanup_bbox_max_abs_delta_native": 0.0,
+      "component_id": "cad_fpc030",
+      "crosswalk": {
+        "blender_template_object_count": 1,
+        "mapping": "EXPLICIT_MANY_TO_ONE_BY_LOGICAL_ASSET_ID",
+        "omitted_leaf_count": 0,
+        "xcaf_leaf_count": 1
+      },
+      "exact_model": "FPC030",
+      "final_media_url": "https://thin01mstroc282prod.dxcloud.episerver.net/globalassets/items/f/fp/fpc/fpc030/0482-e0w.step?v=0116113707",
+      "nonpublic_derived_mesh_sha256": "b4776c46ab44f7f0c40a1d71f0e56f0a0e98e1f7f02ce552e7b3887f0866ddb5",
+      "official_cad_url": "https://thin01mstroc282prod.dxcloud.episerver.net/globalassets/items/f/fp/fpc/fpc030/0482-e0w.step?v=0116113707",
+      "official_product_url": "https://www.thorlabs.com/item/fpc030",
+      "raw_byte_length": 18709913,
+      "raw_hash_recheck": "PASS",
+      "raw_sha256": "991d20695f1e539306fc0d868ad7e32c8f09a0bf1d04e039f69fa1f34ee6cbd9",
+      "retrieved_at_utc": "2026-08-09T17:17:33.977Z",
+      "scale_to_mm": 25.4,
+      "source_native_unit": "inch",
+      "status": "PASS",
+      "xcaf_brep_bbox_native": [
+        [
+          -3.896897044,
+          -0.403208407,
+          -0.778477193
+        ],
+        [
+          4.603103156,
+          2.071791693,
+          0.458522907
+        ]
+      ],
+      "xcaf_brep_counts": {
+        "compound": 1,
+        "compsolid": 0,
+        "edge": 10895,
+        "face": 3994,
+        "shape": 26079,
+        "shell": 34,
+        "solid": 34,
+        "vertex": 7007,
+        "wire": 4114
+      },
+      "xcaf_document_unit": "in",
+      "xcaf_free_shape_labels": [
+        "0:1:1:1"
+      ],
+      "xcaf_label_tree": {
+        "canonical_sha256": "1fd3159cdc98d60c52d1cfe044ff2001e317ffda2977907bcab8fa70f96a67cd",
+        "entry_count": 1,
+        "public_detail": "COUNTS_ROOT_LABELS_AND_DIGEST_ONLY"
+      },
+      "xcaf_runtime_version": "Open CASCADE Technology 8.0.1",
+      "xcaf_to_blender_bbox_max_error_mm": 8.4649e-05
+    },
+    {
+      "blender_template_bbox_native": [
+        [
+          -10.393400192,
+          -6.0,
+          -6.0
+        ],
+        [
+          7.257019997,
+          6.0,
+          6.0
+        ]
+      ],
+      "cleanup_bbox_max_abs_delta_native": 0.0,
+      "component_id": "cad_f240apc_850",
+      "crosswalk": {
+        "blender_template_object_count": 1,
+        "mapping": "EXPLICIT_MANY_TO_ONE_BY_LOGICAL_ASSET_ID",
+        "omitted_leaf_count": 0,
+        "xcaf_leaf_count": 1
+      },
+      "exact_model": "F240APC-850",
+      "final_media_url": "https://thin01mstroc282prod.dxcloud.episerver.net/globalassets/items/f/f2/f24/f240apc-850/ttn090072-e0w.step?v=0116112256",
+      "nonpublic_derived_mesh_sha256": "a774bed169d29edd5898f92bff18b30c3b1b9739ce7db8d469a73910fabbba40",
+      "official_cad_url": "https://thin01mstroc282prod.dxcloud.episerver.net/globalassets/items/f/f2/f24/f240apc-850/ttn090072-e0w.step?v=0116112256",
+      "official_product_url": "https://www.thorlabs.com/item/f240apc-850",
+      "raw_byte_length": 764104,
+      "raw_hash_recheck": "PASS",
+      "raw_sha256": "2d965fbee34954f52852e1f0cc00dc9c74a8f97315709b3f081d00cdb8ef0f4d",
+      "retrieved_at_utc": "2026-08-09T17:17:56.814Z",
+      "scale_to_mm": 1.0,
+      "source_native_unit": "mm",
+      "status": "PASS",
+      "xcaf_brep_bbox_native": [
+        [
+          -10.3934,
+          -6.0,
+          -6.0
+        ],
+        [
+          7.257023031,
+          6.0,
+          6.0
+        ]
+      ],
+      "xcaf_brep_counts": {
+        "compound": 1,
+        "compsolid": 0,
+        "edge": 427,
+        "face": 121,
+        "shape": 1072,
+        "shell": 3,
+        "solid": 3,
+        "vertex": 349,
+        "wire": 168
+      },
+      "xcaf_document_unit": "mm",
+      "xcaf_free_shape_labels": [
+        "0:1:1:1"
+      ],
+      "xcaf_label_tree": {
+        "canonical_sha256": "3fd758020aa5102156b7c05cd7702ef7f9bde29bc168b48eade59d18e3bcfde1",
+        "entry_count": 1,
+        "public_detail": "COUNTS_ROOT_LABELS_AND_DIGEST_ONLY"
+      },
+      "xcaf_runtime_version": "Open CASCADE Technology 8.0.1",
+      "xcaf_to_blender_bbox_max_error_mm": 3.035e-06
+    },
+    {
+      "blender_template_bbox_native": [
+        [
+          -0.517499983,
+          -0.517499983,
+          -0.29550001
+        ],
+        [
+          0.517499983,
+          0.517499983,
+          0.29550001
+        ]
+      ],
+      "cleanup_bbox_max_abs_delta_native": 0.0,
+      "component_id": "cad_ad12f",
+      "crosswalk": {
+        "blender_template_object_count": 1,
+        "mapping": "EXPLICIT_MANY_TO_ONE_BY_LOGICAL_ASSET_ID",
+        "omitted_leaf_count": 0,
+        "xcaf_leaf_count": 350
+      },
+      "exact_model": "AD12F",
+      "final_media_url": "https://thin01mstroc282prod.dxcloud.episerver.net/globalassets/items/a/ad/ad1/ad12f/13220-e0w.step?v=0116102423",
+      "nonpublic_derived_mesh_sha256": "7cf0837356b83c0013c194b517e7324701e21619b3967f555be3c06568b996d8",
+      "official_cad_url": "https://thin01mstroc282prod.dxcloud.episerver.net/globalassets/items/a/ad/ad1/ad12f/13220-e0w.step?v=0116102423",
+      "official_product_url": "https://www.thorlabs.com/item/ad12f",
+      "raw_byte_length": 2430031,
+      "raw_hash_recheck": "PASS",
+      "raw_sha256": "d99c19eb70086a182706e612382eb497c1c6e4e320e35014f1b50f11c8a87231",
+      "retrieved_at_utc": "2026-08-09T17:17:59.779Z",
+      "scale_to_mm": 25.4,
+      "source_native_unit": "inch",
+      "status": "PASS",
+      "xcaf_brep_bbox_native": [
+        [
+          -0.5175,
+          -0.5175,
+          -0.2955001
+        ],
+        [
+          0.5175,
+          0.5175,
+          0.2955001
+        ]
+      ],
+      "xcaf_brep_counts": {
+        "compound": 1,
+        "compsolid": 0,
+        "edge": 877,
+        "face": 346,
+        "shape": 2173,
+        "shell": 3,
+        "solid": 3,
+        "vertex": 562,
+        "wire": 381
+      },
+      "xcaf_document_unit": "in",
+      "xcaf_free_shape_labels": [
+        "0:1:1:1"
+      ],
+      "xcaf_label_tree": {
+        "canonical_sha256": "1467b00cff964771aa36b076878c87e0a0b0f32b4a31c33223b8385f27b86b07",
+        "entry_count": 350,
+        "public_detail": "COUNTS_ROOT_LABELS_AND_DIGEST_ONLY"
+      },
+      "xcaf_runtime_version": "Open CASCADE Technology 8.0.1",
+      "xcaf_to_blender_bbox_max_error_mm": 2.28e-06
+    },
+    {
+      "blender_template_bbox_native": [
+        [
+          -15.239999771,
+          -22.097999573,
+          -10.159999847
+        ],
+        [
+          15.239999771,
+          15.239999771,
+          0.0
+        ]
+      ],
+      "cleanup_bbox_max_abs_delta_native": 0.0,
+      "component_id": "cad_lmr1",
+      "crosswalk": {
+        "blender_template_object_count": 1,
+        "mapping": "EXPLICIT_MANY_TO_ONE_BY_LOGICAL_ASSET_ID",
+        "omitted_leaf_count": 0,
+        "xcaf_leaf_count": 268
+      },
+      "exact_model": "LMR1",
+      "final_media_url": "https://thin01mstroc282prod.dxcloud.episerver.net/globalassets/items/l/lm/lmr/lmr1/0001-e0w.step?v=0116125231",
+      "nonpublic_derived_mesh_sha256": "edf2127e1a322339ec30f3bf800f590ee3b9a521eb518b19e649029b4af2312e",
+      "official_cad_url": "https://thin01mstroc282prod.dxcloud.episerver.net/globalassets/items/l/lm/lmr/lmr1/0001-e0w.step?v=0116125231",
+      "official_product_url": "https://www.thorlabs.com/item/lmr1",
+      "raw_byte_length": 1033091,
+      "raw_hash_recheck": "PASS",
+      "raw_sha256": "933ec8402a2f8a4e77569c0f9d5734e1dc45429acded48515d775b83a6e7b0be",
+      "retrieved_at_utc": "2026-08-09T17:18:03.450Z",
+      "scale_to_mm": 1.0,
+      "source_native_unit": "mm",
+      "status": "PASS",
+      "xcaf_brep_bbox_native": [
+        [
+          -15.24,
+          -22.098,
+          -10.16
+        ],
+        [
+          15.24,
+          15.24,
+          1e-07
+        ]
+      ],
+      "xcaf_brep_counts": {
+        "compound": 1,
+        "compsolid": 0,
+        "edge": 694,
+        "face": 265,
+        "shape": 1708,
+        "shell": 2,
+        "solid": 2,
+        "vertex": 453,
+        "wire": 291
+      },
+      "xcaf_document_unit": "mm",
+      "xcaf_free_shape_labels": [
+        "0:1:1:1"
+      ],
+      "xcaf_label_tree": {
+        "canonical_sha256": "e40cda206f1f2ae1a14284b92212443ff2de0211cad578644c70b580428ad073",
+        "entry_count": 268,
+        "public_detail": "COUNTS_ROOT_LABELS_AND_DIGEST_ONLY"
+      },
+      "xcaf_runtime_version": "Open CASCADE Technology 8.0.1",
+      "xcaf_to_blender_bbox_max_error_mm": 4.27e-07
+    },
+    {
+      "blender_template_bbox_native": [
+        [
+          -0.280000001,
+          -0.600000024,
+          -0.600000024
+        ],
+        [
+          0.280000001,
+          0.600000024,
+          0.600000024
+        ]
+      ],
+      "cleanup_bbox_max_abs_delta_native": 0.0,
+      "component_id": "cad_ac254_075_b_ml",
+      "crosswalk": {
+        "blender_template_object_count": 1,
+        "mapping": "EXPLICIT_MANY_TO_ONE_BY_LOGICAL_ASSET_ID",
+        "omitted_leaf_count": 0,
+        "xcaf_leaf_count": 1
+      },
+      "exact_model": "AC254-075-B-ML",
+      "final_media_url": "https://thin01mstroc282prod.dxcloud.episerver.net/globalassets/items/a/ac/ac2/ac254-075-b-ml/15894-e0w.step?v=0116101913",
+      "nonpublic_derived_mesh_sha256": "ab3a7a1bcbfb8576d15f5b4d302d124a4ddd52f302b7d5ae5fa905c8b4493f69",
+      "official_cad_url": "https://thin01mstroc282prod.dxcloud.episerver.net/globalassets/items/a/ac/ac2/ac254-075-b-ml/15894-e0w.step?v=0116101913",
+      "official_product_url": "https://www.thorlabs.com/item/ac254-075-b-ml",
+      "raw_byte_length": 2165705,
+      "raw_hash_recheck": "PASS",
+      "raw_sha256": "c7a65b29afe4c89e5c941cccb3d7ce61b62ab5de6a13804b4c74606a87bb7204",
+      "retrieved_at_utc": "2026-08-09T17:18:05.639Z",
+      "scale_to_mm": 25.4,
+      "source_native_unit": "inch",
+      "status": "PASS",
+      "xcaf_brep_bbox_native": [
+        [
+          -0.28,
+          -0.600000238,
+          -0.6000001
+        ],
+        [
+          0.28,
+          0.6000001,
+          0.6000001
+        ]
+      ],
+      "xcaf_brep_counts": {
+        "compound": 1,
+        "compsolid": 0,
+        "edge": 976,
+        "face": 182,
+        "shape": 2349,
+        "shell": 4,
+        "solid": 4,
+        "vertex": 899,
+        "wire": 283
+      },
+      "xcaf_document_unit": "in",
+      "xcaf_free_shape_labels": [
+        "0:1:1:1"
+      ],
+      "xcaf_label_tree": {
+        "canonical_sha256": "9563aafbdd6d1cad215f9ab376a9f2d068fd9d9d6137e894a94f95a0e7831ee3",
+        "entry_count": 1,
+        "public_detail": "COUNTS_ROOT_LABELS_AND_DIGEST_ONLY"
+      },
+      "xcaf_runtime_version": "Open CASCADE Technology 8.0.1",
+      "xcaf_to_blender_bbox_max_error_mm": 5.444e-06
+    },
+    {
+      "blender_template_bbox_native": [
+        [
+          -0.432047009,
+          -0.600000024,
+          -0.600000024
+        ],
+        [
+          0.340000004,
+          0.600000024,
+          0.600000024
+        ]
+      ],
+      "cleanup_bbox_max_abs_delta_native": 0.0,
+      "component_id": "cad_ac254_030_b_ml",
+      "crosswalk": {
+        "blender_template_object_count": 1,
+        "mapping": "EXPLICIT_MANY_TO_ONE_BY_LOGICAL_ASSET_ID",
+        "omitted_leaf_count": 0,
+        "xcaf_leaf_count": 1
+      },
+      "exact_model": "AC254-030-B-ML",
+      "final_media_url": "https://thin01mstroc282prod.dxcloud.episerver.net/globalassets/items/a/ac/ac2/ac254-030-b-ml/15888-e0w.step?v=0116101819",
+      "nonpublic_derived_mesh_sha256": "9fc57f5f0dcd4ad1ba5a77f86f87a81069d67efb84686fd6707ebfc5dedf2db2",
+      "official_cad_url": "https://thin01mstroc282prod.dxcloud.episerver.net/globalassets/items/a/ac/ac2/ac254-030-b-ml/15888-e0w.step?v=0116101819",
+      "official_product_url": "https://www.thorlabs.com/item/ac254-030-b-ml",
+      "raw_byte_length": 2288159,
+      "raw_hash_recheck": "PASS",
+      "raw_sha256": "f87580b6a7aabef4009be9806896883f7743854eeb2ec14c844ecabe3f2bd3ed",
+      "retrieved_at_utc": "2026-08-09T17:18:09.042Z",
+      "scale_to_mm": 25.4,
+      "source_native_unit": "inch",
+      "status": "PASS",
+      "xcaf_brep_bbox_native": [
+        [
+          -0.432047244,
+          -0.600000111,
+          -0.6000001
+        ],
+        [
+          0.34,
+          0.600000298,
+          0.6000001
+        ]
+      ],
+      "xcaf_brep_counts": {
+        "compound": 1,
+        "compsolid": 0,
+        "edge": 979,
+        "face": 182,
+        "shape": 2359,
+        "shell": 4,
+        "solid": 4,
+        "vertex": 904,
+        "wire": 285
+      },
+      "xcaf_document_unit": "in",
+      "xcaf_free_shape_labels": [
+        "0:1:1:1"
+      ],
+      "xcaf_label_tree": {
+        "canonical_sha256": "15a03e032dfa9309ffcfe7de1533f1b825fd4bd146a53f6bf62b4dcacb6c7232",
+        "entry_count": 1,
+        "public_detail": "COUNTS_ROOT_LABELS_AND_DIGEST_ONLY"
+      },
+      "xcaf_runtime_version": "Open CASCADE Technology 8.0.1",
+      "xcaf_to_blender_bbox_max_error_mm": 6.959e-06
+    },
+    {
+      "blender_template_bbox_native": [
+        [
+          -0.75,
+          -0.75,
+          -0.75
+        ],
+        [
+          0.75,
+          0.75,
+          0.75
+        ]
+      ],
+      "cleanup_bbox_max_abs_delta_native": 0.0,
+      "component_id": "cad_ccm1_bs014",
+      "crosswalk": {
+        "blender_template_object_count": 1,
+        "mapping": "EXPLICIT_MANY_TO_ONE_BY_LOGICAL_ASSET_ID",
+        "omitted_leaf_count": 0,
+        "xcaf_leaf_count": 1
+      },
+      "exact_model": "CCM1-BS014",
+      "final_media_url": "https://thin01mstroc282prod.dxcloud.episerver.net/globalassets/items/c/cc/ccm/ccm1-bs014/ttn050871-e0w.step?v=0116105223",
+      "nonpublic_derived_mesh_sha256": "ae92bad08ffe3827a1e79e38b8511a67d19cfbb672c9e72b43fa7a8997eca5c2",
+      "official_cad_url": "https://thin01mstroc282prod.dxcloud.episerver.net/globalassets/items/c/cc/ccm/ccm1-bs014/ttn050871-e0w.step?v=0116105223",
+      "official_product_url": "https://www.thorlabs.com/item/ccm1-bs014",
+      "raw_byte_length": 4184857,
+      "raw_hash_recheck": "PASS",
+      "raw_sha256": "914990d411ec9a93e2a141524acc46c261d5a70e00567315f764433a0cd464e1",
+      "retrieved_at_utc": "2026-08-09T17:18:12.271Z",
+      "scale_to_mm": 25.4,
+      "source_native_unit": "inch",
+      "status": "PASS",
+      "xcaf_brep_bbox_native": [
+        [
+          -0.7500001,
+          -0.75,
+          -0.7500001
+        ],
+        [
+          0.7500001,
+          0.7500001,
+          0.7500001
+        ]
+      ],
+      "xcaf_brep_counts": {
+        "compound": 1,
+        "compsolid": 0,
+        "edge": 2397,
+        "face": 922,
+        "shape": 5951,
+        "shell": 9,
+        "solid": 9,
+        "vertex": 1562,
+        "wire": 1051
+      },
+      "xcaf_document_unit": "in",
+      "xcaf_free_shape_labels": [
+        "0:1:1:1"
+      ],
+      "xcaf_label_tree": {
+        "canonical_sha256": "6a135f098276f9e9715abb0b0d3afe683bd144fdd97a55537cefafdd42052f80",
+        "entry_count": 1,
+        "public_detail": "COUNTS_ROOT_LABELS_AND_DIGEST_ONLY"
+      },
+      "xcaf_runtime_version": "Open CASCADE Technology 8.0.1",
+      "xcaf_to_blender_bbox_max_error_mm": 2.54e-06
+    },
+    {
+      "blender_template_bbox_native": [
+        [
+          -1.854799986,
+          -0.074199401,
+          0.307518989
+        ],
+        [
+          -0.854804993,
+          0.925800979,
+          0.543739974
+        ]
+      ],
+      "cleanup_bbox_max_abs_delta_native": 0.0,
+      "component_id": "cad_bb1_e03",
+      "crosswalk": {
+        "blender_template_object_count": 1,
+        "mapping": "EXPLICIT_MANY_TO_ONE_BY_LOGICAL_ASSET_ID",
+        "omitted_leaf_count": 0,
+        "xcaf_leaf_count": 1
+      },
+      "exact_model": "BB1-E03",
+      "final_media_url": "https://thin01mstroc282prod.dxcloud.episerver.net/globalassets/items/b/bb/bb1/bb1-e03/3544-e0w.step?v=0116103900",
+      "nonpublic_derived_mesh_sha256": "a5b8870f17105fe5e25b4895b386af71cdebdfa391a55204c73ca3f23915dbf2",
+      "official_cad_url": "https://thin01mstroc282prod.dxcloud.episerver.net/globalassets/items/b/bb/bb1/bb1-e03/3544-e0w.step?v=0116103900",
+      "official_product_url": "https://www.thorlabs.com/item/bb1-e03",
+      "raw_byte_length": 1207895,
+      "raw_hash_recheck": "PASS",
+      "raw_sha256": "014ea3295d648282bfc9dae4eae54aa685583883cc356cc98097a472c0bdca6b",
+      "retrieved_at_utc": "2026-08-09T17:18:17.422Z",
+      "scale_to_mm": 25.4,
+      "source_native_unit": "inch",
+      "status": "PASS",
+      "xcaf_brep_bbox_native": [
+        [
+          -1.854804775,
+          -0.07419936,
+          0.307519008
+        ],
+        [
+          -0.854804775,
+          0.92580064,
+          0.543739581
+        ]
+      ],
+      "xcaf_brep_counts": {
+        "compound": 0,
+        "compsolid": 0,
+        "edge": 581,
+        "face": 222,
+        "shape": 1438,
+        "shell": 1,
+        "solid": 1,
+        "vertex": 386,
+        "wire": 247
+      },
+      "xcaf_document_unit": "in",
+      "xcaf_free_shape_labels": [
+        "0:1:1:1"
+      ],
+      "xcaf_label_tree": {
+        "canonical_sha256": "e064128f3212a72e7f5ab1a4c3385328187bb181ec8adf5162a6a06f8d954140",
+        "entry_count": 1,
+        "public_detail": "COUNTS_ROOT_LABELS_AND_DIGEST_ONLY"
+      },
+      "xcaf_runtime_version": "Open CASCADE Technology 8.0.1",
+      "xcaf_to_blender_bbox_max_error_mm": 0.000121643
+    },
+    {
+      "blender_template_bbox_native": [
+        [
+          -1.021679997,
+          -0.099269599,
+          -1.082870007
+        ],
+        [
+          1.042690039,
+          1.448420048,
+          0.981498003
+        ]
+      ],
+      "cleanup_bbox_max_abs_delta_native": 0.0,
+      "component_id": "cad_km100",
+      "crosswalk": {
+        "blender_template_object_count": 1,
+        "mapping": "EXPLICIT_MANY_TO_ONE_BY_LOGICAL_ASSET_ID",
+        "omitted_leaf_count": 0,
+        "xcaf_leaf_count": 742
+      },
+      "exact_model": "KM100",
+      "final_media_url": "https://thin01mstroc282prod.dxcloud.episerver.net/globalassets/items/k/km/km1/km100/6628-e0w.step?v=0116115952",
+      "nonpublic_derived_mesh_sha256": "50cff391f290eb0412b7f5eb7a836480782906afd84aa6d5809d0d1470a8e5d3",
+      "official_cad_url": "https://thin01mstroc282prod.dxcloud.episerver.net/globalassets/items/k/km/km1/km100/6628-e0w.step?v=0116115952",
+      "official_product_url": "https://www.thorlabs.com/item/km100",
+      "raw_byte_length": 3368499,
+      "raw_hash_recheck": "PASS",
+      "raw_sha256": "1e93ada28a3ca69455bb189c920cb181dcbdcb3ea3e31e66f33c1e281c6e8b82",
+      "retrieved_at_utc": "2026-08-09T17:18:20.905Z",
+      "scale_to_mm": 25.4,
+      "source_native_unit": "inch",
+      "status": "PASS",
+      "xcaf_brep_bbox_native": [
+        [
+          -1.021675725,
+          -0.099269643,
+          -1.082867737
+        ],
+        [
+          1.043323669,
+          1.448417018,
+          0.982132868
+        ]
+      ],
+      "xcaf_brep_counts": {
+        "compound": 1,
+        "compsolid": 0,
+        "edge": 1746,
+        "face": 724,
+        "shape": 4417,
+        "shell": 17,
+        "solid": 17,
+        "vertex": 1093,
+        "wire": 819
+      },
+      "xcaf_document_unit": "in",
+      "xcaf_free_shape_labels": [
+        "0:1:1:1"
+      ],
+      "xcaf_label_tree": {
+        "canonical_sha256": "f353eb617fa4763471e7b0faed8792138c3a6ae91616cd15501bc6ba52ddaa7c",
+        "entry_count": 742,
+        "public_detail": "COUNTS_ROOT_LABELS_AND_DIGEST_ONLY"
+      },
+      "xcaf_runtime_version": "Open CASCADE Technology 8.0.1",
+      "xcaf_to_blender_bbox_max_error_mm": 0.016125576
+    },
+    {
+      "blender_template_bbox_native": [
+        [
+          -2.16534996,
+          -0.280000001,
+          -1.575919986
+        ],
+        [
+          2.904850006,
+          0.625513017,
+          2.250390053
+        ]
+      ],
+      "cleanup_bbox_max_abs_delta_native": 0.0,
+      "component_id": "cad_xr25p",
+      "crosswalk": {
+        "blender_template_object_count": 1,
+        "mapping": "EXPLICIT_MANY_TO_ONE_BY_LOGICAL_ASSET_ID",
+        "omitted_leaf_count": 0,
+        "xcaf_leaf_count": 1
+      },
+      "exact_model": "XR25P",
+      "final_media_url": "https://thin01mstroc282prod.dxcloud.episerver.net/globalassets/items/x/xr/xr2/xr25p/ttn104281-e0w.step?v=0116035746",
+      "nonpublic_derived_mesh_sha256": "05e1e4fe806a6d574aa33a637c312f515932d6fb37c9b71f87206cb0dbe9be72",
+      "official_cad_url": "https://thin01mstroc282prod.dxcloud.episerver.net/globalassets/items/x/xr/xr2/xr25p/ttn104281-e0w.step?v=0116035746",
+      "official_product_url": "https://www.thorlabs.com/item/xr25p",
+      "raw_byte_length": 28344650,
+      "raw_hash_recheck": "PASS",
+      "raw_sha256": "c8ffe6118eba8589c3a4e4b243ca3c377dc55ef57607d8c3f15d70b04f143336",
+      "retrieved_at_utc": "2026-08-09T17:18:25.037Z",
+      "scale_to_mm": 25.4,
+      "source_native_unit": "inch",
+      "status": "PASS",
+      "xcaf_brep_bbox_native": [
+        [
+          -2.165354431,
+          -0.28,
+          -1.575923722
+        ],
+        [
+          2.904848567,
+          0.625512551,
+          2.250393701
+        ]
+      ],
+      "xcaf_brep_counts": {
+        "compound": 1,
+        "compsolid": 0,
+        "edge": 14185,
+        "face": 5623,
+        "shape": 35290,
+        "shell": 64,
+        "solid": 64,
+        "vertex": 9066,
+        "wire": 6287
+      },
+      "xcaf_document_unit": "in",
+      "xcaf_free_shape_labels": [
+        "0:1:1:1"
+      ],
+      "xcaf_label_tree": {
+        "canonical_sha256": "9d6d6ed0ac65208c95de496e4db4eb7b2040d1b383e90e4228b32fe84cf9c8f9",
+        "entry_count": 1,
+        "public_detail": "COUNTS_ROOT_LABELS_AND_DIGEST_ONLY"
+      },
+      "xcaf_runtime_version": "Open CASCADE Technology 8.0.1",
+      "xcaf_to_blender_bbox_max_error_mm": 0.000113548
+    },
+    {
+      "blender_template_bbox_native": [
+        [
+          -26.473100662,
+          -33.81129837,
+          -13.731300354
+        ],
+        [
+          9.848859787,
+          -21.619300842,
+          60.055698395
+        ]
+      ],
+      "cleanup_bbox_max_abs_delta_native": 0.0,
+      "component_id": "cad_cf125",
+      "crosswalk": {
+        "blender_template_object_count": 1,
+        "mapping": "EXPLICIT_MANY_TO_ONE_BY_LOGICAL_ASSET_ID",
+        "omitted_leaf_count": 0,
+        "xcaf_leaf_count": 291
+      },
+      "exact_model": "CF125",
+      "final_media_url": "https://thin01mstroc282prod.dxcloud.episerver.net/globalassets/items/c/cf/cf1/cf125/6535-e0w.step?v=0116105350",
+      "nonpublic_derived_mesh_sha256": "9b1f0501ede2c8cc98dee0ad4d9e04ebf23bf1716b1d0bed5b2e9eabdbf657e6",
+      "official_cad_url": "https://thin01mstroc282prod.dxcloud.episerver.net/globalassets/items/c/cf/cf1/cf125/6535-e0w.step?v=0116105350",
+      "official_product_url": "https://www.thorlabs.com/item/cf125",
+      "raw_byte_length": 1508579,
+      "raw_hash_recheck": "PASS",
+      "raw_sha256": "ba545938939093c6200c5b8fce1ee700073a3872057b13f17a6e7d5b862ba417",
+      "retrieved_at_utc": "2026-08-09T17:18:47.162Z",
+      "scale_to_mm": 1.0,
+      "source_native_unit": "mm",
+      "status": "PASS",
+      "xcaf_brep_bbox_native": [
+        [
+          -26.473152916,
+          -33.811253619,
+          -13.731299426
+        ],
+        [
+          9.848863087,
+          -21.619252642,
+          60.055700674
+        ]
+      ],
+      "xcaf_brep_counts": {
+        "compound": 0,
+        "compsolid": 0,
+        "edge": 782,
+        "face": 290,
+        "shape": 1898,
+        "shell": 1,
+        "solid": 1,
+        "vertex": 513,
+        "wire": 311
+      },
+      "xcaf_document_unit": "mm",
+      "xcaf_free_shape_labels": [
+        "0:1:1:1"
+      ],
+      "xcaf_label_tree": {
+        "canonical_sha256": "1605535890ea9da0be7bab7e9a1b1cc52225b209783864388cd4d5ad02542fe3",
+        "entry_count": 291,
+        "public_detail": "COUNTS_ROOT_LABELS_AND_DIGEST_ONLY"
+      },
+      "xcaf_runtime_version": "Open CASCADE Technology 8.0.1",
+      "xcaf_to_blender_bbox_max_error_mm": 5.2254e-05
+    },
+    {
+      "blender_template_bbox_native": [
+        [
+          -15.875,
+          -4.698999882,
+          -15.875
+        ],
+        [
+          15.875,
+          7.619999886,
+          15.875
+        ]
+      ],
+      "cleanup_bbox_max_abs_delta_native": 0.0,
+      "component_id": "cad_be1",
+      "crosswalk": {
+        "blender_template_object_count": 1,
+        "mapping": "EXPLICIT_MANY_TO_ONE_BY_LOGICAL_ASSET_ID",
+        "omitted_leaf_count": 0,
+        "xcaf_leaf_count": 232
+      },
+      "exact_model": "BE1",
+      "final_media_url": "https://thin01mstroc282prod.dxcloud.episerver.net/globalassets/items/b/be/be1/be1/6789-e0w.step?v=0116104047",
+      "nonpublic_derived_mesh_sha256": "fa4b2360c0ab15cce8e94813a317e38a6e825333bcb2a7e12120a47e3c5d125b",
+      "official_cad_url": "https://thin01mstroc282prod.dxcloud.episerver.net/globalassets/items/b/be/be1/be1/6789-e0w.step?v=0116104047",
+      "official_product_url": "https://www.thorlabs.com/item/be1",
+      "raw_byte_length": 1488112,
+      "raw_hash_recheck": "PASS",
+      "raw_sha256": "daa1b5a3383df6f7f9f66f52f1bf3b99748cf166880f127c9e3485d0fb168c5f",
+      "retrieved_at_utc": "2026-08-09T17:18:50.030Z",
+      "scale_to_mm": 1.0,
+      "source_native_unit": "mm",
+      "status": "PASS",
+      "xcaf_brep_bbox_native": [
+        [
+          -15.8750001,
+          -4.699,
+          -15.8750001
+        ],
+        [
+          15.8750001,
+          7.62,
+          15.8750001
+        ]
+      ],
+      "xcaf_brep_counts": {
+        "compound": 0,
+        "compsolid": 0,
+        "edge": 609,
+        "face": 231,
+        "shape": 1501,
+        "shell": 1,
+        "solid": 1,
+        "vertex": 404,
+        "wire": 255
+      },
+      "xcaf_document_unit": "mm",
+      "xcaf_free_shape_labels": [
+        "0:1:1:1"
+      ],
+      "xcaf_label_tree": {
+        "canonical_sha256": "518c81e03b90e95532e9e1dd089de82b3e09f7c4b553fa20b0a407f1218674c4",
+        "entry_count": 232,
+        "public_detail": "COUNTS_ROOT_LABELS_AND_DIGEST_ONLY"
+      },
+      "xcaf_runtime_version": "Open CASCADE Technology 8.0.1",
+      "xcaf_to_blender_bbox_max_error_mm": 1.18e-07
+    },
+    {
+      "blender_template_bbox_native": [
+        [
+          -0.492125988,
+          -1.0,
+          -0.492125988
+        ],
+        [
+          0.492125988,
+          1.0,
+          0.902126014
+        ]
+      ],
+      "cleanup_bbox_max_abs_delta_native": 0.0,
+      "component_id": "cad_ph2",
+      "crosswalk": {
+        "blender_template_object_count": 1,
+        "mapping": "EXPLICIT_MANY_TO_ONE_BY_LOGICAL_ASSET_ID",
+        "omitted_leaf_count": 0,
+        "xcaf_leaf_count": 369
+      },
+      "exact_model": "PH2",
+      "final_media_url": "https://thin01mstroc282prod.dxcloud.episerver.net/globalassets/items/p/ph/ph2/ph2-st/0493-e0w.step?v=0116020928",
+      "nonpublic_derived_mesh_sha256": "5cea1873c7fe42fe9a41d69d0288d2c2f874dde44a4d9187ce37fd727816be16",
+      "official_cad_url": "https://thin01mstroc282prod.dxcloud.episerver.net/globalassets/items/p/ph/ph2/ph2-st/0493-e0w.step?v=0116020928",
+      "official_product_url": "https://www.thorlabs.com/item/ph2",
+      "raw_byte_length": 2132055,
+      "raw_hash_recheck": "PASS",
+      "raw_sha256": "fadba64e7e382af623f6833a630ffe6c593fb191b741e68d0cd2e7425eb4cc4e",
+      "retrieved_at_utc": "2026-08-09T17:18:52.982Z",
+      "scale_to_mm": 25.4,
+      "source_native_unit": "inch",
+      "status": "PASS",
+      "xcaf_brep_bbox_native": [
+        [
+          -0.492126085,
+          -1.0,
+          -0.492126085
+        ],
+        [
+          0.492126085,
+          1.0000001,
+          0.902126085
+        ]
+      ],
+      "xcaf_brep_counts": {
+        "compound": 1,
+        "compsolid": 0,
+        "edge": 932,
+        "face": 362,
+        "shape": 2315,
+        "shell": 6,
+        "solid": 6,
+        "vertex": 608,
+        "wire": 400
+      },
+      "xcaf_document_unit": "in",
+      "xcaf_free_shape_labels": [
+        "0:1:1:1"
+      ],
+      "xcaf_label_tree": {
+        "canonical_sha256": "0752c02a4628046e0f995fa259ee0edf1a50b4b90dcd0e4358943b115b150705",
+        "entry_count": 369,
+        "public_detail": "COUNTS_ROOT_LABELS_AND_DIGEST_ONLY"
+      },
+      "xcaf_runtime_version": "Open CASCADE Technology 8.0.1",
+      "xcaf_to_blender_bbox_max_error_mm": 2.54e-06
+    },
+    {
+      "blender_template_bbox_native": [
+        [
+          -6.337299824,
+          -0.0,
+          -6.337299824
+        ],
+        [
+          6.337299824,
+          54.927501678,
+          6.337299824
+        ]
+      ],
+      "cleanup_bbox_max_abs_delta_native": 0.0,
+      "component_id": "cad_tr2",
+      "crosswalk": {
+        "blender_template_object_count": 1,
+        "mapping": "EXPLICIT_MANY_TO_ONE_BY_LOGICAL_ASSET_ID",
+        "omitted_leaf_count": 0,
+        "xcaf_leaf_count": 59
+      },
+      "exact_model": "TR2",
+      "final_media_url": "https://thin01mstroc282prod.dxcloud.episerver.net/globalassets/items/t/tr/tr2/tr2/0335-e0w.step?v=0116032832",
+      "nonpublic_derived_mesh_sha256": "dfe6eb7275a80043bb320d503bbb97cf24ee5fb721bc30d4ee17e6683f905791",
+      "official_cad_url": "https://thin01mstroc282prod.dxcloud.episerver.net/globalassets/items/t/tr/tr2/tr2/0335-e0w.step?v=0116032832",
+      "official_product_url": "https://www.thorlabs.com/item/tr2",
+      "raw_byte_length": 232363,
+      "raw_hash_recheck": "PASS",
+      "raw_sha256": "28b28440be0341dac544d2c471ab6cbcde1064e5665a9a588e234279c3bd5403",
+      "retrieved_at_utc": "2026-08-09T17:18:56.117Z",
+      "scale_to_mm": 1.0,
+      "source_native_unit": "mm",
+      "status": "PASS",
+      "xcaf_brep_bbox_native": [
+        [
+          -6.3373001,
+          -0.0,
+          -6.3373001
+        ],
+        [
+          6.3373001,
+          54.9275001,
+          6.3373001
+        ]
+      ],
+      "xcaf_brep_counts": {
+        "compound": 1,
+        "compsolid": 0,
+        "edge": 132,
+        "face": 56,
+        "shape": 331,
+        "shell": 2,
+        "solid": 2,
+        "vertex": 76,
+        "wire": 62
+      },
+      "xcaf_document_unit": "mm",
+      "xcaf_free_shape_labels": [
+        "0:1:1:1"
+      ],
+      "xcaf_label_tree": {
+        "canonical_sha256": "d50c52447b81fae1d2dd110d87e840b8a9fec966e3cb21ea11d76a5b1c89b558",
+        "entry_count": 59,
+        "public_detail": "COUNTS_ROOT_LABELS_AND_DIGEST_ONLY"
+      },
+      "xcaf_runtime_version": "Open CASCADE Technology 8.0.1",
+      "xcaf_to_blender_bbox_max_error_mm": 1.578e-06
+    },
+    {
+      "blender_template_bbox_native": [
+        [
+          -609.599975586,
+          -0.0,
+          -304.799987793
+        ],
+        [
+          609.599975586,
+          12.699999809,
+          304.799987793
+        ]
+      ],
+      "cleanup_bbox_max_abs_delta_native": 0.0,
+      "component_id": "cad_mb2448",
+      "crosswalk": {
+        "blender_template_object_count": 1,
+        "mapping": "EXPLICIT_MANY_TO_ONE_BY_LOGICAL_ASSET_ID",
+        "omitted_leaf_count": 0,
+        "xcaf_leaf_count": 3
+      },
+      "exact_model": "MB2448",
+      "final_media_url": "https://thin01mstroc282prod.dxcloud.episerver.net/globalassets/items/m/mb/mb2/mb2448/14052-e0w.step?v=0116011659",
+      "nonpublic_derived_mesh_sha256": "a98c857d1799b743b8210fa1b71b61c75d14cf363b2536a5756a54f6b683bbe8",
+      "official_cad_url": "https://thin01mstroc282prod.dxcloud.episerver.net/globalassets/items/m/mb/mb2/mb2448/14052-e0w.step?v=0116011659",
+      "official_product_url": "https://www.thorlabs.com/item/mb2448",
+      "raw_byte_length": 16841190,
+      "raw_hash_recheck": "PASS",
+      "raw_sha256": "f9149d92db77af3c2757e2bc50b5715f266b7e1bf2c54c0e8dc61b1601057bfd",
+      "retrieved_at_utc": "2026-08-09T17:18:57.927Z",
+      "scale_to_mm": 1.0,
+      "source_native_unit": "mm",
+      "status": "PASS",
+      "xcaf_brep_bbox_native": [
+        [
+          -609.6,
+          -0.0,
+          -304.8
+        ],
+        [
+          609.6,
+          12.7,
+          304.8000001
+        ]
+      ],
+      "xcaf_brep_counts": {
+        "compound": 1,
+        "compsolid": 0,
+        "edge": 16978,
+        "face": 7235,
+        "shape": 43568,
+        "shell": 1,
+        "solid": 1,
+        "vertex": 9774,
+        "wire": 9578
+      },
+      "xcaf_document_unit": "mm",
+      "xcaf_free_shape_labels": [
+        "0:1:1:1"
+      ],
+      "xcaf_label_tree": {
+        "canonical_sha256": "b572a1a66a4d2a1f135794e5b233bf65b565bc018dcdd1f8e0e4d7e7a2c44c58",
+        "entry_count": 3,
+        "public_detail": "COUNTS_ROOT_LABELS_AND_DIGEST_ONLY"
+      },
+      "xcaf_runtime_version": "Open CASCADE Technology 8.0.1",
+      "xcaf_to_blender_bbox_max_error_mm": 2.4414e-05
+    }
+  ],
+  "family_status_counts": {
+    "PASS": 17
+  },
+  "instance_status_counts": {
+    "PASS": 52
+  },
+  "instances": [
+    {
+      "bbox_max_error_mm": 0.0,
+      "determinant": 16387.0625,
+      "evaluated_world_bbox_mm": [
+        [
+          -71.005699158,
+          -152.844497681,
+          65.372001648
+        ],
+        [
+          -55.994297028,
+          -126.555496216,
+          91.661003113
+        ]
+      ],
+      "expected_world_bbox_mm": [
+        [
+          -71.005699158,
+          -152.844497681,
+          65.372001648
+        ],
+        [
+          -55.994297028,
+          -126.555496216,
+          91.661003113
+        ]
+      ],
+      "logical_asset_id": "cad_ad12f",
+      "negative_determinant": false,
+      "object_name": "a03_sample_collimator__AD12F",
+      "status": "PASS"
+    },
+    {
+      "bbox_max_error_mm": 0.0,
+      "determinant": 1.0,
+      "evaluated_world_bbox_mm": [
+        [
+          -79.375,
+          -155.574996948,
+          0.750000238
+        ],
+        [
+          -47.625,
+          -123.824996948,
+          13.069002151
+        ]
+      ],
+      "expected_world_bbox_mm": [
+        [
+          -79.375,
+          -155.574996948,
+          0.750000238
+        ],
+        [
+          -47.625,
+          -123.824996948,
+          13.069002151
+        ]
+      ],
+      "logical_asset_id": "cad_be1",
+      "negative_determinant": false,
+      "object_name": "a03_sample_collimator__BE1",
+      "status": "PASS"
+    },
+    {
+      "bbox_max_error_mm": 5.3406e-05,
+      "determinant": 1.0,
+      "evaluated_world_bbox_mm": [
+        [
+          -94.660949707,
+          -176.593490601,
+          0.649954736
+        ],
+        [
+          -58.338989258,
+          -102.806495667,
+          12.841958046
+        ]
+      ],
+      "expected_world_bbox_mm": [
+        [
+          -94.661003113,
+          -176.593505859,
+          0.650000513
+        ],
+        [
+          -58.338989258,
+          -102.806495667,
+          12.84200573
+        ]
+      ],
+      "logical_asset_id": "cad_cf125",
+      "negative_determinant": false,
+      "object_name": "a03_sample_collimator__CF125",
+      "status": "PASS"
+    },
+    {
+      "bbox_max_error_mm": 0.0,
+      "determinant": 1.0,
+      "evaluated_world_bbox_mm": [
+        [
+          -68.580001831,
+          -154.940002441,
+          59.847503662
+        ],
+        [
+          -58.419998169,
+          -124.459999084,
+          97.185501099
+        ]
+      ],
+      "expected_world_bbox_mm": [
+        [
+          -68.580001831,
+          -154.940002441,
+          59.847503662
+        ],
+        [
+          -58.419998169,
+          -124.459999084,
+          97.185501099
+        ]
+      ],
+      "logical_asset_id": "cad_lmr1",
+      "negative_determinant": false,
+      "object_name": "a03_sample_collimator__LMR1",
+      "status": "PASS"
+    },
+    {
+      "bbox_max_error_mm": 7.629e-06,
+      "determinant": 16387.0625,
+      "evaluated_world_bbox_mm": [
+        [
+          -76.0,
+          -157.406997681,
+          0.799998283
+        ],
+        [
+          -51.0,
+          -121.992996216,
+          51.599998474
+        ]
+      ],
+      "expected_world_bbox_mm": [
+        [
+          -76.0,
+          -157.406997681,
+          0.799998283
+        ],
+        [
+          -51.0,
+          -121.992988586,
+          51.600002289
+        ]
+      ],
+      "logical_asset_id": "cad_ph2",
+      "negative_determinant": false,
+      "object_name": "a03_sample_collimator__PH2",
+      "status": "PASS"
+    },
+    {
+      "bbox_max_error_mm": 0.0,
+      "determinant": 1.0,
+      "evaluated_world_bbox_mm": [
+        [
+          -69.837303162,
+          -146.03729248,
+          5.0
+        ],
+        [
+          -57.162700653,
+          -133.362686157,
+          59.927501678
+        ]
+      ],
+      "expected_world_bbox_mm": [
+        [
+          -69.837303162,
+          -146.03729248,
+          5.0
+        ],
+        [
+          -57.162700653,
+          -133.362686157,
+          59.927501678
+        ]
+      ],
+      "logical_asset_id": "cad_tr2",
+      "negative_determinant": false,
+      "object_name": "a03_sample_collimator__TR2",
+      "status": "PASS"
+    },
+    {
+      "bbox_max_error_mm": 0.0,
+      "determinant": 1.0,
+      "evaluated_world_bbox_mm": [
+        [
+          200.024993896,
+          -155.574996948,
+          0.750000238
+        ],
+        [
+          231.774993896,
+          -123.824996948,
+          13.069002151
+        ]
+      ],
+      "expected_world_bbox_mm": [
+        [
+          200.024993896,
+          -155.574996948,
+          0.750000238
+        ],
+        [
+          231.774993896,
+          -123.824996948,
+          13.069002151
+        ]
+      ],
+      "logical_asset_id": "cad_be1",
+      "negative_determinant": false,
+      "object_name": "a05_sample_lens__BE1",
+      "status": "PASS"
+    },
+    {
+      "bbox_max_error_mm": 6.1035e-05,
+      "determinant": 1.0,
+      "evaluated_world_bbox_mm": [
+        [
+          184.739044189,
+          -176.593490601,
+          0.649954736
+        ],
+        [
+          221.061004639,
+          -102.806495667,
+          12.841958046
+        ]
+      ],
+      "expected_world_bbox_mm": [
+        [
+          184.738983154,
+          -176.593505859,
+          0.650000513
+        ],
+        [
+          221.061004639,
+          -102.806495667,
+          12.84200573
+        ]
+      ],
+      "logical_asset_id": "cad_cf125",
+      "negative_determinant": false,
+      "object_name": "a05_sample_lens__CF125",
+      "status": "PASS"
+    },
+    {
+      "bbox_max_error_mm": 0.0,
+      "determinant": 1.0,
+      "evaluated_world_bbox_mm": [
+        [
+          210.819992065,
+          -154.940002441,
+          59.847503662
+        ],
+        [
+          220.979995728,
+          -124.459999084,
+          97.185501099
+        ]
+      ],
+      "expected_world_bbox_mm": [
+        [
+          210.819992065,
+          -154.940002441,
+          59.847503662
+        ],
+        [
+          220.979995728,
+          -124.459999084,
+          97.185501099
+        ]
+      ],
+      "logical_asset_id": "cad_lmr1",
+      "negative_determinant": false,
+      "object_name": "a05_sample_lens__LMR1",
+      "status": "PASS"
+    },
+    {
+      "bbox_max_error_mm": 7.629e-06,
+      "determinant": 16387.0625,
+      "evaluated_world_bbox_mm": [
+        [
+          203.399993896,
+          -157.406997681,
+          0.799998283
+        ],
+        [
+          228.399993896,
+          -121.992996216,
+          51.599998474
+        ]
+      ],
+      "expected_world_bbox_mm": [
+        [
+          203.399993896,
+          -157.406997681,
+          0.799998283
+        ],
+        [
+          228.399993896,
+          -121.992988586,
+          51.600002289
+        ]
+      ],
+      "logical_asset_id": "cad_ph2",
+      "negative_determinant": false,
+      "object_name": "a05_sample_lens__PH2",
+      "status": "PASS"
+    },
+    {
+      "bbox_max_error_mm": 0.0,
+      "determinant": 1.0,
+      "evaluated_world_bbox_mm": [
+        [
+          209.562698364,
+          -146.03729248,
+          5.0
+        ],
+        [
+          222.237289429,
+          -133.362686157,
+          59.927501678
+        ]
+      ],
+      "expected_world_bbox_mm": [
+        [
+          209.562698364,
+          -146.03729248,
+          5.0
+        ],
+        [
+          222.237289429,
+          -133.362686157,
+          59.927501678
+        ]
+      ],
+      "logical_asset_id": "cad_tr2",
+      "negative_determinant": false,
+      "object_name": "a05_sample_lens__TR2",
+      "status": "PASS"
+    },
+    {
+      "bbox_max_error_mm": 0.0,
+      "determinant": 16387.0625,
+      "evaluated_world_bbox_mm": [
+        [
+          -71.005699158,
+          126.555496216,
+          29.244537354
+        ],
+        [
+          -55.994297028,
+          152.844497681,
+          55.533538818
+        ]
+      ],
+      "expected_world_bbox_mm": [
+        [
+          -71.005699158,
+          126.555496216,
+          29.244537354
+        ],
+        [
+          -55.994297028,
+          152.844497681,
+          55.533538818
+        ]
+      ],
+      "logical_asset_id": "cad_ad12f",
+      "negative_determinant": false,
+      "object_name": "a07__AD12F",
+      "status": "PASS"
+    },
+    {
+      "bbox_max_error_mm": 0.0,
+      "determinant": 1.0,
+      "evaluated_world_bbox_mm": [
+        [
+          -68.580001831,
+          124.459999084,
+          23.720035553
+        ],
+        [
+          -58.419998169,
+          154.940002441,
+          61.058036804
+        ]
+      ],
+      "expected_world_bbox_mm": [
+        [
+          -68.580001831,
+          124.459999084,
+          23.720035553
+        ],
+        [
+          -58.419998169,
+          154.940002441,
+          61.058036804
+        ]
+      ],
+      "logical_asset_id": "cad_lmr1",
+      "negative_determinant": false,
+      "object_name": "a07__LMR1",
+      "status": "PASS"
+    },
+    {
+      "bbox_max_error_mm": 0.000106812,
+      "determinant": 16387.0625,
+      "evaluated_world_bbox_mm": [
+        [
+          -127.891464233,
+          91.10585022,
+          0.800000012
+        ],
+        [
+          0.891616821,
+          188.294128418,
+          23.800037384
+        ]
+      ],
+      "expected_world_bbox_mm": [
+        [
+          -127.891571045,
+          91.105766296,
+          0.800000012
+        ],
+        [
+          0.891578674,
+          188.294219971,
+          23.80002594
+        ]
+      ],
+      "logical_asset_id": "cad_xr25p",
+      "negative_determinant": false,
+      "object_name": "a07__XR25P",
+      "status": "PASS"
+    },
+    {
+      "bbox_max_error_mm": 0.0,
+      "determinant": 1.0,
+      "evaluated_world_bbox_mm": [
+        [
+          47.625,
+          73.025001526,
+          0.750000238
+        ],
+        [
+          79.375,
+          104.775001526,
+          13.069002151
+        ]
+      ],
+      "expected_world_bbox_mm": [
+        [
+          47.625,
+          73.025001526,
+          0.750000238
+        ],
+        [
+          79.375,
+          104.775001526,
+          13.069002151
+        ]
+      ],
+      "logical_asset_id": "cad_be1",
+      "negative_determinant": false,
+      "object_name": "a08_reference_npbs__BE1",
+      "status": "PASS"
+    },
+    {
+      "bbox_max_error_mm": 4.9591e-05,
+      "determinant": 1.0,
+      "evaluated_world_bbox_mm": [
+        [
+          32.339042664,
+          52.006500244,
+          0.649954736
+        ],
+        [
+          68.661003113,
+          125.793502808,
+          12.841958046
+        ]
+      ],
+      "expected_world_bbox_mm": [
+        [
+          32.338993073,
+          52.006496429,
+          0.650000513
+        ],
+        [
+          68.661010742,
+          125.793502808,
+          12.84200573
+        ]
+      ],
+      "logical_asset_id": "cad_cf125",
+      "negative_determinant": false,
+      "object_name": "a08_reference_npbs__CF125",
+      "status": "PASS"
+    },
+    {
+      "bbox_max_error_mm": 7.629e-06,
+      "determinant": 16387.0625,
+      "evaluated_world_bbox_mm": [
+        [
+          51.0,
+          71.193000793,
+          0.799998283
+        ],
+        [
+          76.0,
+          106.607002258,
+          51.599998474
+        ]
+      ],
+      "expected_world_bbox_mm": [
+        [
+          51.0,
+          71.193000793,
+          0.799998283
+        ],
+        [
+          76.0,
+          106.607009888,
+          51.600002289
+        ]
+      ],
+      "logical_asset_id": "cad_ph2",
+      "negative_determinant": false,
+      "object_name": "a08_reference_npbs__PH2",
+      "status": "PASS"
+    },
+    {
+      "bbox_max_error_mm": 0.0,
+      "determinant": 1.0,
+      "evaluated_world_bbox_mm": [
+        [
+          57.162700653,
+          82.562698364,
+          5.0
+        ],
+        [
+          69.837303162,
+          95.237304688,
+          59.927501678
+        ]
+      ],
+      "expected_world_bbox_mm": [
+        [
+          57.162700653,
+          82.562698364,
+          5.0
+        ],
+        [
+          69.837303162,
+          95.237304688,
+          59.927501678
+        ]
+      ],
+      "logical_asset_id": "cad_tr2",
+      "negative_determinant": false,
+      "object_name": "a08_reference_npbs__TR2",
+      "status": "PASS"
+    },
+    {
+      "bbox_max_error_mm": 0.0,
+      "determinant": 1.0,
+      "evaluated_world_bbox_mm": [
+        [
+          327.024993896,
+          47.625,
+          0.750000238
+        ],
+        [
+          358.774993896,
+          79.375,
+          13.069002151
+        ]
+      ],
+      "expected_world_bbox_mm": [
+        [
+          327.024993896,
+          47.625,
+          0.750000238
+        ],
+        [
+          358.774993896,
+          79.375,
+          13.069002151
+        ]
+      ],
+      "logical_asset_id": "cad_be1",
+      "negative_determinant": false,
+      "object_name": "a10_reference_lens_1__BE1",
+      "status": "PASS"
+    },
+    {
+      "bbox_max_error_mm": 4.7684e-05,
+      "determinant": 1.0,
+      "evaluated_world_bbox_mm": [
+        [
+          311.739044189,
+          26.606500626,
+          0.649954736
+        ],
+        [
+          348.061004639,
+          100.393501282,
+          12.841958046
+        ]
+      ],
+      "expected_world_bbox_mm": [
+        [
+          311.739013672,
+          26.606496811,
+          0.650000513
+        ],
+        [
+          348.061035156,
+          100.393501282,
+          12.84200573
+        ]
+      ],
+      "logical_asset_id": "cad_cf125",
+      "negative_determinant": false,
+      "object_name": "a10_reference_lens_1__CF125",
+      "status": "PASS"
+    },
+    {
+      "bbox_max_error_mm": 3.815e-06,
+      "determinant": 1.0,
+      "evaluated_world_bbox_mm": [
+        [
+          337.820007324,
+          48.259998322,
+          59.847503662
+        ],
+        [
+          347.980010986,
+          78.739997864,
+          97.185501099
+        ]
+      ],
+      "expected_world_bbox_mm": [
+        [
+          337.820007324,
+          48.260002136,
+          59.847503662
+        ],
+        [
+          347.980010986,
+          78.739997864,
+          97.185501099
+        ]
+      ],
+      "logical_asset_id": "cad_lmr1",
+      "negative_determinant": false,
+      "object_name": "a10_reference_lens_1__LMR1",
+      "status": "PASS"
+    },
+    {
+      "bbox_max_error_mm": 7.629e-06,
+      "determinant": 16387.0625,
+      "evaluated_world_bbox_mm": [
+        [
+          330.399993896,
+          45.792999268,
+          0.799998283
+        ],
+        [
+          355.399993896,
+          81.207000732,
+          51.599998474
+        ]
+      ],
+      "expected_world_bbox_mm": [
+        [
+          330.399993896,
+          45.792995453,
+          0.799998283
+        ],
+        [
+          355.399993896,
+          81.207008362,
+          51.600002289
+        ]
+      ],
+      "logical_asset_id": "cad_ph2",
+      "negative_determinant": false,
+      "object_name": "a10_reference_lens_1__PH2",
+      "status": "PASS"
+    },
+    {
+      "bbox_max_error_mm": 0.0,
+      "determinant": 1.0,
+      "evaluated_world_bbox_mm": [
+        [
+          336.562683105,
+          57.162696838,
+          5.0
+        ],
+        [
+          349.237304688,
+          69.837303162,
+          59.927501678
+        ]
+      ],
+      "expected_world_bbox_mm": [
+        [
+          336.562683105,
+          57.162696838,
+          5.0
+        ],
+        [
+          349.237304688,
+          69.837303162,
+          59.927501678
+        ]
+      ],
+      "logical_asset_id": "cad_tr2",
+      "negative_determinant": false,
+      "object_name": "a10_reference_lens_1__TR2",
+      "status": "PASS"
+    },
+    {
+      "bbox_max_error_mm": 0.0,
+      "determinant": 1.0,
+      "evaluated_world_bbox_mm": [
+        [
+          454.024993896,
+          47.625,
+          0.750000238
+        ],
+        [
+          485.774993896,
+          79.375,
+          13.069002151
+        ]
+      ],
+      "expected_world_bbox_mm": [
+        [
+          454.024993896,
+          47.625,
+          0.750000238
+        ],
+        [
+          485.774993896,
+          79.375,
+          13.069002151
+        ]
+      ],
+      "logical_asset_id": "cad_be1",
+      "negative_determinant": false,
+      "object_name": "a11_reference_mirror_1__BE1",
+      "status": "PASS"
+    },
+    {
+      "bbox_max_error_mm": 4.7684e-05,
+      "determinant": 1.0,
+      "evaluated_world_bbox_mm": [
+        [
+          438.739044189,
+          26.606500626,
+          0.649954736
+        ],
+        [
+          475.061004639,
+          100.393501282,
+          12.841958046
+        ]
+      ],
+      "expected_world_bbox_mm": [
+        [
+          438.739013672,
+          26.606496811,
+          0.650000513
+        ],
+        [
+          475.061035156,
+          100.393501282,
+          12.84200573
+        ]
+      ],
+      "logical_asset_id": "cad_cf125",
+      "negative_determinant": false,
+      "object_name": "a11_reference_mirror_1__CF125",
+      "status": "PASS"
+    },
+    {
+      "bbox_max_error_mm": 0.01612854,
+      "determinant": 16387.0625,
+      "evaluated_world_bbox_mm": [
+        [
+          443.674377441,
+          43.84438324,
+          59.847442627
+        ],
+        [
+          496.109375,
+          83.155700684,
+          112.28238678
+        ]
+      ],
+      "expected_world_bbox_mm": [
+        [
+          443.674499512,
+          43.844379425,
+          59.847499847
+        ],
+        [
+          496.125488281,
+          83.15562439,
+          112.29851532
+        ]
+      ],
+      "logical_asset_id": "cad_km100",
+      "negative_determinant": false,
+      "object_name": "a11_reference_mirror_1__KM100",
+      "status": "PASS"
+    },
+    {
+      "bbox_max_error_mm": 7.629e-06,
+      "determinant": 16387.0625,
+      "evaluated_world_bbox_mm": [
+        [
+          457.399993896,
+          45.792999268,
+          0.799998283
+        ],
+        [
+          482.399993896,
+          81.207000732,
+          51.599998474
+        ]
+      ],
+      "expected_world_bbox_mm": [
+        [
+          457.399993896,
+          45.792995453,
+          0.799998283
+        ],
+        [
+          482.399993896,
+          81.207008362,
+          51.600002289
+        ]
+      ],
+      "logical_asset_id": "cad_ph2",
+      "negative_determinant": false,
+      "object_name": "a11_reference_mirror_1__PH2",
+      "status": "PASS"
+    },
+    {
+      "bbox_max_error_mm": 0.0,
+      "determinant": 1.0,
+      "evaluated_world_bbox_mm": [
+        [
+          463.562683105,
+          57.162696838,
+          5.0
+        ],
+        [
+          476.237304688,
+          69.837303162,
+          59.927501678
+        ]
+      ],
+      "expected_world_bbox_mm": [
+        [
+          463.562683105,
+          57.162696838,
+          5.0
+        ],
+        [
+          476.237304688,
+          69.837303162,
+          59.927501678
+        ]
+      ],
+      "logical_asset_id": "cad_tr2",
+      "negative_determinant": false,
+      "object_name": "a11_reference_mirror_1__TR2",
+      "status": "PASS"
+    },
+    {
+      "bbox_max_error_mm": 0.0,
+      "determinant": 1.0,
+      "evaluated_world_bbox_mm": [
+        [
+          327.024993896,
+          174.625,
+          0.750000238
+        ],
+        [
+          358.774993896,
+          206.375,
+          13.069002151
+        ]
+      ],
+      "expected_world_bbox_mm": [
+        [
+          327.024993896,
+          174.625,
+          0.750000238
+        ],
+        [
+          358.774993896,
+          206.375,
+          13.069002151
+        ]
+      ],
+      "logical_asset_id": "cad_be1",
+      "negative_determinant": false,
+      "object_name": "a12_reference_lens_2__BE1",
+      "status": "PASS"
+    },
+    {
+      "bbox_max_error_mm": 4.7684e-05,
+      "determinant": 1.0,
+      "evaluated_world_bbox_mm": [
+        [
+          311.739044189,
+          153.606506348,
+          0.649954736
+        ],
+        [
+          348.061004639,
+          227.393493652,
+          12.841958046
+        ]
+      ],
+      "expected_world_bbox_mm": [
+        [
+          311.739013672,
+          153.606491089,
+          0.650000513
+        ],
+        [
+          348.061035156,
+          227.393493652,
+          12.84200573
+        ]
+      ],
+      "logical_asset_id": "cad_cf125",
+      "negative_determinant": false,
+      "object_name": "a12_reference_lens_2__CF125",
+      "status": "PASS"
+    },
+    {
+      "bbox_max_error_mm": 0.0,
+      "determinant": 1.0,
+      "evaluated_world_bbox_mm": [
+        [
+          337.820007324,
+          175.259994507,
+          59.847503662
+        ],
+        [
+          347.980010986,
+          205.740005493,
+          97.185501099
+        ]
+      ],
+      "expected_world_bbox_mm": [
+        [
+          337.820007324,
+          175.259994507,
+          59.847503662
+        ],
+        [
+          347.980010986,
+          205.740005493,
+          97.185501099
+        ]
+      ],
+      "logical_asset_id": "cad_lmr1",
+      "negative_determinant": false,
+      "object_name": "a12_reference_lens_2__LMR1",
+      "status": "PASS"
+    },
+    {
+      "bbox_max_error_mm": 3.815e-06,
+      "determinant": 16387.0625,
+      "evaluated_world_bbox_mm": [
+        [
+          330.399993896,
+          172.792999268,
+          0.799998283
+        ],
+        [
+          355.399993896,
+          208.207000732,
+          51.599998474
+        ]
+      ],
+      "expected_world_bbox_mm": [
+        [
+          330.399993896,
+          172.792999268,
+          0.799998283
+        ],
+        [
+          355.399993896,
+          208.207000732,
+          51.600002289
+        ]
+      ],
+      "logical_asset_id": "cad_ph2",
+      "negative_determinant": false,
+      "object_name": "a12_reference_lens_2__PH2",
+      "status": "PASS"
+    },
+    {
+      "bbox_max_error_mm": 0.0,
+      "determinant": 1.0,
+      "evaluated_world_bbox_mm": [
+        [
+          336.562683105,
+          184.162704468,
+          5.0
+        ],
+        [
+          349.237304688,
+          196.837310791,
+          59.927501678
+        ]
+      ],
+      "expected_world_bbox_mm": [
+        [
+          336.562683105,
+          184.162704468,
+          5.0
+        ],
+        [
+          349.237304688,
+          196.837310791,
+          59.927501678
+        ]
+      ],
+      "logical_asset_id": "cad_tr2",
+      "negative_determinant": false,
+      "object_name": "a12_reference_lens_2__TR2",
+      "status": "PASS"
+    },
+    {
+      "bbox_max_error_mm": 0.0,
+      "determinant": 1.0,
+      "evaluated_world_bbox_mm": [
+        [
+          454.024993896,
+          174.625,
+          0.750000238
+        ],
+        [
+          485.774993896,
+          206.375,
+          13.069002151
+        ]
+      ],
+      "expected_world_bbox_mm": [
+        [
+          454.024993896,
+          174.625,
+          0.750000238
+        ],
+        [
+          485.774993896,
+          206.375,
+          13.069002151
+        ]
+      ],
+      "logical_asset_id": "cad_be1",
+      "negative_determinant": false,
+      "object_name": "a13_reference_mirror_2__BE1",
+      "status": "PASS"
+    },
+    {
+      "bbox_max_error_mm": 4.7684e-05,
+      "determinant": 1.0,
+      "evaluated_world_bbox_mm": [
+        [
+          438.739044189,
+          153.606506348,
+          0.649954736
+        ],
+        [
+          475.061004639,
+          227.393493652,
+          12.841958046
+        ]
+      ],
+      "expected_world_bbox_mm": [
+        [
+          438.739013672,
+          153.606491089,
+          0.650000513
+        ],
+        [
+          475.061035156,
+          227.393493652,
+          12.84200573
+        ]
+      ],
+      "logical_asset_id": "cad_cf125",
+      "negative_determinant": false,
+      "object_name": "a13_reference_mirror_2__CF125",
+      "status": "PASS"
+    },
+    {
+      "bbox_max_error_mm": 0.01612854,
+      "determinant": 16387.0625,
+      "evaluated_world_bbox_mm": [
+        [
+          443.674377441,
+          170.84437561,
+          59.847442627
+        ],
+        [
+          496.109375,
+          210.155700684,
+          112.28238678
+        ]
+      ],
+      "expected_world_bbox_mm": [
+        [
+          443.674499512,
+          170.84437561,
+          59.847499847
+        ],
+        [
+          496.125488281,
+          210.15562439,
+          112.29851532
+        ]
+      ],
+      "logical_asset_id": "cad_km100",
+      "negative_determinant": false,
+      "object_name": "a13_reference_mirror_2__KM100",
+      "status": "PASS"
+    },
+    {
+      "bbox_max_error_mm": 3.815e-06,
+      "determinant": 16387.0625,
+      "evaluated_world_bbox_mm": [
+        [
+          457.399993896,
+          172.792999268,
+          0.799998283
+        ],
+        [
+          482.399993896,
+          208.207000732,
+          51.599998474
+        ]
+      ],
+      "expected_world_bbox_mm": [
+        [
+          457.399993896,
+          172.792999268,
+          0.799998283
+        ],
+        [
+          482.399993896,
+          208.207000732,
+          51.600002289
+        ]
+      ],
+      "logical_asset_id": "cad_ph2",
+      "negative_determinant": false,
+      "object_name": "a13_reference_mirror_2__PH2",
+      "status": "PASS"
+    },
+    {
+      "bbox_max_error_mm": 0.0,
+      "determinant": 1.0,
+      "evaluated_world_bbox_mm": [
+        [
+          463.562683105,
+          184.162704468,
+          5.0
+        ],
+        [
+          476.237304688,
+          196.837310791,
+          59.927501678
+        ]
+      ],
+      "expected_world_bbox_mm": [
+        [
+          463.562683105,
+          184.162704468,
+          5.0
+        ],
+        [
+          476.237304688,
+          196.837310791,
+          59.927501678
+        ]
+      ],
+      "logical_asset_id": "cad_tr2",
+      "negative_determinant": false,
+      "object_name": "a13_reference_mirror_2__TR2",
+      "status": "PASS"
+    },
+    {
+      "bbox_max_error_mm": 0.000305176,
+      "determinant": 1.0,
+      "evaluated_world_bbox_mm": [
+        [
+          -715.459716797,
+          -40.925003052,
+          21.900043488
+        ],
+        [
+          -294.539733887,
+          40.924999237,
+          35.998851776
+        ]
+      ],
+      "expected_world_bbox_mm": [
+        [
+          -715.460021973,
+          -40.925003052,
+          21.899999619
+        ],
+        [
+          -294.540008545,
+          40.925003052,
+          35.998867035
+        ]
+      ],
+      "logical_asset_id": "cad_tw850r5a2",
+      "negative_determinant": false,
+      "object_name": "DEVICE__MAIN_COUPLER",
+      "status": "PASS"
+    },
+    {
+      "bbox_max_error_mm": 3.815e-06,
+      "determinant": 1.0,
+      "evaluated_world_bbox_mm": [
+        [
+          -72.325210571,
+          133.699996948,
+          36.389038086
+        ],
+        [
+          -54.674793243,
+          145.699996948,
+          48.389038086
+        ]
+      ],
+      "expected_world_bbox_mm": [
+        [
+          -72.325210571,
+          133.699996948,
+          36.389038086
+        ],
+        [
+          -54.674789429,
+          145.699996948,
+          48.389038086
+        ]
+      ],
+      "logical_asset_id": "cad_f240apc_850",
+      "negative_determinant": false,
+      "object_name": "DEVICE__REFERENCE_COLLIMATOR",
+      "status": "PASS"
+    },
+    {
+      "bbox_max_error_mm": 0.059363008,
+      "determinant": 1.0,
+      "evaluated_world_bbox_mm": [
+        [
+          172.942626953,
+          106.069999695,
+          1.209362984
+        ],
+        [
+          258.872528076,
+          173.315200806,
+          89.449996948
+        ]
+      ],
+      "expected_world_bbox_mm": [
+        [
+          172.927474976,
+          106.069999695,
+          1.149999976
+        ],
+        [
+          258.872528076,
+          173.330001831,
+          89.449996948
+        ]
+      ],
+      "logical_asset_id": "cad_gvs012",
+      "negative_determinant": false,
+      "object_name": "DEVICE__REFERENCE_GVS012",
+      "status": "PASS"
+    },
+    {
+      "bbox_max_error_mm": 7.629e-06,
+      "determinant": 16387.0625,
+      "evaluated_world_bbox_mm": [
+        [
+          333.095001221,
+          48.259994507,
+          63.276500702
+        ],
+        [
+          352.704986572,
+          78.739997864,
+          93.756500244
+        ]
+      ],
+      "expected_world_bbox_mm": [
+        [
+          333.095001221,
+          48.259994507,
+          63.276500702
+        ],
+        [
+          352.704986572,
+          78.740005493,
+          93.756500244
+        ]
+      ],
+      "logical_asset_id": "cad_ac254_030_b_ml",
+      "negative_determinant": false,
+      "object_name": "DEVICE__REFERENCE_LENS_L1",
+      "status": "PASS"
+    },
+    {
+      "bbox_max_error_mm": 0.0,
+      "determinant": 16387.0625,
+      "evaluated_world_bbox_mm": [
+        [
+          333.095001221,
+          175.259994507,
+          63.276500702
+        ],
+        [
+          352.704986572,
+          205.740005493,
+          93.756500244
+        ]
+      ],
+      "expected_world_bbox_mm": [
+        [
+          333.095001221,
+          175.259994507,
+          63.276500702
+        ],
+        [
+          352.704986572,
+          205.740005493,
+          93.756500244
+        ]
+      ],
+      "logical_asset_id": "cad_ac254_030_b_ml",
+      "negative_determinant": false,
+      "object_name": "DEVICE__REFERENCE_LENS_L2",
+      "status": "PASS"
+    },
+    {
+      "bbox_max_error_mm": 0.00012207,
+      "determinant": 16387.0625,
+      "evaluated_world_bbox_mm": [
+        [
+          466.899993896,
+          50.799999237,
+          73.36491394
+        ],
+        [
+          472.900024414,
+          76.200012207,
+          98.764793396
+        ]
+      ],
+      "expected_world_bbox_mm": [
+        [
+          466.899993896,
+          50.800003052,
+          73.36491394
+        ],
+        [
+          472.899993896,
+          76.199996948,
+          98.764915466
+        ]
+      ],
+      "logical_asset_id": "cad_bb1_e03",
+      "negative_determinant": false,
+      "object_name": "DEVICE__REFERENCE_MIRROR_M1",
+      "status": "PASS"
+    },
+    {
+      "bbox_max_error_mm": 0.00012207,
+      "determinant": 16387.0625,
+      "evaluated_world_bbox_mm": [
+        [
+          466.899993896,
+          177.800003052,
+          73.36491394
+        ],
+        [
+          472.900024414,
+          203.200012207,
+          98.764793396
+        ]
+      ],
+      "expected_world_bbox_mm": [
+        [
+          466.899993896,
+          177.800003052,
+          73.36491394
+        ],
+        [
+          472.899993896,
+          203.199996948,
+          98.764915466
+        ]
+      ],
+      "logical_asset_id": "cad_bb1_e03",
+      "negative_determinant": false,
+      "object_name": "DEVICE__REFERENCE_MIRROR_M2",
+      "status": "PASS"
+    },
+    {
+      "bbox_max_error_mm": 7.629e-06,
+      "determinant": 16387.0625,
+      "evaluated_world_bbox_mm": [
+        [
+          44.450000763,
+          69.850006104,
+          59.847507477
+        ],
+        [
+          82.550003052,
+          107.949996948,
+          97.947509766
+        ]
+      ],
+      "expected_world_bbox_mm": [
+        [
+          44.449996948,
+          69.850006104,
+          59.847503662
+        ],
+        [
+          82.550003052,
+          107.950004578,
+          97.947509766
+        ]
+      ],
+      "logical_asset_id": "cad_ccm1_bs014",
+      "negative_determinant": false,
+      "object_name": "DEVICE__REFERENCE_NPBS",
+      "status": "PASS"
+    },
+    {
+      "bbox_max_error_mm": 8.3923e-05,
+      "determinant": 16387.0625,
+      "evaluated_world_bbox_mm": [
+        [
+          -312.950073242,
+          60.567508698,
+          21.900005341
+        ],
+        [
+          -97.050079346,
+          123.43245697,
+          53.319805145
+        ]
+      ],
+      "expected_world_bbox_mm": [
+        [
+          -312.950012207,
+          60.567497253,
+          21.899999619
+        ],
+        [
+          -97.049995422,
+          123.432495117,
+          53.319801331
+        ]
+      ],
+      "logical_asset_id": "cad_fpc030",
+      "negative_determinant": false,
+      "object_name": "DEVICE__REFERENCE_PC",
+      "status": "PASS"
+    },
+    {
+      "bbox_max_error_mm": 3.815e-06,
+      "determinant": 1.0,
+      "evaluated_world_bbox_mm": [
+        [
+          -72.325210571,
+          -145.699996948,
+          72.51650238
+        ],
+        [
+          -54.674793243,
+          -133.699996948,
+          84.51650238
+        ]
+      ],
+      "expected_world_bbox_mm": [
+        [
+          -72.325210571,
+          -145.699996948,
+          72.51650238
+        ],
+        [
+          -54.674789429,
+          -133.699996948,
+          84.51650238
+        ]
+      ],
+      "logical_asset_id": "cad_f240apc_850",
+      "negative_determinant": false,
+      "object_name": "DEVICE__SAMPLE_COLLIMATOR",
+      "status": "PASS"
+    },
+    {
+      "bbox_max_error_mm": 0.059363008,
+      "determinant": 1.0,
+      "evaluated_world_bbox_mm": [
+        [
+          20.54262352,
+          -173.330001831,
+          1.209362984
+        ],
+        [
+          106.472518921,
+          -106.08480072,
+          89.449996948
+        ]
+      ],
+      "expected_world_bbox_mm": [
+        [
+          20.527477264,
+          -173.330001831,
+          1.149999976
+        ],
+        [
+          106.472518921,
+          -106.070007324,
+          89.449996948
+        ]
+      ],
+      "logical_asset_id": "cad_gvs012",
+      "negative_determinant": false,
+      "object_name": "DEVICE__SAMPLE_GVS012",
+      "status": "PASS"
+    },
+    {
+      "bbox_max_error_mm": 7.629e-06,
+      "determinant": 16387.0625,
+      "evaluated_world_bbox_mm": [
+        [
+          208.787994385,
+          -154.940002441,
+          63.276500702
+        ],
+        [
+          223.011993408,
+          -124.459999084,
+          93.756500244
+        ]
+      ],
+      "expected_world_bbox_mm": [
+        [
+          208.787994385,
+          -154.940002441,
+          63.276500702
+        ],
+        [
+          223.011993408,
+          -124.459991455,
+          93.756500244
+        ]
+      ],
+      "logical_asset_id": "cad_ac254_075_b_ml",
+      "negative_determinant": false,
+      "object_name": "DEVICE__SAMPLE_LENS_L0",
+      "status": "PASS"
+    },
+    {
+      "bbox_max_error_mm": 8.3923e-05,
+      "determinant": 16387.0625,
+      "evaluated_world_bbox_mm": [
+        [
+          -312.950073242,
+          -123.432495117,
+          21.900005341
+        ],
+        [
+          -97.050079346,
+          -60.56754303,
+          53.319805145
+        ]
+      ],
+      "expected_world_bbox_mm": [
+        [
+          -312.950012207,
+          -123.432502747,
+          21.899999619
+        ],
+        [
+          -97.049995422,
+          -60.567501068,
+          53.319801331
+        ]
+      ],
+      "logical_asset_id": "cad_fpc030",
+      "negative_determinant": false,
+      "object_name": "DEVICE__SAMPLE_PC",
+      "status": "PASS"
+    },
+    {
+      "bbox_max_error_mm": 0.0,
+      "determinant": 1.0,
+      "evaluated_world_bbox_mm": [
+        [
+          -609.599975586,
+          -304.799987793,
+          -12.699999809
+        ],
+        [
+          609.599975586,
+          304.799987793,
+          4.59e-05
+        ]
+      ],
+      "expected_world_bbox_mm": [
+        [
+          -609.599975586,
+          -304.799987793,
+          -12.699999809
+        ],
+        [
+          609.599975586,
+          304.799987793,
+          4.59e-05
+        ]
+      ],
+      "logical_asset_id": "cad_mb2448",
+      "negative_determinant": false,
+      "object_name": "TABLE__MB2448",
+      "status": "PASS"
+    }
+  ],
+  "max_family_bbox_error_mm": 0.05936298370360049,
+  "max_instance_bbox_error_mm": 0.05936300754547119,
+  "max_port_origin_error_mm": 0.0,
+  "min_port_axis_abs_dot": 0.9999999478459358,
+  "official_cad_family_count": 17,
+  "official_cad_instance_count": 52,
+  "phase": "PHASE_2_REPRESENTATIVE_SMOKE",
+  "port_classification_counts": {
+    "ENGINEERING_DERIVED_FROM_OFFICIAL_CAD": 35,
+    "MODELED_CONTRACT": 15
+  },
+  "port_count": 50,
+  "port_provenance_boundary": "ENGINEERING_DERIVED_FROM_OFFICIAL_CAD and MODELED_CONTRACT ports are not official vendor metadata.",
+  "port_status_counts": {
+    "PASS": 50
+  },
+  "ports": [
+    {
+      "axis_abs_dot": 1.000000015,
+      "axis_world": [
+        -0.652577639,
+        0.731185079,
+        0.198773324
+      ],
+      "classification": "MODELED_CONTRACT",
+      "domain": "guided_fiber",
+      "origin_error_mm": 0.0,
+      "origin_world_mm": [
+        -500.099975586,
+        -241.299987793,
+        29.050001144
+      ],
+      "port": "n01_sld_source.p_light",
+      "status": "PASS"
+    },
+    {
+      "axis_abs_dot": 1.0,
+      "axis_world": [
+        0.0,
+        -1.0,
+        3.4e-08
+      ],
+      "classification": "MODELED_CONTRACT",
+      "domain": "electrical_data",
+      "origin_error_mm": 0.0,
+      "origin_world_mm": [
+        -569.099975586,
+        -276.299987793,
+        14.650000572
+      ],
+      "port": "n01_sld_source.p_power",
+      "status": "PASS"
+    },
+    {
+      "axis_abs_dot": 0.99999997,
+      "axis_world": [
+        0.459436774,
+        0.81250155,
+        0.358830243
+      ],
+      "classification": "ENGINEERING_DERIVED_FROM_OFFICIAL_CAD",
+      "domain": "guided_fiber",
+      "origin_error_mm": 0.0,
+      "origin_world_mm": [
+        -294.539733887,
+        -1.907e-06,
+        29.654388428
+      ],
+      "port": "n02_fiber_coupler.p_detector",
+      "status": "PASS"
+    },
+    {
+      "axis_abs_dot": 1.000000004,
+      "axis_world": [
+        -0.246168315,
+        0.901818633,
+        0.355139822
+      ],
+      "classification": "ENGINEERING_DERIVED_FROM_OFFICIAL_CAD",
+      "domain": "guided_fiber",
+      "origin_error_mm": 0.0,
+      "origin_world_mm": [
+        -294.539733887,
+        24.554998398,
+        29.654388428
+      ],
+      "port": "n02_fiber_coupler.p_reference",
+      "status": "PASS"
+    },
+    {
+      "axis_abs_dot": 1.000000004,
+      "axis_world": [
+        -0.246168315,
+        -0.901818633,
+        0.355139822
+      ],
+      "classification": "ENGINEERING_DERIVED_FROM_OFFICIAL_CAD",
+      "domain": "guided_fiber",
+      "origin_error_mm": 0.0,
+      "origin_world_mm": [
+        -294.539733887,
+        -24.555002213,
+        29.654388428
+      ],
+      "port": "n02_fiber_coupler.p_sample",
+      "status": "PASS"
+    },
+    {
+      "axis_abs_dot": 0.999999948,
+      "axis_world": [
+        -0.653071225,
+        0.731731236,
+        -0.195108488
+      ],
+      "classification": "ENGINEERING_DERIVED_FROM_OFFICIAL_CAD",
+      "domain": "guided_fiber",
+      "origin_error_mm": 0.0,
+      "origin_world_mm": [
+        -715.459716797,
+        -1.907e-06,
+        29.654388428
+      ],
+      "port": "n02_fiber_coupler.p_source",
+      "status": "PASS"
+    },
+    {
+      "axis_abs_dot": 1.000000113,
+      "axis_world": [
+        -0.263047576,
+        -0.963578224,
+        -0.048199035
+      ],
+      "classification": "ENGINEERING_DERIVED_FROM_OFFICIAL_CAD",
+      "domain": "guided_fiber",
+      "origin_error_mm": 0.0,
+      "origin_world_mm": [
+        -312.950073242,
+        -92.000015259,
+        40.75188446
+      ],
+      "port": "n03_sample_pc.p_in",
+      "status": "PASS"
+    },
+    {
+      "axis_abs_dot": 1.000000052,
+      "axis_world": [
+        0.309263527,
+        -0.596656024,
+        0.740511775
+      ],
+      "classification": "ENGINEERING_DERIVED_FROM_OFFICIAL_CAD",
+      "domain": "guided_fiber",
+      "origin_error_mm": 0.0,
+      "origin_world_mm": [
+        -97.050079346,
+        -92.000015259,
+        40.75188446
+      ],
+      "port": "n03_sample_pc.p_out",
+      "status": "PASS"
+    },
+    {
+      "axis_abs_dot": 0.999999985,
+      "axis_world": [
+        0.425373465,
+        -0.820642352,
+        0.381580263
+      ],
+      "classification": "ENGINEERING_DERIVED_FROM_OFFICIAL_CAD",
+      "domain": "guided_fiber",
+      "origin_error_mm": 0.0,
+      "origin_world_mm": [
+        -72.325210571,
+        -139.699996948,
+        78.51650238
+      ],
+      "port": "n04_sample_collimator.p_fiber",
+      "status": "PASS"
+    },
+    {
+      "axis_abs_dot": 1.000000052,
+      "axis_world": [
+        -0.972180247,
+        0.069626942,
+        0.223646492
+      ],
+      "classification": "ENGINEERING_DERIVED_FROM_OFFICIAL_CAD",
+      "domain": "free_space_optical",
+      "origin_error_mm": 0.0,
+      "origin_world_mm": [
+        -54.674793243,
+        -139.699996948,
+        78.51650238
+      ],
+      "port": "n04_sample_collimator.p_free",
+      "status": "PASS"
+    },
+    {
+      "axis_abs_dot": 1.0,
+      "axis_world": [
+        0.0,
+        -1.0,
+        3.4e-08
+      ],
+      "classification": "ENGINEERING_DERIVED_FROM_OFFICIAL_CAD",
+      "domain": "electrical_data",
+      "origin_error_mm": 0.0,
+      "origin_world_mm": [
+        50.618087769,
+        -173.330001831,
+        23.269521713
+      ],
+      "port": "n05_sample_galvo_x.p_control",
+      "status": "PASS"
+    },
+    {
+      "axis_abs_dot": 1.000000052,
+      "axis_world": [
+        -0.972180247,
+        0.069626942,
+        0.223646492
+      ],
+      "classification": "ENGINEERING_DERIVED_FROM_OFFICIAL_CAD",
+      "domain": "free_space_optical",
+      "origin_error_mm": 0.0,
+      "origin_world_mm": [
+        20.54262352,
+        -145.087020874,
+        61.212993622
+      ],
+      "port": "n05_sample_galvo_x.p_in",
+      "status": "PASS"
+    },
+    {
+      "axis_abs_dot": 1.0,
+      "axis_world": [
+        -0.648489714,
+        -0.761223376,
+        1.2e-08
+      ],
+      "classification": "ENGINEERING_DERIVED_FROM_OFFICIAL_CAD",
+      "domain": "free_space_optical",
+      "origin_error_mm": 0.0,
+      "origin_world_mm": [
+        61.788974762,
+        -141.724761963,
+        61.212993622
+      ],
+      "port": "n05_sample_galvo_x.p_out",
+      "status": "PASS"
+    },
+    {
+      "axis_abs_dot": 1.0,
+      "axis_world": [
+        0.0,
+        -1.0,
+        3.4e-08
+      ],
+      "classification": "ENGINEERING_DERIVED_FROM_OFFICIAL_CAD",
+      "domain": "electrical_data",
+      "origin_error_mm": 0.0,
+      "origin_world_mm": [
+        76.39705658,
+        -173.330001831,
+        23.269521713
+      ],
+      "port": "n06_sample_galvo_y.p_control",
+      "status": "PASS"
+    },
+    {
+      "axis_abs_dot": 1.0,
+      "axis_world": [
+        -0.648489714,
+        -0.761223376,
+        1.2e-08
+      ],
+      "classification": "ENGINEERING_DERIVED_FROM_OFFICIAL_CAD",
+      "domain": "free_space_optical",
+      "origin_error_mm": 0.0,
+      "origin_world_mm": [
+        65.226165771,
+        -137.690048218,
+        61.212993622
+      ],
+      "port": "n06_sample_galvo_y.p_in",
+      "status": "PASS"
+    },
+    {
+      "axis_abs_dot": 0.999999992,
+      "axis_world": [
+        -0.984680176,
+        0.051701922,
+        -0.166528493
+      ],
+      "classification": "ENGINEERING_DERIVED_FROM_OFFICIAL_CAD",
+      "domain": "free_space_optical",
+      "origin_error_mm": 0.0,
+      "origin_world_mm": [
+        106.472518921,
+        -134.327789307,
+        61.212993622
+      ],
+      "port": "n06_sample_galvo_y.p_out",
+      "status": "PASS"
+    },
+    {
+      "axis_abs_dot": 1.000000119,
+      "axis_world": [
+        -0.918900967,
+        0.0,
+        0.394488335
+      ],
+      "classification": "ENGINEERING_DERIVED_FROM_OFFICIAL_CAD",
+      "domain": "free_space_optical",
+      "origin_error_mm": 0.0,
+      "origin_world_mm": [
+        223.011993408,
+        -139.699996948,
+        78.51650238
+      ],
+      "port": "n07_sample_lens_l0.p_downstream",
+      "status": "PASS"
+    },
+    {
+      "axis_abs_dot": 0.999999992,
+      "axis_world": [
+        -0.984680176,
+        0.051701922,
+        -0.166528493
+      ],
+      "classification": "ENGINEERING_DERIVED_FROM_OFFICIAL_CAD",
+      "domain": "free_space_optical",
+      "origin_error_mm": 0.0,
+      "origin_world_mm": [
+        208.787994385,
+        -139.699996948,
+        78.51650238
+      ],
+      "port": "n07_sample_lens_l0.p_upstream",
+      "status": "PASS"
+    },
+    {
+      "axis_abs_dot": 1.000000119,
+      "axis_world": [
+        -0.918900967,
+        0.0,
+        0.394488335
+      ],
+      "classification": "MODELED_CONTRACT",
+      "domain": "free_space_optical",
+      "origin_error_mm": 0.0,
+      "origin_world_mm": [
+        383.100006104,
+        -139.699996948,
+        9.789999962
+      ],
+      "port": "n08_sample.p_optical",
+      "status": "PASS"
+    },
+    {
+      "axis_abs_dot": 1.000000113,
+      "axis_world": [
+        -0.263047576,
+        0.963578224,
+        -0.048199035
+      ],
+      "classification": "ENGINEERING_DERIVED_FROM_OFFICIAL_CAD",
+      "domain": "guided_fiber",
+      "origin_error_mm": 0.0,
+      "origin_world_mm": [
+        -312.950073242,
+        91.999984741,
+        40.75188446
+      ],
+      "port": "n09_reference_pc.p_in",
+      "status": "PASS"
+    },
+    {
+      "axis_abs_dot": 1.0,
+      "axis_world": [
+        0.455695212,
+        0.879145861,
+        0.139443532
+      ],
+      "classification": "ENGINEERING_DERIVED_FROM_OFFICIAL_CAD",
+      "domain": "guided_fiber",
+      "origin_error_mm": 0.0,
+      "origin_world_mm": [
+        -97.050079346,
+        91.999984741,
+        40.75188446
+      ],
+      "port": "n09_reference_pc.p_out",
+      "status": "PASS"
+    },
+    {
+      "axis_abs_dot": 1.000000028,
+      "axis_world": [
+        0.458753139,
+        0.88505429,
+        -0.078895636
+      ],
+      "classification": "ENGINEERING_DERIVED_FROM_OFFICIAL_CAD",
+      "domain": "guided_fiber",
+      "origin_error_mm": 0.0,
+      "origin_world_mm": [
+        -72.325210571,
+        139.699996948,
+        42.389038086
+      ],
+      "port": "n10_reference_collimator.p_fiber",
+      "status": "PASS"
+    },
+    {
+      "axis_abs_dot": 1.00000003,
+      "axis_world": [
+        -0.845670223,
+        0.433393538,
+        -0.311467201
+      ],
+      "classification": "ENGINEERING_DERIVED_FROM_OFFICIAL_CAD",
+      "domain": "free_space_optical",
+      "origin_error_mm": 0.0,
+      "origin_world_mm": [
+        -54.674793243,
+        139.699996948,
+        42.389038086
+      ],
+      "port": "n10_reference_collimator.p_free",
+      "status": "PASS"
+    },
+    {
+      "axis_abs_dot": 0.999999996,
+      "axis_world": [
+        -0.87971133,
+        -0.4234083,
+        0.216410339
+      ],
+      "classification": "ENGINEERING_DERIVED_FROM_OFFICIAL_CAD",
+      "domain": "free_space_optical",
+      "origin_error_mm": 0.0,
+      "origin_world_mm": [
+        82.550003052,
+        79.375,
+        80.802505493
+      ],
+      "port": "n11_reference_npbs.p_arm1",
+      "status": "PASS"
+    },
+    {
+      "axis_abs_dot": 1.000000007,
+      "axis_world": [
+        -0.823848903,
+        -0.529337883,
+        0.20266813
+      ],
+      "classification": "ENGINEERING_DERIVED_FROM_OFFICIAL_CAD",
+      "domain": "free_space_optical",
+      "origin_error_mm": 0.0,
+      "origin_world_mm": [
+        82.550003052,
+        98.425003052,
+        80.802505493
+      ],
+      "port": "n11_reference_npbs.p_arm2",
+      "status": "PASS"
+    },
+    {
+      "axis_abs_dot": 1.00000003,
+      "axis_world": [
+        -0.845670223,
+        0.433393538,
+        -0.311467201
+      ],
+      "classification": "ENGINEERING_DERIVED_FROM_OFFICIAL_CAD",
+      "domain": "free_space_optical",
+      "origin_error_mm": 0.0,
+      "origin_world_mm": [
+        44.450000763,
+        88.900001526,
+        78.897506714
+      ],
+      "port": "n11_reference_npbs.p_common",
+      "status": "PASS"
+    },
+    {
+      "axis_abs_dot": 1.0,
+      "axis_world": [
+        0.0,
+        -1.0,
+        3.4e-08
+      ],
+      "classification": "ENGINEERING_DERIVED_FROM_OFFICIAL_CAD",
+      "domain": "electrical_data",
+      "origin_error_mm": 0.0,
+      "origin_world_mm": [
+        203.018096924,
+        106.069999695,
+        23.269521713
+      ],
+      "port": "n12_reference_galvo_gs1.p_control",
+      "status": "PASS"
+    },
+    {
+      "axis_abs_dot": 0.999999996,
+      "axis_world": [
+        -0.87971133,
+        -0.4234083,
+        0.216410339
+      ],
+      "classification": "ENGINEERING_DERIVED_FROM_OFFICIAL_CAD",
+      "domain": "free_space_optical",
+      "origin_error_mm": 0.0,
+      "origin_world_mm": [
+        172.942626953,
+        122.88130188,
+        58.565776825
+      ],
+      "port": "n12_reference_galvo_gs1.p_in",
+      "status": "PASS"
+    },
+    {
+      "axis_abs_dot": 0.999999952,
+      "axis_world": [
+        -0.764200211,
+        0.611394346,
+        -0.20541428
+      ],
+      "classification": "ENGINEERING_DERIVED_FROM_OFFICIAL_CAD",
+      "domain": "free_space_optical",
+      "origin_error_mm": 0.0,
+      "origin_world_mm": [
+        258.872528076,
+        122.88130188,
+        58.565776825
+      ],
+      "port": "n12_reference_galvo_gs1.p_out",
+      "status": "PASS"
+    },
+    {
+      "axis_abs_dot": 1.000000033,
+      "axis_world": [
+        -0.997822523,
+        -1e-07,
+        -0.065956704
+      ],
+      "classification": "ENGINEERING_DERIVED_FROM_OFFICIAL_CAD",
+      "domain": "free_space_optical",
+      "origin_error_mm": 0.0,
+      "origin_world_mm": [
+        352.704986572,
+        63.499996185,
+        78.51650238
+      ],
+      "port": "n13_reference_lens_l1.p_downstream",
+      "status": "PASS"
+    },
+    {
+      "axis_abs_dot": 0.999999952,
+      "axis_world": [
+        -0.764200211,
+        0.611394346,
+        -0.20541428
+      ],
+      "classification": "ENGINEERING_DERIVED_FROM_OFFICIAL_CAD",
+      "domain": "free_space_optical",
+      "origin_error_mm": 0.0,
+      "origin_world_mm": [
+        333.095001221,
+        63.499996185,
+        78.51650238
+      ],
+      "port": "n13_reference_lens_l1.p_upstream",
+      "status": "PASS"
+    },
+    {
+      "axis_abs_dot": 1.000000033,
+      "axis_world": [
+        -0.997822523,
+        -1e-07,
+        -0.065956704
+      ],
+      "classification": "ENGINEERING_DERIVED_FROM_OFFICIAL_CAD",
+      "domain": "free_space_optical",
+      "origin_error_mm": 0.0,
+      "origin_world_mm": [
+        466.899993896,
+        63.500007629,
+        86.064849854
+      ],
+      "port": "n14_reference_mirror_m1.p_optical",
+      "status": "PASS"
+    },
+    {
+      "axis_abs_dot": 1.0,
+      "axis_world": [
+        0.0,
+        1.0,
+        3.4e-08
+      ],
+      "classification": "ENGINEERING_DERIVED_FROM_OFFICIAL_CAD",
+      "domain": "electrical_data",
+      "origin_error_mm": 0.0,
+      "origin_world_mm": [
+        228.797058105,
+        173.315200806,
+        23.269521713
+      ],
+      "port": "n15_reference_galvo_gs2.p_control",
+      "status": "PASS"
+    },
+    {
+      "axis_abs_dot": 1.000000007,
+      "axis_world": [
+        -0.823848903,
+        -0.529337883,
+        0.20266813
+      ],
+      "classification": "ENGINEERING_DERIVED_FROM_OFFICIAL_CAD",
+      "domain": "free_space_optical",
+      "origin_error_mm": 0.0,
+      "origin_world_mm": [
+        172.942626953,
+        156.50390625,
+        58.565776825
+      ],
+      "port": "n15_reference_galvo_gs2.p_in",
+      "status": "PASS"
+    },
+    {
+      "axis_abs_dot": 1.00000003,
+      "axis_world": [
+        -0.883179069,
+        -0.40452221,
+        -0.237395361
+      ],
+      "classification": "ENGINEERING_DERIVED_FROM_OFFICIAL_CAD",
+      "domain": "free_space_optical",
+      "origin_error_mm": 0.0,
+      "origin_world_mm": [
+        258.872528076,
+        156.50390625,
+        58.565776825
+      ],
+      "port": "n15_reference_galvo_gs2.p_out",
+      "status": "PASS"
+    },
+    {
+      "axis_abs_dot": 1.000000033,
+      "axis_world": [
+        -0.997822523,
+        0.0,
+        -0.065956704
+      ],
+      "classification": "ENGINEERING_DERIVED_FROM_OFFICIAL_CAD",
+      "domain": "free_space_optical",
+      "origin_error_mm": 0.0,
+      "origin_world_mm": [
+        352.704986572,
+        190.5,
+        78.51650238
+      ],
+      "port": "n16_reference_lens_l2.p_downstream",
+      "status": "PASS"
+    },
+    {
+      "axis_abs_dot": 1.00000003,
+      "axis_world": [
+        -0.883179069,
+        -0.40452221,
+        -0.237395361
+      ],
+      "classification": "ENGINEERING_DERIVED_FROM_OFFICIAL_CAD",
+      "domain": "free_space_optical",
+      "origin_error_mm": 0.0,
+      "origin_world_mm": [
+        333.095001221,
+        190.5,
+        78.51650238
+      ],
+      "port": "n16_reference_lens_l2.p_upstream",
+      "status": "PASS"
+    },
+    {
+      "axis_abs_dot": 1.000000033,
+      "axis_world": [
+        -0.997822523,
+        0.0,
+        -0.065956704
+      ],
+      "classification": "ENGINEERING_DERIVED_FROM_OFFICIAL_CAD",
+      "domain": "free_space_optical",
+      "origin_error_mm": 0.0,
+      "origin_world_mm": [
+        466.899993896,
+        190.5,
+        86.064849854
+      ],
+      "port": "n17_reference_mirror_m2.p_optical",
+      "status": "PASS"
+    },
+    {
+      "axis_abs_dot": 1.000000021,
+      "axis_world": [
+        0.490557909,
+        0.867525876,
+        -0.082169913
+      ],
+      "classification": "MODELED_CONTRACT",
+      "domain": "guided_fiber",
+      "origin_error_mm": 0.0,
+      "origin_world_mm": [
+        -156.0,
+        245.0,
+        70.0
+      ],
+      "port": "n18_detector_collimator.p_fiber",
+      "status": "PASS"
+    },
+    {
+      "axis_abs_dot": 1.0,
+      "axis_world": [
+        1.0,
+        0.0,
+        3.4e-08
+      ],
+      "classification": "MODELED_CONTRACT",
+      "domain": "free_space_optical",
+      "origin_error_mm": 0.0,
+      "origin_world_mm": [
+        -114.0,
+        245.0,
+        70.0
+      ],
+      "port": "n18_detector_collimator.p_free",
+      "status": "PASS"
+    },
+    {
+      "axis_abs_dot": 1.0,
+      "axis_world": [
+        1.0,
+        0.0,
+        3.4e-08
+      ],
+      "classification": "MODELED_CONTRACT",
+      "domain": "free_space_optical",
+      "origin_error_mm": 0.0,
+      "origin_world_mm": [
+        -19.0,
+        245.0,
+        70.0
+      ],
+      "port": "n19_diffraction_grating.p_in",
+      "status": "PASS"
+    },
+    {
+      "axis_abs_dot": 1.0,
+      "axis_world": [
+        1.0,
+        0.0,
+        3.4e-08
+      ],
+      "classification": "MODELED_CONTRACT",
+      "domain": "free_space_optical",
+      "origin_error_mm": 0.0,
+      "origin_world_mm": [
+        -11.0,
+        245.0,
+        70.0
+      ],
+      "port": "n19_diffraction_grating.p_out",
+      "status": "PASS"
+    },
+    {
+      "axis_abs_dot": 1.0,
+      "axis_world": [
+        1.0,
+        0.0,
+        3.4e-08
+      ],
+      "classification": "MODELED_CONTRACT",
+      "domain": "free_space_optical",
+      "origin_error_mm": 0.0,
+      "origin_world_mm": [
+        104.0,
+        245.0,
+        70.0
+      ],
+      "port": "n20_spectrometer_lens.p_in",
+      "status": "PASS"
+    },
+    {
+      "axis_abs_dot": 1.0,
+      "axis_world": [
+        1.0,
+        0.0,
+        3.4e-08
+      ],
+      "classification": "MODELED_CONTRACT",
+      "domain": "free_space_optical",
+      "origin_error_mm": 0.0,
+      "origin_world_mm": [
+        116.0,
+        245.0,
+        70.0
+      ],
+      "port": "n20_spectrometer_lens.p_out",
+      "status": "PASS"
+    },
+    {
+      "axis_abs_dot": 1.000000034,
+      "axis_world": [
+        0.684245884,
+        0.212051496,
+        0.697740436
+      ],
+      "classification": "MODELED_CONTRACT",
+      "domain": "electrical_data",
+      "origin_error_mm": 0.0,
+      "origin_world_mm": [
+        247.199996948,
+        210.0,
+        66.900001526
+      ],
+      "port": "n21_line_camera.p_data",
+      "status": "PASS"
+    },
+    {
+      "axis_abs_dot": 1.0,
+      "axis_world": [
+        1.0,
+        0.0,
+        3.4e-08
+      ],
+      "classification": "MODELED_CONTRACT",
+      "domain": "free_space_optical",
+      "origin_error_mm": 0.0,
+      "origin_world_mm": [
+        204.0,
+        245.0,
+        70.0
+      ],
+      "port": "n21_line_camera.p_optical",
+      "status": "PASS"
+    },
+    {
+      "axis_abs_dot": 1.0,
+      "axis_world": [
+        0.0,
+        -1.0,
+        3.4e-08
+      ],
+      "classification": "MODELED_CONTRACT",
+      "domain": "electrical_data",
+      "origin_error_mm": 0.0,
+      "origin_world_mm": [
+        225.600006104,
+        210.0,
+        66.900001526
+      ],
+      "port": "n21_line_camera.p_timing",
+      "status": "PASS"
+    },
+    {
+      "axis_abs_dot": 1.000000097,
+      "axis_world": [
+        -0.359830886,
+        0.28378275,
+        -0.888813376
+      ],
+      "classification": "MODELED_CONTRACT",
+      "domain": "electrical_data",
+      "origin_error_mm": 0.0,
+      "origin_world_mm": [
+        545.0,
+        -200.0,
+        74.75
+      ],
+      "port": "n23_control_computer.p_acq_data",
+      "status": "PASS"
+    },
+    {
+      "axis_abs_dot": 1.0,
+      "axis_world": [
+        1.0,
+        0.0,
+        3.4e-08
+      ],
+      "classification": "MODELED_CONTRACT",
+      "domain": "electrical_data",
+      "origin_error_mm": 0.0,
+      "origin_world_mm": [
+        590.0,
+        -235.0,
+        80.5
+      ],
+      "port": "n23_control_computer.p_display",
+      "status": "PASS"
+    },
+    {
+      "axis_abs_dot": 1.0,
+      "axis_world": [
+        1.0,
+        0.0,
+        3.4e-08
+      ],
+      "classification": "MODELED_CONTRACT",
+      "domain": "electrical_data",
+      "origin_error_mm": 0.0,
+      "origin_world_mm": [
+        590.0,
+        -235.0,
+        46.0
+      ],
+      "port": "n23_control_computer.p_storage",
+      "status": "PASS"
+    }
+  ],
+  "schema_version": "1.0",
+  "status": "PASS",
+  "thresholds": {
+    "bbox_max_error_mm": 0.1,
+    "port_axis_min_abs_dot": 0.9999,
+    "port_origin_max_error_mm": 0.1,
+    "positive_determinant_required": true
+  }
+}

@@ -1,0 +1,136 @@
+{
+  "GLB_generation_count": 0,
+  "blender_prohibited_after_occt_block_count": 1,
+  "blender_raw_clean_reopen_pass_count": 3,
+  "fixed_checkout_tag_and_commit": "PASS",
+  "occt_blocked_count": 1,
+  "occt_pass_or_partial_count": 3,
+  "occt_two_run_determinism": "PASS",
+  "phase1_freeze_hashes": "PASS",
+  "public_render_count": 3,
+  "public_render_metadata_sanitization": {
+    "pixel_data_unchanged_count": 3,
+    "record_count": 3,
+    "records": [
+      {
+        "decoded_scanline_sha256": "c4f505928266e44037adb0bd2e482b261a6cfb56f90b20b33fe7764257ef0913",
+        "file": "renders/B3060A_audit_render.png",
+        "idat_payload_sha256": "489e4dd2d84f337cd0526ee1c35ec6c44491cf55b9b46e8cfc278abe449dc87c",
+        "ihdr_sha256": "d52ae066052eefa93d3eb8e1fe464ef5ea5035af88918e67ec4d0991638f56be",
+        "pixel_data_unchanged": true,
+        "public_bytes": 229452,
+        "public_sha256": "bc786ae884876062758f0097a230c630f04d9869560d673e5bba55e6be6f25a8",
+        "remaining_forbidden_metadata_chunk_count": 0,
+        "removed_chunk_counts": {
+          "eXIf": 1,
+          "tEXt": 7
+        },
+        "source_evidence_bytes": 229850,
+        "source_evidence_sha256": "78a57e32fd60cb6e2bbf6b47bfa69078970beaba4903e28e8cfe7f0e7959baf9",
+        "source_evidence_unchanged": true,
+        "status": "PASS"
+      },
+      {
+        "decoded_scanline_sha256": "a116747de6df9e2c3e0935e16954b98356f35edfdab297f5a4de1399e6009fa8",
+        "file": "renders/RMS10X_audit_render.png",
+        "idat_payload_sha256": "c3ba78574c03dde40885f1c94966f8b988766d54e779f6454bd9e011887d3811",
+        "ihdr_sha256": "d52ae066052eefa93d3eb8e1fe464ef5ea5035af88918e67ec4d0991638f56be",
+        "pixel_data_unchanged": true,
+        "public_bytes": 289141,
+        "public_sha256": "24ca72c4894939830f354c94de94eaabe66ab8719eaae1b12188109f3f9e75b4",
+        "remaining_forbidden_metadata_chunk_count": 0,
+        "removed_chunk_counts": {
+          "eXIf": 1,
+          "tEXt": 7
+        },
+        "source_evidence_bytes": 289539,
+        "source_evidence_sha256": "04b4fdd4e57f75ad728f9e6d00cfbcff45a68b341bf10fb92dfd279f415ad6e0",
+        "source_evidence_unchanged": true,
+        "status": "PASS"
+      },
+      {
+        "decoded_scanline_sha256": "42d44b4fd615d4850ddc293930bd016d0bbb624b96a0a17f3a927c2e6b4fa73b",
+        "file": "renders/MBT613D_M_audit_render.png",
+        "idat_payload_sha256": "6d2e110a7cb1f7719cdde4d5efc12f850d8bc940b3a04438c888ffc09063591f",
+        "ihdr_sha256": "d52ae066052eefa93d3eb8e1fe464ef5ea5035af88918e67ec4d0991638f56be",
+        "pixel_data_unchanged": true,
+        "public_bytes": 250848,
+        "public_sha256": "372dfefac341140f5f50854fa84e7e0083507be1f7e492db3ecdfd6acd0c6de2",
+        "remaining_forbidden_metadata_chunk_count": 0,
+        "removed_chunk_counts": {
+          "eXIf": 1,
+          "tEXt": 7
+        },
+        "source_evidence_bytes": 251249,
+        "source_evidence_sha256": "8b7db8d4390e8f821370517503bd6df3a29c7fc4e6929b5b88138c3d778ae00c",
+        "source_evidence_unchanged": true,
+        "status": "PASS"
+      }
+    ],
+    "removed_chunk_count": 24,
+    "source_evidence_unchanged_count": 3,
+    "status": "PASS"
+  },
+  "public_render_opencv_checks": {
+    "record_count": 3,
+    "records": [
+      {
+        "file": "renders/B3060A_audit_render.png",
+        "foreground_ratio": 0.1456884765625,
+        "height": 640,
+        "laplacian_variance": 106.32877929666041,
+        "saturated_pixel_ratio": 0.0,
+        "sha256": "bc786ae884876062758f0097a230c630f04d9869560d673e5bba55e6be6f25a8",
+        "status": "PASS",
+        "width": 640
+      },
+      {
+        "file": "renders/MBT613D_M_audit_render.png",
+        "foreground_ratio": 0.12237060546875,
+        "height": 640,
+        "laplacian_variance": 131.19987304666043,
+        "saturated_pixel_ratio": 0.0,
+        "sha256": "372dfefac341140f5f50854fa84e7e0083507be1f7e492db3ecdfd6acd0c6de2",
+        "status": "PASS",
+        "width": 640
+      },
+      {
+        "file": "renders/RMS10X_audit_render.png",
+        "foreground_ratio": 0.20550537109375,
+        "height": 640,
+        "laplacian_variance": 338.8497363279104,
+        "saturated_pixel_ratio": 0.0160302734375,
+        "sha256": "24ca72c4894939830f354c94de94eaabe66ab8719eaae1b12188109f3f9e75b4",
+        "status": "PASS",
+        "width": 640
+      }
+    ],
+    "status": "PASS",
+    "tool": "OpenCV 4.13.0"
+  },
+  "public_render_visual_inspection": "PASS",
+  "public_sanitization": {
+    "binary_decode_skip_count": 0,
+    "binary_scan_file_count": 21,
+    "forbidden_geometry_payload_file_count": 0,
+    "forbidden_geometry_payload_files": [],
+    "local_or_isolation_token_hit_count": 0,
+    "local_or_isolation_token_hits": [],
+    "png_binary_string_scan_scope": "All non-IDAT chunks are scanned as ASCII, UTF-16LE, and UTF-16BE; IDAT is validated and decompressed but excluded as compressed pixel data.",
+    "png_file_count": 3,
+    "png_forbidden_metadata_chunk_count": 0,
+    "png_forbidden_metadata_hits": [],
+    "png_parse_failure_count": 0,
+    "png_parse_failures": [],
+    "public_file_count": 21,
+    "status": "PASS",
+    "step_header_file_count": 0,
+    "step_header_files": []
+  },
+  "remaining_model_conversion_count": 0,
+  "representative_count": 4,
+  "saved_clean_blend_reopen_semantic_match_count": 3,
+  "schema": "opticalmodeler.phase2_validation.v1",
+  "status": "BLOCKED",
+  "validated_at_utc": "2026-08-09T19:40:41Z"
+}

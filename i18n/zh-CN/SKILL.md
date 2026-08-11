@@ -26,8 +26,8 @@ description: 从二维光路示意图与厂家 CAD 构建、审核和修订具�
 5. 再从真实桌孔向上按 post-first 构建紧固件、夹具、holder、post、mount 和器件。
 6. 修共享根因，先验一个代表件，再传播；保存后重开并逐件复核。
 7. 先做明亮的机械/轴向/剖切审计图，再做 beauty render。
-8. 完成重开、ray/BVH、OpenCV、GLB 回导、报告、manifest、hash 和全 active-rule 合规矩阵。
+8. 发布脚本必须能重算同一语义锁，README/GATE 计数必须来自机器证据；随后完成重开、ray/BVH、OpenCV、GLB 回导、二进制/PNG 元数据脱敏、manifest、hash 和全 active-rule 合规矩阵。
 
 光束、柔性光纤和电缆必须是不同对象族。孔径必须真实开放。删除重复 surrogate 和无角色 placeholder。Nature 风格只能在物理门槛通过后修改材质、灯光、相机和排版，不能替代装配证据。
 
-状态：`PASS` 表示所有适用规则有新鲜证据；`PARTIAL/SCOPED` 只代表局部；`UNVERIFIED` 表示证据不足；`BLOCKED` 表示已知失败。禁止把局部通过写成整机最终通过。
+状态：`PASS` 表示所有适用规则有新鲜证据；`PARTIAL/SCOPED` 只代表局部，必须列出 blocker 且 final/release 保持 false；`UNVERIFIED` 表示证据不足；`BLOCKED` 表示已知失败。禁止把脱敏通过、局部通过或 CAD 导入成功写成整机最终通过。

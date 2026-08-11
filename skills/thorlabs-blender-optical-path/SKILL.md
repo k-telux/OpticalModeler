@@ -25,13 +25,14 @@ Convert a 2D optical schematic into a physically explainable, independently audi
 ## Core workflow
 
 1. Build a machine-readable map: `schematic node -> experimental role -> real asset -> optical/fiber/electrical ports -> support path`.
-2. Inventory every branch, component, beam segment, beam height, aperture, connector, and required detector endpoint.
+2. Inventory every directed edge, branch, optional/deferred node, component, beam segment, beam height, aperture, connector, and required detector endpoint. Never invent reciprocal edges.
 3. Acquire official CAD when licensing permits. Record part number, source URL, SHA-256, unit scale, bbox, local optical axis, surface normal, aperture, and provenance. Mark modeled or surrogate parts explicitly.
-4. Solve optical constraints first: centers, surface normals, reflection, splitting planes, branch endpoints, and zero-radius clearance.
-5. Solve mechanics post-first from verified table holes through real fasteners, clamps, holders, posts, mount faces, and device interfaces.
-6. Fix the shared placement or transform root cause. Prove one representative repeated assembly before propagation, then reopen and recheck every copy.
-7. Render bright audit views before beauty views. Use cutaways or transparency only to expose hidden, already-measured interfaces.
-8. Complete the saved-scene, visual, export, document, hash, and rule-compliance gates in the evidence contract.
+4. Publish deterministic source locks and replay them before geometry. The public scripts must reproduce the normalized semantic parameters with zero unexplained field differences; encode every override in source with a reason.
+5. Solve optical constraints first: centers, surface normals, reflection, splitting planes, branch endpoints, and zero-radius clearance.
+6. Solve mechanics post-first from verified table holes through real fasteners, clamps, holders, posts, mount faces, and device interfaces.
+7. Fix the shared placement or transform root cause. Prove one representative repeated assembly before propagation, then reopen and recheck every copy.
+8. Render bright audit views before beauty views. Use cutaways or transparency only to expose hidden, already-measured interfaces.
+9. Complete the saved-scene, visual, export, derived-claim, binary-sanitization, hash, and rule-compliance gates in the evidence contract.
 
 ## Required semantic separation
 
@@ -47,7 +48,7 @@ After physical gates pass, produce a clean editorial scene with restrained metal
 ## Completion language
 
 - `PASS`: every applicable active gate has fresh evidence.
-- `PARTIAL/SCOPED`: only a declared subset was audited.
+- `PARTIAL/SCOPED`: only a declared subset was audited; enumerate blockers and keep final/release approval false.
 - `UNVERIFIED`: required evidence is missing or cannot distinguish the claim.
 - `BLOCKED`: a known requirement fails.
 

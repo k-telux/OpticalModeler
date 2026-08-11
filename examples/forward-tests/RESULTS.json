@@ -1,0 +1,53 @@
+{
+  "schema": "opticalmodeler.public-forward-test-matrix.v1",
+  "baseline": {
+    "tag": "v1.0.0",
+    "peeled_commit": "048766250538f169d924c31bbdd39bf0c255c63f"
+  },
+  "tracks": [
+    {
+      "id": "n04-lightsheet",
+      "system": "32-node remote-focus light-sheet path",
+      "gate_status": "PASS",
+      "scope_status": "PARTIAL_SCOPED",
+      "final_status": "BLOCKED",
+      "independent_review_status": "PASS",
+      "reproduced_defect": "Published lock source originally replayed two optical port centers at stale snapped coordinates.",
+      "durable_fix": "Require normalized semantic replay with zero field differences and reason-bearing source overrides.",
+      "package": "n04-lightsheet"
+    },
+    {
+      "id": "interferometer",
+      "system": "40-node multi-state free-space interferometer",
+      "gate_status": "PARTIAL_SCOPED",
+      "scope_status": "PARTIAL_SCOPED",
+      "final_status": "BLOCKED",
+      "independent_review_status": "PASS",
+      "reproduced_defect": "README and gate duplicated stale ray and semantic-port counts.",
+      "durable_fix": "Derive public claims from saved-reopen evidence and reject superseded numeric literals.",
+      "package": "interferometer"
+    },
+    {
+      "id": "oct-clean-r2",
+      "system": "22-role OCT representative smoke",
+      "gate_status": "UNVERIFIED",
+      "scope_status": "PARTIAL_SCOPED",
+      "final_status": "BLOCKED",
+      "independent_review_status": "PASS",
+      "reproduced_defect": "Package integrity could pass while free-space first-hit and load-path evidence remained incomplete.",
+      "durable_fix": "Keep explicit directed edges and propagation authorization tied to the weakest applicable geometry gate.",
+      "package": "oct-clean-r2"
+    },
+    {
+      "id": "cad-conversion-clean-r2",
+      "system": "Four-family Thorlabs CAD conversion smoke",
+      "gate_status": "BLOCKED",
+      "scope_status": "PARTIAL_SCOPED",
+      "final_status": "BLOCKED",
+      "independent_review_status": "PASS",
+      "reproduced_defect": "PNG metadata leaked local paths and the text-only verifier skipped undecodable binaries.",
+      "durable_fix": "Parse binary containers, fail on skipped files, preserve pixel payloads during metadata stripping, and keep conversion status separate.",
+      "package": "cad-conversion-clean-r2"
+    }
+  ]
+}

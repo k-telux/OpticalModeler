@@ -31,6 +31,19 @@ OpticalModeler is an evidence-first Agent Skill for reconstructing laboratory op
 
 The sanitized [G1/G2 case study](examples/g1g2/README.md) includes the original 2D input, editorial 3D renders, and a machine-readable acceptance record. Vendor STEP/CAD files and the large laboratory `.blend` are intentionally excluded.
 
+## Public-only forward tests
+
+Four isolated tests started from the published `v1.0.0` tag and used no private Optical Path guidance. They cover a 32-node light-sheet path, a 40-node multi-state interferometer, an OCT representative smoke, and a Thorlabs CAD conversion benchmark.
+
+| Track | Accepted verdict | Reproduced failure |
+|---|---|---|
+| Light-sheet / N04 | Propagation `PASS`, model `PARTIAL_SCOPED`, release `BLOCKED` | Public lock replay drifted from the saved scene until semantic replay and explicit overrides were added. |
+| Interferometer | `PARTIAL_SCOPED`, release `BLOCKED` | README/GATE duplicated stale ray and port counts instead of deriving them from reopen evidence. |
+| OCT | `UNVERIFIED`, propagation blocked | Package integrity passed while first-hit and load-path evidence remained incomplete. |
+| CAD conversion | `BLOCKED` | PNG metadata leaked local paths; after sanitization, a separate CAD meshing blocker correctly remained. |
+
+The [forward-test matrix](examples/forward-tests/README.md) publishes the sanitized packages, marked workflow, generation log, reproducible scripts, exact status boundaries, and the cross-package validation contract. The table is a test record, not a claim that every system passed.
+
 ## Install
 
 With a compatible Agent Skills installer:
@@ -55,11 +68,13 @@ Audit this optical table for real post/load paths, centered apertures, beam clea
 The skill guides the agent to:
 
 1. map schematic nodes to experimental roles, real assets, ports, and support paths;
-2. solve optical centers, surfaces, splitter planes, and branch continuity;
-3. assemble hardware post-first from verified table holes;
-4. prove one representative instance before propagation;
-5. reopen the saved scene and run mesh, ray, and BVH checks;
-6. package visual, GLB, report, manifest, hash, and rule-compliance evidence consistently.
+2. freeze exact directed topology and official-CAD provenance;
+3. replay public lock scripts to the same normalized semantic parameters;
+4. solve optical centers, surfaces, splitter planes, and branch continuity;
+5. assemble hardware post-first from verified table holes;
+6. prove one representative instance before propagation;
+7. reopen the saved scene and run mesh, ray, BVH, and load-path checks;
+8. derive public claims from evidence and scan binary/container metadata before packaging.
 
 ## Validation and limits
 
@@ -67,8 +82,9 @@ The skill guides the agent to:
 - Free-space rays, guided fiber, and electrical cables remain semantically distinct.
 - Whole-project success requires an active-rule compliance matrix; scoped evidence stays `PARTIAL/SCOPED`.
 - The repository excludes third-party CAD, private paths, oversized Blend files, and unsupported real-world performance claims.
-- Every release is checked for skill metadata, links, file size, privacy leaks, forbidden CAD binaries, and acceptance-state consistency.
+- Public scripts must replay the published semantic locks; prose counts must match saved-reopen evidence.
+- Every release is checked for skill metadata, links, file size, ASCII/UTF-16 privacy leaks, forbidden CAD binaries, PNG metadata/CRC/decompression, manifest hashes, and acceptance-state consistency.
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for rule proposals and case-study submissions, and [SECURITY.md](SECURITY.md) for responsible disclosure.
+See [CONTRIBUTING.md](CONTRIBUTING.md) for rule proposals and case-study submissions, [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) for retained literature licensing, and [SECURITY.md](SECURITY.md) for responsible disclosure.
 
 Maintained by [telux](https://github.com/k-telux). Released under the [MIT License](LICENSE).
