@@ -1,0 +1,44 @@
+{
+  "schema": "opticalmodeler.phase2.representative-input-lock.v1",
+  "status": "PASS",
+  "scope": "N04_REPRESENTATIVE_ONLY",
+  "phase1_immutable": true,
+  "phase1_files": [
+    {"relative_path": "CAD_MANIFEST.json", "sha256": "db72d29c4a715fb0e0c562023846c3c3ca4c6b429993b7c4e32c920a9c08a809", "bytes": 278431},
+    {"relative_path": "literature/Dibaji2024_article.pdf", "sha256": "2e45df56280998013a9a60ecfdbf109df7c0c20021e9117b01819d88bcbb902d", "bytes": 1671553},
+    {"relative_path": "literature/Dibaji2024_Fig1.png", "sha256": "6a65847cbb062d943935d16faf7ad337af68a64bfb7820fa95d80acac9b0c4cb", "bytes": 238270},
+    {"relative_path": "literature/Dibaji2024_SuppFig2.png", "sha256": "4533c6168a44a2252c0a4be59725d0c5bcd0aa4f2a6da7e3e155fd685c95ad59", "bytes": 407832},
+    {"relative_path": "literature/Dibaji2024_supplement.pdf", "sha256": "ff9f59b32997a447e78650b05c5c692e8bdca53792d0882ca95f508ab982f5e4", "bytes": 1947360},
+    {"relative_path": "SOURCE_LOCK.json", "sha256": "7b9f18aa536c3433184ca9c971b56c0708e85859cc41e34bfc537db1afc7b0d3", "bytes": 7102},
+    {"relative_path": "TOPOLOGY_MAP.json", "sha256": "d9f4c7ccaded318bc69ce0f4b3bd027afaddc3e211b9cabb6aeb8ff895237dd2", "bytes": 68219}
+  ],
+  "representative_node": {
+    "node_id": "N04",
+    "literature_role": "AC254-045-A",
+    "catalog_asset": "AC254-045-A-ML",
+    "support_path": ["T1225C", "MODELED_NON_THORLABS_ISO_M6_FASTENERS", "BA1/M", "PH75/M", "TR75/M", "SM1RC/M", "AC254-045-A-ML"],
+    "branch_id": "ILL_COMMON",
+    "topology_ports": ["in", "out"]
+  },
+  "official_drawing_files": [
+    {"part_number": "AC254-045-A-ML", "filename": "AC254-045-A-ML.pdf", "sha256": "413146291e8907f326d3a7eb7933fc45c0283d8aa96f3c1cd5427e9cb83ea54d", "bytes": 147703},
+    {"part_number": "BA1/M", "filename": "BA1_M.pdf", "sha256": "c32fd52e9b252566e4afbf6c947d4fb9012d595e6e71790921c55b9b59b8ff73", "bytes": 117705},
+    {"part_number": "PH75/M", "filename": "PH75_M.pdf", "sha256": "5fda5ff1c36621ef9e718f7245b939c07185899e545c759cc404083211f9a535", "bytes": 152294},
+    {"part_number": "SM1RC/M", "filename": "SM1RC_M.pdf", "sha256": "202f2b46765c6411e95d2ea70a755e0103bf87c1e8d0927cde0c676b2b4b40a7", "bytes": 135981},
+    {"part_number": "T1225C", "filename": "T1225C.pdf", "sha256": "027c997f11b229b1bbdf2e23a35d70321f7d22b29a6758cc502bd032c35d5999", "bytes": 458873},
+    {"part_number": "TR75/M", "filename": "TR75_M.pdf", "sha256": "317d5b097102ed70dfa24dc57b042d3816fd3d16c485d9eadb454de5d82d0661", "bytes": 145345}
+  ],
+  "feature_measurement": {
+    "relative_path": "measurements/REPRESENTATIVE_CAD_FEATURES.json",
+    "sha256": "24d6a6071963a2a31b1d26ceecf88c3f91a4861d4c683598ddfd3931ec248ff2",
+    "bytes": 412183,
+    "status": "PASS"
+  },
+  "preserved_global_scope": {
+    "model_status": "PARTIAL_SCOPED",
+    "literal_paper_performance": "BLOCKED",
+    "substitution_count": 17,
+    "s4fc_source_diagnostics": "PARTIAL_SCOPED",
+    "full_32_node_propagation": "UNVERIFIED"
+  }
+}

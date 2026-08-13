@@ -31,6 +31,12 @@ OpticalModeler is an evidence-first Agent Skill for reconstructing laboratory op
 
 The sanitized [G1/G2 case study](examples/g1g2/README.md) includes the original 2D input, editorial 3D renders, and a machine-readable acceptance record. Vendor STEP/CAD files and the large laboratory `.blend` are intentionally excluded.
 
+## Unified whole-system workflow
+
+The primary workflow is now one ordered run with one run ID, one revision, one writer, one generator lineage, one Blender-scene lineage, and one append-only evidence ledger. Source locking, topology, CAD provenance, representative smoke, full-scene propagation, saved-scene reopen, optomechanical audit, rendering, and sanitization are gates in that same run—not independently authored modules that can be stitched together later.
+
+Start with the [end-to-end workflow contract](skills/thorlabs-blender-optical-path/references/end-to-end-workflow.md), the [single-run N04 deterministic replay](examples/end-to-end-workflow/n04-v1.0.1-replay/README.md), and its [fresh whole-system runbook](examples/end-to-end-workflow/n04-v1.0.1-replay/RUNBOOK.md). The static replay intentionally stops at `UNVERIFIED` because the repository excludes vendor CAD and the saved representative `.blend`; downstream gates remain pending instead of inheriting a partial `PASS`. A fresh private revision can execute the included fetch, build, reopen, audit, and sanitization scripts end to end.
+
 ## Public-only forward tests
 
 Four isolated tests started from the published `v1.0.0` tag and used no private Optical Path guidance. They cover a 32-node light-sheet path, a 40-node multi-state interferometer, an OCT representative smoke, and a Thorlabs CAD conversion benchmark.
@@ -42,7 +48,7 @@ Four isolated tests started from the published `v1.0.0` tag and used no private 
 | OCT | `UNVERIFIED`, propagation blocked | Package integrity passed while first-hit and load-path evidence remained incomplete. |
 | CAD conversion | `BLOCKED` | PNG metadata leaked local paths; after sanitization, a separate CAD meshing blocker correctly remained. |
 
-The [forward-test matrix](examples/forward-tests/README.md) publishes the sanitized packages, marked workflow, generation log, reproducible scripts, exact status boundaries, and the cross-package validation contract. The table is a test record, not a claim that every system passed.
+The [forward-test matrix](examples/forward-tests/README.md) remains a historical defect-discovery record. Its four packages are not inputs that may be combined into one whole-system result.
 
 ## Install
 

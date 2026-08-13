@@ -21,3 +21,7 @@ The matrix preserves the weakest applicable verdict. For example, the CAD packag
 6. Derive README and gate counts from evidence, sanitize every public file as bytes and by container metadata, rebuild manifests, and keep scoped blockers visible.
 
 The machine-readable [RESULTS.json](RESULTS.json) is the status source for this index. The repository validator cross-checks it against the package evidence and manifests so stale prose, hidden binary metadata, and status promotion fail closed.
+
+## Unified end-to-end replay
+
+The four rows above remain historical isolated tests. They must not be stitched into one whole-system claim. The [`v1.0.1` N04 unified-ledger replay](../end-to-end-workflow/n04-v1.0.1-replay/README.md) applies the new one-run/one-writer/one-lineage contract to a single 32-node package and intentionally stops at `representative_smoke=UNVERIFIED` because the static public fixture excludes vendor CAD and the saved representative scene. Its [fresh-run runbook](../end-to-end-workflow/n04-v1.0.1-replay/RUNBOOK.md) provides the complete executable path without redistributing those binaries.

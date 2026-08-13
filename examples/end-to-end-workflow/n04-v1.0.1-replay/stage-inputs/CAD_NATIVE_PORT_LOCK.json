@@ -1,0 +1,117 @@
+{
+  "schema": "opticalmodeler.phase2.cad-native-port-lock.v1",
+  "status": "PASS",
+  "scope": "N04_REPRESENTATIVE_ONLY",
+  "units": {"cad_native": "millimetre", "blender_world": "metre"},
+  "world_frame": {"x": "table length", "y": "table width", "z": "up", "table_top_z_m": 0.0},
+  "common_rotation_native_to_world": [
+    [1.0, 0.0, 0.0],
+    [0.0, 0.0, -1.0],
+    [0.0, 1.0, 0.0]
+  ],
+  "parts": [
+    {
+      "part_number": "T1225C",
+      "native_interfaces": {
+        "top_plane": {"point_mm": [0.0, 210.0, 0.0], "normal": [0.0, 1.0, 0.0]},
+        "selected_table_holes": [
+          {"axis_point_mm": [87.5, 210.0, -1087.5], "axis": [0.0, 1.0, 0.0], "modeled_minor_radius_mm": 2.5, "cad_depth_mm": 5.0},
+          {"axis_point_mm": [137.5, 210.0, -1087.5], "axis": [0.0, 1.0, 0.0], "modeled_minor_radius_mm": 2.5, "cad_depth_mm": 5.0}
+        ]
+      },
+      "world_transform": {"translation_m": [0.0, 0.0, -0.21], "rotation": "common_rotation_native_to_world", "uniform_scale": 0.001},
+      "import_geometry": "OFFICIAL_CAD_DERIVED_CROP",
+      "crop_native_bounds_mm": {"min": [0.0, 0.0, -1200.0], "max": [250.1, 210.0, -949.9]},
+      "crop_note": "The boolean box is padded 0.1 mm at source boundaries; the effective official-shape intersection is the recorded OpenCascade optimal bbox."
+    },
+    {
+      "part_number": "BA1/M",
+      "native_interfaces": {
+        "bottom_bearing_plane_y_mm": -5.0,
+        "top_bearing_plane_y_mm": 5.0,
+        "central_clearance_axis": {"axis_point_mm": [0.0, 2.33298, 0.0], "axis": [0.0, 1.0, 0.0], "through_radius_mm": 3.3655, "counterbore_radius_mm": 5.1562},
+        "slot_arc_axes_mm": [[-17.434, 5.0, 0.0], [17.434, 5.0, 0.0]],
+        "selected_table_screw_local_x_mm": [-25.0, 25.0]
+      },
+      "world_transform": {"translation_m": [0.1125, 1.0875, 0.005], "rotation": "common_rotation_native_to_world", "uniform_scale": 0.001}
+    },
+    {
+      "part_number": "PH75/M",
+      "native_interfaces": {
+        "bottom_bearing_plane_y_mm": -31.94529,
+        "holder_top_y_mm": 43.05471,
+        "post_bore_axis": {"axis_point_mm": [1.390664, 43.05471, -4.764491], "axis": [0.0, 1.0, 0.0], "radius_mm": 6.3881},
+        "bottom_m6_minor_axis": {"axis_point_mm": [1.390664, -31.05629, -4.764491], "axis": [0.0, 1.0, 0.0], "radius_mm": 2.5}
+      },
+      "world_transform": {"translation_m": [0.111109336, 1.082735509, 0.04194529], "rotation": "common_rotation_native_to_world", "uniform_scale": 0.001}
+    },
+    {
+      "part_number": "TR75/M",
+      "native_interfaces": {
+        "post_axis": {"axis_point_mm": [0.0, 0.0, 0.0], "axis": [0.0, 1.0, 0.0], "outer_radius_mm": 6.3373},
+        "bottom_plane_y_mm": 0.0,
+        "top_bearing_plane_y_mm": 75.0062,
+        "m4_stud_top_y_mm": 79.9596,
+        "m4_stud_radius_mm": 1.65
+      },
+      "world_transform": {"translation_m": [0.1125, 1.0875, 0.0278958], "rotation": "common_rotation_native_to_world", "uniform_scale": 0.001}
+    },
+    {
+      "part_number": "SM1RC/M",
+      "native_interfaces": {
+        "clamp_axis": {"axis_point_mm": [0.0, 0.0, 0.0], "axis": [0.0, 0.0, 1.0], "bore_radius_mm": 15.3035},
+        "bottom_bearing_plane_y_mm": -22.098,
+        "bottom_m4_axis": {"axis_point_mm": [0.0, -22.098, 5.08], "axis": [0.0, 1.0, 0.0], "radius_mm": 2.0},
+        "axial_thickness_z_mm": [0.0, 10.16]
+      },
+      "world_transform": {"translation_m": [0.1125, 1.09258, 0.125], "rotation": "common_rotation_native_to_world", "uniform_scale": 0.001}
+    },
+    {
+      "part_number": "AC254-045-A-ML",
+      "native_interfaces": {
+        "optical_axis": {"axis_point_mm": [0.0, 0.0, 0.0], "axis": [1.0, 0.0, 0.0]},
+        "input_glass_vertex_mm": [-3.816524, 0.0, 0.0],
+        "output_glass_vertex_mm": [5.183476, 0.0, 0.0],
+        "clear_aperture_radius_mm": 11.43,
+        "clear_aperture_basis": "official drawing: 90 percent of 25.4 mm lens diameter",
+        "clamped_outer_radius_mm": 15.24,
+        "mechanical_bbox_x_mm": [-7.074683, 8.636683]
+      },
+      "world_transform": {
+        "translation_m": [0.1125, 1.089805, 0.125],
+        "rotation_matrix": [[0.0, 1.0, 0.0], [-1.0, 0.0, 0.0], [0.0, 0.0, 1.0]],
+        "uniform_scale": 0.001
+      },
+      "world_semantic_ports_m": {
+        "in": [0.1125, 1.093621524, 0.125],
+        "out": [0.1125, 1.084621524, 0.125],
+        "axis_direction": [0.0, -1.0, 0.0]
+      }
+    }
+  ],
+  "representative_ray": {
+    "branch_id": "ILL_COMMON",
+    "zero_radius_start_m": [0.1125, 1.16, 0.125],
+    "zero_radius_end_m": [0.1125, 1.02, 0.125],
+    "direction": [0.0, -1.0, 0.0],
+    "clear_aperture_radius_m": 0.01143
+  },
+  "locked_load_path_metrics": {
+    "table_screw_penetration_m": 0.005,
+    "ba1_table_bearing_gap_m": 0.0,
+    "ph75_ba1_bearing_gap_m": 0.0,
+    "post_holder_radial_clearance_m": 0.0000508,
+    "post_insertion_length_m": 0.0571042,
+    "post_sm1rc_bearing_gap_m": 0.0,
+    "m4_stud_engagement_m": 0.0049534,
+    "sm1rc_lens_radial_clearance_m": 0.0000635,
+    "optic_mount_axis_error_m": 0.0
+  },
+  "generic_fastener_policy": {
+    "status": "PASS",
+    "identity": "MODELED_NON_THORLABS_ISO_M6_FASTENERS",
+    "official_thorlabs_claim": false,
+    "geometry_scope": "simplified shank/head for load-path and hole-penetration evidence"
+  },
+  "placement_applied": false
+}

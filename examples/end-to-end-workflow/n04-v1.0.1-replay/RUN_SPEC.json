@@ -1,0 +1,219 @@
+{
+  "schema": "opticalmodeler.whole-system-run-spec.v1",
+  "mode": "WHOLE_SYSTEM_END_TO_END",
+  "run_id": "n04-v1.0.1-unified-ledger-replay",
+  "writer_id": "n04-unified-replay-single-writer",
+  "single_writer": true,
+  "allow_module_stitching": false,
+  "created_at": "2026-08-13T00:00:00+08:00",
+  "workspace_root": "../../..",
+  "revision_root": "examples/end-to-end-workflow/n04-v1.0.1-replay",
+  "audit_scope": "PARTIAL_SCOPED",
+  "workflow_baseline": {
+    "repository": "https://github.com/k-telux/OpticalModeler.git",
+    "tag": "v1.0.1",
+    "peeled_commit": "75d17cab642e9fb45cda449bd58087d2c13e0dc1"
+  },
+  "replayed_system": {
+    "id": "n04-lightsheet",
+    "source_baseline_tag": "v1.0.0",
+    "source_baseline_peeled_commit": "048766250538f169d924c31bbdd39bf0c255c63f",
+    "node_count": 32,
+    "directed_edge_traversal_count": 44,
+    "true_branch_point_count": 2,
+    "signal_families_in_scene": [
+      "FREE_SPACE_OPTICAL",
+      "MECHANICAL_SUPPORT"
+    ],
+    "declared_off_scene_families": [
+      "ELECTRICAL_POWER_AND_CONTROL"
+    ]
+  },
+  "stages": [
+    {
+      "id": "run_lock",
+      "required_artifacts": []
+    },
+    {
+      "id": "source_lock",
+      "required_artifacts": [
+        {
+          "role": "source_lock",
+          "path": "examples/forward-tests/n04-lightsheet/SOURCE_LOCK.json",
+          "kind": "FROZEN_INPUT",
+          "sha256": "7b9f18aa536c3433184ca9c971b56c0708e85859cc41e34bfc537db1afc7b0d3",
+          "json_assertions": [
+            {
+              "pointer": "/status",
+              "equals": "PASS"
+            },
+            {
+              "pointer": "/literature/status",
+              "equals": "PASS"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "topology_lock",
+      "required_artifacts": [
+        {
+          "role": "topology_map",
+          "path": "examples/forward-tests/n04-lightsheet/TOPOLOGY_MAP.json",
+          "kind": "FROZEN_INPUT",
+          "sha256": "d9f4c7ccaded318bc69ce0f4b3bd027afaddc3e211b9cabb6aeb8ff895237dd2",
+          "json_assertions": [
+            {
+              "pointer": "/status",
+              "equals": "PASS"
+            },
+            {
+              "pointer": "/counts/nodes",
+              "equals": 32
+            },
+            {
+              "pointer": "/counts/directed_edge_traversals",
+              "equals": 44
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cad_provenance_lock",
+      "required_artifacts": [
+        {
+          "role": "cad_manifest",
+          "path": "examples/forward-tests/n04-lightsheet/CAD_MANIFEST.json",
+          "kind": "FROZEN_INPUT",
+          "sha256": "db72d29c4a715fb0e0c562023846c3c3ca4c6b429993b7c4e32c920a9c08a809",
+          "json_assertions": [
+            {
+              "pointer": "/status",
+              "equals": "PASS"
+            },
+            {
+              "pointer": "/redistribution/status",
+              "equals": "UNVERIFIED"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "deterministic_replay",
+      "required_artifacts": [
+        {
+          "role": "semantic_replay_audit",
+          "path": "examples/forward-tests/n04-lightsheet/BUILD_PARAMS_RECOMPUTE_AUDIT.json",
+          "kind": "FROZEN_INPUT",
+          "sha256": "6e66d3c750f5d65ee5c0fda463b8740561a324339d05aa001fc9cb1f06272080",
+          "json_assertions": [
+            {
+              "pointer": "/status",
+              "equals": "PASS"
+            },
+            {
+              "pointer": "/difference_paths",
+              "equals": []
+            },
+            {
+              "pointer": "/conditions/manual_unlogged_transforms_zero",
+              "equals": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "representative_smoke",
+      "required_artifacts": [
+        {
+          "role": "mechanical_interface_lock",
+          "path": "examples/forward-tests/n04-lightsheet/MECHANICAL_INTERFACE_LOCK.json",
+          "kind": "FROZEN_INPUT",
+          "sha256": "42ae9f01eed042bf62153ddb1241c61f556cedb49ecb39f3ac37d3f0e7b7d881",
+          "json_assertions": [
+            {
+              "pointer": "/status",
+              "equals": "PASS"
+            }
+          ]
+        },
+        {
+          "role": "representative_saved_scene_audit",
+          "path": "examples/end-to-end-workflow/n04-v1.0.1-replay/evidence/REPRESENTATIVE_SAVED_SCENE_AUDIT.json",
+          "kind": "RUN_OUTPUT",
+          "sha256": null
+        }
+      ]
+    },
+    {
+      "id": "full_scene_build",
+      "required_artifacts": [
+        {
+          "role": "whole_scene_blend",
+          "path": "examples/end-to-end-workflow/n04-v1.0.1-replay/scene/N04_WHOLE_SYSTEM.blend",
+          "kind": "RUN_OUTPUT",
+          "sha256": null
+        }
+      ]
+    },
+    {
+      "id": "saved_scene_reopen",
+      "required_artifacts": [
+        {
+          "role": "whole_scene_reopen_audit",
+          "path": "examples/end-to-end-workflow/n04-v1.0.1-replay/evidence/WHOLE_SCENE_REOPEN_AUDIT.json",
+          "kind": "RUN_OUTPUT",
+          "sha256": null
+        }
+      ]
+    },
+    {
+      "id": "whole_system_optomechanical_audit",
+      "required_artifacts": [
+        {
+          "role": "whole_system_audit",
+          "path": "examples/end-to-end-workflow/n04-v1.0.1-replay/evidence/WHOLE_SYSTEM_OPTOMECHANICAL_AUDIT.json",
+          "kind": "RUN_OUTPUT",
+          "sha256": null
+        }
+      ]
+    },
+    {
+      "id": "visual_audit",
+      "required_artifacts": [
+        {
+          "role": "visual_audit",
+          "path": "examples/end-to-end-workflow/n04-v1.0.1-replay/evidence/VISUAL_OPENCV_AUDIT.json",
+          "kind": "RUN_OUTPUT",
+          "sha256": null
+        }
+      ]
+    },
+    {
+      "id": "export_and_sanitization",
+      "required_artifacts": [
+        {
+          "role": "sanitization_audit",
+          "path": "examples/end-to-end-workflow/n04-v1.0.1-replay/evidence/SANITIZATION_AUDIT.json",
+          "kind": "RUN_OUTPUT",
+          "sha256": null
+        }
+      ]
+    },
+    {
+      "id": "final_consistency",
+      "required_artifacts": [
+        {
+          "role": "final_consistency_audit",
+          "path": "examples/end-to-end-workflow/n04-v1.0.1-replay/evidence/FINAL_CONSISTENCY_AUDIT.json",
+          "kind": "RUN_OUTPUT",
+          "sha256": null
+        }
+      ]
+    }
+  ]
+}

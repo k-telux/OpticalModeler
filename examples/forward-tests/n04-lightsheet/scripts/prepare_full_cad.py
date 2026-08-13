@@ -27,7 +27,7 @@ from OCP.STEPControl import STEPControl_Reader
 from OCP.StlAPI import StlAPI_Writer
 
 
-ROOT = Path(__file__).resolve().parents[2]
+ROOT = Path(sys.argv[1]).resolve() if len(sys.argv) == 2 else Path(__file__).resolve().parents[2]
 PHASE1 = ROOT / "outputs" / "phase1_source_cad_topology_lock"
 CACHE = ROOT / "work" / "vendor_cad_cache"
 BASE = ROOT / "work" / "full_32_node_propagation_v3"

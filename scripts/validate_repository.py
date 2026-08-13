@@ -7,6 +7,8 @@ import hashlib
 import json
 import re
 import struct
+import subprocess
+import sys
 import zlib
 from pathlib import Path
 
@@ -29,6 +31,15 @@ REQUIRED = [
     ROOT / "examples/g1g2/evidence/v18_nature_final_acceptance.json",
     ROOT / "examples/forward-tests/README.md",
     ROOT / "examples/forward-tests/RESULTS.json",
+    ROOT / "examples/end-to-end-workflow/n04-v1.0.1-replay/RUN_SPEC.json",
+    ROOT / "examples/end-to-end-workflow/n04-v1.0.1-replay/WORKFLOW_STATE.json",
+    ROOT / "examples/end-to-end-workflow/n04-v1.0.1-replay/WORKFLOW_EVENTS.jsonl",
+    ROOT / "examples/end-to-end-workflow/n04-v1.0.1-replay/README.md",
+    ROOT / "examples/end-to-end-workflow/n04-v1.0.1-replay/RUNBOOK.md",
+    ROOT / "examples/end-to-end-workflow/n04-v1.0.1-replay/stage-scripts/fetch_official_cad.py",
+    ROOT / "examples/end-to-end-workflow/n04-v1.0.1-replay/stage-scripts/finalize_whole_system_run.py",
+    ROOT / "skills/thorlabs-blender-optical-path/references/end-to-end-workflow.md",
+    ROOT / "skills/thorlabs-blender-optical-path/scripts/workflow_ledger.py",
 ]
 PUBLIC_PACKAGES = [
     {
@@ -223,6 +234,40 @@ def check_forward_test_statuses() -> None:
         assert track["gate_status"] in readme, f"forward-test README omits status for {track['id']}"
 
 
+def check_unified_workflow() -> None:
+    root = ROOT / "examples/end-to-end-workflow/n04-v1.0.1-replay"
+    result = subprocess.run(
+        [
+            sys.executable,
+            str(ROOT / "skills/thorlabs-blender-optical-path/scripts/workflow_ledger.py"),
+            "validate",
+            "--spec",
+            str(root / "RUN_SPEC.json"),
+            "--state",
+            str(root / "WORKFLOW_STATE.json"),
+            "--events",
+            str(root / "WORKFLOW_EVENTS.jsonl"),
+        ],
+        capture_output=True,
+        text=True,
+        check=False,
+    )
+    assert result.returncode == 0, result.stderr or result.stdout
+    summary = json.loads(result.stdout)
+    assert summary["status"] == "PASS_LEDGER_INTEGRITY"
+    assert summary["current_stage"] == "representative_smoke"
+    assert summary["aggregate_status"] == "UNVERIFIED"
+    assert summary["final_or_release"] is False
+    tests = subprocess.run(
+        [sys.executable, "-m", "unittest", "discover", "-s", str(ROOT / "tests"), "-p", "test_workflow_ledger.py"],
+        capture_output=True,
+        text=True,
+        check=False,
+        cwd=ROOT,
+    )
+    assert tests.returncode == 0, tests.stderr or tests.stdout
+
+
 def main() -> None:
     for path in REQUIRED:
         assert path.exists(), f"missing required file: {path.relative_to(ROOT)}"
@@ -230,7 +275,11 @@ def main() -> None:
     for path, expected_name in SKILLS.items():
         check_frontmatter(path, expected_name)
 
-    files = [path for path in ROOT.rglob("*") if path.is_file() and ".git" not in path.parts]
+    files = [
+        path
+        for path in ROOT.rglob("*")
+        if path.is_file() and ".git" not in path.parts and "__pycache__" not in path.parts
+    ]
     png_count = 0
     for path in files:
         assert path.suffix.lower() not in FORBIDDEN_SUFFIXES, f"forbidden binary asset: {path}"
@@ -244,6 +293,7 @@ def main() -> None:
 
     manifest_entry_count = sum(check_manifest(package) for package in PUBLIC_PACKAGES)
     check_forward_test_statuses()
+    check_unified_workflow()
 
     acceptance = json.loads((ROOT / "examples/g1g2/evidence/v18_nature_final_acceptance.json").read_text(encoding="utf-8"))
     assert acceptance["status"] == "PASS_V18_NATURE_FINAL_VERIFIED"

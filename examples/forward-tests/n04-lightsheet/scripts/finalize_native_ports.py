@@ -5,10 +5,11 @@ from __future__ import annotations
 import hashlib
 import json
 import math
+import sys
 from pathlib import Path
 
 
-ROOT = Path(__file__).resolve().parents[2]
+ROOT = Path(sys.argv[1]).resolve() if len(sys.argv) == 2 else Path(__file__).resolve().parents[2]
 BASE = ROOT / "work" / "full_32_node_propagation_v3"
 MEASUREMENTS = BASE / "measurements"
 R3_PORTS = ROOT / "outputs" / "phase2_representative_smoke_r3" / "metadata" / "CAD_NATIVE_PORT_LOCK.json"

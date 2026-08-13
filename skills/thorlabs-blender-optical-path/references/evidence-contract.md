@@ -17,6 +17,7 @@
 - Any geometry, scene, export, report, or evidence write invalidates all dependent downstream checks.
 - Record the user-command source, ruleset version/hash, generator hash, scene hash, and audit scope.
 - Use `FULL_ACTIVE_RULE_REGRESSION` for whole-system PASS. Use `PARTIAL_SCOPED` for a delta-only audit.
+- Keep one whole-system run, writer, generator/Blend lineage, and event-hashed ledger from source lock to package. Independently authored module packages cannot be stitched into a whole-system PASS.
 
 ## Source-to-artifact replay
 

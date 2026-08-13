@@ -32,11 +32,19 @@ OpticalModeler は、実験室の光路を Blender で再構築する証拠優�
 
 匿名化済みの [G1/G2 ケーススタディ](examples/g1g2/README.md)には、2D 入力、3D レンダー、機械可読の受け入れ記録が含まれます。メーカー STEP/CAD と大容量の実験用 `.blend` は Git に含めません。
 
+## 統合 whole-system workflow
+
+現在の主要 workflow は、1 つの run ID、1 つの revision、1 人の writer、1 本の generator lineage、1 本の Blender scene lineage、1 冊の append-only evidence ledger を持つ順序付き単一 run です。Source lock、topology、CAD provenance、representative smoke、full-scene propagation、saved-scene reopen、optomechanical audit、render、sanitization は同じ run の gate であり、独立 module を後から結合する方式ではありません。
+
+[End-to-end workflow contract](skills/thorlabs-blender-optical-path/references/end-to-end-workflow.md)、[single-run N04 deterministic replay](examples/end-to-end-workflow/n04-v1.0.1-replay/README.md)、[fresh whole-system runbook](examples/end-to-end-workflow/n04-v1.0.1-replay/RUNBOOK.md) から開始してください。Static replay は vendor CAD と代表 `.blend` を repository から除外するため `UNVERIFIED` で停止し、下流 gate は pending のままです。新しい private revision では公開済み fetch/build/reopen/audit/sanitization script を連続実行できます。
+
 ## 公開 forward test
 
 [4 トラックの公開テスト行列](examples/forward-tests/README.md)は、公開 `v1.0.0` Skill だけを使用した light-sheet/N04、自由空間干渉計、OCT、Thorlabs CAD conversion の分離テストです。Sanitized evidence package、完全な workflow、generation log、replay script を公開し、N04 は propagation `PASS` / model `PARTIAL_SCOPED`、interferometer は `PARTIAL_SCOPED`、OCT は `UNVERIFIED`、CAD conversion は `BLOCKED` のまま保持します。
 
 公開 script の semantic replay、evidence 由来の README/GATE 数値、binary/PNG metadata の fail-closed scan が release gate に追加されました。Sanitization `PASS` は geometry/conversion `BLOCKED` を上書きしません。
+
+4-track matrix は過去の defect-discovery record としてのみ残し、4 package を 1 つの whole-system verdict に結合してはなりません。
 
 ## インストール
 

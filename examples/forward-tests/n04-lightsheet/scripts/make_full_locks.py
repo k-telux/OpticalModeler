@@ -1,7 +1,8 @@
 """Create deterministic input, layout, family, and native-port locks.
 
-This script writes only to the new full-propagation revision.  Frozen Phase 1
-and accepted N04 r3 files are read and hashed, never copied back or modified.
+This script writes only to the new full-propagation revision. Frozen Phase 1
+and the current run's N04 representative files are verified and hashed, never
+copied back or modified.
 """
 
 from __future__ import annotations
@@ -26,6 +27,18 @@ def sha256(path: Path) -> str:
 
 def read_json(path: Path):
     return json.loads(path.read_text(encoding="utf-8"))
+
+
+def verify_manifest(root: Path, manifest: dict) -> None:
+    if manifest.get("status") != "PASS" or manifest.get("scope") != "N04_REPRESENTATIVE_ONLY_R3":
+        raise RuntimeError("current-run N04 representative manifest is not PASS")
+    artifacts = manifest.get("artifacts", [])
+    if manifest.get("artifact_count") != len(artifacts):
+        raise RuntimeError("current-run N04 representative manifest count mismatch")
+    for record in artifacts:
+        path = root / record["relative_path"]
+        if not path.is_file() or path.stat().st_size != record["bytes"] or sha256(path) != record["sha256"]:
+            raise RuntimeError(f"current-run N04 representative artifact mismatch: {record['relative_path']}")
 
 
 def write_json(path: Path, value) -> None:
@@ -163,8 +176,7 @@ def build_payloads(root: Path, generated_utc: str) -> tuple[dict, dict, dict]:
         raise RuntimeError("frozen topology count drift")
     if len(cad["scoped_substitutions"]) != 17:
         raise RuntimeError("frozen substitution count drift")
-    if sha256(r3 / "MANIFEST.json") != "76d3cafa4a60c7faee87b6e452bbf586fa7daf094ff778e6c950be97578fb862":
-        raise RuntimeError("accepted N04 r3 manifest hash drift")
+    verify_manifest(r3, r3_manifest)
 
     phase1_files = sorted(path for path in phase1.rglob("*") if path.is_file())
     r3_files = [

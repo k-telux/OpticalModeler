@@ -122,6 +122,7 @@ def main() -> None:
     }
     out_name = "BUILD_PARAMS_PUBLIC_RECOMPUTE_READBACK.json" if published_target_kind == "PUBLIC_PACKAGE_BUILD_PARAMS" else "BUILD_PARAMS_RECOMPUTE_AUDIT.json"
     out = base / "evidence" / out_name
+    out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(json.dumps(report, indent=2) + "\n", encoding="utf-8")
     print(json.dumps({"status": status, "audit": str(out), "semantic_sha256": report["published_semantic_sha256"]}, indent=2))
     if status != "PASS":

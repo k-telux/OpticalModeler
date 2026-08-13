@@ -32,11 +32,19 @@ OpticalModeler 是一个证据优先的 Agent Skill，用于在 Blender 中重�
 
 脱敏的 [G1/G2 案例](examples/g1g2/README.md)包含二维原始输入、编辑级三维渲染和机器可读验收记录。厂家 STEP/CAD 与大型实验 `.blend` 不进入 Git。
 
+## 整机单链 workflow
+
+当前主 workflow 是一个有序运行：一个 run ID、一个修订目录、一个写入者、一条生成器谱系、一条 Blender 场景谱系和一本 append-only 证据账本。来源锁、拓扑、CAD 谱系、代表件 smoke、整机传播、保存场景重开、光机审计、渲染与脱敏，都是同一次运行中的阶段门，不能由多个独立模块事后拼接。
+
+从[端到端 workflow 合同](skills/thorlabs-blender-optical-path/references/end-to-end-workflow.md)、[单次运行的 N04 确定性重放](examples/end-to-end-workflow/n04-v1.0.1-replay/README.md)和[全新整机运行手册](examples/end-to-end-workflow/n04-v1.0.1-replay/RUNBOOK.md)开始。静态重放因仓库排除厂家 CAD 和代表件保存 `.blend` 而如实停在 `UNVERIFIED`，所有下游门保持 pending；全新私有 revision 可连续执行已公开的下载、构建、重开、审计与净化脚本。
+
 ## 公开前向测试
 
 [四轨公开测试矩阵](examples/forward-tests/README.md)记录了仅使用发布版 `v1.0.0` Skill 的 light-sheet/N04、自由空间干涉仪、OCT 与 Thorlabs CAD 转换测试。它公开净化后的 evidence package、完整标记 workflow、生成日志和可重放脚本，同时保持最弱 verdict：N04 仅传播门 `PASS`/整体 `PARTIAL_SCOPED`，干涉仪为 `PARTIAL_SCOPED`，OCT 为 `UNVERIFIED`，CAD 转换为 `BLOCKED`。
 
 这些测试新增三项 release gate：公共脚本必须重算出相同语义锁；README/GATE 数值必须来自 reopen evidence；二进制与 PNG 元数据必须逐文件解析，不能把解码失败当成零命中。脱敏 `PASS` 不会覆盖几何或转换 `BLOCKED`。
+
+四轨矩阵只保留为历史缺陷发现记录；四个 evidence package 不得拼接成一个整机结论。
 
 ## 安装
 

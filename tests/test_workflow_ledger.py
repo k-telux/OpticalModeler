@@ -1,0 +1,224 @@
+#!/usr/bin/env python3
+"""Runnable standard-library checks for the whole-system workflow ledger."""
+
+from __future__ import annotations
+
+import hashlib
+import json
+import subprocess
+import sys
+import tempfile
+import unittest
+from pathlib import Path
+
+
+ROOT = Path(__file__).resolve().parents[1]
+TOOL = ROOT / "skills/thorlabs-blender-optical-path/scripts/workflow_ledger.py"
+
+
+def digest(path: Path) -> str:
+    return hashlib.sha256(path.read_bytes()).hexdigest()
+
+
+def write_json(path: Path, value: object) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(value, indent=2) + "\n", encoding="utf-8")
+
+
+class WorkflowLedgerTest(unittest.TestCase):
+    def setUp(self) -> None:
+        self.temporary = tempfile.TemporaryDirectory()
+        self.root = Path(self.temporary.name)
+        self.revision = self.root / "revision"
+        self.revision.mkdir()
+        self.input_path = self.root / "input.json"
+        self.output_path = self.revision / "output.json"
+        write_json(self.input_path, {"status": "PASS", "count": 2})
+        write_json(self.output_path, {"status": "PASS", "collisions": 0})
+        self.spec = self.root / "RUN_SPEC.json"
+        self.state = self.revision / "WORKFLOW_STATE.json"
+        self.events = self.revision / "WORKFLOW_EVENTS.jsonl"
+        write_json(
+            self.spec,
+            {
+                "schema": "opticalmodeler.whole-system-run-spec.v1",
+                "mode": "WHOLE_SYSTEM_END_TO_END",
+                "run_id": "self-test-run",
+                "writer_id": "writer-one",
+                "single_writer": True,
+                "allow_module_stitching": False,
+                "workspace_root": ".",
+                "revision_root": "revision",
+                "audit_scope": "FULL_ACTIVE_RULE_REGRESSION",
+                "stages": [
+                    {"id": "run_lock", "required_artifacts": []},
+                    {
+                        "id": "source_lock",
+                        "required_artifacts": [
+                            {
+                                "role": "input",
+                                "path": "input.json",
+                                "kind": "FROZEN_INPUT",
+                                "sha256": digest(self.input_path),
+                                "json_assertions": [
+                                    {"pointer": "/status", "equals": "PASS"},
+                                    {"pointer": "/count", "equals": 2},
+                                ],
+                            }
+                        ],
+                    },
+                    {
+                        "id": "final_consistency",
+                        "required_artifacts": [
+                            {
+                                "role": "output",
+                                "path": "revision/output.json",
+                                "kind": "RUN_OUTPUT",
+                                "sha256": None,
+                                "json_assertions": [
+                                    {"pointer": "/status", "equals": "PASS"},
+                                    {"pointer": "/collisions", "equals": 0},
+                                ],
+                            }
+                        ],
+                    },
+                ],
+            },
+        )
+
+    def tearDown(self) -> None:
+        self.temporary.cleanup()
+
+    def run_tool(self, *arguments: str, succeeds: bool = True) -> subprocess.CompletedProcess[str]:
+        result = subprocess.run(
+            [sys.executable, str(TOOL), *arguments], capture_output=True, text=True, check=False
+        )
+        if succeeds and result.returncode != 0:
+            self.fail(result.stderr or result.stdout)
+        if not succeeds and result.returncode == 0:
+            self.fail("command unexpectedly succeeded")
+        return result
+
+    def common(self) -> list[str]:
+        return ["--spec", str(self.spec), "--state", str(self.state), "--events", str(self.events)]
+
+    def init(self) -> None:
+        self.run_tool("init", *self.common())
+
+    def record(self, stage: str, event_id: str, writer: str = "writer-one", succeeds: bool = True) -> None:
+        self.run_tool(
+            "record",
+            *self.common(),
+            "--writer-id",
+            writer,
+            "--stage",
+            stage,
+            "--status",
+            "PASS_TO_NEXT_GATE",
+            "--event-id",
+            event_id,
+            "--recorded-at",
+            f"2026-08-13T00:0{event_id[-1]}:00Z",
+            succeeds=succeeds,
+        )
+
+    def test_complete_run_and_tamper_detection(self) -> None:
+        self.init()
+        self.record("run_lock", "E001")
+        self.record("source_lock", "E002")
+        self.record("final_consistency", "E003")
+        summary = json.loads(self.run_tool("validate", *self.common()).stdout)
+        self.assertEqual(summary["aggregate_status"], "PASS")
+        self.assertTrue(summary["final_or_release"])
+        write_json(self.output_path, {"status": "PASS", "collisions": 1})
+        self.run_tool("validate", *self.common(), succeeds=False)
+
+    def test_wrong_writer_and_out_of_order_gate_fail(self) -> None:
+        self.init()
+        self.record("run_lock", "E001", writer="writer-two", succeeds=False)
+        self.record("run_lock", "E001")
+        self.record("final_consistency", "E002", succeeds=False)
+
+    def test_complete_partial_scope_stays_non_release(self) -> None:
+        spec = json.loads(self.spec.read_text(encoding="utf-8"))
+        spec["audit_scope"] = "PARTIAL_SCOPED"
+        write_json(self.spec, spec)
+        self.init()
+        self.record("run_lock", "E001")
+        self.record("source_lock", "E002")
+        self.record("final_consistency", "E003")
+        summary = json.loads(self.run_tool("validate", *self.common()).stdout)
+        self.assertEqual(summary["aggregate_status"], "PARTIAL_SCOPED")
+        self.assertFalse(summary["final_or_release"])
+
+    def test_json_assertion_and_invalidation_fail_closed(self) -> None:
+        self.init()
+        self.record("run_lock", "E001")
+        write_json(self.input_path, {"status": "FAIL", "count": 2})
+        self.record("source_lock", "E002", succeeds=False)
+        write_json(self.input_path, {"status": "PASS", "count": 2})
+        self.record("source_lock", "E002")
+        self.record("final_consistency", "E003")
+        self.run_tool(
+            "invalidate",
+            *self.common(),
+            "--writer-id",
+            "writer-one",
+            "--stage",
+            "source_lock",
+            "--event-id",
+            "E004",
+            "--recorded-at",
+            "2026-08-13T00:04:00Z",
+            "--reason",
+            "upstream source changed",
+        )
+        summary = json.loads(self.run_tool("validate", *self.common()).stdout)
+        self.assertEqual(summary["current_stage"], "source_lock")
+        self.assertEqual(summary["aggregate_status"], "UNVERIFIED")
+        self.assertFalse(summary["final_or_release"])
+
+    def test_drifted_downstream_can_invalidate_but_upstream_drift_cannot(self) -> None:
+        self.init()
+        self.record("run_lock", "E001")
+        self.record("source_lock", "E002")
+        self.record("final_consistency", "E003")
+        write_json(self.output_path, {"status": "PASS", "collisions": 1})
+        self.run_tool(
+            "invalidate",
+            *self.common(),
+            "--writer-id",
+            "writer-one",
+            "--stage",
+            "final_consistency",
+            "--event-id",
+            "E004",
+            "--recorded-at",
+            "2026-08-13T00:04:00Z",
+            "--reason",
+            "downstream artifact drifted before invalidation",
+        )
+        summary = json.loads(self.run_tool("validate", *self.common()).stdout)
+        self.assertEqual(summary["current_stage"], "final_consistency")
+        write_json(self.output_path, {"status": "PASS", "collisions": 0})
+        self.record("final_consistency", "E005")
+        write_json(self.input_path, {"status": "PASS", "count": 3})
+        self.run_tool(
+            "invalidate",
+            *self.common(),
+            "--writer-id",
+            "writer-one",
+            "--stage",
+            "final_consistency",
+            "--event-id",
+            "E006",
+            "--recorded-at",
+            "2026-08-13T00:06:00Z",
+            "--reason",
+            "attempt to skip changed upstream input",
+            succeeds=False,
+        )
+
+
+if __name__ == "__main__":
+    unittest.main()

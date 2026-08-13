@@ -141,9 +141,11 @@ def metric_record(path: Path, expected: dict) -> tuple[dict, np.ndarray]:
 
 
 def annotated_image(image: np.ndarray, record: dict) -> np.ndarray:
-    output = image.copy()
+    header_height = 168
+    output = np.full((image.shape[0] + header_height, image.shape[1], image.shape[2]), 24, dtype=image.dtype)
+    output[header_height:, :] = image
     color = (40, 200, 40) if record["status"] == "PASS" else (20, 20, 230)
-    cv2.rectangle(output, (4, 4), (output.shape[1] - 5, output.shape[0] - 5), color, 8)
+    cv2.rectangle(output, (4, header_height + 4), (output.shape[1] - 5, output.shape[0] - 5), color, 8)
     lines = [
         f"OpenCV render-quality gate: {record['status']}",
         record["filename"],
@@ -180,7 +182,8 @@ def main() -> None:
         record["annotated_filename"] = annotated_path.name
         record["annotated_sha256"] = sha256(annotated_path)
         records.append(record)
-        thumbnail = cv2.resize(annotated, (480, 300), interpolation=cv2.INTER_AREA)
+        thumbnail_height = round(480 * annotated.shape[0] / annotated.shape[1])
+        thumbnail = cv2.resize(annotated, (480, thumbnail_height), interpolation=cv2.INTER_AREA)
         thumbnails.append(thumbnail)
 
     blank = np.full_like(thumbnails[0], 24)

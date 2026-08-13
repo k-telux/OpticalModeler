@@ -90,8 +90,8 @@
     },
     {
       "path": "scripts/finalize_native_ports.py",
-      "bytes": 5933,
-      "sha256": "b663c418a87188125242cd1602f3a45b1cda02933929e2a15605ef28bd1c8560"
+      "bytes": 5999,
+      "sha256": "e78e45621fea9dcc2ffcc0be30842ce3da435558689b808e97385b0f380656ec"
     },
     {
       "path": "scripts/generate_full_scene.py",
@@ -100,18 +100,18 @@
     },
     {
       "path": "scripts/make_full_locks.py",
-      "bytes": 15076,
-      "sha256": "87135ccbb62c50b6e5371252daa75b2879ba982b2ec68c628b1746829d34d2c9"
+      "bytes": 15686,
+      "sha256": "f8317bb3b2e669ca0ab03f4254e1cb2583bb31fba542a018809feb1482d7e386"
     },
     {
       "path": "scripts/opencv_audit_full.py",
-      "bytes": 9703,
-      "sha256": "3db91024c183d6d9eb4b12d395c556e0bcf1b1c88350f979ea01d44a71b60f5f"
+      "bytes": 9958,
+      "sha256": "06661544dbc276b29f94ff0114441f74244a0b814ad291bd704ccf6378e7ce14"
     },
     {
       "path": "scripts/prepare_full_cad.py",
-      "bytes": 16941,
-      "sha256": "83288748465a23a5751e4e5c017f9c820ba500d30bb3364d71b03a5ffc7f158d"
+      "bytes": 16996,
+      "sha256": "613114e406d6966f28070194b62f9c050076aebe4a3761533eb7a5e8b68a889a"
     },
     {
       "path": "scripts/probe_mount_apertures.py",
@@ -125,8 +125,8 @@
     },
     {
       "path": "scripts/verify_build_params_recompute.py",
-      "bytes": 5756,
-      "sha256": "af42cb081fff8b2a9cd3ef55b1e9633916bf2b0ea3b81ca99ccd59bc96a5e436"
+      "bytes": 5806,
+      "sha256": "9f4d6549c37776b09f145eb8c541bd219206b715d7e41ab16550084abdbcc775"
     },
     {
       "path": "SOURCE_ADDENDUM.json",

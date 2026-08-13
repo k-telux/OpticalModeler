@@ -1,0 +1,218 @@
+{
+  "schema": "opticalmodeler.whole-system-workflow-state.v1",
+  "run_id": "n04-v1.0.1-unified-ledger-replay",
+  "writer_id": "n04-unified-replay-single-writer",
+  "spec_sha256": "a30b985f463628b2271674d06e2adb802abba2e611e38c4dc6fffd0d11342eee",
+  "audit_scope": "PARTIAL_SCOPED",
+  "current_stage": "representative_smoke",
+  "aggregate_status": "UNVERIFIED",
+  "final_or_release": false,
+  "event_count": 6,
+  "event_head_sha256": "3742405d07dfd178dff8cb562d7fb4521fe668705d44d1761ccd0d07a8af13c7",
+  "stages": {
+    "run_lock": {
+      "status": "PASS_TO_NEXT_GATE",
+      "event_id": "E001",
+      "recorded_at": "2026-08-13T00:01:00+08:00",
+      "artifacts": [],
+      "blockers": [],
+      "notes": [
+        "One run, writer, revision root, ordered gate set, and v1.0.1 workflow baseline are frozen."
+      ]
+    },
+    "source_lock": {
+      "status": "PASS_TO_NEXT_GATE",
+      "event_id": "E002",
+      "recorded_at": "2026-08-13T00:02:00+08:00",
+      "artifacts": [
+        {
+          "role": "source_lock",
+          "path": "examples/forward-tests/n04-lightsheet/SOURCE_LOCK.json",
+          "kind": "FROZEN_INPUT",
+          "bytes": 7102,
+          "sha256": "7b9f18aa536c3433184ca9c971b56c0708e85859cc41e34bfc537db1afc7b0d3",
+          "json_assertions": [
+            {
+              "pointer": "/status",
+              "equals": "PASS"
+            },
+            {
+              "pointer": "/literature/status",
+              "equals": "PASS"
+            }
+          ]
+        }
+      ],
+      "blockers": [],
+      "notes": [
+        "Frozen public source lock identifies Dibaji et al. 2024, DOI 10.1038/s41467-024-49291-0, CC BY 4.0 article and supplement hashes."
+      ]
+    },
+    "topology_lock": {
+      "status": "PASS_TO_NEXT_GATE",
+      "event_id": "E003",
+      "recorded_at": "2026-08-13T00:03:00+08:00",
+      "artifacts": [
+        {
+          "role": "topology_map",
+          "path": "examples/forward-tests/n04-lightsheet/TOPOLOGY_MAP.json",
+          "kind": "FROZEN_INPUT",
+          "bytes": 68219,
+          "sha256": "d9f4c7ccaded318bc69ce0f4b3bd027afaddc3e211b9cabb6aeb8ff895237dd2",
+          "json_assertions": [
+            {
+              "pointer": "/status",
+              "equals": "PASS"
+            },
+            {
+              "pointer": "/counts/nodes",
+              "equals": 32
+            },
+            {
+              "pointer": "/counts/directed_edge_traversals",
+              "equals": 44
+            }
+          ]
+        }
+      ],
+      "blockers": [],
+      "notes": [
+        "Frozen map records 32 nodes, 44 directed traversals, two true branch points, and exact ports."
+      ]
+    },
+    "cad_provenance_lock": {
+      "status": "PASS_TO_NEXT_GATE",
+      "event_id": "E004",
+      "recorded_at": "2026-08-13T00:04:00+08:00",
+      "artifacts": [
+        {
+          "role": "cad_manifest",
+          "path": "examples/forward-tests/n04-lightsheet/CAD_MANIFEST.json",
+          "kind": "FROZEN_INPUT",
+          "bytes": 278431,
+          "sha256": "db72d29c4a715fb0e0c562023846c3c3ca4c6b429993b7c4e32c920a9c08a809",
+          "json_assertions": [
+            {
+              "pointer": "/status",
+              "equals": "PASS"
+            },
+            {
+              "pointer": "/redistribution/status",
+              "equals": "UNVERIFIED"
+            }
+          ]
+        }
+      ],
+      "blockers": [],
+      "notes": [
+        "Official source URLs, native units, hashes, substitutions, and blocked vendor redistribution remain explicit; literal paper performance is not promoted."
+      ]
+    },
+    "deterministic_replay": {
+      "status": "PASS_TO_NEXT_GATE",
+      "event_id": "E005",
+      "recorded_at": "2026-08-13T00:05:00+08:00",
+      "artifacts": [
+        {
+          "role": "semantic_replay_audit",
+          "path": "examples/forward-tests/n04-lightsheet/BUILD_PARAMS_RECOMPUTE_AUDIT.json",
+          "kind": "FROZEN_INPUT",
+          "bytes": 6311,
+          "sha256": "6e66d3c750f5d65ee5c0fda463b8740561a324339d05aa001fc9cb1f06272080",
+          "json_assertions": [
+            {
+              "pointer": "/status",
+              "equals": "PASS"
+            },
+            {
+              "pointer": "/difference_paths",
+              "equals": []
+            },
+            {
+              "pointer": "/conditions/manual_unlogged_transforms_zero",
+              "equals": true
+            }
+          ]
+        }
+      ],
+      "blockers": [],
+      "notes": [
+        "Normalized semantic replay has zero difference paths, two reason-bearing overrides, and zero unlogged transforms."
+      ]
+    },
+    "representative_smoke": {
+      "status": "UNVERIFIED",
+      "event_id": "E006",
+      "recorded_at": "2026-08-13T00:06:00+08:00",
+      "artifacts": [
+        {
+          "role": "mechanical_interface_lock",
+          "path": "examples/forward-tests/n04-lightsheet/MECHANICAL_INTERFACE_LOCK.json",
+          "kind": "FROZEN_INPUT",
+          "bytes": 11101,
+          "sha256": "42ae9f01eed042bf62153ddb1241c61f556cedb49ecb39f3ac37d3f0e7b7d881",
+          "json_assertions": [
+            {
+              "pointer": "/status",
+              "equals": "PASS"
+            }
+          ]
+        }
+      ],
+      "blockers": [
+        "The public package excludes the saved representative Blend and REPRESENTATIVE_SAVED_SCENE_AUDIT.json, so world-mesh, port, ray, BVH, and load-path evidence cannot be independently rerun from this package."
+      ],
+      "notes": [
+        "MECHANICAL_INTERFACE_LOCK.json is captured as a frozen input but is not treated as saved-scene proof."
+      ]
+    },
+    "full_scene_build": {
+      "status": "PENDING",
+      "event_id": null,
+      "recorded_at": null,
+      "artifacts": [],
+      "blockers": [],
+      "notes": []
+    },
+    "saved_scene_reopen": {
+      "status": "PENDING",
+      "event_id": null,
+      "recorded_at": null,
+      "artifacts": [],
+      "blockers": [],
+      "notes": []
+    },
+    "whole_system_optomechanical_audit": {
+      "status": "PENDING",
+      "event_id": null,
+      "recorded_at": null,
+      "artifacts": [],
+      "blockers": [],
+      "notes": []
+    },
+    "visual_audit": {
+      "status": "PENDING",
+      "event_id": null,
+      "recorded_at": null,
+      "artifacts": [],
+      "blockers": [],
+      "notes": []
+    },
+    "export_and_sanitization": {
+      "status": "PENDING",
+      "event_id": null,
+      "recorded_at": null,
+      "artifacts": [],
+      "blockers": [],
+      "notes": []
+    },
+    "final_consistency": {
+      "status": "PENDING",
+      "event_id": null,
+      "recorded_at": null,
+      "artifacts": [],
+      "blockers": [],
+      "notes": []
+    }
+  }
+}

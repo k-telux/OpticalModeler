@@ -1,4 +1,4 @@
 interface:
   display_name: "OpticalModeler"
-  short_description: "Build evidence-gated Blender optical systems"
-  default_prompt: "Use $thorlabs-blender-optical-path to reconstruct this optical schematic as a deterministic, physically auditable Blender scene with replayable locks and fail-closed evidence."
+  short_description: "Build complete evidence-gated optical systems"
+  default_prompt: "Use $thorlabs-blender-optical-path to reconstruct this complete optical system through one deterministic end-to-end run, writer, Blender lineage, and fail-closed evidence ledger."
