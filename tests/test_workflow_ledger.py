@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import hashlib
+import importlib.util
 import json
 import subprocess
 import sys
@@ -14,6 +15,10 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 TOOL = ROOT / "skills/thorlabs-blender-optical-path/scripts/workflow_ledger.py"
+MODULE_SPEC = importlib.util.spec_from_file_location("workflow_ledger_under_test", TOOL)
+assert MODULE_SPEC and MODULE_SPEC.loader
+LEDGER = importlib.util.module_from_spec(MODULE_SPEC)
+MODULE_SPEC.loader.exec_module(LEDGER)
 
 
 def digest(path: Path) -> str:
@@ -67,6 +72,15 @@ class WorkflowLedgerTest(unittest.TestCase):
                             }
                         ],
                     },
+                    {"id": "topology_lock", "required_artifacts": []},
+                    {"id": "cad_provenance_lock", "required_artifacts": []},
+                    {"id": "deterministic_replay", "required_artifacts": []},
+                    {"id": "representative_smoke", "required_artifacts": []},
+                    {"id": "full_scene_build", "required_artifacts": []},
+                    {"id": "saved_scene_reopen", "required_artifacts": []},
+                    {"id": "whole_system_optomechanical_audit", "required_artifacts": []},
+                    {"id": "visual_audit", "required_artifacts": []},
+                    {"id": "export_and_sanitization", "required_artifacts": []},
                     {
                         "id": "final_consistency",
                         "required_artifacts": [
@@ -105,8 +119,9 @@ class WorkflowLedgerTest(unittest.TestCase):
     def init(self) -> None:
         self.run_tool("init", *self.common())
 
-    def record(self, stage: str, event_id: str, writer: str = "writer-one", succeeds: bool = True) -> None:
-        self.run_tool(
+    def record(self, stage: str, event_id: str, writer: str = "writer-one", succeeds: bool = True, claim_status: str | None = None) -> None:
+        event_number = int(event_id.removeprefix("E"))
+        arguments = [
             "record",
             *self.common(),
             "--writer-id",
@@ -118,15 +133,33 @@ class WorkflowLedgerTest(unittest.TestCase):
             "--event-id",
             event_id,
             "--recorded-at",
-            f"2026-08-13T00:0{event_id[-1]}:00Z",
-            succeeds=succeeds,
-        )
+            f"2026-08-13T00:{event_number:02d}:00Z",
+        ]
+        if claim_status:
+            arguments.extend(("--claim-status", claim_status))
+        self.run_tool(*arguments, succeeds=succeeds)
+
+    def record_remaining(self, start_event: int = 3) -> None:
+        stages = [
+            "topology_lock",
+            "cad_provenance_lock",
+            "deterministic_replay",
+            "representative_smoke",
+            "full_scene_build",
+            "saved_scene_reopen",
+            "whole_system_optomechanical_audit",
+            "visual_audit",
+            "export_and_sanitization",
+            "final_consistency",
+        ]
+        for offset, stage in enumerate(stages):
+            self.record(stage, f"E{start_event + offset:03d}")
 
     def test_complete_run_and_tamper_detection(self) -> None:
         self.init()
         self.record("run_lock", "E001")
         self.record("source_lock", "E002")
-        self.record("final_consistency", "E003")
+        self.record_remaining()
         summary = json.loads(self.run_tool("validate", *self.common()).stdout)
         self.assertEqual(summary["aggregate_status"], "PASS")
         self.assertTrue(summary["final_or_release"])
@@ -146,7 +179,23 @@ class WorkflowLedgerTest(unittest.TestCase):
         self.init()
         self.record("run_lock", "E001")
         self.record("source_lock", "E002")
-        self.record("final_consistency", "E003")
+        self.record_remaining()
+        summary = json.loads(self.run_tool("validate", *self.common()).stdout)
+        self.assertEqual(summary["aggregate_status"], "PARTIAL_SCOPED")
+        self.assertFalse(summary["final_or_release"])
+
+    def test_partial_claim_blocks_full_scope_release(self) -> None:
+        self.init()
+        self.record("run_lock", "E001")
+        self.record("source_lock", "E002")
+        stages = [
+            "topology_lock", "cad_provenance_lock", "deterministic_replay", "representative_smoke",
+            "full_scene_build", "saved_scene_reopen", "whole_system_optomechanical_audit",
+            "visual_audit", "export_and_sanitization",
+        ]
+        for index, stage in enumerate(stages, 3):
+            self.record(stage, f"E{index:03d}")
+        self.record("final_consistency", "E012", claim_status="PARTIAL_SCOPED")
         summary = json.loads(self.run_tool("validate", *self.common()).stdout)
         self.assertEqual(summary["aggregate_status"], "PARTIAL_SCOPED")
         self.assertFalse(summary["final_or_release"])
@@ -158,7 +207,7 @@ class WorkflowLedgerTest(unittest.TestCase):
         self.record("source_lock", "E002", succeeds=False)
         write_json(self.input_path, {"status": "PASS", "count": 2})
         self.record("source_lock", "E002")
-        self.record("final_consistency", "E003")
+        self.record_remaining()
         self.run_tool(
             "invalidate",
             *self.common(),
@@ -167,9 +216,9 @@ class WorkflowLedgerTest(unittest.TestCase):
             "--stage",
             "source_lock",
             "--event-id",
-            "E004",
+            "E013",
             "--recorded-at",
-            "2026-08-13T00:04:00Z",
+            "2026-08-13T00:13:00Z",
             "--reason",
             "upstream source changed",
         )
@@ -182,7 +231,7 @@ class WorkflowLedgerTest(unittest.TestCase):
         self.init()
         self.record("run_lock", "E001")
         self.record("source_lock", "E002")
-        self.record("final_consistency", "E003")
+        self.record_remaining()
         write_json(self.output_path, {"status": "PASS", "collisions": 1})
         self.run_tool(
             "invalidate",
@@ -192,16 +241,16 @@ class WorkflowLedgerTest(unittest.TestCase):
             "--stage",
             "final_consistency",
             "--event-id",
-            "E004",
+            "E013",
             "--recorded-at",
-            "2026-08-13T00:04:00Z",
+            "2026-08-13T00:13:00Z",
             "--reason",
             "downstream artifact drifted before invalidation",
         )
         summary = json.loads(self.run_tool("validate", *self.common()).stdout)
         self.assertEqual(summary["current_stage"], "final_consistency")
         write_json(self.output_path, {"status": "PASS", "collisions": 0})
-        self.record("final_consistency", "E005")
+        self.record("final_consistency", "E014")
         write_json(self.input_path, {"status": "PASS", "count": 3})
         self.run_tool(
             "invalidate",
@@ -211,13 +260,52 @@ class WorkflowLedgerTest(unittest.TestCase):
             "--stage",
             "final_consistency",
             "--event-id",
-            "E006",
+            "E015",
             "--recorded-at",
-            "2026-08-13T00:06:00Z",
+            "2026-08-13T00:15:00Z",
             "--reason",
             "attempt to skip changed upstream input",
             succeeds=False,
         )
+
+    def test_forged_replay_order_and_artifact_contract_fail(self) -> None:
+        self.init()
+        self.record("run_lock", "E001")
+        self.record("source_lock", "E002")
+        self.record_remaining()
+        spec = LEDGER.load_json(self.spec)
+        events = LEDGER.read_events(self.events)
+
+        forged_order = json.loads(json.dumps(events))
+        forged_order[1]["stage_id"] = "final_consistency"
+        forged_order[1]["event_sha256"] = LEDGER.event_hash(forged_order[1])
+        with self.assertRaises(AssertionError):
+            LEDGER.replay(self.spec, spec, forged_order)
+
+        forged_artifact = json.loads(json.dumps(events))
+        forged_artifact[-1]["artifacts"][0]["path"] = "revision/not-the-spec-output.json"
+        forged_artifact[-1]["event_sha256"] = LEDGER.event_hash(forged_artifact[-1])
+        state = LEDGER.replay(self.spec, spec, forged_artifact)
+        with self.assertRaises(AssertionError):
+            LEDGER.reconcile_recorded_artifacts(spec, state)
+
+        duplicate_id = json.loads(json.dumps(events))
+        duplicate_id[1]["event_id"] = duplicate_id[0]["event_id"]
+        duplicate_id[1]["event_sha256"] = LEDGER.event_hash(duplicate_id[1])
+        with self.assertRaises(AssertionError):
+            LEDGER.replay(self.spec, spec, duplicate_id)
+
+        decreasing_time = json.loads(json.dumps(events))
+        decreasing_time[1]["recorded_at"] = "2026-08-12T23:59:00Z"
+        decreasing_time[1]["event_sha256"] = LEDGER.event_hash(decreasing_time[1])
+        with self.assertRaises(AssertionError):
+            LEDGER.replay(self.spec, spec, decreasing_time)
+
+        invalid_time = json.loads(json.dumps(events))
+        invalid_time[1]["recorded_at"] = "2026-08-13 00:02:00+00:00"
+        invalid_time[1]["event_sha256"] = LEDGER.event_hash(invalid_time[1])
+        with self.assertRaises(AssertionError):
+            LEDGER.replay(self.spec, spec, invalid_time)
 
 
 if __name__ == "__main__":

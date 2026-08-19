@@ -7,7 +7,7 @@ description: 从二维光路示意图与厂家 CAD 通过一个端到端运行�
 
 把二维示意图转换成可解释、可独立审计的 Blender 光学平台。
 
-英文版是技术权威源。涉及几何时读取 `../../skills/thorlabs-blender-optical-path/references/physical-gates.md`；验收前读取 `evidence-contract.md`；修订旧场景时读取 `history-derived-rules.md`；完整案例见 `project-case-study.md`；整机运行前读取 `end-to-end-workflow.md`。
+英文版是技术权威源。涉及几何时读取 `../../skills/thorlabs-blender-optical-path/references/physical-gates.md`；验收前读取 `evidence-contract.md`；修订旧场景时读取 `history-derived-rules.md`；完整案例见 `project-case-study.md`；整机运行前读取 `end-to-end-workflow.md`；多轮规模/发布资格测试读取 `multi-run-qualification.md`。
 
 ## 权威与版本
 
@@ -23,11 +23,13 @@ description: 从二维光路示意图与厂家 CAD 通过一个端到端运行�
 2. 建立 `schematic node -> 实验角色 -> 真实资产 -> 光/光纤/电端口 -> 支撑路径`。
 3. 列出全部分支、器件、光束高度、孔径和探测终点。
 4. 只从 manifest 锁定的厂家 URL 把官方 CAD 下载到私有缓存；原子落盘前复核 bytes 与 SHA-256，并记录型号、来源、尺度、bbox、局部光轴、法向、孔径、provenance 和再分发边界。替代件必须明示；没有明确授权时禁止公开厂家几何。
-5. 先解光心、镜面、分束面、反射和分支连续性。
-6. 再从真实桌孔向上按 post-first 构建紧固件、夹具、holder、post、mount 和器件。
-7. 修共享根因，在同一运行内先验一个代表件再传播；保存后重开并逐件复核。
-8. 先做明亮的机械/轴向/剖切审计图，再做 beauty render。
-9. 发布脚本必须能重算同一语义锁，README/GATE 计数必须来自机器证据；随后在同一账本完成重开、整机 ray/BVH、OpenCV、GLB 回导、二进制/PNG 元数据脱敏、manifest、hash 和全 active-rule 合规矩阵。
+5. 把 source lock 与其全部哈希文件当作一个原子输入包；几何前运行 producer-to-consumer artifact preflight，确认 source bytes、CAD canonical/型号别名 key、官方图纸和 runtime 均位于下一脚本实际消费的路径。
+6. 发布脚本必须重算同一语义锁且 difference paths 为零。多状态系统的每条 edge 必须有精确 `active_states` 或哈希化确定型展开，每个 state 都要有明确 ray template。
+7. 先解光心、镜面、分束面、反射和分支连续性。
+8. 再从真实桌孔向上按 post-first 构建紧固件、夹具、holder、post、mount 和器件。
+9. 修共享根因，在同一运行内先验一个代表件再传播；保存后重开并逐件复核。
+10. 先做明亮的机械/轴向/剖切审计图，再做 beauty render。
+11. README/GATE 计数必须来自机器证据；随后在同一账本完成重开、整机 ray/BVH、OpenCV、GLB 回导、二进制/PNG 元数据脱敏、manifest、hash 和全 active-rule 合规矩阵。
 
 光束、柔性光纤和电缆必须是不同对象族。孔径必须真实开放。删除重复 surrogate 和无角色 placeholder。Nature 风格只能在物理门槛通过后修改材质、灯光、相机和排版，不能替代装配证据。
 

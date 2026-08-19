@@ -18,6 +18,7 @@
 - Record the user-command source, ruleset version/hash, generator hash, scene hash, and audit scope.
 - Use `FULL_ACTIVE_RULE_REGRESSION` for whole-system PASS. Use `PARTIAL_SCOPED` for a delta-only audit.
 - Keep one whole-system run, writer, generator/Blend lineage, and event-hashed ledger from source lock to package. Independently authored module packages cannot be stitched into a whole-system PASS.
+- Keep stage execution authorization separate from claim status. A gate may execute successfully while its scientific/provenance claim remains `PARTIAL_SCOPED`; final authorization requires every applicable claim status to be `PASS`.
 
 ## Source-to-artifact replay
 
@@ -25,6 +26,8 @@
 - Canonicalize only declared volatile fields such as a generation timestamp. Require normalized semantic hashes to match and the field-difference list to be empty.
 - Put every manual exception, port-center override, substitution, and no-snap policy in source with its reason. A hand-edited lock or unlogged transform blocks propagation even when its manifest hash is correct.
 - Run replay in a clean location with bytecode/cache writes disabled or excluded, then prove the package file set is unchanged.
+- Verify the complete source-lock byte set and every producer-to-consumer path/key before long-running conversion or Blender work. A stage-local PASS is invalid when the next declared consumer cannot resolve the artifact.
+- For multi-state topology, bind every edge and zero-radius ray template to exact active states or to a versioned, hashed expansion script; structural node/edge counts alone are scoped diagnostics, not topology PASS.
 
 ## Representative-to-global loop
 
@@ -39,6 +42,7 @@
 - machine-readable topology and role inventory;
 - official/modeled/surrogate provenance with hashes and unit scale;
 - saved-Blend reopen and world-space transform/mesh readback;
+- actual reopened filepath plus opened-file SHA-256; a hash of the expected path is insufficient when another Blend may be open;
 - zero-radius optical-axis and first-opaque-hit checks;
 - narrow-phase BVH with allowed contact envelopes separated from illegal collision;
 - close-up mechanical views and complete table views;

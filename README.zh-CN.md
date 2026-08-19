@@ -38,6 +38,12 @@ OpticalModeler 是一个证据优先的 Agent Skill，用于在 Blender 中重�
 
 从[端到端 workflow 合同](skills/thorlabs-blender-optical-path/references/end-to-end-workflow.md)、[单次运行的 N04 确定性重放](examples/end-to-end-workflow/n04-v1.0.1-replay/README.md)和[全新整机运行手册](examples/end-to-end-workflow/n04-v1.0.1-replay/RUNBOOK.md)开始。静态重放因仓库排除厂家 CAD 和代表件保存 `.blend` 而如实停在 `UNVERIFIED`，所有下游门保持 pending；全新私有 revision 可连续执行已公开的下载、构建、重开、审计与净化脚本。
 
+## v1.1.0 多轮资格测试
+
+[v1.1.0 资格包](examples/end-to-end-workflow/qualification-v1.1.0/README.md)对比了 64/96/128 节点 N04 规模运行和一个独立 40 节点多状态干涉仪测试。权威结论分别保留为 `PARTIAL_SCOPED`、严格 BVH `BLOCKED`、仅规模子集 `PASS_SCOPED` 和 topology `UNVERIFIED`；没有任何轨道提供整机物理或 release PASS。
+
+多轮测试加固了 source bundle 原子提交、live/pinned CAD 身份分离、cache alias、ledger replay、execution/claim 状态分离、representative spacing/load、严格碰撞分类、多状态 topology 和公开包净化。版本记录见 [CHANGELOG.md](CHANGELOG.md)。
+
 ## 公开前向测试
 
 [四轨公开测试矩阵](examples/forward-tests/README.md)记录了仅使用发布版 `v1.0.0` Skill 的 light-sheet/N04、自由空间干涉仪、OCT 与 Thorlabs CAD 转换测试。它公开净化后的 evidence package、完整标记 workflow、生成日志和可重放脚本，同时保持最弱 verdict：N04 仅传播门 `PASS`/整体 `PARTIAL_SCOPED`，干涉仪为 `PARTIAL_SCOPED`，OCT 为 `UNVERIFIED`，CAD 转换为 `BLOCKED`。

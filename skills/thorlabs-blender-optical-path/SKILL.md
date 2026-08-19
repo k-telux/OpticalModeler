@@ -14,6 +14,7 @@ Convert a 2D optical schematic into a physically explainable, independently audi
 - Read [history-derived-rules.md](references/history-derived-rules.md) when revising an existing scene or when old fixes may have regressed.
 - Read [project-case-study.md](references/project-case-study.md) for the complete G1/G2 2D-to-3D example.
 - Read [end-to-end-workflow.md](references/end-to-end-workflow.md) before a whole-system build or large forward test. Use its single-run ledger instead of splitting one system into independently authored modules.
+- Read [multi-run-qualification.md](references/multi-run-qualification.md) before a Skill release or scale/stress campaign that must compare multiple fresh whole-system runs.
 
 ## Authority and revision rules
 
@@ -29,12 +30,13 @@ Convert a 2D optical schematic into a physically explainable, independently audi
 2. Build a machine-readable map: `schematic node -> experimental role -> real asset -> optical/fiber/electrical ports -> support path`.
 3. Inventory every directed edge, branch, optional/deferred node, component, beam segment, beam height, aperture, connector, and required detector endpoint. Never invent reciprocal edges.
 4. Acquire official CAD only from manifest-locked manufacturer URLs into a private cache. Verify byte count and SHA-256 before atomic placement; record part number, source URL, unit scale, bbox, local optical axis, surface normal, aperture, provenance, and redistribution boundary. Mark modeled or surrogate parts explicitly and never publish vendor geometry without an explicit grant.
-5. Publish deterministic source locks and replay them before geometry. The public scripts must reproduce the normalized semantic parameters with zero unexplained field differences; encode every override in source with a reason.
-6. Solve optical constraints first: centers, surface normals, reflection, splitting planes, branch endpoints, and zero-radius clearance.
-7. Solve mechanics post-first from verified table holes through real fasteners, clamps, holders, posts, mount faces, and device interfaces.
-8. Fix the shared placement or transform root cause. Prove one representative repeated assembly inside the same run before propagation, then reopen and recheck every copy.
-9. Render bright audit views before beauty views. Use cutaways or transparency only to expose hidden, already-measured interfaces.
-10. Complete the saved-scene, whole-system, visual, export, derived-claim, binary-sanitization, hash, and rule-compliance gates in the same ledger.
+5. Treat each source lock and its hashed files as one atomic input bundle. Before geometry, run a producer-to-consumer artifact preflight: every locked source byte, canonical and part-qualified CAD cache key, official drawing, and required runtime must exist at the exact path/key used by the next script.
+6. Publish deterministic source locks and replay them before geometry. The public scripts must reproduce the normalized semantic parameters with zero unexplained field differences; encode every override in source with a reason. For multi-state systems, every edge has exact `active_states` or a hashed deterministic expansion, and every declared state has explicit ray templates.
+7. Solve optical constraints first: centers, surface normals, reflection, splitting planes, branch endpoints, and zero-radius clearance.
+8. Solve mechanics post-first from verified table holes through real fasteners, clamps, holders, posts, mount faces, and device interfaces.
+9. Fix the shared placement or transform root cause. Prove one representative repeated assembly inside the same run before propagation, then reopen and recheck every copy.
+10. Render bright audit views before beauty views. Use cutaways or transparency only to expose hidden, already-measured interfaces.
+11. Complete the saved-scene, whole-system, visual, export, derived-claim, binary-sanitization, hash, and rule-compliance gates in the same ledger.
 
 ## Required semantic separation
 

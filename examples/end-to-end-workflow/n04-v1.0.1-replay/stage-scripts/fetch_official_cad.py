@@ -33,6 +33,7 @@ def locked_files(manifest: dict) -> list[dict]:
             assert cad["redistribution_decision"] == "EXCLUDE_FROM_PUBLIC_CANDIDATE"
             item = {
                 "filename": cad["original_filename"],
+                "cache_aliases": [f"{record['requested_part_number'].replace('/', '_')}__{cad['original_filename']}"],
                 "bytes": cad["bytes"],
                 "sha256": cad["sha256"],
                 "urls": [
@@ -47,6 +48,7 @@ def locked_files(manifest: dict) -> list[dict]:
                     f"conflicting locked CAD record: {item['filename']}"
                 )
                 previous["urls"] = list(dict.fromkeys(previous["urls"] + item["urls"]))
+                previous["cache_aliases"] = list(dict.fromkeys(previous["cache_aliases"] + item["cache_aliases"]))
             else:
                 by_name[item["filename"].casefold()] = item
     return sorted(by_name.values(), key=lambda item: item["filename"].casefold())
@@ -56,10 +58,29 @@ def valid(path: Path, item: dict) -> bool:
     return path.is_file() and path.stat().st_size == item["bytes"] and sha256(path) == item["sha256"]
 
 
+def ensure_aliases(cache: Path, item: dict, destination: Path) -> list[str]:
+    verified = []
+    for name in item["cache_aliases"]:
+        alias = cache / name
+        if not valid(alias, item):
+            partial = alias.with_suffix(alias.suffix + ".part")
+            partial.unlink(missing_ok=True)
+            try:
+                os.link(destination, partial)
+            except OSError:
+                shutil.copyfile(destination, partial)
+            if not valid(partial, item):
+                partial.unlink(missing_ok=True)
+                raise ValueError(f"cache alias bytes/hash mismatch: {name}")
+            os.replace(partial, alias)
+        verified.append(name)
+    return verified
+
+
 def fetch(cache: Path, item: dict) -> dict:
     destination = cache / item["filename"]
     if valid(destination, item):
-        return {"filename": item["filename"], "status": "PASS", "source": "VERIFIED_EXISTING_CACHE"}
+        return {"filename": item["filename"], "status": "PASS", "source": "VERIFIED_EXISTING_CACHE", "verified_cache_aliases": ensure_aliases(cache, item, destination)}
 
     failures = []
     partial = destination.with_suffix(destination.suffix + ".part")
@@ -82,6 +103,7 @@ def fetch(cache: Path, item: dict) -> dict:
             "status": "PASS",
             "source": "VERIFIED_EXISTING_CACHE_ALIAS",
             "alias": alias.name,
+            "verified_cache_aliases": ensure_aliases(cache, item, destination),
         }
 
     for url in item["urls"]:
@@ -100,7 +122,7 @@ def fetch(cache: Path, item: dict) -> dict:
             if byte_count != item["bytes"] or digest.hexdigest() != item["sha256"]:
                 raise ValueError(f"locked bytes/hash mismatch: {byte_count} {digest.hexdigest()}")
             os.replace(partial, destination)
-            return {"filename": item["filename"], "status": "PASS", "source": url}
+            return {"filename": item["filename"], "status": "PASS", "source": url, "verified_cache_aliases": ensure_aliases(cache, item, destination)}
         except Exception as exc:  # Network and vendor mirrors are an external trust boundary.
             partial.unlink(missing_ok=True)
             failures.append({"url": url, "error": f"{type(exc).__name__}: {exc}"})
@@ -131,6 +153,7 @@ def main() -> None:
         "manifest_sha256": sha256(manifest_path),
         "expected_file_count": expected,
         "verified_file_count": len(records) - len(failures),
+        "verified_cache_alias_count": sum(len(record.get("verified_cache_aliases", [])) for record in records),
         "redistribution": "BLOCKED_EXCLUDE_ALL_VENDOR_CAD",
         "records": records,
         "failures": failures,

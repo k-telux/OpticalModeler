@@ -32,7 +32,7 @@ def main() -> None:
     input_lock = json.loads((work / "measurements" / "REPRESENTATIVE_INPUT_LOCK.json").read_text(encoding="utf-8"))
     records = {item["requested_part_number"]: item for item in manifest["records"]}
     expected = {item["part_number"]: item for item in input_lock["official_drawing_files"]}
-    output = work / "tmp" / "source_url_verify"
+    output = work / "vendor_docs"
     output.mkdir(parents=True, exist_ok=True)
     results, failures = [], []
 
@@ -61,7 +61,7 @@ def main() -> None:
             failures.append(part)
             results.append({"part_number": part, "status": "BLOCKED", "attempts": attempts})
             continue
-        destination = output / safe_name(part)
+        destination = output / lock["filename"]
         temporary = destination.with_suffix(".pdf.part")
         temporary.write_bytes(accepted[1])
         os.replace(temporary, destination)

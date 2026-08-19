@@ -37,6 +37,12 @@ The primary workflow is now one ordered run with one run ID, one revision, one w
 
 Start with the [end-to-end workflow contract](skills/thorlabs-blender-optical-path/references/end-to-end-workflow.md), the [single-run N04 deterministic replay](examples/end-to-end-workflow/n04-v1.0.1-replay/README.md), and its [fresh whole-system runbook](examples/end-to-end-workflow/n04-v1.0.1-replay/RUNBOOK.md). The static replay intentionally stops at `UNVERIFIED` because the repository excludes vendor CAD and the saved representative `.blend`; downstream gates remain pending instead of inheriting a partial `PASS`. A fresh private revision can execute the included fetch, build, reopen, audit, and sanitization scripts end to end.
 
+## v1.1.0 multi-run qualification
+
+The [v1.1.0 qualification package](examples/end-to-end-workflow/qualification-v1.1.0/README.md) compares 64-, 96-, and 128-node N04 scale runs with an independent 40-node stateful interferometer test. The verdict is deliberately mixed: `PARTIAL_SCOPED`, strict-BVH `BLOCKED`, scale-only `PASS_SCOPED`, and topology `UNVERIFIED`. No track supplies a whole-system or physical-release PASS.
+
+The repeated tests hardened atomic source acquisition, live-versus-pinned CAD identity, exact cache aliases, canonical ledger replay, execution-versus-claim status, representative spacing/load evidence, strict collision classification, stateful topology expansion, and public-package sanitization. See [CHANGELOG.md](CHANGELOG.md) for the versioned changes.
+
 ## Public-only forward tests
 
 Four isolated tests started from the published `v1.0.0` tag and used no private Optical Path guidance. They cover a 32-node light-sheet path, a 40-node multi-state interferometer, an OCT representative smoke, and a Thorlabs CAD conversion benchmark.
@@ -91,6 +97,6 @@ The skill guides the agent to:
 - Public scripts must replay the published semantic locks; prose counts must match saved-reopen evidence.
 - Every release is checked for skill metadata, links, file size, ASCII/UTF-16 privacy leaks, forbidden CAD binaries, PNG metadata/CRC/decompression, manifest hashes, and acceptance-state consistency.
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for rule proposals and case-study submissions, [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) for retained literature licensing, and [SECURITY.md](SECURITY.md) for responsible disclosure.
+See [CHANGELOG.md](CHANGELOG.md) for releases, [CONTRIBUTING.md](CONTRIBUTING.md) for rule proposals and case-study submissions, [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) for retained literature licensing, and [SECURITY.md](SECURITY.md) for responsible disclosure.
 
 Maintained by [telux](https://github.com/k-telux). Released under the [MIT License](LICENSE).

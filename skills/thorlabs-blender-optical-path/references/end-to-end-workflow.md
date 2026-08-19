@@ -12,6 +12,7 @@ The spec must declare:
 
 - one stable `run_id`, `writer_id`, workspace, and revision root;
 - `mode=WHOLE_SYSTEM_END_TO_END`, `single_writer=true`, and `allow_module_stitching=false`;
+- `require_claim_status=true` for new runs, so execution authorization and scientific/evidence claim scope cannot be conflated;
 - the complete stage order and required frozen inputs or run outputs;
 - `FULL_ACTIVE_RULE_REGRESSION` for a whole-system claim, otherwise `PARTIAL_SCOPED`;
 - every required free-space, guided-fiber, electrical/data, return, spectrometer, and detector family that is in the declared system.
@@ -21,11 +22,11 @@ Record a gate only after its required artifacts exist, their SHA-256 values are 
 ## Stage order
 
 1. `run_lock`: freeze the run contract, public/private boundary, baseline, writer, units, coordinate frame, and complete requested scope.
-2. `source_lock`: freeze primary literature or the user-authoritative schematic, attribution/license, files, hashes, and any unresolved source identity.
-3. `topology_lock`: map every node, directed port edge, branch, signal family, endpoint, optional/deferred node, and support requirement.
-4. `cad_provenance_lock`: freeze official product/CAD URLs, part numbers, native units, hashes, licenses, model status, semantic ports, and substitutions. Fetch only those locked URLs into the private run cache, verify byte count and SHA-256 before atomic placement, and keep redistribution blocked unless an explicit grant is recorded.
+2. `source_lock`: freeze primary literature or the user-authoritative schematic, attribution/license, files, hashes, and any unresolved source identity. Materialize every declared file as one atomic input bundle; a sanitized derivative with a different byte hash does not replace the frozen source record.
+3. `topology_lock`: map every node, directed port edge, branch, signal family, endpoint, optional/deferred node, and support requirement. For a multi-state system, require exact per-edge state membership and explicit ray templates for every state, or a hashed deterministic expansion replay.
+4. `cad_provenance_lock`: freeze official product/CAD URLs, part numbers, native units, hashes, licenses, model status, semantic ports, and substitutions. Fetch only those locked URLs into the private run cache, verify byte count and SHA-256 before atomic placement, keep redistribution blocked unless an explicit grant is recorded, and run a producer-to-consumer preflight over exact cache aliases and drawing paths before geometry.
 5. `deterministic_replay`: recompute normalized semantic build parameters from frozen inputs and published source with zero unexplained field differences.
-6. `representative_smoke`: use the final generator to build and reopen one repeated assembly; prove mesh, port, ray, BVH, contact, fastener, and load-path gates.
+6. `representative_smoke`: use the final generator to build and reopen one repeated assembly; prove mesh, port, ray, BVH, contact, fastener, actual link-mesh endpoints, and load-path gates. For repeated stations, derive root spacing from the representative reopened aggregate bbox plus a declared margin before propagation.
 7. `full_scene_build`: propagate only the verified transform with the same generator and inputs; create the complete declared topology in one scene.
 8. `saved_scene_reopen`: reopen the saved Blend in a factory process and re-read world meshes, transforms, ports, zero-radius rays, BVH, contacts, load paths, mesh cleanliness, and every repeated instance.
 9. `whole_system_optomechanical_audit`: check every branch and signal family end to end, global neighbor collisions, apertures, fibers/cables, instruments, table holes, and active-rule coverage.
@@ -33,7 +34,7 @@ Record a gate only after its required artifacts exist, their SHA-256 values are 
 11. `export_and_sanitization`: reimport delivered GLB when applicable, scan all bytes and containers, strip public-copy metadata safely, exclude unlicensed CAD, and rebuild hashes/manifests.
 12. `final_consistency`: derive prose/counts/status from machine evidence and require agreement across ledger, audits, README/PDF, manifest, and user-facing summary.
 
-`PASS_TO_NEXT_GATE` authorizes only the next stage. The ledger emits whole-run `PASS` and `final_or_release=true` only after all twelve gates pass under `FULL_ACTIVE_RULE_REGRESSION`. A completely executed `PARTIAL_SCOPED` run remains aggregate `PARTIAL_SCOPED` with `final_or_release=false`. `BLOCKED`, `UNVERIFIED`, or any pending stage also keeps `final_or_release=false`.
+`PASS_TO_NEXT_GATE` authorizes only the next stage; its `claim_status` may still be `PARTIAL_SCOPED`. The ledger emits whole-run `PASS` and `final_or_release=true` only after all twelve gates execute successfully under `FULL_ACTIVE_RULE_REGRESSION` and every claim status is `PASS`. A completely executed or scientifically scoped run remains aggregate `PARTIAL_SCOPED` with `final_or_release=false`. `BLOCKED`, `UNVERIFIED`, or any pending stage also keeps `final_or_release=false`.
 
 ## Representative smoke is not a module
 
@@ -47,7 +48,7 @@ Any write to a frozen input, generator, scene, export, audit, or derived report 
 
 ```text
 python scripts/workflow_ledger.py init --spec RUN_SPEC.json --state WORKFLOW_STATE.json --events WORKFLOW_EVENTS.jsonl
-python scripts/workflow_ledger.py record --spec RUN_SPEC.json --state WORKFLOW_STATE.json --events WORKFLOW_EVENTS.jsonl --writer-id <writer> --stage run_lock --status PASS_TO_NEXT_GATE --event-id E001 --recorded-at <RFC3339>
+python scripts/workflow_ledger.py record --spec RUN_SPEC.json --state WORKFLOW_STATE.json --events WORKFLOW_EVENTS.jsonl --writer-id <writer> --stage run_lock --status PASS_TO_NEXT_GATE --claim-status PASS --event-id E001 --recorded-at <RFC3339>
 python scripts/workflow_ledger.py invalidate --spec RUN_SPEC.json --state WORKFLOW_STATE.json --events WORKFLOW_EVENTS.jsonl --writer-id <writer> --stage topology_lock --event-id E009 --recorded-at <RFC3339> --reason <reason>
 python scripts/workflow_ledger.py validate --spec RUN_SPEC.json --state WORKFLOW_STATE.json --events WORKFLOW_EVENTS.jsonl
 ```

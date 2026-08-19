@@ -1,0 +1,83 @@
+{
+  "schema": "opticalmodeler.qualification-public-manifest.v1",
+  "status": "PASS",
+  "self_excluding": true,
+  "scope": "V1.1.0_MULTI_RUN_METADATA_SCRIPTS_AND_SANITIZED_RASTERS_ONLY",
+  "entries": [
+    {
+      "path": "CROSS_THREAD_CONSENSUS.json",
+      "bytes": 2928,
+      "sha256": "907c094b7bc0434b2c69837dc0e3ae15d8de2ba204e28eda94393ee672e0edfb"
+    },
+    {
+      "path": "QUALIFICATION_MATRIX.json",
+      "bytes": 5195,
+      "sha256": "2e8936eb317fade593918dc27086fd70a15fda234a8ce4c6fcd3046b445d313e"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2955,
+      "sha256": "2caead8386549d7165cccf14abac6d1c4bc0e478c044cd8e4c60296d704ef65b"
+    },
+    {
+      "path": "RUNBOOK.md",
+      "bytes": 4266,
+      "sha256": "6246cccdd8d07790ed9287584b6aebe168b9e56c8ed5047904310aa1957ce045"
+    },
+    {
+      "path": "renders/N04_128NODE_OBLIQUE.png",
+      "bytes": 1106872,
+      "sha256": "dc87023b9a0bf6657171bac0a3e170dd1f79a5dfb6eb9075524d21f28a3761c7"
+    },
+    {
+      "path": "renders/N04_64NODE_CONTACT_SHEET.png",
+      "bytes": 1212560,
+      "sha256": "bd25382a703a693e9a0386ffee39b680d4b9b80d4e8a559593bfc24b2880d8a0"
+    },
+    {
+      "path": "renders/N04_96NODE_CONTACT_SHEET.png",
+      "bytes": 612930,
+      "sha256": "079962605a9426dbb40f9eec9670bf364eac30ad4e9c653c4c7f4507e4b5ad74"
+    },
+    {
+      "path": "scripts/audit_array_reopened.py",
+      "bytes": 8761,
+      "sha256": "4528cfc73c1f5688b2c3143d96663c153a48b48d7584b27e7aaa162ee294029a"
+    },
+    {
+      "path": "scripts/build_array_lock.py",
+      "bytes": 4529,
+      "sha256": "a9fa5954dc3abfc01d612823498ffde60b6c79f30ea8ce87ca745fab36c9be2b"
+    },
+    {
+      "path": "scripts/create_array_run_spec.py",
+      "bytes": 7234,
+      "sha256": "a4301b5645f44dd595a5aeddfe4751db18783fb61cb7c896e58bb8b1e6db4be1"
+    },
+    {
+      "path": "scripts/expand_array_scene.py",
+      "bytes": 8634,
+      "sha256": "b9e82401d87259e72a8fe783b007fb933fdeb76f2ae9a96f190f980f04880f27"
+    },
+    {
+      "path": "scripts/finalize_array_run.py",
+      "bytes": 6780,
+      "sha256": "709a38e75022d1daaf9bfb5065b6d814b2fe85c546855ed62e11dd37227e8798"
+    },
+    {
+      "path": "scripts/opencv_audit_array.py",
+      "bytes": 4697,
+      "sha256": "e147091b91fcfaf2eaa372227697d6d762595f31300056ff1202c0a9fb4a413d"
+    },
+    {
+      "path": "scripts/verify_array_lock_replay.py",
+      "bytes": 3539,
+      "sha256": "86a707ccb55cd503efe01f46d2db482c3777d876aa9260b1a751abb27112e205"
+    },
+    {
+      "path": "scripts/verify_array_second_reopen.py",
+      "bytes": 5287,
+      "sha256": "c1684880e90fc3f37e85c5a30931a51066ab0109e20476ee4e19560cd1acf083"
+    }
+  ]
+}

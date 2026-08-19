@@ -32,6 +32,10 @@ Use a continuous load path:
 - Make a fork clamp capture its own adapter. Put the washer on the slot bearing surface and the shank through the slot into a verified open table hole.
 - Classify thread/hole engagement separately from illegal opaque-body collision.
 - Prove raised boards and large instruments with a complete table-to-device load path and side/cutaway views.
+- Anchor every serialized load witness to reopened mesh surface points or measured contact envelopes. Object origins and nominal centers are not load-path endpoints unless independently proved to lie on the intended interface.
+- Send every evaluated-world-mesh AABB candidate through narrow-phase BVH before classification. Never skip a pair merely because it shares a node, family, station, table, prefix, wildcard, or regex.
+- Declare allowed contacts before the audit by exact object/role pair, interface or load-link proof ID, and numeric gap/penetration envelope. Any unclassified or out-of-envelope overlap is illegal.
+- Freeze a finite regeneration budget in the run spec. When it is exhausted, retain the exact illegal pairs and return `BLOCKED`; do not broaden the allowlist to force PASS.
 
 ## CAD conversion
 
@@ -94,7 +98,7 @@ Use a continuous load path:
 
 ## Numeric defaults
 
-Use the real manufacturer specification when it is stricter. Otherwise use these evidence defaults:
+Use the strictest applicable user requirement, primary-source tolerance, or manufacturer specification. Record which authority supplied each non-default threshold. Otherwise use these evidence defaults:
 
 | Gate | Default |
 |---|---:|

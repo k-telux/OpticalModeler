@@ -1,0 +1,122 @@
+{
+  "schema": "opticalmodeler.multi-run-qualification-matrix.v1",
+  "release_candidate": "v1.1.0",
+  "public_baseline_commit": "3a417ea19fdf51979b3acbf273900e626268b7f2",
+  "status": "NO_WHOLE_SYSTEM_PASS",
+  "final_or_release_physical_system": false,
+  "skill_release_scope": "WORKFLOW_AND_EVIDENCE_TOOLING_ONLY",
+  "tracks": [
+    {
+      "id": "n04-64-node-root",
+      "isolation": "CURRENT_WORKTREE_QUALIFICATION_NOT_BLIND",
+      "stations": 2,
+      "nodes": 64,
+      "directed_edges": 88,
+      "official_instances": 308,
+      "modeled_load_links": 312,
+      "saved_blend_bytes": 133057274,
+      "saved_blend_sha256": "15a55dc74d61f7740664a6086719370af1700d71155c71be82bcb2baf80bddcd",
+      "post_clean_invalid_faces": 0,
+      "execution_status": "CANONICAL_12_GATES_EXECUTED",
+      "claim_status": "PARTIAL_SCOPED",
+      "final_or_release": false,
+      "ledger_event_count": 18,
+      "ledger_head_sha256": "79a135e9be983598a757b170d71d0dac11bc2d9fab701be8930ce7a1d4790a1c",
+      "reproduced_defects": [
+        "non-atomic SOURCE_LOCK byte bundle",
+        "canonical versus part-qualified CAD cache key mismatch",
+        "official drawing producer-consumer path mismatch",
+        "S4FC488 current-live source drift"
+      ]
+    },
+    {
+      "id": "n04-96-node-blind",
+      "isolation": "PASS_PUBLIC_ONLY_PRIVATE_CONTEXT_READS_0",
+      "stations": 3,
+      "nodes": 96,
+      "directed_edges": 132,
+      "official_instances": 462,
+      "modeled_load_links": 468,
+      "saved_blend_bytes": 133264406,
+      "saved_blend_sha256": "22b3663ca7d0f35af8b658df13b9ce0a6686994dd13ecd3b0e7ca5628804d352",
+      "post_clean_invalid_faces": 0,
+      "ports_pass": 96,
+      "rays_pass": 132,
+      "load_links_pass": 468,
+      "illegal_strict_bvh_pairs": 15,
+      "execution_status": "STOPPED_AT_WHOLE_SYSTEM_OPTOMECHANICAL_AUDIT",
+      "claim_status": "BLOCKED",
+      "final_or_release": false,
+      "ledger_event_count": 16,
+      "ledger_head_sha256": "b93201a848d64aa2460b3beedff826c57f8f7c607bbddfb8a3bc18b7526ccf15",
+      "authoritative_blocker": "five repeated illegal load-link-to-endpoint overlaps per station after removing same-node blanket skips"
+    },
+    {
+      "id": "n04-128-node-blind",
+      "isolation": "PASS_PUBLIC_ONLY_PRIVATE_CONTEXT_READS_0",
+      "stations": 4,
+      "nodes": 128,
+      "directed_edges": 176,
+      "official_instances": 616,
+      "modeled_load_links": 624,
+      "saved_blend_bytes": 864408996,
+      "reopened_triangles": 18092715,
+      "post_clean_invalid_faces": 0,
+      "cross_station_overlap_candidates": 0,
+      "execution_status": "CANONICAL_12_GATES_EXECUTED_AFTER_FORMAL_INVALIDATION",
+      "claim_status": "PASS_SCOPED_SCALE_ONLY",
+      "aggregate_status": "PARTIAL_SCOPED",
+      "final_or_release": false,
+      "ledger_event_count": 18,
+      "ledger_head_sha256": "5564a84db96b37c095105a17a89d581c02c36b525afbce1a0c13e532fb477403",
+      "invalidated_failures": [
+        "two station aggregate AABB overlaps",
+        "92 origin-based load witness endpoint failures"
+      ],
+      "remaining_boundaries": [
+        "intra-station strict physical certification not established",
+        "native-aperture first-hit and narrow-phase load contact remain unverified",
+        "S4FC488 pinned identity is BLOCKED_SOURCE_DRIFT"
+      ]
+    },
+    {
+      "id": "interferometer-40-node-blind",
+      "isolation": "PASS_PUBLIC_ONLY_PRIVATE_CONTEXT_READS_0",
+      "nodes": 40,
+      "directed_edges": 66,
+      "branches": 14,
+      "execution_status": "STOPPED_AT_TOPOLOGY_LOCK",
+      "graph_structure_claim": "PASS_SCOPED_GRAPH_STRUCTURE_ONLY",
+      "claim_status": "UNVERIFIED",
+      "final_or_release": false,
+      "ledger_event_count": 3,
+      "ledger_head_sha256": "71f3369fbe924ff45f1657fa4410303a58b0447a7f0eca2d1618825da2407bf2",
+      "blockers": [
+        "exact per-state edge membership absent",
+        "15-to-32 state ray expansion not source locked",
+        "LOCK ray template absent"
+      ],
+      "non_authorizing_cad_diagnostic": "30/30 current official STEP identities matched the historical hashes"
+    }
+  ],
+  "live_cad_snapshot": {
+    "audited_urls": 54,
+    "pinned_identity_matches": 53,
+    "source_drifts": 1,
+    "drift": {
+      "part_number": "S4FC488",
+      "filename": "TTN111434-E0W.step",
+      "pinned_bytes": 165590552,
+      "pinned_sha256": "9e4c83ff904c1bed4a31fc304c0640de50a2e8f097fd7a8cd21ecb67c64aa7d5",
+      "current_bytes": 165553688,
+      "current_sha256": "ed062f48623adf6b425c0e13911795bcbbdcc25b8cc54dcb989cd8a83f2b482c",
+      "status": "PARTIAL_SCOPED_SOURCE_DRIFT",
+      "gate_credit": false
+    }
+  },
+  "public_renders": [
+    {"path": "renders/N04_64NODE_CONTACT_SHEET.png", "sha256": "bd25382a703a693e9a0386ffee39b680d4b9b80d4e8a559593bfc24b2880d8a0", "scope": "VISIBILITY_ONLY"},
+    {"path": "renders/N04_96NODE_CONTACT_SHEET.png", "sha256": "079962605a9426dbb40f9eec9670bf364eac30ad4e9c653c4c7f4507e4b5ad74", "scope": "VISIBILITY_ONLY_BLOCKED_PHYSICAL_CLAIM"},
+    {"path": "renders/N04_128NODE_OBLIQUE.png", "sha256": "dc87023b9a0bf6657171bac0a3e170dd1f79a5dfb6eb9075524d21f28a3761c7", "scope": "VISIBILITY_ONLY_PASS_SCOPED_SCALE"}
+  ]
+}

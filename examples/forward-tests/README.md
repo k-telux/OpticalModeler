@@ -25,3 +25,5 @@ The machine-readable [RESULTS.json](RESULTS.json) is the status source for this 
 ## Unified end-to-end replay
 
 The four rows above remain historical isolated tests. They must not be stitched into one whole-system claim. The [`v1.0.1` N04 unified-ledger replay](../end-to-end-workflow/n04-v1.0.1-replay/README.md) applies the new one-run/one-writer/one-lineage contract to a single 32-node package and intentionally stops at `representative_smoke=UNVERIFIED` because the static public fixture excludes vendor CAD and the saved representative scene. Its [fresh-run runbook](../end-to-end-workflow/n04-v1.0.1-replay/RUNBOOK.md) provides the complete executable path without redistributing those binaries.
+
+The later [v1.1.0 multi-run qualification](../end-to-end-workflow/qualification-v1.1.0/README.md) is a separate hardening campaign. It preserves every 64/96/128/40-node verdict independently and uses their disagreements to repair the workflow and evidence tools; it does not retroactively promote this historical matrix.

@@ -1,0 +1,36 @@
+{
+  "schema": "opticalmodeler.cross-thread-consensus.v1",
+  "status": "UNANIMOUS_CONSENSUS",
+  "whole_system_or_release_pass": false,
+  "decisions": [
+    {"id": "A", "decision": "MODIFY_AND_IMPLEMENT", "priority": "P0_GENERAL", "topic": "canonical ledger, exact replay/artifact reconciliation, event identity, execution versus claim status"},
+    {"id": "B", "decision": "ACCEPT_AND_IMPLEMENT", "priority": "P0_GENERAL", "topic": "atomic source bundle, producer-consumer preflight, canonical CAD aliases, independent live/cache/geometry/semantic/licensing axes"},
+    {"id": "D", "decision": "ACCEPT_AND_DOCUMENT", "priority": "P0_PHYSICAL", "topic": "strict per-candidate BVH, exact allowed contacts, finite retry budget, blocked handoff"},
+    {"id": "C", "decision": "MODIFY_AND_IMPLEMENT_SCOPED", "priority": "P0_BEFORE_PROPAGATION", "topic": "representative physical endpoint/load proof, spacing preflight, exact double-reopen identity and station signatures"},
+    {"id": "E", "decision": "ACCEPT_CONDITIONAL_PROFILE", "priority": "P0_WHEN_MULTISTATE", "topic": "exact per-state edge membership and deterministic ray templates"},
+    {"id": "F", "decision": "MODIFY_AND_IMPLEMENT_RELEASE_BOUNDARY", "priority": "P0_BEFORE_PUBLIC_RELEASE", "topic": "role-specific visual evidence, raw-byte/container sanitization, manifest-last read-only postscan"}
+  ],
+  "common_priority": ["A", "B", "D", "C", "E_WHEN_APPLICABLE", "F_BEFORE_RELEASE"],
+  "general_rules": [
+    "Execution completion cannot upgrade a PARTIAL_SCOPED, UNVERIFIED, or BLOCKED claim.",
+    "Every source and consumer key is a hash-addressed contract; current-live identity is separate from historical pinned bytes.",
+    "Every actual collision candidate receives narrow-phase evidence; same-node/family/table blanket exemptions are invalid.",
+    "Representative proof covers every active support/load template before propagation, not only one optical component.",
+    "Multi-state topology requires explicit state membership and ray expansion when applicable.",
+    "Visual and package-integrity PASS remain independent from physical and performance claims."
+  ],
+  "snapshot_only_facts": [
+    "all 64/96/128/40 numeric counts and timings",
+    "S4FC488 being the only drift in the 2026-08-18 54-URL snapshot",
+    "the 96-node five-per-station illegal overlap pattern",
+    "the 128-node spacing/load-witness invalidation and 70/100 Skill score",
+    "the 40-node 15-to-32 ray expansion gap"
+  ],
+  "consensus_tests": [
+    "64-node remains PARTIAL_SCOPED until the A/B defects are repaired in a new revision.",
+    "96-node remains BLOCKED until strict reopened illegal_pair_count equals zero.",
+    "128-node remains PASS_SCOPED_SCALE_ONLY and cannot borrow evidence from another track.",
+    "40-node remains topology UNVERIFIED until the state expansion replays exactly.",
+    "No cross-run stitching may infer a whole-system or release PASS."
+  ]
+}

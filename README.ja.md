@@ -38,6 +38,12 @@ OpticalModeler は、実験室の光路を Blender で再構築する証拠優�
 
 [End-to-end workflow contract](skills/thorlabs-blender-optical-path/references/end-to-end-workflow.md)、[single-run N04 deterministic replay](examples/end-to-end-workflow/n04-v1.0.1-replay/README.md)、[fresh whole-system runbook](examples/end-to-end-workflow/n04-v1.0.1-replay/RUNBOOK.md) から開始してください。Static replay は vendor CAD と代表 `.blend` を repository から除外するため `UNVERIFIED` で停止し、下流 gate は pending のままです。新しい private revision では公開済み fetch/build/reopen/audit/sanitization script を連続実行できます。
 
+## v1.1.0 multi-run qualification
+
+[v1.1.0 qualification package](examples/end-to-end-workflow/qualification-v1.1.0/README.md) は 64/96/128-node N04 scale run と独立した 40-node multi-state interferometer test を比較します。権威 verdict は `PARTIAL_SCOPED`、strict-BVH `BLOCKED`、scale-only `PASS_SCOPED`、topology `UNVERIFIED` のままで、whole-system physical/release PASS はありません。
+
+反復試験により atomic source bundle、live/pinned CAD identity、cache alias、ledger replay、execution/claim status、representative spacing/load、strict collision、stateful topology、public sanitization を強化しました。版ごとの変更は [CHANGELOG.md](CHANGELOG.md) を参照してください。
+
 ## 公開 forward test
 
 [4 トラックの公開テスト行列](examples/forward-tests/README.md)は、公開 `v1.0.0` Skill だけを使用した light-sheet/N04、自由空間干渉計、OCT、Thorlabs CAD conversion の分離テストです。Sanitized evidence package、完全な workflow、generation log、replay script を公開し、N04 は propagation `PASS` / model `PARTIAL_SCOPED`、interferometer は `PARTIAL_SCOPED`、OCT は `UNVERIFIED`、CAD conversion は `BLOCKED` のまま保持します。

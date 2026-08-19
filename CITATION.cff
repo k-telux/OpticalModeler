@@ -6,5 +6,5 @@ authors:
   - family-names: "telux"
 repository-code: "https://github.com/k-telux/OpticalModeler"
 license: MIT
-version: 1.0.1
-date-released: 2026-08-11
+version: 1.1.0
+date-released: 2026-08-18

@@ -7,7 +7,7 @@ description: 2D 光学回路図とメーカー CAD から、単一の end-to-end
 
 2D 回路図を、説明可能で独立監査可能な Blender 光学テーブルへ変換します。
 
-英語版を技術的な正本とします。形状作業の前に `../../skills/thorlabs-blender-optical-path/references/physical-gates.md`、合否判定の前に `evidence-contract.md`、既存シーンの改訂では `history-derived-rules.md`、実例では `project-case-study.md`、全系 run の前に `end-to-end-workflow.md` を読みます。
+英語版を技術的な正本とします。形状作業の前に `../../skills/thorlabs-blender-optical-path/references/physical-gates.md`、合否判定の前に `evidence-contract.md`、既存シーンの改訂では `history-derived-rules.md`、実例では `project-case-study.md`、全系 run の前に `end-to-end-workflow.md`、複数 run の scale/release qualification 前に `multi-run-qualification.md` を読みます。
 
 ## 権限と改訂
 
@@ -23,11 +23,13 @@ description: 2D 光学回路図とメーカー CAD から、単一の end-to-end
 2. `schematic node -> experimental role -> real asset -> optical/fiber/electrical ports -> support path` を作成します。
 3. 全 branch、部品、光線高さ、開口、検出端点を列挙します。
 4. manifest で固定したメーカー URL だけから公式 CAD を private cache に取得し、atomic placement 前に bytes と SHA-256 を検証します。型番、URL、scale、bbox、local axis/normal、aperture、provenance、redistribution boundary を記録し、明示許諾なしに vendor geometry を公開しません。
-5. 光学中心、鏡面、分割面、反射、branch continuity を先に解きます。
-6. 実テーブル穴から fastener、clamp、holder、post、mount、device を post-first で組みます。
-7. 共通の配置原因を修正し、同じ run の代表 1 台を証明してから展開し、保存後に全コピーを再監査します。
-8. beauty render より先に明るい mechanical/axial/cutaway 監査画像を作ります。
-9. 公開スクリプトから同一 semantic lock を再計算し、README/GATE の数値を機械証拠から導出してから、同じ ledger で reopen、whole-system ray/BVH、OpenCV、GLB reimport、binary/PNG metadata sanitization、manifest、hash、active-rule matrix を完了します。
+5. source lock と全 hashed files を一つの atomic input bundle として扱います。形状作業前に producer-to-consumer artifact preflight を実行し、source bytes、canonical/part-qualified CAD cache keys、公式 drawing、runtime が次の script の実消費 path に存在することを確認します。
+6. 公開 script から semantic lock を差分ゼロで再計算します。multi-state system では全 edge に正確な `active_states` または hashed deterministic expansion を持たせ、全 state に明示的 ray template を要求します。
+7. 光学中心、鏡面、分割面、反射、branch continuity を先に解きます。
+8. 実テーブル穴から fastener、clamp、holder、post、mount、device を post-first で組みます。
+9. 共通の配置原因を修正し、同じ run の代表 1 台を証明してから展開し、保存後に全コピーを再監査します。
+10. beauty render より先に明るい mechanical/axial/cutaway 監査画像を作ります。
+11. README/GATE 数値を machine evidence から導出し、同じ ledger で reopen、whole-system ray/BVH、OpenCV、GLB reimport、binary/PNG metadata sanitization、manifest、hash、active-rule matrix を完了します。
 
 自由空間光、ガイドファイバー、電気ケーブルは別 family とします。開口は実際に開いていなければなりません。物理 PASS 後にのみ Nature スタイルの材質、照明、カメラ、注釈を変更できます。
 

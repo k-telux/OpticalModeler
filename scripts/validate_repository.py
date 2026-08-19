@@ -21,6 +21,7 @@ SKILLS = {
 }
 REQUIRED = [
     ROOT / "LICENSE",
+    ROOT / "CHANGELOG.md",
     ROOT / "README.md",
     ROOT / "README.zh-CN.md",
     ROOT / "README.ja.md",
@@ -37,9 +38,26 @@ REQUIRED = [
     ROOT / "examples/end-to-end-workflow/n04-v1.0.1-replay/README.md",
     ROOT / "examples/end-to-end-workflow/n04-v1.0.1-replay/RUNBOOK.md",
     ROOT / "examples/end-to-end-workflow/n04-v1.0.1-replay/stage-scripts/fetch_official_cad.py",
+    ROOT / "examples/end-to-end-workflow/n04-v1.0.1-replay/stage-scripts/audit_live_cad_sources.py",
+    ROOT / "examples/end-to-end-workflow/n04-v1.0.1-replay/stage-scripts/fetch_source_lock_artifacts.py",
     ROOT / "examples/end-to-end-workflow/n04-v1.0.1-replay/stage-scripts/finalize_whole_system_run.py",
+    ROOT / "examples/end-to-end-workflow/n04-v1.0.1-replay/stage-scripts/preflight_artifact_contract.py",
     ROOT / "skills/thorlabs-blender-optical-path/references/end-to-end-workflow.md",
+    ROOT / "skills/thorlabs-blender-optical-path/references/multi-run-qualification.md",
     ROOT / "skills/thorlabs-blender-optical-path/scripts/workflow_ledger.py",
+    ROOT / "examples/end-to-end-workflow/qualification-v1.1.0/QUALIFICATION_MATRIX.json",
+    ROOT / "examples/end-to-end-workflow/qualification-v1.1.0/CROSS_THREAD_CONSENSUS.json",
+    ROOT / "examples/end-to-end-workflow/qualification-v1.1.0/README.md",
+    ROOT / "examples/end-to-end-workflow/qualification-v1.1.0/RUNBOOK.md",
+    ROOT / "examples/end-to-end-workflow/qualification-v1.1.0/PUBLIC_MANIFEST.json",
+    ROOT / "examples/end-to-end-workflow/qualification-v1.1.0/scripts/build_array_lock.py",
+    ROOT / "examples/end-to-end-workflow/qualification-v1.1.0/scripts/create_array_run_spec.py",
+    ROOT / "examples/end-to-end-workflow/qualification-v1.1.0/scripts/verify_array_lock_replay.py",
+    ROOT / "examples/end-to-end-workflow/qualification-v1.1.0/scripts/expand_array_scene.py",
+    ROOT / "examples/end-to-end-workflow/qualification-v1.1.0/scripts/audit_array_reopened.py",
+    ROOT / "examples/end-to-end-workflow/qualification-v1.1.0/scripts/verify_array_second_reopen.py",
+    ROOT / "examples/end-to-end-workflow/qualification-v1.1.0/scripts/opencv_audit_array.py",
+    ROOT / "examples/end-to-end-workflow/qualification-v1.1.0/scripts/finalize_array_run.py",
 ]
 PUBLIC_PACKAGES = [
     {
@@ -73,6 +91,14 @@ PUBLIC_PACKAGES = [
         "path": "path",
         "bytes": "bytes",
         "extras": {"PUBLIC_FILE_MANIFEST.json", "MANIFEST.sha256"},
+    },
+    {
+        "root": ROOT / "examples/end-to-end-workflow/qualification-v1.1.0",
+        "manifest": "PUBLIC_MANIFEST.json",
+        "records": "entries",
+        "path": "path",
+        "bytes": "bytes",
+        "extras": {"PUBLIC_MANIFEST.json"},
     },
 ]
 FORBIDDEN_SUFFIXES = {".blend", ".blend1", ".blend2", ".step", ".stp", ".stl"}
@@ -268,6 +294,41 @@ def check_unified_workflow() -> None:
     assert tests.returncode == 0, tests.stderr or tests.stdout
 
 
+def check_multi_run_qualification() -> None:
+    root = ROOT / "examples/end-to-end-workflow/qualification-v1.1.0"
+    matrix = json.loads((root / "QUALIFICATION_MATRIX.json").read_text(encoding="utf-8"))
+    assert matrix["release_candidate"] == "v1.1.0"
+    assert matrix["status"] == "NO_WHOLE_SYSTEM_PASS"
+    assert matrix["final_or_release_physical_system"] is False
+    tracks = {track["id"]: track for track in matrix["tracks"]}
+    assert set(tracks) == {"n04-64-node-root", "n04-96-node-blind", "n04-128-node-blind", "interferometer-40-node-blind"}
+    assert tracks["n04-64-node-root"]["claim_status"] == "PARTIAL_SCOPED"
+    assert tracks["n04-96-node-blind"]["claim_status"] == "BLOCKED"
+    assert tracks["n04-96-node-blind"]["illegal_strict_bvh_pairs"] == 15
+    assert tracks["n04-128-node-blind"]["claim_status"] == "PASS_SCOPED_SCALE_ONLY"
+    assert tracks["n04-128-node-blind"]["final_or_release"] is False
+    assert tracks["interferometer-40-node-blind"]["claim_status"] == "UNVERIFIED"
+    assert matrix["live_cad_snapshot"]["source_drifts"] == 1
+    assert matrix["live_cad_snapshot"]["drift"]["gate_credit"] is False
+    for record in matrix["public_renders"]:
+        target = root / record["path"]
+        assert target.is_file()
+        assert sha256(target) == record["sha256"]
+        assert record["scope"].startswith("VISIBILITY_ONLY")
+    consensus = json.loads((root / "CROSS_THREAD_CONSENSUS.json").read_text(encoding="utf-8"))
+    assert consensus["status"] == "UNANIMOUS_CONSENSUS"
+    assert consensus["whole_system_or_release_pass"] is False
+    decisions = {item["id"]: item["decision"] for item in consensus["decisions"]}
+    assert decisions == {
+        "A": "MODIFY_AND_IMPLEMENT",
+        "B": "ACCEPT_AND_IMPLEMENT",
+        "D": "ACCEPT_AND_DOCUMENT",
+        "C": "MODIFY_AND_IMPLEMENT_SCOPED",
+        "E": "ACCEPT_CONDITIONAL_PROFILE",
+        "F": "MODIFY_AND_IMPLEMENT_RELEASE_BOUNDARY",
+    }
+
+
 def main() -> None:
     for path in REQUIRED:
         assert path.exists(), f"missing required file: {path.relative_to(ROOT)}"
@@ -294,6 +355,7 @@ def main() -> None:
     manifest_entry_count = sum(check_manifest(package) for package in PUBLIC_PACKAGES)
     check_forward_test_statuses()
     check_unified_workflow()
+    check_multi_run_qualification()
 
     acceptance = json.loads((ROOT / "examples/g1g2/evidence/v18_nature_final_acceptance.json").read_text(encoding="utf-8"))
     assert acceptance["status"] == "PASS_V18_NATURE_FINAL_VERIFIED"

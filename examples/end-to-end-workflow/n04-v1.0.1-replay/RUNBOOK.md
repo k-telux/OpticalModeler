@@ -47,6 +47,12 @@ Copy-Item (Join-Path $Workflow 'stage-inputs\REPRESENTATIVE_INPUT_LOCK.json') $R
 Copy-Item (Join-Path $Workflow 'stage-inputs\CAD_NATIVE_PORT_LOCK.json') $RepMeasurements
 ```
 
+The three JSON locks are not the complete source input. Materialize and verify every literature byte record declared by `SOURCE_LOCK.json` before recording `source_lock`:
+
+```powershell
+python (Join-Path $Workflow 'stage-scripts\fetch_source_lock_artifacts.py') $RunRoot
+```
+
 Create a new `RUN_SPEC.json` from this fixture's schema, set `workspace_root` and `revision_root` to the new run, keep `single_writer=true` and `allow_module_stitching=false`, then initialize an empty ledger:
 
 ```powershell
@@ -62,14 +68,16 @@ Run the following commands in order. Stop on the first nonzero exit code; do not
 
 ```powershell
 python (Join-Path $Workflow 'stage-scripts\fetch_official_cad.py') $RunRoot
+python (Join-Path $Workflow 'stage-scripts\audit_live_cad_sources.py') $RunRoot
+python (Join-Path $RepScripts 'verify_official_drawings.py') $RunRoot
+python (Join-Path $Workflow 'stage-scripts\preflight_artifact_contract.py') $RunRoot
 ```
 
-The fetcher tries only manifest-locked official URLs, verifies byte count and SHA-256 before atomic placement, and writes `work/vendor_cad_cache/CAD_FETCH_AUDIT.json`. The cache is explicitly non-redistributable.
+The fetcher tries only manifest-locked official URLs, verifies byte count and SHA-256 before atomic placement, and writes both the canonical filename and every `part_number__filename` consumer alias from the same verified bytes. The live-source audit independently streams the current official payloads without replacing the pinned cache; any drift blocks a current-catalog provenance PASS until a new run-specific lock and geometry audit are frozen. The drawing verifier writes to the filenames declared by `REPRESENTATIVE_INPUT_LOCK.json`. The preflight then checks all source files, 108 CAD consumer keys, and six drawing consumer keys before long CAD or Blender work. The cache is explicitly non-redistributable.
 
 ### 2. Representative N04 mechanical interface
 
 ```powershell
-python (Join-Path $RepScripts 'verify_official_drawings.py') $RunRoot
 & $CadPython (Join-Path $RepScripts 'measure_representative_cad.py') $RunRoot
 & $CadPython (Join-Path $RepScripts 'prepare_cad_meshes.py') $RunRoot
 python (Join-Path $RepScripts 'clean_and_audit_stl.py') $RunRoot

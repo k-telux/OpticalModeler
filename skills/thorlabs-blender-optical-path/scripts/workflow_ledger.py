@@ -8,6 +8,7 @@ import hashlib
 import json
 import re
 from copy import deepcopy
+from datetime import datetime
 from pathlib import Path
 
 
@@ -16,8 +17,24 @@ STATE_SCHEMA = "opticalmodeler.whole-system-workflow-state.v1"
 EVENT_SCHEMA = "opticalmodeler.whole-system-workflow-event.v1"
 PASS = "PASS_TO_NEXT_GATE"
 STAGE_STATUSES = {"PENDING", PASS, "BLOCKED", "UNVERIFIED"}
+CLAIM_STATUSES = {"PASS", "PARTIAL_SCOPED", "BLOCKED", "UNVERIFIED", "NOT_APPLICABLE"}
 ZERO_HASH = "0" * 64
 SHA256_RE = re.compile(r"^[0-9a-f]{64}$")
+RFC3339_RE = re.compile(r"^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(?:\.\d+)?(?:Z|[+-]\d{2}:\d{2})$")
+CANONICAL_STAGES = (
+    "run_lock",
+    "source_lock",
+    "topology_lock",
+    "cad_provenance_lock",
+    "deterministic_replay",
+    "representative_smoke",
+    "full_scene_build",
+    "saved_scene_reopen",
+    "whole_system_optomechanical_audit",
+    "visual_audit",
+    "export_and_sanitization",
+    "final_consistency",
+)
 
 
 def canonical(value: object) -> bytes:
@@ -64,6 +81,7 @@ def validate_spec(spec_path: Path, spec: dict[str, object]) -> list[dict[str, ob
     assert spec.get("single_writer") is True
     assert spec.get("allow_module_stitching") is False
     assert spec.get("audit_scope") in {"FULL_ACTIVE_RULE_REGRESSION", "PARTIAL_SCOPED"}
+    assert isinstance(spec.get("require_claim_status", False), bool)
     workspace, revision = roots(spec_path, spec)
     assert workspace.is_dir(), f"workspace_root missing: {workspace}"
     assert revision.is_dir(), f"revision_root missing: {revision}"
@@ -80,6 +98,11 @@ def validate_spec(spec_path: Path, spec: dict[str, object]) -> list[dict[str, ob
         ids.append(stage_id)
         artifacts = stage.get("required_artifacts", [])
         assert isinstance(artifacts, list)
+        applicable = stage.get("applicable", True)
+        assert isinstance(applicable, bool)
+        if not applicable:
+            assert isinstance(stage.get("na_reason"), str) and stage["na_reason"].strip()
+            assert not artifacts, f"non-applicable stage cannot require artifacts: {stage_id}"
         for artifact in artifacts:
             assert isinstance(artifact, dict)
             role = artifact.get("role")
@@ -101,12 +124,12 @@ def validate_spec(spec_path: Path, spec: dict[str, object]) -> list[dict[str, ob
             if kind == "RUN_OUTPUT":
                 assert inside(target, revision), f"run output escapes revision: {relative}"
             roles.add(role)
-    assert ids[0] == "run_lock", "first stage must be run_lock"
+    assert tuple(ids) == CANONICAL_STAGES, f"whole-system stages must equal canonical order: {CANONICAL_STAGES}"
     return stages
 
 
 def blank_state(spec_path: Path, spec: dict[str, object], stages: list[dict[str, object]]) -> dict[str, object]:
-    return {
+    state = {
         "schema": STATE_SCHEMA,
         "run_id": spec["run_id"],
         "writer_id": spec["writer_id"],
@@ -129,6 +152,9 @@ def blank_state(spec_path: Path, spec: dict[str, object], stages: list[dict[str,
             for stage in stages
         },
     }
+    if spec.get("require_claim_status", False):
+        state["require_claim_status"] = True
+    return state
 
 
 def refresh_summary(state: dict[str, object], stage_order: list[str]) -> None:
@@ -137,7 +163,8 @@ def refresh_summary(state: dict[str, object], stage_order: list[str]) -> None:
     current = next((stage_id for stage_id in stage_order if records[stage_id]["status"] != PASS), None)
     state["current_stage"] = current
     if current is None:
-        full_scope = state["audit_scope"] == "FULL_ACTIVE_RULE_REGRESSION"
+        claims_full = all(records[stage_id].get("claim_status", "PASS") in {"PASS", "NOT_APPLICABLE"} for stage_id in stage_order)
+        full_scope = state["audit_scope"] == "FULL_ACTIVE_RULE_REGRESSION" and claims_full
         state["aggregate_status"] = "PASS" if full_scope else "PARTIAL_SCOPED"
         state["final_or_release"] = full_scope
         return
@@ -175,17 +202,34 @@ def apply_event(state: dict[str, object], event: dict[str, object], stage_order:
     stage_id = str(event.get("stage_id"))
     assert stage_id in stage_order
     if event_type == "STAGE_RECORD":
+        assert stage_id == state["current_stage"], f"event stage is not current stage: {stage_id} != {state['current_stage']}"
         status = event.get("status")
         assert status in STAGE_STATUSES - {"PENDING"}
+        claim_status = event.get("claim_status")
+        if state.get("require_claim_status") is True:
+            assert claim_status in CLAIM_STATUSES, "claim_status is required by this run spec"
+        if claim_status is not None:
+            assert claim_status in CLAIM_STATUSES
+            if status == PASS:
+                assert claim_status in {"PASS", "PARTIAL_SCOPED", "NOT_APPLICABLE"}
+            else:
+                assert claim_status == status
+        artifacts, blockers, notes = event.get("artifacts"), event.get("blockers"), event.get("notes")
+        assert isinstance(artifacts, list) and isinstance(blockers, list) and isinstance(notes, list)
+        assert (status == PASS and not blockers) or (status != PASS and blockers), (
+            "PASS cannot carry blockers; BLOCKED/UNVERIFIED requires at least one blocker"
+        )
         record = state["stages"][stage_id]
         record.update(
             status=status,
             event_id=event["event_id"],
             recorded_at=event["recorded_at"],
-            artifacts=deepcopy(event["artifacts"]),
-            blockers=deepcopy(event["blockers"]),
-            notes=deepcopy(event["notes"]),
+            artifacts=deepcopy(artifacts),
+            blockers=deepcopy(blockers),
+            notes=deepcopy(notes),
         )
+        if claim_status is not None:
+            record["claim_status"] = claim_status
     elif event_type == "INVALIDATE_FROM_STAGE":
         start = stage_order.index(stage_id)
         for invalidated in stage_order[start:]:
@@ -208,9 +252,47 @@ def replay(spec_path: Path, spec: dict[str, object], events: list[dict[str, obje
     stages = validate_spec(spec_path, spec)
     state = blank_state(spec_path, spec, stages)
     stage_order = [str(stage["id"]) for stage in stages]
+    seen_event_ids: set[str] = set()
+    previous_recorded_at: datetime | None = None
     for event in events:
+        event_id = event.get("event_id")
+        assert isinstance(event_id, str) and event_id and event_id not in seen_event_ids, f"duplicate or empty event id: {event_id}"
+        seen_event_ids.add(event_id)
+        recorded_at = event.get("recorded_at")
+        assert isinstance(recorded_at, str) and RFC3339_RE.fullmatch(recorded_at), f"invalid RFC3339 recorded_at: {recorded_at}"
+        parsed = datetime.fromisoformat(recorded_at.replace("Z", "+00:00"))
+        assert parsed.tzinfo is not None, f"recorded_at must include an RFC3339 timezone: {recorded_at}"
+        assert previous_recorded_at is None or parsed >= previous_recorded_at, "recorded_at values must be nondecreasing"
+        previous_recorded_at = parsed
         apply_event(state, event, stage_order)
     return state
+
+
+def reconcile_recorded_artifacts(spec: dict[str, object], state: dict[str, object]) -> None:
+    stage_specs = {str(stage["id"]): stage for stage in spec["stages"]}
+    for stage_id, record in state["stages"].items():
+        stage_spec = stage_specs[stage_id]
+        requirements = {item["role"]: item for item in stage_spec.get("required_artifacts", [])}
+        if stage_spec.get("applicable", True) is False and record["status"] != "PENDING":
+            assert record.get("claim_status") == "NOT_APPLICABLE", f"non-applicable stage claim drift: {stage_id}"
+        if stage_spec.get("applicable", True) is True:
+            assert record.get("claim_status") != "NOT_APPLICABLE", f"applicable stage claim drift: {stage_id}"
+        artifacts = record["artifacts"]
+        assert isinstance(artifacts, list)
+        recorded = {item["role"]: item for item in artifacts}
+        assert len(recorded) == len(artifacts), f"duplicate recorded artifact roles: {stage_id}"
+        assert set(recorded) <= set(requirements), f"unknown recorded artifact role: {stage_id}"
+        if record["status"] == PASS:
+            assert set(recorded) == set(requirements), f"PASS artifact set does not match spec: {stage_id}"
+        for role, item in recorded.items():
+            requirement = requirements[role]
+            assert item["path"] == requirement["path"], f"recorded artifact path drift: {stage_id}/{role}"
+            assert item["kind"] == requirement["kind"], f"recorded artifact kind drift: {stage_id}/{role}"
+            assert item.get("json_assertions", []) == requirement.get("json_assertions", []), (
+                f"recorded artifact assertions drift: {stage_id}/{role}"
+            )
+            expected = requirement.get("sha256")
+            assert expected is None or item["sha256"] == expected, f"recorded frozen hash drift: {stage_id}/{role}"
 
 
 def verify_artifacts(
@@ -267,6 +349,7 @@ def validate_run(spec_path: Path, state_path: Path, events_path: Path) -> dict[s
     actual_state = load_json(state_path)
     expected_state = replay(spec_path, spec, read_events(events_path))
     assert actual_state == expected_state, "state does not equal event replay"
+    reconcile_recorded_artifacts(spec, actual_state)
     verify_artifacts(spec_path, spec, actual_state)
     return actual_state
 
@@ -346,8 +429,14 @@ def command_record(args: argparse.Namespace) -> None:
     )
     stage = next(value for value in stages if value["id"] == args.stage)
     event = new_event(state, args, "STAGE_RECORD")
+    claim_status = args.claim_status or ("PASS" if args.status == PASS else args.status)
+    if stage.get("applicable", True) is False:
+        assert args.status == PASS and claim_status == "NOT_APPLICABLE", "non-applicable stage must record PASS_TO_NEXT_GATE / NOT_APPLICABLE"
+    else:
+        assert claim_status != "NOT_APPLICABLE", "applicable stage cannot claim NOT_APPLICABLE"
     event.update(
         status=args.status,
+        claim_status=claim_status,
         artifacts=capture_artifacts(spec_path, spec, stage, require_all=args.status == PASS),
         blockers=blockers,
         notes=args.note or [],
@@ -367,6 +456,7 @@ def command_invalidate(args: argparse.Namespace) -> None:
     state = load_json(state_path)
     expected_state = replay(spec_path, spec, read_events(events_path))
     assert state == expected_state, "state does not equal event replay"
+    reconcile_recorded_artifacts(spec, state)
     upstream = set(stage_order[: stage_order.index(args.stage)])
     verify_artifacts(spec_path, spec, state, upstream)
     assert args.writer_id == spec["writer_id"], "writer_id does not own this run"
@@ -420,6 +510,7 @@ def parser() -> argparse.ArgumentParser:
     record = commands.add_parser("record")
     event_common(record)
     record.add_argument("--status", required=True, choices=sorted(STAGE_STATUSES - {"PENDING"}))
+    record.add_argument("--claim-status", choices=sorted(CLAIM_STATUSES))
     record.add_argument("--blocker", action="append")
     record.add_argument("--note", action="append")
     record.set_defaults(function=command_record)
