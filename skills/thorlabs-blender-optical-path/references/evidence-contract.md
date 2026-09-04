@@ -27,6 +27,9 @@
 - Put every manual exception, port-center override, substitution, and no-snap policy in source with its reason. A hand-edited lock or unlogged transform blocks propagation even when its manifest hash is correct.
 - Run replay in a clean location with bytecode/cache writes disabled or excluded, then prove the package file set is unchanged.
 - Verify the complete source-lock byte set and every producer-to-consumer path/key before long-running conversion or Blender work. A stage-local PASS is invalid when the next declared consumer cannot resolve the artifact.
+- Treat every authority bundle and cross-file evidence join as a typed exact-set contract. Count roles and compound identities before constructing lookup maps; reject missing, duplicate, extra, legacy, malformed, non-finite, out-of-range, or mismatched records with reason-coded structured `BLOCKED` evidence. Do not let `next(...)`, direct indexing, or dictionary collapse turn contract failures into exceptions or lost duplicates.
+- Validate evidence at the trust boundary before arithmetic or geometry. Require explicit string, hash, positive-byte, finite-number, vector, and index constraints as applicable, and derive polygon count, surface area, normal, and contact witnesses from the reopened object rather than trusting copied lock fields.
+- When an embedded runtime loads an adjacent audit helper, bind the executable and helper to exact path, bytes, SHA-256, and actual loaded-module identity. Exercise that boundary from a clean working directory/environment in the real target runtime; a host-Python import or compile check alone is scoped evidence.
 - For multi-state topology, bind every edge and zero-radius ray template to exact active states or to a versioned, hashed expansion script; structural node/edge counts alone are scoped diagnostics, not topology PASS.
 
 ## Representative-to-global loop
@@ -44,12 +47,18 @@
 - saved-Blend reopen and world-space transform/mesh readback;
 - actual reopened filepath plus opened-file SHA-256; a hash of the expected path is insufficient when another Blend may be open;
 - zero-radius optical-axis and first-opaque-hit checks;
+- measured endpoint/surface witnesses, separate from target coordinates; expected object-family hits or literal zero error fields are not sufficient;
 - narrow-phase BVH with allowed contact envelopes separated from illegal collision;
 - close-up mechanical views and complete table views;
 - role-specific OpenCV or equivalent visual checks;
+- declared final output resolution and bit depth read from delivered images; per-branch visibility evidence rather than only whole-frame edge/color statistics;
 - empty-scene GLB reimport when GLB is delivered;
 - readable PDF/README, manifest, and independently checked hashes;
 - status agreement across all artifacts.
+
+Treat each Blender audit attempt as a transaction with a unique nonce, start time, and attempt-specific report/commit paths. Process exit code zero is necessary but not sufficient: the fresh parseable report must bind the run, attempt, runtime, auditor/helper identities, and actual opened Blend path/bytes/SHA. Write the audited-Blend commit last, bind it to both the report and actual audited Blend, and verify it in a second clean reopen when that gate is required. A missing, stale, malformed, mismatched, or `BLOCKED` report is `BLOCKED_AUDITOR_EXECUTION_FAILURE`; a prior generation-only Blend cannot receive retrospective audit credit.
+
+If the auditor cannot complete, write a structured failure report before returning a nonzero runtime exit whenever the output path remains writable. The failure report records the attempted identities and reason codes but grants no geometry or audit credit.
 
 Do not substitute generator-time self-report, AABB-only overlap, process success, or a beauty render for these gates.
 
@@ -97,3 +106,5 @@ The manifest repeats the ruleset, scope, rule-gate status, conflicts, and artifa
 - `BLOCKED`: a known rule fails.
 
 Any stale hash, unresolved conflict, inconsistent status, missing P0 evidence, or unverified physical interface blocks a final release.
+
+Here, final release means the physical model claim. A separately scoped Skill/documentation release may preserve incomplete or rejected examples as lessons, provided it states their limits and does not promote their verdicts. See [fresh-design-and-rendering.md](fresh-design-and-rendering.md) for fresh-design provenance and preview-specific traps.

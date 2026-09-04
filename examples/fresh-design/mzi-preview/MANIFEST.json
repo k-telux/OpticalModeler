@@ -1,0 +1,17 @@
+{
+  "schema": "opticalmodeler.public-example-manifest.v1",
+  "status": "PASS",
+  "self_excluding": true,
+  "entries": [
+    {
+      "path": "LESSONS.json",
+      "bytes": 2872,
+      "sha256": "21cedfb868d972016aacf0ca41ed8186bc8f810bad3e94b045dd3cc2648966e3"
+    },
+    {
+      "path": "README.md",
+      "bytes": 4096,
+      "sha256": "7c7dca6ca728d5dd2ed6fa9cbabb09b961603ba205e1fe59726f1a01bb547021"
+    }
+  ]
+}

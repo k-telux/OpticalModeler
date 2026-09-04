@@ -38,6 +38,20 @@ OpticalModeler 是一个证据优先的 Agent Skill，用于在 Blender 中重�
 
 从[端到端 workflow 合同](skills/thorlabs-blender-optical-path/references/end-to-end-workflow.md)、[单次运行的 N04 确定性重放](examples/end-to-end-workflow/n04-v1.0.1-replay/README.md)和[全新整机运行手册](examples/end-to-end-workflow/n04-v1.0.1-replay/RUNBOOK.md)开始。静态重放因仓库排除厂家 CAD 和代表件保存 `.blend` 而如实停在 `UNVERIFIED`，所有下游门保持 pending；全新私有 revision 可连续执行已公开的下载、构建、重开、审计与净化脚本。
 
+## v1.2.0：新光路设计、明确范围与预览验收
+
+用户要求“参考旧示例的精度生成另一种测量光路”时，Skill 明确从新拓扑和空场景开始，区分可复用的器件资产与旧整机场景。optics-only 保留光学探测器和真实支撑，排除电路及电气/数据可视化。
+
+[新设计指南](skills/thorlabs-blender-optical-path/references/fresh-design-and-rendering.md)整理了器件细节、可见光路、真实端口测量、预览/最终渲染、runtime 隔离与及时发布。[MZI 预览局限案例](examples/fresh-design/mzi-preview/README.md)明确说明：同名器件族命中、常量零端点误差、全图图像评分和 2048 宽预览，均不足以证明完整物理验收或 4K 交付。
+
+本版发布的是 Skill 与证据规则更新，不是新仪器的物理合格认证；历史模型状态保持原判。全部变化见[更新日志](CHANGELOG.md#120--2026-09-04)。
+
+```text
+使用 $thorlabs-blender-optical-path 设计一种新的 optics-only 测量光路。
+G1/G2 旧例仅作建模与渲染质量参考。从空场景和有来源记录的器件资产开始，
+建立新拓扑，检查真实光路与支撑，完成指定最终分辨率的视图后集中交付。
+```
+
 ## v1.1.0 多轮资格测试
 
 [v1.1.0 资格包](examples/end-to-end-workflow/qualification-v1.1.0/README.md)对比了 64/96/128 节点 N04 规模运行和一个独立 40 节点多状态干涉仪测试。权威结论分别保留为 `PARTIAL_SCOPED`、严格 BVH `BLOCKED`、仅规模子集 `PASS_SCOPED` 和 topology `UNVERIFIED`；没有任何轨道提供整机物理或 release PASS。

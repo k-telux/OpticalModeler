@@ -2,6 +2,30 @@
 
 All notable public workflow and evidence-contract changes are recorded here. Physical-system verdicts remain in their machine-readable example gates; a software/Skill version does not promote them.
 
+## 1.2.0 — 2026-09-04
+
+### New measurement design and optics-only scope
+
+- Distinguish new measurement design, schematic reconstruction, existing-scene correction, and presentation-only rendering. An old example requested as a quality benchmark no longer implies inheriting its scene or topology.
+- Add empty-scene generation, explicit asset reuse/provenance, and combined source-load/datablock checks. New names, a different hash, or zero linked libraries alone do not prove independence.
+- Define optics-only delivery without electrical/data/circuit visualization while retaining optical detectors, required fiber, mounts, and support paths.
+- Synchronize English, Simplified Chinese, Japanese, README entry points, and the project-rule template.
+
+### Evidence and rendering corrections
+
+- Separate design coordinates/arm lengths from reopened mesh measurements. Reject constant zero endpoint errors, endpoint-family-only hits, blanket source-family skips, and missed required endpoints as physical acceptance evidence.
+- Require component close-ups, preserved material-slot semantics, branch-specific visibility review, and actual requested output dimensions. Whole-frame sharpness, edge density, generic color masks, and 2K previews cannot establish 4K fidelity or complete beam continuity.
+- Consolidate pending typed authority/exact-set validation, embedded helper/runtime identity, isolated fixtures, and nonce-bound audit/report/Blend transactions. These are documented contracts, not newly implemented guarantees in historical example scripts.
+- Make the canonical ledger and repository validator refuse `python -O`, `-OO`, and `PYTHONOPTIMIZE`: these modes remove their assertion-based checks. Add regression coverage for both CLI execution and library loading; normal Python remains the supported runtime.
+- Add a sanitized MZI preview limitation record based on source/report inspection. It records incomplete physical and 4K acceptance without copying private scenes, assets, paths, or raw sessions.
+
+### Efficient completion and release scope
+
+- Batch related corrections, use previews before expensive output, rerun affected dependencies after changes, and freeze the first candidate satisfying the requested gates.
+- Document runtime isolation, drift handling, and useful pause/sole-writer handoff boundaries without adding a new dependency or automatic retry loop.
+- Separate documentation/Skill releases from claims that require independent multi-run qualification. Same-run retries are not independent tests.
+- This is a Skill/workflow guidance release. No new whole-system physical PASS, new 4K model delivery, model repair, or fresh-session end-to-end qualification is claimed. Existing v1.1.0 qualification verdicts remain unchanged.
+
 ## 1.1.0 — 2026-08-18
 
 ### Added

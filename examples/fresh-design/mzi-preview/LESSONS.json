@@ -1,0 +1,59 @@
+{
+  "schema": "opticalmodeler.design-lesson-summary.v1",
+  "review_date": "2026-09-04",
+  "release_version": "1.2.0",
+  "basis": "EXPLICIT_USER_SCOPE_AND_LOCAL_SOURCE_REVIEW",
+  "status": "DOCUMENTED_PREVIEW_LIMITATIONS",
+  "independent_blind_test": false,
+  "public_scene_reproducible": false,
+  "model_modified_by_this_release": false,
+  "final_or_release": false,
+  "design": {
+    "modality": "Mach-Zehnder phase measurement",
+    "operation": "NEW_MEASUREMENT_DESIGN",
+    "prior_example_role": "VISUAL_QUALITY_REFERENCE_ONLY",
+    "scope": "OPTICS_ONLY",
+    "declared_arm_lengths_m": [1.7, 1.7],
+    "length_basis": "DESIGN_VALUES_NOT_MEASURED_OPTICAL_PATH"
+  },
+  "reported_inventory": {
+    "object_count": 387,
+    "electrical_data_circuit_count": 0,
+    "linked_library_count": 0,
+    "complete_independence_proof": false
+  },
+  "ray_review": {
+    "record_count": 20,
+    "expected_endpoint_family_hits": 20,
+    "endpoint_error_fields": "LITERAL_ZERO_IN_SOURCE",
+    "source_family_hits_skipped": true,
+    "optical_surface_identity_validated": false,
+    "physical_acceptance": "UNVERIFIED"
+  },
+  "render_review": {
+    "preview_resolution_px": [2048, 1152],
+    "preview_bit_depth": 16,
+    "requested_final_resolution_class": "4K",
+    "final_resolution_satisfied": false,
+    "image_metrics_scope": "GLOBAL_DIAGNOSTICS_ONLY",
+    "branch_specific_continuity": "UNVERIFIED",
+    "component_fidelity_acceptance": "UNVERIFIED"
+  },
+  "remaining_model_gates": [
+    "MEASURED_PORT_AND_OPTICAL_SURFACE_TRANSITIONS",
+    "GLOBAL_BVH_AND_LOAD_PATHS",
+    "FINAL_SCENE_REOPEN_AND_RENDER_BINDING",
+    "BRANCH_AND_COMPONENT_VISUAL_REVIEW",
+    "REQUESTED_4K_OUTPUT"
+  ],
+  "inspected_private_sources": [
+    {"logical_name": "generate_mzi_preview.py", "bytes": 39346, "sha256": "cc4be2c0e998f3df2cd8999772356c341aaf61135c6a2aa92b289712591c17ed"},
+    {"logical_name": "opencv_preview_qa.py", "bytes": 3943, "sha256": "76959a88d77f4566c87d50b6898ccccc1e9a307d7dc0e965f245348953ac79e4"},
+    {"logical_name": "source_independence_report.json", "bytes": 26420, "sha256": "9bbe1a1e0ed680e506f6222c6c9189c1850ee75ef781884757e06e8ed00dbcd2"},
+    {"logical_name": "object_inventory.json", "bytes": 23696, "sha256": "fc354966cd83748913ebd64594299540c7f10af32394cf5e92a74a249c33bab7"},
+    {"logical_name": "optical_port_edge_audit.json", "bytes": 24782, "sha256": "b44036a6fe0d37850181b434c8f0e892237967ffc74507f697a0c44a919be6a3"},
+    {"logical_name": "opencv_image_qa_graphite_v3_top.json", "bytes": 1409, "sha256": "a97238aec042676efe422345e03745cc1670ea6766c05c3fa5f88406bcb37a25"},
+    {"logical_name": "saved_scene_reopen.json", "bytes": 527, "sha256": "3ebd2f3dc716ca554a463117b20bf10bbd4d4d420393958828fd73a836bcb3b4"}
+  ],
+  "public_package_excludes": ["private paths", "raw sessions", "component resources", "vendor CAD", "Blend files", "generated meshes"]
+}

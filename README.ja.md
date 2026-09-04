@@ -38,6 +38,21 @@ OpticalModeler は、実験室の光路を Blender で再構築する証拠優�
 
 [End-to-end workflow contract](skills/thorlabs-blender-optical-path/references/end-to-end-workflow.md)、[single-run N04 deterministic replay](examples/end-to-end-workflow/n04-v1.0.1-replay/README.md)、[fresh whole-system runbook](examples/end-to-end-workflow/n04-v1.0.1-replay/RUNBOOK.md) から開始してください。Static replay は vendor CAD と代表 `.blend` を repository から除外するため `UNVERIFIED` で停止し、下流 gate は pending のままです。新しい private revision では公開済み fetch/build/reopen/audit/sanitization script を連続実行できます。
 
+## v1.2.0：新しい測定設計とプレビューの検証範囲
+
+「旧例と同等の精細さで別の測定光路」という依頼では、新しい topology と空のシーンから開始します。再利用できる部品 asset と旧装置全体を区別し、optics-only では光検出器と実支持を保ちながら回路・電気・データの可視化を除きます。
+
+[新設計ガイド](skills/thorlabs-blender-optical-path/references/fresh-design-and-rendering.md)は部品 detail、可視光路、実 port 測定、preview/final render、runtime 分離、納品の終了条件を扱います。[MZI preview の制限事例](examples/fresh-design/mzi-preview/README.md)では、同じ部品 family への hit、固定ゼロ誤差、全画像スコア、2048 幅の preview が、完全な物理合格や 4K 納品を証明しないことを説明します。
+
+本版は Skill と証拠規則の更新であり、新装置の物理認証ではありません。過去のモデル verdict は変更しません。全変更は[更新履歴](CHANGELOG.md#120--2026-09-04)を参照してください。
+
+```text
+Use $thorlabs-blender-optical-path to design a new optics-only measurement path.
+Use the G1/G2 example for modeling/rendering quality only, start from an empty
+scene with provenance-bound component assets, and deliver verified paths and
+the requested final-resolution views.
+```
+
 ## v1.1.0 multi-run qualification
 
 [v1.1.0 qualification package](examples/end-to-end-workflow/qualification-v1.1.0/README.md) は 64/96/128-node N04 scale run と独立した 40-node multi-state interferometer test を比較します。権威 verdict は `PARTIAL_SCOPED`、strict-BVH `BLOCKED`、scale-only `PASS_SCOPED`、topology `UNVERIFIED` のままで、whole-system physical/release PASS はありません。

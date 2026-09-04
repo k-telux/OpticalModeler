@@ -37,6 +37,21 @@ The primary workflow is now one ordered run with one run ID, one revision, one w
 
 Start with the [end-to-end workflow contract](skills/thorlabs-blender-optical-path/references/end-to-end-workflow.md), the [single-run N04 deterministic replay](examples/end-to-end-workflow/n04-v1.0.1-replay/README.md), and its [fresh whole-system runbook](examples/end-to-end-workflow/n04-v1.0.1-replay/RUNBOOK.md). The static replay intentionally stops at `UNVERIFIED` because the repository excludes vendor CAD and the saved representative `.blend`; downstream gates remain pending instead of inheriting a partial `PASS`. A fresh private revision can execute the included fetch, build, reopen, audit, and sanitization scripts end to end.
 
+## v1.2.0: new designs, clear scope, and honest previews
+
+Ask for a new measurement path at the quality of an existing example, and the Skill now explicitly starts from a new topology and empty scene. It distinguishes reusable component assets from a complete prior apparatus and respects optics-only scope, including optical detectors and supports while excluding circuit/data visualization.
+
+The [fresh-design guide](skills/thorlabs-blender-optical-path/references/fresh-design-and-rendering.md) covers component fidelity, visible branches, measured ports, preview/final rendering, runtime isolation, and a practical completion cutoff. The [MZI preview limitation case](examples/fresh-design/mzi-preview/README.md) explains why expected-family ray hits, constant zero endpoint errors, whole-frame image scores, and 2048-wide previews cannot establish full physical or 4K acceptance.
+
+This release updates the Skill and its evidence contract; it does not certify a new optical instrument. The historical examples below retain their original verdicts. See [the changelog](CHANGELOG.md#120--2026-09-04) for the complete update.
+
+```text
+Use $thorlabs-blender-optical-path to design a new optics-only measurement
+system. Use the G1/G2 example only as a modeling and rendering quality reference.
+Derive a new topology, build from an empty scene with provenance-bound component
+assets, verify the physical paths, and deliver the declared final-resolution views.
+```
+
 ## v1.1.0 multi-run qualification
 
 The [v1.1.0 qualification package](examples/end-to-end-workflow/qualification-v1.1.0/README.md) compares 64-, 96-, and 128-node N04 scale runs with an independent 40-node stateful interferometer test. The verdict is deliberately mixed: `PARTIAL_SCOPED`, strict-BVH `BLOCKED`, scale-only `PASS_SCOPED`, and topology `UNVERIFIED`. No track supplies a whole-system or physical-release PASS.

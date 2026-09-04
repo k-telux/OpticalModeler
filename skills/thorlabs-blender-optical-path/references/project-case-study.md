@@ -53,3 +53,5 @@ The sanitized final record reports:
 ## Limits
 
 The repository does not ship the laboratory Blend or manufacturer CAD. The image pair demonstrates the workflow and evidence contract; it does not independently reproduce the scene, certify commercial hardware interfaces, or establish spectral performance.
+
+When a user requests a different measurement at this example's quality, treat these images as visual comparators only. Build a new topology from an empty scene using the permitted component sources; do not inherit the G1/G2 apparatus. Follow [fresh-design-and-rendering.md](fresh-design-and-rendering.md) for that operation.

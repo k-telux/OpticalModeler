@@ -3,6 +3,10 @@
 
 from __future__ import annotations
 
+# ponytail: preserve the existing assertion-based contract; refuse modes that erase it.
+if not __debug__:
+    raise RuntimeError("Optimized Python is unsupported: validation assertions must remain enabled.")
+
 import argparse
 import hashlib
 import json

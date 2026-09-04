@@ -21,6 +21,17 @@ This file is the project-local source of truth. Register new user corrections he
 
 Preserve replaced rules as `superseded`; never silently delete history.
 
+## Requested operation and delivery
+
+- Operation: new measurement design / schematic reconstruction / scene correction / presentation-only render.
+- Measurement modality, source, sample interaction, and detector outputs:
+- Scope: included optical/mechanical families; explicitly excluded electrical/data families if optics-only.
+- Design authority, reusable component assets, and visual-only references (separate lists):
+- Required component detail, full-path views, decoded output dimensions/bit depth:
+- Completion cutoff and pending physical evidence:
+
+A previous example used only as a quality reference must not silently become the starting scene or topology. Record local asset provenance without turning localization into a license grant.
+
 ## Active rules
 
 | Rule ID | Severity | Scope | Rule | Required evidence | Status |

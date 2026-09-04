@@ -2,12 +2,15 @@
 
 Use this mode when a Skill release, scaling change, or reusable workflow optimization must be supported by more than one optical-system run.
 
+Classify the proposed update first. A claim of repeatable physical performance, general reliability, or a measured optimization needs the independent-run evidence below. An explicit user-scope correction, an evidence-definition clarification, or a documented limitation can be released as Skill guidance without manufacturing additional qualification runs. Label its basis and keep model verdicts unchanged. A source inspection or a same-run retry is not a new blind test.
+
 ## Campaign boundary
 
 - Keep one campaign coordinator and one scene writer per run.
 - Give every iteration its own run ID, revision root, generator/Blend lineage, ledger, and verdict.
 - Reuse only immutable public locks and source bytes that are reverified against the current run's manifest. Never reuse another run's derived meshes, Blend, audits, state, or PASS events.
 - Increase a declared dimension such as topology/state coverage, station count, official instances, or strict physical gates. Repeating the same cached report is not another qualification run.
+- Retries or regeneration attempts inside one run remain one run. They may validate a local fix, but they do not satisfy an independent-run qualification claim in a rule, changelog, version, tag, or release.
 - Preserve each run's weakest status. Never average or stitch `PASS_SCOPED`, `PARTIAL_SCOPED`, `UNVERIFIED`, and `BLOCKED` into a whole-system PASS.
 
 ## Cross-run matrix
@@ -20,7 +23,7 @@ Derive a machine-readable matrix from the run authorities. At minimum record:
 - execution status, claim status, blockers, invalidations, retry count, ledger head, and final authorization;
 - which defect or optimization repeated in at least two independent runs.
 
-Only repeated general defects enter the durable Skill. Keep part numbers, numeric counts, collision pairs, timings, and view thresholds as fixtures unless the evidence establishes a general rule.
+Only independently repeated defects support claims of cross-run recurrence. Explicit scope rules and documented evidence limitations may also enter the Skill with their origin stated. Keep part numbers, numeric counts, collision pairs, timings, and view thresholds as fixtures unless the evidence establishes a general rule.
 
 ## Qualification priorities
 

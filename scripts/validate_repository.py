@@ -3,6 +3,10 @@
 
 from __future__ import annotations
 
+# ponytail: fail before scanning or reporting PASS when Python would remove the checks.
+if not __debug__:
+    raise RuntimeError("Optimized Python is unsupported: validation assertions must remain enabled.")
+
 import hashlib
 import json
 import re
@@ -44,6 +48,10 @@ REQUIRED = [
     ROOT / "examples/end-to-end-workflow/n04-v1.0.1-replay/stage-scripts/preflight_artifact_contract.py",
     ROOT / "skills/thorlabs-blender-optical-path/references/end-to-end-workflow.md",
     ROOT / "skills/thorlabs-blender-optical-path/references/multi-run-qualification.md",
+    ROOT / "skills/thorlabs-blender-optical-path/references/fresh-design-and-rendering.md",
+    ROOT / "examples/fresh-design/mzi-preview/README.md",
+    ROOT / "examples/fresh-design/mzi-preview/LESSONS.json",
+    ROOT / "examples/fresh-design/mzi-preview/MANIFEST.json",
     ROOT / "skills/thorlabs-blender-optical-path/scripts/workflow_ledger.py",
     ROOT / "examples/end-to-end-workflow/qualification-v1.1.0/QUALIFICATION_MATRIX.json",
     ROOT / "examples/end-to-end-workflow/qualification-v1.1.0/CROSS_THREAD_CONSENSUS.json",
@@ -60,6 +68,14 @@ REQUIRED = [
     ROOT / "examples/end-to-end-workflow/qualification-v1.1.0/scripts/finalize_array_run.py",
 ]
 PUBLIC_PACKAGES = [
+    {
+        "root": ROOT / "examples/fresh-design/mzi-preview",
+        "manifest": "MANIFEST.json",
+        "records": "entries",
+        "path": "path",
+        "bytes": "bytes",
+        "extras": {"MANIFEST.json"},
+    },
     {
         "root": ROOT / "examples/forward-tests/n04-lightsheet",
         "manifest": "MANIFEST.json",
@@ -285,7 +301,7 @@ def check_unified_workflow() -> None:
     assert summary["aggregate_status"] == "UNVERIFIED"
     assert summary["final_or_release"] is False
     tests = subprocess.run(
-        [sys.executable, "-m", "unittest", "discover", "-s", str(ROOT / "tests"), "-p", "test_workflow_ledger.py"],
+        [sys.executable, "-m", "unittest", "discover", "-s", str(ROOT / "tests"), "-p", "test_*.py"],
         capture_output=True,
         text=True,
         check=False,
@@ -329,6 +345,23 @@ def check_multi_run_qualification() -> None:
     }
 
 
+def check_design_lessons() -> None:
+    """Keep the published limitation case from silently acquiring physical credit."""
+    case = json.loads((ROOT / "examples/fresh-design/mzi-preview/LESSONS.json").read_text(encoding="utf-8"))
+    assert case["status"] == "DOCUMENTED_PREVIEW_LIMITATIONS"
+    for key in ("independent_blind_test", "public_scene_reproducible", "model_modified_by_this_release", "final_or_release"):
+        assert case[key] is False, f"limitation case acquired unsupported claim: {key}"
+    assert case["ray_review"]["physical_acceptance"] == "UNVERIFIED"
+    render = case["render_review"]
+    assert render["preview_resolution_px"] == [2048, 1152]
+    assert render["final_resolution_satisfied"] is False
+    assert render["branch_specific_continuity"] == "UNVERIFIED"
+    assert case["remaining_model_gates"]
+    citation = (ROOT / "CITATION.cff").read_text(encoding="utf-8")
+    version = re.search(r"(?m)^version: (.+)$", citation).group(1).strip()
+    assert f"## {version} — " in (ROOT / "CHANGELOG.md").read_text(encoding="utf-8")
+
+
 def main() -> None:
     for path in REQUIRED:
         assert path.exists(), f"missing required file: {path.relative_to(ROOT)}"
@@ -356,6 +389,7 @@ def main() -> None:
     check_forward_test_statuses()
     check_unified_workflow()
     check_multi_run_qualification()
+    check_design_lessons()
 
     acceptance = json.loads((ROOT / "examples/g1g2/evidence/v18_nature_final_acceptance.json").read_text(encoding="utf-8"))
     assert acceptance["status"] == "PASS_V18_NATURE_FINAL_VERIFIED"
