@@ -29,6 +29,7 @@
 - Verify the complete source-lock byte set and every producer-to-consumer path/key before long-running conversion or Blender work. A stage-local PASS is invalid when the next declared consumer cannot resolve the artifact.
 - Treat every authority bundle and cross-file evidence join as a typed exact-set contract. Count roles and compound identities before constructing lookup maps; reject missing, duplicate, extra, legacy, malformed, non-finite, out-of-range, or mismatched records with reason-coded structured `BLOCKED` evidence. Do not let `next(...)`, direct indexing, or dictionary collapse turn contract failures into exceptions or lost duplicates.
 - Validate evidence at the trust boundary before arithmetic or geometry. Require explicit string, hash, positive-byte, finite-number, vector, and index constraints as applicable, and derive polygon count, surface area, normal, and contact witnesses from the reopened object rather than trusting copied lock fields.
+- Fit planar face normals from a well-conditioned set of actual evaluated vertices, using centered double precision or the correctly transformed evaluated polygon normal with an independent cross-check. Three adjacent points on a densely sampled circle can be nearly collinear. Reject degenerate/nonplanar fits and preserve vertex/face witnesses; do not move geometry or relax tolerances to hide estimator noise.
 - When an embedded runtime loads an adjacent audit helper, bind the executable and helper to exact path, bytes, SHA-256, and actual loaded-module identity. Exercise that boundary from a clean working directory/environment in the real target runtime; a host-Python import or compile check alone is scoped evidence.
 - For multi-state topology, bind every edge and zero-radius ray template to exact active states or to a versioned, hashed expansion script; structural node/edge counts alone are scoped diagnostics, not topology PASS.
 
@@ -59,6 +60,8 @@
 Treat each Blender audit attempt as a transaction with a unique nonce, start time, and attempt-specific report/commit paths. Process exit code zero is necessary but not sufficient: the fresh parseable report must bind the run, attempt, runtime, auditor/helper identities, and actual opened Blend path/bytes/SHA. Write the audited-Blend commit last, bind it to both the report and actual audited Blend, and verify it in a second clean reopen when that gate is required. A missing, stale, malformed, mismatched, or `BLOCKED` report is `BLOCKED_AUDITOR_EXECUTION_FAILURE`; a prior generation-only Blend cannot receive retrospective audit credit.
 
 If the auditor cannot complete, write a structured failure report before returning a nonzero runtime exit whenever the output path remains writable. The failure report records the attempted identities and reason codes but grants no geometry or audit credit.
+
+The canonical ledger validates the candidate event chain before appending a record or invalidation. Invalid timestamps or duplicate/empty event IDs must leave both existing state and events unchanged. This precommit check does not claim crash-atomic persistence across the two files.
 
 Do not substitute generator-time self-report, AABB-only overlap, process success, or a beauty render for these gates.
 

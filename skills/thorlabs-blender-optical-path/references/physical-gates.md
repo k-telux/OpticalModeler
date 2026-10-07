@@ -31,10 +31,13 @@ Use a continuous load path:
 - Make the flat post top contact the mount's real bearing face. Hide the stud in the real hole; never use an exposed stud as a spacer.
 - Make a fork clamp capture its own adapter. Put the washer on the slot bearing surface and the shank through the slot into a verified open table hole.
 - Classify thread/hole engagement separately from illegal opaque-body collision.
+- Identify the actual mounting mechanism before choosing hardware: a counterbored clearance hole needs a cap screw into a tapped support; it is not a receiving thread for a protruding post stud. Match nominal diameter, pitch and variant using source identity, then measure engagement and head/seat clearance. A part name or approximate bore diameter is insufficient when provenance conflicts.
+- Cosmetic thread bands or a smooth shaft do not by themselves establish compatible engagement. Simplified thread envelopes need explicit matched nominal specifications and a measured interface; otherwise correct or clearly model the receiving interface and fastener together. Do not classify an entire body intersection as a thread contact.
 - Prove raised boards and large instruments with a complete table-to-device load path and side/cutaway views.
 - Anchor every serialized load witness to reopened mesh surface points or measured contact envelopes. Object origins and nominal centers are not load-path endpoints unless independently proved to lie on the intended interface.
 - Send every evaluated-world-mesh AABB candidate through narrow-phase BVH before classification. Never skip a pair merely because it shares a node, family, station, table, prefix, wildcard, or regex.
 - Declare allowed contacts before the audit by exact object/role pair, interface or load-link proof ID, and numeric gap/penetration envelope. Any unclassified or out-of-envelope overlap is illegal.
+- Keep collision admissibility separate from bearing and retention. An opposing-half-space proof must cover both complete evaluated solids, not only selected faces. A permitted finite overlap needs validated material-intersection containment inside the predeclared envelope; a solver named `EXACT`, an empty failed result, or a cylinder-membership check is not that proof. Check at least one valid contact and its invalid penetration counterpart before consuming a corrective build.
 - Freeze a finite regeneration budget in the run spec. When it is exhausted, retain the exact illegal pairs and return `BLOCKED`; do not broaden the allowlist to force PASS.
 
 ## CAD conversion
@@ -43,16 +46,19 @@ Use a continuous load path:
 - Require finite native and transferred bboxes, non-empty faces/triangles, explicit BRep validity, and two deterministic conversion runs before calling a converter PASS.
 - Record raw and cleaned mesh metrics separately. Cleanup must not erase an invalid source, empty faces, non-manifold residuals, lost assembly occurrences, or semantic-port uncertainty.
 - Treat flattened assembly names as `PARTIAL_SCOPED` until occurrence hierarchy is proved. Treat surface-only models as surface-only; do not relabel them as manifold solids.
+- Check source decorative surfaces before requiring a closed physical solid. Disconnected cosmetic rings can remain open even when the structural bore is valid. If they are removed from a generated instance, identify the exact source faces by provenance and geometry, preserve structural walls and seats, and record the retained/removed partition. Do not modify the canonical asset, use a material-wide exemption, or claim the modified instance is entirely unchanged.
 - Keep conversion status independent from packaging status. A sanitized package cannot upgrade a sentinel bbox, failed mesh, missing port frame, or blocked Blender import.
 
 ## Hardware-family rules
 
 ### KM100-style mirror mount
 
+- The manufacturer describes KM100's counterbores as cap-screw mounting interfaces, with counterbore adapters for fixed-stud attachment. Verify the exact variant, nominal screw specification and current drawing's minimum optic thickness before seating an optic; do not transfer one variant's interface requirements to another. [Manufacturer mounting reference](https://www.thorlabs.com/catalogpages/v20/295.pdf), [current product family](https://www.thorlabs.com/kinematic-mirror-mounts-with-two-adjusters).
 - Seat the mirror disk inside the real frame.
 - Coincide mirror center, mount optical center, and solved beam intersection.
 - Engage the real bottom or side mounting hole.
 - Roll adjuster knobs away from the incident/outgoing beam region.
+- Measure the actual optical backstop and retaining contact. Changing disk thickness or centering must preserve the solved world-space coated face through the assembly transform, not merely preserve the glass volume center.
 
 ### LMR1-style transmissive mount
 

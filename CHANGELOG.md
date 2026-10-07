@@ -2,6 +2,33 @@
 
 All notable public workflow and evidence-contract changes are recorded here. Physical-system verdicts remain in their machine-readable example gates; a software/Skill version does not promote them.
 
+## 2.0.0 — 2026-10-07
+
+### Photograph reconstruction, constrained correction, and final handoff
+
+- Add photographed reconstruction as a distinct operation: explicitly retained frozen baselines are reusable, while a fresh measurement still starts from an empty scene and new topology.
+- Separate installed/user-confirmed identity, manufacturer candidate, proposed installation, geometry provenance, model measurements and real laboratory qualification.
+- Lock complete protected families, rigid relative vectors, fixed upper endpoints, allowed degrees of freedom and actual footprint requirements before changing layout. Audit user intent independently of geometric diagnostics.
+- Add real working-surface datums, cross-node fastener coverage, blind-hole/seam checks, complete moved-neighbor review, state-evaluated shutters/selectable outputs and explicitly unknown internal transfer.
+- Add saved presentation preservation across topology, attributes/custom normals, material-slot semantics, visibility and operating states; scoped shader ownership; actual image inspection; honest producer/dependency bridges for image reuse; usable interactive handoff and final-reply confirmation limits.
+- Keep ordinary reviewer findings consolidated at checkpoints, preserve accepted/user-edited files, and stop optional work after the requested review package. Do not turn review readiness into physical qualification.
+
+### Detailed examples and laboratory privacy
+
+- Publish six English/Chinese walkthroughs covering initial prompts, necessary clarification, user rejection/correction, scoped checks and concrete final results. Dialogues are edited teaching reconstructions, not raw transcripts.
+- Retain the already public G1/G2 input/output previews and historical verdict. New laboratory-derived cases use role aliases and exclude important instrument identities, exact setup coordinates/operating parameters, private photos/scenes, email/session identifiers and identity maps.
+- Add a publication privacy reference and optional private identifier scan over release-head filenames and uncompressed UTF-8/UTF-16 bytes, using a policy file kept outside the repository. Add a runnable positive/negative leak regression; pixel/container review remains a separate requirement.
+- Synchronize English/Chinese/Japanese skill entries, README entry points, citation/version metadata, project-memory template and the installed canonical skill.
+
+### Included pending software and interface corrections
+
+- Validate a candidate ledger chain before appending a record or invalidation event. Rejected event IDs and timestamps leave both persistent files unchanged; this is not a claim of crash-atomic two-file persistence. The complete 12-test suite passes, including the added privacy regression.
+- Clarify counterbored mount interfaces, matched nominal thread specifications, source-variant uncertainty, minimum mirror substrate thickness, and preservation of the intended coated optical surface during mechanical seating.
+- Require a stable measured face-normal fit, distinguish contact admissibility from bearing/retention, and exercise a valid contact as well as invalid penetration before spending a corrective build.
+- Identify disconnected cosmetic source surfaces explicitly. A generated-instance cleanup must preserve structural interfaces and record the precise retained/removed source-face partition without altering the canonical asset or granting a whole-body exemption.
+- Add pump–probe design-versus-measurement boundaries, actual delay-motion witnesses, coordinate-appropriate camera clipping, and real GPU-kernel execution checks.
+- This is a Skill/documentation and ledger-software release based on explicit scope rules, recorded review lessons and runnable software checks. It performs no new geometry run or blind forward test, certifies no new physical model or hardware performance, and preserves all historical scoped/failed qualification verdicts.
+
 ## 1.2.0 — 2026-09-04
 
 ### New measurement design and optics-only scope

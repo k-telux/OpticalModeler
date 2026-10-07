@@ -172,6 +172,51 @@ class WorkflowLedgerTest(unittest.TestCase):
         self.record("run_lock", "E001")
         self.record("final_consistency", "E002", succeeds=False)
 
+    def test_invalid_candidate_never_changes_ledger_bytes(self) -> None:
+        for command in ("record", "invalidate"):
+            for index, (event_id, recorded_at) in enumerate((
+                ("E002", "2026-08-13T00:00:00Z"),
+                ("E002", "not-a-timestamp"),
+                ("E002", "2026-02-30T00:01:00Z"),
+                ("E001", "2026-08-13T00:02:00Z"),
+                ("", "2026-08-13T00:02:00Z"),
+            )):
+                with self.subTest(command=command, event_id=event_id, recorded_at=recorded_at):
+                    self.state = self.revision / f"state-{command}-{index}.json"
+                    self.events = self.revision / f"events-{command}-{index}.jsonl"
+                    self.init()
+                    self.record("run_lock", "E001")
+                    before = (self.state.read_bytes(), self.events.read_bytes())
+                    extra = ["--status", "PASS_TO_NEXT_GATE"] if command == "record" else ["--reason", "regression"]
+                    self.run_tool(
+                        command, *self.common(), "--writer-id", "writer-one",
+                        "--stage", "source_lock", "--event-id", event_id,
+                        "--recorded-at", recorded_at, *extra, succeeds=False,
+                    )
+                    self.assertEqual((self.state.read_bytes(), self.events.read_bytes()), before)
+                    self.run_tool("validate", *self.common())
+
+    def test_equal_timestamps_and_back_to_back_invalidation(self) -> None:
+        self.init()
+        timestamp = "2026-08-13T00:01:00Z"
+        for event_id, command, stage in (
+            ("E001", "record", "run_lock"),
+            ("E002", "record", "source_lock"),
+            ("E003", "invalidate", "source_lock"),
+            ("E004", "record", "source_lock"),
+        ):
+            extra = ["--status", "PASS_TO_NEXT_GATE"] if command == "record" else ["--reason", "regression"]
+            self.run_tool(
+                command, *self.common(), "--writer-id", "writer-one",
+                "--stage", stage, "--event-id", event_id,
+                "--recorded-at", timestamp, *extra,
+            )
+            self.run_tool("validate", *self.common())
+        self.record_remaining(start_event=5)
+        summary = json.loads(self.run_tool("validate", *self.common()).stdout)
+        self.assertEqual(summary["aggregate_status"], "PASS")
+        self.assertTrue(summary["final_or_release"])
+
     def test_complete_partial_scope_stays_non_release(self) -> None:
         spec = json.loads(self.spec.read_text(encoding="utf-8"))
         spec["audit_scope"] = "PARTIAL_SCOPED"

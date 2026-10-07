@@ -424,7 +424,6 @@ def command_record(args: argparse.Namespace) -> None:
     state = validate_run(spec_path, state_path, events_path)
     assert args.writer_id == spec["writer_id"], "writer_id does not own this run"
     stages = validate_spec(spec_path, spec)
-    stage_order = [str(stage["id"]) for stage in stages]
     assert args.stage == state["current_stage"], f"only current stage may be recorded: {state['current_stage']}"
     assert args.status in STAGE_STATUSES - {"PENDING"}
     blockers = args.blocker or []
@@ -446,8 +445,8 @@ def command_record(args: argparse.Namespace) -> None:
         notes=args.note or [],
     )
     event["event_sha256"] = event_hash(event)
+    state = replay(spec_path, spec, [*read_events(events_path), event])
     append_event(events_path, event)
-    apply_event(state, event, stage_order)
     write_json(state_path, state)
 
 
@@ -467,8 +466,8 @@ def command_invalidate(args: argparse.Namespace) -> None:
     event = new_event(state, args, "INVALIDATE_FROM_STAGE")
     event["reason"] = args.reason
     event["event_sha256"] = event_hash(event)
+    state = replay(spec_path, spec, [*read_events(events_path), event])
     append_event(events_path, event)
-    apply_event(state, event, stage_order)
     write_json(state_path, state)
 
 

@@ -47,6 +47,8 @@ When surfaces look crumpled, faceted, or unexpectedly metallic, identify the res
 
 Use a restrained palette, readable anodized edges, controlled metal highlights, modest glass, and thin beam cores with subdued halos. Review a low-resolution draft for complete framing and clipping before expensive output. Save the selected presentation settings and bind render receipts to the actual scene and image. Camera-only improvements should not trigger a rebuild of unchanged CAD or physics.
 
+Check camera and viewport clipping in the scene's actual coordinate magnitude. Display unit settings alone do not guarantee appropriate camera clipping distances for millimetre-coordinate models. A successful image write can still contain only the background. Before expensive GPU rendering, verify the actual selected device and a small rendered/decode result; device enumeration alone is not kernel execution proof.
+
 Image QA needs two levels:
 
 1. Global checks: actual decoded dimensions/bit depth, clipping, blank regions, and broad detail diagnostics.
@@ -63,3 +65,9 @@ Verify immutable identities at stage boundaries and after suspected changes. Reu
 For a pause or handoff, record the current candidate, last completed gate, pending checks, active processes, and next reproducible command. Transfer sole-writer ownership only after the prior writer stops. Do not count stale source snapshots as current after later edits.
 
 Stop at the first candidate meeting the user's declared deliverables and hard gates. Batch related fixes, reuse unchanged source acquisition, and defer nonblocking polish. If only a preview is complete, deliver it with the exact remaining work instead of claiming final quality. A documentation release can publish these lessons without launching another modeling campaign or certifying the example.
+
+## Pump-probe measurement checks
+
+For a source-backed pump-probe adaptation, trace the pump, delayed probe, sample reflection/transmission, reference and detector branches required by that particular experiment. Balanced intensity detection does not imply interferometric recombination or equal reference/signal optical paths. Same-wavelength pump and probe cannot be discriminated by a spectral filter alone; any spatial or polarization rejection mechanism must actually exist in the chosen design.
+
+Derive the sign and magnitude of delay from the moving geometry. The familiar two-pass relation applies only to its stated translation direction and pass count. Use actual stationary and moving surface witnesses at both positions, require the intended endpoint polygons and ordered transitions, and check downstream pointing and sample overlap. Do not call a list of two measured and two design endpoints an entirely measured path. Geometric delay, dispersive group delay and experimental time-zero calibration remain distinct claims.

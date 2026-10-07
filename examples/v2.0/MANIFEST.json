@@ -1,0 +1,29 @@
+{
+  "schema": "opticalmodeler.public-example-manifest.v1",
+  "status": "PASS_PACKAGE_HASHES",
+  "self_excluding": true,
+  "release_scope": "SKILL_DOCUMENTATION_AND_LEDGER_SOFTWARE",
+  "new_physical_qualification": false,
+  "entries": [
+    {
+      "path": "CASE_INDEX.json",
+      "bytes": 2129,
+      "sha256": "2d4b7bf5441b55331b208cf6fa3edd626cc2e053ea09904e5ac3ff0b094a1031"
+    },
+    {
+      "path": "README.md",
+      "bytes": 5419,
+      "sha256": "20b31be466033a682ce7404d8db60547846232d402f85df373ed428ff08c674d"
+    },
+    {
+      "path": "WALKTHROUGHS.md",
+      "bytes": 16940,
+      "sha256": "7920aa40f2714030ce280dc266e9d7b21710383a5fa3dcc0128741c03e2f3c64"
+    },
+    {
+      "path": "WALKTHROUGHS.zh-CN.md",
+      "bytes": 14023,
+      "sha256": "16ea27916166c0f1de93ed4b772de88ced9fd7b3c33983b4622a46951b63fbe9"
+    }
+  ]
+}

@@ -2,7 +2,7 @@
 
 # OpticalModeler
 
-**从二维光路示意图到可物理审计的 Blender 光学平台。**
+**OpticalModeler 2.0：从示意图与照片到可编辑、有证据边界的光学系统。**
 
 [English](README.md) · [简体中文](README.zh-CN.md) · [日本語](README.ja.md)
 
@@ -38,6 +38,28 @@ OpticalModeler 是一个证据优先的 Agent Skill，用于在 Blender 中重�
 
 从[端到端 workflow 合同](skills/thorlabs-blender-optical-path/references/end-to-end-workflow.md)、[单次运行的 N04 确定性重放](examples/end-to-end-workflow/n04-v1.0.1-replay/README.md)和[全新整机运行手册](examples/end-to-end-workflow/n04-v1.0.1-replay/RUNBOOK.md)开始。静态重放因仓库排除厂家 CAD 和代表件保存 `.blend` 而如实停在 `UNVERIFIED`，所有下游门保持 pending；全新私有 revision 可连续执行已公开的下载、构建、重开、审计与净化脚本。
 
+## v2.0.0：照片重建、受约束纠正与完整交互案例
+
+2.0 将照片重建、固定上层端点的局部移动、仪器端口/快门状态，以及独立展示副本明确区分。实装、厂家候选和拟装器件分别记录；用户意图单独验收；接受文件冻结；图片保留真实 producer，不以改清单冒充新渲染。
+
+[六组案例索引与真实公开输入/输出](examples/v2.0/README.md)和[中文完整交互对话](examples/v2.0/WALKTHROUGHS.zh-CN.md)展示从初始请求、必要确认、用户否决/纠正到检查及最终产出。包括二维重建、照片重建、紧凑平移、外壳/打光、拟装探测器与快门、失败审计/断点交付；每组说明具体交付和仍未知的物理事实。另有[英文完整案例](examples/v2.0/WALKTHROUGHS.md)。
+
+| 用户需求 | 对应指南 | 交付边界 |
+|---|---|---|
+| 按照片保留旧基线重建 | [照片重建与修订](skills/thorlabs-blender-optical-path/references/photo-reconstruction-and-revisions.md) | 完整私有可编辑审阅模型，实装/候选/参考/未知分开。 |
+| 只移动下层支路，上层固定 | [约束与意图](skills/thorlabs-blender-optical-path/references/photo-reconstruction-and-revisions.md#3-lock-constraints-before-moving-anything) | 整族平移、内部向量与固定端点、完整 footprint 和邻居证据。 |
+| 外壳太白，模型和相机不动 | [展示与交付](skills/thorlabs-blender-optical-path/references/presentation-and-delivery.md) | 独立展示副本、保存后保持检查和受影响视角新图。 |
+| 总结到 GitHub，但不暴露 lab | [发布隐私](skills/thorlabs-blender-optical-path/references/publication-privacy.md) | 功能别名、精选文件、私有词表扫描及逐图/容器检查。 |
+
+实验室案例抹去关键型号、实际坐标/参数、私有照片/模型和映射；对话是教学改写，不是原始聊天。已公开独立示例的厂家来源保留，不据此宣称 lab 实装。2.0 是 Skill 文档与 ledger 软件更新，没有新几何运行、盲测或物理认证；历史 verdict 不变。全部变化见[更新日志](CHANGELOG.md#200--2026-10-07)。
+
+```text
+使用 $thorlabs-blender-optical-path 按标注照片在已接受基线上重建。
+保留原文件和固定上层端点，只生成 optics-only。交付一个可编辑审阅模型、
+清楚的最终视图和现场测量清单。区分实装、候选和拟装；实验室关键型号、
+照片与完整场景保持私有，不把渲染通过写成实机合格。
+```
+
 ## v1.2.0：新光路设计、明确范围与预览验收
 
 用户要求“参考旧示例的精度生成另一种测量光路”时，Skill 明确从新拓扑和空场景开始，区分可复用的器件资产与旧整机场景。optics-only 保留光学探测器和真实支撑，排除电路及电气/数据可视化。
@@ -67,6 +89,8 @@ G1/G2 旧例仅作建模与渲染质量参考。从空场景和有来源记录�
 四轨矩阵只保留为历史缺陷发现记录；四个 evidence package 不得拼接成一个整机结论。
 
 ## 安装
+
+发布前运行 `python scripts/validate_repository.py`；本地可加 `--private-terms-file /private/release-inputs/sensitive-terms.txt`，词表必须在仓库外。扫描覆盖候选文件名和未压缩 UTF-8/UTF-16 字节，不能替代图像像素、压缩包/容器内部和间接身份信息检查。既有 manifest、PNG 与软件回归检查保持。
 
 ```bash
 npx skills add k-telux/OpticalModeler

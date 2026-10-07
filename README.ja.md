@@ -2,7 +2,7 @@
 
 # OpticalModeler
 
-**2D 光学回路図から、物理的に監査可能な Blender 光学テーブルへ。**
+**OpticalModeler 2.0: 図と写真から、編集可能で証拠範囲を明示した光学システムへ。**
 
 [English](README.md) · [简体中文](README.zh-CN.md) · [日本語](README.ja.md)
 
@@ -38,6 +38,26 @@ OpticalModeler は、実験室の光路を Blender で再構築する証拠優�
 
 [End-to-end workflow contract](skills/thorlabs-blender-optical-path/references/end-to-end-workflow.md)、[single-run N04 deterministic replay](examples/end-to-end-workflow/n04-v1.0.1-replay/README.md)、[fresh whole-system runbook](examples/end-to-end-workflow/n04-v1.0.1-replay/RUNBOOK.md) から開始してください。Static replay は vendor CAD と代表 `.blend` を repository から除外するため `UNVERIFIED` で停止し、下流 gate は pending のままです。新しい private revision では公開済み fetch/build/reopen/audit/sanitization script を連続実行できます。
 
+## v2.0.0: 写真、制約付き改訂、最終成果物までの対話
+
+2.0 は写真による再構築、固定上段端点を持つ局部移動、instrument port/shutter state、独立 presentation copy を区別します。Installed/candidate/proposed identity、意図の受け入れ、凍結 baseline、保存後の保持検査、実画像 producer を明確にします。
+
+[6 事例と実公開 input/output](examples/v2.0/README.md)、[英語の完全対話](examples/v2.0/WALKTHROUGHS.md)、[中国語対話](examples/v2.0/WALKTHROUGHS.zh-CN.md)は、依頼、必要な確認、ユーザーの拒否/修正、検査、最終納品までを示します。図の再構築、写真、compact translation、材質/照明、proposed detector/shutter、audit failure/checkpoint を扱います。
+
+- 写真と固定 constraint: [再構築/改訂](skills/thorlabs-blender-optical-path/references/photo-reconstruction-and-revisions.md)。
+- 保存された presentation、画像 reuse、UI/納品: [Presentation と納品](skills/thorlabs-blender-optical-path/references/presentation-and-delivery.md)。
+- 実験室 identity を除いた公開: [Publication privacy](skills/thorlabs-blender-optical-path/references/publication-privacy.md)。
+
+実験室由来事例では重要 SKU、実座標/動作値、private photo/scene、対応表を除外します。対話は教育用編集であり raw transcript ではありません。既公開 independent example のメーカー出所は保持します。本版は guidance と ledger software の公開で、新 geometry run、blind test、physical qualification は実施せず、過去の verdict を変更しません。[CHANGELOG](CHANGELOG.md#200--2026-10-07)を参照してください。
+
+```text
+Use $thorlabs-blender-optical-path to reconstruct these photographs on the
+accepted baseline. Preserve originals and fixed upper endpoints. Deliver an
+editable optics-only review model, clear final views and a measurement list.
+Separate installed/candidate/proposed parts and keep laboratory identities,
+photos and the full scene private.
+```
+
 ## v1.2.0：新しい測定設計とプレビューの検証範囲
 
 「旧例と同等の精細さで別の測定光路」という依頼では、新しい topology と空のシーンから開始します。再利用できる部品 asset と旧装置全体を区別し、optics-only では光検出器と実支持を保ちながら回路・電気・データの可視化を除きます。
@@ -68,6 +88,8 @@ the requested final-resolution views.
 4-track matrix は過去の defect-discovery record としてのみ残し、4 package を 1 つの whole-system verdict に結合してはなりません。
 
 ## インストール
+
+公開前に `python scripts/validate_repository.py` を実行します。任意の `--private-terms-file /private/release-inputs/sensitive-terms.txt` は repository 外の policy を使い、候補 filename と uncompressed UTF-8/UTF-16 bytes を検査します。Pixel/OCR や archive/container inspection の代わりではありません。既存 manifest、PNG、software regression の検査は維持します。
 
 ```bash
 npx skills add k-telux/OpticalModeler

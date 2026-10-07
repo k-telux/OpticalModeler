@@ -1,0 +1,26 @@
+{
+  "schema": "opticalmodeler.anonymized-walkthroughs.v1",
+  "skill_version": "2.0.0",
+  "release_scope": "SKILL_DOCUMENTATION_AND_LEDGER_SOFTWARE",
+  "dialogue_status": "EDITED_TEACHING_RECONSTRUCTIONS_NOT_VERBATIM",
+  "new_geometry_run": false,
+  "new_blind_forward_test": false,
+  "new_physical_qualification": false,
+  "private_scene_distributed": false,
+  "private_photographs_distributed": false,
+  "private_identity_map_distributed": false,
+  "lab_derived_cases_have_public_scene": false,
+  "public_visuals": [
+    "../g1g2/input/fig_s17_componentlibrary_g1g2.png",
+    "../g1g2/output/v18_nature_hero_graphite_final_4k_preview.jpg",
+    "../g1g2/output/v18_nature_complete_top_annotated_final_4k_preview.jpg"
+  ],
+  "cases": [
+    {"id": "A", "mode": "PUBLIC_SCHEMATIC_RECONSTRUCTION", "basis": "ALREADY_PUBLIC_HISTORICAL_EXAMPLE", "final_result": "PUBLIC_INPUT_PREVIEWS_AND_HISTORICAL_ACCEPTANCE", "new_qualification_credit": false},
+    {"id": "B", "mode": "PHOTO_RECONSTRUCTION", "basis": "ANONYMIZED_PRIVATE_REVIEW_SUMMARY", "final_result": "PRIVATE_EDITABLE_REVIEW_PACKAGE", "physical_claim": "PARTIAL_SCOPED", "new_qualification_credit": false},
+    {"id": "C", "mode": "CONSTRAINED_CORRECTION", "basis": "ANONYMIZED_PRIVATE_REVIEW_SUMMARY", "final_result": "PRIVATE_CORRECTED_LAYOUT_AFTER_INTENT_REJECTION", "physical_claim": "PARTIAL_SCOPED", "new_qualification_credit": false},
+    {"id": "D", "mode": "PRESENTATION_ONLY", "basis": "ANONYMIZED_PRIVATE_REVIEW_SUMMARY", "final_result": "PRIVATE_PRESENTATION_COPY_AND_FRESH_IMAGES", "physical_claim": "INHERITED_UNVERIFIED_LIMITS", "new_qualification_credit": false},
+    {"id": "E", "mode": "STATEFUL_INSTRUMENT_CORRECTION", "basis": "ANONYMIZED_PRIVATE_REVIEW_SUMMARY", "final_result": "PRIVATE_REFERENCE_PORT_SHUTTER_REVIEW_PACKAGE", "physical_claim": "PARTIAL_SCOPED", "new_qualification_credit": false},
+    {"id": "F", "mode": "EVIDENCE_RECOVERY", "basis": "EVIDENCE_CONTRACT_AND_RUNNABLE_LEDGER_REGRESSION", "final_result": "VALID_SOFTWARE_RECORD_OR_DURABLE_BLOCKER_CHECKPOINT", "physical_claim": "NO_MODEL_CREDIT", "new_qualification_credit": false}
+  ]
+}

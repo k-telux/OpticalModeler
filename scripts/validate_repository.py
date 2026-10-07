@@ -7,6 +7,7 @@ from __future__ import annotations
 if not __debug__:
     raise RuntimeError("Optimized Python is unsupported: validation assertions must remain enabled.")
 
+import argparse
 import hashlib
 import json
 import re
@@ -49,6 +50,14 @@ REQUIRED = [
     ROOT / "skills/thorlabs-blender-optical-path/references/end-to-end-workflow.md",
     ROOT / "skills/thorlabs-blender-optical-path/references/multi-run-qualification.md",
     ROOT / "skills/thorlabs-blender-optical-path/references/fresh-design-and-rendering.md",
+    ROOT / "skills/thorlabs-blender-optical-path/references/photo-reconstruction-and-revisions.md",
+    ROOT / "skills/thorlabs-blender-optical-path/references/presentation-and-delivery.md",
+    ROOT / "skills/thorlabs-blender-optical-path/references/publication-privacy.md",
+    ROOT / "examples/v2.0/README.md",
+    ROOT / "examples/v2.0/WALKTHROUGHS.md",
+    ROOT / "examples/v2.0/WALKTHROUGHS.zh-CN.md",
+    ROOT / "examples/v2.0/CASE_INDEX.json",
+    ROOT / "examples/v2.0/MANIFEST.json",
     ROOT / "examples/fresh-design/mzi-preview/README.md",
     ROOT / "examples/fresh-design/mzi-preview/LESSONS.json",
     ROOT / "examples/fresh-design/mzi-preview/MANIFEST.json",
@@ -68,6 +77,14 @@ REQUIRED = [
     ROOT / "examples/end-to-end-workflow/qualification-v1.1.0/scripts/finalize_array_run.py",
 ]
 PUBLIC_PACKAGES = [
+    {
+        "root": ROOT / "examples/v2.0",
+        "manifest": "MANIFEST.json",
+        "records": "entries",
+        "path": "path",
+        "bytes": "bytes",
+        "extras": {"MANIFEST.json"},
+    },
     {
         "root": ROOT / "examples/fresh-design/mzi-preview",
         "manifest": "MANIFEST.json",
@@ -157,6 +174,23 @@ def check_private_paths(path: Path) -> None:
     }
     for encoding, text in candidates.items():
         assert not PRIVATE_PATH.search(text), f"private path ({encoding}): {path}"
+
+
+def normalize_identifier(value: str) -> str:
+    return re.sub(r"[\s_./\\-]+", "", value.casefold())
+
+
+def check_private_terms(path: Path, terms: tuple[str, ...]) -> None:
+    """Bounded identifier scan; private term contents never enter diagnostics."""
+    relative = path.relative_to(ROOT).as_posix() if path.is_relative_to(ROOT) else path.name
+    data = path.read_bytes()
+    # ponytail: uncompressed bytes/names only; pixels and containers need separate review.
+    texts = [relative, *(data.decode(encoding, errors="ignore") for encoding in
+                         ("latin1", "utf-8", "utf-16le", "utf-16be"))]
+    for index, text in enumerate(texts):
+        normalized = normalize_identifier(text)
+        location = "filename (path withheld)" if index == 0 else relative
+        assert not any(term in normalized for term in terms), f"private identifier found: {location}"
 
 
 def check_png(path: Path) -> None:
@@ -362,7 +396,40 @@ def check_design_lessons() -> None:
     assert f"## {version} — " in (ROOT / "CHANGELOG.md").read_text(encoding="utf-8")
 
 
+def check_v2_guidance() -> None:
+    case = json.loads((ROOT / "examples/v2.0/CASE_INDEX.json").read_text(encoding="utf-8"))
+    citation = (ROOT / "CITATION.cff").read_text(encoding="utf-8")
+    version = re.search(r"(?m)^version: (.+)$", citation).group(1).strip()
+    assert case["skill_version"] == version == "2.0.0"
+    for key in ("new_geometry_run", "new_blind_forward_test", "new_physical_qualification",
+                "private_scene_distributed", "private_photographs_distributed",
+                "private_identity_map_distributed", "lab_derived_cases_have_public_scene"):
+        assert case[key] is False, f"walkthrough acquired unsupported credit: {key}"
+    records = case["cases"]
+    assert len(records) == 6 and {row["id"] for row in records} == set("ABCDEF")
+    assert all(row["new_qualification_credit"] is False for row in records)
+    for path in SKILLS:
+        text = path.read_text(encoding="utf-8")
+        frontmatter = re.match(r"\A---\s*\n(.*?)\n---\s*\n", text, re.S).group(1)
+        assert re.search(r'(?m)^  version: "2\.0\.0"$', frontmatter), f"skill version drift: {path}"
+    for name in ("README.md", "README.zh-CN.md", "README.ja.md"):
+        assert "v2.0.0" in (ROOT / name).read_text(encoding="utf-8"), f"README version drift: {name}"
+    for relative in case["public_visuals"]:
+        target = (ROOT / "examples/v2.0" / relative).resolve()
+        assert target.is_relative_to(ROOT / "examples/g1g2") and target.is_file()
+
+
 def main() -> None:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--private-terms-file", type=Path, help="Private UTF-8 identifier list outside the repository")
+    args = parser.parse_args()
+    terms: tuple[str, ...] = ()
+    if args.private_terms_file:
+        private_path = args.private_terms_file.resolve()
+        assert not private_path.is_relative_to(ROOT), "keep private identifier policy outside the public repository"
+        lines = [line.strip() for line in private_path.read_text(encoding="utf-8-sig").splitlines() if line.strip()]
+        terms = tuple(normalize_identifier(line) for line in lines)
+        assert terms and all(terms), "private identifier list must contain nonempty identifiers"
     for path in REQUIRED:
         assert path.exists(), f"missing required file: {path.relative_to(ROOT)}"
 
@@ -379,6 +446,8 @@ def main() -> None:
         assert path.suffix.lower() not in FORBIDDEN_SUFFIXES, f"forbidden binary asset: {path}"
         assert path.stat().st_size <= MAX_FILE_BYTES, f"file exceeds 10 MiB: {path}"
         check_private_paths(path)
+        if terms:
+            check_private_terms(path, terms)
         if path.suffix.lower() == ".md":
             check_markdown_links(path)
         if path.suffix.lower() == ".png":
@@ -390,6 +459,7 @@ def main() -> None:
     check_unified_workflow()
     check_multi_run_qualification()
     check_design_lessons()
+    check_v2_guidance()
 
     acceptance = json.loads((ROOT / "examples/g1g2/evidence/v18_nature_final_acceptance.json").read_text(encoding="utf-8"))
     assert acceptance["status"] == "PASS_V18_NATURE_FINAL_VERIFIED"
@@ -397,8 +467,10 @@ def main() -> None:
     assert acceptance["gates"]["p1_count"] == 0
     print(
         f"PASS: {len(files)} files, {len(SKILLS)} skill editions, {png_count} sanitized PNGs, "
-        f"{manifest_entry_count} forward-test manifest entries"
+        f"{manifest_entry_count} public-package manifest entries"
     )
+    if terms:
+        print(f"PASS: private identifier scan applied ({len(terms)} private policy entries; uncompressed bytes and filenames)")
 
 
 if __name__ == "__main__":
