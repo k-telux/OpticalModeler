@@ -1,0 +1,34 @@
+{
+  "schema": "opticalmodeler.public-example-manifest.v1",
+  "status": "PASS_PACKAGE_HASHES",
+  "self_excluding": true,
+  "skill_version": "2.0.0",
+  "scope": "README_PRESENTATION_VISUALS",
+  "photographic_asset_origin": "CAMERA_RENDER_FROM_EXISTING_FORMAL_SAVED_MODEL",
+  "new_apparatus_or_beam_geometry": false,
+  "generated_concept_imagery_included": false,
+  "private_scene_or_source_identity_published": false,
+  "source_render_and_preservation_receipts": "retained privately",
+  "physical_qualification": "INHERITED_PARTIAL_SCOPED_NO_NEW_CREDIT",
+  "original_render_dimensions": [
+    3840,
+    1800
+  ],
+  "web_image_dimensions": [
+    1920,
+    900
+  ],
+  "web_derivative": "resized and JPEG-encoded; metadata omitted; original render preserved",
+  "entries": [
+    {
+      "path": "formal-optics-detail.jpg",
+      "bytes": 219137,
+      "sha256": "5662b3b714892be4fd9b444054e0e3cf98dbd2c52d860758fd9fb4babaf94a84"
+    },
+    {
+      "path": "wordmark.svg",
+      "bytes": 16475,
+      "sha256": "66733ac7a2ab369288bb7f05f5d5374c53ea601f828c69260b6223c6251fd1ef"
+    }
+  ]
+}

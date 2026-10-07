@@ -1,147 +1,115 @@
-<div align="center">
-
 # OpticalModeler
 
-**OpticalModeler 2.0 — from schematics and photographs to editable, evidence-gated optical systems.**
+[English](README.md) · [简体中文](README.zh-CN.md) · [日本語](README.ja.md) &nbsp; / &nbsp; [v2.0.0](https://github.com/k-telux/OpticalModeler/releases/tag/v2.0.0)
 
-[![Validation](https://github.com/k-telux/OpticalModeler/actions/workflows/validate.yml/badge.svg)](https://github.com/k-telux/OpticalModeler/actions/workflows/validate.yml)
-[![Agent Skills](https://img.shields.io/badge/Agent%20Skills-compatible-111827)](https://agentskills.io/)
-[![Blender](https://img.shields.io/badge/Blender-render%20and%20audit-E87D0D?logo=blender&logoColor=white)](https://www.blender.org/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-2563EB.svg)](LICENSE)
+[Use the skill →](skills/thorlabs-blender-optical-path/SKILL.md) &nbsp; [Read the cases →](examples/v2.0/README.md) &nbsp; [Evidence →](skills/thorlabs-blender-optical-path/references/evidence-contract.md)
 
-<img src="examples/g1g2/output/v18_nature_hero_graphite_final_4k_preview.jpg" width="100%" alt="Nature-style render of a physically audited G1/G2 optical table">
+<img src="assets/readme/wordmark.svg" width="100%" align="top" alt="OpticalModeler — Light. Structure. Evidence.">
+<img src="assets/readme/formal-optics-detail.jpg" width="100%" align="top" alt="A fresh camera-rendered detail of mounted relay optics and existing optical paths from the formal saved model.">
 
-</div>
+<sub>A new view of the formal model. Apparatus layout and beam geometry retained; private instrument identities and scene files excluded.</sub>
 
-OpticalModeler is an evidence-first Agent Skill for reconstructing laboratory optical paths in Blender. It treats optical topology, real apertures, manufacturer CAD, fasteners, load paths, fiber routing, and artifact lineage as hard acceptance gates—not decorative details.
+**Design the path. Keep the evidence.**
 
-> **Independent community project.** Not affiliated with or endorsed by Thorlabs, Inc. Product names identify compatible hardware only. A rendered CAD assembly is not a mechanical, spectral, laser-safety, or experimental certification.
+OpticalModeler is an Agent Skill for turning measurement ideas, diagrams and photographed setups into editable Blender optical systems. It connects the optical route to real apertures, mounts and support paths, then keeps the saved scene, checks and final views tied to the same result.
 
-## Why OpticalModeler
+---
 
-| Physical assembly | Optical truth | Fail-closed evidence |
-|---|---|---|
-| Post-first placement, real table holes, fasteners, load paths, and supported hardware. | Centered apertures, splitter planes, branch continuity, internal fine beams, and fiber bend constraints. | Reopened-scene audits, ray/BVH checks, hashes, manifests, annotated renders, and explicit `PASS` / `BLOCKED` / `UNVERIFIED` states. |
+## 01 / Start with your intent
 
-## 2D input → verified 3D output
-
-| Original schematic | Annotated 3D reconstruction |
-|---|---|
-| <img src="examples/g1g2/input/fig_s17_componentlibrary_g1g2.png" width="100%" alt="Original G1/G2 schematic"> | <img src="examples/g1g2/output/v18_nature_complete_top_annotated_final_4k_preview.jpg" width="100%" alt="Annotated top view of the reconstructed optical table"> |
-
-The sanitized [G1/G2 case study](examples/g1g2/README.md) includes the original 2D input, editorial 3D renders, and a machine-readable acceptance record. Vendor STEP/CAD files and the large laboratory `.blend` are intentionally excluded.
-
-## Unified whole-system workflow
-
-The primary workflow is now one ordered run with one run ID, one revision, one writer, one generator lineage, one Blender-scene lineage, and one append-only evidence ledger. Source locking, topology, CAD provenance, representative smoke, full-scene propagation, saved-scene reopen, optomechanical audit, rendering, and sanitization are gates in that same run—not independently authored modules that can be stitched together later.
-
-Start with the [end-to-end workflow contract](skills/thorlabs-blender-optical-path/references/end-to-end-workflow.md), the [single-run N04 deterministic replay](examples/end-to-end-workflow/n04-v1.0.1-replay/README.md), and its [fresh whole-system runbook](examples/end-to-end-workflow/n04-v1.0.1-replay/RUNBOOK.md). The static replay intentionally stops at `UNVERIFIED` because the repository excludes vendor CAD and the saved representative `.blend`; downstream gates remain pending instead of inheriting a partial `PASS`. A fresh private revision can execute the included fetch, build, reopen, audit, and sanitization scripts end to end.
-
-## v2.0.0: photographed setups, constrained corrections, and complete handoffs
-
-Version 2.0 adds explicit workflows for photograph reconstruction, fixed-endpoint layout corrections, selected instrument outputs/shutters, and separate presentation copies. It distinguishes installed, candidate and proposed parts; audits user intent as well as geometry; preserves accepted files; and records actual image producers instead of relabeling old renders.
-
-Start with [six use cases and real public input/output](examples/v2.0/README.md), then read the [full English dialogues](examples/v2.0/WALKTHROUGHS.md) or [中文交互案例](examples/v2.0/WALKTHROUGHS.zh-CN.md). Each reaches a concrete handoff: editable review package, final presentation images, or a reproducible blocker/checkpoint. The dialogues show relevant clarification, user rejection and correction, scoped checks and final results.
-
-| Your request | Guide | Delivery boundary |
-|---|---|---|
-| Reconstruct my photographs on an accepted baseline | [Photo reconstruction and revisions](skills/thorlabs-blender-optical-path/references/photo-reconstruction-and-revisions.md) | Complete private review model with installed/reference/unknown identity separated. |
-| Move only this branch; keep the upper route fixed | [Constraint and intent checks](skills/thorlabs-blender-optical-path/references/photo-reconstruction-and-revisions.md#3-lock-constraints-before-moving-anything) | Whole-family movement, fixed endpoints, actual footprint and affected-neighbor evidence. |
-| Make the enclosure darker; keep the model/cameras | [Presentation and delivery](skills/thorlabs-blender-optical-path/references/presentation-and-delivery.md) | Separate saved copy, preserved scientific geometry and fresh affected views. |
-| Publish the workflow without exposing the laboratory | [Publication privacy](skills/thorlabs-blender-optical-path/references/publication-privacy.md) | Functional aliases, curated files, private identifier scan, image/container review. |
-
-Laboratory-derived examples omit important instrument SKUs, exact setup coordinates/operating parameters, private photographs/models and identity maps. They are edited teaching reconstructions, not raw transcripts. Already public independent examples retain their source-backed catalog references. This release updates guidance and ledger software; it performs no new geometry run or blind forward test and changes no historical physical verdict. See [CHANGELOG](CHANGELOG.md#200--2026-10-07).
-
-```text
-Use $thorlabs-blender-optical-path to reconstruct these annotated photographs
-on the accepted baseline. Preserve its original files and fixed upper endpoints.
-Keep this optics-only. Deliver one editable review model, readable final views,
-and a measurement checklist. Separate installed, candidate and proposed parts.
-Keep laboratory identities, photos and the full scene private.
-```
-
-## v1.2.0: new designs, clear scope, and honest previews
-
-Ask for a new measurement path at the quality of an existing example, and the Skill now explicitly starts from a new topology and empty scene. It distinguishes reusable component assets from a complete prior apparatus and respects optics-only scope, including optical detectors and supports while excluding circuit/data visualization.
-
-The [fresh-design guide](skills/thorlabs-blender-optical-path/references/fresh-design-and-rendering.md) covers component fidelity, visible branches, measured ports, preview/final rendering, runtime isolation, and a practical completion cutoff. The [MZI preview limitation case](examples/fresh-design/mzi-preview/README.md) explains why expected-family ray hits, constant zero endpoint errors, whole-frame image scores, and 2048-wide previews cannot establish full physical or 4K acceptance.
-
-This release updates the Skill and its evidence contract; it does not certify a new optical instrument. The historical examples below retain their original verdicts. See [the changelog](CHANGELOG.md#120--2026-09-04) for the complete update.
-
-```text
-Use $thorlabs-blender-optical-path to design a new optics-only measurement
-system. Use the G1/G2 example only as a modeling and rendering quality reference.
-Derive a new topology, build from an empty scene with provenance-bound component
-assets, verify the physical paths, and deliver the declared final-resolution views.
-```
-
-## v1.1.0 multi-run qualification
-
-The [v1.1.0 qualification package](examples/end-to-end-workflow/qualification-v1.1.0/README.md) compares 64-, 96-, and 128-node N04 scale runs with an independent 40-node stateful interferometer test. The verdict is deliberately mixed: `PARTIAL_SCOPED`, strict-BVH `BLOCKED`, scale-only `PASS_SCOPED`, and topology `UNVERIFIED`. No track supplies a whole-system or physical-release PASS.
-
-The repeated tests hardened atomic source acquisition, live-versus-pinned CAD identity, exact cache aliases, canonical ledger replay, execution-versus-claim status, representative spacing/load evidence, strict collision classification, stateful topology expansion, and public-package sanitization. See [CHANGELOG.md](CHANGELOG.md) for the versioned changes.
-
-## Public-only forward tests
-
-Four isolated tests started from the published `v1.0.0` tag and used no private Optical Path guidance. They cover a 32-node light-sheet path, a 40-node multi-state interferometer, an OCT representative smoke, and a Thorlabs CAD conversion benchmark.
-
-| Track | Accepted verdict | Reproduced failure |
-|---|---|---|
-| Light-sheet / N04 | Propagation `PASS`, model `PARTIAL_SCOPED`, release `BLOCKED` | Public lock replay drifted from the saved scene until semantic replay and explicit overrides were added. |
-| Interferometer | `PARTIAL_SCOPED`, release `BLOCKED` | README/GATE duplicated stale ray and port counts instead of deriving them from reopen evidence. |
-| OCT | `UNVERIFIED`, propagation blocked | Package integrity passed while first-hit and load-path evidence remained incomplete. |
-| CAD conversion | `BLOCKED` | PNG metadata leaked local paths; after sanitization, a separate CAD meshing blocker correctly remained. |
-
-The [forward-test matrix](examples/forward-tests/README.md) remains a historical defect-discovery record. Its four packages are not inputs that may be combined into one whole-system result.
-
-## Install
-
-With a compatible Agent Skills installer:
+Install with a compatible Agent Skills installer:
 
 ```bash
 npx skills add k-telux/OpticalModeler
 ```
 
-Or copy `skills/thorlabs-blender-optical-path` into your agent's skills directory.
-
-## Quick start
-Send message below to your agent:
+Then give your agent the input, what may change, and what you need back:
 
 ```text
-Use $thorlabs-blender-optical-path to reconstruct this 2D schematic in Blender.
+Use $thorlabs-blender-optical-path
+to reconstruct these annotated photos
+on the accepted baseline.
+Keep originals and fixed endpoints.
+Deliver an editable optics-only model,
+clear views and a short checklist.
+Separate installed, candidate and
+proposed parts.
 ```
 
-```text
-Audit this optical table for real post/load paths, centered apertures, beam clearance, fiber bend radius, and stale evidence.
-```
+Prefer a manual install? Copy [the skill folder](skills/thorlabs-blender-optical-path) into your agent's skills directory.
 
-The skill guides the agent to:
+## 02 / Choose the work, preserve its boundaries
 
-1. map schematic nodes to experimental roles, real assets, ports, and support paths;
-2. freeze exact directed topology and official-CAD provenance;
-3. replay public lock scripts to the same normalized semantic parameters;
-4. solve optical centers, surfaces, splitter planes, and branch continuity;
-5. assemble hardware post-first from verified table holes;
-6. prove one representative instance before propagation;
-7. reopen the saved scene and run mesh, ray, BVH, and load-path checks;
-8. derive public claims from evidence and scan binary/container metadata before packaging.
+| Your goal | Where the work begins |
+|---|---|
+| **Design** a new measurement | An empty scene, a source-backed topology and permitted component assets. |
+| **Reconstruct** a diagram or photographs | Authoritative inputs and an explicitly retained baseline. |
+| **Correct** an accepted model | Frozen originals, protected families and declared movable degrees of freedom. |
+| **Audit** an existing scene | Read-only evidence, actual saved geometry and precise findings. |
+| **Present** the accepted result | A separate camera/light copy with geometry and image provenance preserved. |
 
-## Validation and limits
+Keep a fixed upper endpoint fixed. Move an optic with its mount and supports. Treat a proposed camera as proposed. A clearer render supports presentation; it does not close an unknown physical interface.
+
+## 03 / From request to final handoff
+
+Six conversations show the decisions that matter, including rejection, correction and the final output:
+
+- **A — Diagram to scene.** [Follow the complete reconstruction](examples/v2.0/WALKTHROUGHS.md#a-from-a-public-2d-schematic-to-the-delivered-3d-presentation), with real public input, final previews and historical evidence.
+- **B — Photos with missing specifications.** [Deliver a usable review model](examples/v2.0/WALKTHROUGHS.md#b-photograph-reconstruction-with-unknown-hardware-details) while keeping installed identity and estimates separate.
+- **C — A compact layout, without redesign.** [Follow a rejected layout through correction](examples/v2.0/WALKTHROUGHS.md#c-a-compact-layout-request-that-must-survive-user-rejection), retaining internal vectors and fixed endpoints.
+- **D — Better light, same instrument.** [Create a verified presentation copy](examples/v2.0/WALKTHROUGHS.md#d-darker-enclosures-and-readable-beams-without-geometry-drift), with fresh images and unchanged scientific geometry.
+- **E — One entrance, selected exits.** [Model a proposed detector and shutter states](examples/v2.0/WALKTHROUGHS.md#e-a-proposed-detector-two-selected-exits-and-an-entrance-shutter) without inventing internal transfer.
+- **F — A process exits; evidence is missing.** [Produce an honest recovery handoff](examples/v2.0/WALKTHROUGHS.md#f-audit-failure-and-ledger-rejection-still-produce-an-honest-result), with a valid record or reproducible blocker.
+
+The laboratory-derived dialogues are edited, anonymized teaching reconstructions. Private photos, exact setup coordinates, important instrument SKUs and the full scene are not distributed. [Read the Chinese dialogues →](examples/v2.0/WALKTHROUGHS.zh-CN.md)
+
+## 04 / Three things that stay connected
+
+**The optical path.** Directed branches, actual working faces, apertures and detector endpoints. Free-space light and guided fiber keep distinct roles.
+
+**The physical structure.** Real mounting interfaces, table holes, fasteners and continuous supports. Representative checks precede repeated placement; saved-scene checks cover the affected neighbors.
+
+**The evidence.** One scene lineage, fresh reopen measurements, actual image producers and a consistent manifest. An execution success, source CAD and a well-framed picture each support their own claim.
+
+[End-to-end workflow](skills/thorlabs-blender-optical-path/references/end-to-end-workflow.md) · [Photographed reconstruction](skills/thorlabs-blender-optical-path/references/photo-reconstruction-and-revisions.md) · [Presentation and delivery](skills/thorlabs-blender-optical-path/references/presentation-and-delivery.md)
+
+## 05 / Know what the result establishes
+
+| Status | What you can conclude |
+|---|---|
+| **PASS** | The declared applicable gates have current evidence. |
+| **PARTIAL / SCOPED** | A stated subset is checked; remaining blockers and limits stay visible. |
+| **UNVERIFIED** | Necessary evidence is missing or inconclusive. |
+| **BLOCKED** | A known requirement fails. |
+
+`READY_FOR_USER_REVIEW` means the requested handoff is ready for inspection. It does not certify installed hardware, thread preload, alignment, optical performance or laser safety. The cover is a presentation detail from an existing model, with its inherited physical limits preserved. [Image provenance](assets/readme/MANIFEST.json) · [Publication privacy](skills/thorlabs-blender-optical-path/references/publication-privacy.md)
+
+<details>
+<summary><strong>Explore the historical models and qualification results</strong></summary>
+
+- [G1/G2: public schematic, final renders and sanitized historical acceptance](examples/g1g2/README.md). Compressed previews are available; private Blend and vendor CAD are excluded.
+- [Single-run N04 workflow and replay](examples/end-to-end-workflow/n04-v1.0.1-replay/README.md). Static replay stops at `UNVERIFIED` where private assets are required.
+- [Multi-run qualification](examples/end-to-end-workflow/qualification-v1.1.0/README.md). Scoped, blocked and unverified results remain distinct; there is no whole-system physical PASS.
+- [MZI preview limitations](examples/fresh-design/mzi-preview/README.md). Constant zero errors, expected-family hits and small previews do not establish full acceptance.
+- [Four public-only forward tests](examples/forward-tests/README.md). Historical discovery evidence, not modules to stitch into a new system.
+
+</details>
+
+<details>
+<summary><strong>Validation, contribution and source boundaries</strong></summary>
 
 ```text
 python scripts/validate_repository.py
-python scripts/validate_repository.py --private-terms-file /private/release-inputs/sensitive-terms.txt
 ```
 
-The optional UTF-8 policy file remains outside the repository. Its identifier scan covers candidate filenames and uncompressed UTF-8/UTF-16 bytes; it is not OCR or archive inspection. Inspect newly public visuals and container content separately. Existing unit checks and manifest/PNG validation run through the same validator; no new package dependency is needed.
+The validator checks skill editions, resources, manifests, historical verdicts, PNG metadata and runnable software checks. Keep a private identifier policy outside the repository when publishing laboratory-derived material; inspect pixels and container contents separately. See [privacy guidance](skills/thorlabs-blender-optical-path/references/publication-privacy.md).
 
-- Manufacturer CAD is an asset source, never proof of correct assembly.
-- Free-space rays, guided fiber, and electrical cables remain semantically distinct.
-- Whole-project success requires an active-rule compliance matrix; scoped evidence stays `PARTIAL/SCOPED`.
-- The repository excludes third-party CAD, private paths, oversized Blend files, and unsupported real-world performance claims.
-- Public scripts must replay the published semantic locks; prose counts must match saved-reopen evidence.
-- Every release is checked for skill metadata, links, file size, ASCII/UTF-16 privacy leaks, forbidden CAD binaries, PNG metadata/CRC/decompression, manifest hashes, and acceptance-state consistency.
+[Changelog](CHANGELOG.md) · [Contributing](CONTRIBUTING.md) · [Third-party notices](THIRD_PARTY_NOTICES.md) · [Security](SECURITY.md) · [Project-memory template](rules/OPTICAL_PATH_PROJECT_MEMORY_TEMPLATE.md)
 
-See [CHANGELOG.md](CHANGELOG.md) for releases, [CONTRIBUTING.md](CONTRIBUTING.md) for rule proposals and case-study submissions, [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) for retained literature licensing, and [SECURITY.md](SECURITY.md) for responsible disclosure.
+</details>
 
-Maintained by [telux](https://github.com/k-telux). Released under the [MIT License](LICENSE).
+---
+
+Independent community workflow. Not affiliated with or endorsed by Thorlabs. English is the technical source; [Chinese](i18n/zh-CN/SKILL.md) and [Japanese](i18n/ja/SKILL.md) entries preserve its evidence rules.
+
+Maintained by [telux](https://github.com/k-telux) · [MIT License](LICENSE)

@@ -1,102 +1,115 @@
-<div align="center">
-
 # OpticalModeler
 
-**OpticalModeler 2.0: 図と写真から、編集可能で証拠範囲を明示した光学システムへ。**
+[English](README.md) · [简体中文](README.zh-CN.md) · [日本語](README.ja.md) &nbsp; / &nbsp; [v2.0.0](https://github.com/k-telux/OpticalModeler/releases/tag/v2.0.0)
 
-[English](README.md) · [简体中文](README.zh-CN.md) · [日本語](README.ja.md)
+[Skill →](skills/thorlabs-blender-optical-path/SKILL.md) &nbsp; [完全対話 →](examples/v2.0/README.md) &nbsp; [Evidence →](skills/thorlabs-blender-optical-path/references/evidence-contract.md)
 
-[![Validation](https://github.com/k-telux/OpticalModeler/actions/workflows/validate.yml/badge.svg)](https://github.com/k-telux/OpticalModeler/actions/workflows/validate.yml)
-[![Agent Skills](https://img.shields.io/badge/Agent%20Skills-compatible-111827)](https://agentskills.io/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-2563EB.svg)](LICENSE)
+<img src="assets/readme/wordmark.svg" width="100%" align="top" alt="OpticalModeler — 光路、構造、証拠。">
+<img src="assets/readme/formal-optics-detail.jpg" width="100%" align="top" alt="正式な保存モデルから新しいカメラで描画した relay optics、mount、support と既存光路の詳細。">
 
-<img src="examples/g1g2/output/v18_nature_hero_graphite_final_4k_preview.jpg" width="100%" alt="物理監査済み G1/G2 光学テーブルの Nature スタイルレンダー">
+<sub>正式モデルの新しい camera view。装置配置と beam geometry を保持し、重要 instrument identity と private scene を公開しません。</sub>
 
-</div>
+**光路を設計し、その根拠を残す。**
 
-OpticalModeler は、実験室の光路を Blender で再構築する証拠優先の Agent Skill です。光学トポロジー、実開口、メーカー CAD、締結部、荷重経路、ファイバー配線、証拠の系譜を必須の受け入れゲートとして扱います。
+OpticalModeler は測定要件、図、装置写真を編集可能な Blender 光学システムへ変える Agent Skill です。光線を実 aperture、mount interface、support path に結び、保存シーン、検査、最終画像を同じ結果へ接続します。
 
-> **独立したコミュニティプロジェクトです。** Thorlabs, Inc. との提携・承認関係はありません。製品名は互換ハードウェアの識別にのみ使用します。レンダリングされた CAD は、機械・分光・レーザー安全・実験性能の認証ではありません。
+---
 
-## 主な特徴
+## 01 / 意図から始める
 
-| 物理アセンブリ | 光学的整合性 | Fail-closed 証拠 |
-|---|---|---|
-| ポスト優先配置、実テーブル穴、締結部、荷重経路。 | 開口中心、ビームスプリッター面、分岐連続性、内部細線ビーム、ファイバー曲率。 | 再オープン監査、レイ/BVH 検査、ハッシュ、マニフェスト、注釈付きレンダー、明示的な状態。 |
-
-## 2D 入力 → 検証済み 3D 出力
-
-| 元の光学回路図 | 注釈付き 3D 再構築 |
-|---|---|
-| <img src="examples/g1g2/input/fig_s17_componentlibrary_g1g2.png" width="100%" alt="元の G1/G2 回路図"> | <img src="examples/g1g2/output/v18_nature_complete_top_annotated_final_4k_preview.jpg" width="100%" alt="3D 光学テーブルの注釈付き上面図"> |
-
-匿名化済みの [G1/G2 ケーススタディ](examples/g1g2/README.md)には、2D 入力、3D レンダー、機械可読の受け入れ記録が含まれます。メーカー STEP/CAD と大容量の実験用 `.blend` は Git に含めません。
-
-## 統合 whole-system workflow
-
-現在の主要 workflow は、1 つの run ID、1 つの revision、1 人の writer、1 本の generator lineage、1 本の Blender scene lineage、1 冊の append-only evidence ledger を持つ順序付き単一 run です。Source lock、topology、CAD provenance、representative smoke、full-scene propagation、saved-scene reopen、optomechanical audit、render、sanitization は同じ run の gate であり、独立 module を後から結合する方式ではありません。
-
-[End-to-end workflow contract](skills/thorlabs-blender-optical-path/references/end-to-end-workflow.md)、[single-run N04 deterministic replay](examples/end-to-end-workflow/n04-v1.0.1-replay/README.md)、[fresh whole-system runbook](examples/end-to-end-workflow/n04-v1.0.1-replay/RUNBOOK.md) から開始してください。Static replay は vendor CAD と代表 `.blend` を repository から除外するため `UNVERIFIED` で停止し、下流 gate は pending のままです。新しい private revision では公開済み fetch/build/reopen/audit/sanitization script を連続実行できます。
-
-## v2.0.0: 写真、制約付き改訂、最終成果物までの対話
-
-2.0 は写真による再構築、固定上段端点を持つ局部移動、instrument port/shutter state、独立 presentation copy を区別します。Installed/candidate/proposed identity、意図の受け入れ、凍結 baseline、保存後の保持検査、実画像 producer を明確にします。
-
-[6 事例と実公開 input/output](examples/v2.0/README.md)、[英語の完全対話](examples/v2.0/WALKTHROUGHS.md)、[中国語対話](examples/v2.0/WALKTHROUGHS.zh-CN.md)は、依頼、必要な確認、ユーザーの拒否/修正、検査、最終納品までを示します。図の再構築、写真、compact translation、材質/照明、proposed detector/shutter、audit failure/checkpoint を扱います。
-
-- 写真と固定 constraint: [再構築/改訂](skills/thorlabs-blender-optical-path/references/photo-reconstruction-and-revisions.md)。
-- 保存された presentation、画像 reuse、UI/納品: [Presentation と納品](skills/thorlabs-blender-optical-path/references/presentation-and-delivery.md)。
-- 実験室 identity を除いた公開: [Publication privacy](skills/thorlabs-blender-optical-path/references/publication-privacy.md)。
-
-実験室由来事例では重要 SKU、実座標/動作値、private photo/scene、対応表を除外します。対話は教育用編集であり raw transcript ではありません。既公開 independent example のメーカー出所は保持します。本版は guidance と ledger software の公開で、新 geometry run、blind test、physical qualification は実施せず、過去の verdict を変更しません。[CHANGELOG](CHANGELOG.md#200--2026-10-07)を参照してください。
-
-```text
-Use $thorlabs-blender-optical-path to reconstruct these photographs on the
-accepted baseline. Preserve originals and fixed upper endpoints. Deliver an
-editable optics-only review model, clear final views and a measurement list.
-Separate installed/candidate/proposed parts and keep laboratory identities,
-photos and the full scene private.
-```
-
-## v1.2.0：新しい測定設計とプレビューの検証範囲
-
-「旧例と同等の精細さで別の測定光路」という依頼では、新しい topology と空のシーンから開始します。再利用できる部品 asset と旧装置全体を区別し、optics-only では光検出器と実支持を保ちながら回路・電気・データの可視化を除きます。
-
-[新設計ガイド](skills/thorlabs-blender-optical-path/references/fresh-design-and-rendering.md)は部品 detail、可視光路、実 port 測定、preview/final render、runtime 分離、納品の終了条件を扱います。[MZI preview の制限事例](examples/fresh-design/mzi-preview/README.md)では、同じ部品 family への hit、固定ゼロ誤差、全画像スコア、2048 幅の preview が、完全な物理合格や 4K 納品を証明しないことを説明します。
-
-本版は Skill と証拠規則の更新であり、新装置の物理認証ではありません。過去のモデル verdict は変更しません。全変更は[更新履歴](CHANGELOG.md#120--2026-09-04)を参照してください。
-
-```text
-Use $thorlabs-blender-optical-path to design a new optics-only measurement path.
-Use the G1/G2 example for modeling/rendering quality only, start from an empty
-scene with provenance-bound component assets, and deliver verified paths and
-the requested final-resolution views.
-```
-
-## v1.1.0 multi-run qualification
-
-[v1.1.0 qualification package](examples/end-to-end-workflow/qualification-v1.1.0/README.md) は 64/96/128-node N04 scale run と独立した 40-node multi-state interferometer test を比較します。権威 verdict は `PARTIAL_SCOPED`、strict-BVH `BLOCKED`、scale-only `PASS_SCOPED`、topology `UNVERIFIED` のままで、whole-system physical/release PASS はありません。
-
-反復試験により atomic source bundle、live/pinned CAD identity、cache alias、ledger replay、execution/claim status、representative spacing/load、strict collision、stateful topology、public sanitization を強化しました。版ごとの変更は [CHANGELOG.md](CHANGELOG.md) を参照してください。
-
-## 公開 forward test
-
-[4 トラックの公開テスト行列](examples/forward-tests/README.md)は、公開 `v1.0.0` Skill だけを使用した light-sheet/N04、自由空間干渉計、OCT、Thorlabs CAD conversion の分離テストです。Sanitized evidence package、完全な workflow、generation log、replay script を公開し、N04 は propagation `PASS` / model `PARTIAL_SCOPED`、interferometer は `PARTIAL_SCOPED`、OCT は `UNVERIFIED`、CAD conversion は `BLOCKED` のまま保持します。
-
-公開 script の semantic replay、evidence 由来の README/GATE 数値、binary/PNG metadata の fail-closed scan が release gate に追加されました。Sanitization `PASS` は geometry/conversion `BLOCKED` を上書きしません。
-
-4-track matrix は過去の defect-discovery record としてのみ残し、4 package を 1 つの whole-system verdict に結合してはなりません。
-
-## インストール
-
-公開前に `python scripts/validate_repository.py` を実行します。任意の `--private-terms-file /private/release-inputs/sensitive-terms.txt` は repository 外の policy を使い、候補 filename と uncompressed UTF-8/UTF-16 bytes を検査します。Pixel/OCR や archive/container inspection の代わりではありません。既存 manifest、PNG、software regression の検査は維持します。
+対応する Agent Skills installer で:
 
 ```bash
 npx skills add k-telux/OpticalModeler
 ```
 
-または `skills/thorlabs-blender-optical-path` を Agent の skills ディレクトリへコピーします。
+入力、変更可能範囲、必要な成果物を Agent に伝えます。
 
-英語版 Skill が技術的な正本です。[日本語 Skill](i18n/ja/SKILL.md) は日本語の入口を提供し、形状・証拠ルールは英語版を継承します。
+```text
+Use $thorlabs-blender-optical-path
+to reconstruct these annotated photos
+on the accepted baseline.
+Keep originals and fixed endpoints.
+Deliver an editable optics-only model,
+clear views and a short checklist.
+Separate installed, candidate and
+proposed parts.
+```
+
+手動では [skill folder](skills/thorlabs-blender-optical-path) を Agent の skills directory にコピーします。
+
+## 02 / 操作を選び、境界を保つ
+
+| 目的 | 出発点 |
+|---|---|
+| 新しい測定を **Design** | 空のシーン、source-backed topology、許可された component assets。 |
+| 図や写真を **Reconstruct** | 権威 input と明示的に保持する baseline。 |
+| 受け入れ済みモデルを **Correct** | 凍結 originals、protected families、編集自由度。 |
+| シーンを **Audit** | Read-only evidence、実保存 geometry、具体的 findings。 |
+| 結果を **Present** | Camera/light copy、保持された geometry と image provenance。 |
+
+固定上段 endpoint は固定します。Optic と mount/support は一体で動かします。Proposed camera は proposed のままです。読みやすい render は presentation の証拠で、未知 physical interface の合格ではありません。
+
+## 03 / 依頼から最終納品まで
+
+- **A — 図からシーン。** 公開 input、final previews、歴史的 evidence を持つ再構築。
+- **B — 不完全な仕様の写真。** Installed identity と推定を分けて review model を納品。
+- **C — 再設計しない compact layout。** 拒否後に相対 vectors と固定 endpoints を保持して修正。
+- **D — より良い照明、同じ装置。** Presentation copy、geometry preservation、新しい affected images。
+- **E — 一つの入口、選択出力。** Proposed detector と shutter states、未知内部 transfer の明示。
+- **F — 終了コードと不足 evidence。** Valid record または再現可能な blocker/checkpoint。
+
+[英語の完全対話 →](examples/v2.0/WALKTHROUGHS.md) · [中国語対話 →](examples/v2.0/WALKTHROUGHS.zh-CN.md)
+
+実験室由来対話は編集・匿名化された教材です。Private photos、実座標、重要 SKU、full scene は配布しません。
+
+## 04 / 光路、構造、証拠をつなぐ
+
+**光路。** Directed branches、working faces、apertures、detector endpoints。Free-space light と fiber の役割を区別します。
+
+**構造。** 実 mounting interfaces、table holes、fasteners、continuous supports。反復配置前に代表件を検査し、保存後に affected neighbors を再検査します。
+
+**証拠。** 一つの scene lineage、fresh reopen measurements、actual image producers、consistent manifest。Process success、source CAD、clear image はそれぞれの claim を支えます。
+
+[End-to-end workflow](skills/thorlabs-blender-optical-path/references/end-to-end-workflow.md) · [写真再構築](skills/thorlabs-blender-optical-path/references/photo-reconstruction-and-revisions.md) · [Presentation と納品](skills/thorlabs-blender-optical-path/references/presentation-and-delivery.md)
+
+## 05 / 結果の意味を理解する
+
+| Status | 結論 |
+|---|---|
+| **PASS** | 宣言した適用 gate に current evidence がある。 |
+| **PARTIAL / SCOPED** | 明示 subset を検査し、残る blocker と限界を保持。 |
+| **UNVERIFIED** | 必要 evidence が不足または不確定。 |
+| **BLOCKED** | 既知 requirement に失敗。 |
+
+`READY_FOR_USER_REVIEW` は inspection 用 handoff です。Installed hardware、thread preload、alignment、performance、laser safety の認証ではありません。新 cover は既存モデルの presentation detail で、元の physical limits を保持します。[画像 provenance](assets/readme/MANIFEST.json) · [Publication privacy](skills/thorlabs-blender-optical-path/references/publication-privacy.md)
+
+<details>
+<summary><strong>歴史的モデルと qualification results</strong></summary>
+
+- [G1/G2: public input、final previews、sanitized historical acceptance](examples/g1g2/README.md)。Private Blend と vendor CAD は含みません。
+- [N04 single-run workflow/replay](examples/end-to-end-workflow/n04-v1.0.1-replay/README.md)。Private assets が必要な static gate は `UNVERIFIED`。
+- [Multi-run qualification](examples/end-to-end-workflow/qualification-v1.1.0/README.md)。Scoped、blocked、unverified は別 verdict; whole-system physical PASS はありません。
+- [MZI preview limitations](examples/fresh-design/mzi-preview/README.md)。Fixed-zero error、family hit、小 preview は完全 acceptance を証明しません。
+- [4 public-only forward tests](examples/forward-tests/README.md)。歴史的 discovery evidence であり、全系 module として結合できません。
+
+</details>
+
+<details>
+<summary><strong>Validation、contribution、source boundaries</strong></summary>
+
+```text
+python scripts/validate_repository.py
+```
+
+Skill editions、resources、manifests、historical verdicts、PNG metadata、software checks を検査します。Private identifier policy は repository 外に置き、pixels/container を別に確認します。[Privacy guide](skills/thorlabs-blender-optical-path/references/publication-privacy.md)
+
+[Changelog](CHANGELOG.md) · [Contributing](CONTRIBUTING.md) · [Third-party notices](THIRD_PARTY_NOTICES.md) · [Security](SECURITY.md) · [Project-memory template](rules/OPTICAL_PATH_PROJECT_MEMORY_TEMPLATE.md)
+
+</details>
+
+---
+
+独立 community workflow で、Thorlabs との提携・承認関係はありません。英語が技術的正本です。[中国語](i18n/zh-CN/SKILL.md)と[日本語](i18n/ja/SKILL.md)も同じ evidence rules を保持します。
 
 Maintainer: [telux](https://github.com/k-telux) · [MIT License](LICENSE)

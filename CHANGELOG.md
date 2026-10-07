@@ -2,6 +2,13 @@
 
 All notable public workflow and evidence-contract changes are recorded here. Physical-system verdicts remain in their machine-readable example gates; a software/Skill version does not promote them.
 
+## README visual revision — 2026-10-07
+
+- Rebuild the English, Chinese and Japanese README as a concise entry page with a new typographic wordmark, immediate installation/use, five operating modes, six complete dialogues and expandable historical evidence.
+- Replace the old homepage image with a fresh camera-rendered detail from the existing formal model. Preserve apparatus geometry, transforms, materials and beam paths; retain inherited physical limits and keep the full scene and identity-bearing receipts private.
+- Exclude newly invented concept imagery. Publish only the sanitized compressed camera image, original wordmark and self-excluding visual manifest; validate image resources alongside Markdown links.
+- The immutable v2.0.0 tag remains the original software release. This visual update continues on main and grants no new physical qualification or award claim.
+
 ## 2.0.0 — 2026-10-07
 
 ### Photograph reconstruction, constrained correction, and final handoff

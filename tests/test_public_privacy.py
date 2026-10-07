@@ -12,6 +12,15 @@ SPEC.loader.exec_module(VALIDATOR)
 
 
 class PublicPrivacyTest(unittest.TestCase):
+    def test_missing_html_image_is_rejected(self):
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / 'README.md'
+            path.write_text('<img src="missing.jpg" alt="Required visual">', encoding='utf-8')
+            with self.assertRaises(AssertionError):
+                VALIDATOR.check_markdown_links(path)
+            (path.parent / 'missing.jpg').write_bytes(b'fixture')
+            VALIDATOR.check_markdown_links(path)
+
     def test_identifier_leaks_fail_without_mutation_or_term_disclosure(self):
         secret = "Private-Model-42"
         terms = (VALIDATOR.normalize_identifier(secret),)

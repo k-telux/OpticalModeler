@@ -58,6 +58,9 @@ REQUIRED = [
     ROOT / "examples/v2.0/WALKTHROUGHS.zh-CN.md",
     ROOT / "examples/v2.0/CASE_INDEX.json",
     ROOT / "examples/v2.0/MANIFEST.json",
+    ROOT / "assets/readme/wordmark.svg",
+    ROOT / "assets/readme/formal-optics-detail.jpg",
+    ROOT / "assets/readme/MANIFEST.json",
     ROOT / "examples/fresh-design/mzi-preview/README.md",
     ROOT / "examples/fresh-design/mzi-preview/LESSONS.json",
     ROOT / "examples/fresh-design/mzi-preview/MANIFEST.json",
@@ -77,6 +80,14 @@ REQUIRED = [
     ROOT / "examples/end-to-end-workflow/qualification-v1.1.0/scripts/finalize_array_run.py",
 ]
 PUBLIC_PACKAGES = [
+    {
+        "root": ROOT / "assets/readme",
+        "manifest": "MANIFEST.json",
+        "records": "entries",
+        "path": "path",
+        "bytes": "bytes",
+        "extras": {"MANIFEST.json"},
+    },
     {
         "root": ROOT / "examples/v2.0",
         "manifest": "MANIFEST.json",
@@ -157,7 +168,9 @@ def check_frontmatter(path: Path, expected_name: str) -> None:
 
 def check_markdown_links(path: Path) -> None:
     text = path.read_text(encoding="utf-8")
-    for target in re.findall(r"!?\[[^\]]*\]\(([^)]+)\)", text):
+    targets = re.findall(r"!?\[[^\]]*\]\(([^)]+)\)", text)
+    targets += re.findall(r'<img\b[^>]*\bsrc=["\x27]([^"\x27]+)["\x27]', text, re.I)
+    for target in targets:
         target = target.strip().strip("<>").split("#", 1)[0]
         if not target or re.match(r"^(https?://|mailto:)", target):
             continue
@@ -417,6 +430,10 @@ def check_v2_guidance() -> None:
     for relative in case["public_visuals"]:
         target = (ROOT / "examples/v2.0" / relative).resolve()
         assert target.is_relative_to(ROOT / "examples/g1g2") and target.is_file()
+    visual = json.loads((ROOT / "assets/readme/MANIFEST.json").read_text(encoding="utf-8"))
+    assert visual["photographic_asset_origin"] == "CAMERA_RENDER_FROM_EXISTING_FORMAL_SAVED_MODEL"
+    for key in ("new_apparatus_or_beam_geometry", "generated_concept_imagery_included", "private_scene_or_source_identity_published"):
+        assert visual[key] is False, f"README visuals acquired unsupported scope: {key}"
 
 
 def main() -> None:
