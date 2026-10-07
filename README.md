@@ -2,10 +2,12 @@
 
 [English](README.md) · [简体中文](README.zh-CN.md) · [日本語](README.ja.md) &nbsp; / &nbsp; [v2.0.0](https://github.com/k-telux/OpticalModeler/releases/tag/v2.0.0)
 
-[Use the skill →](skills/thorlabs-blender-optical-path/SKILL.md) &nbsp; [Read the cases →](examples/v2.0/README.md) &nbsp; [Evidence →](skills/thorlabs-blender-optical-path/references/evidence-contract.md)
+[Use Skill](skills/thorlabs-blender-optical-path/SKILL.md) &nbsp; [Cases](examples/v2.0/README.md) &nbsp; [Evidence](skills/thorlabs-blender-optical-path/references/evidence-contract.md)
 
+<p>
 <img src="assets/readme/wordmark.svg" width="100%" align="top" alt="OpticalModeler — Light. Structure. Evidence.">
 <img src="assets/readme/formal-optics-detail.jpg" width="100%" align="top" alt="A fresh camera-rendered detail of mounted relay optics and existing optical paths from the formal saved model.">
+</p>
 
 <sub>A new view of the formal model. Apparatus layout and beam geometry retained; private instrument identities and scene files excluded.</sub>
 
@@ -19,21 +21,21 @@ OpticalModeler is an Agent Skill for turning measurement ideas, diagrams and pho
 
 Install with a compatible Agent Skills installer:
 
-```bash
-npx skills add k-telux/OpticalModeler
-```
+`npx skills add k-telux/OpticalModeler`
 
 Then give your agent the input, what may change, and what you need back:
 
 ```text
-Use $thorlabs-blender-optical-path
-to reconstruct these annotated photos
+Use
+$thorlabs-blender-optical-path
+to reconstruct these photos
 on the accepted baseline.
-Keep originals and fixed endpoints.
-Deliver an editable optics-only model,
-clear views and a short checklist.
-Separate installed, candidate and
-proposed parts.
+Keep the original files.
+Keep fixed upper endpoints.
+Deliver an optics-only model,
+final views and a checklist.
+Mark installed, candidate
+and proposed parts.
 ```
 
 Prefer a manual install? Copy [the skill folder](skills/thorlabs-blender-optical-path) into your agent's skills directory.
@@ -98,9 +100,7 @@ The laboratory-derived dialogues are edited, anonymized teaching reconstructions
 <details>
 <summary><strong>Validation, contribution and source boundaries</strong></summary>
 
-```text
-python scripts/validate_repository.py
-```
+`python scripts/validate_repository.py`
 
 The validator checks skill editions, resources, manifests, historical verdicts, PNG metadata and runnable software checks. Keep a private identifier policy outside the repository when publishing laboratory-derived material; inspect pixels and container contents separately. See [privacy guidance](skills/thorlabs-blender-optical-path/references/publication-privacy.md).
 

@@ -2,10 +2,12 @@
 
 [English](README.md) · [简体中文](README.zh-CN.md) · [日本語](README.ja.md) &nbsp; / &nbsp; [v2.0.0](https://github.com/k-telux/OpticalModeler/releases/tag/v2.0.0)
 
-[使用 Skill →](skills/thorlabs-blender-optical-path/SKILL.md) &nbsp; [完整案例 →](examples/v2.0/WALKTHROUGHS.zh-CN.md) &nbsp; [证据合同 →](skills/thorlabs-blender-optical-path/references/evidence-contract.md)
+[使用 Skill](skills/thorlabs-blender-optical-path/SKILL.md) &nbsp; [完整案例](examples/v2.0/WALKTHROUGHS.zh-CN.md) &nbsp; [证据合同](skills/thorlabs-blender-optical-path/references/evidence-contract.md)
 
+<p>
 <img src="assets/readme/wordmark.svg" width="100%" align="top" alt="OpticalModeler — 光路、结构与证据。">
 <img src="assets/readme/formal-optics-detail.jpg" width="100%" align="top" alt="从正式保存模型重新设置相机渲染的透镜、镜架、支撑及已有光路近景。">
+</p>
 
 <sub>正式模型的新相机视图。器件布局与光线几何保持；关键仪器身份与私有场景文件不公开。</sub>
 
@@ -19,18 +21,17 @@ OpticalModeler 是一个 Agent Skill，把测量需求、示意图和现场照�
 
 使用兼容的 Agent Skills 安装器：
 
-```bash
-npx skills add k-telux/OpticalModeler
-```
+`npx skills add k-telux/OpticalModeler`
 
 然后告诉 Agent：依据什么、允许改什么、需要交付什么。
 
 ```text
-使用 $thorlabs-blender-optical-path
-按标注照片在已接受基线上重建。
-保留原文件和固定上层端点。
-交付可编辑的 optics-only 模型、
-最终视图与简短现场测量清单。
+使用
+$thorlabs-blender-optical-path
+按标注照片重建已接受的基线。
+保留原文件、固定上层端点。
+交付 optics-only 审阅模型、
+最终视图与现场测量清单。
 区分实装、候选和拟装器件。
 ```
 
@@ -98,9 +99,7 @@ npx skills add k-telux/OpticalModeler
 <details>
 <summary><strong>验证、贡献与来源边界</strong></summary>
 
-```text
-python scripts/validate_repository.py
-```
+`python scripts/validate_repository.py`
 
 验证器检查三语入口、资源、清单、历史 verdict、PNG metadata 和可运行的软件检查。发布实验室经验时，私有标识策略留在仓库外，并单独检查像素及容器内容，见[脱敏指南](skills/thorlabs-blender-optical-path/references/publication-privacy.md)。
 

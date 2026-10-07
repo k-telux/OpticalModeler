@@ -2,10 +2,12 @@
 
 [English](README.md) · [简体中文](README.zh-CN.md) · [日本語](README.ja.md) &nbsp; / &nbsp; [v2.0.0](https://github.com/k-telux/OpticalModeler/releases/tag/v2.0.0)
 
-[Skill →](skills/thorlabs-blender-optical-path/SKILL.md) &nbsp; [完全対話 →](examples/v2.0/README.md) &nbsp; [Evidence →](skills/thorlabs-blender-optical-path/references/evidence-contract.md)
+[Skill](skills/thorlabs-blender-optical-path/SKILL.md) &nbsp; [完全対話](examples/v2.0/README.md) &nbsp; [Evidence](skills/thorlabs-blender-optical-path/references/evidence-contract.md)
 
+<p>
 <img src="assets/readme/wordmark.svg" width="100%" align="top" alt="OpticalModeler — 光路、構造、証拠。">
 <img src="assets/readme/formal-optics-detail.jpg" width="100%" align="top" alt="正式な保存モデルから新しいカメラで描画した relay optics、mount、support と既存光路の詳細。">
+</p>
 
 <sub>正式モデルの新しい camera view。装置配置と beam geometry を保持し、重要 instrument identity と private scene を公開しません。</sub>
 
@@ -19,21 +21,21 @@ OpticalModeler は測定要件、図、装置写真を編集可能な Blender �
 
 対応する Agent Skills installer で:
 
-```bash
-npx skills add k-telux/OpticalModeler
-```
+`npx skills add k-telux/OpticalModeler`
 
 入力、変更可能範囲、必要な成果物を Agent に伝えます。
 
 ```text
-Use $thorlabs-blender-optical-path
-to reconstruct these annotated photos
+Use
+$thorlabs-blender-optical-path
+to reconstruct these photos
 on the accepted baseline.
-Keep originals and fixed endpoints.
-Deliver an editable optics-only model,
-clear views and a short checklist.
-Separate installed, candidate and
-proposed parts.
+Keep the original files.
+Keep fixed upper endpoints.
+Deliver an optics-only model,
+final views and a checklist.
+Mark installed, candidate
+and proposed parts.
 ```
 
 手動では [skill folder](skills/thorlabs-blender-optical-path) を Agent の skills directory にコピーします。
@@ -98,9 +100,7 @@ proposed parts.
 <details>
 <summary><strong>Validation、contribution、source boundaries</strong></summary>
 
-```text
-python scripts/validate_repository.py
-```
+`python scripts/validate_repository.py`
 
 Skill editions、resources、manifests、historical verdicts、PNG metadata、software checks を検査します。Private identifier policy は repository 外に置き、pixels/container を別に確認します。[Privacy guide](skills/thorlabs-blender-optical-path/references/publication-privacy.md)
 
